@@ -40,7 +40,7 @@ export function Quiz({ questions, daily, onExit, onDone }: { questions: Question
   }
   function next() {
     if (i + 1 < questions.length) { setI(i + 1); setResult(null); return; }
-    const b = daily ? DAILY_BONUS : 0;
+    const b = daily && !wasDone.current ? DAILY_BONUS : 0; // Bonus nur für die erste Tagesrunde
     if (b) bonus(b);
     onDone({ answers: log, daily, bonus: b, streakCompletedNow: !wasDone.current });
   }

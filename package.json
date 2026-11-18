@@ -11,8 +11,7 @@
     "data:geo": "node scripts/fetch-countries.mjs",
     "data:politik": "node scripts/update-politics.mjs",
     "data:bilder": "node scripts/fetch-images.mjs",
-    "data:build": "node scripts/build-questions.mjs",
-    "data:check": "node scripts/check-questions.mjs"
+    "data:build": "node scripts/build-questions.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.119.1",

@@ -577,7 +577,7 @@
    "group": "baum",
    "title": "Rotbuche",
    "answer": "Rotbuche",
-   "difficulty": 1,
+   "difficulty": 3,
    "explanation": "Die Rotbuche ist der häufigste Laubbaum Deutschlands. Ohne den Menschen wäre sie hier der vorherrschende Baum.",
    "prompt": "Welcher Baum ist das?"
   },
@@ -677,7 +677,7 @@
    "group": "baum",
    "title": "Gewöhnliche Rosskastanie",
    "answer": "Rosskastanie",
-   "difficulty": 1,
+   "difficulty": 3,
    "explanation": "Rosskastanien sind für Menschen ungenießbar, anders als die Esskastanie.",
    "prompt": "Welcher Baum ist das?"
   },
@@ -969,7 +969,8 @@
    "answer": "Mondlandung (Apollo 11), 1969",
    "difficulty": 1,
    "explanation": "1969 landeten Neil Armstrong und Buzz Aldrin als erste Menschen auf dem Mond.",
-   "prompt": "Was zeigt dieses Bild?"
+   "prompt": "Was zeigt dieses Bild?",
+   "file": "Aldrin Apollo 11 original.jpg"
   },
   {
    "id": "img-hist-luftbruecke",
@@ -989,7 +990,8 @@
    "answer": "Fall der Berliner Mauer, 1989",
    "difficulty": 1,
    "explanation": "Am 9. November 1989 öffnete die DDR die Grenze.",
-   "prompt": "Was zeigt dieses Bild?"
+   "prompt": "Was zeigt dieses Bild?",
+   "file": "Thefalloftheberlinwall1989.JPG"
   },
   {
    "id": "img-hist-mauerbau",
@@ -999,7 +1001,8 @@
    "answer": "Berliner Mauer (1961–1989)",
    "difficulty": 1,
    "explanation": "Die Mauer trennte von 1961 bis 1989 Ost- und West-Berlin.",
-   "prompt": "Was zeigt dieses Bild?"
+   "prompt": "Was zeigt dieses Bild?",
+   "file": "Berlinermauer.jpg"
   },
   {
    "id": "img-hist-17juni",
@@ -1009,16 +1012,6 @@
    "answer": "Volksaufstand in der DDR, 1953",
    "difficulty": 2,
    "explanation": "Sowjetische Panzer schlugen den Aufstand nieder.",
-   "prompt": "Was zeigt dieses Bild?"
-  },
-  {
-   "id": "img-hist-kniefall",
-   "topic": "bilder",
-   "group": "ereignis",
-   "title": "Kniefall von Warschau",
-   "answer": "Kniefall von Warschau, 1970",
-   "difficulty": 2,
-   "explanation": "Willy Brandt kniete vor dem Denkmal für den Aufstand im Warschauer Ghetto.",
    "prompt": "Was zeigt dieses Bild?"
   },
   {
@@ -1169,7 +1162,8 @@
    "answer": "Kaiserproklamation in Versailles, 1871",
    "difficulty": 2,
    "explanation": "Gemälde von Anton von Werner: Wilhelm I. wird zum Kaiser ausgerufen.",
-   "prompt": "Was zeigt dieses Bild?"
+   "prompt": "Was zeigt dieses Bild?",
+   "file": "Wernerprokla.jpg"
   },
   {
    "id": "img-hist-freiheit",
@@ -1272,21 +1266,11 @@
    "prompt": "Was zeigt dieses Bild?"
   },
   {
-   "id": "img-hist-einheit",
-   "topic": "bilder",
-   "group": "ereignis",
-   "title": "Deutsche Wiedervereinigung",
-   "answer": "Deutsche Wiedervereinigung, 1990",
-   "difficulty": 2,
-   "explanation": "Am 3. Oktober 1990 trat die DDR der Bundesrepublik bei.",
-   "prompt": "Was zeigt dieses Bild?"
-  },
-  {
    "id": "img-hist-gagarin",
    "topic": "bilder",
    "group": "person",
    "title": "Juri Alexejewitsch Gagarin",
-   "answer": "Juri Gagarin, erster Mensch im All (1961)",
+   "answer": "Juri Gagarin",
    "difficulty": 2,
    "explanation": "Gagarin umrundete 1961 als erster Mensch die Erde.",
    "prompt": "Wer ist auf diesem Bild zu sehen?"
