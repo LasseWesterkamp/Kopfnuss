@@ -1,0 +1,1355 @@
+{
+ "_hinweis": "Eingabe für scripts/fetch-images.mjs. title = deutscher Wikipedia-Artikel, dessen Titelbild verwendet wird. Optional file = Commons-Dateiname, um ein bestimmtes Bild zu erzwingen.",
+ "items": [
+  {
+   "id": "img-fauna-fuchs",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Rotfuchs",
+   "answer": "Rotfuchs",
+   "difficulty": 1,
+   "explanation": "Der Rotfuchs ist das häufigste Raubtier Deutschlands und lebt auch in Städten.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-eichhoernchen",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Eurasisches Eichhörnchen",
+   "answer": "Eichhörnchen",
+   "difficulty": 1,
+   "explanation": "Eichhörnchen halten keinen Winterschlaf, sondern Winterruhe, und legen Vorräte an.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-igel",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Braunbrustigel",
+   "answer": "Igel",
+   "difficulty": 1,
+   "explanation": "Igel halten Winterschlaf und fressen vor allem Käfer, Larven und Regenwürmer.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-dachs",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Europäischer Dachs",
+   "answer": "Dachs",
+   "difficulty": 2,
+   "explanation": "Dachse leben in großen unterirdischen Bauen, die über Generationen genutzt werden.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-rothirsch",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Rothirsch",
+   "answer": "Rothirsch",
+   "difficulty": 1,
+   "explanation": "Der Rothirsch ist das größte frei lebende Wildtier Deutschlands. Nur die Männchen tragen ein Geweih.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-reh",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Reh",
+   "answer": "Reh",
+   "difficulty": 1,
+   "explanation": "Rehe sind die häufigste Hirschart Deutschlands. Das Männchen heißt Rehbock.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-wildschwein",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Wildschwein",
+   "answer": "Wildschwein",
+   "difficulty": 1,
+   "explanation": "Wildschweine sind Allesfresser. Die Jungen (Frischlinge) haben ein gestreiftes Fell.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-feldhase",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Feldhase",
+   "answer": "Feldhase",
+   "difficulty": 2,
+   "explanation": "Feldhasen haben längere Ohren und Beine als Wildkaninchen und leben nicht in Bauen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-biber",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Eurasischer Biber",
+   "answer": "Biber",
+   "difficulty": 1,
+   "explanation": "Biber fällen Bäume und bauen Dämme. Sie waren in Deutschland fast ausgerottet.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-otter",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Fischotter",
+   "answer": "Fischotter",
+   "difficulty": 2,
+   "explanation": "Fischotter sind hervorragende Schwimmer und gehören zu den Mardern.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-luchs",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Eurasischer Luchs",
+   "answer": "Luchs",
+   "difficulty": 2,
+   "explanation": "Der Luchs ist die größte Katze Europas. Erkennbar an den Pinselohren.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-wolf",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Wolf",
+   "answer": "Wolf",
+   "difficulty": 1,
+   "explanation": "Seit 2000 ist der Wolf nach Deutschland zurückgekehrt, vor allem in den Osten und Norden.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-wildkatze",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Europäische Wildkatze",
+   "answer": "Wildkatze",
+   "difficulty": 3,
+   "explanation": "Die Wildkatze hat einen buschigen Schwanz mit stumpfem, schwarzem Ende.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-baummarder",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Baummarder",
+   "answer": "Baummarder",
+   "difficulty": 3,
+   "explanation": "Der Baummarder hat einen gelblichen Kehlfleck. Der Steinmarder hat einen weißen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-hermelin",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Hermelin",
+   "answer": "Hermelin",
+   "difficulty": 3,
+   "explanation": "Das Hermelin trägt im Winter ein weißes Fell. Die Schwanzspitze bleibt schwarz.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-maulwurf",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Europäischer Maulwurf",
+   "answer": "Maulwurf",
+   "difficulty": 1,
+   "explanation": "Maulwürfe graben mit ihren Schaufelhänden Gänge und fressen vor allem Regenwürmer.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-seehund",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Seehund",
+   "answer": "Seehund",
+   "difficulty": 2,
+   "explanation": "Seehunde leben im Wattenmeer der Nord- und Ostsee.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-schweinswal",
+   "topic": "fauna",
+   "group": "saeuger",
+   "title": "Schweinswal",
+   "answer": "Schweinswal",
+   "difficulty": 3,
+   "explanation": "Der Schweinswal ist der einzige in Deutschland heimische Wal.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-steinadler",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Steinadler",
+   "answer": "Steinadler",
+   "difficulty": 2,
+   "explanation": "In Deutschland brütet der Steinadler nur in den bayerischen Alpen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-seeadler",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Seeadler",
+   "answer": "Seeadler",
+   "difficulty": 2,
+   "explanation": "Der Seeadler ist mit bis zu 2,4 m Spannweite der größte Greifvogel Deutschlands.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-bussard",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Mäusebussard",
+   "answer": "Mäusebussard",
+   "difficulty": 2,
+   "explanation": "Der Mäusebussard ist der häufigste Greifvogel Deutschlands.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-turmfalke",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Turmfalke",
+   "answer": "Turmfalke",
+   "difficulty": 2,
+   "explanation": "Turmfalken „rütteln“: Sie stehen flatternd in der Luft und spähen nach Mäusen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-waldkauz",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Waldkauz",
+   "answer": "Waldkauz",
+   "difficulty": 2,
+   "explanation": "Der Waldkauz ist die häufigste Eule Deutschlands. Typisch ist sein „Hu-hu-huuu“.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-uhu",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Uhu",
+   "answer": "Uhu",
+   "difficulty": 1,
+   "explanation": "Der Uhu ist die größte Eule der Welt. Erkennbar an den Federohren und orangen Augen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-schleiereule",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Schleiereule",
+   "answer": "Schleiereule",
+   "difficulty": 2,
+   "explanation": "Die Schleiereule hat einen herzförmigen, hellen Gesichtsschleier.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-storch",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Weißstorch",
+   "answer": "Weißstorch",
+   "difficulty": 1,
+   "explanation": "Weißstörche überwintern in Afrika und brüten oft auf Dächern und Masten.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-graureiher",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Graureiher",
+   "answer": "Graureiher",
+   "difficulty": 2,
+   "explanation": "Graureiher stehen oft regungslos am Wasser und jagen Fische und Mäuse.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-kranich",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Kranich",
+   "answer": "Kranich",
+   "difficulty": 2,
+   "explanation": "Kraniche ziehen im Herbst in großen Keilformationen nach Süden.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-schwan",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Höckerschwan",
+   "answer": "Höckerschwan",
+   "difficulty": 1,
+   "explanation": "Erkennbar am orangen Schnabel mit schwarzem Höcker.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-stockente",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Stockente",
+   "answer": "Stockente",
+   "difficulty": 1,
+   "explanation": "Die Männchen (Erpel) haben einen grün schillernden Kopf.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-buntspecht",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Buntspecht",
+   "answer": "Buntspecht",
+   "difficulty": 1,
+   "explanation": "Der Buntspecht ist der häufigste Specht Deutschlands. Er trommelt, um sein Revier zu markieren.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-eisvogel",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Eisvogel",
+   "answer": "Eisvogel",
+   "difficulty": 2,
+   "explanation": "Der Eisvogel stößt kopfüber ins Wasser, um kleine Fische zu fangen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-rotkehlchen",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Rotkehlchen",
+   "answer": "Rotkehlchen",
+   "difficulty": 1,
+   "explanation": "Rotkehlchen singen auch im Winter und bei Nacht unter Laternen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-amsel",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Amsel",
+   "answer": "Amsel",
+   "difficulty": 1,
+   "explanation": "Männchen sind schwarz mit gelbem Schnabel, Weibchen braun.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-kohlmeise",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Kohlmeise",
+   "answer": "Kohlmeise",
+   "difficulty": 1,
+   "explanation": "Die Kohlmeise ist die größte heimische Meise mit schwarzem Bauchstreifen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-blaumeise",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Blaumeise",
+   "answer": "Blaumeise",
+   "difficulty": 1,
+   "explanation": "Die Blaumeise hat eine blaue Kappe und einen gelben Bauch.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-spatz",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Haussperling",
+   "answer": "Haussperling (Spatz)",
+   "difficulty": 1,
+   "explanation": "Der Spatz lebt fast nur in der Nähe von Menschen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-elster",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Elster",
+   "answer": "Elster",
+   "difficulty": 1,
+   "explanation": "Elstern gehören zu den Rabenvögeln und gelten als sehr intelligent.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-buchfink",
+   "topic": "fauna",
+   "group": "vogel",
+   "title": "Buchfink",
+   "answer": "Buchfink",
+   "difficulty": 2,
+   "explanation": "Der Buchfink ist einer der häufigsten Vögel Deutschlands.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-erdkroete",
+   "topic": "fauna",
+   "group": "reptamph",
+   "title": "Erdkröte",
+   "answer": "Erdkröte",
+   "difficulty": 2,
+   "explanation": "Erdkröten wandern im Frühjahr zu ihren Laichgewässern. Dafür gibt es Krötenzäune.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-grasfrosch",
+   "topic": "fauna",
+   "group": "reptamph",
+   "title": "Grasfrosch",
+   "answer": "Grasfrosch",
+   "difficulty": 2,
+   "explanation": "Der Grasfrosch ist der häufigste Froschlurch in Deutschland.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-feuersalamander",
+   "topic": "fauna",
+   "group": "reptamph",
+   "title": "Feuersalamander",
+   "answer": "Feuersalamander",
+   "difficulty": 1,
+   "explanation": "Seine gelb-schwarze Färbung warnt vor seinem giftigen Hautsekret.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-zauneidechse",
+   "topic": "fauna",
+   "group": "reptamph",
+   "title": "Zauneidechse",
+   "answer": "Zauneidechse",
+   "difficulty": 2,
+   "explanation": "Die Männchen sind zur Paarungszeit an den Flanken leuchtend grün.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-ringelnatter",
+   "topic": "fauna",
+   "group": "reptamph",
+   "title": "Ringelnatter",
+   "answer": "Ringelnatter",
+   "difficulty": 2,
+   "explanation": "Ungiftig, erkennbar an den gelben Halbmondflecken am Hinterkopf.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-kreuzotter",
+   "topic": "fauna",
+   "group": "reptamph",
+   "title": "Kreuzotter",
+   "answer": "Kreuzotter",
+   "difficulty": 2,
+   "explanation": "Die Kreuzotter ist eine der wenigen Giftschlangen Deutschlands. Typisch ist ihr Zickzackband.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-blindschleiche",
+   "topic": "fauna",
+   "group": "reptamph",
+   "title": "Blindschleiche",
+   "answer": "Blindschleiche",
+   "difficulty": 3,
+   "explanation": "Die Blindschleiche ist keine Schlange, sondern eine Eidechse ohne Beine.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-hirschkaefer",
+   "topic": "fauna",
+   "group": "insekt",
+   "title": "Hirschkäfer",
+   "answer": "Hirschkäfer",
+   "difficulty": 1,
+   "explanation": "Der Hirschkäfer ist der größte Käfer Europas. Die Männchen haben geweihartige Oberkiefer.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-marienkaefer",
+   "topic": "fauna",
+   "group": "insekt",
+   "title": "Siebenpunkt-Marienkäfer",
+   "answer": "Siebenpunkt-Marienkäfer",
+   "difficulty": 1,
+   "explanation": "Marienkäfer und ihre Larven fressen Blattläuse.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-tagpfauenauge",
+   "topic": "fauna",
+   "group": "insekt",
+   "title": "Tagpfauenauge",
+   "answer": "Tagpfauenauge",
+   "difficulty": 1,
+   "explanation": "Die Augenflecken auf den Flügeln sollen Fressfeinde abschrecken.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-zitronenfalter",
+   "topic": "fauna",
+   "group": "insekt",
+   "title": "Zitronenfalter",
+   "answer": "Zitronenfalter",
+   "difficulty": 2,
+   "explanation": "Der Zitronenfalter überwintert als Falter im Freien und fliegt oft als erster im Frühjahr.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-honigbiene",
+   "topic": "fauna",
+   "group": "insekt",
+   "title": "Westliche Honigbiene",
+   "answer": "Honigbiene",
+   "difficulty": 1,
+   "explanation": "Ein Bienenvolk kann im Sommer 40.000 bis 60.000 Tiere umfassen.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-hornisse",
+   "topic": "fauna",
+   "group": "insekt",
+   "title": "Hornisse",
+   "answer": "Hornisse",
+   "difficulty": 2,
+   "explanation": "Hornissen sind die größten Wespen Mitteleuropas und stehen unter Naturschutz.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-libelle",
+   "topic": "fauna",
+   "group": "insekt",
+   "title": "Blaugrüne Mosaikjungfer",
+   "answer": "Blaugrüne Mosaikjungfer (Libelle)",
+   "difficulty": 3,
+   "explanation": "Eine der häufigsten Großlibellen. Libellenlarven leben mehrere Jahre im Wasser.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-forelle",
+   "topic": "fauna",
+   "group": "fisch",
+   "title": "Bachforelle",
+   "answer": "Bachforelle",
+   "difficulty": 2,
+   "explanation": "Bachforellen brauchen kühles, sauerstoffreiches Wasser. Typisch sind die roten Punkte.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-hecht",
+   "topic": "fauna",
+   "group": "fisch",
+   "title": "Hecht",
+   "answer": "Hecht",
+   "difficulty": 2,
+   "explanation": "Der Hecht ist ein Raubfisch mit entenschnabelartigem Maul.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-karpfen",
+   "topic": "fauna",
+   "group": "fisch",
+   "title": "Karpfen",
+   "answer": "Karpfen",
+   "difficulty": 2,
+   "explanation": "Karpfen werden in Deutschland seit dem Mittelalter in Teichen gezüchtet.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-fauna-barsch",
+   "topic": "fauna",
+   "group": "fisch",
+   "title": "Flussbarsch",
+   "answer": "Flussbarsch",
+   "difficulty": 3,
+   "explanation": "Erkennbar an den dunklen Querstreifen und der stacheligen Rückenflosse.",
+   "prompt": "Welches Tier ist das?"
+  },
+  {
+   "id": "img-flora-buche",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Rotbuche",
+   "answer": "Rotbuche",
+   "difficulty": 1,
+   "explanation": "Die Rotbuche ist der häufigste Laubbaum Deutschlands. Ohne den Menschen wäre sie hier der vorherrschende Baum.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-eiche",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Stieleiche",
+   "answer": "Stieleiche",
+   "difficulty": 1,
+   "explanation": "Die Früchte der Eiche heißen Eicheln. Eichen können über 800 Jahre alt werden.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-fichte",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Gemeine Fichte",
+   "answer": "Fichte",
+   "difficulty": 1,
+   "explanation": "Die Fichte ist einer der häufigsten Bäume in deutschen Wäldern. Ihre Zapfen hängen nach unten.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-kiefer",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Waldkiefer",
+   "answer": "Waldkiefer",
+   "difficulty": 2,
+   "explanation": "Kiefern haben lange Nadeln, die immer zu zweit stehen.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-birke",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Hängebirke",
+   "answer": "Birke",
+   "difficulty": 1,
+   "explanation": "Erkennbar an der weißen Rinde mit schwarzen Rissen.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-ahorn",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Bergahorn",
+   "answer": "Bergahorn",
+   "difficulty": 2,
+   "explanation": "Ahornfrüchte drehen sich beim Fallen wie kleine Propeller.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-linde",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Winterlinde",
+   "answer": "Linde",
+   "difficulty": 2,
+   "explanation": "Linden haben herzförmige Blätter. Viele Dorfplätze hatten früher eine Linde.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-laerche",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Europäische Lärche",
+   "answer": "Lärche",
+   "difficulty": 2,
+   "explanation": "Die Lärche ist der einzige heimische Nadelbaum, der im Herbst seine Nadeln abwirft.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-tanne",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Tannen",
+   "answer": "Tanne",
+   "difficulty": 3,
+   "explanation": "Tannenzapfen stehen aufrecht und zerfallen am Baum. Am Boden findet man fast nur Fichtenzapfen.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-eibe",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Europäische Eibe",
+   "answer": "Eibe",
+   "difficulty": 3,
+   "explanation": "Fast alle Teile der Eibe sind giftig, nur der rote Samenmantel nicht.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-kastanie",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Gewöhnliche Rosskastanie",
+   "answer": "Rosskastanie",
+   "difficulty": 1,
+   "explanation": "Rosskastanien sind für Menschen ungenießbar, anders als die Esskastanie.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-weide",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Silberweide",
+   "answer": "Weide",
+   "difficulty": 2,
+   "explanation": "Weiden wachsen gern an Flüssen. Aus ihrer Rinde wurde früher ein Schmerzmittel gewonnen.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-hasel",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Gemeine Hasel",
+   "answer": "Haselnuss",
+   "difficulty": 2,
+   "explanation": "Die Hasel blüht oft schon im Februar mit gelben Kätzchen.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-esche",
+   "topic": "flora",
+   "group": "baum",
+   "title": "Gemeine Esche",
+   "answer": "Esche",
+   "difficulty": 3,
+   "explanation": "Eschen sind derzeit durch eine Pilzkrankheit, das Eschentriebsterben, stark bedroht.",
+   "prompt": "Welcher Baum ist das?"
+  },
+  {
+   "id": "img-flora-gaensebluemchen",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Gänseblümchen",
+   "answer": "Gänseblümchen",
+   "difficulty": 1,
+   "explanation": "Gänseblümchen blühen fast das ganze Jahr.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-loewenzahn",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Gewöhnlicher Löwenzahn",
+   "answer": "Löwenzahn",
+   "difficulty": 1,
+   "explanation": "Aus der gelben Blüte wird die „Pusteblume“.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-mohn",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Klatschmohn",
+   "answer": "Klatschmohn",
+   "difficulty": 1,
+   "explanation": "Klatschmohn wächst gern an Feldrändern.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-kornblume",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Kornblume",
+   "answer": "Kornblume",
+   "difficulty": 2,
+   "explanation": "Die Kornblume war früher ein typisches Ackerunkraut im Getreide.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-kamille",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Echte Kamille",
+   "answer": "Echte Kamille",
+   "difficulty": 2,
+   "explanation": "Kamillentee wird gegen Entzündungen und Magenbeschwerden getrunken.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-buschwind",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Buschwindröschen",
+   "answer": "Buschwindröschen",
+   "difficulty": 2,
+   "explanation": "Es bildet im Frühjahr weiße Teppiche im Laubwald, bevor die Bäume austreiben.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-maigloeckchen",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Maiglöckchen",
+   "answer": "Maiglöckchen",
+   "difficulty": 1,
+   "explanation": "Maiglöckchen sind giftig und werden leicht mit Bärlauch verwechselt.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-baerlauch",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Bärlauch",
+   "answer": "Bärlauch",
+   "difficulty": 2,
+   "explanation": "Bärlauch riecht stark nach Knoblauch. So lässt er sich vom giftigen Maiglöckchen unterscheiden.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-schneegloeckchen",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Kleines Schneeglöckchen",
+   "answer": "Schneeglöckchen",
+   "difficulty": 1,
+   "explanation": "Schneeglöckchen blühen oft schon im Februar, teils durch den Schnee.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-fingerhut",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Roter Fingerhut",
+   "answer": "Roter Fingerhut",
+   "difficulty": 2,
+   "explanation": "Hochgiftig, aber Grundlage wichtiger Herzmedikamente.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-tollkirsche",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Schwarze Tollkirsche",
+   "answer": "Tollkirsche",
+   "difficulty": 3,
+   "explanation": "Die schwarzen Beeren sind sehr giftig. Schon wenige können für Kinder tödlich sein.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-brennnessel",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Große Brennnessel",
+   "answer": "Brennnessel",
+   "difficulty": 1,
+   "explanation": "Die Brennhaare brechen bei Berührung ab und geben Ameisensäure und Histamin ab.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-heidekraut",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Besenheide",
+   "answer": "Heidekraut (Besenheide)",
+   "difficulty": 2,
+   "explanation": "Die Besenheide färbt im Spätsommer die Lüneburger Heide lila.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-heidelbeere",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Heidelbeere",
+   "answer": "Heidelbeere",
+   "difficulty": 1,
+   "explanation": "Wilde Heidelbeeren färben Mund und Zunge blau, Kulturheidelbeeren kaum.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-edelweiss",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Alpen-Edelweiß",
+   "answer": "Edelweiß",
+   "difficulty": 1,
+   "explanation": "Das Edelweiß wächst in den Alpen und ist streng geschützt.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-enzian",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Enziane",
+   "answer": "Enzian",
+   "difficulty": 2,
+   "explanation": "Enziane sind typische Alpenblumen mit tiefblauen Blüten.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-frauenschuh",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Gelber Frauenschuh",
+   "answer": "Frauenschuh",
+   "difficulty": 3,
+   "explanation": "Der Frauenschuh ist eine der größten heimischen Orchideen und streng geschützt.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-seerose",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Weiße Seerose",
+   "answer": "Seerose",
+   "difficulty": 1,
+   "explanation": "Die Blätter der Seerose schwimmen auf der Wasseroberfläche.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-herbstzeitlose",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Herbstzeitlose",
+   "answer": "Herbstzeitlose",
+   "difficulty": 3,
+   "explanation": "Sehr giftig. Ihre Blätter werden im Frühjahr manchmal mit Bärlauch verwechselt.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-spitzwegerich",
+   "topic": "flora",
+   "group": "blume",
+   "title": "Spitzwegerich",
+   "answer": "Spitzwegerich",
+   "difficulty": 3,
+   "explanation": "Ein altes Hausmittel: Zerriebene Blätter lindern Insektenstiche.",
+   "prompt": "Welche Pflanze ist das?"
+  },
+  {
+   "id": "img-flora-fliegenpilz",
+   "topic": "flora",
+   "group": "pilz",
+   "title": "Fliegenpilz",
+   "answer": "Fliegenpilz",
+   "difficulty": 1,
+   "explanation": "Giftig: roter Hut mit weißen Flocken.",
+   "prompt": "Welcher Pilz ist das?"
+  },
+  {
+   "id": "img-flora-steinpilz",
+   "topic": "flora",
+   "group": "pilz",
+   "title": "Gemeiner Steinpilz",
+   "answer": "Steinpilz",
+   "difficulty": 2,
+   "explanation": "Ein begehrter Speisepilz mit Röhren statt Lamellen unter dem Hut.",
+   "prompt": "Welcher Pilz ist das?"
+  },
+  {
+   "id": "img-flora-pfifferling",
+   "topic": "flora",
+   "group": "pilz",
+   "title": "Echter Pfifferling",
+   "answer": "Pfifferling",
+   "difficulty": 2,
+   "explanation": "Ein beliebter, dottergelber Speisepilz.",
+   "prompt": "Welcher Pilz ist das?"
+  },
+  {
+   "id": "img-flora-knollenblaetter",
+   "topic": "flora",
+   "group": "pilz",
+   "title": "Grüner Knollenblätterpilz",
+   "answer": "Grüner Knollenblätterpilz",
+   "difficulty": 3,
+   "explanation": "Der giftigste Pilz Europas. Er ist für die meisten tödlichen Pilzvergiftungen verantwortlich.",
+   "prompt": "Welcher Pilz ist das?"
+  },
+  {
+   "id": "img-flora-parasol",
+   "topic": "flora",
+   "group": "pilz",
+   "title": "Parasol",
+   "answer": "Parasol",
+   "difficulty": 3,
+   "explanation": "Der Parasol kann einen Hut von über 30 cm Durchmesser haben.",
+   "prompt": "Welcher Pilz ist das?"
+  },
+  {
+   "id": "img-hist-mondlandung",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Apollo 11",
+   "answer": "Mondlandung (Apollo 11), 1969",
+   "difficulty": 1,
+   "explanation": "1969 landeten Neil Armstrong und Buzz Aldrin als erste Menschen auf dem Mond.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-luftbruecke",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Berliner Luftbrücke",
+   "answer": "Berliner Luftbrücke, 1948/49",
+   "difficulty": 1,
+   "explanation": "Die Westalliierten versorgten West-Berlin während der sowjetischen Blockade aus der Luft.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-mauerfall",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Mauerfall",
+   "answer": "Fall der Berliner Mauer, 1989",
+   "difficulty": 1,
+   "explanation": "Am 9. November 1989 öffnete die DDR die Grenze.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-mauerbau",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Berliner Mauer",
+   "answer": "Berliner Mauer (1961–1989)",
+   "difficulty": 1,
+   "explanation": "Die Mauer trennte von 1961 bis 1989 Ost- und West-Berlin.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-17juni",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Aufstand vom 17. Juni 1953",
+   "answer": "Volksaufstand in der DDR, 1953",
+   "difficulty": 2,
+   "explanation": "Sowjetische Panzer schlugen den Aufstand nieder.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-kniefall",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Kniefall von Warschau",
+   "answer": "Kniefall von Warschau, 1970",
+   "difficulty": 2,
+   "explanation": "Willy Brandt kniete vor dem Denkmal für den Aufstand im Warschauer Ghetto.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-reichstagsbrand",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Reichstagsbrand",
+   "answer": "Reichstagsbrand, 1933",
+   "difficulty": 2,
+   "explanation": "Die Nationalsozialisten nutzten den Brand, um Grundrechte außer Kraft zu setzen.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-hindenburg",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "LZ 129 Hindenburg",
+   "answer": "Unglück des Luftschiffs Hindenburg, 1937",
+   "difficulty": 2,
+   "explanation": "Das Luftschiff ging 1937 bei der Landung in Lakehurst (USA) in Flammen auf.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-titanic",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Titanic (Schiff)",
+   "answer": "Die Titanic, 1912",
+   "difficulty": 1,
+   "explanation": "Das damals größte Schiff der Welt sank 1912 auf seiner Jungfernfahrt.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-wright",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Wright Flyer",
+   "answer": "Erster Motorflug der Brüder Wright, 1903",
+   "difficulty": 2,
+   "explanation": "Am 17. Dezember 1903 flog Orville Wright 12 Sekunden lang.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-iwojima",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Raising the Flag on Iwo Jima",
+   "answer": "Flaggenhissung auf Iwojima, 1945",
+   "difficulty": 2,
+   "explanation": "Das Foto von Joe Rosenthal wurde zum Symbol des Pazifikkriegs.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-hiroshima",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Atombombenabwürfe auf Hiroshima und Nagasaki",
+   "answer": "Atombombenabwürfe auf Hiroshima und Nagasaki, 1945",
+   "difficulty": 2,
+   "explanation": "Im August 1945 setzten die USA erstmals Atombomben im Krieg ein.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-migrant",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Migrant Mother",
+   "answer": "„Migrant Mother“, Große Depression in den USA, 1936",
+   "difficulty": 3,
+   "explanation": "Dorothea Langes Foto wurde zum Sinnbild der Weltwirtschaftskrise.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-earthrise",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Earthrise",
+   "answer": "„Earthrise“: Die Erde über dem Mond, 1968",
+   "difficulty": 2,
+   "explanation": "Aufgenommen von der Besatzung von Apollo 8.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-bluemarble",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Blue Marble",
+   "answer": "„Blue Marble“: Die Erde aus dem All, 1972",
+   "difficulty": 2,
+   "explanation": "Aufgenommen von der Besatzung von Apollo 17.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-mlk",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "I Have a Dream",
+   "answer": "„I Have a Dream“-Rede, Washington 1963",
+   "difficulty": 2,
+   "explanation": "Martin Luther King sprach vor über 250.000 Menschen.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-kennedy",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Ich bin ein Berliner",
+   "answer": "Kennedys Rede „Ich bin ein Berliner“, 1963",
+   "difficulty": 2,
+   "explanation": "John F. Kennedy sprach vor dem Schöneberger Rathaus.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-potsdam",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Potsdamer Konferenz",
+   "answer": "Potsdamer Konferenz, 1945",
+   "difficulty": 2,
+   "explanation": "Truman, Stalin und Churchill (später Attlee) berieten über Nachkriegsdeutschland.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-jalta",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Konferenz von Jalta",
+   "answer": "Konferenz von Jalta, 1945",
+   "difficulty": 3,
+   "explanation": "Churchill, Roosevelt und Stalin trafen sich auf der Krim.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-versailles",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Friedensvertrag von Versailles",
+   "answer": "Friedensvertrag von Versailles, 1919",
+   "difficulty": 3,
+   "explanation": "Der Vertrag beendete den Ersten Weltkrieg formell.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-kaiserprokl",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Deutsche Reichsgründung",
+   "answer": "Kaiserproklamation in Versailles, 1871",
+   "difficulty": 2,
+   "explanation": "Gemälde von Anton von Werner: Wilhelm I. wird zum Kaiser ausgerufen.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-freiheit",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Die Freiheit führt das Volk",
+   "answer": "„Die Freiheit führt das Volk“ (Julirevolution 1830)",
+   "difficulty": 2,
+   "explanation": "Gemälde von Eugène Delacroix zur französischen Julirevolution von 1830.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-napoleon-alpen",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Bonaparte beim Überschreiten der Alpen am Großen Sankt Bernhard",
+   "answer": "Napoleon überquert die Alpen, 1800",
+   "difficulty": 2,
+   "explanation": "Gemälde von Jacques-Louis David.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-delaware",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Washington Crossing the Delaware",
+   "answer": "Washington überquert den Delaware, 1776",
+   "difficulty": 3,
+   "explanation": "Gemälde von Emanuel Leutze, einem in Deutschland aufgewachsenen Maler.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-dritte-mai",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Die Erschießung der Aufständischen",
+   "answer": "„Der 3. Mai 1808“ (Goya)",
+   "difficulty": 3,
+   "explanation": "Goya zeigt die Erschießung spanischer Aufständischer durch französische Soldaten.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-thesen",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Thesenanschlag",
+   "answer": "Luthers Thesenanschlag, 1517",
+   "difficulty": 2,
+   "explanation": "Ob Luther die Thesen wirklich an die Tür schlug, ist umstritten. Das Motiv ist aber berühmt.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-bastille",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Sturm auf die Bastille",
+   "answer": "Sturm auf die Bastille, 1789",
+   "difficulty": 1,
+   "explanation": "Der Beginn der Französischen Revolution.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-truemmerfrauen",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Trümmerfrauen",
+   "answer": "Trümmerfrauen nach dem Zweiten Weltkrieg",
+   "difficulty": 2,
+   "explanation": "Frauen räumten in den zerstörten Städten den Schutt beiseite.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-dresden",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Luftangriffe auf Dresden",
+   "answer": "Zerstörtes Dresden, 1945",
+   "difficulty": 2,
+   "explanation": "Im Februar 1945 wurde die Dresdner Innenstadt durch Luftangriffe zerstört.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-gutenbergbibel",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Gutenberg-Bibel",
+   "answer": "Gutenberg-Bibel, um 1454",
+   "difficulty": 2,
+   "explanation": "Das erste große Buch, das mit beweglichen Lettern gedruckt wurde.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-mauer-check",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Checkpoint Charlie",
+   "answer": "Checkpoint Charlie, Berlin",
+   "difficulty": 1,
+   "explanation": "Der bekannteste Grenzübergang zwischen Ost- und West-Berlin.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-einheit",
+   "topic": "bilder",
+   "group": "ereignis",
+   "title": "Deutsche Wiedervereinigung",
+   "answer": "Deutsche Wiedervereinigung, 1990",
+   "difficulty": 2,
+   "explanation": "Am 3. Oktober 1990 trat die DDR der Bundesrepublik bei.",
+   "prompt": "Was zeigt dieses Bild?"
+  },
+  {
+   "id": "img-hist-gagarin",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Juri Alexejewitsch Gagarin",
+   "answer": "Juri Gagarin, erster Mensch im All (1961)",
+   "difficulty": 2,
+   "explanation": "Gagarin umrundete 1961 als erster Mensch die Erde.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-einstein",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Albert Einstein",
+   "answer": "Albert Einstein",
+   "difficulty": 1,
+   "explanation": "Physiker, Begründer der Relativitätstheorie.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-bismarck",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Otto von Bismarck",
+   "answer": "Otto von Bismarck",
+   "difficulty": 1,
+   "explanation": "Erster Reichskanzler des Deutschen Kaiserreichs (1871–1890).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-adenauer",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Konrad Adenauer",
+   "answer": "Konrad Adenauer",
+   "difficulty": 2,
+   "explanation": "Erster Bundeskanzler der Bundesrepublik (1949–1963).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-luther",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Martin Luther",
+   "answer": "Martin Luther",
+   "difficulty": 1,
+   "explanation": "Reformator. Sein Thesenanschlag 1517 gilt als Beginn der Reformation.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-curie",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Marie Curie",
+   "answer": "Marie Curie",
+   "difficulty": 2,
+   "explanation": "Physikerin und Chemikerin, zweifache Nobelpreisträgerin.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-lincoln",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Abraham Lincoln",
+   "answer": "Abraham Lincoln",
+   "difficulty": 2,
+   "explanation": "16. Präsident der USA, schaffte die Sklaverei ab.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  }
+ ]
+}

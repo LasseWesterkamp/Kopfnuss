@@ -1,0 +1,330 @@
+{
+ "topic": "flora",
+ "questions": [
+  {
+   "id": "flora-cent",
+   "source": "https://de.wikipedia.org/wiki/Euromünzen#Deutschland",
+   "difficulty": 2,
+   "prompt": "Welche Pflanze ist auf den deutschen 1-, 2- und 5-Cent-Münzen abgebildet?",
+   "explanation": "Der Eichenzweig knüpft an die alten Pfennigmünzen an.",
+   "correct": "Eichenzweig",
+   "wrong": [
+    "Lindenblatt",
+    "Kornähre",
+    "Buchenzweig"
+   ]
+  },
+  {
+   "id": "flora-laubbaum",
+   "source": "https://de.wikipedia.org/wiki/Rotbuche",
+   "difficulty": 2,
+   "prompt": "Welcher ist der häufigste Laubbaum in Deutschlands Wäldern?",
+   "explanation": "Die Rotbuche macht laut Bundeswaldinventur rund 16 % der Waldfläche aus.",
+   "correct": "Rotbuche",
+   "wrong": [
+    "Stieleiche",
+    "Hängebirke",
+    "Bergahorn"
+   ]
+  },
+  {
+   "id": "flora-jahresringe",
+   "source": "https://de.wikipedia.org/wiki/Jahresring",
+   "difficulty": 1,
+   "prompt": "Woran kann man das Alter eines gefällten Baumes ablesen?",
+   "explanation": "Jedes Jahr bildet sich ein heller (Frühjahr) und ein dunklerer (Spätsommer) Ring.",
+   "correct": "An den Jahresringen",
+   "wrong": [
+    "An der Rindenfarbe",
+    "An der Zahl der Äste",
+    "An der Höhe"
+   ]
+  },
+  {
+   "id": "flora-eisenhut",
+   "source": "https://de.wikipedia.org/wiki/Blauer_Eisenhut",
+   "difficulty": 2,
+   "prompt": "Welche Pflanze gilt als giftigste Pflanze Europas?",
+   "explanation": "Schon geringe Mengen des Gifts Aconitin können tödlich sein, sogar über die Haut.",
+   "correct": "Blauer Eisenhut",
+   "wrong": [
+    "Maiglöckchen",
+    "Löwenzahn",
+    "Brennnessel"
+   ]
+  },
+  {
+   "id": "flora-baerenklau",
+   "source": "https://de.wikipedia.org/wiki/Riesen-Bärenklau",
+   "difficulty": 2,
+   "prompt": "Welche Pflanze kann bei Berührung und Sonnenlicht schwere Hautverbrennungen auslösen?",
+   "explanation": "Der Pflanzensaft macht die Haut lichtempfindlich. Es entstehen Blasen wie bei Verbrennungen.",
+   "correct": "Riesen-Bärenklau",
+   "wrong": [
+    "Brennnessel",
+    "Löwenzahn",
+    "Spitzwegerich"
+   ]
+  },
+  {
+   "id": "flora-kartoffel",
+   "source": "https://de.wikipedia.org/wiki/Kartoffel",
+   "difficulty": 2,
+   "prompt": "Welcher Teil der Kartoffelpflanze ist giftig?",
+   "explanation": "Sie enthalten Solanin. Auch grüne Stellen und Keime an der Knolle sollte man wegschneiden.",
+   "correct": "Die grünen oberirdischen Teile und Beeren",
+   "wrong": [
+    "Nur die Knolle",
+    "Nur die Wurzeln",
+    "Keiner"
+   ]
+  },
+  {
+   "id": "flora-beere",
+   "source": "https://de.wikipedia.org/wiki/Beere",
+   "difficulty": 3,
+   "prompt": "Welche dieser Früchte ist botanisch eine Beere?",
+   "explanation": "Botanisch ist die Banane eine Beere. Die Erdbeere ist eine Sammelnussfrucht, Him- und Brombeere sind Sammelsteinfrüchte.",
+   "correct": "Banane",
+   "wrong": [
+    "Erdbeere",
+    "Himbeere",
+    "Brombeere"
+   ]
+  },
+  {
+   "id": "flora-mistel",
+   "source": "https://de.wikipedia.org/wiki/Laubholz-Mistel",
+   "difficulty": 2,
+   "prompt": "Wie lebt die Mistel?",
+   "explanation": "Die Mistel zapft Wasser und Nährstoffe vom Baum ab, betreibt aber selbst Photosynthese.",
+   "correct": "Als Halbschmarotzer auf Bäumen",
+   "wrong": [
+    "Als Kletterpflanze am Boden",
+    "Als Wasserpflanze",
+    "Als Pilz im Holz"
+   ]
+  },
+  {
+   "id": "flora-sonnentau",
+   "source": "https://de.wikipedia.org/wiki/Sonnentau",
+   "difficulty": 2,
+   "prompt": "Welche heimische Pflanze fängt Insekten?",
+   "explanation": "Der Sonnentau wächst in Mooren und fängt Insekten mit klebrigen Drüsenhaaren.",
+   "correct": "Sonnentau",
+   "wrong": [
+    "Löwenzahn",
+    "Wiesen-Schaumkraut",
+    "Huflattich"
+   ]
+  },
+  {
+   "id": "flora-ginkgo",
+   "source": "https://de.wikipedia.org/wiki/Ginkgo",
+   "difficulty": 2,
+   "prompt": "Welcher Baum wird oft als „lebendes Fossil“ bezeichnet?",
+   "explanation": "Der Ginkgo hat sich seit rund 200 Millionen Jahren kaum verändert. Goethe schrieb ein Gedicht über ihn.",
+   "correct": "Ginkgo",
+   "wrong": [
+    "Eibe",
+    "Linde",
+    "Platane"
+   ]
+  },
+  {
+   "id": "flora-mammut",
+   "source": "https://de.wikipedia.org/wiki/Küstenmammutbaum",
+   "difficulty": 2,
+   "prompt": "Zu welcher Baumgruppe gehören die höchsten Bäume der Welt?",
+   "explanation": "Ein Küstenmammutbaum in Kalifornien ist über 115 m hoch.",
+   "correct": "Mammutbäume",
+   "wrong": [
+    "Eichen",
+    "Eukalyptus",
+    "Kiefern"
+   ]
+  },
+  {
+   "id": "flora-wurzel",
+   "source": "https://de.wikipedia.org/wiki/Wurzel_(Pflanze)",
+   "difficulty": 1,
+   "prompt": "Mit welchem Teil nimmt eine Pflanze vor allem Wasser auf?",
+   "explanation": "Über feine Wurzelhaare gelangen Wasser und Mineralstoffe in die Pflanze.",
+   "correct": "Mit den Wurzeln",
+   "wrong": [
+    "Mit den Blättern",
+    "Mit den Blüten",
+    "Mit der Rinde"
+   ]
+  },
+  {
+   "id": "flora-hopfen",
+   "source": "https://de.wikipedia.org/wiki/Echter_Hopfen",
+   "difficulty": 1,
+   "prompt": "Welche Pflanze wird beim Bierbrauen für die Bitterkeit verwendet?",
+   "explanation": "Die Dolden des Hopfens geben Bier seine Bitterkeit und machen es haltbarer.",
+   "correct": "Hopfen",
+   "wrong": [
+    "Raps",
+    "Lein",
+    "Holunder"
+   ]
+  },
+  {
+   "id": "flora-raps",
+   "source": "https://de.wikipedia.org/wiki/Raps",
+   "difficulty": 1,
+   "prompt": "Welche Pflanze färbt im Frühling viele Felder leuchtend gelb und liefert Speiseöl?",
+   "explanation": "Raps wird für Speiseöl, Tierfutter und Biodiesel angebaut.",
+   "correct": "Raps",
+   "wrong": [
+    "Senf",
+    "Löwenzahn",
+    "Sonnenblume"
+   ]
+  },
+  {
+   "id": "flora-roggen",
+   "source": "https://de.wikipedia.org/wiki/Pumpernickel",
+   "difficulty": 2,
+   "prompt": "Aus welchem Getreide wird klassisches Pumpernickel gebacken?",
+   "explanation": "Pumpernickel aus Westfalen besteht aus Roggenschrot und wird bis zu 24 Stunden gebacken.",
+   "correct": "Roggen",
+   "wrong": [
+    "Weizen",
+    "Dinkel",
+    "Hafer"
+   ]
+  },
+  {
+   "id": "flora-flachs",
+   "source": "https://de.wikipedia.org/wiki/Gemeiner_Lein",
+   "difficulty": 2,
+   "prompt": "Aus welcher Pflanze wird Leinen hergestellt?",
+   "explanation": "Aus den Stängelfasern des Leins wird Leinen gewonnen, aus den Samen Leinöl.",
+   "correct": "Flachs (Lein)",
+   "wrong": [
+    "Baumwolle",
+    "Hanf",
+    "Brennnessel"
+   ]
+  },
+  {
+   "id": "flora-baerlauch-test",
+   "source": "https://de.wikipedia.org/wiki/Bärlauch",
+   "difficulty": 2,
+   "prompt": "Woran erkennt man Bärlauch und kann ihn von giftigen Doppelgängern unterscheiden?",
+   "explanation": "Achtung: Hat man schon Bärlauch an den Fingern, riecht alles danach. Jedes Blatt einzeln prüfen.",
+   "correct": "Am Knoblauchgeruch der Blätter",
+   "wrong": [
+    "An roten Blüten",
+    "An behaarten Blättern",
+    "Am süßen Geschmack"
+   ]
+  },
+  {
+   "id": "flora-myzel",
+   "source": "https://de.wikipedia.org/wiki/Myzel",
+   "difficulty": 3,
+   "prompt": "Wie heißt das eigentliche Pilzgeflecht im Boden?",
+   "explanation": "Der Pilz, den wir sammeln, ist nur der Fruchtkörper. Das Myzel kann riesige Flächen durchziehen.",
+   "correct": "Myzel",
+   "wrong": [
+    "Spore",
+    "Lamelle",
+    "Fruchtkörper"
+   ]
+  },
+  {
+   "id": "flora-sporen",
+   "source": "https://de.wikipedia.org/wiki/Farne",
+   "difficulty": 2,
+   "prompt": "Wie vermehren sich Farne?",
+   "explanation": "Die Sporen sitzen meist in braunen Häufchen auf der Blattunterseite.",
+   "correct": "Durch Sporen",
+   "wrong": [
+    "Durch Samen",
+    "Durch Zwiebeln",
+    "Durch Früchte"
+   ]
+  },
+  {
+   "id": "flora-rose",
+   "source": "https://de.wikipedia.org/wiki/Stachel_(Botanik)",
+   "difficulty": 3,
+   "prompt": "Was haben Rosen botanisch gesehen?",
+   "explanation": "Stacheln sitzen nur auf der Oberfläche und lassen sich abbrechen. Dornen sind umgebildete Pflanzenteile, etwa beim Weißdorn.",
+   "correct": "Stacheln",
+   "wrong": [
+    "Dornen",
+    "Nadeln",
+    "Brennhaare"
+   ]
+  },
+  {
+   "id": "flora-esskastanie",
+   "source": "https://de.wikipedia.org/wiki/Edelkastanie",
+   "difficulty": 1,
+   "prompt": "Welche Kastanie kann man essen?",
+   "explanation": "Esskastanien haben eine stachelige Hülle mit vielen feinen Stacheln. Rosskastanien sind für Menschen ungenießbar.",
+   "correct": "Esskastanie (Marone)",
+   "wrong": [
+    "Rosskastanie",
+    "Beide",
+    "Keine"
+   ]
+  },
+  {
+   "id": "flora-herbstlaub",
+   "source": "https://de.wikipedia.org/wiki/Herbstfärbung",
+   "difficulty": 2,
+   "prompt": "Warum färben sich Blätter im Herbst gelb und rot?",
+   "explanation": "Der Baum holt sich wertvolle Stoffe zurück. Übrig bleiben gelbe und rote Farbstoffe.",
+   "correct": "Der grüne Farbstoff Chlorophyll wird abgebaut",
+   "wrong": [
+    "Die Blätter erfrieren",
+    "Der Regen wäscht die Farbe aus",
+    "Die Blätter nehmen Farbe aus dem Boden auf"
+   ]
+  },
+  {
+   "id": "flora-löwenzahn-name",
+   "source": "https://de.wikipedia.org/wiki/Gewöhnlicher_Löwenzahn",
+   "difficulty": 3,
+   "prompt": "Woher hat der Löwenzahn seinen Namen?",
+   "explanation": "Die tief gezähnten Blätter erinnern an ein Raubtiergebiss.",
+   "correct": "Von den gezackten Blättern",
+   "wrong": [
+    "Von der gelben Mähnen-Blüte",
+    "Von seinem bitteren Geschmack",
+    "Von einem Märchen"
+   ]
+  },
+  {
+   "id": "flora-kirsche",
+   "source": "https://de.wikipedia.org/wiki/Rosengewächse",
+   "difficulty": 2,
+   "prompt": "Welcher Obstbaum gehört zu den Rosengewächsen?",
+   "explanation": "Apfel, Birne, Kirsche, Pflaume und Erdbeere gehören alle zu den Rosengewächsen.",
+   "correct": "Apfelbaum",
+   "wrong": [
+    "Walnussbaum",
+    "Feigenbaum",
+    "Olivenbaum"
+   ]
+  },
+  {
+   "id": "flora-nadelbaum-laerche",
+   "source": "https://de.wikipedia.org/wiki/Europäische_Lärche",
+   "difficulty": 2,
+   "prompt": "Welcher heimische Nadelbaum verliert im Herbst seine Nadeln?",
+   "explanation": "Die Nadeln der Lärche färben sich im Herbst goldgelb und fallen dann ab.",
+   "correct": "Lärche",
+   "wrong": [
+    "Fichte",
+    "Tanne",
+    "Kiefer"
+   ]
+  }
+ ]
+}

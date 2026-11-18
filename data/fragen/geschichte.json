@@ -1,0 +1,848 @@
+{
+ "topic": "geschichte",
+ "questions": [
+  {
+   "id": "hist-adenauer",
+   "source": "https://de.wikipedia.org/wiki/Konrad_Adenauer",
+   "difficulty": 1,
+   "prompt": "Wer war der erste Bundeskanzler der Bundesrepublik Deutschland?",
+   "explanation": "Konrad Adenauer (CDU) war von 1949 bis 1963 Bundeskanzler. Theodor Heuss war der erste Bundespräsident.",
+   "correct": "Konrad Adenauer",
+   "wrong": [
+    "Ludwig Erhard",
+    "Theodor Heuss",
+    "Willy Brandt"
+   ]
+  },
+  {
+   "id": "hist-merkel",
+   "source": "https://de.wikipedia.org/wiki/Angela_Merkel",
+   "difficulty": 1,
+   "prompt": "Wer war die erste Frau im Amt des Bundeskanzlers?",
+   "explanation": "Angela Merkel (CDU) war von 2005 bis 2021 Bundeskanzlerin.",
+   "correct": "Angela Merkel",
+   "wrong": [
+    "Ursula von der Leyen",
+    "Annegret Kramp-Karrenbauer",
+    "Hannelore Kraft"
+   ]
+  },
+  {
+   "id": "hist-kohl",
+   "source": "https://de.wikipedia.org/wiki/Helmut_Kohl",
+   "difficulty": 1,
+   "prompt": "Welcher Bundeskanzler wird als „Kanzler der Einheit“ bezeichnet?",
+   "explanation": "Helmut Kohl (CDU) war von 1982 bis 1998 Kanzler und trieb die Wiedervereinigung 1990 voran.",
+   "correct": "Helmut Kohl",
+   "wrong": [
+    "Helmut Schmidt",
+    "Gerhard Schröder",
+    "Willy Brandt"
+   ]
+  },
+  {
+   "id": "hist-brandt-nobel",
+   "source": "https://de.wikipedia.org/wiki/Willy_Brandt",
+   "difficulty": 2,
+   "prompt": "Welcher Bundeskanzler erhielt 1971 den Friedensnobelpreis?",
+   "explanation": "Willy Brandt erhielt den Preis für seine Entspannungspolitik gegenüber Osteuropa („Neue Ostpolitik“).",
+   "correct": "Willy Brandt",
+   "wrong": [
+    "Helmut Schmidt",
+    "Konrad Adenauer",
+    "Helmut Kohl"
+   ]
+  },
+  {
+   "id": "hist-einheit-datum",
+   "source": "https://de.wikipedia.org/wiki/Tag_der_Deutschen_Einheit",
+   "difficulty": 1,
+   "prompt": "An welchem Datum wird der Tag der Deutschen Einheit gefeiert?",
+   "explanation": "Am 3. Oktober 1990 trat die DDR der Bundesrepublik bei.",
+   "correct": "3. Oktober",
+   "wrong": [
+    "9. November",
+    "17. Juni",
+    "23. Mai"
+   ]
+  },
+  {
+   "id": "hist-schicksalstag",
+   "source": "https://de.wikipedia.org/wiki/9._November_in_der_deutschen_Geschichte",
+   "difficulty": 2,
+   "prompt": "Welches Datum gilt wegen 1918, 1938 und 1989 als „Schicksalstag der Deutschen“?",
+   "explanation": "1918 Ausrufung der Republik, 1938 Novemberpogrome, 1989 Fall der Berliner Mauer.",
+   "correct": "9. November",
+   "wrong": [
+    "3. Oktober",
+    "30. Januar",
+    "20. Juli"
+   ]
+  },
+  {
+   "id": "hist-17juni",
+   "source": "https://de.wikipedia.org/wiki/Aufstand_vom_17._Juni_1953",
+   "difficulty": 2,
+   "prompt": "Woran erinnert der 17. Juni 1953?",
+   "explanation": "Am 17. Juni 1953 protestierten in der DDR Hunderttausende. Sowjetische Panzer schlugen den Aufstand nieder.",
+   "correct": "Volksaufstand in der DDR",
+   "wrong": [
+    "Gründung der DDR",
+    "Bau der Berliner Mauer",
+    "Beginn der Berlin-Blockade"
+   ]
+  },
+  {
+   "id": "hist-luftbruecke",
+   "source": "https://de.wikipedia.org/wiki/Berliner_Luftbrücke",
+   "difficulty": 1,
+   "prompt": "Wie versorgten die Westalliierten West-Berlin während der Blockade 1948/49?",
+   "explanation": "Mit der Berliner Luftbrücke flogen Flugzeuge („Rosinenbomber“) fast ein Jahr lang Lebensmittel und Kohle ein.",
+   "correct": "Über eine Luftbrücke",
+   "wrong": [
+    "Über einen Tunnel",
+    "Über die Elbe per Schiff",
+    "Über einen Korridor durch Polen"
+   ]
+  },
+  {
+   "id": "hist-marshallplan",
+   "source": "https://de.wikipedia.org/wiki/Marshallplan",
+   "difficulty": 2,
+   "prompt": "Was war der Marshallplan?",
+   "explanation": "Mit dem European Recovery Program halfen die USA ab 1948 beim Wiederaufbau Westeuropas.",
+   "correct": "Ein US-Wiederaufbauprogramm für Europa nach 1945",
+   "wrong": [
+    "Ein Plan zur Teilung Deutschlands",
+    "Ein Militärbündnis gegen die Sowjetunion",
+    "Ein Abkommen über Reparationen an Frankreich"
+   ]
+  },
+  {
+   "id": "hist-nuernberg",
+   "source": "https://de.wikipedia.org/wiki/Nürnberger_Prozesse",
+   "difficulty": 1,
+   "prompt": "In welcher Stadt wurden ab 1945 die NS-Hauptkriegsverbrecher vor Gericht gestellt?",
+   "explanation": "Die Nürnberger Prozesse fanden 1945/46 vor einem Internationalen Militärgerichtshof statt.",
+   "correct": "Nürnberg",
+   "wrong": [
+    "Berlin",
+    "München",
+    "Den Haag"
+   ]
+  },
+  {
+   "id": "hist-bismarck",
+   "source": "https://de.wikipedia.org/wiki/Otto_von_Bismarck",
+   "difficulty": 1,
+   "prompt": "Wer war der erste Reichskanzler des Deutschen Kaiserreichs?",
+   "explanation": "Otto von Bismarck war von 1871 bis 1890 Reichskanzler.",
+   "correct": "Otto von Bismarck",
+   "wrong": [
+    "Wilhelm I.",
+    "Bernhard von Bülow",
+    "Paul von Hindenburg"
+   ]
+  },
+  {
+   "id": "hist-versailles-1871",
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Reichsgründung",
+   "difficulty": 2,
+   "prompt": "Wo wurde 1871 das Deutsche Kaiserreich proklamiert?",
+   "explanation": "Am 18. Januar 1871 wurde Wilhelm I. im Spiegelsaal von Versailles zum Deutschen Kaiser ausgerufen.",
+   "correct": "Im Spiegelsaal von Versailles",
+   "wrong": [
+    "In der Frankfurter Paulskirche",
+    "Im Berliner Stadtschloss",
+    "In Schloss Sanssouci"
+   ]
+  },
+  {
+   "id": "hist-paulskirche",
+   "source": "https://de.wikipedia.org/wiki/Frankfurter_Nationalversammlung",
+   "difficulty": 2,
+   "prompt": "Wo tagte 1848/49 das erste frei gewählte gesamtdeutsche Parlament?",
+   "explanation": "Die Frankfurter Nationalversammlung arbeitete in der Paulskirche eine Verfassung aus.",
+   "correct": "Frankfurter Paulskirche",
+   "wrong": [
+    "Berliner Reichstag",
+    "Weimarer Nationaltheater",
+    "Hambacher Schloss"
+   ]
+  },
+  {
+   "id": "hist-weimar-name",
+   "source": "https://de.wikipedia.org/wiki/Weimarer_Republik",
+   "difficulty": 1,
+   "prompt": "Wie heißt die erste parlamentarische Demokratie Deutschlands (1918–1933)?",
+   "explanation": "Benannt nach Weimar, wo 1919 die Nationalversammlung tagte.",
+   "correct": "Weimarer Republik",
+   "wrong": [
+    "Norddeutscher Bund",
+    "Rheinbund",
+    "Bonner Republik"
+   ]
+  },
+  {
+   "id": "hist-ebert",
+   "source": "https://de.wikipedia.org/wiki/Friedrich_Ebert",
+   "difficulty": 2,
+   "prompt": "Wer war der erste Reichspräsident der Weimarer Republik?",
+   "explanation": "Friedrich Ebert (SPD) war von 1919 bis zu seinem Tod 1925 Reichspräsident.",
+   "correct": "Friedrich Ebert",
+   "wrong": [
+    "Paul von Hindenburg",
+    "Gustav Stresemann",
+    "Philipp Scheidemann"
+   ]
+  },
+  {
+   "id": "hist-weisse-rose",
+   "source": "https://de.wikipedia.org/wiki/Weiße_Rose",
+   "difficulty": 1,
+   "prompt": "Zu welcher Widerstandsgruppe gehörten Sophie und Hans Scholl?",
+   "explanation": "Die Weiße Rose verteilte Flugblätter gegen das NS-Regime. Die Geschwister Scholl wurden 1943 hingerichtet.",
+   "correct": "Weiße Rose",
+   "wrong": [
+    "Rote Kapelle",
+    "Kreisauer Kreis",
+    "Edelweißpiraten"
+   ]
+  },
+  {
+   "id": "hist-stauffenberg",
+   "source": "https://de.wikipedia.org/wiki/Attentat_vom_20._Juli_1944",
+   "difficulty": 2,
+   "prompt": "Wer verübte am 20. Juli 1944 das Bombenattentat auf Hitler in der Wolfsschanze?",
+   "explanation": "Stauffenberg platzierte die Bombe. Hitler überlebte, Stauffenberg wurde noch in der Nacht erschossen.",
+   "correct": "Claus Schenk Graf von Stauffenberg",
+   "wrong": [
+    "Georg Elser",
+    "Erwin Rommel",
+    "Henning von Tresckow"
+   ]
+  },
+  {
+   "id": "hist-kriegsende",
+   "source": "https://de.wikipedia.org/wiki/Ende_des_Zweiten_Weltkrieges_in_Europa",
+   "difficulty": 1,
+   "prompt": "An welchem Tag endete der Zweite Weltkrieg in Europa?",
+   "explanation": "Am 8. Mai 1945 trat die bedingungslose Kapitulation der Wehrmacht in Kraft.",
+   "correct": "8. Mai 1945",
+   "wrong": [
+    "1. September 1945",
+    "9. November 1945",
+    "20. April 1945"
+   ]
+  },
+  {
+   "id": "hist-franz-ferdinand",
+   "source": "https://de.wikipedia.org/wiki/Attentat_von_Sarajevo",
+   "difficulty": 2,
+   "prompt": "Wessen Ermordung in Sarajevo löste 1914 den Ersten Weltkrieg aus?",
+   "explanation": "Der österreichisch-ungarische Thronfolger wurde am 28. Juni 1914 erschossen.",
+   "correct": "Erzherzog Franz Ferdinand",
+   "wrong": [
+    "Kaiser Franz Joseph I.",
+    "Zar Nikolaus II.",
+    "Kaiser Wilhelm II."
+   ]
+  },
+  {
+   "id": "hist-arminius",
+   "source": "https://de.wikipedia.org/wiki/Varusschlacht",
+   "difficulty": 2,
+   "prompt": "Welcher germanische Anführer besiegte im Jahr 9 n. Chr. drei römische Legionen?",
+   "explanation": "In der Varusschlacht vernichtete Arminius die Legionen des Varus.",
+   "correct": "Arminius",
+   "wrong": [
+    "Vercingetorix",
+    "Alarich",
+    "Marbod"
+   ]
+  },
+  {
+   "id": "hist-gutenberg",
+   "source": "https://de.wikipedia.org/wiki/Johannes_Gutenberg",
+   "difficulty": 2,
+   "prompt": "In welcher Stadt entwickelte Johannes Gutenberg den Buchdruck mit beweglichen Lettern?",
+   "explanation": "Gutenberg druckte um 1450 in Mainz, darunter die berühmte Gutenberg-Bibel.",
+   "correct": "Mainz",
+   "wrong": [
+    "Augsburg",
+    "Köln",
+    "Nürnberg"
+   ]
+  },
+  {
+   "id": "hist-westfalen",
+   "source": "https://de.wikipedia.org/wiki/Westfälischer_Friede",
+   "difficulty": 2,
+   "prompt": "Welcher Friedensschluss beendete 1648 den Dreißigjährigen Krieg?",
+   "explanation": "Der Westfälische Friede wurde in Münster und Osnabrück ausgehandelt.",
+   "correct": "Westfälischer Friede",
+   "wrong": [
+    "Augsburger Religionsfriede",
+    "Wiener Kongress",
+    "Frieden von Utrecht"
+   ]
+  },
+  {
+   "id": "hist-wiener-kongress",
+   "source": "https://de.wikipedia.org/wiki/Wiener_Kongress",
+   "difficulty": 2,
+   "prompt": "Welche Konferenz ordnete 1814/15 Europa nach Napoleons Niederlage neu?",
+   "explanation": "Unter Leitung des österreichischen Staatskanzlers Metternich wurden die Grenzen neu gezogen.",
+   "correct": "Wiener Kongress",
+   "wrong": [
+    "Berliner Kongress",
+    "Westfälischer Friede",
+    "Konferenz von Jalta"
+   ]
+  },
+  {
+   "id": "hist-waterloo",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Waterloo",
+   "difficulty": 1,
+   "prompt": "In welcher Schlacht wurde Napoleon 1815 endgültig besiegt?",
+   "explanation": "Bei Waterloo im heutigen Belgien siegten Briten und Preußen über Napoleon.",
+   "correct": "Waterloo",
+   "wrong": [
+    "Austerlitz",
+    "Völkerschlacht bei Leipzig",
+    "Jena und Auerstedt"
+   ]
+  },
+  {
+   "id": "hist-bastille",
+   "source": "https://de.wikipedia.org/wiki/Sturm_auf_die_Bastille",
+   "difficulty": 1,
+   "prompt": "Welches Ereignis am 14. Juli 1789 gilt als Beginn der Französischen Revolution?",
+   "explanation": "Der 14. Juli ist heute französischer Nationalfeiertag.",
+   "correct": "Sturm auf die Bastille",
+   "wrong": [
+    "Hinrichtung Ludwigs XVI.",
+    "Krönung Napoleons",
+    "Ballhausschwur"
+   ]
+  },
+  {
+   "id": "hist-magna-carta",
+   "source": "https://de.wikipedia.org/wiki/Magna_Carta",
+   "difficulty": 2,
+   "prompt": "Welches englische Dokument von 1215 beschränkte erstmals die Macht des Königs?",
+   "explanation": "König Johann Ohneland musste die Magna Carta den Baronen zugestehen.",
+   "correct": "Magna Carta",
+   "wrong": [
+    "Bill of Rights",
+    "Habeas Corpus Act",
+    "Domesday Book"
+   ]
+  },
+  {
+   "id": "hist-industrielle-rev",
+   "source": "https://de.wikipedia.org/wiki/Industrielle_Revolution",
+   "difficulty": 1,
+   "prompt": "In welchem Land begann die Industrielle Revolution?",
+   "explanation": "Sie begann in der zweiten Hälfte des 18. Jahrhunderts in England, zum Beispiel mit mechanischen Webstühlen und Dampfmaschinen.",
+   "correct": "Großbritannien",
+   "wrong": [
+    "Deutschland",
+    "Frankreich",
+    "USA"
+   ]
+  },
+  {
+   "id": "hist-cheops",
+   "source": "https://de.wikipedia.org/wiki/Cheops-Pyramide",
+   "difficulty": 2,
+   "prompt": "Welche ist die größte der Pyramiden von Gizeh?",
+   "explanation": "Die Cheops-Pyramide war ursprünglich rund 146 m hoch und gehört zu den Sieben Weltwundern der Antike.",
+   "correct": "Cheops-Pyramide",
+   "wrong": [
+    "Chephren-Pyramide",
+    "Mykerinos-Pyramide",
+    "Djoser-Pyramide"
+   ]
+  },
+  {
+   "id": "hist-kleopatra",
+   "source": "https://de.wikipedia.org/wiki/Kleopatra_VII.",
+   "difficulty": 2,
+   "prompt": "Wer war die letzte Herrscherin des ptolemäischen Ägyptens?",
+   "explanation": "Nach Kleopatras Tod 30 v. Chr. wurde Ägypten römische Provinz.",
+   "correct": "Kleopatra VII.",
+   "wrong": [
+    "Nofretete",
+    "Hatschepsut",
+    "Berenike IV."
+   ]
+  },
+  {
+   "id": "hist-olympia-1896",
+   "source": "https://de.wikipedia.org/wiki/Olympische_Sommerspiele_1896",
+   "difficulty": 2,
+   "prompt": "Wo fanden 1896 die ersten Olympischen Spiele der Neuzeit statt?",
+   "explanation": "Initiator war der Franzose Pierre de Coubertin.",
+   "correct": "Athen",
+   "wrong": [
+    "Paris",
+    "London",
+    "Olympia"
+   ]
+  },
+  {
+   "id": "hist-armstrong",
+   "source": "https://de.wikipedia.org/wiki/Apollo_11",
+   "difficulty": 1,
+   "prompt": "Wer betrat 1969 als erster Mensch den Mond?",
+   "explanation": "Neil Armstrong stieg am 21. Juli 1969 (MEZ) aus der Mondfähre von Apollo 11, Buzz Aldrin folgte kurz darauf.",
+   "correct": "Neil Armstrong",
+   "wrong": [
+    "Buzz Aldrin",
+    "Juri Gagarin",
+    "Michael Collins"
+   ]
+  },
+  {
+   "id": "hist-gagarin",
+   "source": "https://de.wikipedia.org/wiki/Juri_Alexejewitsch_Gagarin",
+   "difficulty": 2,
+   "prompt": "Wer war 1961 der erste Mensch im Weltraum?",
+   "explanation": "Der sowjetische Kosmonaut umrundete am 12. April 1961 einmal die Erde.",
+   "correct": "Juri Gagarin",
+   "wrong": [
+    "Neil Armstrong",
+    "Walentina Tereschkowa",
+    "Alan Shepard"
+   ]
+  },
+  {
+   "id": "hist-mlk",
+   "source": "https://de.wikipedia.org/wiki/I_Have_a_Dream",
+   "difficulty": 1,
+   "prompt": "Wer hielt 1963 in Washington die Rede „I Have a Dream“?",
+   "explanation": "Die Rede wurde zum Symbol der US-Bürgerrechtsbewegung.",
+   "correct": "Martin Luther King",
+   "wrong": [
+    "Malcolm X",
+    "John F. Kennedy",
+    "Barack Obama"
+   ]
+  },
+  {
+   "id": "hist-mandela",
+   "source": "https://de.wikipedia.org/wiki/Nelson_Mandela",
+   "difficulty": 1,
+   "prompt": "Wer wurde 1994 der erste schwarze Präsident Südafrikas?",
+   "explanation": "Mandela saß zuvor 27 Jahre in Haft und erhielt 1993 den Friedensnobelpreis.",
+   "correct": "Nelson Mandela",
+   "wrong": [
+    "Desmond Tutu",
+    "Thabo Mbeki",
+    "Jacob Zuma"
+   ]
+  },
+  {
+   "id": "hist-kubakrise",
+   "source": "https://de.wikipedia.org/wiki/Kubakrise",
+   "difficulty": 2,
+   "prompt": "Welche Krise brachte die Welt 1962 an den Rand eines Atomkriegs?",
+   "explanation": "Die Sowjetunion hatte Atomraketen auf Kuba stationiert. Nach 13 Tagen wurden sie abgezogen.",
+   "correct": "Kubakrise",
+   "wrong": [
+    "Koreakrieg",
+    "Berlin-Blockade",
+    "Suezkrise"
+   ]
+  },
+  {
+   "id": "hist-y-mauerfall",
+   "type": "year",
+   "year": 1989,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Mauerfall",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr fiel die Berliner Mauer?",
+   "explanation": "Am 9. November 1989 wurden die Grenzübergänge in Berlin geöffnet."
+  },
+  {
+   "id": "hist-y-mauerbau",
+   "type": "year",
+   "year": 1961,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Berliner_Mauer",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr wurde die Berliner Mauer gebaut?",
+   "explanation": "Am 13. August 1961 begann die DDR mit dem Bau der Mauer."
+  },
+  {
+   "id": "hist-y-brd",
+   "type": "year",
+   "year": 1949,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Gründung_der_Bundesrepublik_Deutschland",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr wurde die Bundesrepublik Deutschland gegründet?",
+   "explanation": "Am 23. Mai 1949 trat das Grundgesetz in Kraft."
+  },
+  {
+   "id": "hist-y-wk2",
+   "type": "year",
+   "year": 1939,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Zweiter_Weltkrieg",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr begann der Zweite Weltkrieg?",
+   "explanation": "Am 1. September 1939 überfiel Deutschland Polen."
+  },
+  {
+   "id": "hist-y-mond",
+   "type": "year",
+   "year": 1969,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Apollo_11",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr landeten erstmals Menschen auf dem Mond?",
+   "explanation": "Apollo 11 landete im Juli 1969 auf dem Mond."
+  },
+  {
+   "id": "hist-y-euro",
+   "type": "year",
+   "year": 2002,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Euro",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr wurde der Euro als Bargeld eingeführt?",
+   "explanation": "Seit dem 1. Januar 2002 gibt es Euro-Münzen und -Scheine. Als Buchgeld existierte er schon seit 1999."
+  },
+  {
+   "id": "hist-y-tschernobyl",
+   "type": "year",
+   "year": 1986,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Tschernobyl",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr ereignete sich die Reaktorkatastrophe von Tschernobyl?",
+   "explanation": "Am 26. April 1986 explodierte Reaktorblock 4."
+  },
+  {
+   "id": "hist-y-titanic",
+   "type": "year",
+   "year": 1912,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Titanic_(Schiff)",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr sank die Titanic?",
+   "explanation": "Die Titanic sank im April 1912 auf ihrer Jungfernfahrt nach einer Kollision mit einem Eisberg."
+  },
+  {
+   "id": "hist-y-udssr",
+   "type": "year",
+   "year": 1991,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Zerfall_der_Sowjetunion",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr zerfiel die Sowjetunion?",
+   "explanation": "Ende Dezember 1991 löste sich die UdSSR auf."
+  },
+  {
+   "id": "hist-y-911",
+   "type": "year",
+   "year": 2001,
+   "min": 1900,
+   "max": 2025,
+   "source": "https://de.wikipedia.org/wiki/Terroranschläge_am_11._September_2001",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr wurden die Terroranschläge auf das World Trade Center verübt?",
+   "explanation": "Am 11. September 2001 entführten Terroristen vier Flugzeuge."
+  },
+  {
+   "id": "hist-y-frz-rev",
+   "type": "year",
+   "year": 1789,
+   "min": 1600,
+   "max": 1950,
+   "source": "https://de.wikipedia.org/wiki/Französische_Revolution",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr begann die Französische Revolution?",
+   "explanation": "Mit dem Sturm auf die Bastille am 14. Juli 1789."
+  },
+  {
+   "id": "hist-y-usa",
+   "type": "year",
+   "year": 1776,
+   "min": 1600,
+   "max": 1950,
+   "source": "https://de.wikipedia.org/wiki/Unabhängigkeitserklärung_der_Vereinigten_Staaten",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr wurde die Unabhängigkeitserklärung der USA unterzeichnet?",
+   "explanation": "Am 4. Juli 1776, heute Nationalfeiertag der USA."
+  },
+  {
+   "id": "hist-y-reichsgruendung",
+   "type": "year",
+   "year": 1871,
+   "min": 1600,
+   "max": 1950,
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Reichsgründung",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr wurde das Deutsche Kaiserreich gegründet?",
+   "explanation": "Am 18. Januar 1871 in Versailles."
+  },
+  {
+   "id": "hist-y-kolumbus",
+   "type": "year",
+   "year": 1492,
+   "min": 1300,
+   "max": 1800,
+   "source": "https://de.wikipedia.org/wiki/Christoph_Kolumbus",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr erreichte Kolumbus Amerika?",
+   "explanation": "Am 12. Oktober 1492 landete Kolumbus auf einer Insel der Bahamas."
+  },
+  {
+   "id": "hist-y-luther",
+   "type": "year",
+   "year": 1517,
+   "min": 1300,
+   "max": 1800,
+   "source": "https://de.wikipedia.org/wiki/95_Thesen",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr veröffentlichte Martin Luther seine 95 Thesen?",
+   "explanation": "Am 31. Oktober 1517, heute Reformationstag."
+  },
+  {
+   "id": "hist-y-konstantinopel",
+   "type": "year",
+   "year": 1453,
+   "min": 1300,
+   "max": 1800,
+   "source": "https://de.wikipedia.org/wiki/Eroberung_von_Konstantinopel_(1453)",
+   "difficulty": 3,
+   "prompt": "In welchem Jahr eroberten die Osmanen Konstantinopel?",
+   "explanation": "Die Eroberung beendete das Byzantinische Reich."
+  },
+  {
+   "id": "hist-y-karl",
+   "type": "year",
+   "year": 800,
+   "min": 500,
+   "max": 1600,
+   "source": "https://de.wikipedia.org/wiki/Karl_der_Große",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr wurde Karl der Große in Rom zum Kaiser gekrönt?",
+   "explanation": "An Weihnachten 800 krönte ihn Papst Leo III."
+  },
+  {
+   "id": "hist-y-caesar",
+   "type": "year",
+   "year": -44,
+   "min": -500,
+   "max": 500,
+   "source": "https://de.wikipedia.org/wiki/Gaius_Iulius_Caesar",
+   "difficulty": 3,
+   "prompt": "In welchem Jahr wurde Julius Caesar ermordet?",
+   "explanation": "An den Iden des März 44 v. Chr. wurde Caesar im Senat erstochen."
+  },
+  {
+   "id": "hist-o-de20",
+   "type": "order",
+   "items": [
+    {
+     "label": "Gründung des Kaiserreichs",
+     "year": 1871
+    },
+    {
+     "label": "Ausrufung der Weimarer Republik",
+     "year": 1918
+    },
+    {
+     "label": "Gründung der Bundesrepublik",
+     "year": 1949
+    },
+    {
+     "label": "Bau der Berliner Mauer",
+     "year": 1961
+    },
+    {
+     "label": "Fall der Berliner Mauer",
+     "year": 1989
+    }
+   ],
+   "source": "https://de.wikipedia.org/wiki/Geschichte_Deutschlands",
+   "difficulty": 1,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "explanation": "1871, 1918, 1949, 1961, 1989."
+  },
+  {
+   "id": "hist-o-fnz",
+   "type": "order",
+   "items": [
+    {
+     "label": "Kolumbus erreicht Amerika",
+     "year": 1492
+    },
+    {
+     "label": "Luthers 95 Thesen",
+     "year": 1517
+    },
+    {
+     "label": "Beginn des Dreißigjährigen Kriegs",
+     "year": 1618
+    },
+    {
+     "label": "Französische Revolution",
+     "year": 1789
+    }
+   ],
+   "source": "https://de.wikipedia.org/wiki/Frühe_Neuzeit",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "explanation": "1492, 1517, 1618, 1789."
+  },
+  {
+   "id": "hist-o-raumfahrt",
+   "type": "order",
+   "items": [
+    {
+     "label": "Erster Mensch im All",
+     "year": 1961
+    },
+    {
+     "label": "Erste Mondlandung",
+     "year": 1969
+    },
+    {
+     "label": "Fall der Berliner Mauer",
+     "year": 1989
+    },
+    {
+     "label": "Euro-Bargeld eingeführt",
+     "year": 2002
+    }
+   ],
+   "source": "https://de.wikipedia.org/wiki/Zeitgeschichte",
+   "difficulty": 1,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "explanation": "1961, 1969, 1989, 2002."
+  },
+  {
+   "id": "hist-o-mittelalter",
+   "type": "order",
+   "items": [
+    {
+     "label": "Varusschlacht",
+     "year": 9
+    },
+    {
+     "label": "Kaiserkrönung Karls des Großen",
+     "year": 800
+    },
+    {
+     "label": "Magna Carta",
+     "year": 1215
+    },
+    {
+     "label": "Fall Konstantinopels",
+     "year": 1453
+    }
+   ],
+   "source": "https://de.wikipedia.org/wiki/Mittelalter",
+   "difficulty": 3,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "explanation": "9, 800, 1215, 1453."
+  },
+  {
+   "id": "hist-o-19jh",
+   "type": "order",
+   "items": [
+    {
+     "label": "Unabhängigkeitserklärung der USA",
+     "year": 1776
+    },
+    {
+     "label": "Schlacht bei Waterloo",
+     "year": 1815
+    },
+    {
+     "label": "Frankfurter Nationalversammlung",
+     "year": 1848
+    },
+    {
+     "label": "Gründung des Kaiserreichs",
+     "year": 1871
+    }
+   ],
+   "source": "https://de.wikipedia.org/wiki/19._Jahrhundert",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "explanation": "1776, 1815, 1848, 1871."
+  },
+  {
+   "id": "hist-o-weltkriege",
+   "type": "order",
+   "items": [
+    {
+     "label": "Beginn des Ersten Weltkriegs",
+     "year": 1914
+    },
+    {
+     "label": "Hitler wird Reichskanzler",
+     "year": 1933
+    },
+    {
+     "label": "Beginn des Zweiten Weltkriegs",
+     "year": 1939
+    },
+    {
+     "label": "Gründung der Bundesrepublik",
+     "year": 1949
+    }
+   ],
+   "source": "https://de.wikipedia.org/wiki/Zeit_des_Nationalsozialismus",
+   "difficulty": 1,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "explanation": "1914, 1933, 1939, 1949."
+  },
+  {
+   "id": "hist-o-ereignisse",
+   "type": "order",
+   "items": [
+    {
+     "label": "Untergang der Titanic",
+     "year": 1912
+    },
+    {
+     "label": "Kubakrise",
+     "year": 1962
+    },
+    {
+     "label": "Tschernobyl",
+     "year": 1986
+    },
+    {
+     "label": "Zerfall der Sowjetunion",
+     "year": 1991
+    },
+    {
+     "label": "Anschläge vom 11. September",
+     "year": 2001
+    }
+   ],
+   "source": "https://de.wikipedia.org/wiki/Zeitgeschichte",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "explanation": "1912, 1962, 1986, 1991, 2001."
+  }
+ ]
+}

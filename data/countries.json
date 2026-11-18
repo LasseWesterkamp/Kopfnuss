@@ -1,0 +1,3313 @@
+{
+ "asOf": "2026-11-18",
+ "source": "https://www.wikidata.org",
+ "countries": [
+  {
+   "a2": "af",
+   "num": "004",
+   "name": "Afghanistan",
+   "capital": "Kabul",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kabul"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 41454761,
+   "wikidata": "Q889"
+  },
+  {
+   "a2": "eg",
+   "num": "818",
+   "name": "Ägypten",
+   "capital": "Kairo",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Kairo"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 114535772,
+   "wikidata": "Q79"
+  },
+  {
+   "a2": "al",
+   "num": "008",
+   "name": "Albanien",
+   "capital": "Tirana",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Tirana"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 2811655,
+   "wikidata": "Q222"
+  },
+  {
+   "a2": "dz",
+   "num": "012",
+   "name": "Algerien",
+   "capital": "Algier",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Algier"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 46164219,
+   "wikidata": "Q262"
+  },
+  {
+   "a2": "ad",
+   "num": "020",
+   "name": "Andorra",
+   "capital": "Andorra la Vella",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Andorra la Vella"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 89752,
+   "wikidata": "Q228"
+  },
+  {
+   "a2": "ao",
+   "num": "024",
+   "name": "Angola",
+   "capital": "Luanda",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Luanda"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 36749906,
+   "wikidata": "Q916"
+  },
+  {
+   "a2": "ag",
+   "num": "028",
+   "name": "Antigua und Barbuda",
+   "capital": "St. John’s",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 101489,
+   "wikidata": "Q781"
+  },
+  {
+   "a2": "gq",
+   "num": "226",
+   "name": "Äquatorialguinea",
+   "capital": null,
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Ciudad de la Paz"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 1847549,
+   "wikidata": "Q983"
+  },
+  {
+   "a2": "ar",
+   "num": "032",
+   "name": "Argentinien",
+   "capital": "Buenos Aires",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Buenos Aires"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 47327407,
+   "wikidata": "Q414"
+  },
+  {
+   "a2": "am",
+   "num": "051",
+   "name": "Armenien",
+   "capital": "Jerewan",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Jerewan"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 2930450,
+   "wikidata": "Q399"
+  },
+  {
+   "a2": "az",
+   "num": "031",
+   "name": "Aserbaidschan",
+   "capital": "Baku",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Baku"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 10180770,
+   "wikidata": "Q227"
+  },
+  {
+   "a2": "et",
+   "num": "231",
+   "name": "Äthiopien",
+   "capital": "Addis Abeba",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Addis Abeba"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 128691692,
+   "wikidata": "Q115"
+  },
+  {
+   "a2": "au",
+   "num": "036",
+   "name": "Australien",
+   "capital": "Canberra",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Canberra"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 27614411,
+   "wikidata": "Q408"
+  },
+  {
+   "a2": "bs",
+   "num": "044",
+   "name": "Bahamas",
+   "capital": "Nassau",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Nassau"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 399440,
+   "wikidata": "Q778"
+  },
+  {
+   "a2": "bh",
+   "num": "048",
+   "name": "Bahrain",
+   "capital": "Manama",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Manama"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 1569666,
+   "wikidata": "Q398"
+  },
+  {
+   "a2": "bd",
+   "num": "050",
+   "name": "Bangladesch",
+   "capital": "Dhaka",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Dhaka"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 171466990,
+   "wikidata": "Q902"
+  },
+  {
+   "a2": "bb",
+   "num": "052",
+   "name": "Barbados",
+   "capital": "Bridgetown",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bridgetown"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 303431,
+   "wikidata": "Q244"
+  },
+  {
+   "a2": "by",
+   "num": "112",
+   "name": "Belarus",
+   "capital": "Minsk",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Minsk"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 9056080,
+   "wikidata": "Q184"
+  },
+  {
+   "a2": "be",
+   "num": "056",
+   "name": "Belgien",
+   "capital": "Brüssel",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Brüssel"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 11825551,
+   "wikidata": "Q31"
+  },
+  {
+   "a2": "bz",
+   "num": "084",
+   "name": "Belize",
+   "capital": "Belmopan",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Belmopan"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 411106,
+   "wikidata": "Q242"
+  },
+  {
+   "a2": "bj",
+   "num": "204",
+   "name": "Benin",
+   "capital": "Porto-Novo",
+   "capitalNote": "Offizielle Hauptstadt; Regierungssitz ist Cotonou.",
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Cotonou",
+    "Porto-Novo"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 14111034,
+   "wikidata": "Q962"
+  },
+  {
+   "a2": "bt",
+   "num": "064",
+   "name": "Bhutan",
+   "capital": "Thimphu",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Thimphu"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 787424,
+   "wikidata": "Q917"
+  },
+  {
+   "a2": "bo",
+   "num": "068",
+   "name": "Bolivien",
+   "capital": "Sucre",
+   "capitalNote": "Laut Verfassung; Regierungssitz ist La Paz.",
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Sucre",
+    "La Paz"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 12244159,
+   "wikidata": "Q750"
+  },
+  {
+   "a2": "ba",
+   "num": "070",
+   "name": "Bosnien und Herzegowina",
+   "capital": "Sarajevo",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Sarajevo"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 3816459,
+   "wikidata": "Q225"
+  },
+  {
+   "a2": "bw",
+   "num": "072",
+   "name": "Botswana",
+   "capital": "Gaborone",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Gaborone"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 2480244,
+   "wikidata": "Q963"
+  },
+  {
+   "a2": "br",
+   "num": "076",
+   "name": "Brasilien",
+   "capital": "Brasília",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Brasília"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 214211951,
+   "wikidata": "Q155"
+  },
+  {
+   "a2": "bn",
+   "num": "096",
+   "name": "Brunei",
+   "capital": "Bandar Seri Begawan",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bandar Seri Begawan"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 458949,
+   "wikidata": "Q921"
+  },
+  {
+   "a2": "bg",
+   "num": "100",
+   "name": "Bulgarien",
+   "capital": "Sofia",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Sofia"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 6423207,
+   "wikidata": "Q219"
+  },
+  {
+   "a2": "bf",
+   "num": "854",
+   "name": "Burkina Faso",
+   "capital": "Ouagadougou",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Ouagadougou"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 23025776,
+   "wikidata": "Q965"
+  },
+  {
+   "a2": "bi",
+   "num": "108",
+   "name": "Burundi",
+   "capital": "Gitega",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Gitega"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 13689450,
+   "wikidata": "Q967"
+  },
+  {
+   "a2": "cl",
+   "num": "152",
+   "name": "Chile",
+   "capital": "Santiago de Chile",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Santiago de Chile"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 19458000,
+   "wikidata": "Q298"
+  },
+  {
+   "a2": "cn",
+   "num": "156",
+   "name": "China",
+   "capital": "Peking",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Peking"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 1404890000,
+   "wikidata": "Q148"
+  },
+  {
+   "a2": "cr",
+   "num": "188",
+   "name": "Costa Rica",
+   "capital": "San José",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "San José"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 5265575,
+   "wikidata": "Q800"
+  },
+  {
+   "a2": "cd",
+   "num": "180",
+   "name": "Demokratische Republik Kongo",
+   "capital": "Kinshasa",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kinshasa"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 105789731,
+   "wikidata": "Q974"
+  },
+  {
+   "a2": "de",
+   "num": "276",
+   "name": "Deutschland",
+   "capital": "Berlin",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Berlin"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 83467117,
+   "wikidata": "Q183"
+  },
+  {
+   "a2": "dm",
+   "num": "212",
+   "name": "Dominica",
+   "capital": "Roseau",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Roseau"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 74656,
+   "wikidata": "Q784"
+  },
+  {
+   "a2": "do",
+   "num": "214",
+   "name": "Dominikanische Republik",
+   "capital": "Santo Domingo",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Santo Domingo"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 10760028,
+   "wikidata": "Q786"
+  },
+  {
+   "a2": "dj",
+   "num": "262",
+   "name": "Dschibuti",
+   "capital": "Dschibuti",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Dschibuti"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 1152944,
+   "wikidata": "Q977"
+  },
+  {
+   "a2": "ec",
+   "num": "218",
+   "name": "Ecuador",
+   "capital": "Quito",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Quito"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 16938986,
+   "wikidata": "Q736"
+  },
+  {
+   "a2": "sv",
+   "num": "222",
+   "name": "El Salvador",
+   "capital": "San Salvador",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "San Salvador"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 6029976,
+   "wikidata": "Q792"
+  },
+  {
+   "a2": "ci",
+   "num": "384",
+   "name": "Elfenbeinküste",
+   "capital": "Yamoussoukro",
+   "capitalNote": "Offizielle Hauptstadt; Wirtschaftszentrum ist Abidjan.",
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Yamoussoukro"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 31165654,
+   "wikidata": "Q1008"
+  },
+  {
+   "a2": "er",
+   "num": "232",
+   "name": "Eritrea",
+   "capital": "Asmara",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Asmara"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 3497000,
+   "wikidata": "Q986"
+  },
+  {
+   "a2": "ee",
+   "num": "233",
+   "name": "Estland",
+   "capital": "Tallinn",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Tallinn"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 1369995,
+   "wikidata": "Q191"
+  },
+  {
+   "a2": "sz",
+   "num": "748",
+   "name": "Eswatini",
+   "capital": "Mbabane",
+   "capitalNote": "Verwaltungshauptstadt; königliche und legislative Hauptstadt ist Lobamba.",
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Lobamba",
+    "Mbabane"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 1230506,
+   "wikidata": "Q1050"
+  },
+  {
+   "a2": "fj",
+   "num": "242",
+   "name": "Fidschi",
+   "capital": "Suva",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Suva"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 926276,
+   "wikidata": "Q712"
+  },
+  {
+   "a2": "fi",
+   "num": "246",
+   "name": "Finnland",
+   "capital": "Helsinki",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Helsinki"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 5652881,
+   "wikidata": "Q33"
+  },
+  {
+   "a2": "fr",
+   "num": "250",
+   "name": "Frankreich",
+   "capital": "Paris",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Paris"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 68605616,
+   "wikidata": "Q142"
+  },
+  {
+   "a2": "ga",
+   "num": "266",
+   "name": "Gabun",
+   "capital": "Libreville",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Libreville"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 2025137,
+   "wikidata": "Q1000"
+  },
+  {
+   "a2": "gm",
+   "num": "270",
+   "name": "Gambia",
+   "capital": "Banjul",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Banjul"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 2639916,
+   "wikidata": "Q1005"
+  },
+  {
+   "a2": "ge",
+   "num": "268",
+   "name": "Georgien",
+   "capital": "Tiflis",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Tiflis"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 3929581,
+   "wikidata": "Q230"
+  },
+  {
+   "a2": "gh",
+   "num": "288",
+   "name": "Ghana",
+   "capital": "Accra",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Accra"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 32833031,
+   "wikidata": "Q117"
+  },
+  {
+   "a2": "gd",
+   "num": "308",
+   "name": "Grenada",
+   "capital": "St. George’s",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "St. George’s"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 114299,
+   "wikidata": "Q769"
+  },
+  {
+   "a2": "gr",
+   "num": "300",
+   "name": "Griechenland",
+   "capital": "Athen",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Athen"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 10482487,
+   "wikidata": "Q41"
+  },
+  {
+   "a2": "gt",
+   "num": "320",
+   "name": "Guatemala",
+   "capital": "Guatemala-Stadt",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Guatemala-Stadt"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 17263239,
+   "wikidata": "Q774"
+  },
+  {
+   "a2": "gn",
+   "num": "324",
+   "name": "Guinea",
+   "capital": "Conakry",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Conakry"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 17521167,
+   "wikidata": "Q1006"
+  },
+  {
+   "a2": "gw",
+   "num": "624",
+   "name": "Guinea-Bissau",
+   "capital": "Bissau",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bissau"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 1861283,
+   "wikidata": "Q1007"
+  },
+  {
+   "a2": "gy",
+   "num": "328",
+   "name": "Guyana",
+   "capital": "Georgetown",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Georgetown"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 878674,
+   "wikidata": "Q734"
+  },
+  {
+   "a2": "ht",
+   "num": "332",
+   "name": "Haiti",
+   "capital": "Port-au-Prince",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Port-au-Prince"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 10981229,
+   "wikidata": "Q790"
+  },
+  {
+   "a2": "hn",
+   "num": "340",
+   "name": "Honduras",
+   "capital": "Tegucigalpa",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Tegucigalpa"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 8303771,
+   "wikidata": "Q783"
+  },
+  {
+   "a2": "in",
+   "num": "356",
+   "name": "Indien",
+   "capital": "Neu-Delhi",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Neu-Delhi"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 1326093247,
+   "wikidata": "Q668"
+  },
+  {
+   "a2": "id",
+   "num": "360",
+   "name": "Indonesien",
+   "capital": null,
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Nusantara",
+    "Jakarta"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 275439000,
+   "wikidata": "Q252"
+  },
+  {
+   "a2": "iq",
+   "num": "368",
+   "name": "Irak",
+   "capital": "Bagdad",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bagdad"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 38274618,
+   "wikidata": "Q796"
+  },
+  {
+   "a2": "ir",
+   "num": "364",
+   "name": "Iran",
+   "capital": "Teheran",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Teheran"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 92417700,
+   "wikidata": "Q794"
+  },
+  {
+   "a2": "ie",
+   "num": "372",
+   "name": "Irland",
+   "capital": "Dublin",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Dublin"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 5149139,
+   "wikidata": "Q27"
+  },
+  {
+   "a2": "is",
+   "num": "352",
+   "name": "Island",
+   "capital": "Reykjavík",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Reykjavík"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 364260,
+   "wikidata": "Q189"
+  },
+  {
+   "a2": "il",
+   "num": "376",
+   "name": "Israel",
+   "capital": null,
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Tel Aviv-Jaffa",
+    "Jerusalem"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 9840000,
+   "wikidata": "Q801"
+  },
+  {
+   "a2": "it",
+   "num": "380",
+   "name": "Italien",
+   "capital": "Rom",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Rom"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 58850717,
+   "wikidata": "Q38"
+  },
+  {
+   "a2": "jm",
+   "num": "388",
+   "name": "Jamaika",
+   "capital": "Kingston",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kingston"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 2697983,
+   "wikidata": "Q766"
+  },
+  {
+   "a2": "jp",
+   "num": "392",
+   "name": "Japan",
+   "capital": "Tokio",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Tokio"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 123802000,
+   "wikidata": "Q17"
+  },
+  {
+   "a2": "ye",
+   "num": "887",
+   "name": "Jemen",
+   "capital": null,
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Aden",
+    "Sanaa"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 28250420,
+   "wikidata": "Q805"
+  },
+  {
+   "a2": "jo",
+   "num": "400",
+   "name": "Jordanien",
+   "capital": "Amman",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Amman"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 10428241,
+   "wikidata": "Q810"
+  },
+  {
+   "a2": "kh",
+   "num": "116",
+   "name": "Kambodscha",
+   "capital": "Phnom Penh",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Phnom Penh"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 17423880,
+   "wikidata": "Q424"
+  },
+  {
+   "a2": "cm",
+   "num": "120",
+   "name": "Kamerun",
+   "capital": "Yaoundé",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Yaoundé"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 28372687,
+   "wikidata": "Q1009"
+  },
+  {
+   "a2": "ca",
+   "num": "124",
+   "name": "Kanada",
+   "capital": "Ottawa",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Ottawa"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 36991981,
+   "wikidata": "Q16"
+  },
+  {
+   "a2": "cv",
+   "num": "132",
+   "name": "Kap Verde",
+   "capital": "Praia",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Praia"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 555988,
+   "wikidata": "Q1011"
+  },
+  {
+   "a2": "kz",
+   "num": "398",
+   "name": "Kasachstan",
+   "capital": "Astana",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Astana"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Europa",
+    "Asien"
+   ],
+   "population": 20139914,
+   "wikidata": "Q232"
+  },
+  {
+   "a2": "qa",
+   "num": "634",
+   "name": "Katar",
+   "capital": "Doha",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Doha"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 2639211,
+   "wikidata": "Q846"
+  },
+  {
+   "a2": "ke",
+   "num": "404",
+   "name": "Kenia",
+   "capital": "Nairobi",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Nairobi"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 48468138,
+   "wikidata": "Q114"
+  },
+  {
+   "a2": "kg",
+   "num": "417",
+   "name": "Kirgisistan",
+   "capital": "Bischkek",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bischkek"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 7281800,
+   "wikidata": "Q813"
+  },
+  {
+   "a2": "ki",
+   "num": "296",
+   "name": "Kiribati",
+   "capital": "South Tarawa",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "South Tarawa"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 134518,
+   "wikidata": "Q710"
+  },
+  {
+   "a2": "co",
+   "num": "170",
+   "name": "Kolumbien",
+   "capital": "Bogotá",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bogotá"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 52321152,
+   "wikidata": "Q739"
+  },
+  {
+   "a2": "km",
+   "num": "174",
+   "name": "Komoren",
+   "capital": "Moroni",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Moroni"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 902348,
+   "wikidata": "Q970"
+  },
+  {
+   "a2": "hr",
+   "num": "191",
+   "name": "Kroatien",
+   "capital": "Zagreb",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Zagreb"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 3871833,
+   "wikidata": "Q224"
+  },
+  {
+   "a2": "cu",
+   "num": "192",
+   "name": "Kuba",
+   "capital": "Havanna",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Havanna"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 10985974,
+   "wikidata": "Q241"
+  },
+  {
+   "a2": "kw",
+   "num": "414",
+   "name": "Kuwait",
+   "capital": "Kuweit-Stadt",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kuweit-Stadt"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 4464000,
+   "wikidata": "Q817"
+  },
+  {
+   "a2": "la",
+   "num": "418",
+   "name": "Laos",
+   "capital": "Vientiane",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Vientiane"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 6858160,
+   "wikidata": "Q819"
+  },
+  {
+   "a2": "ls",
+   "num": "426",
+   "name": "Lesotho",
+   "capital": "Maseru",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Maseru"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 2007201,
+   "wikidata": "Q1013"
+  },
+  {
+   "a2": "lv",
+   "num": "428",
+   "name": "Lettland",
+   "capital": "Riga",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Riga"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 1845096,
+   "wikidata": "Q211"
+  },
+  {
+   "a2": "lb",
+   "num": "422",
+   "name": "Libanon",
+   "capital": "Beirut",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Beirut"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 6100075,
+   "wikidata": "Q822"
+  },
+  {
+   "a2": "lr",
+   "num": "430",
+   "name": "Liberia",
+   "capital": "Monrovia",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Monrovia"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 5214030,
+   "wikidata": "Q1014"
+  },
+  {
+   "a2": "ly",
+   "num": "434",
+   "name": "Libyen",
+   "capital": "Tripolis",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Tripolis"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 7381023,
+   "wikidata": "Q1016"
+  },
+  {
+   "a2": "li",
+   "num": "438",
+   "name": "Liechtenstein",
+   "capital": "Vaduz",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Vaduz"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 37922,
+   "wikidata": "Q347"
+  },
+  {
+   "a2": "lt",
+   "num": "440",
+   "name": "Litauen",
+   "capital": "Vilnius",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Vilnius"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 2860002,
+   "wikidata": "Q37"
+  },
+  {
+   "a2": "lu",
+   "num": "442",
+   "name": "Luxemburg",
+   "capital": "Luxemburg",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Luxemburg"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 690959,
+   "wikidata": "Q32"
+  },
+  {
+   "a2": "mg",
+   "num": "450",
+   "name": "Madagaskar",
+   "capital": "Antananarivo",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Antananarivo"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 31964956,
+   "wikidata": "Q1019"
+  },
+  {
+   "a2": "mw",
+   "num": "454",
+   "name": "Malawi",
+   "capital": "Lilongwe",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Lilongwe"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 17563749,
+   "wikidata": "Q1020"
+  },
+  {
+   "a2": "my",
+   "num": "458",
+   "name": "Malaysia",
+   "capital": "Kuala Lumpur",
+   "capitalNote": "Offizielle Hauptstadt; Regierungssitz ist Putrajaya.",
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Putrajaya",
+    "Kuala Lumpur"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 34231700,
+   "wikidata": "Q833"
+  },
+  {
+   "a2": "mv",
+   "num": "462",
+   "name": "Malediven",
+   "capital": "Malé",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Malé"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 436330,
+   "wikidata": "Q826"
+  },
+  {
+   "a2": "ml",
+   "num": "466",
+   "name": "Mali",
+   "capital": "Bamako",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bamako"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 22395489,
+   "wikidata": "Q912"
+  },
+  {
+   "a2": "mt",
+   "num": "470",
+   "name": "Malta",
+   "capital": "Valletta",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Valletta"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 553214,
+   "wikidata": "Q233"
+  },
+  {
+   "a2": "ma",
+   "num": "504",
+   "name": "Marokko",
+   "capital": "Rabat",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Rabat"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 36828330,
+   "wikidata": "Q1028"
+  },
+  {
+   "a2": "mh",
+   "num": "584",
+   "name": "Marshallinseln",
+   "capital": "Majuro",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Majuro"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 53127,
+   "wikidata": "Q709"
+  },
+  {
+   "a2": "mr",
+   "num": "478",
+   "name": "Mauretanien",
+   "capital": "Nouakchott",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Nouakchott"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 4736139,
+   "wikidata": "Q1025"
+  },
+  {
+   "a2": "mu",
+   "num": "480",
+   "name": "Mauritius",
+   "capital": "Port Louis",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Port Louis"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 1264613,
+   "wikidata": "Q1027"
+  },
+  {
+   "a2": "mx",
+   "num": "484",
+   "name": "Mexiko",
+   "capital": "Mexiko-Stadt",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Mexiko-Stadt"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 132274416,
+   "wikidata": "Q96"
+  },
+  {
+   "a2": "fm",
+   "num": "583",
+   "name": "Mikronesien",
+   "capital": "Palikir",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Palikir"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 75817,
+   "wikidata": "Q702"
+  },
+  {
+   "a2": "md",
+   "num": "498",
+   "name": "Moldau",
+   "capital": "Kischinau",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kischinau"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 2409207,
+   "wikidata": "Q217"
+  },
+  {
+   "a2": "mc",
+   "num": "492",
+   "name": "Monaco",
+   "capital": "Monaco",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Monaco"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 38857,
+   "wikidata": "Q235"
+  },
+  {
+   "a2": "mn",
+   "num": "496",
+   "name": "Mongolei",
+   "capital": "Ulaanbaatar",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Ulaanbaatar"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 3409939,
+   "wikidata": "Q711"
+  },
+  {
+   "a2": "me",
+   "num": "499",
+   "name": "Montenegro",
+   "capital": "Podgorica",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Podgorica"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 617213,
+   "wikidata": "Q236"
+  },
+  {
+   "a2": "mz",
+   "num": "508",
+   "name": "Mosambik",
+   "capital": "Maputo",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Maputo"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 29668834,
+   "wikidata": "Q1029"
+  },
+  {
+   "a2": "mm",
+   "num": "104",
+   "name": "Myanmar",
+   "capital": "Naypyidaw",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Naypyidaw"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 53370609,
+   "wikidata": "Q836"
+  },
+  {
+   "a2": "na",
+   "num": "516",
+   "name": "Namibia",
+   "capital": "Windhoek",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Windhoek"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 2533794,
+   "wikidata": "Q1030"
+  },
+  {
+   "a2": "nr",
+   "num": "520",
+   "name": "Nauru",
+   "capital": "Yaren",
+   "capitalNote": "Nauru hat keine offizielle Hauptstadt; Yaren ist Regierungssitz.",
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Yaren"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 13650,
+   "wikidata": "Q697"
+  },
+  {
+   "a2": "np",
+   "num": "524",
+   "name": "Nepal",
+   "capital": "Kathmandu",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kathmandu"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 29164578,
+   "wikidata": "Q837"
+  },
+  {
+   "a2": "nz",
+   "num": "554",
+   "name": "Neuseeland",
+   "capital": "Wellington",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Wellington"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 5307800,
+   "wikidata": "Q664"
+  },
+  {
+   "a2": "ni",
+   "num": "558",
+   "name": "Nicaragua",
+   "capital": "Managua",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Managua"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 5142098,
+   "wikidata": "Q811"
+  },
+  {
+   "a2": "nl",
+   "num": "528",
+   "name": "Niederlande",
+   "capital": "Amsterdam",
+   "capitalNote": "Laut Verfassung; Regierungssitz ist Den Haag.",
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Den Haag",
+    "Amsterdam"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 17100715,
+   "wikidata": "Q29999"
+  },
+  {
+   "a2": "ne",
+   "num": "562",
+   "name": "Niger",
+   "capital": "Niamey",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Niamey"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 21477348,
+   "wikidata": "Q1032"
+  },
+  {
+   "a2": "ng",
+   "num": "566",
+   "name": "Nigeria",
+   "capital": "Abuja",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 211400708,
+   "wikidata": "Q1033"
+  },
+  {
+   "a2": "kp",
+   "num": "408",
+   "name": "Nordkorea",
+   "capital": "Pjöngjang",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Pjöngjang"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 26418204,
+   "wikidata": "Q423"
+  },
+  {
+   "a2": "mk",
+   "num": "807",
+   "name": "Nordmazedonien",
+   "capital": "Skopje",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Skopje"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 1836713,
+   "wikidata": "Q221"
+  },
+  {
+   "a2": "no",
+   "num": "578",
+   "name": "Norwegen",
+   "capital": "Oslo",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 5627400,
+   "wikidata": "Q20"
+  },
+  {
+   "a2": "om",
+   "num": "512",
+   "name": "Oman",
+   "capital": "Maskat",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Maskat"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 4829480,
+   "wikidata": "Q842"
+  },
+  {
+   "a2": "at",
+   "num": "040",
+   "name": "Österreich",
+   "capital": "Wien",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Wien"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 8979894,
+   "wikidata": "Q40"
+  },
+  {
+   "a2": "tl",
+   "num": "626",
+   "name": "Osttimor",
+   "capital": "Dili",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Dili"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 1400638,
+   "wikidata": "Q574"
+  },
+  {
+   "a2": "pk",
+   "num": "586",
+   "name": "Pakistan",
+   "capital": "Islamabad",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Islamabad"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 223773700,
+   "wikidata": "Q843"
+  },
+  {
+   "a2": "pw",
+   "num": "585",
+   "name": "Palau",
+   "capital": "Ngerulmud",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Ngerulmud"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 21729,
+   "wikidata": "Q695"
+  },
+  {
+   "a2": "pa",
+   "num": "591",
+   "name": "Panama",
+   "capital": "Panama-Stadt",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Panama-Stadt"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 4570133,
+   "wikidata": "Q804"
+  },
+  {
+   "a2": "pg",
+   "num": "598",
+   "name": "Papua-Neuguinea",
+   "capital": "Port Moresby",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Port Moresby"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 8935000,
+   "wikidata": "Q691"
+  },
+  {
+   "a2": "py",
+   "num": "600",
+   "name": "Paraguay",
+   "capital": "Asunción",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Asunción"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 6811297,
+   "wikidata": "Q733"
+  },
+  {
+   "a2": "pe",
+   "num": "604",
+   "name": "Peru",
+   "capital": "Lima",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Lima"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 34157732,
+   "wikidata": "Q419"
+  },
+  {
+   "a2": "ph",
+   "num": "608",
+   "name": "Philippinen",
+   "capital": "Manila",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Manila"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 112729484,
+   "wikidata": "Q928"
+  },
+  {
+   "a2": "pl",
+   "num": "616",
+   "name": "Polen",
+   "capital": "Warschau",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Warschau"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 37563071,
+   "wikidata": "Q36"
+  },
+  {
+   "a2": "pt",
+   "num": "620",
+   "name": "Portugal",
+   "capital": "Lissabon",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Lissabon"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 10347892,
+   "wikidata": "Q45"
+  },
+  {
+   "a2": "cg",
+   "num": "178",
+   "name": "Republik Kongo",
+   "capital": "Brazzaville",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Brazzaville"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 6142180,
+   "wikidata": "Q971"
+  },
+  {
+   "a2": "rw",
+   "num": "646",
+   "name": "Ruanda",
+   "capital": "Kigali",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kigali"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 14569341,
+   "wikidata": "Q1037"
+  },
+  {
+   "a2": "ro",
+   "num": "642",
+   "name": "Rumänien",
+   "capital": "Bukarest",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bukarest"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 19053815,
+   "wikidata": "Q218"
+  },
+  {
+   "a2": "ru",
+   "num": "643",
+   "name": "Russland",
+   "capital": "Moskau",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Moskau"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa",
+    "Asien",
+    "Eurasien"
+   ],
+   "population": 146119928,
+   "wikidata": "Q159"
+  },
+  {
+   "a2": "sb",
+   "num": "090",
+   "name": "Salomonen",
+   "capital": "Honiara",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Honiara"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 611343,
+   "wikidata": "Q685"
+  },
+  {
+   "a2": "zm",
+   "num": "894",
+   "name": "Sambia",
+   "capital": "Lusaka",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Lusaka"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 19610769,
+   "wikidata": "Q953"
+  },
+  {
+   "a2": "ws",
+   "num": "882",
+   "name": "Samoa",
+   "capital": "Apia",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Apia"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 200010,
+   "wikidata": "Q683"
+  },
+  {
+   "a2": "sm",
+   "num": "674",
+   "name": "San Marino",
+   "capital": "San Marino",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "San Marino"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 34167,
+   "wikidata": "Q238"
+  },
+  {
+   "a2": "st",
+   "num": "678",
+   "name": "São Tomé und Príncipe",
+   "capital": "São Tomé",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "São Tomé"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 204327,
+   "wikidata": "Q1039"
+  },
+  {
+   "a2": "sa",
+   "num": "682",
+   "name": "Saudi-Arabien",
+   "capital": "Riad",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Riad"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 33000000,
+   "wikidata": "Q851"
+  },
+  {
+   "a2": "se",
+   "num": "752",
+   "name": "Schweden",
+   "capital": "Stockholm",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Stockholm"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 10609460,
+   "wikidata": "Q34"
+  },
+  {
+   "a2": "ch",
+   "num": "756",
+   "name": "Schweiz",
+   "capital": "Bern",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bern"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 9104063,
+   "wikidata": "Q39"
+  },
+  {
+   "a2": "sn",
+   "num": "686",
+   "name": "Senegal",
+   "capital": "Dakar",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Dakar"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 16876720,
+   "wikidata": "Q1041"
+  },
+  {
+   "a2": "rs",
+   "num": "688",
+   "name": "Serbien",
+   "capital": "Belgrad",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Belgrad"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 6605168,
+   "wikidata": "Q403"
+  },
+  {
+   "a2": "sc",
+   "num": "690",
+   "name": "Seychellen",
+   "capital": "Victoria",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Victoria"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 119773,
+   "wikidata": "Q1042"
+  },
+  {
+   "a2": "sl",
+   "num": "694",
+   "name": "Sierra Leone",
+   "capital": "Freetown",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Freetown"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 7557212,
+   "wikidata": "Q1044"
+  },
+  {
+   "a2": "zw",
+   "num": "716",
+   "name": "Simbabwe",
+   "capital": "Harare",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Harare"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 15178979,
+   "wikidata": "Q954"
+  },
+  {
+   "a2": "sg",
+   "num": "702",
+   "name": "Singapur",
+   "capital": "Singapur",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Singapur"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 5866139,
+   "wikidata": "Q334"
+  },
+  {
+   "a2": "sk",
+   "num": "703",
+   "name": "Slowakei",
+   "capital": "Bratislava",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bratislava"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 5409407,
+   "wikidata": "Q214"
+  },
+  {
+   "a2": "si",
+   "num": "705",
+   "name": "Slowenien",
+   "capital": "Ljubljana",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Ljubljana"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 2066880,
+   "wikidata": "Q215"
+  },
+  {
+   "a2": "so",
+   "num": "706",
+   "name": "Somalia",
+   "capital": "Mogadischu",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Mogadischu"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 11031386,
+   "wikidata": "Q1045"
+  },
+  {
+   "a2": "es",
+   "num": "724",
+   "name": "Spanien",
+   "capital": "Madrid",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Madrid"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 48592909,
+   "wikidata": "Q29"
+  },
+  {
+   "a2": "lk",
+   "num": "144",
+   "name": "Sri Lanka",
+   "capital": "Sri Jayewardenepura Kotte",
+   "capitalNote": "Offizielle Hauptstadt; größte Stadt und Wirtschaftszentrum ist Colombo.",
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Sri Jayewardenepura Kotte",
+    "Colombo"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 21444000,
+   "wikidata": "Q854"
+  },
+  {
+   "a2": "kn",
+   "num": "659",
+   "name": "St. Kitts und Nevis",
+   "capital": "Basseterre",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Basseterre"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 46922,
+   "wikidata": "Q763"
+  },
+  {
+   "a2": "lc",
+   "num": "662",
+   "name": "St. Lucia",
+   "capital": "Castries",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Castries"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 167591,
+   "wikidata": "Q760"
+  },
+  {
+   "a2": "vc",
+   "num": "670",
+   "name": "St. Vincent und die Grenadinen",
+   "capital": "Kingstown",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kingstown"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 109296,
+   "wikidata": "Q757"
+  },
+  {
+   "a2": "za",
+   "num": "710",
+   "name": "Südafrika",
+   "capital": null,
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bloemfontein",
+    "Pretoria",
+    "Kapstadt"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 62027503,
+   "wikidata": "Q258"
+  },
+  {
+   "a2": "sd",
+   "num": "729",
+   "name": "Sudan",
+   "capital": "Chartum",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Chartum"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 40533330,
+   "wikidata": "Q1049"
+  },
+  {
+   "a2": "kr",
+   "num": "410",
+   "name": "Südkorea",
+   "capital": "Seoul",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Seoul"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 51466201,
+   "wikidata": "Q884"
+  },
+  {
+   "a2": "ss",
+   "num": "728",
+   "name": "Südsudan",
+   "capital": "Juba",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Juba"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 12575714,
+   "wikidata": "Q958"
+  },
+  {
+   "a2": "sr",
+   "num": "740",
+   "name": "Suriname",
+   "capital": "Paramaribo",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Paramaribo"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 563402,
+   "wikidata": "Q730"
+  },
+  {
+   "a2": "sy",
+   "num": "760",
+   "name": "Syrien",
+   "capital": "Damaskus",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Damaskus"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 23865423,
+   "wikidata": "Q858"
+  },
+  {
+   "a2": "tj",
+   "num": "762",
+   "name": "Tadschikistan",
+   "capital": "Duschanbe",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Duschanbe"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 9504000,
+   "wikidata": "Q863"
+  },
+  {
+   "a2": "tw",
+   "num": "158",
+   "name": "Taiwan",
+   "capital": "Taipeh",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Taipeh"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 23262544,
+   "wikidata": "Q865"
+  },
+  {
+   "a2": "tz",
+   "num": "834",
+   "name": "Tansania",
+   "capital": "Dodoma",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Dodoma"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 57310019,
+   "wikidata": "Q924"
+  },
+  {
+   "a2": "th",
+   "num": "764",
+   "name": "Thailand",
+   "capital": "Bangkok",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bangkok"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 66188503,
+   "wikidata": "Q869"
+  },
+  {
+   "a2": "tg",
+   "num": "768",
+   "name": "Togo",
+   "capital": "Lomé",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Lomé"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 7797694,
+   "wikidata": "Q945"
+  },
+  {
+   "a2": "to",
+   "num": "776",
+   "name": "Tonga",
+   "capital": "Nukuʻalofa",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Nukuʻalofa"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 108020,
+   "wikidata": "Q678"
+  },
+  {
+   "a2": "tt",
+   "num": "780",
+   "name": "Trinidad und Tobago",
+   "capital": "Port of Spain",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Port of Spain"
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 1369125,
+   "wikidata": "Q754"
+  },
+  {
+   "a2": "td",
+   "num": "148",
+   "name": "Tschad",
+   "capital": "N’Djamena",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "N’Djamena"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 19319064,
+   "wikidata": "Q657"
+  },
+  {
+   "a2": "cz",
+   "num": "203",
+   "name": "Tschechien",
+   "capital": "Prag",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Prag"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 10909500,
+   "wikidata": "Q213"
+  },
+  {
+   "a2": "tn",
+   "num": "788",
+   "name": "Tunesien",
+   "capital": "Tunis",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Tunis"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 11565204,
+   "wikidata": "Q948"
+  },
+  {
+   "a2": "tr",
+   "num": "792",
+   "name": "Türkei",
+   "capital": "Ankara",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Ankara"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa",
+    "Asien"
+   ],
+   "population": 85372377,
+   "wikidata": "Q43"
+  },
+  {
+   "a2": "tm",
+   "num": "795",
+   "name": "Turkmenistan",
+   "capital": "Aschgabat",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Aşgabat"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 6117933,
+   "wikidata": "Q874"
+  },
+  {
+   "a2": "tv",
+   "num": "798",
+   "name": "Tuvalu",
+   "capital": "Funafuti",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Funafuti"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 10643,
+   "wikidata": "Q672"
+  },
+  {
+   "a2": "ug",
+   "num": "800",
+   "name": "Uganda",
+   "capital": "Kampala",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kampala"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 47123531,
+   "wikidata": "Q1036"
+  },
+  {
+   "a2": "ua",
+   "num": "804",
+   "name": "Ukraine",
+   "capital": "Kiew",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kiew"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 41167335,
+   "wikidata": "Q212"
+  },
+  {
+   "a2": "hu",
+   "num": "348",
+   "name": "Ungarn",
+   "capital": "Budapest",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Budapest"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 9603634,
+   "wikidata": "Q28"
+  },
+  {
+   "a2": "uy",
+   "num": "858",
+   "name": "Uruguay",
+   "capital": "Montevideo",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Montevideo"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 3444263,
+   "wikidata": "Q77"
+  },
+  {
+   "a2": "us",
+   "num": "840",
+   "name": "USA",
+   "capital": "Washington, D.C.",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Washington, D.C."
+   ],
+   "continent": "Nordamerika",
+   "continentsAll": [
+    "Nordamerika"
+   ],
+   "population": 340110988,
+   "wikidata": "Q30"
+  },
+  {
+   "a2": "uz",
+   "num": "860",
+   "name": "Usbekistan",
+   "capital": "Taschkent",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Taschkent"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 34915100,
+   "wikidata": "Q265"
+  },
+  {
+   "a2": "vu",
+   "num": "548",
+   "name": "Vanuatu",
+   "capital": "Port Vila",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Port Vila"
+   ],
+   "continent": "Ozeanien",
+   "continentsAll": [
+    "Ozeanien"
+   ],
+   "population": 300019,
+   "wikidata": "Q686"
+  },
+  {
+   "a2": "va",
+   "num": "336",
+   "name": "Vatikanstadt",
+   "capital": "Vatikanstadt",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Vatikanstadt"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 949,
+   "wikidata": "Q237"
+  },
+  {
+   "a2": "ve",
+   "num": "862",
+   "name": "Venezuela",
+   "capital": "Caracas",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Caracas"
+   ],
+   "continent": "Südamerika",
+   "continentsAll": [
+    "Südamerika"
+   ],
+   "population": 31250306,
+   "wikidata": "Q717"
+  },
+  {
+   "a2": "ae",
+   "num": "784",
+   "name": "Vereinigte Arabische Emirate",
+   "capital": "Abu Dhabi",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Abu Dhabi"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 9890400,
+   "wikidata": "Q878"
+  },
+  {
+   "a2": "gb",
+   "num": "826",
+   "name": "Vereinigtes Königreich",
+   "capital": "London",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "London"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 67326569,
+   "wikidata": "Q145"
+  },
+  {
+   "a2": "vn",
+   "num": "704",
+   "name": "Vietnam",
+   "capital": "Hanoi",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Hanoi"
+   ],
+   "continent": "Asien",
+   "continentsAll": [
+    "Asien"
+   ],
+   "population": 96208984,
+   "wikidata": "Q881"
+  },
+  {
+   "a2": "cf",
+   "num": "140",
+   "name": "Zentralafrikanische Republik",
+   "capital": "Bangui",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Bangui"
+   ],
+   "continent": "Afrika",
+   "continentsAll": [
+    "Afrika"
+   ],
+   "population": 5152421,
+   "wikidata": "Q929"
+  },
+  {
+   "a2": "cy",
+   "num": "196",
+   "name": "Zypern",
+   "capital": "Nikosia",
+   "capitalNote": null,
+   "continentAmbiguous": true,
+   "capitalsAll": [
+    "Nikosia"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 1344976,
+   "wikidata": "Q229"
+  }
+ ]
+}

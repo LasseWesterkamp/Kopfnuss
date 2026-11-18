@@ -1,0 +1,876 @@
+{
+ "topic": "geografie",
+ "questions": [
+  {
+   "id": "geo-fl-rhein-mdg",
+   "source": "https://de.wikipedia.org/wiki/Rhein",
+   "difficulty": 1,
+   "prompt": "In welches Meer mündet der Rhein?",
+   "explanation": "Der Rhein mündet in den Niederlanden in die Nordsee.",
+   "correct": "Nordsee",
+   "wrong": [
+    "Ostsee",
+    "Schwarzes Meer",
+    "Mittelmeer"
+   ]
+  },
+  {
+   "id": "geo-fl-donau-mdg",
+   "source": "https://de.wikipedia.org/wiki/Donau",
+   "difficulty": 1,
+   "prompt": "In welches Meer mündet die Donau?",
+   "explanation": "Die Donau mündet in Rumänien und der Ukraine über ein großes Delta ins Schwarze Meer.",
+   "correct": "Schwarzes Meer",
+   "wrong": [
+    "Nordsee",
+    "Adriatisches Meer",
+    "Ostsee"
+   ]
+  },
+  {
+   "id": "geo-fl-oder-mdg",
+   "source": "https://de.wikipedia.org/wiki/Oder",
+   "difficulty": 2,
+   "prompt": "In welches Meer mündet die Oder?",
+   "explanation": "Die Oder mündet über das Stettiner Haff in die Ostsee.",
+   "correct": "Ostsee",
+   "wrong": [
+    "Nordsee",
+    "Schwarzes Meer",
+    "Atlantik"
+   ]
+  },
+  {
+   "id": "geo-fl-elbe-mdg",
+   "source": "https://de.wikipedia.org/wiki/Elbe",
+   "difficulty": 1,
+   "prompt": "In welches Meer mündet die Elbe?",
+   "explanation": "Die Elbe mündet bei Cuxhaven in die Nordsee.",
+   "correct": "Nordsee",
+   "wrong": [
+    "Ostsee",
+    "Schwarzes Meer",
+    "Mittelmeer"
+   ]
+  },
+  {
+   "id": "geo-fl-laengster-de",
+   "source": "https://de.wikipedia.org/wiki/Liste_der_längsten_Flüsse_in_Deutschland",
+   "difficulty": 2,
+   "prompt": "Welcher Fluss hat die längste Fließstrecke innerhalb Deutschlands?",
+   "explanation": "Der Rhein fließt rund 865 km durch Deutschland. Die Donau ist insgesamt länger, hat in Deutschland aber nur rund 690 km.",
+   "correct": "Rhein",
+   "wrong": [
+    "Donau",
+    "Elbe",
+    "Main"
+   ]
+  },
+  {
+   "id": "geo-fl-laengster-eu",
+   "source": "https://de.wikipedia.org/wiki/Wolga",
+   "difficulty": 2,
+   "prompt": "Welcher Fluss ist der längste Europas?",
+   "explanation": "Die Wolga ist mit rund 3.500 km der längste Fluss Europas und mündet ins Kaspische Meer.",
+   "correct": "Wolga",
+   "wrong": [
+    "Donau",
+    "Rhein",
+    "Dnepr"
+   ]
+  },
+  {
+   "id": "geo-fl-laengster-welt",
+   "source": "https://de.wikipedia.org/wiki/Nil",
+   "difficulty": 1,
+   "prompt": "Welcher Fluss gilt meist als längster Fluss der Welt?",
+   "explanation": "Der Nil gilt meist als längster Fluss der Welt (ca. 6.650 km). Manche Messungen sehen den Amazonas knapp vorn.",
+   "correct": "Nil",
+   "wrong": [
+    "Amazonas",
+    "Jangtsekiang",
+    "Mississippi"
+   ]
+  },
+  {
+   "id": "geo-fl-amazonas",
+   "source": "https://de.wikipedia.org/wiki/Amazonas",
+   "difficulty": 2,
+   "prompt": "Welcher Fluss führt weltweit mit Abstand das meiste Wasser?",
+   "explanation": "Der Amazonas führt mehr Wasser als die nächsten sieben größten Flüsse zusammen.",
+   "correct": "Amazonas",
+   "wrong": [
+    "Nil",
+    "Kongo",
+    "Jangtsekiang"
+   ]
+  },
+  {
+   "id": "geo-fl-jangtse",
+   "source": "https://de.wikipedia.org/wiki/Jangtsekiang",
+   "difficulty": 2,
+   "prompt": "Welcher ist der längste Fluss Asiens?",
+   "explanation": "Der Jangtsekiang in China ist rund 6.300 km lang und damit der längste Fluss Asiens.",
+   "correct": "Jangtsekiang",
+   "wrong": [
+    "Mekong",
+    "Ganges",
+    "Indus"
+   ]
+  },
+  {
+   "id": "geo-fl-donau-hst",
+   "source": "https://de.wikipedia.org/wiki/Donau",
+   "difficulty": 2,
+   "prompt": "Durch welche dieser Hauptstädte fließt die Donau NICHT?",
+   "explanation": "Prag liegt an der Moldau. Die Donau fließt durch Wien, Bratislava, Budapest und Belgrad.",
+   "correct": "Prag",
+   "wrong": [
+    "Wien",
+    "Budapest",
+    "Belgrad"
+   ]
+  },
+  {
+   "id": "geo-fl-prag",
+   "source": "https://de.wikipedia.org/wiki/Moldau_(Fluss)",
+   "difficulty": 1,
+   "prompt": "An welchem Fluss liegt Prag?",
+   "explanation": "Prag liegt an der Moldau, die nördlich der Stadt in die Elbe mündet.",
+   "correct": "Moldau",
+   "wrong": [
+    "Donau",
+    "Elbe",
+    "Weichsel"
+   ]
+  },
+  {
+   "id": "geo-fl-paris",
+   "source": "https://de.wikipedia.org/wiki/Seine",
+   "difficulty": 1,
+   "prompt": "An welchem Fluss liegt Paris?",
+   "explanation": "Paris liegt an der Seine.",
+   "correct": "Seine",
+   "wrong": [
+    "Loire",
+    "Rhone",
+    "Garonne"
+   ]
+  },
+  {
+   "id": "geo-fl-london",
+   "source": "https://de.wikipedia.org/wiki/Themse",
+   "difficulty": 1,
+   "prompt": "An welchem Fluss liegt London?",
+   "explanation": "London liegt an der Themse.",
+   "correct": "Themse",
+   "wrong": [
+    "Severn",
+    "Trent",
+    "Tyne"
+   ]
+  },
+  {
+   "id": "geo-fl-rom",
+   "source": "https://de.wikipedia.org/wiki/Tiber",
+   "difficulty": 2,
+   "prompt": "An welchem Fluss liegt Rom?",
+   "explanation": "Rom liegt am Tiber. Am Arno liegt Florenz, am Po liegt Turin.",
+   "correct": "Tiber",
+   "wrong": [
+    "Po",
+    "Arno",
+    "Etsch"
+   ]
+  },
+  {
+   "id": "geo-fl-warschau",
+   "source": "https://de.wikipedia.org/wiki/Weichsel",
+   "difficulty": 2,
+   "prompt": "An welchem Fluss liegt Warschau?",
+   "explanation": "Warschau liegt an der Weichsel, dem längsten Fluss Polens.",
+   "correct": "Weichsel",
+   "wrong": [
+    "Oder",
+    "Warthe",
+    "Bug"
+   ]
+  },
+  {
+   "id": "geo-fl-lissabon",
+   "source": "https://de.wikipedia.org/wiki/Tejo",
+   "difficulty": 3,
+   "prompt": "An welchem Fluss liegt Lissabon?",
+   "explanation": "Lissabon liegt an der Mündung des Tejo in den Atlantik.",
+   "correct": "Tejo",
+   "wrong": [
+    "Douro",
+    "Guadalquivir",
+    "Ebro"
+   ]
+  },
+  {
+   "id": "geo-fl-bagdad",
+   "source": "https://de.wikipedia.org/wiki/Tigris",
+   "difficulty": 2,
+   "prompt": "An welchem Fluss liegt Bagdad?",
+   "explanation": "Bagdad liegt am Tigris. Euphrat und Tigris umschließen das historische Mesopotamien.",
+   "correct": "Tigris",
+   "wrong": [
+    "Euphrat",
+    "Jordan",
+    "Nil"
+   ]
+  },
+  {
+   "id": "geo-fl-dresden",
+   "source": "https://de.wikipedia.org/wiki/Dresden",
+   "difficulty": 1,
+   "prompt": "An welchem Fluss liegt Dresden?",
+   "explanation": "Dresden liegt an der Elbe.",
+   "correct": "Elbe",
+   "wrong": [
+    "Saale",
+    "Spree",
+    "Oder"
+   ]
+  },
+  {
+   "id": "geo-fl-muenchen",
+   "source": "https://de.wikipedia.org/wiki/Isar",
+   "difficulty": 1,
+   "prompt": "An welchem Fluss liegt München?",
+   "explanation": "München liegt an der Isar.",
+   "correct": "Isar",
+   "wrong": [
+    "Inn",
+    "Lech",
+    "Donau"
+   ]
+  },
+  {
+   "id": "geo-fl-berlin",
+   "source": "https://de.wikipedia.org/wiki/Spree",
+   "difficulty": 1,
+   "prompt": "Welcher Fluss fließt durch das Zentrum Berlins?",
+   "explanation": "Die Spree fließt durch die Berliner Innenstadt und mündet in Spandau in die Havel.",
+   "correct": "Spree",
+   "wrong": [
+    "Havel",
+    "Elbe",
+    "Oder"
+   ]
+  },
+  {
+   "id": "geo-fl-stuttgart",
+   "source": "https://de.wikipedia.org/wiki/Neckar",
+   "difficulty": 2,
+   "prompt": "An welchem Fluss liegt Stuttgart?",
+   "explanation": "Stuttgart liegt am Neckar.",
+   "correct": "Neckar",
+   "wrong": [
+    "Main",
+    "Rhein",
+    "Donau"
+   ]
+  },
+  {
+   "id": "geo-fl-hannover",
+   "source": "https://de.wikipedia.org/wiki/Leine_(Aller)",
+   "difficulty": 2,
+   "prompt": "An welchem Fluss liegt Hannover?",
+   "explanation": "Hannover liegt an der Leine.",
+   "correct": "Leine",
+   "wrong": [
+    "Weser",
+    "Aller",
+    "Ems"
+   ]
+  },
+  {
+   "id": "geo-fl-bremen",
+   "source": "https://de.wikipedia.org/wiki/Weser",
+   "difficulty": 1,
+   "prompt": "An welchem Fluss liegt Bremen?",
+   "explanation": "Bremen liegt an der Weser.",
+   "correct": "Weser",
+   "wrong": [
+    "Elbe",
+    "Ems",
+    "Aller"
+   ]
+  },
+  {
+   "id": "geo-fl-koblenz",
+   "source": "https://de.wikipedia.org/wiki/Deutsches_Eck",
+   "difficulty": 2,
+   "prompt": "Welcher Fluss mündet am Deutschen Eck in Koblenz in den Rhein?",
+   "explanation": "Am Deutschen Eck in Koblenz mündet die Mosel in den Rhein.",
+   "correct": "Mosel",
+   "wrong": [
+    "Main",
+    "Neckar",
+    "Lahn"
+   ]
+  },
+  {
+   "id": "geo-fl-weser-quelle",
+   "source": "https://de.wikipedia.org/wiki/Weser",
+   "difficulty": 3,
+   "prompt": "Aus welchen zwei Flüssen entsteht die Weser?",
+   "explanation": "In Hann. Münden fließen Werra und Fulda zur Weser zusammen.",
+   "correct": "Werra und Fulda",
+   "wrong": [
+    "Brigach und Breg",
+    "Eder und Diemel",
+    "Saale und Unstrut"
+   ]
+  },
+  {
+   "id": "geo-fl-donau-quelle",
+   "source": "https://de.wikipedia.org/wiki/Donau",
+   "difficulty": 3,
+   "prompt": "Welche zwei Quellflüsse bilden die Donau?",
+   "explanation": "„Brigach und Breg bringen die Donau zuweg“: Beide vereinen sich bei Donaueschingen.",
+   "correct": "Brigach und Breg",
+   "wrong": [
+    "Werra und Fulda",
+    "Iller und Lech",
+    "Inn und Ilz"
+   ]
+  },
+  {
+   "id": "geo-fl-passau",
+   "source": "https://de.wikipedia.org/wiki/Passau",
+   "difficulty": 2,
+   "prompt": "Welche Stadt wird „Dreiflüssestadt“ genannt?",
+   "explanation": "In Passau fließen Donau, Inn und Ilz zusammen.",
+   "correct": "Passau",
+   "wrong": [
+    "Koblenz",
+    "Regensburg",
+    "Mannheim"
+   ]
+  },
+  {
+   "id": "geo-fl-rhein-quelle",
+   "source": "https://de.wikipedia.org/wiki/Rhein",
+   "difficulty": 2,
+   "prompt": "In welchem Land entspringt der Rhein?",
+   "explanation": "Der Rhein entspringt in den Schweizer Alpen im Kanton Graubünden.",
+   "correct": "Schweiz",
+   "wrong": [
+    "Österreich",
+    "Deutschland",
+    "Frankreich"
+   ]
+  },
+  {
+   "id": "geo-fl-oder-grenze",
+   "source": "https://de.wikipedia.org/wiki/Oder-Neiße-Grenze",
+   "difficulty": 1,
+   "prompt": "Welcher Fluss bildet einen großen Teil der Grenze zwischen Deutschland und Polen?",
+   "explanation": "Oder und Lausitzer Neiße bilden die deutsch-polnische Grenze (Oder-Neiße-Grenze).",
+   "correct": "Oder",
+   "wrong": [
+    "Elbe",
+    "Weichsel",
+    "Spree"
+   ]
+  },
+  {
+   "id": "geo-fl-ganges",
+   "source": "https://de.wikipedia.org/wiki/Ganges",
+   "difficulty": 2,
+   "prompt": "Welcher Fluss gilt im Hinduismus als heilig?",
+   "explanation": "Der Ganges gilt Hindus als heilig. Viele Gläubige baden zum Beispiel in Varanasi im Fluss.",
+   "correct": "Ganges",
+   "wrong": [
+    "Indus",
+    "Mekong",
+    "Brahmaputra"
+   ]
+  },
+  {
+   "id": "geo-berg-zugspitze",
+   "source": "https://de.wikipedia.org/wiki/Zugspitze",
+   "difficulty": 1,
+   "prompt": "Wie heißt der höchste Berg Deutschlands?",
+   "explanation": "Die Zugspitze im Wettersteingebirge ist 2.962 m hoch.",
+   "correct": "Zugspitze",
+   "wrong": [
+    "Watzmann",
+    "Feldberg",
+    "Brocken"
+   ]
+  },
+  {
+   "id": "geo-berg-brocken",
+   "source": "https://de.wikipedia.org/wiki/Brocken",
+   "difficulty": 2,
+   "prompt": "Welcher ist der höchste Berg im Harz?",
+   "explanation": "Der Brocken ist mit 1.141 m der höchste Berg des Harzes und Norddeutschlands.",
+   "correct": "Brocken",
+   "wrong": [
+    "Wurmberg",
+    "Fichtelberg",
+    "Feldberg"
+   ]
+  },
+  {
+   "id": "geo-berg-feldberg",
+   "source": "https://de.wikipedia.org/wiki/Feldberg_(Schwarzwald)",
+   "difficulty": 2,
+   "prompt": "Welcher ist der höchste Berg im Schwarzwald?",
+   "explanation": "Der Feldberg ist mit 1.493 m der höchste Berg des Schwarzwalds.",
+   "correct": "Feldberg",
+   "wrong": [
+    "Belchen",
+    "Hornisgrinde",
+    "Kandel"
+   ]
+  },
+  {
+   "id": "geo-berg-everest",
+   "source": "https://de.wikipedia.org/wiki/Mount_Everest",
+   "difficulty": 1,
+   "prompt": "Wie heißt der höchste Berg der Erde?",
+   "explanation": "Der Mount Everest im Himalaya ist 8.849 m hoch und liegt an der Grenze von Nepal und China.",
+   "correct": "Mount Everest",
+   "wrong": [
+    "K2",
+    "Kangchendzönga",
+    "Mont Blanc"
+   ]
+  },
+  {
+   "id": "geo-berg-montblanc",
+   "source": "https://de.wikipedia.org/wiki/Mont_Blanc",
+   "difficulty": 2,
+   "prompt": "Welcher ist der höchste Berg der Alpen?",
+   "explanation": "Der Mont Blanc an der Grenze von Frankreich und Italien ist etwa 4.806 m hoch.",
+   "correct": "Mont Blanc",
+   "wrong": [
+    "Matterhorn",
+    "Großglockner",
+    "Zugspitze"
+   ]
+  },
+  {
+   "id": "geo-berg-kili",
+   "source": "https://de.wikipedia.org/wiki/Kilimandscharo",
+   "difficulty": 1,
+   "prompt": "Welcher ist der höchste Berg Afrikas?",
+   "explanation": "Der Kilimandscharo in Tansania ist 5.895 m hoch.",
+   "correct": "Kilimandscharo",
+   "wrong": [
+    "Mount Kenya",
+    "Atlas",
+    "Ruwenzori"
+   ]
+  },
+  {
+   "id": "geo-berg-aconcagua",
+   "source": "https://de.wikipedia.org/wiki/Aconcagua",
+   "difficulty": 3,
+   "prompt": "Welcher ist der höchste Berg Südamerikas?",
+   "explanation": "Der Aconcagua in Argentinien ist mit rund 6.960 m der höchste Berg außerhalb Asiens.",
+   "correct": "Aconcagua",
+   "wrong": [
+    "Chimborazo",
+    "Huascarán",
+    "Ojos del Salado"
+   ]
+  },
+  {
+   "id": "geo-see-mueritz",
+   "source": "https://de.wikipedia.org/wiki/Müritz",
+   "difficulty": 2,
+   "prompt": "Welcher ist der größte See, der vollständig in Deutschland liegt?",
+   "explanation": "Die Müritz in Mecklenburg ist rund 117 km² groß. Der Bodensee ist größer, liegt aber nur teilweise in Deutschland.",
+   "correct": "Müritz",
+   "wrong": [
+    "Chiemsee",
+    "Bodensee",
+    "Starnberger See"
+   ]
+  },
+  {
+   "id": "geo-see-bodensee",
+   "source": "https://de.wikipedia.org/wiki/Bodensee",
+   "difficulty": 1,
+   "prompt": "An welche drei Länder grenzt der Bodensee?",
+   "explanation": "Der Bodensee liegt zwischen Deutschland, Österreich und der Schweiz.",
+   "correct": "Deutschland, Österreich, Schweiz",
+   "wrong": [
+    "Deutschland, Schweiz, Frankreich",
+    "Deutschland, Österreich, Liechtenstein",
+    "Österreich, Schweiz, Italien"
+   ]
+  },
+  {
+   "id": "geo-see-baikal",
+   "source": "https://de.wikipedia.org/wiki/Baikalsee",
+   "difficulty": 2,
+   "prompt": "Welcher ist der tiefste See der Erde?",
+   "explanation": "Der Baikalsee in Sibirien ist bis zu 1.642 m tief und enthält rund ein Fünftel des flüssigen Süßwassers der Erde.",
+   "correct": "Baikalsee",
+   "wrong": [
+    "Tanganjikasee",
+    "Kaspisches Meer",
+    "Lago Maggiore"
+   ]
+  },
+  {
+   "id": "geo-insel-ruegen",
+   "source": "https://de.wikipedia.org/wiki/Rügen",
+   "difficulty": 1,
+   "prompt": "Welche ist die größte Insel Deutschlands?",
+   "explanation": "Rügen in der Ostsee ist mit rund 926 km² die größte deutsche Insel.",
+   "correct": "Rügen",
+   "wrong": [
+    "Usedom",
+    "Sylt",
+    "Fehmarn"
+   ]
+  },
+  {
+   "id": "geo-ozean-pazifik",
+   "source": "https://de.wikipedia.org/wiki/Pazifischer_Ozean",
+   "difficulty": 1,
+   "prompt": "Welcher ist der größte Ozean der Erde?",
+   "explanation": "Der Pazifik bedeckt etwa ein Drittel der Erdoberfläche.",
+   "correct": "Pazifik",
+   "wrong": [
+    "Atlantik",
+    "Indischer Ozean",
+    "Südlicher Ozean"
+   ]
+  },
+  {
+   "id": "geo-wueste-sahara",
+   "source": "https://de.wikipedia.org/wiki/Sahara",
+   "difficulty": 1,
+   "prompt": "Welche ist die größte heiße Wüste der Erde?",
+   "explanation": "Die Sahara in Nordafrika ist die größte heiße Wüste. Rechnet man Kältewüsten mit, ist die Antarktis größer.",
+   "correct": "Sahara",
+   "wrong": [
+    "Gobi",
+    "Kalahari",
+    "Atacama"
+   ]
+  },
+  {
+   "id": "geo-meerenge-gibraltar",
+   "source": "https://de.wikipedia.org/wiki/Straße_von_Gibraltar",
+   "difficulty": 2,
+   "prompt": "Welche Meerenge trennt Europa und Afrika zwischen Spanien und Marokko?",
+   "explanation": "Die Straße von Gibraltar ist an der engsten Stelle nur etwa 14 km breit.",
+   "correct": "Straße von Gibraltar",
+   "wrong": [
+    "Bosporus",
+    "Ärmelkanal",
+    "Straße von Messina"
+   ]
+  },
+  {
+   "id": "geo-meerenge-bosporus",
+   "source": "https://de.wikipedia.org/wiki/Bosporus",
+   "difficulty": 2,
+   "prompt": "Welche Meerenge teilt Istanbul in einen europäischen und einen asiatischen Teil?",
+   "explanation": "Der Bosporus verbindet das Schwarze Meer mit dem Marmarameer.",
+   "correct": "Bosporus",
+   "wrong": [
+    "Dardanellen",
+    "Straße von Gibraltar",
+    "Suezkanal"
+   ]
+  },
+  {
+   "id": "geo-de-nachbarn",
+   "source": "https://de.wikipedia.org/wiki/Deutschland",
+   "difficulty": 2,
+   "prompt": "Wie viele Nachbarländer hat Deutschland?",
+   "explanation": "Dänemark, Polen, Tschechien, Österreich, Schweiz, Frankreich, Luxemburg, Belgien und die Niederlande.",
+   "correct": "9",
+   "wrong": [
+    "7",
+    "8",
+    "10"
+   ]
+  },
+  {
+   "id": "geo-de-nachbar-nicht",
+   "source": "https://de.wikipedia.org/wiki/Deutschland",
+   "difficulty": 2,
+   "prompt": "Welches dieser Länder grenzt NICHT an Deutschland?",
+   "explanation": "Italien grenzt nicht an Deutschland. Dazwischen liegen Österreich und die Schweiz.",
+   "correct": "Italien",
+   "wrong": [
+    "Luxemburg",
+    "Tschechien",
+    "Dänemark"
+   ]
+  },
+  {
+   "id": "geo-de-bl-anzahl",
+   "source": "https://de.wikipedia.org/wiki/Land_(Deutschland)",
+   "difficulty": 1,
+   "prompt": "Aus wie vielen Bundesländern besteht Deutschland?",
+   "explanation": "Deutschland hat 16 Bundesländer, darunter die drei Stadtstaaten Berlin, Hamburg und Bremen.",
+   "correct": "16",
+   "wrong": [
+    "12",
+    "14",
+    "18"
+   ]
+  },
+  {
+   "id": "geo-de-bl-groesste",
+   "source": "https://de.wikipedia.org/wiki/Bayern",
+   "difficulty": 1,
+   "prompt": "Welches ist das flächengrößte Bundesland?",
+   "explanation": "Bayern ist mit rund 70.500 km² das größte Bundesland.",
+   "correct": "Bayern",
+   "wrong": [
+    "Niedersachsen",
+    "Baden-Württemberg",
+    "Nordrhein-Westfalen"
+   ]
+  },
+  {
+   "id": "geo-de-bl-einwohner",
+   "source": "https://de.wikipedia.org/wiki/Nordrhein-Westfalen",
+   "difficulty": 1,
+   "prompt": "Welches Bundesland hat die meisten Einwohner?",
+   "explanation": "In NRW leben rund 18 Millionen Menschen.",
+   "correct": "Nordrhein-Westfalen",
+   "wrong": [
+    "Bayern",
+    "Baden-Württemberg",
+    "Niedersachsen"
+   ]
+  },
+  {
+   "id": "geo-de-bl-kleinste",
+   "source": "https://de.wikipedia.org/wiki/Freie_Hansestadt_Bremen",
+   "difficulty": 2,
+   "prompt": "Welches ist das flächenkleinste Bundesland?",
+   "explanation": "Bremen (mit Bremerhaven) ist mit rund 420 km² das kleinste Bundesland.",
+   "correct": "Bremen",
+   "wrong": [
+    "Hamburg",
+    "Berlin",
+    "Saarland"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-bw",
+   "source": "https://de.wikipedia.org/wiki/Baden-Württemberg",
+   "difficulty": 1,
+   "prompt": "Was ist die Landeshauptstadt von Baden-Württemberg?",
+   "explanation": "Die Landeshauptstadt von Baden-Württemberg ist Stuttgart.",
+   "correct": "Stuttgart",
+   "wrong": [
+    "Karlsruhe",
+    "Mannheim",
+    "Freiburg im Breisgau"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-by",
+   "source": "https://de.wikipedia.org/wiki/Bayern",
+   "difficulty": 1,
+   "prompt": "Was ist die Landeshauptstadt von Bayern?",
+   "explanation": "Die Landeshauptstadt von Bayern ist München.",
+   "correct": "München",
+   "wrong": [
+    "Nürnberg",
+    "Augsburg",
+    "Regensburg"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-bb",
+   "source": "https://de.wikipedia.org/wiki/Brandenburg",
+   "difficulty": 2,
+   "prompt": "Was ist die Landeshauptstadt von Brandenburg?",
+   "explanation": "Die Landeshauptstadt von Brandenburg ist Potsdam.",
+   "correct": "Potsdam",
+   "wrong": [
+    "Cottbus",
+    "Frankfurt (Oder)",
+    "Brandenburg an der Havel"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-he",
+   "source": "https://de.wikipedia.org/wiki/Hessen",
+   "difficulty": 2,
+   "prompt": "Was ist die Landeshauptstadt von Hessen?",
+   "explanation": "Die Landeshauptstadt von Hessen ist Wiesbaden.",
+   "correct": "Wiesbaden",
+   "wrong": [
+    "Frankfurt am Main",
+    "Kassel",
+    "Darmstadt"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-mv",
+   "source": "https://de.wikipedia.org/wiki/Mecklenburg-Vorpommern",
+   "difficulty": 2,
+   "prompt": "Was ist die Landeshauptstadt von Mecklenburg-Vorpommern?",
+   "explanation": "Die Landeshauptstadt von Mecklenburg-Vorpommern ist Schwerin.",
+   "correct": "Schwerin",
+   "wrong": [
+    "Rostock",
+    "Greifswald",
+    "Stralsund"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-ni",
+   "source": "https://de.wikipedia.org/wiki/Niedersachsen",
+   "difficulty": 1,
+   "prompt": "Was ist die Landeshauptstadt von Niedersachsen?",
+   "explanation": "Die Landeshauptstadt von Niedersachsen ist Hannover.",
+   "correct": "Hannover",
+   "wrong": [
+    "Braunschweig",
+    "Oldenburg",
+    "Osnabrück"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-nw",
+   "source": "https://de.wikipedia.org/wiki/Nordrhein-Westfalen",
+   "difficulty": 1,
+   "prompt": "Was ist die Landeshauptstadt von Nordrhein-Westfalen?",
+   "explanation": "Die Landeshauptstadt von Nordrhein-Westfalen ist Düsseldorf.",
+   "correct": "Düsseldorf",
+   "wrong": [
+    "Köln",
+    "Dortmund",
+    "Bonn"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-rp",
+   "source": "https://de.wikipedia.org/wiki/Rheinland-Pfalz",
+   "difficulty": 2,
+   "prompt": "Was ist die Landeshauptstadt von Rheinland-Pfalz?",
+   "explanation": "Die Landeshauptstadt von Rheinland-Pfalz ist Mainz.",
+   "correct": "Mainz",
+   "wrong": [
+    "Koblenz",
+    "Trier",
+    "Ludwigshafen am Rhein"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-sl",
+   "source": "https://de.wikipedia.org/wiki/Saarland",
+   "difficulty": 2,
+   "prompt": "Was ist die Landeshauptstadt von Saarland?",
+   "explanation": "Die Landeshauptstadt von Saarland ist Saarbrücken.",
+   "correct": "Saarbrücken",
+   "wrong": [
+    "Saarlouis",
+    "Neunkirchen",
+    "Homburg"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-sn",
+   "source": "https://de.wikipedia.org/wiki/Sachsen",
+   "difficulty": 1,
+   "prompt": "Was ist die Landeshauptstadt von Sachsen?",
+   "explanation": "Die Landeshauptstadt von Sachsen ist Dresden.",
+   "correct": "Dresden",
+   "wrong": [
+    "Leipzig",
+    "Chemnitz",
+    "Zwickau"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-st",
+   "source": "https://de.wikipedia.org/wiki/Sachsen-Anhalt",
+   "difficulty": 2,
+   "prompt": "Was ist die Landeshauptstadt von Sachsen-Anhalt?",
+   "explanation": "Die Landeshauptstadt von Sachsen-Anhalt ist Magdeburg.",
+   "correct": "Magdeburg",
+   "wrong": [
+    "Halle (Saale)",
+    "Dessau-Roßlau",
+    "Lutherstadt Wittenberg"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-sh",
+   "source": "https://de.wikipedia.org/wiki/Schleswig-Holstein",
+   "difficulty": 1,
+   "prompt": "Was ist die Landeshauptstadt von Schleswig-Holstein?",
+   "explanation": "Die Landeshauptstadt von Schleswig-Holstein ist Kiel.",
+   "correct": "Kiel",
+   "wrong": [
+    "Lübeck",
+    "Flensburg",
+    "Neumünster"
+   ]
+  },
+  {
+   "id": "geo-de-lhs-th",
+   "source": "https://de.wikipedia.org/wiki/Thüringen",
+   "difficulty": 2,
+   "prompt": "Was ist die Landeshauptstadt von Thüringen?",
+   "explanation": "Die Landeshauptstadt von Thüringen ist Erfurt.",
+   "correct": "Erfurt",
+   "wrong": [
+    "Jena",
+    "Weimar",
+    "Gera"
+   ]
+  },
+  {
+   "id": "geo-welt-groesstes-land",
+   "source": "https://de.wikipedia.org/wiki/Russland",
+   "difficulty": 1,
+   "prompt": "Welches ist das flächengrößte Land der Erde?",
+   "explanation": "Russland ist mit rund 17,1 Mio. km² fast doppelt so groß wie Kanada.",
+   "correct": "Russland",
+   "wrong": [
+    "Kanada",
+    "China",
+    "USA"
+   ]
+  },
+  {
+   "id": "geo-welt-kleinstes-land",
+   "source": "https://de.wikipedia.org/wiki/Vatikanstadt",
+   "difficulty": 1,
+   "prompt": "Welches ist der kleinste Staat der Erde?",
+   "explanation": "Die Vatikanstadt ist nur rund 0,44 km² groß.",
+   "correct": "Vatikanstadt",
+   "wrong": [
+    "Monaco",
+    "San Marino",
+    "Liechtenstein"
+   ]
+  },
+  {
+   "id": "geo-welt-bevoelkerung",
+   "source": "https://de.wikipedia.org/wiki/Indien",
+   "difficulty": 2,
+   "prompt": "Welches Land hat seit 2023 die meisten Einwohner?",
+   "explanation": "Laut UN-Schätzungen hat Indien China 2023 als bevölkerungsreichstes Land überholt.",
+   "correct": "Indien",
+   "wrong": [
+    "China",
+    "USA",
+    "Indonesien"
+   ]
+  }
+ ]
+}

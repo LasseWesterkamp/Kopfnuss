@@ -1,0 +1,343 @@
+{
+ "topic": "fauna",
+ "questions": [
+  {
+   "id": "fauna-wappentier",
+   "source": "https://de.wikipedia.org/wiki/Bundesadler",
+   "difficulty": 1,
+   "prompt": "Welches Tier ist das Wappentier der Bundesrepublik Deutschland?",
+   "explanation": "Der Bundesadler ist das Wappentier Deutschlands.",
+   "correct": "Adler",
+   "wrong": [
+    "Löwe",
+    "Bär",
+    "Hirsch"
+   ]
+  },
+  {
+   "id": "fauna-kuckuck",
+   "source": "https://de.wikipedia.org/wiki/Kuckuck",
+   "difficulty": 1,
+   "prompt": "Welcher Vogel legt seine Eier in die Nester anderer Vögel?",
+   "explanation": "Der Kuckuck ist ein Brutparasit. Die Wirtsvögel ziehen sein Junges groß.",
+   "correct": "Kuckuck",
+   "wrong": [
+    "Elster",
+    "Star",
+    "Eichelhäher"
+   ]
+  },
+  {
+   "id": "fauna-winterschlaf",
+   "source": "https://de.wikipedia.org/wiki/Winterschlaf",
+   "difficulty": 2,
+   "prompt": "Welches dieser Tiere hält einen echten Winterschlaf?",
+   "explanation": "Igel senken Körpertemperatur und Herzschlag stark ab. Eichhörnchen, Dachse und Bären halten nur Winterruhe und wachen öfter auf.",
+   "correct": "Igel",
+   "wrong": [
+    "Eichhörnchen",
+    "Dachs",
+    "Braunbär"
+   ]
+  },
+  {
+   "id": "fauna-frischling",
+   "source": "https://de.wikipedia.org/wiki/Wildschwein",
+   "difficulty": 1,
+   "prompt": "Wie nennt man ein junges Wildschwein?",
+   "explanation": "Frischlinge haben ein gestreiftes Fell, das sie im Unterholz tarnt.",
+   "correct": "Frischling",
+   "wrong": [
+    "Kitz",
+    "Welpe",
+    "Ferkling"
+   ]
+  },
+  {
+   "id": "fauna-bache",
+   "source": "https://de.wikipedia.org/wiki/Wildschwein",
+   "difficulty": 2,
+   "prompt": "Wie heißt ein weibliches Wildschwein?",
+   "explanation": "Das Weibchen heißt Bache, das Männchen Keiler.",
+   "correct": "Bache",
+   "wrong": [
+    "Ricke",
+    "Fähe",
+    "Sau"
+   ]
+  },
+  {
+   "id": "fauna-ricke",
+   "source": "https://de.wikipedia.org/wiki/Reh",
+   "difficulty": 2,
+   "prompt": "Wie heißt ein weibliches Reh?",
+   "explanation": "Das weibliche Reh heißt Ricke oder Geiß, das männliche Rehbock.",
+   "correct": "Ricke",
+   "wrong": [
+    "Bache",
+    "Hindin",
+    "Fähe"
+   ]
+  },
+  {
+   "id": "fauna-faehe",
+   "source": "https://de.wikipedia.org/wiki/Rotfuchs",
+   "difficulty": 3,
+   "prompt": "Wie heißt ein weiblicher Fuchs?",
+   "explanation": "Die Füchsin heißt in der Jägersprache Fähe, das Männchen Rüde.",
+   "correct": "Fähe",
+   "wrong": [
+    "Ricke",
+    "Bache",
+    "Zibbe"
+   ]
+  },
+  {
+   "id": "fauna-biberburg",
+   "source": "https://de.wikipedia.org/wiki/Eurasischer_Biber",
+   "difficulty": 1,
+   "prompt": "Wie heißt die Behausung des Bibers?",
+   "explanation": "Biber bauen ihre Burgen aus Ästen und Schlamm. Der Eingang liegt unter Wasser.",
+   "correct": "Biberburg",
+   "wrong": [
+    "Bau",
+    "Kobel",
+    "Horst"
+   ]
+  },
+  {
+   "id": "fauna-kobel",
+   "source": "https://de.wikipedia.org/wiki/Eurasisches_Eichhörnchen",
+   "difficulty": 2,
+   "prompt": "Wie heißt das Nest eines Eichhörnchens?",
+   "explanation": "Eichhörnchen bauen kugelige Nester aus Zweigen, den Kobel.",
+   "correct": "Kobel",
+   "wrong": [
+    "Horst",
+    "Bau",
+    "Burg"
+   ]
+  },
+  {
+   "id": "fauna-horst",
+   "source": "https://de.wikipedia.org/wiki/Horst_(Vogel)",
+   "difficulty": 2,
+   "prompt": "Wie nennt man das Nest großer Greifvögel wie Adler?",
+   "explanation": "Adler und Störche bauen große Nester, die Horste, und nutzen sie oft jahrelang.",
+   "correct": "Horst",
+   "wrong": [
+    "Kobel",
+    "Bau",
+    "Gelege"
+   ]
+  },
+  {
+   "id": "fauna-fledermaus-ortung",
+   "source": "https://de.wikipedia.org/wiki/Echoortung_(Tiere)",
+   "difficulty": 1,
+   "prompt": "Wie orientieren sich Fledermäuse im Dunkeln?",
+   "explanation": "Fledermäuse stoßen Ultraschallrufe aus und werten das Echo aus.",
+   "correct": "Mit Ultraschall (Echoortung)",
+   "wrong": [
+    "Mit dem Magnetfeld der Erde",
+    "Mit Restlicht und sehr guten Augen",
+    "Mit dem Geruchssinn"
+   ]
+  },
+  {
+   "id": "fauna-giftschlange",
+   "source": "https://de.wikipedia.org/wiki/Kreuzotter",
+   "difficulty": 2,
+   "prompt": "Welche dieser Schlangen ist giftig?",
+   "explanation": "Kreuzotter und Aspisviper sind die einzigen Giftschlangen Deutschlands. Ein Biss ist für gesunde Erwachsene selten lebensgefährlich.",
+   "correct": "Kreuzotter",
+   "wrong": [
+    "Ringelnatter",
+    "Schlingnatter",
+    "Äskulapnatter"
+   ]
+  },
+  {
+   "id": "fauna-blindschleiche",
+   "source": "https://de.wikipedia.org/wiki/Blindschleiche",
+   "difficulty": 2,
+   "prompt": "Was ist eine Blindschleiche?",
+   "explanation": "Blindschleichen können anders als Schlangen ihre Augenlider schließen und den Schwanz abwerfen.",
+   "correct": "Eine Eidechse ohne Beine",
+   "wrong": [
+    "Eine junge Schlange",
+    "Ein Wurm",
+    "Ein Molch"
+   ]
+  },
+  {
+   "id": "fauna-storchwinter",
+   "source": "https://de.wikipedia.org/wiki/Weißstorch",
+   "difficulty": 1,
+   "prompt": "Wo überwintern die meisten Weißstörche aus Deutschland?",
+   "explanation": "Viele ziehen über Gibraltar oder den Bosporus nach Afrika. Einige überwintern inzwischen auch in Spanien.",
+   "correct": "In Afrika",
+   "wrong": [
+    "In Skandinavien",
+    "In Deutschland",
+    "In Asien"
+   ]
+  },
+  {
+   "id": "fauna-drohne",
+   "source": "https://de.wikipedia.org/wiki/Drohne_(Biene)",
+   "difficulty": 1,
+   "prompt": "Wie heißen die männlichen Honigbienen?",
+   "explanation": "Drohnen haben keinen Stachel und dienen nur der Paarung.",
+   "correct": "Drohnen",
+   "wrong": [
+    "Arbeiterinnen",
+    "Königinnen",
+    "Hummeln"
+   ]
+  },
+  {
+   "id": "fauna-engerling",
+   "source": "https://de.wikipedia.org/wiki/Maikäfer",
+   "difficulty": 2,
+   "prompt": "Wie nennt man die Larve des Maikäfers?",
+   "explanation": "Engerlinge leben mehrere Jahre im Boden und fressen Wurzeln.",
+   "correct": "Engerling",
+   "wrong": [
+    "Kaulquappe",
+    "Made",
+    "Raupe"
+   ]
+  },
+  {
+   "id": "fauna-kaulquappe",
+   "source": "https://de.wikipedia.org/wiki/Kaulquappe",
+   "difficulty": 1,
+   "prompt": "Wie heißt die Larve von Fröschen und Kröten?",
+   "explanation": "Kaulquappen atmen mit Kiemen und entwickeln sich zu Fröschen.",
+   "correct": "Kaulquappe",
+   "wrong": [
+    "Engerling",
+    "Raupe",
+    "Made"
+   ]
+  },
+  {
+   "id": "fauna-metamorphose",
+   "source": "https://de.wikipedia.org/wiki/Metamorphose_(Zoologie)",
+   "difficulty": 1,
+   "prompt": "Wie nennt man die Verwandlung einer Raupe zum Schmetterling?",
+   "explanation": "Aus dem Ei schlüpft eine Raupe, die sich verpuppt. Aus der Puppe schlüpft der Falter.",
+   "correct": "Metamorphose",
+   "wrong": [
+    "Mutation",
+    "Mimikry",
+    "Photosynthese"
+   ]
+  },
+  {
+   "id": "fauna-goldhaehnchen",
+   "source": "https://de.wikipedia.org/wiki/Wintergoldhähnchen",
+   "difficulty": 3,
+   "prompt": "Welches ist der kleinste Vogel Europas?",
+   "explanation": "Wintergoldhähnchen wiegen nur rund 5 bis 6 Gramm.",
+   "correct": "Wintergoldhähnchen",
+   "wrong": [
+    "Zaunkönig",
+    "Blaumeise",
+    "Rotkehlchen"
+   ]
+  },
+  {
+   "id": "fauna-eichelhaeher",
+   "source": "https://de.wikipedia.org/wiki/Eichelhäher",
+   "difficulty": 2,
+   "prompt": "Welcher Vogel versteckt Eicheln als Wintervorrat und hilft so bei der Verbreitung der Eiche?",
+   "explanation": "Viele vergessene Eicheln keimen und werden zu neuen Bäumen.",
+   "correct": "Eichelhäher",
+   "wrong": [
+    "Buntspecht",
+    "Kleiber",
+    "Amsel"
+   ]
+  },
+  {
+   "id": "fauna-wolf-lausitz",
+   "source": "https://de.wikipedia.org/wiki/Wolf_in_Deutschland",
+   "difficulty": 3,
+   "prompt": "In welcher Region siedelten sich um das Jahr 2000 die ersten Wölfe wieder in Deutschland an?",
+   "explanation": "Die ersten Wolfswelpen nach rund 150 Jahren wurden 2000 in der sächsischen Lausitz geboren.",
+   "correct": "Lausitz",
+   "wrong": [
+    "Bayerischer Wald",
+    "Schwarzwald",
+    "Eifel"
+   ]
+  },
+  {
+   "id": "fauna-wisent",
+   "source": "https://de.wikipedia.org/wiki/Wisent",
+   "difficulty": 2,
+   "prompt": "Welches ist das schwerste Landsäugetier Europas?",
+   "explanation": "Wisent-Bullen können über 900 kg wiegen. In freier Wildbahn waren sie zwischenzeitlich ausgestorben.",
+   "correct": "Wisent",
+   "wrong": [
+    "Elch",
+    "Rothirsch",
+    "Braunbär"
+   ]
+  },
+  {
+   "id": "fauna-geweih",
+   "source": "https://de.wikipedia.org/wiki/Geweih",
+   "difficulty": 1,
+   "prompt": "Was werfen Rothirsche jedes Jahr ab und bilden es neu?",
+   "explanation": "Das Geweih wächst jedes Jahr neu, meist größer. Hörner (z.B. bei Rindern) bleiben dagegen ein Leben lang.",
+   "correct": "Ihr Geweih",
+   "wrong": [
+    "Ihre Hörner",
+    "Ihr Winterfell komplett",
+    "Ihre Hufe"
+   ]
+  },
+  {
+   "id": "fauna-fuchsbau",
+   "source": "https://de.wikipedia.org/wiki/Fuchsbau",
+   "difficulty": 1,
+   "prompt": "Wie heißt die unterirdische Wohnung des Fuchses?",
+   "explanation": "Füchse nutzen oft auch Baue, die Dachse gegraben haben.",
+   "correct": "Bau",
+   "wrong": [
+    "Kobel",
+    "Horst",
+    "Burg"
+   ]
+  },
+  {
+   "id": "fauna-maulwurf-schutz",
+   "source": "https://de.wikipedia.org/wiki/Europäischer_Maulwurf",
+   "difficulty": 2,
+   "prompt": "Warum darf man Maulwürfe in Deutschland nicht töten?",
+   "explanation": "Der Maulwurf ist nach dem Bundesnaturschutzgesetz besonders geschützt.",
+   "correct": "Sie sind besonders geschützt",
+   "wrong": [
+    "Sie sind giftig",
+    "Sie übertragen Krankheiten",
+    "Sie sind ausgestorben"
+   ]
+  },
+  {
+   "id": "fauna-rotkehlchen-revier",
+   "source": "https://de.wikipedia.org/wiki/Rotkehlchen",
+   "difficulty": 3,
+   "prompt": "Warum singen Rotkehlchen auch im Winter?",
+   "explanation": "Rotkehlchen verteidigen auch im Winter ein Revier, deshalb singen Männchen und Weibchen.",
+   "correct": "Sie verteidigen ein Winterrevier",
+   "wrong": [
+    "Sie balzen das ganze Jahr",
+    "Sie wärmen sich durch Singen",
+    "Sie rufen ihre Jungen"
+   ]
+  }
+ ]
+}

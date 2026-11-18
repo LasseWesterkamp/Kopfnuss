@@ -1,0 +1,785 @@
+{
+ "topic": "wissenschaft",
+ "questions": [
+  {
+   "id": "wiss-au",
+   "source": "https://de.wikipedia.org/wiki/Gold",
+   "difficulty": 1,
+   "prompt": "Welches chemische Element hat das Symbol „Au“?",
+   "explanation": "Au kommt vom lateinischen „aurum“ (Gold).",
+   "correct": "Gold",
+   "wrong": [
+    "Silber",
+    "Aluminium",
+    "Argon"
+   ]
+  },
+  {
+   "id": "wiss-fe",
+   "source": "https://de.wikipedia.org/wiki/Eisen",
+   "difficulty": 2,
+   "prompt": "Welches chemische Element hat das Symbol „Fe“?",
+   "explanation": "Fe kommt vom lateinischen „ferrum“ (Eisen).",
+   "correct": "Eisen",
+   "wrong": [
+    "Fluor",
+    "Francium",
+    "Phosphor"
+   ]
+  },
+  {
+   "id": "wiss-ag",
+   "source": "https://de.wikipedia.org/wiki/Silber",
+   "difficulty": 2,
+   "prompt": "Welches chemische Element hat das Symbol „Ag“?",
+   "explanation": "Ag kommt vom lateinischen „argentum“ (Silber).",
+   "correct": "Silber",
+   "wrong": [
+    "Gold",
+    "Argon",
+    "Quecksilber"
+   ]
+  },
+  {
+   "id": "wiss-pb",
+   "source": "https://de.wikipedia.org/wiki/Blei",
+   "difficulty": 3,
+   "prompt": "Welches chemische Element hat das Symbol „Pb“?",
+   "explanation": "Pb kommt vom lateinischen „plumbum“ (Blei).",
+   "correct": "Blei",
+   "wrong": [
+    "Platin",
+    "Phosphor",
+    "Palladium"
+   ]
+  },
+  {
+   "id": "wiss-na",
+   "source": "https://de.wikipedia.org/wiki/Natrium",
+   "difficulty": 2,
+   "prompt": "Welches chemische Element hat das Symbol „Na“?",
+   "explanation": "Na kommt von „Natrium“. Stickstoff hat das Symbol N, Neon Ne, Nickel Ni.",
+   "correct": "Natrium",
+   "wrong": [
+    "Stickstoff",
+    "Neon",
+    "Nickel"
+   ]
+  },
+  {
+   "id": "wiss-luft",
+   "source": "https://de.wikipedia.org/wiki/Luft",
+   "difficulty": 2,
+   "prompt": "Welches Gas macht den größten Anteil der Luft aus?",
+   "explanation": "Trockene Luft besteht zu rund 78 % aus Stickstoff und zu rund 21 % aus Sauerstoff.",
+   "correct": "Stickstoff",
+   "wrong": [
+    "Sauerstoff",
+    "Kohlendioxid",
+    "Argon"
+   ]
+  },
+  {
+   "id": "wiss-co2",
+   "source": "https://de.wikipedia.org/wiki/Kohlenstoffdioxid",
+   "difficulty": 1,
+   "prompt": "Wofür steht die Formel CO₂?",
+   "explanation": "CO₂ besteht aus einem Kohlenstoff- und zwei Sauerstoffatomen.",
+   "correct": "Kohlendioxid",
+   "wrong": [
+    "Kohlenmonoxid",
+    "Wasserstoffperoxid",
+    "Ozon"
+   ]
+  },
+  {
+   "id": "wiss-diamant",
+   "source": "https://de.wikipedia.org/wiki/Diamant",
+   "difficulty": 1,
+   "prompt": "Welches ist das härteste natürlich vorkommende Material?",
+   "explanation": "Diamant besteht aus reinem Kohlenstoff und hat auf der Mohs-Skala die Härte 10.",
+   "correct": "Diamant",
+   "wrong": [
+    "Quarz",
+    "Granit",
+    "Stahl"
+   ]
+  },
+  {
+   "id": "wiss-ph",
+   "source": "https://de.wikipedia.org/wiki/PH-Wert",
+   "difficulty": 2,
+   "prompt": "Welchen pH-Wert hat eine neutrale Lösung?",
+   "explanation": "Werte unter 7 sind sauer, Werte über 7 basisch (alkalisch).",
+   "correct": "7",
+   "wrong": [
+    "0",
+    "1",
+    "14"
+   ]
+  },
+  {
+   "id": "wiss-mendelejew",
+   "source": "https://de.wikipedia.org/wiki/Periodensystem",
+   "difficulty": 2,
+   "prompt": "Wer gilt als ein Begründer des Periodensystems der Elemente?",
+   "explanation": "Mendelejew und Lothar Meyer ordneten 1869 unabhängig voneinander die Elemente.",
+   "correct": "Dmitri Mendelejew",
+   "wrong": [
+    "Antoine Lavoisier",
+    "Niels Bohr",
+    "Robert Bunsen"
+   ]
+  },
+  {
+   "id": "wiss-elektron",
+   "source": "https://de.wikipedia.org/wiki/Elektron",
+   "difficulty": 2,
+   "prompt": "Welche Ladung hat ein Elektron?",
+   "explanation": "Elektronen sind negativ geladen, Protonen positiv, Neutronen neutral.",
+   "correct": "Negativ",
+   "wrong": [
+    "Positiv",
+    "Neutral",
+    "Wechselnd"
+   ]
+  },
+  {
+   "id": "wiss-kochen",
+   "source": "https://de.wikipedia.org/wiki/Siedepunkt",
+   "difficulty": 1,
+   "prompt": "Bei welcher Temperatur kocht Wasser auf Meereshöhe?",
+   "explanation": "Bei normalem Luftdruck (1013 hPa) siedet Wasser bei 100 °C. Auf hohen Bergen schon früher.",
+   "correct": "100 °C",
+   "wrong": [
+    "90 °C",
+    "110 °C",
+    "120 °C"
+   ]
+  },
+  {
+   "id": "wiss-nullpunkt",
+   "source": "https://de.wikipedia.org/wiki/Absoluter_Nullpunkt",
+   "difficulty": 2,
+   "prompt": "Wo liegt der absolute Nullpunkt?",
+   "explanation": "Der absolute Nullpunkt entspricht 0 Kelvin. (−459,67 ist der Wert in Grad Fahrenheit.)",
+   "correct": "−273,15 °C",
+   "wrong": [
+    "−100 °C",
+    "−459,67 °C",
+    "−373,15 °C"
+   ]
+  },
+  {
+   "id": "wiss-licht-sonne",
+   "source": "https://de.wikipedia.org/wiki/Sonne",
+   "difficulty": 2,
+   "prompt": "Wie lange braucht das Licht ungefähr von der Sonne zur Erde?",
+   "explanation": "Das Sonnenlicht legt rund 150 Mio. km in etwa 8 Minuten und 20 Sekunden zurück.",
+   "correct": "Etwa 8 Minuten",
+   "wrong": [
+    "Etwa 8 Sekunden",
+    "Etwa 1 Stunde",
+    "Etwa 1 Tag"
+   ]
+  },
+  {
+   "id": "wiss-lichtgeschw",
+   "source": "https://de.wikipedia.org/wiki/Lichtgeschwindigkeit",
+   "difficulty": 2,
+   "prompt": "Wie schnell ist das Licht im Vakuum ungefähr?",
+   "explanation": "Genau sind es 299.792,458 km/s.",
+   "correct": "300.000 km/s",
+   "wrong": [
+    "30.000 km/s",
+    "3.000 km/s",
+    "3.000.000 km/s"
+   ]
+  },
+  {
+   "id": "wiss-schall",
+   "source": "https://de.wikipedia.org/wiki/Schallgeschwindigkeit",
+   "difficulty": 3,
+   "prompt": "Wie schnell breitet sich Schall in Luft (20 °C) ungefähr aus?",
+   "explanation": "Gewitter-Faustregel: Etwa 3 Sekunden zwischen Blitz und Donner entsprechen 1 km.",
+   "correct": "343 m/s",
+   "wrong": [
+    "34 m/s",
+    "3.430 m/s",
+    "34.300 m/s"
+   ]
+  },
+  {
+   "id": "wiss-volt",
+   "source": "https://de.wikipedia.org/wiki/Volt",
+   "difficulty": 1,
+   "prompt": "In welcher Einheit wird elektrische Spannung gemessen?",
+   "explanation": "Benannt nach Alessandro Volta. Ampere misst Stromstärke, Ohm Widerstand, Watt Leistung.",
+   "correct": "Volt",
+   "wrong": [
+    "Ampere",
+    "Watt",
+    "Ohm"
+   ]
+  },
+  {
+   "id": "wiss-ampere",
+   "source": "https://de.wikipedia.org/wiki/Ampere",
+   "difficulty": 2,
+   "prompt": "In welcher Einheit wird elektrische Stromstärke gemessen?",
+   "explanation": "Benannt nach André-Marie Ampère.",
+   "correct": "Ampere",
+   "wrong": [
+    "Volt",
+    "Joule",
+    "Tesla"
+   ]
+  },
+  {
+   "id": "wiss-newton",
+   "source": "https://de.wikipedia.org/wiki/Newton_(Einheit)",
+   "difficulty": 2,
+   "prompt": "In welcher Einheit wird Kraft gemessen?",
+   "explanation": "1 Newton beschleunigt 1 kg um 1 m/s². Pascal ist die Einheit für Druck.",
+   "correct": "Newton",
+   "wrong": [
+    "Joule",
+    "Pascal",
+    "Watt"
+   ]
+  },
+  {
+   "id": "wiss-joule",
+   "source": "https://de.wikipedia.org/wiki/Joule",
+   "difficulty": 2,
+   "prompt": "In welcher Einheit wird Energie im internationalen Einheitensystem gemessen?",
+   "explanation": "Benannt nach James Prescott Joule. Auch die Kilowattstunde ist eine Energieeinheit.",
+   "correct": "Joule",
+   "wrong": [
+    "Watt",
+    "Newton",
+    "Kelvin"
+   ]
+  },
+  {
+   "id": "wiss-einstein",
+   "source": "https://de.wikipedia.org/wiki/Relativitätstheorie",
+   "difficulty": 1,
+   "prompt": "Wer entwickelte die Relativitätstheorie?",
+   "explanation": "Einstein veröffentlichte 1905 die spezielle und 1915 die allgemeine Relativitätstheorie.",
+   "correct": "Albert Einstein",
+   "wrong": [
+    "Isaac Newton",
+    "Max Planck",
+    "Niels Bohr"
+   ]
+  },
+  {
+   "id": "wiss-newton-grav",
+   "source": "https://de.wikipedia.org/wiki/Isaac_Newton",
+   "difficulty": 1,
+   "prompt": "Wer formulierte das klassische Gravitationsgesetz?",
+   "explanation": "Newton beschrieb es 1687 in seinem Werk „Principia“.",
+   "correct": "Isaac Newton",
+   "wrong": [
+    "Galileo Galilei",
+    "Johannes Kepler",
+    "Albert Einstein"
+   ]
+  },
+  {
+   "id": "wiss-roentgen",
+   "source": "https://de.wikipedia.org/wiki/Wilhelm_Conrad_Röntgen",
+   "difficulty": 2,
+   "prompt": "Wer erhielt 1901 den ersten Nobelpreis für Physik?",
+   "explanation": "Röntgen wurde für die Entdeckung der nach ihm benannten Strahlen ausgezeichnet.",
+   "correct": "Wilhelm Conrad Röntgen",
+   "wrong": [
+    "Max Planck",
+    "Albert Einstein",
+    "Marie Curie"
+   ]
+  },
+  {
+   "id": "wiss-curie",
+   "source": "https://de.wikipedia.org/wiki/Marie_Curie",
+   "difficulty": 1,
+   "prompt": "Wer erhielt als erster Mensch Nobelpreise in zwei verschiedenen Naturwissenschaften?",
+   "explanation": "Marie Curie erhielt 1903 den Nobelpreis für Physik und 1911 den für Chemie.",
+   "correct": "Marie Curie",
+   "wrong": [
+    "Albert Einstein",
+    "Linus Pauling",
+    "Lise Meitner"
+   ]
+  },
+  {
+   "id": "wiss-curie-elemente",
+   "source": "https://de.wikipedia.org/wiki/Marie_Curie",
+   "difficulty": 3,
+   "prompt": "Welche zwei Elemente entdeckte Marie Curie gemeinsam mit Pierre Curie?",
+   "explanation": "Polonium benannte sie nach ihrem Heimatland Polen.",
+   "correct": "Polonium und Radium",
+   "wrong": [
+    "Uran und Plutonium",
+    "Helium und Neon",
+    "Radon und Thorium"
+   ]
+  },
+  {
+   "id": "wiss-richter",
+   "source": "https://de.wikipedia.org/wiki/Richterskala",
+   "difficulty": 1,
+   "prompt": "Was misst die Richterskala?",
+   "explanation": "Sie wurde 1935 von Charles Richter entwickelt. Heute nutzt man meist die Momenten-Magnitude.",
+   "correct": "Die Stärke von Erdbeben",
+   "wrong": [
+    "Die Windstärke",
+    "Die Lautstärke",
+    "Die Wellenhöhe"
+   ]
+  },
+  {
+   "id": "wiss-merkur",
+   "source": "https://de.wikipedia.org/wiki/Merkur_(Planet)",
+   "difficulty": 1,
+   "prompt": "Welcher Planet ist der Sonne am nächsten?",
+   "explanation": "Merkur ist der innerste und kleinste Planet des Sonnensystems.",
+   "correct": "Merkur",
+   "wrong": [
+    "Venus",
+    "Mars",
+    "Erde"
+   ]
+  },
+  {
+   "id": "wiss-jupiter",
+   "source": "https://de.wikipedia.org/wiki/Jupiter_(Planet)",
+   "difficulty": 1,
+   "prompt": "Welcher ist der größte Planet unseres Sonnensystems?",
+   "explanation": "Jupiter hat mehr als die doppelte Masse aller anderen Planeten zusammen.",
+   "correct": "Jupiter",
+   "wrong": [
+    "Saturn",
+    "Neptun",
+    "Uranus"
+   ]
+  },
+  {
+   "id": "wiss-mars",
+   "source": "https://de.wikipedia.org/wiki/Mars_(Planet)",
+   "difficulty": 1,
+   "prompt": "Welcher Planet wird „Roter Planet“ genannt?",
+   "explanation": "Eisenoxid (Rost) im Staub färbt die Marsoberfläche rötlich.",
+   "correct": "Mars",
+   "wrong": [
+    "Venus",
+    "Jupiter",
+    "Merkur"
+   ]
+  },
+  {
+   "id": "wiss-planeten",
+   "source": "https://de.wikipedia.org/wiki/Sonnensystem",
+   "difficulty": 1,
+   "prompt": "Wie viele Planeten hat unser Sonnensystem?",
+   "explanation": "Seit 2006 zählt Pluto als Zwergplanet, deshalb sind es 8.",
+   "correct": "8",
+   "wrong": [
+    "7",
+    "9",
+    "10"
+   ]
+  },
+  {
+   "id": "wiss-venus",
+   "source": "https://de.wikipedia.org/wiki/Venus_(Planet)",
+   "difficulty": 2,
+   "prompt": "Welcher Planet hat die heißeste Oberfläche?",
+   "explanation": "Obwohl Merkur näher an der Sonne ist, ist die Venus durch ihre dichte CO₂-Atmosphäre mit rund 460 °C heißer.",
+   "correct": "Venus",
+   "wrong": [
+    "Merkur",
+    "Mars",
+    "Jupiter"
+   ]
+  },
+  {
+   "id": "wiss-milchstrasse",
+   "source": "https://de.wikipedia.org/wiki/Milchstraße",
+   "difficulty": 1,
+   "prompt": "Wie heißt die Galaxie, in der unser Sonnensystem liegt?",
+   "explanation": "Die Milchstraße enthält schätzungsweise 100 bis 400 Milliarden Sterne.",
+   "correct": "Milchstraße",
+   "wrong": [
+    "Andromeda",
+    "Große Magellansche Wolke",
+    "Sombrero-Galaxie"
+   ]
+  },
+  {
+   "id": "wiss-proxima",
+   "source": "https://de.wikipedia.org/wiki/Proxima_Centauri",
+   "difficulty": 2,
+   "prompt": "Welcher Stern ist nach der Sonne der Erde am nächsten?",
+   "explanation": "Proxima Centauri ist rund 4,2 Lichtjahre entfernt.",
+   "correct": "Proxima Centauri",
+   "wrong": [
+    "Sirius",
+    "Polarstern",
+    "Beteigeuze"
+   ]
+  },
+  {
+   "id": "wiss-mond-entf",
+   "source": "https://de.wikipedia.org/wiki/Mond",
+   "difficulty": 3,
+   "prompt": "Wie weit ist der Mond durchschnittlich von der Erde entfernt?",
+   "explanation": "150 Mio. km ist die Entfernung zur Sonne.",
+   "correct": "Rund 384.000 km",
+   "wrong": [
+    "Rund 38.000 km",
+    "Rund 3,8 Mio. km",
+    "Rund 150 Mio. km"
+   ]
+  },
+  {
+   "id": "wiss-erdalter",
+   "source": "https://de.wikipedia.org/wiki/Erde",
+   "difficulty": 2,
+   "prompt": "Wie alt ist die Erde ungefähr?",
+   "explanation": "13,8 Milliarden Jahre ist das Alter des Universums.",
+   "correct": "4,5 Milliarden Jahre",
+   "wrong": [
+    "450 Millionen Jahre",
+    "45 Millionen Jahre",
+    "13,8 Milliarden Jahre"
+   ]
+  },
+  {
+   "id": "wiss-kopernikus",
+   "source": "https://de.wikipedia.org/wiki/Nikolaus_Kopernikus",
+   "difficulty": 2,
+   "prompt": "Wer machte das heliozentrische Weltbild (Sonne im Mittelpunkt) bekannt?",
+   "explanation": "Kopernikus veröffentlichte sein Hauptwerk 1543, kurz vor seinem Tod.",
+   "correct": "Nikolaus Kopernikus",
+   "wrong": [
+    "Ptolemäus",
+    "Aristoteles",
+    "Tycho Brahe"
+   ]
+  },
+  {
+   "id": "wiss-galilei",
+   "source": "https://de.wikipedia.org/wiki/Galileo_Galilei",
+   "difficulty": 2,
+   "prompt": "Wer entdeckte 1610 mit einem Fernrohr die vier großen Jupitermonde?",
+   "explanation": "Sie heißen heute „Galileische Monde“: Io, Europa, Ganymed und Kallisto.",
+   "correct": "Galileo Galilei",
+   "wrong": [
+    "Johannes Kepler",
+    "Isaac Newton",
+    "Nikolaus Kopernikus"
+   ]
+  },
+  {
+   "id": "wiss-haut",
+   "source": "https://de.wikipedia.org/wiki/Haut",
+   "difficulty": 1,
+   "prompt": "Welches ist das größte Organ des Menschen?",
+   "explanation": "Die Haut hat bei Erwachsenen eine Fläche von rund 1,5 bis 2 m².",
+   "correct": "Die Haut",
+   "wrong": [
+    "Die Leber",
+    "Die Lunge",
+    "Das Gehirn"
+   ]
+  },
+  {
+   "id": "wiss-knochen",
+   "source": "https://de.wikipedia.org/wiki/Skelett_des_Menschen",
+   "difficulty": 2,
+   "prompt": "Wie viele Knochen hat ein erwachsener Mensch ungefähr?",
+   "explanation": "Babys haben mehr Knochen, von denen einige im Laufe der Zeit zusammenwachsen.",
+   "correct": "206",
+   "wrong": [
+    "106",
+    "306",
+    "412"
+   ]
+  },
+  {
+   "id": "wiss-oberschenkel",
+   "source": "https://de.wikipedia.org/wiki/Oberschenkelknochen",
+   "difficulty": 2,
+   "prompt": "Welcher ist der längste Knochen des Menschen?",
+   "explanation": "Der Oberschenkelknochen (Femur) macht etwa ein Viertel der Körpergröße aus.",
+   "correct": "Oberschenkelknochen",
+   "wrong": [
+    "Schienbein",
+    "Oberarmknochen",
+    "Wirbelsäule"
+   ]
+  },
+  {
+   "id": "wiss-chromosomen",
+   "source": "https://de.wikipedia.org/wiki/Chromosom",
+   "difficulty": 2,
+   "prompt": "Wie viele Chromosomen hat eine normale menschliche Körperzelle?",
+   "explanation": "46 Chromosomen, also 23 Paare. Ei- und Samenzellen haben je 23.",
+   "correct": "46",
+   "wrong": [
+    "23",
+    "44",
+    "48"
+   ]
+  },
+  {
+   "id": "wiss-herz",
+   "source": "https://de.wikipedia.org/wiki/Herz",
+   "difficulty": 1,
+   "prompt": "Wie viele Kammern hat das menschliche Herz?",
+   "explanation": "Zwei Vorhöfe und zwei Hauptkammern.",
+   "correct": "4",
+   "wrong": [
+    "2",
+    "3",
+    "6"
+   ]
+  },
+  {
+   "id": "wiss-insulin",
+   "source": "https://de.wikipedia.org/wiki/Insulin",
+   "difficulty": 2,
+   "prompt": "Welches Organ produziert Insulin?",
+   "explanation": "Insulin wird in den Langerhans-Inseln der Bauchspeicheldrüse gebildet.",
+   "correct": "Bauchspeicheldrüse",
+   "wrong": [
+    "Leber",
+    "Niere",
+    "Schilddrüse"
+   ]
+  },
+  {
+   "id": "wiss-mitochondrien",
+   "source": "https://de.wikipedia.org/wiki/Mitochondrium",
+   "difficulty": 2,
+   "prompt": "Welche Zellbestandteile werden „Kraftwerke der Zelle“ genannt?",
+   "explanation": "In den Mitochondrien wird der Energieträger ATP gebildet.",
+   "correct": "Mitochondrien",
+   "wrong": [
+    "Ribosomen",
+    "Zellkern",
+    "Chloroplasten"
+   ]
+  },
+  {
+   "id": "wiss-dna",
+   "source": "https://de.wikipedia.org/wiki/Desoxyribonukleinsäure",
+   "difficulty": 2,
+   "prompt": "Wer beschrieb 1953 die Doppelhelix-Struktur der DNA?",
+   "explanation": "Wichtige Grundlage waren die Röntgenaufnahmen von Rosalind Franklin.",
+   "correct": "James Watson und Francis Crick",
+   "wrong": [
+    "Gregor Mendel und Charles Darwin",
+    "Robert Koch und Louis Pasteur",
+    "Marie und Pierre Curie"
+   ]
+  },
+  {
+   "id": "wiss-fleming",
+   "source": "https://de.wikipedia.org/wiki/Alexander_Fleming",
+   "difficulty": 2,
+   "prompt": "Wer entdeckte 1928 das Penicillin?",
+   "explanation": "Fleming bemerkte, dass ein Schimmelpilz Bakterien abtötete.",
+   "correct": "Alexander Fleming",
+   "wrong": [
+    "Robert Koch",
+    "Louis Pasteur",
+    "Paul Ehrlich"
+   ]
+  },
+  {
+   "id": "wiss-darwin",
+   "source": "https://de.wikipedia.org/wiki/Charles_Darwin",
+   "difficulty": 1,
+   "prompt": "Wer begründete die Evolutionstheorie durch natürliche Selektion?",
+   "explanation": "Darwin veröffentlichte 1859 „Über die Entstehung der Arten“.",
+   "correct": "Charles Darwin",
+   "wrong": [
+    "Gregor Mendel",
+    "Alexander von Humboldt",
+    "Jean-Baptiste de Lamarck"
+   ]
+  },
+  {
+   "id": "wiss-photosynthese",
+   "source": "https://de.wikipedia.org/wiki/Photosynthese",
+   "difficulty": 1,
+   "prompt": "Welches Gas geben Pflanzen bei der Photosynthese ab?",
+   "explanation": "Aus Kohlendioxid, Wasser und Licht bilden Pflanzen Zucker und geben Sauerstoff ab.",
+   "correct": "Sauerstoff",
+   "wrong": [
+    "Kohlendioxid",
+    "Stickstoff",
+    "Methan"
+   ]
+  },
+  {
+   "id": "wiss-chlorophyll",
+   "source": "https://de.wikipedia.org/wiki/Chlorophyll",
+   "difficulty": 2,
+   "prompt": "Welcher Farbstoff macht Blätter grün?",
+   "explanation": "Chlorophyll absorbiert rotes und blaues Licht, grünes wird reflektiert.",
+   "correct": "Chlorophyll",
+   "wrong": [
+    "Carotin",
+    "Hämoglobin",
+    "Melanin"
+   ]
+  },
+  {
+   "id": "wiss-blauwal",
+   "source": "https://de.wikipedia.org/wiki/Blauwal",
+   "difficulty": 1,
+   "prompt": "Welches ist das größte Tier, das je gelebt hat?",
+   "explanation": "Blauwale werden über 30 m lang und bis zu 150 Tonnen schwer.",
+   "correct": "Blauwal",
+   "wrong": [
+    "Argentinosaurus",
+    "Pottwal",
+    "Afrikanischer Elefant"
+   ]
+  },
+  {
+   "id": "wiss-gepard",
+   "source": "https://de.wikipedia.org/wiki/Gepard",
+   "difficulty": 1,
+   "prompt": "Welches ist das schnellste Landtier?",
+   "explanation": "Geparden erreichen kurzzeitig über 90 km/h.",
+   "correct": "Gepard",
+   "wrong": [
+    "Löwe",
+    "Gabelbock",
+    "Windhund"
+   ]
+  },
+  {
+   "id": "wiss-fledermaus",
+   "source": "https://de.wikipedia.org/wiki/Fledertiere",
+   "difficulty": 1,
+   "prompt": "Welche Säugetiere können aktiv fliegen?",
+   "explanation": "Fledermäuse und Flughunde sind die einzigen Säugetiere mit echtem Flug. Flug- und Gleithörnchen gleiten nur.",
+   "correct": "Fledermäuse",
+   "wrong": [
+    "Flughörnchen",
+    "Gleithörnchen",
+    "Pinguine"
+   ]
+  },
+  {
+   "id": "wiss-spinne",
+   "source": "https://de.wikipedia.org/wiki/Webspinnen",
+   "difficulty": 1,
+   "prompt": "Wie viele Beine hat eine Spinne?",
+   "explanation": "Spinnen sind Spinnentiere mit acht Beinen. Insekten haben sechs.",
+   "correct": "8",
+   "wrong": [
+    "6",
+    "10",
+    "12"
+   ]
+  },
+  {
+   "id": "wiss-wegener",
+   "source": "https://de.wikipedia.org/wiki/Alfred_Wegener",
+   "difficulty": 2,
+   "prompt": "Wer entwickelte die Theorie der Kontinentaldrift?",
+   "explanation": "Wegener stellte sie 1912 vor. Erst Jahrzehnte später wurde sie durch die Plattentektonik bestätigt.",
+   "correct": "Alfred Wegener",
+   "wrong": [
+    "Alexander von Humboldt",
+    "Charles Lyell",
+    "Carl Friedrich Gauß"
+   ]
+  },
+  {
+   "id": "wiss-erdkern",
+   "source": "https://de.wikipedia.org/wiki/Erdkern",
+   "difficulty": 2,
+   "prompt": "Woraus besteht der Erdkern hauptsächlich?",
+   "explanation": "Der innere Kern ist trotz über 5.000 °C wegen des hohen Drucks fest.",
+   "correct": "Eisen und Nickel",
+   "wrong": [
+    "Gold und Silber",
+    "Granit und Basalt",
+    "Kohlenstoff und Silizium"
+   ]
+  },
+  {
+   "id": "wiss-ozon",
+   "source": "https://de.wikipedia.org/wiki/Ozonschicht",
+   "difficulty": 2,
+   "prompt": "In welcher Schicht der Atmosphäre liegt die Ozonschicht?",
+   "explanation": "Sie liegt etwa 15 bis 35 km hoch und filtert UV-Strahlung.",
+   "correct": "Stratosphäre",
+   "wrong": [
+    "Troposphäre",
+    "Mesosphäre",
+    "Thermosphäre"
+   ]
+  },
+  {
+   "id": "wiss-dreieck",
+   "source": "https://de.wikipedia.org/wiki/Dreieck",
+   "difficulty": 1,
+   "prompt": "Wie groß ist die Winkelsumme in einem Dreieck (in der Ebene)?",
+   "explanation": "In der euklidischen Geometrie ergeben die drei Innenwinkel immer zusammen 180°.",
+   "correct": "180°",
+   "wrong": [
+    "90°",
+    "270°",
+    "360°"
+   ]
+  },
+  {
+   "id": "wiss-primzahl",
+   "source": "https://de.wikipedia.org/wiki/Primzahl",
+   "difficulty": 1,
+   "prompt": "Welches ist die kleinste Primzahl?",
+   "explanation": "Die 1 ist per Definition keine Primzahl. Die 2 ist die einzige gerade Primzahl.",
+   "correct": "2",
+   "wrong": [
+    "0",
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "wiss-pythagoras",
+   "source": "https://de.wikipedia.org/wiki/Satz_des_Pythagoras",
+   "difficulty": 1,
+   "prompt": "Was besagt der Satz des Pythagoras im rechtwinkligen Dreieck?",
+   "explanation": "Die Summe der Quadrate der Katheten ist gleich dem Quadrat der Hypotenuse.",
+   "correct": "a² + b² = c²",
+   "wrong": [
+    "a + b = c",
+    "a² − b² = c",
+    "2a + 2b = c²"
+   ]
+  },
+  {
+   "id": "wiss-benz",
+   "source": "https://de.wikipedia.org/wiki/Benz_Patent-Motorwagen_Nummer_1",
+   "difficulty": 1,
+   "prompt": "Wer meldete 1886 das erste praktisch brauchbare Automobil zum Patent an?",
+   "explanation": "Der Benz Patent-Motorwagen Nummer 1 gilt als erstes modernes Automobil.",
+   "correct": "Carl Benz",
+   "wrong": [
+    "Gottlieb Daimler",
+    "Henry Ford",
+    "Rudolf Diesel"
+   ]
+  }
+ ]
+}

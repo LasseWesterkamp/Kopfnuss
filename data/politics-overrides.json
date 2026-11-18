@@ -1,0 +1,18 @@
+{
+ "_hinweis": "Korrekturen für scripts/update-politics.mjs. skip = Amt nicht abfragen (Daten in Wikidata unzuverlässig). holder = manuell gesetzt (mit Quelle!). names = kürzere Anzeigenamen. manual = Amt von Hand setzen/ergänzen: {\"id\": {\"group\",\"label\",\"holder\",\"since\",\"position\",\"difficulty\",\"source\"}}.",
+ "skip": {
+  "kultur": "Wikidata nennt noch Claudia Roth, seit Mai 2025 ist es Wolfram Weimer. Erst wieder aufnehmen, wenn Wikidata korrigiert ist.",
+  "int-tr-hog": "Amt des türkischen Ministerpräsidenten 2018 abgeschafft.",
+  "int-ch-hos": "Schweiz: Bundesrat als Kollegium, Bundespräsident wechselt jährlich.",
+  "int-ch-hog": "Schweiz: s.o.",
+  "int-va-hog": "Nicht allgemeinwissensrelevant.",
+  "int-us-hog": "USA: Präsident ist zugleich Regierungschef (schon als Staatsoberhaupt abgefragt).",
+  "int-br-hog": "Brasilien: Präsident ist zugleich Regierungschef."
+ },
+ "names": {
+  "Wladimir Wladimirowitsch Putin": "Wladimir Putin",
+  "Michail Wladimirowitsch Mischustin": "Michail Mischustin",
+  "Luiz Inácio Lula da Silva": "Lula da Silva"
+ },
+ "manual": {}
+}
