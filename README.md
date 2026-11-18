@@ -13,7 +13,7 @@ Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-A
 - Fragetypen: Multiple Choice, Bild erkennen, Land auf der Karte antippen, Jahreszahl schätzen, Ereignisse sortieren
 - Erklärung, Quelle und „Frage melden“ nach jeder Antwort
 - XP, Level, Abzeichen, Statistik pro Thema mit Schwächen
-- Optional: Sync zwischen Handy und PC (Supabase, Login per E-Mail-Code)
+- Sync zwischen Handy und PC (Supabase, Login mit E-Mail + Passwort)
 - Dark Mode (automatisch oder manuell), optionaler Zeitdruck
 
 ---
@@ -137,24 +137,16 @@ Auch Länder- und Hauptstadtdaten lassen sich neu holen (`node scripts/fetch-cou
 
 ---
 
-## Sync zwischen Handy und PC einrichten (Supabase, gratis)
+## Sync zwischen Handy und PC (Supabase)
 
-Ohne Sync speichert die App alles nur auf dem jeweiligen Gerät. Mit Sync meldest du dich auf beiden Geräten mit derselben E-Mail an. Die Fortschritte werden zusammengeführt (pro Gerät gezählt, damit nichts doppelt zählt oder verloren geht).
+**Ist eingerichtet.** In der App unter Einstellungen → Konto & Sync einmal „Konto anlegen“ (E-Mail + Passwort, mind. 8 Zeichen), auf dem zweiten Gerät mit denselben Daten „Anmelden“. Die Fortschritte werden zusammengeführt: pro Gerät gezählt, nichts doppelt, nichts geht verloren. Abgeglichen wird beim Öffnen der App, ein paar Sekunden nach dem Antworten und wenn das Gerät wieder online ist.
 
-1. Auf [supabase.com](https://supabase.com) ein kostenloses Projekt anlegen.
-2. **SQL Editor** → Inhalt von `supabase/schema.sql` einfügen → Run.
-3. **Authentication → Email Templates → Magic Link**: Den Text so ändern, dass der Code drinsteht, z.B.:
-   ```
-   Dein Kopfnuss-Code: {{ .Token }}
-   ```
-   (Die App nutzt einen 6-stelligen Code statt eines Links, weil Links auf dem iPhone in Safari statt in der installierten App landen.)
-4. **Project Settings → API**: `Project URL` und `anon public` Key kopieren.
-5. Eintragen:
-   - **GitHub Pages:** Repo → Settings → Secrets and variables → Actions → Tab **Variables** → `SUPABASE_URL` und `SUPABASE_ANON_KEY` anlegen, dann neu deployen.
-   - **Vercel/Netlify:** als `VITE_SUPABASE_URL` und `VITE_SUPABASE_ANON_KEY`.
-   - **Lokal:** Datei `.env.local` mit diesen beiden `VITE_…`-Zeilen.
+Warum Passwort statt Login-Code per Mail: Supabase erlaubt im Gratistarif keine eigenen E-Mail-Vorlagen, die Standard-Mail enthält nur einen Link. Ein Link öffnet sich auf dem iPhone in Safari statt in der installierten App. Die E-Mail-Bestätigung ist deshalb abgeschaltet (`mailer_autoconfirm`).
 
-Der anon-Key ist für den öffentlichen Einsatz gedacht. Die Datenbank-Regeln (Row Level Security) sorgen dafür, dass jeder nur seinen eigenen Fortschritt lesen und schreiben kann.
+Konfiguration:
+- Project URL und **anon** Key stehen in `.env.production` (öffentlich unbedenklich, Schutz über Row Level Security). **Niemals** den `service_role`/secret Key eintragen.
+- Datenbank: `supabase/schema.sql` (Tabelle, Rechte nur für angemeldete Nutzer, Policies „nur eigene Zeile“). Bei einem neuen Projekt im SQL Editor ausführen.
+- Lokal ohne Sync entwickeln: `npm run dev` nutzt `.env.production` nicht. Wer lokal mit Sync testen will, kopiert die zwei Zeilen in `.env.local`.
 
 ---
 

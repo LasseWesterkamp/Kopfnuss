@@ -8,8 +8,9 @@ import { REPO_URL } from '../data';
 export function SettingsView({ onCredits }: { onCredits: () => void }) {
   const { settings, setSettings, progress, replaceProgress, session, syncState, syncNow, questions } = useApp();
   const [email, setEmail] = useState('');
-  const [code, setCode] = useState('');
-  const [step, setStep] = useState<'email' | 'code'>('email');
+  const [password, setPassword] = useState('');
+  const [mode, setMode] = useState<'login' | 'register'>('login');
+  const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
 
   const exportData = () => {
@@ -61,28 +62,26 @@ export function SettingsView({ onCredits }: { onCredits: () => void }) {
             </div>
           </>
         )}
-        {sync.syncConfigured && !session && step === 'email' && (
+        {sync.syncConfigured && !session && (
           <form onSubmit={async (e) => {
-            e.preventDefault(); setMsg(null);
-            try { await sync.sendCode(email.trim()); setStep('code'); setMsg('Code wurde gesendet. Schau in dein Postfach.'); }
-            catch (err: any) { setMsg('Fehler: ' + (err.message ?? err)); }
+            e.preventDefault(); setMsg(null); setBusy(true);
+            try {
+              if (mode === 'login') await sync.signIn(email.trim(), password);
+              else await sync.signUp(email.trim(), password);
+              setPassword('');
+              setMsg(mode === 'login' ? 'Angemeldet! Dein Fortschritt wird abgeglichen.' : 'Konto angelegt und angemeldet!');
+            } catch (err: any) { setMsg(err.message ?? String(err)); }
+            finally { setBusy(false); }
           }}>
-            <p className="muted small">Melde dich auf Handy und PC mit derselben E-Mail an, dann wird dein Fortschritt zusammengeführt.</p>
-            <input type="email" required placeholder="deine@email.de" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
-            <button className="btn primary wide" type="submit">Anmeldecode senden</button>
-          </form>
-        )}
-        {sync.syncConfigured && !session && step === 'code' && (
-          <form onSubmit={async (e) => {
-            e.preventDefault(); setMsg(null);
-            try { await sync.verifyCode(email.trim(), code.trim()); setMsg('Angemeldet!'); }
-            catch (err: any) { setMsg('Code ungültig oder abgelaufen.'); }
-          }}>
-            <input inputMode="numeric" autoComplete="one-time-code" placeholder="Code aus der E-Mail" value={code} onChange={(e) => setCode(e.target.value)} />
-            <div className="row">
-              <button className="btn ghost" type="button" onClick={() => setStep('email')}>Zurück</button>
-              <button className="btn primary" type="submit">Anmelden</button>
+            <p className="muted small">Melde dich auf Handy und PC mit demselben Konto an. Der Fortschritt beider Geräte wird zusammengeführt, nichts geht verloren.</p>
+            <div className="seg" role="tablist">
+              <button type="button" role="tab" aria-selected={mode === 'login'} className={mode === 'login' ? 'on' : ''} onClick={() => setMode('login')}>Anmelden</button>
+              <button type="button" role="tab" aria-selected={mode === 'register'} className={mode === 'register' ? 'on' : ''} onClick={() => setMode('register')}>Konto anlegen</button>
             </div>
+            <input type="email" required placeholder="deine@email.de" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
+            <input type="password" required minLength={8} placeholder={mode === 'register' ? 'Passwort (mind. 8 Zeichen)' : 'Passwort'} value={password}
+              onChange={(e) => setPassword(e.target.value)} autoComplete={mode === 'register' ? 'new-password' : 'current-password'} />
+            <button className="btn primary wide" type="submit" disabled={busy}>{busy ? '…' : mode === 'login' ? 'Anmelden' : 'Konto anlegen'}</button>
           </form>
         )}
         {msg && <p className="small">{msg}</p>}

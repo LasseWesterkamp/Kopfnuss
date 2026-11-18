@@ -1,6 +1,6 @@
 // Optionaler Sync über Supabase. Ohne VITE_SUPABASE_URL / VITE_SUPABASE_ANON_KEY ist alles lokal.
-// Login per 6-stelligem Code aus der E-Mail (funktioniert auch in der installierten iPhone-App,
-// wo ein Magic-Link im Safari statt in der App landen würde).
+// Login per E-Mail + Passwort. (Code-Login per Mail ist im Supabase-Gratistarif nicht möglich,
+// und ein Magic-Link würde auf dem iPhone in Safari statt in der installierten App landen.)
 import { createClient, type SupabaseClient, type Session } from '@supabase/supabase-js';
 import type { Progress } from './core/types';
 import { mergeProgress } from './core/progress';
@@ -29,18 +29,31 @@ export function onAuthChange(cb: (s: Session | null) => void) {
   return () => data.subscription.unsubscribe();
 }
 
-export async function sendCode(email: string) {
-  const c = sb();
-  if (!c) throw new Error('Sync ist nicht eingerichtet.');
-  const { error } = await c.auth.signInWithOtp({ email, options: { shouldCreateUser: true } });
-  if (error) throw error;
+function deutsch(e: { message?: string }): Error {
+  const m = e.message ?? String(e);
+  if (/invalid login credentials/i.test(m)) return new Error('E-Mail oder Passwort falsch.');
+  if (/already registered|already exists/i.test(m)) return new Error('Für diese E-Mail gibt es schon ein Konto. Bitte anmelden.');
+  if (/password should be at least|weak password/i.test(m)) return new Error('Das Passwort muss mindestens 8 Zeichen haben.');
+  if (/rate limit/i.test(m)) return new Error('Zu viele Versuche. Bitte kurz warten.');
+  if (/failed to fetch|network/i.test(m)) return new Error('Keine Verbindung. Bist du online?');
+  return new Error(m);
 }
 
-export async function verifyCode(email: string, token: string) {
+export async function signIn(email: string, password: string) {
   const c = sb();
   if (!c) throw new Error('Sync ist nicht eingerichtet.');
-  const { error } = await c.auth.verifyOtp({ email, token, type: 'email' });
-  if (error) throw error;
+  const { error } = await c.auth.signInWithPassword({ email, password });
+  if (error) throw deutsch(error);
+}
+
+export async function signUp(email: string, password: string) {
+  const c = sb();
+  if (!c) throw new Error('Sync ist nicht eingerichtet.');
+  const { data, error } = await c.auth.signUp({ email, password });
+  if (error) throw deutsch(error);
+  // Supabase meldet bei bereits registrierter E-Mail teils keinen Fehler, sondern einen Nutzer ohne Identitäten
+  if (data.user && data.user.identities?.length === 0) throw deutsch({ message: 'already registered' });
+  if (!data.session) await signIn(email, password);
 }
 
 export async function signOut() {

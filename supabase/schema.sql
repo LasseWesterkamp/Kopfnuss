@@ -8,6 +8,12 @@ create table if not exists public.progress (
 
 alter table public.progress enable row level security;
 
+-- Neuere Supabase-Projekte vergeben keine Tabellenrechte mehr automatisch.
+-- Nur angemeldete Nutzer bekommen Zugriff; welche Zeile, regeln die Policies unten.
+revoke all on public.progress from anon;
+revoke all on public.progress from authenticated;
+grant select, insert, update on public.progress to authenticated;
+
 -- Jeder darf nur seine eigene Zeile lesen und schreiben.
 drop policy if exists "eigener Fortschritt lesen" on public.progress;
 drop policy if exists "eigener Fortschritt anlegen" on public.progress;
