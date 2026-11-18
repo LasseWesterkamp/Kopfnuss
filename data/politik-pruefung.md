@@ -14,7 +14,18 @@
 | Regierender Bürgermeister Berlin (nach Wahl 09/2026) | Kai Wegner | April 2023 | ja, weiter im Amt |
 | Ministerpräsidentin Mecklenburg-Vorpommern (nach Wahl 09/2026) | Manuela Schwesig | Juli 2017 | ja, weiter im Amt |
 
+## Bundesregierung komplett mit Wikipedia abgeglichen
+Alle Mitglieder des Kabinetts Merz wurden mit der Tabelle in https://de.wikipedia.org/wiki/Kabinett_Merz verglichen.
+**Wikidata war bei vier Ämtern veraltet**, korrigiert per `manual` in `politics-overrides.json`:
+
+| Amt | Wikidata (veraltet) | korrekt |
+|---|---|---|
+| Verkehr | Patrick Schnieder | Steffen Bilger (seit 29.07.2026) |
+| Arbeit und Soziales | Bärbel Bas | Alexander Schweitzer (seit 13.10.2026) |
+| Gesundheit | keine Angabe | Carsten Linnemann (seit 29.07.2026) |
+| Kultur und Medien | Claudia Roth | Wolfram Weimer (seit Mai 2025) |
+
+Beim nächsten Update prüfen, ob Wikidata nachgezogen hat. Dann die `manual`-Einträge entfernen.
+
 ## Bewusst weggelassen
-- **Bundesgesundheitsministerium:** Seit Nina Warkens Wechsel ins Kanzleramt (Juli 2026) nennt Wikidata keine Nachfolge. Nachtragen über `manual` in `politics-overrides.json`, sobald geklärt.
-- **Kulturstaatsminister:** Wikidata führt noch Claudia Roth (veraltet, seit Mai 2025 Wolfram Weimer).
 - Türkei/USA/Brasilien Regierungschef, Schweiz, Vatikan-Regierung: siehe `politics-overrides.json`.

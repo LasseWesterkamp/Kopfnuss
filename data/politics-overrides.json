@@ -1,7 +1,6 @@
 {
  "_hinweis": "Korrekturen für scripts/update-politics.mjs. skip = Amt nicht abfragen (Daten in Wikidata unzuverlässig). holder = manuell gesetzt (mit Quelle!). names = kürzere Anzeigenamen. manual = Amt von Hand setzen/ergänzen: {\"id\": {\"group\",\"label\",\"holder\",\"since\",\"position\",\"difficulty\",\"source\"}}.",
  "skip": {
-  "kultur": "Wikidata nennt noch Claudia Roth, seit Mai 2025 ist es Wolfram Weimer. Erst wieder aufnehmen, wenn Wikidata korrigiert ist.",
   "int-tr-hog": "Amt des türkischen Ministerpräsidenten 2018 abgeschafft.",
   "int-ch-hos": "Schweiz: Bundesrat als Kollegium, Bundespräsident wechselt jährlich.",
   "int-ch-hog": "Schweiz: s.o.",
@@ -14,5 +13,41 @@
   "Michail Wladimirowitsch Mischustin": "Michail Mischustin",
   "Luiz Inácio Lula da Silva": "Lula da Silva"
  },
- "manual": {}
+ "manual": {
+  "de-verkehr": {
+   "holder": "Steffen Bilger",
+   "since": "2026-07-29",
+   "female": false,
+   "source": "https://de.wikipedia.org/wiki/Kabinett_Merz",
+   "note": "Nachfolger von Patrick Schnieder."
+  },
+  "de-arbeit": {
+   "holder": "Alexander Schweitzer",
+   "since": "2026-10-13",
+   "female": false,
+   "source": "https://de.wikipedia.org/wiki/Kabinett_Merz",
+   "note": "Nachfolger von Bärbel Bas."
+  },
+  "de-gesundheit": {
+   "group": "bund",
+   "label": "Gesundheitsminister/in",
+   "holder": "Carsten Linnemann",
+   "since": "2026-07-29",
+   "female": false,
+   "position": "Q30533368",
+   "difficulty": 2,
+   "source": "https://de.wikipedia.org/wiki/Kabinett_Merz",
+   "note": "Nachfolger von Nina Warken."
+  },
+  "de-kultur": {
+   "group": "bund",
+   "label": "Kulturstaatsminister/in",
+   "holder": "Wolfram Weimer",
+   "since": "2025-05-06",
+   "female": false,
+   "difficulty": 3,
+   "source": "https://de.wikipedia.org/wiki/Kabinett_Merz"
+  }
+ },
+ "_manual_hinweis": "Wikidata war am 18.11.2026 bei diesen Ämtern veraltet (Kabinettsumbildung 29.07.2026, Wechsel 13.10.2026). Quelle: de.wikipedia.org/wiki/Kabinett_Merz. Beim nächsten Update prüfen, ob Wikidata nachgezogen hat, dann Einträge entfernen."
 }

@@ -18,13 +18,14 @@
    "id": "de-arbeit",
    "group": "bund",
    "label": "Arbeitsminister/in",
-   "holder": "Bärbel Bas",
+   "holder": "Alexander Schweitzer",
    "holderId": "Q1019016",
-   "since": "2025-05-06",
+   "since": "2026-10-13",
    "position": "Q30533351",
    "difficulty": 2,
-   "female": true,
-   "source": "https://www.wikidata.org/wiki/Q30533351"
+   "female": false,
+   "source": "https://www.wikidata.org/wiki/Q30533351",
+   "note": "Nachfolger von Bärbel Bas."
   },
   {
    "id": "de-bau",
@@ -123,6 +124,18 @@
    "source": "https://www.wikidata.org/wiki/Q30106113"
   },
   {
+   "id": "de-gesundheit",
+   "group": "bund",
+   "label": "Gesundheitsminister/in",
+   "holder": "Carsten Linnemann",
+   "since": "2026-07-29",
+   "female": false,
+   "position": "Q30533368",
+   "difficulty": 2,
+   "source": "https://de.wikipedia.org/wiki/Kabinett_Merz",
+   "note": "Nachfolger von Nina Warken."
+  },
+  {
    "id": "de-innen",
    "group": "bund",
    "label": "Innenminister/in",
@@ -174,14 +187,12 @@
    "id": "de-kultur",
    "group": "bund",
    "label": "Kulturstaatsminister/in",
-   "holder": "Claudia Roth",
+   "holder": "Wolfram Weimer",
    "holderId": "Q75791",
-   "since": "2021-12-08",
+   "since": "2025-05-06",
    "position": "Q813386",
    "difficulty": 3,
-   "female": true,
-   "skip": true,
-   "skipReason": "Wikidata nennt noch Claudia Roth, seit Mai 2025 ist es Wolfram Weimer. Erst wieder aufnehmen, wenn Wikidata korrigiert ist.",
+   "female": false,
    "source": "https://www.wikidata.org/wiki/Q813386"
   },
   {
@@ -212,13 +223,14 @@
    "id": "de-verkehr",
    "group": "bund",
    "label": "Verkehrsminister/in",
-   "holder": "Patrick Schnieder",
+   "holder": "Steffen Bilger",
    "holderId": "Q1373882",
-   "since": "2025-05-06",
+   "since": "2026-07-29",
    "position": "Q30543924",
    "difficulty": 3,
    "female": false,
-   "source": "https://www.wikidata.org/wiki/Q30543924"
+   "source": "https://www.wikidata.org/wiki/Q30543924",
+   "note": "Nachfolger von Patrick Schnieder."
   },
   {
    "id": "de-verteidigung",
