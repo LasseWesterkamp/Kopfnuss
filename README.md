@@ -1,5 +1,7 @@
 # 🌰 Kopfnuss
 
+**Live: https://lassewesterkamp.github.io/Kopfnuss/**
+
 Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-App (PWA) auf iPhone, Android und PC, auch offline.
 
 **Themen:** Geografie (Hauptstädte, Flüsse, Gebirge, Karte), Flaggen, Geschichte, historische Bilder, aktuelle Politik, Tiere und Pflanzen in Deutschland, Wissenschaft & Natur.
@@ -125,7 +127,7 @@ Auch Länder- und Hauptstadtdaten lassen sich neu holen (`node scripts/fetch-cou
 1. Repo auf **öffentlich** stellen (Settings → General → Danger Zone → Change visibility). Bei privaten Repos braucht Pages einen bezahlten GitHub-Tarif.
 2. Settings → **Pages** → Source: **GitHub Actions**.
 3. Auf `main` pushen. Der Workflow `.github/workflows/deploy.yml` testet, baut und veröffentlicht.
-4. Die App liegt dann unter `https://<github-name>.github.io/kopfnuss/`.
+4. Die App liegt dann unter `https://<github-name>.github.io/<Repo-Name>/` (Groß-/Kleinschreibung beachten, hier: `/Kopfnuss/`).
 
 ### Variante B: Vercel oder Netlify (gratis, auch für private Repos)
 
