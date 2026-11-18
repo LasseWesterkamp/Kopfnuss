@@ -5,6 +5,7 @@
 // Aufruf: node scripts/fetch-images.mjs [--force] [id ...]
 import fs from 'node:fs';
 import sharp from 'sharp';
+import { execFileSync } from 'node:child_process';
 import { sleep, UA } from './lib.mjs';
 
 const args = process.argv.slice(2);
@@ -96,6 +97,8 @@ for (const item of cfg.items) {
         const res = await fetch(dl, { headers: { 'User-Agent': UA } });
         if (res.ok) { buf = Buffer.from(await res.arrayBuffer()); break; }
       } catch { /* Netzwerkfehler: erneut versuchen */ }
+      // Ausweichweg: Wikimedia drosselt Node-Anfragen teils stärker als curl
+      try { buf = execFileSync('curl', ['-sfL', '-m', '60', '-A', UA, dl], { maxBuffer: 50e6 }); if (buf.length) break; } catch { buf = undefined; }
       await sleep(4000 * (a + 1));
     }
     if (!buf) throw new Error('Download fehlgeschlagen');

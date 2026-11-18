@@ -523,7 +523,13 @@
    "explanation": "Erkennbar am orangen Schnabel mit schwarzem Höcker.",
    "prompt": "Welches Tier ist das?",
    "file": "Mute.swan.cygnets.750pix.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-schwan.webp",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mute.swan.cygnets.750pix.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/H%C3%B6ckerschwan"
   },
   {
    "id": "img-fauna-stockente",
@@ -1084,7 +1090,13 @@
    "explanation": "Die Früchte der Eiche heißen Eicheln. Eichen können über 800 Jahre alt werden.",
    "prompt": "Welcher Baum ist das?",
    "file": "Quercus_robur_Sturm31.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-eiche.webp",
+    "author": "Johann Georg Sturm (Painter: Jacob Sturm)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quercus_robur_Sturm31.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Stieleiche"
   },
   {
    "id": "img-flora-fichte",
@@ -1189,7 +1201,13 @@
    "explanation": "Die Lärche ist der einzige heimische Nadelbaum, der im Herbst seine Nadeln abwirft.",
    "prompt": "Welcher Baum ist das?",
    "file": "Larix_decidua_-_Köhler–s_Medizinal-Pflanzen-216.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-laerche.webp",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Larix_decidua_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-216.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Europ%C3%A4ische_L%C3%A4rche"
   },
   {
    "id": "img-flora-tanne",
@@ -1201,7 +1219,13 @@
    "explanation": "Tannenzapfen stehen aufrecht und zerfallen am Baum. Am Boden findet man fast nur Fichtenzapfen.",
    "prompt": "Welcher Baum ist das?",
    "file": "Abies_pinsapo00.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-tanne.webp",
+    "author": "Pierre Edmond Boissier (1810-1885)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abies_pinsapo00.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Tannen"
   },
   {
    "id": "img-flora-eibe",
@@ -1739,7 +1763,14 @@
    "explanation": "Der giftigste Pilz Europas. Er ist für die meisten tödlichen Pilzvergiftungen verantwortlich.",
    "prompt": "Welcher Pilz ist das?",
    "file": "2009-05_Amanita_phalloides_crop.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-knollenblaetter.webp",
+    "author": "Amanita_phalloides_1.JPG: Archenzo derivative work: Ak ccm (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009-05_Amanita_phalloides_crop.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Gr%C3%BCner_Knollenbl%C3%A4tterpilz"
   },
   {
    "id": "img-flora-parasol",
@@ -1971,7 +2002,13 @@
    "explanation": "Dorothea Langes Foto wurde zum Sinnbild der Weltwirtschaftskrise.",
    "prompt": "Was zeigt dieses Bild?",
    "file": "Migrant_Mother_1936_3.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-hist-migrant.webp",
+    "author": "Dorothea Lange, Image edited",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Migrant_Mother_1936_3.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Migrant_Mother"
   },
   {
    "id": "img-hist-earthrise",
@@ -2331,7 +2368,13 @@
    "explanation": "Erster Reichskanzler des Deutschen Kaiserreichs (1871–1890).",
    "prompt": "Wer ist auf diesem Bild zu sehen?",
    "file": "Bismarck_am_Schreibtisch2.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-hist-bismarck.webp",
+    "author": "André Bockmann",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bismarck_am_Schreibtisch2.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Otto_von_Bismarck"
   },
   {
    "id": "img-hist-adenauer",
@@ -2343,7 +2386,14 @@
    "explanation": "Erster Bundeskanzler der Bundesrepublik (1949–1963).",
    "prompt": "Wer ist auf diesem Bild zu sehen?",
    "file": "Bundesarchiv_B_145_Bild-F005630-0005,_Konrad_Adenauer.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-hist-adenauer.webp",
+    "author": "Autor/-in unbekanntUnknown author",
+    "license": "CC BY-SA 3.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F005630-0005,_Konrad_Adenauer.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Konrad_Adenauer"
   },
   {
    "id": "img-hist-luther",
