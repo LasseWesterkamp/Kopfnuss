@@ -103,7 +103,7 @@ Das Skript fragt Wikidata nach den aktuellen Amtsinhabern (Bundesregierung, Mini
 - `WECHSEL`: wer neu im Amt ist
 - `Bitte prüfen`: alle Wechsel im letzten Jahr
 
-**Prüfe die Änderungen kurz auf Wikipedia.** Wikidata ist manchmal veraltet oder kurzzeitig falsch. Korrekturen trägst du in `data/politics-overrides.json` ein:
+**Prüfe die Änderungen kurz auf Wikipedia** und halte das Ergebnis in `data/politik-pruefung.md` fest. Wikidata ist manchmal veraltet oder kurzzeitig falsch. Korrekturen trägst du in `data/politics-overrides.json` ein:
 - `skip`: Amt nicht abfragen (z.B. weil Wikidata falsch ist)
 - `names`: kürzere Anzeigenamen
 - `manual`: Amt von Hand setzen, wenn Wikidata eine Lücke hat
