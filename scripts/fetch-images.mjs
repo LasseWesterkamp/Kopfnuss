@@ -59,7 +59,7 @@ for (const t of todo) if (t.file) fileOf.set(t.id, t.file);
 // 2) Dateiname -> Lizenz, Urheber, Thumbnail-URL
 const meta = new Map();
 for (const c of chunks([...new Set(fileOf.values())], 40)) {
-  const j = await api('prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=960&titles=' + encodeURIComponent(c.map((f) => 'Datei:' + f).join('|')));
+  const j = await api('prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=960&titles=' + encodeURIComponent(c.map((f) => 'Datei:' + f).join('|')));
   const norm = new Map((j.query.normalized ?? []).map((n) => [n.to, n.from]));
   for (const p of j.query.pages) {
     const ii = p.imageinfo?.[0];
@@ -84,9 +84,16 @@ for (const item of cfg.items) {
   if (!ii || !FREE.test(lic)) { problems.push(`${item.id}: Lizenz nicht frei/unklar („${lic}“) für ${file}`); out.push({ ...item, file, image: null }); continue; }
   try {
     let buf;
+    // Kleine Originale: Wikimedia liefert sonst die Originaldatei (stark gedrosselt). Dann selbst ein Standard-Thumbnail anfordern.
+    let dl = ii.thumburl ?? ii.url;
+    if (!/\/thumb\//.test(dl) && /\/commons\/(\w)\/(\w\w)\/([^?]+)/.test(ii.url)) {
+      const [, a, b, name] = ii.url.match(/\/commons\/(\w)\/(\w\w)\/([^?]+)/);
+      const w = (ii.width ?? 600) > 500 ? 500 : 330;
+      dl = `https://upload.wikimedia.org/wikipedia/commons/thumb/${a}/${b}/${name}/${w}px-${name}`;
+    }
     for (let a = 0; a < 6; a++) {
       try {
-        const res = await fetch(ii.thumburl ?? ii.url, { headers: { 'User-Agent': UA } });
+        const res = await fetch(dl, { headers: { 'User-Agent': UA } });
         if (res.ok) { buf = Buffer.from(await res.arrayBuffer()); break; }
       } catch { /* Netzwerkfehler: erneut versuchen */ }
       await sleep(4000 * (a + 1));

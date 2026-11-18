@@ -192,16 +192,6 @@
    "prompt": "Welches Tier ist das?"
   },
   {
-   "id": "img-fauna-seeadler",
-   "topic": "fauna",
-   "group": "vogel",
-   "title": "Seeadler",
-   "answer": "Seeadler",
-   "difficulty": 2,
-   "explanation": "Der Seeadler ist mit bis zu 2,4 m Spannweite der größte Greifvogel Deutschlands.",
-   "prompt": "Welches Tier ist das?"
-  },
-  {
    "id": "img-fauna-bussard",
    "topic": "fauna",
    "group": "vogel",
@@ -1223,16 +1213,6 @@
    "answer": "Sturm auf die Bastille, 1789",
    "difficulty": 1,
    "explanation": "Der Beginn der Französischen Revolution.",
-   "prompt": "Was zeigt dieses Bild?"
-  },
-  {
-   "id": "img-hist-truemmerfrauen",
-   "topic": "bilder",
-   "group": "ereignis",
-   "title": "Trümmerfrauen",
-   "answer": "Trümmerfrauen nach dem Zweiten Weltkrieg",
-   "difficulty": 2,
-   "explanation": "Frauen räumten in den zerstörten Städten den Schutt beiseite.",
    "prompt": "Was zeigt dieses Bild?"
   },
   {

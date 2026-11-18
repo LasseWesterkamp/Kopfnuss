@@ -29,7 +29,14 @@
    "explanation": "Eichhörnchen halten keinen Winterschlaf, sondern Winterruhe, und legen Vorräte an.",
    "prompt": "Welches Tier ist das?",
    "file": "Eichhörnchen_Düsseldorf_Hofgarten_edit.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-eichhoernchen.webp",
+    "author": "Ray eye",
+    "license": "CC BY-SA 2.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Eurasisches_Eichh%C3%B6rnchen"
   },
   {
    "id": "img-fauna-igel",
@@ -41,7 +48,14 @@
    "explanation": "Igel halten Winterschlaf und fressen vor allem Käfer, Larven und Regenwürmer.",
    "prompt": "Welches Tier ist das?",
    "file": "Erinaceus_europaeus_LC0119.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-igel.webp",
+    "author": "Jörg Hempel",
+    "license": "CC BY-SA 2.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erinaceus_europaeus_LC0119.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Braunbrustigel"
   },
   {
    "id": "img-fauna-dachs",
@@ -53,7 +67,14 @@
    "explanation": "Dachse leben in großen unterirdischen Bauen, die über Generationen genutzt werden.",
    "prompt": "Welches Tier ist das?",
    "file": "Badger-badger.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-dachs.webp",
+    "author": "BadgerHero",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badger-badger.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Europ%C3%A4ischer_Dachs"
   },
   {
    "id": "img-fauna-rothirsch",
@@ -65,7 +86,14 @@
    "explanation": "Der Rothirsch ist das größte frei lebende Wildtier Deutschlands. Nur die Männchen tragen ein Geweih.",
    "prompt": "Welches Tier ist das?",
    "file": "Cervus_elaphus_Luc_Viatour_6.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-rothirsch.webp",
+    "author": "Lviatour",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cervus_elaphus_Luc_Viatour_6.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Rothirsch"
   },
   {
    "id": "img-fauna-reh",
@@ -77,7 +105,14 @@
    "explanation": "Rehe sind die häufigste Hirschart Deutschlands. Das Männchen heißt Rehbock.",
    "prompt": "Welches Tier ist das?",
    "file": "Chevreuil(brocard)-HAYE_sylvain.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-reh.webp",
+    "author": "Sylvouille in der Wikipedia auf Französisch",
+    "license": "CC BY-SA 1.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevreuil(brocard)-HAYE_sylvain.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Reh"
   },
   {
    "id": "img-fauna-wildschwein",
@@ -89,7 +124,14 @@
    "explanation": "Wildschweine sind Allesfresser. Die Jungen (Frischlinge) haben ein gestreiftes Fell.",
    "prompt": "Welches Tier ist das?",
    "file": "Wildsau_im_wilderlebnispark_daun.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-wildschwein.webp",
+    "author": "Superbass",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wildsau_im_wilderlebnispark_daun.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Wildschwein"
   },
   {
    "id": "img-fauna-feldhase",
@@ -101,7 +143,14 @@
    "explanation": "Feldhasen haben längere Ohren und Beine als Wildkaninchen und leben nicht in Bauen.",
    "prompt": "Welches Tier ist das?",
    "file": "Lepus_EM115247_(27783674376).jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-feldhase.webp",
+    "author": "Bengt Nyman from Vaxholm, Sweden",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lepus_EM115247_(27783674376).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Feldhase"
   },
   {
    "id": "img-fauna-biber",
@@ -170,7 +219,14 @@
    "explanation": "Seit 2000 ist der Wolf nach Deutschland zurückgekehrt, vor allem in den Osten und Norden.",
    "prompt": "Welches Tier ist das?",
    "file": "Eurasian_wolf_2.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-wolf.webp",
+    "author": "User:Mas3cf",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Wolf"
   },
   {
    "id": "img-fauna-wildkatze",
@@ -182,7 +238,14 @@
    "explanation": "Die Wildkatze hat einen buschigen Schwanz mit stumpfem, schwarzem Ende.",
    "prompt": "Welches Tier ist das?",
    "file": "Felis_silvestris_silvestris_Luc_Viatour.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-wildkatze.webp",
+    "author": "Lviatour",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Felis_silvestris_silvestris_Luc_Viatour.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Europ%C3%A4ische_Wildkatze"
   },
   {
    "id": "img-fauna-baummarder",
@@ -232,7 +295,14 @@
    "explanation": "Maulwürfe graben mit ihren Schaufelhänden Gänge und fressen vor allem Regenwürmer.",
    "prompt": "Welches Tier ist das?",
    "file": "Mr_Mole.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-maulwurf.webp",
+    "author": "Mick E. Talbot",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mr_Mole.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Europ%C3%A4ischer_Maulwurf"
   },
   {
    "id": "img-fauna-seehund",
@@ -244,7 +314,14 @@
    "explanation": "Seehunde leben im Wattenmeer der Nord- und Ostsee.",
    "prompt": "Welches Tier ist das?",
    "file": "Seehund2cele4.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-seehund.webp",
+    "author": "Marcel Burkhard alias cele4 - http://www.tierlexikon.ch",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seehund2cele4.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Seehund"
   },
   {
    "id": "img-fauna-schweinswal",
@@ -256,7 +333,14 @@
    "explanation": "Der Schweinswal ist der einzige in Deutschland heimische Wal.",
    "prompt": "Welches Tier ist das?",
    "file": "Ecomare_-_bruinvissen_Michael_en_Jose_2012_(bruinvissen-michael-jose2012-1551-sd).jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-schweinswal.webp",
+    "author": "Ecomare/Sytske Dijksen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ecomare_-_bruinvissen_Michael_en_Jose_2012_(bruinvissen-michael-jose2012-1551-sd).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Schweinswal"
   },
   {
    "id": "img-fauna-steinadler",
@@ -268,18 +352,14 @@
    "explanation": "In Deutschland brütet der Steinadler nur in den bayerischen Alpen.",
    "prompt": "Welches Tier ist das?",
    "file": "015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
-   "image": null
-  },
-  {
-   "id": "img-fauna-seeadler",
-   "topic": "fauna",
-   "group": "vogel",
-   "title": "Seeadler",
-   "answer": "Seeadler",
-   "difficulty": 2,
-   "explanation": "Der Seeadler ist mit bis zu 2,4 m Spannweite der größte Greifvogel Deutschlands.",
-   "prompt": "Welches Tier ist das?",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-steinadler.webp",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Steinadler"
   },
   {
    "id": "img-fauna-bussard",
@@ -291,7 +371,14 @@
    "explanation": "Der Mäusebussard ist der häufigste Greifvogel Deutschlands.",
    "prompt": "Welches Tier ist das?",
    "file": "Buteo_Buteo.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-bussard.webp",
+    "author": "Morbakka",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buteo_Buteo.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/M%C3%A4usebussard"
   },
   {
    "id": "img-fauna-turmfalke",
@@ -303,7 +390,14 @@
    "explanation": "Turmfalken „rütteln“: Sie stehen flatternd in der Luft und spähen nach Mäusen.",
    "prompt": "Welches Tier ist das?",
    "file": "Common_kestrel_falco_tinnunculus.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-turmfalke.webp",
+    "author": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_kestrel_falco_tinnunculus.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Turmfalke"
   },
   {
    "id": "img-fauna-waldkauz",
@@ -315,7 +409,14 @@
    "explanation": "Der Waldkauz ist die häufigste Eule Deutschlands. Typisch ist sein „Hu-hu-huuu“.",
    "prompt": "Welches Tier ist das?",
    "file": "Waldkauz-Strix_aluco.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-waldkauz.webp",
+    "author": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waldkauz-Strix_aluco.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Waldkauz"
   },
   {
    "id": "img-fauna-uhu",
@@ -327,7 +428,14 @@
    "explanation": "Der Uhu ist die größte Eule der Welt. Erkennbar an den Federohren und orangen Augen.",
    "prompt": "Welches Tier ist das?",
    "file": "Uhu-muc.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-uhu.webp",
+    "author": "Fotografie: Softeis",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uhu-muc.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Uhu"
   },
   {
    "id": "img-fauna-schleiereule",
@@ -339,7 +447,14 @@
    "explanation": "Die Schleiereule hat einen herzförmigen, hellen Gesichtsschleier.",
    "prompt": "Welches Tier ist das?",
    "file": "Tyto_alba_tylluan_wen_detail.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-schleiereule.webp",
+    "author": "User:Alun Williams333",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tyto_alba_tylluan_wen_detail.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Schleiereule"
   },
   {
    "id": "img-fauna-storch",
@@ -351,7 +466,14 @@
    "explanation": "Weißstörche überwintern in Afrika und brüten oft auf Dächern und Masten.",
    "prompt": "Welches Tier ist das?",
    "file": "Ciconia_ciconia_(aka).jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-storch.webp",
+    "author": "André Karwath aka Aka",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ciconia_ciconia_(aka).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Wei%C3%9Fstorch"
   },
   {
    "id": "img-fauna-graureiher",
@@ -363,7 +485,14 @@
    "explanation": "Graureiher stehen oft regungslos am Wasser und jagen Fische und Mäuse.",
    "prompt": "Welches Tier ist das?",
    "file": "Grey_Heron,_Ardea_cinerea,_at_Pilanesberg_National_Park,_Northwest_Province,_South_Africa_(28569532395).jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-graureiher.webp",
+    "author": "Derek Keats from Johannesburg, South Africa",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grey_Heron,_Ardea_cinerea,_at_Pilanesberg_National_Park,_Northwest_Province,_South_Africa_(28569532395).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Graureiher"
   },
   {
    "id": "img-fauna-kranich",
@@ -375,7 +504,14 @@
    "explanation": "Kraniche ziehen im Herbst in großen Keilformationen nach Süden.",
    "prompt": "Welches Tier ist das?",
    "file": "Common_crane_grus_grus.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-kranich.webp",
+    "author": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_crane_grus_grus.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Kranich"
   },
   {
    "id": "img-fauna-schwan",
@@ -399,7 +535,14 @@
    "explanation": "Die Männchen (Erpel) haben einen grün schillernden Kopf.",
    "prompt": "Welches Tier ist das?",
    "file": "Mallard_male_female.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-stockente.webp",
+    "author": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mallard_male_female.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Stockente"
   },
   {
    "id": "img-fauna-buntspecht",
@@ -411,7 +554,14 @@
    "explanation": "Der Buntspecht ist der häufigste Specht Deutschlands. Er trommelt, um sein Revier zu markieren.",
    "prompt": "Welches Tier ist das?",
    "file": "Большая_пёстрая_дятлиха,_Усынинская_поляна.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-buntspecht.webp",
+    "author": "Dion Art",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F_%D0%BF%D1%91%D1%81%D1%82%D1%80%D0%B0%D1%8F_%D0%B4%D1%8F%D1%82%D0%BB%D0%B8%D1%85%D0%B0,_%D0%A3%D1%81%D1%8B%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%BE%D0%BB%D1%8F%D0%BD%D0%B0.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Buntspecht"
   },
   {
    "id": "img-fauna-eisvogel",
@@ -423,7 +573,14 @@
    "explanation": "Der Eisvogel stößt kopfüber ins Wasser, um kleine Fische zu fangen.",
    "prompt": "Welches Tier ist das?",
    "file": "Ein_Eisvogel_im_Schwebflug.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-eisvogel.webp",
+    "author": "Joefrei",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ein_Eisvogel_im_Schwebflug.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Eisvogel"
   },
   {
    "id": "img-fauna-rotkehlchen",
@@ -435,7 +592,14 @@
    "explanation": "Rotkehlchen singen auch im Winter und bei Nacht unter Laternen.",
    "prompt": "Welches Tier ist das?",
    "file": "Robin_(9509442456).jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-rotkehlchen.webp",
+    "author": "Jacob Spinks from Northamptonshire, England",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robin_(9509442456).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Rotkehlchen"
   },
   {
    "id": "img-fauna-amsel",
@@ -447,7 +611,14 @@
    "explanation": "Männchen sind schwarz mit gelbem Schnabel, Weibchen braun.",
    "prompt": "Welches Tier ist das?",
    "file": "Common_Blackbird.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-amsel.webp",
+    "author": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_Blackbird.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Amsel"
   },
   {
    "id": "img-fauna-kohlmeise",
@@ -459,7 +630,14 @@
    "explanation": "Die Kohlmeise ist die größte heimische Meise mit schwarzem Bauchstreifen.",
    "prompt": "Welches Tier ist das?",
    "file": "Parus_major_Luc_Viatour.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-kohlmeise.webp",
+    "author": "Luc Viatour from Bruxelles, Belgique",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parus_major_Luc_Viatour.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Kohlmeise"
   },
   {
    "id": "img-fauna-blaumeise",
@@ -471,7 +649,14 @@
    "explanation": "Die Blaumeise hat eine blaue Kappe und einen gelben Bauch.",
    "prompt": "Welches Tier ist das?",
    "file": "Eurasian_blue_tit_Lancashire.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-blaumeise.webp",
+    "author": "Francis Franklin",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eurasian_blue_tit_Lancashire.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Blaumeise"
   },
   {
    "id": "img-fauna-spatz",
@@ -483,7 +668,14 @@
    "explanation": "Der Spatz lebt fast nur in der Nähe von Menschen.",
    "prompt": "Welches Tier ist das?",
    "file": "House_sparrow_male_in_Prospect_Park_(53532).jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-spatz.webp",
+    "author": "Rhododendrites",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:House_sparrow_male_in_Prospect_Park_(53532).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Haussperling"
   },
   {
    "id": "img-fauna-elster",
@@ -514,7 +706,14 @@
    "explanation": "Der Buchfink ist einer der häufigsten Vögel Deutschlands.",
    "prompt": "Welches Tier ist das?",
    "file": "Fringilla_coelebs_(chaffinch),_male.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-buchfink.webp",
+    "author": "Self: Commons user MichaelMaggs",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fringilla_coelebs_(chaffinch),_male.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Buchfink"
   },
   {
    "id": "img-fauna-erdkroete",
@@ -526,7 +725,14 @@
    "explanation": "Erdkröten wandern im Frühjahr zu ihren Laichgewässern. Dafür gibt es Krötenzäune.",
    "prompt": "Welches Tier ist das?",
    "file": "Bufo_bufo_sitting-Iric2006.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-erdkroete.webp",
+    "author": "Iric",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bufo_bufo_sitting-Iric2006.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Erdkr%C3%B6te"
   },
   {
    "id": "img-fauna-grasfrosch",
@@ -538,7 +744,14 @@
    "explanation": "Der Grasfrosch ist der häufigste Froschlurch in Deutschland.",
    "prompt": "Welches Tier ist das?",
    "file": "European_Common_Frog_Rana_temporaria_(cropped).jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-grasfrosch.webp",
+    "author": "Richard Bartz, Munich aka Makro Freak Image:MFB.jpg",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_Common_Frog_Rana_temporaria_(cropped).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Grasfrosch"
   },
   {
    "id": "img-fauna-feuersalamander",
@@ -550,7 +763,14 @@
    "explanation": "Seine gelb-schwarze Färbung warnt vor seinem giftigen Hautsekret.",
    "prompt": "Welches Tier ist das?",
    "file": "Salamandra_salamandra_Odenwald.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-feuersalamander.webp",
+    "author": "Michael Linnenbach",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salamandra_salamandra_Odenwald.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Feuersalamander"
   },
   {
    "id": "img-fauna-zauneidechse",
@@ -562,7 +782,14 @@
    "explanation": "Die Männchen sind zur Paarungszeit an den Flanken leuchtend grün.",
    "prompt": "Welches Tier ist das?",
    "file": "M_Zauneidechse1_Edit1.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-zauneidechse.webp",
+    "author": "böhringer friedrich",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:M_Zauneidechse1_Edit1.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Zauneidechse"
   },
   {
    "id": "img-fauna-ringelnatter",
@@ -574,7 +801,14 @@
    "explanation": "Ungiftig, erkennbar an den gelben Halbmondflecken am Hinterkopf.",
    "prompt": "Welches Tier ist das?",
    "file": "2017.07.17.-21-Tiefer_See_oder_Grubensee-Storkow_(Mark)--Ringelnatter.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-ringelnatter.webp",
+    "author": "Andreas Eichler",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017.07.17.-21-Tiefer_See_oder_Grubensee-Storkow_(Mark)--Ringelnatter.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Ringelnatter"
   },
   {
    "id": "img-fauna-kreuzotter",
@@ -605,7 +839,14 @@
    "explanation": "Die Blindschleiche ist keine Schlange, sondern eine Eidechse ohne Beine.",
    "prompt": "Welches Tier ist das?",
    "file": "AnguisFragilis_Collage.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-blindschleiche.webp",
+    "author": "Christian Fischer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:AnguisFragilis_Collage.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Blindschleiche"
   },
   {
    "id": "img-fauna-hirschkaefer",
@@ -655,7 +896,14 @@
    "explanation": "Die Augenflecken auf den Flügeln sollen Fressfeinde abschrecken.",
    "prompt": "Welches Tier ist das?",
    "file": "Tagpfauenauge_Aglais_io.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-tagpfauenauge.webp",
+    "author": "Morbakka",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tagpfauenauge_Aglais_io.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Tagpfauenauge"
   },
   {
    "id": "img-fauna-zitronenfalter",
@@ -686,7 +934,14 @@
    "explanation": "Ein Bienenvolk kann im Sommer 40.000 bis 60.000 Tiere umfassen.",
    "prompt": "Welches Tier ist das?",
    "file": "Apis_mellifera_Western_honey_bee.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-honigbiene.webp",
+    "author": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Westliche_Honigbiene"
   },
   {
    "id": "img-fauna-hornisse",
@@ -698,7 +953,14 @@
    "explanation": "Hornissen sind die größten Wespen Mitteleuropas und stehen unter Naturschutz.",
    "prompt": "Welches Tier ist das?",
    "file": "Vespa_crabro_80708.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-hornisse.webp",
+    "author": "Accipiter (R. Altenkamp, Berlin)",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vespa_crabro_80708.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Hornisse"
   },
   {
    "id": "img-fauna-libelle",
@@ -710,7 +972,14 @@
    "explanation": "Eine der häufigsten Großlibellen. Libellenlarven leben mehrere Jahre im Wasser.",
    "prompt": "Welches Tier ist das?",
    "file": "9,5_bis11_Zentimeter_kann_die_Flügelspannweite_der_blaugrünen_Mosaikjungfer_sein._03.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-libelle.webp",
+    "author": "Holger Uwe Schmitt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:9,5_bis11_Zentimeter_kann_die_Fl%C3%BCgelspannweite_der_blaugr%C3%BCnen_Mosaikjungfer_sein._03.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Blaugr%C3%BCne_Mosaikjungfer"
   },
   {
    "id": "img-fauna-forelle",
@@ -740,7 +1009,14 @@
    "explanation": "Der Hecht ist ein Raubfisch mit entenschnabelartigem Maul.",
    "prompt": "Welches Tier ist das?",
    "file": "Europäischer_Hecht.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-fauna-hecht.webp",
+    "author": "HalbsHännile",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Europ%C3%A4ischer_Hecht.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Hecht"
   },
   {
    "id": "img-fauna-karpfen",
@@ -785,8 +1061,8 @@
    "group": "baum",
    "title": "Rotbuche",
    "answer": "Rotbuche",
-   "difficulty": 1,
-   "explanation": "Die Rotbuche wäre ohne den Menschen der häufigste Baum Deutschlands.",
+   "difficulty": 3,
+   "explanation": "Die Rotbuche ist der häufigste Laubbaum Deutschlands. Ohne den Menschen wäre sie hier der vorherrschende Baum.",
    "prompt": "Welcher Baum ist das?",
    "file": "Buchenwald_1.jpg",
    "image": {
@@ -817,7 +1093,7 @@
    "title": "Gemeine Fichte",
    "answer": "Fichte",
    "difficulty": 1,
-   "explanation": "Die Fichte ist der häufigste Baum in deutschen Wäldern. Ihre Zapfen hängen nach unten.",
+   "explanation": "Die Fichte ist einer der häufigsten Bäume in deutschen Wäldern. Ihre Zapfen hängen nach unten.",
    "prompt": "Welcher Baum ist das?",
    "file": "Picea_abies.jpg",
    "image": {
@@ -839,7 +1115,13 @@
    "explanation": "Kiefern haben lange Nadeln, die immer zu zweit stehen.",
    "prompt": "Welcher Baum ist das?",
    "file": "Illustration_Pinus_sylvestris0_new.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-kiefer.webp",
+    "author": "floranet|]]",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Pinus_sylvestris0_new.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Waldkiefer"
   },
   {
    "id": "img-flora-birke",
@@ -851,7 +1133,14 @@
    "explanation": "Erkennbar an der weißen Rinde mit schwarzen Rissen.",
    "prompt": "Welcher Baum ist das?",
    "file": "Chmielno_brzoza.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-birke.webp",
+    "author": "Andrzej Otrębski",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chmielno_brzoza.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/H%C3%A4ngebirke"
   },
   {
    "id": "img-flora-ahorn",
@@ -863,7 +1152,14 @@
    "explanation": "Ahornfrüchte drehen sich beim Fallen wie kleine Propeller.",
    "prompt": "Welcher Baum ist das?",
    "file": "Acer_pseudoplatanus_Chaltenbrunnen.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-ahorn.webp",
+    "author": "MurielBendel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acer_pseudoplatanus_Chaltenbrunnen.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Bergahorn"
   },
   {
    "id": "img-flora-linde",
@@ -899,11 +1195,12 @@
    "id": "img-flora-tanne",
    "topic": "flora",
    "group": "baum",
-   "title": "Weißtanne",
-   "answer": "Weißtanne",
+   "title": "Tannen",
+   "answer": "Tanne",
    "difficulty": 3,
    "explanation": "Tannenzapfen stehen aufrecht und zerfallen am Baum. Am Boden findet man fast nur Fichtenzapfen.",
    "prompt": "Welcher Baum ist das?",
+   "file": "Abies_pinsapo00.jpg",
    "image": null
   },
   {
@@ -916,7 +1213,14 @@
    "explanation": "Fast alle Teile der Eibe sind giftig, nur der rote Samenmantel nicht.",
    "prompt": "Welcher Baum ist das?",
    "file": "Eibe_Samen_mit_Samenmantel.JPG",
-   "image": null
+   "image": {
+    "src": "img/img-flora-eibe.webp",
+    "author": "4028mdk09",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eibe_Samen_mit_Samenmantel.JPG"
+   },
+   "source": "https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe"
   },
   {
    "id": "img-flora-kastanie",
@@ -924,7 +1228,7 @@
    "group": "baum",
    "title": "Gewöhnliche Rosskastanie",
    "answer": "Rosskastanie",
-   "difficulty": 1,
+   "difficulty": 3,
    "explanation": "Rosskastanien sind für Menschen ungenießbar, anders als die Esskastanie.",
    "prompt": "Welcher Baum ist das?",
    "file": "Horse-chestnut_800.jpg",
@@ -947,7 +1251,13 @@
    "explanation": "Weiden wachsen gern an Flüssen. Aus ihrer Rinde wurde früher ein Schmerzmittel gewonnen.",
    "prompt": "Welcher Baum ist das?",
    "file": "Thomé_Salix_alba_clean.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-weide.webp",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thom%C3%A9_Salix_alba_clean.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Silberweide"
   },
   {
    "id": "img-flora-hasel",
@@ -959,7 +1269,13 @@
    "explanation": "Die Hasel blüht oft schon im Februar mit gelben Kätzchen.",
    "prompt": "Welcher Baum ist das?",
    "file": "Illustration_Corylus_avellana0.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-hasel.webp",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Corylus_avellana0.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Gemeine_Hasel"
   },
   {
    "id": "img-flora-esche",
@@ -971,7 +1287,14 @@
    "explanation": "Eschen sind derzeit durch eine Pilzkrankheit, das Eschentriebsterben, stark bedroht.",
    "prompt": "Welcher Baum ist das?",
    "file": "Fraxinus_excelsior_001.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-esche.webp",
+    "author": "Willow",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fraxinus_excelsior_001.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Gemeine_Esche"
   },
   {
    "id": "img-flora-gaensebluemchen",
@@ -983,7 +1306,14 @@
    "explanation": "Gänseblümchen blühen fast das ganze Jahr.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Gaensebluemchen-Krusenkoppel-2022_05_msu-7425-7154.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-gaensebluemchen.webp",
+    "author": "Matthias Süßen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gaensebluemchen-Krusenkoppel-2022_05_msu-7425-7154.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/G%C3%A4nsebl%C3%BCmchen"
   },
   {
    "id": "img-flora-loewenzahn",
@@ -995,7 +1325,13 @@
    "explanation": "Aus der gelben Blüte wird die „Pusteblume“.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Taraxacum_officinale_-_Köhler–s_Medizinal-Pflanzen-135.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-loewenzahn.webp",
+    "author": "Walther Otto Müller",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Gew%C3%B6hnlicher_L%C3%B6wenzahn"
   },
   {
    "id": "img-flora-mohn",
@@ -1025,7 +1361,14 @@
    "explanation": "Die Kornblume war früher ein typisches Ackerunkraut im Getreide.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Kornblume02.JPG",
-   "image": null
+   "image": {
+    "src": "img/img-flora-kornblume.webp",
+    "author": "böhringer friedrich",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kornblume02.JPG"
+   },
+   "source": "https://de.wikipedia.org/wiki/Kornblume"
   },
   {
    "id": "img-flora-kamille",
@@ -1037,7 +1380,14 @@
    "explanation": "Kamillentee wird gegen Entzündungen und Magenbeschwerden getrunken.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Matricaria_recutita_001.JPG",
-   "image": null
+   "image": {
+    "src": "img/img-flora-kamille.webp",
+    "author": "H. Zell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matricaria_recutita_001.JPG"
+   },
+   "source": "https://de.wikipedia.org/wiki/Echte_Kamille"
   },
   {
    "id": "img-flora-buschwind",
@@ -1049,7 +1399,14 @@
    "explanation": "Es bildet im Frühjahr weiße Teppiche im Laubwald, bevor die Bäume austreiben.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Anemone_nemorosa_4_RF.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-buschwind.webp",
+    "author": "Robert Flogaus-Faust",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anemone_nemorosa_4_RF.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Buschwindr%C3%B6schen"
   },
   {
    "id": "img-flora-maigloeckchen",
@@ -1061,7 +1418,13 @@
    "explanation": "Maiglöckchen sind giftig und werden leicht mit Bärlauch verwechselt.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Illustration_Convallaria_majalis0a.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-maigloeckchen.webp",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Convallaria_majalis0a.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Maigl%C3%B6ckchen"
   },
   {
    "id": "img-flora-baerlauch",
@@ -1092,7 +1455,14 @@
    "explanation": "Schneeglöckchen blühen oft schon im Februar, teils durch den Schnee.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Galanthus_nivalis.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-schneegloeckchen.webp",
+    "author": "Unbekannt",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galanthus_nivalis.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Kleines_Schneegl%C3%B6ckchen"
   },
   {
    "id": "img-flora-fingerhut",
@@ -1104,7 +1474,14 @@
    "explanation": "Hochgiftig, aber Grundlage wichtiger Herzmedikamente.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Digitalis_purpurea_01.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-fingerhut.webp",
+    "author": "Kuebi = Armin Kübelbeck",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Digitalis_purpurea_01.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Roter_Fingerhut"
   },
   {
    "id": "img-flora-tollkirsche",
@@ -1116,7 +1493,13 @@
    "explanation": "Die schwarzen Beeren sind sehr giftig. Schon wenige können für Kinder tödlich sein.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Illustration_Atropa_bella-donna0_clean.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-tollkirsche.webp",
+    "author": "User:Kilom691",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Atropa_bella-donna0_clean.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Schwarze_Tollkirsche"
   },
   {
    "id": "img-flora-brennnessel",
@@ -1128,7 +1511,14 @@
    "explanation": "Die Brennhaare brechen bei Berührung ab und geben Ameisensäure und Histamin ab.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Brennnessel.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-brennnessel.webp",
+    "author": "Unbekannt",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brennnessel.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Gro%C3%9Fe_Brennnessel"
   },
   {
    "id": "img-flora-heidekraut",
@@ -1140,7 +1530,14 @@
    "explanation": "Die Besenheide färbt im Spätsommer die Lüneburger Heide lila.",
    "prompt": "Welche Pflanze ist das?",
    "file": "CallunaVulgaris.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-heidekraut.webp",
+    "author": "Aqwis (Aqwis)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CallunaVulgaris.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Besenheide"
   },
   {
    "id": "img-flora-heidelbeere",
@@ -1152,7 +1549,14 @@
    "explanation": "Wilde Heidelbeeren färben Mund und Zunge blau, Kulturheidelbeeren kaum.",
    "prompt": "Welche Pflanze ist das?",
    "file": "Bieszczady_Flora.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-heidelbeere.webp",
+    "author": "Marek Silarski",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bieszczady_Flora.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Heidelbeere"
   },
   {
    "id": "img-flora-edelweiss",
@@ -1177,12 +1581,20 @@
    "id": "img-flora-enzian",
    "topic": "flora",
    "group": "blume",
-   "title": "Stängelloser Enzian",
+   "title": "Enziane",
    "answer": "Enzian",
    "difficulty": 2,
    "explanation": "Enziane sind typische Alpenblumen mit tiefblauen Blüten.",
    "prompt": "Welche Pflanze ist das?",
-   "image": null
+   "file": "Flora_Appennino_Tosco_Emiliano_002.JPG",
+   "image": {
+    "src": "img/img-flora-enzian.webp",
+    "author": "Innocenti.rob",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flora_Appennino_Tosco_Emiliano_002.JPG"
+   },
+   "source": "https://de.wikipedia.org/wiki/Enziane"
   },
   {
    "id": "img-flora-frauenschuh",
@@ -1308,7 +1720,14 @@
    "explanation": "Ein beliebter, dottergelber Speisepilz.",
    "prompt": "Welcher Pilz ist das?",
    "file": "Cantharellus_cibarius_-_Lindsey.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-flora-pfifferling.webp",
+    "author": "James Lindsey",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cantharellus_cibarius_-_Lindsey.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Echter_Pfifferling"
   },
   {
    "id": "img-flora-knollenblaetter",
@@ -1326,12 +1745,20 @@
    "id": "img-flora-parasol",
    "topic": "flora",
    "group": "pilz",
-   "title": "Parasol (Pilz)",
+   "title": "Parasol",
    "answer": "Parasol",
    "difficulty": 3,
    "explanation": "Der Parasol kann einen Hut von über 30 cm Durchmesser haben.",
    "prompt": "Welcher Pilz ist das?",
-   "image": null
+   "file": "Parasolzwam2009.jpg",
+   "image": {
+    "src": "img/img-flora-parasol.webp",
+    "author": "DirkVE",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parasolzwam2009.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Parasol"
   },
   {
    "id": "img-hist-mondlandung",
@@ -1342,12 +1769,12 @@
    "difficulty": 1,
    "explanation": "1969 landeten Neil Armstrong und Buzz Aldrin als erste Menschen auf dem Mond.",
    "prompt": "Was zeigt dieses Bild?",
-   "file": "Apollo_11_insignia.png",
+   "file": "Aldrin Apollo 11 original.jpg",
    "image": {
     "src": "img/img-hist-mondlandung.webp",
-    "author": "NASA",
+    "author": "Neil Armstrong",
     "license": "Gemeinfrei",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollo_11_insignia.png"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aldrin_Apollo_11_original.jpg"
    },
    "source": "https://de.wikipedia.org/wiki/Apollo_11"
   },
@@ -1378,13 +1805,13 @@
    "difficulty": 1,
    "explanation": "Am 9. November 1989 öffnete die DDR die Grenze.",
    "prompt": "Was zeigt dieses Bild?",
-   "file": "Karte_berliner_mauer_de19xx.png",
+   "file": "Thefalloftheberlinwall1989.JPG",
    "image": {
     "src": "img/img-hist-mauerfall.webp",
-    "author": "Webcyss",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karte_berliner_mauer_de19xx.png"
+    "author": "Unknown photographer, Reproduction by Lear 21 in der Wikipedia auf Englisch.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg"
    },
    "source": "https://de.wikipedia.org/wiki/Mauerfall"
   },
@@ -1397,13 +1824,13 @@
    "difficulty": 1,
    "explanation": "Die Mauer trennte von 1961 bis 1989 Ost- und West-Berlin.",
    "prompt": "Was zeigt dieses Bild?",
-   "file": "Karte_berliner_mauer_de19xx.png",
+   "file": "Berlinermauer.jpg",
    "image": {
     "src": "img/img-hist-mauerbau.webp",
-    "author": "Webcyss",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karte_berliner_mauer_de19xx.png"
+    "author": "Noir",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlinermauer.jpg"
    },
    "source": "https://de.wikipedia.org/wiki/Berliner_Mauer"
   },
@@ -1425,25 +1852,6 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_175-14676,_Leipzig,_Reichsgericht,_russischer_Panzer.jpg"
    },
    "source": "https://de.wikipedia.org/wiki/Aufstand_vom_17._Juni_1953"
-  },
-  {
-   "id": "img-hist-kniefall",
-   "topic": "bilder",
-   "group": "ereignis",
-   "title": "Kniefall von Warschau",
-   "answer": "Kniefall von Warschau, 1970",
-   "difficulty": 2,
-   "explanation": "Willy Brandt kniete vor dem Denkmal für den Aufstand im Warschauer Ghetto.",
-   "prompt": "Was zeigt dieses Bild?",
-   "file": "2022_Warszawa_pomnik_Willy'ego_Brandta,_1.jpg",
-   "image": {
-    "src": "img/img-hist-kniefall.webp",
-    "author": "Cybularny",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Warszawa_pomnik_Willy%27ego_Brandta,_1.jpg"
-   },
-   "source": "https://de.wikipedia.org/wiki/Kniefall_von_Warschau"
   },
   {
    "id": "img-hist-reichstagsbrand",
@@ -1696,12 +2104,19 @@
    "id": "img-hist-kaiserprokl",
    "topic": "bilder",
    "group": "ereignis",
-   "title": "Die Proklamierung des deutschen Kaiserreiches",
+   "title": "Deutsche Reichsgründung",
    "answer": "Kaiserproklamation in Versailles, 1871",
    "difficulty": 2,
    "explanation": "Gemälde von Anton von Werner: Wilhelm I. wird zum Kaiser ausgerufen.",
    "prompt": "Was zeigt dieses Bild?",
-   "image": null
+   "file": "Wernerprokla.jpg",
+   "image": {
+    "src": "img/img-hist-kaiserprokl.webp",
+    "author": "Anton von Werner",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_v_Werner_-_Kaiserproklamation_am_18_Januar_1871_(3._Fassung_1885).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Reichsgr%C3%BCndung"
   },
   {
    "id": "img-hist-freiheit",
@@ -1786,7 +2201,14 @@
    "explanation": "Ob Luther die Thesen wirklich an die Tür schlug, ist umstritten. Das Motiv ist aber berühmt.",
    "prompt": "Was zeigt dieses Bild?",
    "file": "Lutherstadt_Wittenberg_09-2016_photo06.jpg",
-   "image": null
+   "image": {
+    "src": "img/img-hist-thesen.webp",
+    "author": "A.Savin",
+    "license": "FAL",
+    "licenseUrl": "http://artlibre.org/licence/lal/en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lutherstadt_Wittenberg_09-2016_photo06.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Thesenanschlag"
   },
   {
    "id": "img-hist-bastille",
@@ -1805,28 +2227,6 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg"
    },
    "source": "https://de.wikipedia.org/wiki/Sturm_auf_die_Bastille"
-  },
-  {
-   "id": "img-hist-reichstag-flagge",
-   "topic": "bilder",
-   "group": "ereignis",
-   "title": "Hissen der sowjetischen Flagge auf dem Reichstag",
-   "answer": "Sowjetische Flagge auf dem Reichstag, 1945",
-   "difficulty": 2,
-   "explanation": "Das gestellte Foto von Jewgeni Chaldej symbolisiert das Kriegsende in Berlin.",
-   "prompt": "Was zeigt dieses Bild?",
-   "image": null
-  },
-  {
-   "id": "img-hist-truemmerfrauen",
-   "topic": "bilder",
-   "group": "ereignis",
-   "title": "Trümmerfrau",
-   "answer": "Trümmerfrauen nach dem Zweiten Weltkrieg",
-   "difficulty": 2,
-   "explanation": "Frauen räumten in den zerstörten Städten den Schutt beiseite.",
-   "prompt": "Was zeigt dieses Bild?",
-   "image": null
   },
   {
    "id": "img-hist-dresden",
@@ -1886,30 +2286,11 @@
    "source": "https://de.wikipedia.org/wiki/Checkpoint_Charlie"
   },
   {
-   "id": "img-hist-einheit",
-   "topic": "bilder",
-   "group": "ereignis",
-   "title": "Deutsche Wiedervereinigung",
-   "answer": "Deutsche Wiedervereinigung, 1990",
-   "difficulty": 2,
-   "explanation": "Am 3. Oktober 1990 trat die DDR der Bundesrepublik bei.",
-   "prompt": "Was zeigt dieses Bild?",
-   "file": "Brandenburger_Tor_abends.jpg",
-   "image": {
-    "src": "img/img-hist-einheit.webp",
-    "author": "Thomas Wolf, www.foto-tw.de",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_abends.jpg"
-   },
-   "source": "https://de.wikipedia.org/wiki/Deutsche_Wiedervereinigung"
-  },
-  {
    "id": "img-hist-gagarin",
    "topic": "bilder",
    "group": "person",
    "title": "Juri Alexejewitsch Gagarin",
-   "answer": "Juri Gagarin, erster Mensch im All (1961)",
+   "answer": "Juri Gagarin",
    "difficulty": 2,
    "explanation": "Gagarin umrundete 1961 als erster Mensch die Erde.",
    "prompt": "Wer ist auf diesem Bild zu sehen?",
