@@ -1314,6 +1314,247 @@
    "difficulty": 2,
    "explanation": "16. Präsident der USA, schaffte die Sklaverei ab.",
    "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-goethe",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Johann Wolfgang von Goethe",
+   "answer": "Johann Wolfgang von Goethe",
+   "difficulty": 1,
+   "explanation": "Dichter („Faust“), einer der bedeutendsten Schriftsteller deutscher Sprache.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-schiller",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Friedrich Schiller",
+   "answer": "Friedrich Schiller",
+   "difficulty": 2,
+   "explanation": "Dichter und Dramatiker („Die Räuber“, „Wilhelm Tell“), Freund Goethes.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-beethoven",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Ludwig van Beethoven",
+   "answer": "Ludwig van Beethoven",
+   "difficulty": 1,
+   "explanation": "Komponist aus Bonn. Seine 9. Sinfonie enthält die „Ode an die Freude“, heute Europahymne.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-bach",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Johann Sebastian Bach",
+   "answer": "Johann Sebastian Bach",
+   "difficulty": 2,
+   "explanation": "Barockkomponist, Thomaskantor in Leipzig.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-mozart",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Wolfgang Amadeus Mozart",
+   "answer": "Wolfgang Amadeus Mozart",
+   "difficulty": 1,
+   "explanation": "Komponist aus Salzburg („Die Zauberflöte“).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-marx",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Karl Marx",
+   "answer": "Karl Marx",
+   "difficulty": 1,
+   "explanation": "Philosoph aus Trier, schrieb „Das Kapital“ und mit Engels das „Kommunistische Manifest“.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-napoleon",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Napoleon Bonaparte",
+   "answer": "Napoleon Bonaparte",
+   "difficulty": 1,
+   "explanation": "Französischer Kaiser von 1804 bis 1814/15.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Jacques-Louis David - The Emperor Napoleon in His Study at the Tuileries - Google Art Project.jpg"
+  },
+  {
+   "id": "img-hist-friedrich2",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Friedrich II. (Preußen)",
+   "answer": "Friedrich der Große",
+   "difficulty": 2,
+   "explanation": "König von Preußen (1740–1786), genannt „der Alte Fritz“.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-wilhelm2",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Wilhelm II. (Deutsches Reich)",
+   "answer": "Kaiser Wilhelm II.",
+   "difficulty": 2,
+   "explanation": "Letzter Deutscher Kaiser, dankte 1918 ab.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-gandhi",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Mahatma Gandhi",
+   "answer": "Mahatma Gandhi",
+   "difficulty": 1,
+   "explanation": "Führte Indien mit gewaltfreiem Widerstand in die Unabhängigkeit (1947).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-churchill",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Winston Churchill",
+   "answer": "Winston Churchill",
+   "difficulty": 1,
+   "explanation": "Britischer Premierminister im Zweiten Weltkrieg.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-darwin",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Charles Darwin",
+   "answer": "Charles Darwin",
+   "difficulty": 2,
+   "explanation": "Naturforscher, Begründer der Evolutionstheorie.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-newton",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Isaac Newton",
+   "answer": "Isaac Newton",
+   "difficulty": 2,
+   "explanation": "Physiker und Mathematiker, beschrieb die Schwerkraft.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-leonardo",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Leonardo da Vinci",
+   "answer": "Leonardo da Vinci",
+   "difficulty": 2,
+   "explanation": "Maler („Mona Lisa“), Erfinder und Universalgelehrter der Renaissance.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-victoria",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Victoria (Vereinigtes Königreich)",
+   "answer": "Queen Victoria",
+   "difficulty": 2,
+   "explanation": "Britische Königin von 1837 bis 1901, Namensgeberin des „Viktorianischen Zeitalters“.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-jfk",
+   "topic": "bilder",
+   "group": "person",
+   "title": "John F. Kennedy",
+   "answer": "John F. Kennedy",
+   "difficulty": 1,
+   "explanation": "35. Präsident der USA, 1963 in Dallas ermordet.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-roosevelt",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Franklin D. Roosevelt",
+   "answer": "Franklin D. Roosevelt",
+   "difficulty": 2,
+   "explanation": "US-Präsident von 1933 bis 1945, „New Deal“.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-brandt",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Willy Brandt",
+   "answer": "Willy Brandt",
+   "difficulty": 2,
+   "explanation": "Bundeskanzler (1969–1974), Friedensnobelpreis 1971.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-luxemburg",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Rosa Luxemburg",
+   "answer": "Rosa Luxemburg",
+   "difficulty": 3,
+   "explanation": "Sozialistin und Mitbegründerin der KPD, 1919 ermordet.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-humboldt",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Alexander von Humboldt",
+   "answer": "Alexander von Humboldt",
+   "difficulty": 3,
+   "explanation": "Naturforscher und Entdecker, bereiste Südamerika.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-karl",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Karl der Große",
+   "answer": "Karl der Große",
+   "difficulty": 3,
+   "explanation": "Frankenkönig, im Jahr 800 zum Kaiser gekrönt. Die Münze aus seiner Zeit trägt die Inschrift „KAROLUS IMP AVG“ (Karl, Kaiser, Augustus).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-elisabeth1",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Elisabeth I.",
+   "answer": "Elisabeth I. von England",
+   "difficulty": 3,
+   "explanation": "Englische Königin von 1558 bis 1603.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-caesar",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Gaius Iulius Caesar",
+   "answer": "Julius Caesar",
+   "difficulty": 2,
+   "explanation": "Römischer Feldherr und Staatsmann, 44 v. Chr. ermordet.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
+  },
+  {
+   "id": "img-hist-kant",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Immanuel Kant",
+   "answer": "Immanuel Kant",
+   "difficulty": 3,
+   "explanation": "Philosoph aus Königsberg („Kritik der reinen Vernunft“).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?"
   }
  ]
 }

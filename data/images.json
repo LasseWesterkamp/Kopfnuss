@@ -2448,6 +2448,440 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abraham_Lincoln_O-77_matte_collodion_print.jpg"
    },
    "source": "https://de.wikipedia.org/wiki/Abraham_Lincoln"
+  },
+  {
+   "id": "img-hist-goethe",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Johann Wolfgang von Goethe",
+   "answer": "Johann Wolfgang von Goethe",
+   "difficulty": 1,
+   "explanation": "Dichter („Faust“), einer der bedeutendsten Schriftsteller deutscher Sprache.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Goethe_(Stieler_1828).jpg",
+   "image": {
+    "src": "img/img-hist-goethe.webp",
+    "author": "Karl Joseph Stieler",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Goethe_(Stieler_1828).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"
+  },
+  {
+   "id": "img-hist-schiller",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Friedrich Schiller",
+   "answer": "Friedrich Schiller",
+   "difficulty": 2,
+   "explanation": "Dichter und Dramatiker („Die Räuber“, „Wilhelm Tell“), Freund Goethes.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Friedrich_Schiller_by_Ludovike_Simanowiz.jpg",
+   "image": {
+    "src": "img/img-hist-schiller.webp",
+    "author": "Ludovike Simanowiz",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Friedrich_Schiller_by_Ludovike_Simanowiz.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Friedrich_Schiller"
+  },
+  {
+   "id": "img-hist-beethoven",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Ludwig van Beethoven",
+   "answer": "Ludwig van Beethoven",
+   "difficulty": 1,
+   "explanation": "Komponist aus Bonn. Seine 9. Sinfonie enthält die „Ode an die Freude“, heute Europahymne.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Beethoven.jpg",
+   "image": {
+    "src": "img/img-hist-beethoven.webp",
+    "author": "Karl Joseph Stieler",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beethoven.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Ludwig_van_Beethoven"
+  },
+  {
+   "id": "img-hist-bach",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Johann Sebastian Bach",
+   "answer": "Johann Sebastian Bach",
+   "difficulty": 2,
+   "explanation": "Barockkomponist, Thomaskantor in Leipzig.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Johann_Sebastian_Bach.png",
+   "image": {
+    "src": "img/img-hist-bach.webp",
+    "author": "Elias Gottlob Haußmann",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.png"
+   },
+   "source": "https://de.wikipedia.org/wiki/Johann_Sebastian_Bach"
+  },
+  {
+   "id": "img-hist-mozart",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Wolfgang Amadeus Mozart",
+   "answer": "Wolfgang Amadeus Mozart",
+   "difficulty": 1,
+   "explanation": "Komponist aus Salzburg („Die Zauberflöte“).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg",
+   "image": {
+    "src": "img/img-hist-mozart.webp",
+    "author": "Johann Nepomuk della Croce",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+  },
+  {
+   "id": "img-hist-marx",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Karl Marx",
+   "answer": "Karl Marx",
+   "difficulty": 1,
+   "explanation": "Philosoph aus Trier, schrieb „Das Kapital“ und mit Engels das „Kommunistische Manifest“.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png",
+   "image": {
+    "src": "img/img-hist-marx.webp",
+    "author": "John Jabez Edwin Mayall",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored.png"
+   },
+   "source": "https://de.wikipedia.org/wiki/Karl_Marx"
+  },
+  {
+   "id": "img-hist-napoleon",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Napoleon Bonaparte",
+   "answer": "Napoleon Bonaparte",
+   "difficulty": 1,
+   "explanation": "Französischer Kaiser von 1804 bis 1814/15.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Jacques-Louis David - The Emperor Napoleon in His Study at the Tuileries - Google Art Project.jpg",
+   "image": {
+    "src": "img/img-hist-napoleon.webp",
+    "author": "Jacques-Louis David",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Napoleon_Bonaparte"
+  },
+  {
+   "id": "img-hist-friedrich2",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Friedrich II. (Preußen)",
+   "answer": "Friedrich der Große",
+   "difficulty": 2,
+   "explanation": "König von Preußen (1740–1786), genannt „der Alte Fritz“.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Friedrich_Zweite_Alt.jpg",
+   "image": {
+    "src": "img/img-hist-friedrich2.webp",
+    "author": "Anton Graff",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Friedrich_Zweite_Alt.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Friedrich_II._(Preu%C3%9Fen)"
+  },
+  {
+   "id": "img-hist-wilhelm2",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Wilhelm II. (Deutsches Reich)",
+   "answer": "Kaiser Wilhelm II.",
+   "difficulty": 2,
+   "explanation": "Letzter Deutscher Kaiser, dankte 1918 ab.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Kaiser_Wilhelm_II_of_Germany_-_1902.jpg",
+   "image": {
+    "src": "img/img-hist-wilhelm2.webp",
+    "author": "Studio von Thomas Heinrich Voigt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaiser_Wilhelm_II_of_Germany_-_1902.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Wilhelm_II._(Deutsches_Reich)"
+  },
+  {
+   "id": "img-hist-gandhi",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Mahatma Gandhi",
+   "answer": "Mahatma Gandhi",
+   "difficulty": 1,
+   "explanation": "Führte Indien mit gewaltfreiem Widerstand in die Unabhängigkeit (1947).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Mahatma-Gandhi,_studio,_1931.jpg",
+   "image": {
+    "src": "img/img-hist-gandhi.webp",
+    "author": "Elliott & Fry",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Mahatma_Gandhi"
+  },
+  {
+   "id": "img-hist-churchill",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Winston Churchill",
+   "answer": "Winston Churchill",
+   "difficulty": 1,
+   "explanation": "Britischer Premierminister im Zweiten Weltkrieg.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Sir_Winston_Churchill_-_19086236948.jpg",
+   "image": {
+    "src": "img/img-hist-churchill.webp",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Winston_Churchill"
+  },
+  {
+   "id": "img-hist-darwin",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Charles Darwin",
+   "answer": "Charles Darwin",
+   "difficulty": 2,
+   "explanation": "Naturforscher, Begründer der Evolutionstheorie.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Charles_Darwin_seated_crop.jpg",
+   "image": {
+    "src": "img/img-hist-darwin.webp",
+    "author": "Charles_Darwin_seated.jpg: Henry Maull (1829–1914) and John Fox (1832–1907) (Maull & Fox) [3] derivative work: Beao",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charles_Darwin_seated_crop.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Charles_Darwin"
+  },
+  {
+   "id": "img-hist-newton",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Isaac Newton",
+   "answer": "Isaac Newton",
+   "difficulty": 2,
+   "explanation": "Physiker und Mathematiker, beschrieb die Schwerkraft.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Sir_Isaac_Newton_by_Sir_Godfrey_Kneller,_Bt.jpg",
+   "image": {
+    "src": "img/img-hist-newton.webp",
+    "author": "Godfrey Kneller",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sir_Isaac_Newton_by_Sir_Godfrey_Kneller,_Bt.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Isaac_Newton"
+  },
+  {
+   "id": "img-hist-leonardo",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Leonardo da Vinci",
+   "answer": "Leonardo da Vinci",
+   "difficulty": 2,
+   "explanation": "Maler („Mona Lisa“), Erfinder und Universalgelehrter der Renaissance.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Leonardo_da_Vinci_-_presumed_self-portrait_-_WGA12798.jpg",
+   "image": {
+    "src": "img/img-hist-leonardo.webp",
+    "author": "Leonardo da Vinci",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_presumed_self-portrait_-_WGA12798.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Leonardo_da_Vinci"
+  },
+  {
+   "id": "img-hist-victoria",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Victoria (Vereinigtes Königreich)",
+   "answer": "Queen Victoria",
+   "difficulty": 2,
+   "explanation": "Britische Königin von 1837 bis 1901, Namensgeberin des „Viktorianischen Zeitalters“.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Queen_Victoria_by_Bassano.jpg",
+   "image": {
+    "src": "img/img-hist-victoria.webp",
+    "author": "Alexander Bassano",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Queen_Victoria_by_Bassano.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Victoria_(Vereinigtes_K%C3%B6nigreich)"
+  },
+  {
+   "id": "img-hist-jfk",
+   "topic": "bilder",
+   "group": "person",
+   "title": "John F. Kennedy",
+   "answer": "John F. Kennedy",
+   "difficulty": 1,
+   "explanation": "35. Präsident der USA, 1963 in Dallas ermordet.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "John_F._Kennedy,_White_House_color_photo_portrait.jpg",
+   "image": {
+    "src": "img/img-hist-jfk.webp",
+    "author": "Cecil W. Stoughton",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_F._Kennedy,_White_House_color_photo_portrait.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/John_F._Kennedy"
+  },
+  {
+   "id": "img-hist-roosevelt",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Franklin D. Roosevelt",
+   "answer": "Franklin D. Roosevelt",
+   "difficulty": 2,
+   "explanation": "US-Präsident von 1933 bis 1945, „New Deal“.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "FDR_1944_Color_Portrait.jpg",
+   "image": {
+    "src": "img/img-hist-roosevelt.webp",
+    "author": "Leon Perskie",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:FDR_1944_Color_Portrait.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Franklin_D._Roosevelt"
+  },
+  {
+   "id": "img-hist-brandt",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Willy Brandt",
+   "answer": "Willy Brandt",
+   "difficulty": 2,
+   "explanation": "Bundeskanzler (1969–1974), Friedensnobelpreis 1971.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Bundesarchiv_B_145_Bild-F057884-0009,_Willy_Brandt.jpg",
+   "image": {
+    "src": "img/img-hist-brandt.webp",
+    "author": "Engelbert Reineke",
+    "license": "CC BY-SA 3.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F057884-0009,_Willy_Brandt.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Willy_Brandt"
+  },
+  {
+   "id": "img-hist-luxemburg",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Rosa Luxemburg",
+   "answer": "Rosa Luxemburg",
+   "difficulty": 3,
+   "explanation": "Sozialistin und Mitbegründerin der KPD, 1919 ermordet.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Rosa_Luxemburg.jpg",
+   "image": {
+    "src": "img/img-hist-luxemburg.webp",
+    "author": "Autor/-in unbekanntUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosa_Luxemburg.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Rosa_Luxemburg"
+  },
+  {
+   "id": "img-hist-humboldt",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Alexander von Humboldt",
+   "answer": "Alexander von Humboldt",
+   "difficulty": 3,
+   "explanation": "Naturforscher und Entdecker, bereiste Südamerika.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Stieler,_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg",
+   "image": {
+    "src": "img/img-hist-humboldt.webp",
+    "author": "Karl Joseph Stieler",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stieler,_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Alexander_von_Humboldt"
+  },
+  {
+   "id": "img-hist-karl",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Karl der Große",
+   "answer": "Karl der Große",
+   "difficulty": 3,
+   "explanation": "Frankenkönig, im Jahr 800 zum Kaiser gekrönt. Die Münze aus seiner Zeit trägt die Inschrift „KAROLUS IMP AVG“ (Karl, Kaiser, Augustus).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Charlemagne_denier_Mayence_812_814.jpg",
+   "image": {
+    "src": "img/img-hist-karl.webp",
+    "author": "Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émetteur",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charlemagne_denier_Mayence_812_814.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Karl_der_Gro%C3%9Fe"
+  },
+  {
+   "id": "img-hist-elisabeth1",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Elisabeth I.",
+   "answer": "Elisabeth I. von England",
+   "difficulty": 3,
+   "explanation": "Englische Königin von 1558 bis 1603.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Elizabeth_I_in_coronation_robes.jpg",
+   "image": {
+    "src": "img/img-hist-elisabeth1.webp",
+    "author": "Nach Levina Teerlinc",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elizabeth_I_in_coronation_robes.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Elisabeth_I."
+  },
+  {
+   "id": "img-hist-caesar",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Gaius Iulius Caesar",
+   "answer": "Julius Caesar",
+   "difficulty": 2,
+   "explanation": "Römischer Feldherr und Staatsmann, 44 v. Chr. ermordet.",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Retrato_de_Julio_César_(26724093101)_(cropped).jpg",
+   "image": {
+    "src": "img/img-hist-caesar.webp",
+    "author": "Ángel M. Felicísimo from Mérida, España",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Retrato_de_Julio_C%C3%A9sar_(26724093101)_(cropped).jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Gaius_Iulius_Caesar"
+  },
+  {
+   "id": "img-hist-kant",
+   "topic": "bilder",
+   "group": "person",
+   "title": "Immanuel Kant",
+   "answer": "Immanuel Kant",
+   "difficulty": 3,
+   "explanation": "Philosoph aus Königsberg („Kritik der reinen Vernunft“).",
+   "prompt": "Wer ist auf diesem Bild zu sehen?",
+   "file": "Immanuel_Kant_-_Gemaelde_1.jpg",
+   "image": {
+    "src": "img/img-hist-kant.webp",
+    "author": "Johann Gottlieb Becker (1720-1782)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_1.jpg"
+   },
+   "source": "https://de.wikipedia.org/wiki/Immanuel_Kant"
   }
  ]
 }
