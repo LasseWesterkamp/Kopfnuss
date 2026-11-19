@@ -6,6 +6,16 @@ export const MAX_REVIEWS_IN_DAILY = 6;
 
 export type Rng = () => number;
 
+/** Passt eine Frage zu Themen-, Unterthemen- und Schwierigkeitsfilter? */
+export function matchesFilter(q: Question, opts: Pick<SessionOptions, 'topics' | 'subs' | 'difficulty'>): boolean {
+  if (opts.topics?.length && !opts.topics.includes(q.topic)) return false;
+  if (opts.difficulty && q.difficulty !== opts.difficulty) return false;
+  // Unterthemen-Filter greift nur bei Themen, die Unterthemen haben (Geschichte, Regionen).
+  // So kann man z.B. "Geschichte: nur NS-Zeit" mit "Flaggen" kombinieren.
+  if (opts.subs?.length && q.sub !== undefined && !opts.subs.includes(q.sub)) return false;
+  return true;
+}
+
 export function shuffle<T>(arr: T[], rng: Rng = Math.random): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -54,6 +64,7 @@ function roundRobin(groups: Question[][], n: number): Question[] {
 
 export interface SessionOptions {
   topics?: TopicId[];          // leer/undefined = alle
+  subs?: string[];             // Unterthemen (Epoche/Land); leer = alle. Gilt nur für Fragen, die ein Unterthema haben.
   difficulty?: Difficulty;     // fest statt adaptiv
   size?: number;
   maxReviews?: number;
@@ -65,7 +76,7 @@ export interface SessionOptions {
  */
 export function buildSession(all: Question[], p: Progress, today: string, opts: SessionOptions = {}, rng: Rng = Math.random): Question[] {
   const size = opts.size ?? SESSION_SIZE;
-  const pool = all.filter((q) => (!opts.topics?.length || opts.topics.includes(q.topic)) && (!opts.difficulty || q.difficulty === opts.difficulty));
+  const pool = all.filter((q) => matchesFilter(q, opts));
   const picked: Question[] = dueQuestions(pool, p, today).slice(0, opts.maxReviews ?? MAX_REVIEWS_IN_DAILY);
   const used = new Set(picked.map((q) => q.id));
 

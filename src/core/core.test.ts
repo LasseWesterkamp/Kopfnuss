@@ -4,7 +4,7 @@ import { computeStreak, bestStreak, DAILY_GOAL } from './streak';
 import { review, INTERVALS } from './srs';
 import { xpFor, yearScore, orderScore, levelFromXp } from './scoring';
 import { emptyProgress, recordAnswer, mergeProgress, dayCounts, totalXp, totals } from './progress';
-import { buildSession, targetDifficulty } from './selection';
+import { buildSession, targetDifficulty, matchesFilter } from './selection';
 import type { Question, Progress } from './types';
 
 const G = DAILY_GOAL;
@@ -246,5 +246,88 @@ describe('Rundenauswahl', () => {
     p.recent = p.recent.map((r) => ({ ...r, ok: false, d: 2 as const }));
     expect(targetDifficulty(p, 'geografie')).toBe(1);
     expect(targetDifficulty(p, 'flaggen')).toBe(1);
+  });
+});
+
+describe('Epochen- und Länderfilter', () => {
+  const today = '2026-11-18';
+  const h = (id: string, sub: string, d: 1 | 2 | 3 = 1): Question => ({ ...q(id, 'geschichte', d), sub });
+  const pool: Question[] = [
+    ...Array.from({ length: 15 }, (_, i) => h('ant' + i, 'antike')),
+    ...Array.from({ length: 15 }, (_, i) => h('ns' + i, 'ns', 2)),
+    ...Array.from({ length: 15 }, (_, i) => ({ ...q('reg' + i, 'regionen'), sub: i < 8 ? 'de' : 'us' })),
+    ...Array.from({ length: 15 }, (_, i) => q('flag' + i, 'flaggen')),
+  ];
+  it('nur eine Epoche', () => {
+    const s = buildSession(pool, emptyProgress(), today, { topics: ['geschichte'], subs: ['ns'] }, () => 0.3);
+    expect(s).toHaveLength(10);
+    expect(s.every((x) => x.sub === 'ns')).toBe(true);
+  });
+  it('mehrere Epochen', () => {
+    const s = buildSession(pool, emptyProgress(), today, { topics: ['geschichte'], subs: ['ns', 'antike'], size: 30 }, () => 0.3);
+    expect(new Set(s.map((x) => x.sub))).toEqual(new Set(['ns', 'antike']));
+  });
+  it('Unterthemen-Filter lässt Themen ohne Unterthema unberührt', () => {
+    expect(matchesFilter(q('f', 'flaggen'), { topics: ['flaggen', 'geschichte'], subs: ['ns'] })).toBe(true);
+    expect(matchesFilter(h('a', 'antike'), { topics: ['flaggen', 'geschichte'], subs: ['ns'] })).toBe(false);
+  });
+  it('Länderfilter bei Regionen', () => {
+    const s = buildSession(pool, emptyProgress(), today, { topics: ['regionen'], subs: ['de'] }, () => 0.3);
+    expect(s).toHaveLength(8); // es gibt nur 8 deutsche Regionen im Pool
+    expect(s.every((x) => x.sub === 'de')).toBe(true);
+  });
+  it('Filter mit Schwierigkeit kombiniert', () => {
+    expect(matchesFilter(h('n', 'ns', 2), { subs: ['ns'], difficulty: 1 })).toBe(false);
+    expect(matchesFilter(h('n', 'ns', 2), { subs: ['ns'], difficulty: 2 })).toBe(true);
+  });
+});
+
+import { weekTotals, myStats, rank, daysUntilReset, type Entry } from './leaderboard';
+import { dayKey as dk } from './dates';
+
+describe('Rangliste', () => {
+  const at = (iso: string) => new Date(iso).getTime();
+  const answerAt = (p: Progress, iso: string, xp = 10) => recordAnswer(p, { q: q('x' + iso), ok: true, xp }, 'handy', at(iso));
+  it('Wochengrenze: Sonntag 23:30 Berlin zählt zur alten, Montag 00:30 zur neuen Woche', () => {
+    let p = emptyProgress();
+    p = answerAt(p, '2026-11-22T22:30:00Z', 10); // So 23:30 MEZ (KW 47)
+    p = answerAt(p, '2026-11-22T23:30:00Z', 20); // Mo 00:30 MEZ (KW 48)
+    expect(dk(at('2026-11-22T22:30:00Z'))).toBe('2026-11-22');
+    expect(weekTotals(p, '2026-11-22').xp).toBe(10);
+    expect(weekTotals(p, '2026-11-23').xp).toBe(20);
+    expect(weekTotals(p, '2026-11-23').answers).toBe(1);
+  });
+  it('Wochengrenze in der Sommerzeit (UTC+2)', () => {
+    let p = emptyProgress();
+    p = answerAt(p, '2026-06-28T21:59:00Z', 10); // So 23:59 MESZ
+    p = answerAt(p, '2026-06-28T22:01:00Z', 10); // Mo 00:01 MESZ
+    expect(weekTotals(p, '2026-06-28').xp).toBe(10);
+    expect(weekTotals(p, '2026-06-29').xp).toBe(10);
+  });
+  it('Woche über den Jahreswechsel (KW 53)', () => {
+    let p = emptyProgress();
+    p = answerAt(p, '2026-12-30T10:00:00Z', 10);
+    p = answerAt(p, '2027-01-02T10:00:00Z', 15);
+    expect(weekTotals(p, '2027-01-03').xp).toBe(25); // Mi 30.12. bis So 3.1. = 2026-W53
+  });
+  it('Wochenwerte von Handy und PC werden zusammengezählt', () => {
+    let a = emptyProgress(), b = emptyProgress();
+    a = recordAnswer(a, { q: q('a'), ok: true, xp: 10 }, 'handy', at('2026-11-18T08:00:00Z'));
+    b = recordAnswer(b, { q: q('b'), ok: true, xp: 30 }, 'pc', at('2026-11-18T09:00:00Z'));
+    expect(myStats(mergeProgress(a, b), '2026-11-18')).toMatchObject({ week: '2026-W47', week_xp: 40, week_answers: 2, total_xp: 40 });
+  });
+  const e = (name: string, week_xp: number, streak = 0, total_xp = 0): Entry => ({ user_id: name, display_name: name, week_xp, week_answers: 0, total_xp, streak, is_me: false, is_owner: false });
+  it('Platzierung mit Gleichstand', () => {
+    const r = rank([e('Bea', 50), e('Anna', 120), e('Cem', 120), e('Dora', 0)], 'woche');
+    expect(r.map((x) => `${x.place}.${x.display_name}`)).toEqual(['1.Anna', '1.Cem', '3.Bea', '4.Dora']);
+  });
+  it('andere Wertungen', () => {
+    const list = [e('A', 10, 3, 900), e('B', 99, 7, 100)];
+    expect(rank(list, 'serie')[0].display_name).toBe('B');
+    expect(rank(list, 'gesamt')[0].display_name).toBe('A');
+  });
+  it('Tage bis zum Wochenreset', () => {
+    expect(daysUntilReset('2026-11-23')).toBe(7); // Montag
+    expect(daysUntilReset('2026-11-29')).toBe(1); // Sonntag
   });
 });

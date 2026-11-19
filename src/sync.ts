@@ -10,7 +10,7 @@ const key = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
 
 export const syncConfigured = !!(url && key);
 let client: SupabaseClient | null = null;
-function sb() {
+export function sb() {
   if (!client && url && key) client = createClient(url, key, { auth: { persistSession: true, autoRefreshToken: true } });
   return client;
 }

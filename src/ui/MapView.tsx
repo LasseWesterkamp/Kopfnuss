@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { geoMercator, geoPath } from 'd3-geo';
+import { geoAlbersUsa, geoConicConformal, geoMercator, geoPath, type GeoProjection } from 'd3-geo';
 import { feature } from 'topojson-client';
 import type { Topology } from 'topojson-specification';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
@@ -8,11 +8,25 @@ import { asset } from '../data';
 import type { Result } from './McView';
 
 type Countries = Feature<Geometry, { name: string }>[];
-let topoCache: Promise<Countries> | null = null;
-function loadMap(): Promise<Countries> {
-  topoCache ??= fetch(asset('data/countries-110m.json')).then((r) => r.json()).then((t: Topology) =>
-    (feature(t, t.objects.countries) as unknown as FeatureCollection<Geometry, { name: string }>).features.filter((f) => f.id !== '010'));
-  return topoCache;
+const cache = new Map<string, Promise<Countries>>();
+/** Weltkarte (key "world") oder Regionenkarte eines Landes (key "de", "us", …) */
+function loadMap(key: string): Promise<Countries> {
+  if (!cache.has(key)) {
+    const file = key === 'world' ? 'data/countries-110m.json' : `data/regions-${key}.json`;
+    cache.set(key, fetch(asset(file)).then((r) => r.json()).then((t: Topology) => {
+      const obj = key === 'world' ? t.objects.countries : t.objects.r;
+      const fs = (feature(t, obj) as unknown as FeatureCollection<Geometry, { name: string }>).features;
+      return key === 'world' ? fs.filter((f) => f.id !== '010') : fs;
+    }));
+  }
+  return cache.get(key)!;
+}
+
+/** Projektion pro Regionenkarte: USA mit Alaska/Hawaii-Einschub, Kanada kegeltreu, sonst Mercator */
+function regionProjection(cc: string): GeoProjection {
+  if (cc === 'us') return geoAlbersUsa() as unknown as GeoProjection;
+  if (cc === 'ca') return geoConicConformal().rotate([96, 0]).parallels([49, 77]);
+  return geoMercator();
 }
 
 // Kartenausschnitte pro Kontinent [Westen, Süden, Osten, Norden]
@@ -33,14 +47,19 @@ export function MapView({ q, result, onAnswer }: { q: MapQuestion; result: Resul
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number; vb: typeof vb; moved: boolean } | null>(null);
 
-  useEffect(() => { loadMap().then(setCountries); }, []);
+  const mapKey = q.regions ? q.continent : 'world';
+  useEffect(() => { setCountries(null); loadMap(mapKey).then(setCountries); }, [mapKey]);
   useEffect(() => { setSel(null); setVb({ x: 0, y: 0, w: W, h: H }); }, [q.id]);
 
   const path = useMemo(() => {
+    if (q.regions) {
+      if (!countries) return null;
+      return geoPath(regionProjection(q.continent).fitExtent([[10, 10], [W - 10, H - 10]], { type: 'FeatureCollection', features: countries } as any));
+    }
     const [w, s, e, n] = BOX[q.continent] ?? [-180, -60, 180, 80];
     const proj = geoMercator().fitExtent([[8, 8], [W - 8, H - 8]], { type: 'MultiPoint', coordinates: [[w, s], [e, n], [w, n], [e, s]] } as any);
     return geoPath(proj);
-  }, [q.continent]);
+  }, [q.continent, q.regions, countries]);
 
   const zoom = (f: number, cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2) => {
     const w = Math.max(W / 8, Math.min(W, vb.w * f));
@@ -78,7 +97,7 @@ export function MapView({ q, result, onAnswer }: { q: MapQuestion; result: Resul
     zoom(e.deltaY > 0 ? 1.25 : 0.8, p.x, p.y);
   };
 
-  if (!countries) return <div className="map-wrap loading">Karte lädt …</div>;
+  if (!countries || !path) return <div className="map-wrap loading">Karte lädt …</div>;
   return (
     <div className="map">
       <div className="map-wrap">

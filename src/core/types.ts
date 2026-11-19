@@ -1,6 +1,6 @@
 export type TopicId =
   | 'geografie' | 'flaggen' | 'politik' | 'geschichte' | 'bilder'
-  | 'fauna' | 'flora' | 'wissenschaft';
+  | 'fauna' | 'flora' | 'wissenschaft' | 'regionen';
 
 export type Difficulty = 1 | 2 | 3;
 
@@ -21,6 +21,7 @@ interface BaseQuestion {
   explanation: string;
   source: string;       // URL
   asOf?: string;        // Stand-Datum (YYYY-MM-DD), Pflicht bei Politik
+  sub?: string;         // Unterthema: Epoche bei Geschichte (z.B. "antike"), Land bei Regionen (z.B. "de")
 }
 
 export interface McQuestion extends BaseQuestion {
@@ -31,8 +32,9 @@ export interface McQuestion extends BaseQuestion {
 }
 export interface MapQuestion extends BaseQuestion {
   type: 'map';
-  country: string;      // ISO 3166-1 numerisch (wie im Kartendatensatz)
-  continent: string;    // Kartenausschnitt
+  country: string;      // Weltkarte: ISO 3166-1 numerisch. Regionenkarte: ISO 3166-2 (z.B. "DE-BY")
+  continent: string;    // Weltkarte: Kartenausschnitt. Regionenkarte: Ländercode (z.B. "de")
+  regions?: boolean;    // true = Karte public/data/regions-<continent>.json statt Weltkarte
 }
 export interface YearQuestion extends BaseQuestion {
   type: 'year';

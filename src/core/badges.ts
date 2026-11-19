@@ -15,7 +15,7 @@ const topicMastery = (c: BadgeContext, topic: TopicId) => {
 
 export const TOPIC_NAMES: Record<TopicId, string> = {
   geografie: 'Geografie', flaggen: 'Flaggen', politik: 'Politik', geschichte: 'Geschichte',
-  bilder: 'Historische Bilder', fauna: 'Tiere', flora: 'Pflanzen', wissenschaft: 'Wissenschaft & Natur',
+  bilder: 'Historische Bilder', fauna: 'Tiere', flora: 'Pflanzen', wissenschaft: 'Wissenschaft & Natur', regionen: 'Regionen',
 };
 
 const DEFS: Def[] = [

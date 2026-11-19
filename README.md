@@ -4,7 +4,7 @@
 
 Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-App (PWA) auf iPhone, Android und PC, auch offline.
 
-**Themen:** Geografie (Hauptstädte, Flüsse, Gebirge, Karte), Flaggen, Geschichte, historische Bilder, aktuelle Politik, Tiere und Pflanzen in Deutschland, Wissenschaft & Natur.
+**Themen:** Geografie (Hauptstädte, Flüsse, Gebirge, Karte), Flaggen, Regionen (Bundesländer, Kantone, Bundesstaaten mit Flaggen), Geschichte in 8 Epochen, historische Bilder, aktuelle Politik, Tiere und Pflanzen in Deutschland, Wissenschaft & Natur.
 
 **Funktionen**
 - Tages-Challenge mit 10 Fragen, Serie (Streak) mit Kalender-Heatmap, 1 Freeze pro Woche
@@ -14,6 +14,7 @@ Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-A
 - Erklärung, Quelle und „Frage melden“ nach jeder Antwort
 - XP, Level, Abzeichen, Statistik pro Thema mit Schwächen
 - Sync zwischen Handy und PC (Supabase, Login mit E-Mail + Passwort)
+- Gruppen mit Rangliste (Woche, Serie, Gesamt), Beitritt per Einladungscode oder -link
 - Dark Mode (automatisch oder manuell), optionaler Zeitdruck
 
 ---
@@ -147,6 +148,57 @@ Konfiguration:
 - Project URL und **anon** Key stehen in `.env.production` (öffentlich unbedenklich, Schutz über Row Level Security). **Niemals** den `service_role`/secret Key eintragen.
 - Datenbank: `supabase/schema.sql` (Tabelle, Rechte nur für angemeldete Nutzer, Policies „nur eigene Zeile“). Bei einem neuen Projekt im SQL Editor ausführen.
 - Lokal ohne Sync entwickeln: `npm run dev` nutzt `.env.production` nicht. Wer lokal mit Sync testen will, kopiert die zwei Zeilen in `.env.local`.
+
+---
+
+## Gruppen & Rangliste
+
+In der App unter **Gruppen**: Anzeigename festlegen, dann Gruppe anlegen oder mit einem 6-stelligen Code beitreten. „Einladen“ teilt einen Link (`…/Kopfnuss/?beitreten=CODE`), der die App öffnet und den Code vorausfüllt.
+
+- **Wertungen:** XP diese Woche (Reset Montag 0:00 Uhr deutscher Zeit), Serie, XP gesamt. Gleichstand = gleicher Platz.
+- **Admin** (wer die Gruppe anlegt): Mitglieder entfernen, Code erneuern (alter Code wird ungültig), umbenennen, löschen. Verlässt der Admin die Gruppe, wird das am längsten dabei seiende Mitglied Admin.
+- **Grenzen:** max. 50 Mitglieder pro Gruppe, max. 20 selbst angelegte Gruppen pro Person.
+- **Datenschutz:** Gruppenmitglieder sehen nur Anzeigename, Wochen-/Gesamt-XP, Serie und Fragen der Woche. Nie E-Mail-Adresse oder Lernstand. Wer in keiner gemeinsamen Gruppe ist, sieht gar nichts.
+- **Schummeln:** Punkte entstehen auf dem Gerät. Der Server lehnt nur Unmögliches ab (mehr als 5.000 XP pro Tag, Serie länger als das Konto alt ist). Für Freundesgruppen reicht das, für Wettbewerbe mit Fremden nicht.
+
+Die App lädt die eigenen Ranglistenwerte nach jedem Sync hoch (Tabelle `stats`).
+
+### Datenbank-Migration
+
+Die Datenbank-Struktur liegt in `supabase/`. Bei einem neuen Supabase-Projekt im **SQL Editor** nacheinander ausführen:
+
+1. `supabase/schema.sql` (Lernstand-Sync)
+2. `supabase/002_gruppen.sql` (Profile, Ranglistenwerte, Gruppen, Funktionen, Zugriffsregeln)
+
+Beide Dateien können gefahrlos mehrfach ausgeführt werden. Neue Änderungen kommen als weitere nummerierte Datei dazu (`003_….sql`).
+
+---
+
+## Regionen hinzufügen oder ändern
+
+Die Regionen (Karten, Namen, Hauptstädte, Flaggen) baut ein Skript:
+
+```bash
+node scripts/fetch-regions.mjs
+```
+
+Es lädt die Natural-Earth-Regionen (einmalig ~40 MB, wird in `data/.cache/` zwischengespeichert), schneidet und vereinfacht die Karten (`public/data/regions-<land>.json`), holt Namen, Hauptstädte und Flaggendatei aus Wikidata und die Flaggen von Wikimedia Commons (nur freie Lizenzen).
+
+- **Neues Land:** in `scripts/fetch-regions.mjs` bei `COUNTRIES` eintragen (ISO-Code + Natural-Earth-Kürzel `adm0_a3`), in `src/core/subtopics.ts` bei `REGION_LAENDER` ergänzen und in `scripts/build-questions.mjs` die Formulierungen für das Land (`kind`, `LAND`) ergänzen.
+- **Korrekturen** (Name, Hauptstadt, Flagge, falsche Wikidata-ID): `data/regions-overrides.json`. `capital: false` = keine Hauptstadtfrage (z.B. Stadtstaaten).
+- **Gleich aussehende Flaggen** (z.B. Wien, Salzburg, Vorarlberg) erkennt der Fragengenerator automatisch: Sie bekommen keine Flaggenfrage und werden nicht als falsche Antwort nebeneinander gezeigt.
+
+Danach `node scripts/build-questions.mjs` und **die Ausgabe „PRÜFEN“ abarbeiten**.
+
+## Geschichtsepochen
+
+Die Epochen stehen in `data/epochen.json`. Jede Geschichtsfrage hat ein Feld `"sub"` mit der Epochen-ID (`antike`, `mittelalter`, `fnz`, `19jh`, `weimar`, `ns`, `geteilt`, `seit1990`). Neue Fragen liegen in `data/fragen/epoche-*.json`, Beispiel:
+
+```json
+{ "id": "hist-ns-beispiel", "sub": "ns", "difficulty": 2, "prompt": "…", "correct": "…", "wrong": ["…", "…", "…"], "explanation": "…", "source": "https://de.wikipedia.org/wiki/…" }
+```
+
+Beim Üben kann man nach Epochen filtern und sieht pro Epoche, wie viele Fragen sicher sitzen. Eine neue Epoche: Eintrag in `data/epochen.json` (die `id` danach nie mehr ändern).
 
 ---
 

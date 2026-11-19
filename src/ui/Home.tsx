@@ -5,9 +5,9 @@ import { TOPIC_NAMES } from '../core/badges';
 import { useApp } from '../state';
 
 export const TOPIC_ICONS: Record<TopicId, string> = {
-  geografie: '🌍', flaggen: '🚩', politik: '🏛️', geschichte: '📜', bilder: '🖼️', fauna: '🦊', flora: '🌿', wissenschaft: '🔬',
+  geografie: '🌍', flaggen: '🚩', regionen: '🗺️', politik: '🏛️', geschichte: '📜', bilder: '🖼️', fauna: '🦊', flora: '🌿', wissenschaft: '🔬',
 };
-export const TOPIC_ORDER: TopicId[] = ['geografie', 'flaggen', 'geschichte', 'bilder', 'politik', 'fauna', 'flora', 'wissenschaft'];
+export const TOPIC_ORDER: TopicId[] = ['geografie', 'flaggen', 'regionen', 'geschichte', 'bilder', 'politik', 'fauna', 'flora', 'wissenschaft'];
 
 export function Home({ onDaily, onTopic, onMix }: { onDaily: () => void; onTopic: (t: TopicId) => void; onMix: () => void }) {
   const { streak, level, questions, progress, today } = useApp();

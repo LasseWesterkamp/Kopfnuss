@@ -150,6 +150,54 @@ if (fs.existsSync('data/images.json')) {
   }
 }
 
+// ---------- Regionen (Bundesländer, Kantone, Bundesstaaten …) ----------
+if (fs.existsSync('data/regions.json')) {
+  const { regions, asOf: regAsOf } = read('data/regions.json');
+  const LAND = { de: 'Deutschland', at: 'Österreich', ch: 'Schweiz', us: 'USA', ca: 'Kanada', au: 'Australien' };
+  const TERR = new Set(['CA-YT', 'CA-NT', 'CA-NU', 'AU-NT', 'AU-ACT']);
+  // Art der Region: [Nominativ mit Artikel "ein/eine", Fragewort, Genitiv-Form für "Hauptstadt des …"]
+  const kind = (r) => {
+    if (r.cc === 'ch') return { ein: 'ein Kanton der Schweiz', welche: 'Welcher Kanton', des: `des Kantons ${r.name}`, hs: 'Hauptort' };
+    if (r.cc === 'de' || r.cc === 'at') return { ein: `ein Bundesland ${r.cc === 'de' ? 'Deutschlands' : 'Österreichs'}`, welche: 'Welches Bundesland', des: r.name, hs: 'Hauptstadt' };
+    if (TERR.has(r.iso)) return { ein: `ein Territorium ${r.cc === 'ca' ? 'Kanadas' : 'Australiens'}`, welche: r.cc === 'ca' ? 'Welche Provinz bzw. welches Territorium' : 'Welcher Bundesstaat bzw. welches Territorium', des: r.name, hs: 'Hauptstadt' };
+    if (r.cc === 'ca') return { ein: 'eine Provinz Kanadas', welche: 'Welche Provinz bzw. welches Territorium', des: r.name, hs: 'Hauptstadt' };
+    return { ein: `ein Bundesstaat ${r.cc === 'us' ? 'der USA' : 'Australiens'}`, welche: r.cc === 'us' ? 'Welcher Bundesstaat' : 'Welcher Bundesstaat bzw. welches Territorium', des: r.name, hs: 'Hauptstadt' };
+  };
+  // Bekanntheit: steuert die Schwierigkeit
+  const EASY = new Set(['DE-BY', 'DE-BE', 'DE-HH', 'DE-NW', 'DE-BW', 'DE-SN', 'DE-NI', 'DE-HE', 'AT-9', 'AT-7', 'AT-5', 'CH-ZH', 'CH-BE', 'CH-GE', 'CH-TI',
+    'US-CA', 'US-TX', 'US-FL', 'US-NY', 'US-AK', 'US-HI', 'CA-QC', 'CA-ON', 'CA-BC', 'AU-NSW', 'AU-QLD', 'AU-VIC', 'AU-WA']);
+  const lvl = (r) => (EASY.has(r.iso) ? 1 : r.cc === 'de' || r.cc === 'at' ? 1 : r.cc === 'ch' || r.cc === 'us' ? 3 : 2);
+  const px = (r) => Buffer.from(r.flag.print, 'base64');
+  const flagDist = (a, b) => { const x = px(a), y = px(b); let t = 0; for (let i = 0; i < x.length; i++) t += Math.abs(x[i] - y[i]); return t / x.length; };
+  for (const r of regions) {
+    const k = kind(r);
+    const same = regions.filter((o) => o.cc === r.cc && o.iso !== r.iso);
+    const base = { topic: 'regionen', sub: r.cc, source: 'https://www.wikidata.org/wiki/' + r.wikidata, asOf: regAsOf };
+    const id = r.iso.toLowerCase();
+    const info = `${r.name} ist ${k.ein}${r.capital ? `, ${k.hs}: ${r.capital}` : ''}.` + (r.capitalNote ? ' ' + r.capitalNote : '');
+    if (r.capital) {
+      const capPool = same.filter((o) => o.capital).map((o) => o.capital);
+      if (r.capital === r.name || r.capital.startsWith(r.name + ' ')) { /* Frage wäre trivial */ } else
+      questions.push(mc('reg-cap-' + id, { ...base, difficulty: lvl(r), prompt: `Was ist ${k.hs === 'Hauptort' ? 'der Hauptort' : 'die Hauptstadt'} ${r.cc === 'ch' ? k.des : 'von ' + r.name + ' (' + LAND[r.cc] + ')'}?`, explanation: info },
+        r.capital, pick(capPool, 3, seeded(r.iso), [r.capital])));
+      // Umkehrfrage nur, wenn Hauptstadt und Region nicht gleich heißen (Bremen, Salzburg, Zürich …)
+      if (!r.capital.startsWith(r.name) && !r.name.startsWith(r.capital.split(' ')[0]))
+        questions.push(mc('reg-capr-' + id, { ...base, difficulty: Math.min(3, lvl(r) + 1), prompt: `${r.capital} ist ${k.hs === 'Hauptort' ? 'der Hauptort' : 'die Hauptstadt'} von … (${LAND[r.cc]})`, explanation: info },
+          r.name, pick(same.map((o) => o.name), 3, seeded(r.iso + 'r'))));
+    }
+    questions.push({ id: 'reg-map-' + id, type: 'map', ...base, difficulty: lvl(r), prompt: `Wo liegt ${r.name}? Tippe es auf der Karte an.`,
+      country: r.iso, continent: r.cc, regions: true, explanation: info });
+    if (r.flag) {
+      const twins = same.filter((o) => o.flag && flagDist(r, o) < 1);
+      if (twins.length) { console.log(`  Flagge ${r.name} sieht aus wie ${twins.map((t) => t.name).join(', ')}: keine Flaggenfrage`); continue; }
+      const pool = same.filter((o) => !o.flag || flagDist(r, o) >= 1).map((o) => o.name);
+      const { print, ...image } = r.flag;
+      questions.push(mc('reg-flag-' + id, { ...base, difficulty: lvl(r) === 1 && r.cc !== 'de' ? 2 : lvl(r), prompt: `${k.welche} ${{ de: 'Deutschlands', at: 'Österreichs', ch: 'der Schweiz', us: 'der USA', ca: 'Kanadas', au: 'Australiens' }[r.cc]} hat diese Flagge?`,
+        image, explanation: `Das ist die Flagge von ${r.name}. ` + info }, r.name, pick(pool, 3, seeded(r.iso + 'f'))));
+    }
+  }
+}
+
 // ---------- Handgeschriebene Fragen ----------
 for (const f of fs.readdirSync('data/fragen').filter((f) => f.endsWith('.json')).sort()) {
   const data = read(path.join('data/fragen', f));

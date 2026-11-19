@@ -1,0 +1,837 @@
+{
+ "topic": "geschichte",
+ "questions": [
+  {
+   "id": "hist-antike-pyramiden",
+   "sub": "antike",
+   "difficulty": 1,
+   "prompt": "In welchem Land stehen die Pyramiden von Gizeh?",
+   "correct": "Ägypten",
+   "wrong": [
+    "Mexiko",
+    "Irak",
+    "Sudan"
+   ],
+   "explanation": "Die Pyramiden von Gizeh entstanden um 2600 bis 2500 v. Chr. am Westufer des Nils bei Kairo.",
+   "source": "https://de.wikipedia.org/wiki/Pyramiden_von_Gizeh"
+  },
+  {
+   "id": "hist-antike-hieroglyphen",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Welcher Fund half im 19. Jahrhundert, die ägyptischen Hieroglyphen zu entziffern?",
+   "correct": "Stein von Rosette",
+   "wrong": [
+    "Tafel von Nebra",
+    "Codex Hammurapi",
+    "Schriftrollen vom Toten Meer"
+   ],
+   "explanation": "Der Stein von Rosette trägt denselben Text in Hieroglyphen, demotischer Schrift und Griechisch. Jean-François Champollion entzifferte damit 1822 die Hieroglyphen.",
+   "source": "https://de.wikipedia.org/wiki/Stein_von_Rosette"
+  },
+  {
+   "id": "hist-antike-hammurapi",
+   "sub": "antike",
+   "difficulty": 3,
+   "prompt": "Welcher babylonische König ließ um 1750 v. Chr. eine berühmte Gesetzessammlung in Stein meißeln?",
+   "correct": "Hammurapi",
+   "wrong": [
+    "Nebukadnezar II.",
+    "Sargon von Akkad",
+    "Kyros II."
+   ],
+   "explanation": "Der Codex Hammurapi gehört zu den ältesten erhaltenen Rechtssammlungen. Die Stele steht heute im Louvre.",
+   "source": "https://de.wikipedia.org/wiki/Codex_Hammurapi"
+  },
+  {
+   "id": "hist-antike-demokratie",
+   "sub": "antike",
+   "difficulty": 1,
+   "prompt": "In welcher antiken Stadt entstand die Demokratie?",
+   "correct": "Athen",
+   "wrong": [
+    "Sparta",
+    "Rom",
+    "Karthago"
+   ],
+   "explanation": "Im 5. Jahrhundert v. Chr. entschieden in Athen die freien männlichen Bürger in der Volksversammlung. Frauen, Sklaven und Fremde waren ausgeschlossen.",
+   "source": "https://de.wikipedia.org/wiki/Attische_Demokratie"
+  },
+  {
+   "id": "hist-antike-sokrates",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Welcher griechische Philosoph wurde 399 v. Chr. zum Tod durch den Schierlingsbecher verurteilt?",
+   "correct": "Sokrates",
+   "wrong": [
+    "Platon",
+    "Aristoteles",
+    "Diogenes"
+   ],
+   "explanation": "Sokrates wurde wegen „Verderbens der Jugend“ und Gottlosigkeit verurteilt. Sein Schüler Platon schrieb seine Lehren auf.",
+   "source": "https://de.wikipedia.org/wiki/Sokrates"
+  },
+  {
+   "id": "hist-antike-alexander",
+   "sub": "antike",
+   "difficulty": 1,
+   "prompt": "Wessen Reich reichte im 4. Jahrhundert v. Chr. von Griechenland bis nach Indien?",
+   "correct": "Alexander der Große",
+   "wrong": [
+    "Julius Caesar",
+    "Dareios I.",
+    "Hannibal"
+   ],
+   "explanation": "Alexander eroberte das Perserreich und zog bis an den Indus. Er starb 323 v. Chr. mit nur 32 Jahren in Babylon.",
+   "source": "https://de.wikipedia.org/wiki/Alexander_der_Große"
+  },
+  {
+   "id": "hist-antike-aristoteles",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Wer war der Lehrer Alexanders des Großen?",
+   "correct": "Aristoteles",
+   "wrong": [
+    "Platon",
+    "Sokrates",
+    "Pythagoras"
+   ],
+   "explanation": "Aristoteles unterrichtete den jungen Alexander am makedonischen Hof.",
+   "source": "https://de.wikipedia.org/wiki/Aristoteles"
+  },
+  {
+   "id": "hist-antike-marathon",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Welche Schlacht von 490 v. Chr. gab einer Laufdisziplin ihren Namen?",
+   "correct": "Schlacht bei Marathon",
+   "wrong": [
+    "Schlacht bei den Thermopylen",
+    "Schlacht bei Salamis",
+    "Schlacht bei Issos"
+   ],
+   "explanation": "Der Legende nach lief ein Bote die rund 40 km von Marathon nach Athen, um den Sieg über die Perser zu verkünden.",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Marathon"
+  },
+  {
+   "id": "hist-antike-olympia",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Seit wann sind die antiken Olympischen Spiele überliefert?",
+   "correct": "776 v. Chr.",
+   "wrong": [
+    "1200 v. Chr.",
+    "300 v. Chr.",
+    "44 v. Chr."
+   ],
+   "explanation": "776 v. Chr. gilt als Jahr der ersten überlieferten Spiele in Olympia. Sie fanden alle vier Jahre zu Ehren des Zeus statt.",
+   "source": "https://de.wikipedia.org/wiki/Olympische_Spiele_der_Antike"
+  },
+  {
+   "id": "hist-antike-romgruendung",
+   "sub": "antike",
+   "difficulty": 1,
+   "prompt": "Welche Zwillinge gründeten der Sage nach Rom?",
+   "correct": "Romulus und Remus",
+   "wrong": [
+    "Kastor und Pollux",
+    "Apollon und Artemis",
+    "Kain und Abel"
+   ],
+   "explanation": "Laut der Sage wurden sie von einer Wölfin gesäugt. Als Gründungsdatum gilt traditionell 753 v. Chr.",
+   "source": "https://de.wikipedia.org/wiki/Romulus_und_Remus"
+  },
+  {
+   "id": "hist-antike-hannibal",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Welcher karthagische Feldherr überquerte 218 v. Chr. mit Elefanten die Alpen?",
+   "correct": "Hannibal",
+   "wrong": [
+    "Hasdrubal",
+    "Scipio",
+    "Spartacus"
+   ],
+   "explanation": "Im Zweiten Punischen Krieg zog Hannibal von Spanien über die Alpen nach Italien. Rom gewann den Krieg trotzdem.",
+   "source": "https://de.wikipedia.org/wiki/Hannibal"
+  },
+  {
+   "id": "hist-antike-spartacus",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Wer führte um 73 v. Chr. einen großen Sklavenaufstand gegen Rom an?",
+   "correct": "Spartacus",
+   "wrong": [
+    "Vercingetorix",
+    "Arminius",
+    "Brutus"
+   ],
+   "explanation": "Der Gladiator Spartacus führte zeitweise über 60.000 Menschen an, bevor der Aufstand 71 v. Chr. niedergeschlagen wurde.",
+   "source": "https://de.wikipedia.org/wiki/Spartacus"
+  },
+  {
+   "id": "hist-antike-rubikon",
+   "sub": "antike",
+   "difficulty": 3,
+   "prompt": "Welchen Grenzfluss überschritt Caesar 49 v. Chr. und löste damit einen Bürgerkrieg aus?",
+   "correct": "Rubikon",
+   "wrong": [
+    "Tiber",
+    "Rhein",
+    "Po"
+   ],
+   "explanation": "„Den Rubikon überschreiten“ steht seitdem für eine Entscheidung ohne Rückkehr.",
+   "source": "https://de.wikipedia.org/wiki/Rubikon"
+  },
+  {
+   "id": "hist-antike-augustus",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Wer war der erste römische Kaiser?",
+   "correct": "Augustus",
+   "wrong": [
+    "Julius Caesar",
+    "Nero",
+    "Konstantin"
+   ],
+   "explanation": "Octavian erhielt 27 v. Chr. den Ehrennamen Augustus. Caesar selbst war nie Kaiser, sondern Diktator.",
+   "source": "https://de.wikipedia.org/wiki/Augustus"
+  },
+  {
+   "id": "hist-antike-pompeji",
+   "sub": "antike",
+   "difficulty": 1,
+   "prompt": "Welcher Vulkan verschüttete im Jahr 79 n. Chr. die Stadt Pompeji?",
+   "correct": "Vesuv",
+   "wrong": [
+    "Ätna",
+    "Stromboli",
+    "Vulcano"
+   ],
+   "explanation": "Der Ausbruch begrub Pompeji und Herculaneum unter Asche. Dadurch blieben die Städte außergewöhnlich gut erhalten.",
+   "source": "https://de.wikipedia.org/wiki/Pompeji"
+  },
+  {
+   "id": "hist-antike-kolosseum",
+   "sub": "antike",
+   "difficulty": 1,
+   "prompt": "Wofür wurde das Kolosseum in Rom vor allem genutzt?",
+   "correct": "Gladiatorenkämpfe und Tierhetzen",
+   "wrong": [
+    "Wagenrennen",
+    "Theateraufführungen",
+    "Senatssitzungen"
+   ],
+   "explanation": "Das Amphitheater wurde 80 n. Chr. eingeweiht und fasste rund 50.000 Zuschauer. Wagenrennen fanden im Circus Maximus statt.",
+   "source": "https://de.wikipedia.org/wiki/Kolosseum"
+  },
+  {
+   "id": "hist-antike-limes",
+   "sub": "antike",
+   "difficulty": 1,
+   "prompt": "Wie heißt die römische Grenzbefestigung, deren Reste durch Süddeutschland verlaufen?",
+   "correct": "Limes",
+   "wrong": [
+    "Hadrianswall",
+    "Danewerk",
+    "Großer Wall"
+   ],
+   "explanation": "Der Obergermanisch-Raetische Limes war über 500 km lang und ist heute UNESCO-Welterbe. Der Hadrianswall liegt in England.",
+   "source": "https://de.wikipedia.org/wiki/Obergermanisch-Raetischer_Limes"
+  },
+  {
+   "id": "hist-antike-trier",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Welche heutige deutsche Stadt war eine wichtige römische Kaiserresidenz?",
+   "correct": "Trier",
+   "wrong": [
+    "München",
+    "Hamburg",
+    "Leipzig"
+   ],
+   "explanation": "Augusta Treverorum war um 300 n. Chr. eine der Hauptstädte des Römischen Reiches. Die Porta Nigra erinnert daran.",
+   "source": "https://de.wikipedia.org/wiki/Trier"
+  },
+  {
+   "id": "hist-antike-koeln",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Welche deutsche Großstadt hieß in der Römerzeit „Colonia Claudia Ara Agrippinensium“?",
+   "correct": "Köln",
+   "wrong": [
+    "Mainz",
+    "Augsburg",
+    "Regensburg"
+   ],
+   "explanation": "Der Name „Colonia“ lebt im heutigen Namen Köln weiter.",
+   "source": "https://de.wikipedia.org/wiki/Köln"
+  },
+  {
+   "id": "hist-antike-konstantin",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Welcher römische Kaiser förderte als erster das Christentum?",
+   "correct": "Konstantin der Große",
+   "wrong": [
+    "Nero",
+    "Augustus",
+    "Diokletian"
+   ],
+   "explanation": "Konstantin erlaubte 313 n. Chr. mit der Mailänder Vereinbarung die freie Religionsausübung für Christen.",
+   "source": "https://de.wikipedia.org/wiki/Konstantin_der_Große"
+  },
+  {
+   "id": "hist-antike-teilung",
+   "sub": "antike",
+   "difficulty": 3,
+   "prompt": "In welchem Jahr wurde das Römische Reich endgültig in Ost und West geteilt?",
+   "correct": "395",
+   "wrong": [
+    "117",
+    "313",
+    "476"
+   ],
+   "explanation": "Nach dem Tod von Kaiser Theodosius I. 395 wurde das Reich unter seinen Söhnen aufgeteilt.",
+   "source": "https://de.wikipedia.org/wiki/Reichsteilung_von_395"
+  },
+  {
+   "id": "hist-antike-ende-westrom",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Wie heißt der germanische Heerführer, der 476 den letzten weströmischen Kaiser absetzte?",
+   "correct": "Odoaker",
+   "wrong": [
+    "Alarich",
+    "Attila",
+    "Theoderich"
+   ],
+   "explanation": "Odoaker setzte Romulus Augustulus ab. Das Jahr 476 gilt oft als Ende der Antike im Westen.",
+   "source": "https://de.wikipedia.org/wiki/Odoaker"
+  },
+  {
+   "id": "hist-antike-hunnen",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Wer war der berühmteste Herrscher der Hunnen?",
+   "correct": "Attila",
+   "wrong": [
+    "Dschingis Khan",
+    "Alarich",
+    "Geiserich"
+   ],
+   "explanation": "Attila griff im 5. Jahrhundert das Römische Reich an. Dschingis Khan lebte erst 800 Jahre später.",
+   "source": "https://de.wikipedia.org/wiki/Attila"
+  },
+  {
+   "id": "hist-antike-china-mauer",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "Unter welchem Herrscher wurden um 220 v. Chr. erstmals Abschnitte der Chinesischen Mauer verbunden?",
+   "correct": "Qin Shihuangdi",
+   "wrong": [
+    "Kublai Khan",
+    "Konfuzius",
+    "Mao Zedong"
+   ],
+   "explanation": "Der erste Kaiser Chinas ließ ältere Grenzwälle verbinden. Er ist auch für seine Terrakotta-Armee bekannt.",
+   "source": "https://de.wikipedia.org/wiki/Qin_Shihuangdi"
+  },
+  {
+   "id": "hist-antike-nebra",
+   "sub": "antike",
+   "difficulty": 2,
+   "prompt": "In welchem heutigen Bundesland wurde die Himmelsscheibe von Nebra gefunden?",
+   "correct": "Sachsen-Anhalt",
+   "wrong": [
+    "Bayern",
+    "Niedersachsen",
+    "Thüringen"
+   ],
+   "explanation": "Die rund 3.600 Jahre alte Bronzescheibe gilt als älteste bekannte konkrete Himmelsdarstellung.",
+   "source": "https://de.wikipedia.org/wiki/Himmelsscheibe_von_Nebra"
+  },
+  {
+   "id": "hist-antike-y-rom",
+   "sub": "antike",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr wurde Rom der Sage nach gegründet?",
+   "year": -753,
+   "min": -3000,
+   "max": 600,
+   "explanation": "Traditionell gilt 753 v. Chr. als Gründungsjahr („sieben, fünf, drei, Rom schlüpft aus dem Ei“).",
+   "source": "https://de.wikipedia.org/wiki/Gründung_Roms"
+  },
+  {
+   "id": "hist-antike-y-vesuv",
+   "sub": "antike",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr zerstörte der Vesuv Pompeji?",
+   "year": 79,
+   "min": -3000,
+   "max": 600,
+   "explanation": "Der Ausbruch fand im Jahr 79 n. Chr. statt.",
+   "source": "https://de.wikipedia.org/wiki/Pompeji"
+  },
+  {
+   "id": "hist-antike-y-westrom",
+   "sub": "antike",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr endete das Weströmische Reich?",
+   "year": 476,
+   "min": -3000,
+   "max": 600,
+   "explanation": "476 setzte Odoaker den letzten weströmischen Kaiser ab.",
+   "source": "https://de.wikipedia.org/wiki/Untergang_des_Römischen_Reiches"
+  },
+  {
+   "id": "hist-antike-o-ant1",
+   "sub": "antike",
+   "type": "order",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "items": [
+    {
+     "label": "Bau der Cheops-Pyramide",
+     "year": -2600
+    },
+    {
+     "label": "Erste Olympische Spiele",
+     "year": -776
+    },
+    {
+     "label": "Tod Alexanders des Großen",
+     "year": -323
+    },
+    {
+     "label": "Ermordung Caesars",
+     "year": -44
+    },
+    {
+     "label": "Ausbruch des Vesuv",
+     "year": 79
+    }
+   ],
+   "explanation": "Um 2600 v. Chr., 776 v. Chr., 323 v. Chr., 44 v. Chr., 79 n. Chr.",
+   "source": "https://de.wikipedia.org/wiki/Antike"
+  },
+  {
+   "id": "hist-mittelalter-chlodwig",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Welcher Frankenkönig ließ sich um 500 taufen und einte die Franken?",
+   "correct": "Chlodwig I.",
+   "wrong": [
+    "Karl Martell",
+    "Pippin der Jüngere",
+    "Karl der Große"
+   ],
+   "explanation": "Mit Chlodwigs Taufe wurde das Frankenreich christlich. Er gilt als Begründer der Merowinger-Herrschaft.",
+   "source": "https://de.wikipedia.org/wiki/Chlodwig_I."
+  },
+  {
+   "id": "hist-mittelalter-aachen",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "In welcher Stadt hatte Karl der Große seine Lieblingspfalz und ist begraben?",
+   "correct": "Aachen",
+   "wrong": [
+    "Paris",
+    "Rom",
+    "Köln"
+   ],
+   "explanation": "Die Pfalzkapelle ist heute Teil des Aachener Doms, in dem über 30 deutsche Könige gekrönt wurden.",
+   "source": "https://de.wikipedia.org/wiki/Aachener_Dom"
+  },
+  {
+   "id": "hist-mittelalter-tours",
+   "sub": "mittelalter",
+   "difficulty": 3,
+   "prompt": "Wer besiegte 732 bei Tours und Poitiers ein arabisches Heer?",
+   "correct": "Karl Martell",
+   "wrong": [
+    "Karl der Große",
+    "Otto der Große",
+    "Chlodwig I."
+   ],
+   "explanation": "Der Sieg stoppte das Vordringen arabischer Heere ins Frankenreich. Karl Martell war der Großvater Karls des Großen.",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_von_Tours_und_Poitiers"
+  },
+  {
+   "id": "hist-mittelalter-lechfeld",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Wen besiegte Otto der Große 955 in der Schlacht auf dem Lechfeld?",
+   "correct": "Die Ungarn",
+   "wrong": [
+    "Die Wikinger",
+    "Die Araber",
+    "Die Slawen"
+   ],
+   "explanation": "Der Sieg bei Augsburg beendete die Ungarneinfälle und stärkte Ottos Stellung. 962 wurde er zum Kaiser gekrönt.",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_auf_dem_Lechfeld"
+  },
+  {
+   "id": "hist-mittelalter-hrr",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "Wie hieß das Reich der deutschen Kaiser im Mittelalter?",
+   "correct": "Heiliges Römisches Reich",
+   "wrong": [
+    "Deutsches Kaiserreich",
+    "Fränkisches Großreich",
+    "Habsburgerreich"
+   ],
+   "explanation": "Den Zusatz „Deutscher Nation“ erhielt es erst im 15. Jahrhundert. Es bestand bis 1806.",
+   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich"
+  },
+  {
+   "id": "hist-mittelalter-canossa",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Welcher Kaiser unternahm 1077 den „Gang nach Canossa“, um den Papst um Vergebung zu bitten?",
+   "correct": "Heinrich IV.",
+   "wrong": [
+    "Friedrich Barbarossa",
+    "Otto I.",
+    "Karl IV."
+   ],
+   "explanation": "Im Investiturstreit hatte Papst Gregor VII. Heinrich IV. gebannt. „Nach Canossa gehen“ steht heute für eine demütigende Bitte.",
+   "source": "https://de.wikipedia.org/wiki/Gang_nach_Canossa"
+  },
+  {
+   "id": "hist-mittelalter-barbarossa",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "Welcher Kaiser wurde „Barbarossa“ (Rotbart) genannt?",
+   "correct": "Friedrich I.",
+   "wrong": [
+    "Heinrich IV.",
+    "Otto I.",
+    "Friedrich II."
+   ],
+   "explanation": "Friedrich I. ertrank 1190 auf dem Dritten Kreuzzug. Der Sage nach schläft er im Kyffhäuser.",
+   "source": "https://de.wikipedia.org/wiki/Friedrich_I._(HRR)"
+  },
+  {
+   "id": "hist-mittelalter-kreuzzug",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Welche Stadt war das Ziel des Ersten Kreuzzugs?",
+   "correct": "Jerusalem",
+   "wrong": [
+    "Konstantinopel",
+    "Rom",
+    "Kairo"
+   ],
+   "explanation": "Der Erste Kreuzzug eroberte Jerusalem 1099 nach einem Aufruf von Papst Urban II. aus dem Jahr 1095.",
+   "source": "https://de.wikipedia.org/wiki/Erster_Kreuzzug"
+  },
+  {
+   "id": "hist-mittelalter-wikinger",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "Aus welcher Region stammten die Wikinger?",
+   "correct": "Skandinavien",
+   "wrong": [
+    "Britannien",
+    "Baltikum",
+    "Island"
+   ],
+   "explanation": "Ab etwa 800 unternahmen sie Raub- und Handelsfahrten bis nach Nordamerika, Russland und ans Mittelmeer.",
+   "source": "https://de.wikipedia.org/wiki/Wikinger"
+  },
+  {
+   "id": "hist-mittelalter-hanse",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "Wie hieß der mittelalterliche Bund von Kaufleuten und Städten wie Lübeck und Hamburg?",
+   "correct": "Hanse",
+   "wrong": [
+    "Zunft",
+    "Gilde",
+    "Rheinbund"
+   ],
+   "explanation": "Die Hanse beherrschte vom 13. bis 15. Jahrhundert den Handel in Nord- und Ostsee. Lübeck war ihre „Königin“.",
+   "source": "https://de.wikipedia.org/wiki/Hanse"
+  },
+  {
+   "id": "hist-mittelalter-pest",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "Welche Seuche tötete Mitte des 14. Jahrhunderts etwa ein Drittel der Bevölkerung Europas?",
+   "correct": "Pest",
+   "wrong": [
+    "Pocken",
+    "Cholera",
+    "Lepra"
+   ],
+   "explanation": "Der „Schwarze Tod“ wütete vor allem 1347 bis 1351.",
+   "source": "https://de.wikipedia.org/wiki/Schwarzer_Tod"
+  },
+  {
+   "id": "hist-mittelalter-goldene-bulle",
+   "sub": "mittelalter",
+   "difficulty": 3,
+   "prompt": "Welches Gesetz regelte ab 1356 die Wahl des deutschen Königs durch sieben Kurfürsten?",
+   "correct": "Goldene Bulle",
+   "wrong": [
+    "Wormser Konkordat",
+    "Sachsenspiegel",
+    "Magna Carta"
+   ],
+   "explanation": "Kaiser Karl IV. erließ die Goldene Bulle. Sie galt bis zum Ende des Reiches 1806.",
+   "source": "https://de.wikipedia.org/wiki/Goldene_Bulle"
+  },
+  {
+   "id": "hist-mittelalter-hildegard",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Welche Äbtissin des 12. Jahrhunderts ist für ihre Schriften über Heilkunde und Musik bekannt?",
+   "correct": "Hildegard von Bingen",
+   "wrong": [
+    "Elisabeth von Thüringen",
+    "Johanna von Orléans",
+    "Theophanu"
+   ],
+   "explanation": "Hildegard gründete das Kloster Rupertsberg bei Bingen. 2012 wurde sie zur Kirchenlehrerin erhoben.",
+   "source": "https://de.wikipedia.org/wiki/Hildegard_von_Bingen"
+  },
+  {
+   "id": "hist-mittelalter-jeanne",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "Welche junge Frau führte 1429 französische Truppen gegen die Engländer und wurde später verbrannt?",
+   "correct": "Jeanne d’Arc",
+   "wrong": [
+    "Katharina von Medici",
+    "Eleonore von Aquitanien",
+    "Marie Antoinette"
+   ],
+   "explanation": "Jeanne d’Arc befreite Orléans im Hundertjährigen Krieg. 1431 wurde sie in Rouen hingerichtet, 1920 heiliggesprochen.",
+   "source": "https://de.wikipedia.org/wiki/Jeanne_d’Arc"
+  },
+  {
+   "id": "hist-mittelalter-hundertjaehrig",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Welche Länder kämpften im Hundertjährigen Krieg (1337–1453) gegeneinander?",
+   "correct": "England und Frankreich",
+   "wrong": [
+    "Spanien und Portugal",
+    "Frankreich und das Heilige Römische Reich",
+    "England und Schottland"
+   ],
+   "explanation": "Es ging um den französischen Thron. Trotz des Namens dauerte der Konflikt 116 Jahre mit Unterbrechungen.",
+   "source": "https://de.wikipedia.org/wiki/Hundertjähriger_Krieg"
+  },
+  {
+   "id": "hist-mittelalter-marco-polo",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "Welcher Venezianer reiste im 13. Jahrhundert an den Hof des Mongolenherrschers Kublai Khan?",
+   "correct": "Marco Polo",
+   "wrong": [
+    "Christoph Kolumbus",
+    "Vasco da Gama",
+    "Ibn Battuta"
+   ],
+   "explanation": "Sein Reisebericht machte China in Europa bekannt.",
+   "source": "https://de.wikipedia.org/wiki/Marco_Polo"
+  },
+  {
+   "id": "hist-mittelalter-dschingis",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Wer begründete im 13. Jahrhundert das Mongolische Reich?",
+   "correct": "Dschingis Khan",
+   "wrong": [
+    "Attila",
+    "Kublai Khan",
+    "Timur"
+   ],
+   "explanation": "Das Mongolische Reich wurde zum größten zusammenhängenden Landreich der Geschichte.",
+   "source": "https://de.wikipedia.org/wiki/Dschingis_Khan"
+  },
+  {
+   "id": "hist-mittelalter-islam",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "In welchem Jahrhundert entstand der Islam?",
+   "correct": "7. Jahrhundert",
+   "wrong": [
+    "4. Jahrhundert",
+    "9. Jahrhundert",
+    "11. Jahrhundert"
+   ],
+   "explanation": "Mohammed begann um 610 in Mekka zu predigen. Mit der Auswanderung nach Medina 622 beginnt die islamische Zeitrechnung.",
+   "source": "https://de.wikipedia.org/wiki/Islam"
+  },
+  {
+   "id": "hist-mittelalter-kloster",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Wer gründete den ältesten noch bestehenden Mönchsorden des Abendlands?",
+   "correct": "Benedikt von Nursia",
+   "wrong": [
+    "Franz von Assisi",
+    "Bernhard von Clairvaux",
+    "Ignatius von Loyola"
+   ],
+   "explanation": "Benedikt gründete um 529 das Kloster Montecassino. Seine Regel „ora et labora“ (bete und arbeite) prägt Klöster bis heute.",
+   "source": "https://de.wikipedia.org/wiki/Benedikt_von_Nursia"
+  },
+  {
+   "id": "hist-mittelalter-koelner-dom",
+   "sub": "mittelalter",
+   "difficulty": 2,
+   "prompt": "Wann wurde der Kölner Dom fertiggestellt?",
+   "correct": "1880",
+   "wrong": [
+    "1322",
+    "1530",
+    "1648"
+   ],
+   "explanation": "Der Bau begann 1248, ruhte aber jahrhundertelang. Erst im 19. Jahrhundert wurde er vollendet.",
+   "source": "https://de.wikipedia.org/wiki/Kölner_Dom"
+  },
+  {
+   "id": "hist-mittelalter-ritter",
+   "sub": "mittelalter",
+   "difficulty": 1,
+   "prompt": "Wie wurde ein junger Adliger im Mittelalter feierlich in den Ritterstand aufgenommen?",
+   "correct": "Durch den Ritterschlag",
+   "wrong": [
+    "Durch die Krönung",
+    "Durch die Taufe",
+    "Durch ein Turnier"
+   ],
+   "explanation": "Zuvor dienten die Anwärter als Page und Knappe.",
+   "source": "https://de.wikipedia.org/wiki/Ritterschlag"
+  },
+  {
+   "id": "hist-mittelalter-sachsenspiegel",
+   "sub": "mittelalter",
+   "difficulty": 3,
+   "prompt": "Wie heißt das bedeutendste deutsche Rechtsbuch des Mittelalters, verfasst um 1225?",
+   "correct": "Sachsenspiegel",
+   "wrong": [
+    "Schwabenspiegel",
+    "Goldene Bulle",
+    "Codex Iustinianus"
+   ],
+   "explanation": "Eike von Repgow schrieb das Gewohnheitsrecht der Sachsen auf, als eines der ersten Prosawerke auf Deutsch.",
+   "source": "https://de.wikipedia.org/wiki/Sachsenspiegel"
+  },
+  {
+   "id": "hist-mittelalter-reconquista",
+   "sub": "mittelalter",
+   "difficulty": 3,
+   "prompt": "Welche Stadt fiel 1492 als letztes muslimisches Reich in Spanien an die Christen?",
+   "correct": "Granada",
+   "wrong": [
+    "Córdoba",
+    "Sevilla",
+    "Toledo"
+   ],
+   "explanation": "Mit der Eroberung Granadas endete die Reconquista. Im selben Jahr erreichte Kolumbus Amerika.",
+   "source": "https://de.wikipedia.org/wiki/Emirat_von_Granada"
+  },
+  {
+   "id": "hist-mittelalter-bayeux",
+   "sub": "mittelalter",
+   "difficulty": 3,
+   "prompt": "Welche Schlacht von 1066 zeigt der Teppich von Bayeux?",
+   "correct": "Schlacht bei Hastings",
+   "wrong": [
+    "Schlacht bei Azincourt",
+    "Schlacht auf dem Lechfeld",
+    "Schlacht bei Tours"
+   ],
+   "explanation": "Wilhelm der Eroberer aus der Normandie besiegte den englischen König Harald II. und eroberte England.",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Hastings"
+  },
+  {
+   "id": "hist-mittelalter-y-hastings",
+   "sub": "mittelalter",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr eroberten die Normannen England (Schlacht bei Hastings)?",
+   "year": 1066,
+   "min": 400,
+   "max": 1550,
+   "explanation": "Wilhelm der Eroberer siegte 1066 bei Hastings.",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Hastings"
+  },
+  {
+   "id": "hist-mittelalter-y-canossa",
+   "sub": "mittelalter",
+   "type": "year",
+   "difficulty": 3,
+   "prompt": "In welchem Jahr ging Heinrich IV. nach Canossa?",
+   "year": 1077,
+   "min": 400,
+   "max": 1550,
+   "explanation": "Im Januar 1077 erschien der König vor der Burg Canossa.",
+   "source": "https://de.wikipedia.org/wiki/Gang_nach_Canossa"
+  },
+  {
+   "id": "hist-mittelalter-y-pest",
+   "sub": "mittelalter",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr erreichte die große Pestwelle Europa?",
+   "year": 1347,
+   "min": 400,
+   "max": 1550,
+   "explanation": "1347 brachten Schiffe die Pest über die Krim nach Sizilien.",
+   "source": "https://de.wikipedia.org/wiki/Schwarzer_Tod"
+  },
+  {
+   "id": "hist-mittelalter-y-lechfeld",
+   "sub": "mittelalter",
+   "type": "year",
+   "difficulty": 3,
+   "prompt": "In welchem Jahr fand die Schlacht auf dem Lechfeld statt?",
+   "year": 955,
+   "min": 400,
+   "max": 1550,
+   "explanation": "955 siegte Otto I. bei Augsburg über die Ungarn.",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_auf_dem_Lechfeld"
+  },
+  {
+   "id": "hist-mittelalter-o-mit1",
+   "sub": "mittelalter",
+   "type": "order",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "items": [
+    {
+     "label": "Taufe Chlodwigs",
+     "year": 498
+    },
+    {
+     "label": "Kaiserkrönung Ottos des Großen",
+     "year": 962
+    },
+    {
+     "label": "Gang nach Canossa",
+     "year": 1077
+    },
+    {
+     "label": "Eroberung Jerusalems im Ersten Kreuzzug",
+     "year": 1099
+    },
+    {
+     "label": "Ausbruch der Pest in Europa",
+     "year": 1347
+    }
+   ],
+   "explanation": "Um 498, 962, 1077, 1099, 1347.",
+   "source": "https://de.wikipedia.org/wiki/Mittelalter"
+  }
+ ]
+}

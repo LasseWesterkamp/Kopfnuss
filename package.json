@@ -30,6 +30,8 @@
     "@vitejs/plugin-react": "^4.7.0",
     "flag-icons": "^7.6.0",
     "sharp": "^0.35.5",
+    "topojson-server": "^3.0.1",
+    "topojson-simplify": "^3.0.3",
     "typescript": "^5.9.3",
     "vite": "^5.4.21",
     "vite-plugin-pwa": "^0.20.5",

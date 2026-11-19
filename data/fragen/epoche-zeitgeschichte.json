@@ -1,0 +1,1316 @@
+{
+ "topic": "geschichte",
+ "questions": [
+  {
+   "id": "hist-weimar-juli-krise",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Welches Land erklärte nach dem Attentat von Sarajevo als erstes einem anderen den Krieg?",
+   "correct": "Österreich-Ungarn (an Serbien)",
+   "wrong": [
+    "Deutschland (an Russland)",
+    "Frankreich (an Deutschland)",
+    "Russland (an Österreich)"
+   ],
+   "explanation": "Am 28. Juli 1914 erklärte Österreich-Ungarn Serbien den Krieg. Durch die Bündnisse weitete sich der Krieg binnen Tagen aus.",
+   "source": "https://de.wikipedia.org/wiki/Julikrise"
+  },
+  {
+   "id": "hist-weimar-verdun",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Welche Schlacht von 1916 an der Westfront wurde zum Symbol für sinnloses Massensterben?",
+   "correct": "Schlacht um Verdun",
+   "wrong": [
+    "Schlacht bei Tannenberg",
+    "Schlacht an der Marne",
+    "Skagerrakschlacht"
+   ],
+   "explanation": "Bei Verdun starben in zehn Monaten über 300.000 Soldaten, ohne dass sich die Front wesentlich verschob.",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_um_Verdun"
+  },
+  {
+   "id": "hist-weimar-stellungskrieg",
+   "sub": "weimar",
+   "difficulty": 1,
+   "prompt": "Wie nennt man die Kriegsführung im Ersten Weltkrieg, bei der sich die Armeen in Schützengräben gegenüberlagen?",
+   "correct": "Stellungskrieg",
+   "wrong": [
+    "Blitzkrieg",
+    "Guerillakrieg",
+    "Bewegungskrieg"
+   ],
+   "explanation": "An der Westfront erstarrte die Front ab Ende 1914 in Schützengräben von der Nordsee bis zur Schweiz.",
+   "source": "https://de.wikipedia.org/wiki/Stellungskrieg"
+  },
+  {
+   "id": "hist-weimar-gas",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Welche neue Waffe setzte die deutsche Armee 1915 bei Ypern erstmals in großem Stil ein?",
+   "correct": "Giftgas (Chlorgas)",
+   "wrong": [
+    "Panzer",
+    "Atombombe",
+    "Flammenwerfer"
+   ],
+   "explanation": "Panzer setzten erstmals die Briten 1916 an der Somme ein.",
+   "source": "https://de.wikipedia.org/wiki/Gaskrieg_im_Ersten_Weltkrieg"
+  },
+  {
+   "id": "hist-weimar-usa-kriegseintritt",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr traten die USA in den Ersten Weltkrieg ein?",
+   "correct": "1917",
+   "wrong": [
+    "1914",
+    "1916",
+    "1918"
+   ],
+   "explanation": "Auslöser war vor allem der uneingeschränkte U-Boot-Krieg Deutschlands.",
+   "source": "https://de.wikipedia.org/wiki/Kriegseintritt_der_Vereinigten_Staaten_in_den_Ersten_Weltkrieg"
+  },
+  {
+   "id": "hist-weimar-oktoberrevolution",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Wer führte 1917 die Oktoberrevolution in Russland an?",
+   "correct": "Lenin (Bolschewiki)",
+   "wrong": [
+    "Stalin",
+    "Zar Nikolaus II.",
+    "Kerenski"
+   ],
+   "explanation": "Die Bolschewiki stürzten die Provisorische Regierung. Nach dem damals in Russland gültigen Kalender war es Oktober, nach unserem November.",
+   "source": "https://de.wikipedia.org/wiki/Oktoberrevolution"
+  },
+  {
+   "id": "hist-weimar-waffenstillstand",
+   "sub": "weimar",
+   "difficulty": 1,
+   "prompt": "An welchem Tag endeten die Kämpfe des Ersten Weltkriegs (Waffenstillstand von Compiègne)?",
+   "correct": "11. November 1918",
+   "wrong": [
+    "9. November 1918",
+    "28. Juni 1919",
+    "1. September 1918"
+   ],
+   "explanation": "Der Waffenstillstand trat um 11 Uhr in Kraft. In Frankreich und Großbritannien ist der 11. November bis heute Gedenktag.",
+   "source": "https://de.wikipedia.org/wiki/Waffenstillstand_von_Compiègne_(1918)"
+  },
+  {
+   "id": "hist-weimar-scheidemann",
+   "sub": "weimar",
+   "difficulty": 3,
+   "prompt": "Wer rief am 9. November 1918 vom Reichstag aus die „Deutsche Republik“ aus?",
+   "correct": "Philipp Scheidemann",
+   "wrong": [
+    "Friedrich Ebert",
+    "Karl Liebknecht",
+    "Gustav Stresemann"
+   ],
+   "explanation": "Nur zwei Stunden später rief Karl Liebknecht vom Berliner Schloss eine „freie sozialistische Republik“ aus.",
+   "source": "https://de.wikipedia.org/wiki/Philipp_Scheidemann"
+  },
+  {
+   "id": "hist-weimar-kaiser-exil",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Wohin ging Kaiser Wilhelm II. nach seiner Abdankung 1918 ins Exil?",
+   "correct": "In die Niederlande",
+   "wrong": [
+    "Nach England",
+    "In die Schweiz",
+    "Nach Schweden"
+   ],
+   "explanation": "Er lebte bis zu seinem Tod 1941 in Doorn.",
+   "source": "https://de.wikipedia.org/wiki/Wilhelm_II._(Deutsches_Reich)"
+  },
+  {
+   "id": "hist-weimar-frauenwahl",
+   "sub": "weimar",
+   "difficulty": 1,
+   "prompt": "Seit wann dürfen Frauen in Deutschland wählen?",
+   "correct": "1918/1919",
+   "wrong": [
+    "1871",
+    "1949",
+    "1968"
+   ],
+   "explanation": "Das Frauenwahlrecht wurde im November 1918 eingeführt. Bei der Wahl zur Nationalversammlung im Januar 1919 wählten Frauen erstmals.",
+   "source": "https://de.wikipedia.org/wiki/Frauenwahlrecht"
+  },
+  {
+   "id": "hist-weimar-versailles",
+   "sub": "weimar",
+   "difficulty": 1,
+   "prompt": "Welcher Vertrag legte 1919 die Friedensbedingungen für Deutschland fest?",
+   "correct": "Vertrag von Versailles",
+   "wrong": [
+    "Vertrag von Rapallo",
+    "Vertrag von Locarno",
+    "Westfälischer Frieden"
+   ],
+   "explanation": "Deutschland verlor Gebiete und Kolonien, musste hohe Reparationen zahlen und die Alleinschuld am Krieg anerkennen.",
+   "source": "https://de.wikipedia.org/wiki/Friedensvertrag_von_Versailles"
+  },
+  {
+   "id": "hist-weimar-luxemburg",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Welche Mitbegründerin der KPD wurde im Januar 1919 zusammen mit Karl Liebknecht ermordet?",
+   "correct": "Rosa Luxemburg",
+   "wrong": [
+    "Clara Zetkin",
+    "Käthe Kollwitz",
+    "Marie Juchacz"
+   ],
+   "explanation": "Freikorps-Soldaten ermordeten beide in Berlin.",
+   "source": "https://de.wikipedia.org/wiki/Rosa_Luxemburg"
+  },
+  {
+   "id": "hist-weimar-kapp",
+   "sub": "weimar",
+   "difficulty": 3,
+   "prompt": "Wie heißt der rechtsgerichtete Umsturzversuch von 1920 in Berlin, der an einem Generalstreik scheiterte?",
+   "correct": "Kapp-Putsch",
+   "wrong": [
+    "Hitlerputsch",
+    "Spartakusaufstand",
+    "Röhm-Putsch"
+   ],
+   "explanation": "Der Hitlerputsch folgte 1923 in München.",
+   "source": "https://de.wikipedia.org/wiki/Kapp-Putsch"
+  },
+  {
+   "id": "hist-weimar-inflation",
+   "sub": "weimar",
+   "difficulty": 1,
+   "prompt": "Was kostete im November 1923 in Deutschland ungefähr ein Brot?",
+   "correct": "Mehrere Milliarden Mark",
+   "wrong": [
+    "Etwa 1 Mark",
+    "Etwa 1.000 Mark",
+    "Etwa 1 Million Mark"
+   ],
+   "explanation": "Auf dem Höhepunkt der Hyperinflation kostete ein Brot in Berlin rund 200 Milliarden Mark. Ende 1923 kam die Rentenmark.",
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Inflation_1914_bis_1923"
+  },
+  {
+   "id": "hist-weimar-ruhr",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Welche Länder besetzten 1923 das Ruhrgebiet, weil Deutschland mit Reparationen im Rückstand war?",
+   "correct": "Frankreich und Belgien",
+   "wrong": [
+    "Großbritannien und die USA",
+    "Polen und die Tschechoslowakei",
+    "Die Niederlande und Luxemburg"
+   ],
+   "explanation": "Die Regierung rief zum „passiven Widerstand“ auf und finanzierte ihn mit der Notenpresse. Das trieb die Inflation weiter.",
+   "source": "https://de.wikipedia.org/wiki/Ruhrbesetzung"
+  },
+  {
+   "id": "hist-weimar-hitlerputsch",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Wo versuchte Hitler im November 1923 zu putschen?",
+   "correct": "In München",
+   "wrong": [
+    "In Berlin",
+    "In Nürnberg",
+    "In Weimar"
+   ],
+   "explanation": "Der Putsch an der Feldherrnhalle scheiterte. In der Haft schrieb Hitler „Mein Kampf“.",
+   "source": "https://de.wikipedia.org/wiki/Hitlerputsch"
+  },
+  {
+   "id": "hist-weimar-stresemann",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Welcher Außenminister erhielt 1926 den Friedensnobelpreis für die Aussöhnung mit Frankreich?",
+   "correct": "Gustav Stresemann",
+   "wrong": [
+    "Walther Rathenau",
+    "Friedrich Ebert",
+    "Heinrich Brüning"
+   ],
+   "explanation": "Er teilte ihn mit dem Franzosen Aristide Briand. Grundlage waren die Verträge von Locarno 1925.",
+   "source": "https://de.wikipedia.org/wiki/Gustav_Stresemann"
+  },
+  {
+   "id": "hist-weimar-rathenau",
+   "sub": "weimar",
+   "difficulty": 3,
+   "prompt": "Welcher Außenminister wurde 1922 von Rechtsextremisten ermordet?",
+   "correct": "Walther Rathenau",
+   "wrong": [
+    "Gustav Stresemann",
+    "Matthias Erzberger",
+    "Hugo Preuß"
+   ],
+   "explanation": "Rathenau war Jude und wurde von Mitgliedern der „Organisation Consul“ erschossen. Erzberger war schon 1921 ermordet worden.",
+   "source": "https://de.wikipedia.org/wiki/Walther_Rathenau"
+  },
+  {
+   "id": "hist-weimar-zwanziger",
+   "sub": "weimar",
+   "difficulty": 1,
+   "prompt": "Wie nennt man die Jahre um 1924 bis 1929 in der Weimarer Republik wegen Kultur und Aufschwung?",
+   "correct": "Goldene Zwanziger",
+   "wrong": [
+    "Gründerzeit",
+    "Biedermeier",
+    "Belle Époque"
+   ],
+   "explanation": "Berlin war ein Zentrum von Film, Theater, Kabarett und Architektur, etwa des Bauhauses.",
+   "source": "https://de.wikipedia.org/wiki/Goldene_Zwanziger"
+  },
+  {
+   "id": "hist-weimar-bauhaus",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "In welcher Stadt gründete Walter Gropius 1919 das Bauhaus?",
+   "correct": "Weimar",
+   "wrong": [
+    "Dessau",
+    "Berlin",
+    "Stuttgart"
+   ],
+   "explanation": "Das Bauhaus zog 1925 nach Dessau und 1932 nach Berlin, wo es sich 1933 unter Druck der Nazis auflöste.",
+   "source": "https://de.wikipedia.org/wiki/Bauhaus"
+  },
+  {
+   "id": "hist-weimar-boersencrash",
+   "sub": "weimar",
+   "difficulty": 1,
+   "prompt": "Welches Ereignis im Oktober 1929 löste die Weltwirtschaftskrise aus?",
+   "correct": "Der Börsenkrach in New York",
+   "wrong": [
+    "Die Hyperinflation in Deutschland",
+    "Der Zusammenbruch der Bank of England",
+    "Die Ölkrise"
+   ],
+   "explanation": "Der „Schwarze Donnerstag“ und die folgenden Tage an der Wall Street lösten eine weltweite Krise aus. In Deutschland gab es 1932 rund 6 Millionen Arbeitslose.",
+   "source": "https://de.wikipedia.org/wiki/Weltwirtschaftskrise"
+  },
+  {
+   "id": "hist-weimar-art48",
+   "sub": "weimar",
+   "difficulty": 3,
+   "prompt": "Welcher Artikel der Weimarer Verfassung erlaubte dem Reichspräsidenten Notverordnungen ohne Parlament?",
+   "correct": "Artikel 48",
+   "wrong": [
+    "Artikel 1",
+    "Artikel 20",
+    "Artikel 146"
+   ],
+   "explanation": "Ab 1930 regierten die Kanzler mit Notverordnungen nach Art. 48. Das höhlte die Demokratie aus.",
+   "source": "https://de.wikipedia.org/wiki/Artikel_48_der_Weimarer_Verfassung"
+  },
+  {
+   "id": "hist-weimar-hindenburg",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Wer war ab 1925 Reichspräsident der Weimarer Republik?",
+   "correct": "Paul von Hindenburg",
+   "wrong": [
+    "Friedrich Ebert",
+    "Gustav Stresemann",
+    "Heinrich Brüning"
+   ],
+   "explanation": "Der ehemalige Generalfeldmarschall ernannte Hitler am 30. Januar 1933 zum Reichskanzler.",
+   "source": "https://de.wikipedia.org/wiki/Paul_von_Hindenburg"
+  },
+  {
+   "id": "hist-weimar-voelkerbund",
+   "sub": "weimar",
+   "difficulty": 2,
+   "prompt": "Welche internationale Organisation wurde 1920 gegründet, um Kriege zu verhindern?",
+   "correct": "Völkerbund",
+   "wrong": [
+    "Vereinte Nationen",
+    "NATO",
+    "Europarat"
+   ],
+   "explanation": "Deutschland trat 1926 bei und 1933 wieder aus. Nach dem Zweiten Weltkrieg folgten die Vereinten Nationen.",
+   "source": "https://de.wikipedia.org/wiki/Völkerbund"
+  },
+  {
+   "id": "hist-weimar-y-wk1",
+   "sub": "weimar",
+   "type": "year",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr begann der Erste Weltkrieg?",
+   "year": 1914,
+   "min": 1905,
+   "max": 1940,
+   "explanation": "Im Juli/August 1914.",
+   "source": "https://de.wikipedia.org/wiki/Erster_Weltkrieg"
+  },
+  {
+   "id": "hist-weimar-y-weimarer-verf",
+   "sub": "weimar",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr trat die Weimarer Verfassung in Kraft?",
+   "year": 1919,
+   "min": 1905,
+   "max": 1940,
+   "explanation": "Am 14. August 1919.",
+   "source": "https://de.wikipedia.org/wiki/Weimarer_Verfassung"
+  },
+  {
+   "id": "hist-weimar-y-inflation",
+   "sub": "weimar",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr erreichte die Hyperinflation in Deutschland ihren Höhepunkt?",
+   "year": 1923,
+   "min": 1905,
+   "max": 1940,
+   "explanation": "Im Herbst 1923.",
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Inflation_1914_bis_1923"
+  },
+  {
+   "id": "hist-weimar-o-wei1",
+   "sub": "weimar",
+   "type": "order",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "items": [
+    {
+     "label": "Attentat von Sarajevo",
+     "year": 1914
+    },
+    {
+     "label": "Oktoberrevolution in Russland",
+     "year": 1917
+    },
+    {
+     "label": "Vertrag von Versailles",
+     "year": 1919
+    },
+    {
+     "label": "Hitlerputsch",
+     "year": 1923
+    },
+    {
+     "label": "Börsenkrach in New York",
+     "year": 1929
+    }
+   ],
+   "explanation": "1914, 1917, 1919, 1923, 1929.",
+   "source": "https://de.wikipedia.org/wiki/Weimarer_Republik"
+  },
+  {
+   "id": "hist-ns-machtergreifung",
+   "sub": "ns",
+   "difficulty": 1,
+   "prompt": "An welchem Tag wurde Hitler zum Reichskanzler ernannt?",
+   "correct": "30. Januar 1933",
+   "wrong": [
+    "9. November 1923",
+    "1. September 1939",
+    "27. Februar 1933"
+   ],
+   "explanation": "Reichspräsident Hindenburg ernannte ihn. Der 27. Februar 1933 war der Tag des Reichstagsbrands.",
+   "source": "https://de.wikipedia.org/wiki/Machtergreifung"
+  },
+  {
+   "id": "hist-ns-ermaechtigung",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Welches Gesetz vom März 1933 erlaubte der Regierung Hitler, Gesetze ohne den Reichstag zu erlassen?",
+   "correct": "Ermächtigungsgesetz",
+   "wrong": [
+    "Reichstagsbrandverordnung",
+    "Nürnberger Gesetze",
+    "Gleichschaltungsgesetz"
+   ],
+   "explanation": "Nur die SPD stimmte dagegen. Die KPD-Abgeordneten waren bereits verhaftet oder geflohen.",
+   "source": "https://de.wikipedia.org/wiki/Ermächtigungsgesetz_1933"
+  },
+  {
+   "id": "hist-ns-wels",
+   "sub": "ns",
+   "difficulty": 3,
+   "prompt": "Welcher SPD-Vorsitzende begründete im Reichstag die Ablehnung des Ermächtigungsgesetzes?",
+   "correct": "Otto Wels",
+   "wrong": [
+    "Kurt Schumacher",
+    "Rudolf Breitscheid",
+    "Paul Löbe"
+   ],
+   "explanation": "Sein Satz „Freiheit und Leben kann man uns nehmen, die Ehre nicht“ wurde berühmt.",
+   "source": "https://de.wikipedia.org/wiki/Otto_Wels"
+  },
+  {
+   "id": "hist-ns-buecher",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Was geschah am 10. Mai 1933 in Berlin und anderen Universitätsstädten?",
+   "correct": "Bücherverbrennungen",
+   "wrong": [
+    "Die Olympischen Spiele",
+    "Die Gründung der Gestapo",
+    "Der Boykott jüdischer Geschäfte"
+   ],
+   "explanation": "Studenten verbrannten Werke von Autoren wie Heinrich Heine, Erich Kästner und Kurt Tucholsky.",
+   "source": "https://de.wikipedia.org/wiki/Bücherverbrennung_1933_in_Deutschland"
+  },
+  {
+   "id": "hist-ns-nuernberger-gesetze",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Welche Gesetze von 1935 entrechteten Juden in Deutschland und verboten „Mischehen“?",
+   "correct": "Nürnberger Gesetze",
+   "wrong": [
+    "Ermächtigungsgesetz",
+    "Sozialistengesetze",
+    "Notverordnungen"
+   ],
+   "explanation": "Juden verloren damit die vollen Bürgerrechte.",
+   "source": "https://de.wikipedia.org/wiki/Nürnberger_Gesetze"
+  },
+  {
+   "id": "hist-ns-olympia36",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Wo fanden 1936 die Olympischen Sommerspiele statt?",
+   "correct": "Berlin",
+   "wrong": [
+    "München",
+    "Garmisch-Partenkirchen",
+    "Rom"
+   ],
+   "explanation": "Das NS-Regime nutzte die Spiele für Propaganda. Der Afroamerikaner Jesse Owens gewann vier Goldmedaillen. In Garmisch fanden die Winterspiele statt.",
+   "source": "https://de.wikipedia.org/wiki/Olympische_Sommerspiele_1936"
+  },
+  {
+   "id": "hist-ns-pogrom",
+   "sub": "ns",
+   "difficulty": 1,
+   "prompt": "Was geschah in der Nacht vom 9. auf den 10. November 1938?",
+   "correct": "Die Novemberpogrome gegen Juden",
+   "wrong": [
+    "Der Reichstagsbrand",
+    "Der Anschluss Österreichs",
+    "Der Einmarsch in Polen"
+   ],
+   "explanation": "Synagogen wurden angezündet, jüdische Geschäfte zerstört, Tausende Juden in Konzentrationslager verschleppt.",
+   "source": "https://de.wikipedia.org/wiki/Novemberpogrome_1938"
+  },
+  {
+   "id": "hist-ns-anschluss",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Welches Land wurde im März 1938 an das Deutsche Reich „angeschlossen“?",
+   "correct": "Österreich",
+   "wrong": [
+    "Tschechoslowakei",
+    "Polen",
+    "Schweiz"
+   ],
+   "explanation": "Deutsche Truppen marschierten ein, eine anschließende Volksabstimmung stand unter Druck und Propaganda.",
+   "source": "https://de.wikipedia.org/wiki/Anschluss_Österreichs"
+  },
+  {
+   "id": "hist-ns-muenchner-abkommen",
+   "sub": "ns",
+   "difficulty": 3,
+   "prompt": "Welches Gebiet erhielt Deutschland 1938 durch das Münchner Abkommen?",
+   "correct": "Das Sudetenland",
+   "wrong": [
+    "Das Elsass",
+    "Danzig",
+    "Das Memelland"
+   ],
+   "explanation": "Großbritannien und Frankreich stimmten zu, um einen Krieg zu verhindern („Appeasement“). Die Tschechoslowakei war nicht beteiligt.",
+   "source": "https://de.wikipedia.org/wiki/Münchner_Abkommen"
+  },
+  {
+   "id": "hist-ns-hitler-stalin",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Welcher Vertrag von August 1939 teilte Osteuropa heimlich zwischen Deutschland und der Sowjetunion auf?",
+   "correct": "Hitler-Stalin-Pakt",
+   "wrong": [
+    "Münchner Abkommen",
+    "Antikominternpakt",
+    "Vertrag von Rapallo"
+   ],
+   "explanation": "Offiziell ein Nichtangriffspakt, in einem geheimen Zusatzprotokoll wurden Interessensphären festgelegt.",
+   "source": "https://de.wikipedia.org/wiki/Deutsch-sowjetischer_Nichtangriffspakt"
+  },
+  {
+   "id": "hist-ns-barbarossa",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Unter welchem Decknamen griff Deutschland im Juni 1941 die Sowjetunion an?",
+   "correct": "Unternehmen Barbarossa",
+   "wrong": [
+    "Unternehmen Seelöwe",
+    "Fall Weiß",
+    "Operation Overlord"
+   ],
+   "explanation": "Der Angriff begann am 22. Juni 1941. „Fall Weiß“ war der Überfall auf Polen.",
+   "source": "https://de.wikipedia.org/wiki/Deutsch-Sowjetischer_Krieg"
+  },
+  {
+   "id": "hist-ns-stalingrad",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Welche Schlacht im Winter 1942/43 gilt als Wendepunkt des Kriegs im Osten?",
+   "correct": "Schlacht von Stalingrad",
+   "wrong": [
+    "Schlacht um Moskau",
+    "Schlacht im Kursker Bogen",
+    "Belagerung Leningrads"
+   ],
+   "explanation": "Die eingeschlossene 6. Armee kapitulierte Anfang Februar 1943. Rund 110.000 deutsche Soldaten gingen in Gefangenschaft.",
+   "source": "https://de.wikipedia.org/wiki/Schlacht_von_Stalingrad"
+  },
+  {
+   "id": "hist-ns-pearl",
+   "sub": "ns",
+   "difficulty": 1,
+   "prompt": "Welcher Angriff im Dezember 1941 brachte die USA in den Zweiten Weltkrieg?",
+   "correct": "Japans Angriff auf Pearl Harbor",
+   "wrong": [
+    "Deutschlands Angriff auf New York",
+    "Die Versenkung der Lusitania",
+    "Der Angriff auf London"
+   ],
+   "explanation": "Japan griff am 7. Dezember 1941 die US-Flotte auf Hawaii an. Kurz darauf erklärte auch Deutschland den USA den Krieg.",
+   "source": "https://de.wikipedia.org/wiki/Angriff_auf_Pearl_Harbor"
+  },
+  {
+   "id": "hist-ns-dday",
+   "sub": "ns",
+   "difficulty": 1,
+   "prompt": "Wo landeten die Alliierten am 6. Juni 1944 (D-Day)?",
+   "correct": "In der Normandie",
+   "wrong": [
+    "In Sizilien",
+    "In der Bretagne",
+    "In Belgien"
+   ],
+   "explanation": "Die Landung war die größte amphibische Operation der Geschichte und eröffnete die Westfront.",
+   "source": "https://de.wikipedia.org/wiki/Operation_Overlord"
+  },
+  {
+   "id": "hist-ns-wannsee",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Auf welcher Konferenz im Januar 1942 organisierten NS-Funktionäre die Ermordung der europäischen Juden?",
+   "correct": "Wannseekonferenz",
+   "wrong": [
+    "Konferenz von Jalta",
+    "Potsdamer Konferenz",
+    "Münchner Konferenz"
+   ],
+   "explanation": "Die Besprechung in einer Villa am Berliner Wannsee koordinierte den bereits begonnenen Völkermord.",
+   "source": "https://de.wikipedia.org/wiki/Wannseekonferenz"
+  },
+  {
+   "id": "hist-ns-auschwitz",
+   "sub": "ns",
+   "difficulty": 1,
+   "prompt": "Welches Vernichtungslager wurde zum Symbol des Holocaust?",
+   "correct": "Auschwitz-Birkenau",
+   "wrong": [
+    "Dachau",
+    "Buchenwald",
+    "Bergen-Belsen"
+   ],
+   "explanation": "Dort wurden rund 1,1 Millionen Menschen ermordet, die meisten Juden. Die Befreiung am 27. Januar 1945 ist heute Holocaust-Gedenktag.",
+   "source": "https://de.wikipedia.org/wiki/KZ_Auschwitz-Birkenau"
+  },
+  {
+   "id": "hist-ns-holocaust-zahl",
+   "sub": "ns",
+   "difficulty": 1,
+   "prompt": "Wie viele Jüdinnen und Juden wurden im Holocaust ungefähr ermordet?",
+   "correct": "Etwa 6 Millionen",
+   "wrong": [
+    "Etwa 600.000",
+    "Etwa 1 Million",
+    "Etwa 20 Millionen"
+   ],
+   "explanation": "Dazu kamen Hunderttausende Sinti und Roma, Menschen mit Behinderungen, Homosexuelle und politische Gegner.",
+   "source": "https://de.wikipedia.org/wiki/Holocaust"
+  },
+  {
+   "id": "hist-ns-anne-frank",
+   "sub": "ns",
+   "difficulty": 1,
+   "prompt": "Welches jüdische Mädchen schrieb im Versteck in Amsterdam ein weltberühmtes Tagebuch?",
+   "correct": "Anne Frank",
+   "wrong": [
+    "Sophie Scholl",
+    "Edith Stein",
+    "Hannah Arendt"
+   ],
+   "explanation": "Anne Frank starb 1945 im KZ Bergen-Belsen. Ihr Vater veröffentlichte das Tagebuch nach dem Krieg.",
+   "source": "https://de.wikipedia.org/wiki/Anne_Frank"
+  },
+  {
+   "id": "hist-ns-elser",
+   "sub": "ns",
+   "difficulty": 3,
+   "prompt": "Wer verübte im November 1939 im Münchner Bürgerbräukeller ein Bombenattentat auf Hitler?",
+   "correct": "Georg Elser",
+   "wrong": [
+    "Claus von Stauffenberg",
+    "Hans Scholl",
+    "Henning von Tresckow"
+   ],
+   "explanation": "Der Schreiner handelte allein. Hitler verließ den Saal 13 Minuten vor der Explosion.",
+   "source": "https://de.wikipedia.org/wiki/Georg_Elser"
+  },
+  {
+   "id": "hist-ns-schindler",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Welcher Unternehmer rettete rund 1.200 Juden, indem er sie in seiner Fabrik beschäftigte?",
+   "correct": "Oskar Schindler",
+   "wrong": [
+    "Raoul Wallenberg",
+    "Albert Speer",
+    "Berthold Beitz"
+   ],
+   "explanation": "Seine Geschichte wurde mit „Schindlers Liste“ verfilmt.",
+   "source": "https://de.wikipedia.org/wiki/Oskar_Schindler"
+  },
+  {
+   "id": "hist-ns-hitler-tod",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Wie endete Hitler?",
+   "correct": "Er beging am 30. April 1945 in Berlin Suizid",
+   "wrong": [
+    "Er wurde in Nürnberg verurteilt",
+    "Er floh nach Südamerika",
+    "Er fiel in der Schlacht um Berlin"
+   ],
+   "explanation": "Er nahm sich im Führerbunker das Leben. Eine Woche später kapitulierte die Wehrmacht.",
+   "source": "https://de.wikipedia.org/wiki/Adolf_Hitler"
+  },
+  {
+   "id": "hist-ns-dresden",
+   "sub": "ns",
+   "difficulty": 2,
+   "prompt": "Welche Stadt wurde im Februar 1945 durch alliierte Luftangriffe weitgehend zerstört?",
+   "correct": "Dresden",
+   "wrong": [
+    "Leipzig",
+    "München",
+    "Hamburg"
+   ],
+   "explanation": "Bei den Angriffen starben bis zu 25.000 Menschen. Hamburg war bereits 1943 schwer getroffen worden.",
+   "source": "https://de.wikipedia.org/wiki/Luftangriffe_auf_Dresden"
+  },
+  {
+   "id": "hist-ns-y-pogrom",
+   "sub": "ns",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr fanden die Novemberpogrome statt?",
+   "year": 1938,
+   "min": 1925,
+   "max": 1950,
+   "explanation": "In der Nacht vom 9. auf den 10. November 1938.",
+   "source": "https://de.wikipedia.org/wiki/Novemberpogrome_1938"
+  },
+  {
+   "id": "hist-ns-y-dday",
+   "sub": "ns",
+   "type": "year",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr landeten die Alliierten in der Normandie?",
+   "year": 1944,
+   "min": 1925,
+   "max": 1950,
+   "explanation": "Am 6. Juni 1944.",
+   "source": "https://de.wikipedia.org/wiki/Operation_Overlord"
+  },
+  {
+   "id": "hist-ns-o-ns1",
+   "sub": "ns",
+   "type": "order",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "items": [
+    {
+     "label": "Ernennung Hitlers zum Reichskanzler",
+     "year": 1933
+    },
+    {
+     "label": "Nürnberger Gesetze",
+     "year": 1935
+    },
+    {
+     "label": "Novemberpogrome",
+     "year": 1938
+    },
+    {
+     "label": "Überfall auf Polen",
+     "year": 1939
+    },
+    {
+     "label": "Schlacht von Stalingrad",
+     "year": 1943
+    }
+   ],
+   "explanation": "1933, 1935, 1938, 1939, 1943 (Kapitulation Februar 1943).",
+   "source": "https://de.wikipedia.org/wiki/Zeit_des_Nationalsozialismus"
+  },
+  {
+   "id": "hist-geteilt-besatzung",
+   "sub": "geteilt",
+   "difficulty": 1,
+   "prompt": "In wie viele Besatzungszonen wurde Deutschland 1945 aufgeteilt?",
+   "correct": "4",
+   "wrong": [
+    "2",
+    "3",
+    "5"
+   ],
+   "explanation": "Amerikanische, britische, französische und sowjetische Zone. Berlin wurde ebenfalls in vier Sektoren geteilt.",
+   "source": "https://de.wikipedia.org/wiki/Besatzungszone"
+  },
+  {
+   "id": "hist-geteilt-ddr-gruendung",
+   "sub": "geteilt",
+   "difficulty": 1,
+   "prompt": "An welchem Datum wurde die DDR gegründet?",
+   "correct": "7. Oktober 1949",
+   "wrong": [
+    "23. Mai 1949",
+    "17. Juni 1953",
+    "13. August 1961"
+   ],
+   "explanation": "Wenige Monate nach der Bundesrepublik. Der 7. Oktober war in der DDR Nationalfeiertag.",
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Demokratische_Republik"
+  },
+  {
+   "id": "hist-geteilt-honecker",
+   "sub": "geteilt",
+   "difficulty": 1,
+   "prompt": "Wer führte die DDR von 1971 bis 1989 als SED-Chef?",
+   "correct": "Erich Honecker",
+   "wrong": [
+    "Walter Ulbricht",
+    "Egon Krenz",
+    "Wilhelm Pieck"
+   ],
+   "explanation": "Honecker löste Ulbricht ab und wurde im Oktober 1989 von Egon Krenz verdrängt.",
+   "source": "https://de.wikipedia.org/wiki/Erich_Honecker"
+  },
+  {
+   "id": "hist-geteilt-stasi",
+   "sub": "geteilt",
+   "difficulty": 1,
+   "prompt": "Wie hieß der Geheimdienst der DDR?",
+   "correct": "Ministerium für Staatssicherheit (Stasi)",
+   "wrong": [
+    "KGB",
+    "Gestapo",
+    "Bundesnachrichtendienst"
+   ],
+   "explanation": "Die Stasi überwachte die eigene Bevölkerung mit rund 90.000 hauptamtlichen und vielen inoffiziellen Mitarbeitern.",
+   "source": "https://de.wikipedia.org/wiki/Ministerium_für_Staatssicherheit"
+  },
+  {
+   "id": "hist-geteilt-nato",
+   "sub": "geteilt",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr trat die Bundesrepublik der NATO bei?",
+   "correct": "1955",
+   "wrong": [
+    "1949",
+    "1961",
+    "1990"
+   ],
+   "explanation": "Im selben Jahr gründete der Ostblock den Warschauer Pakt, dem die DDR 1956 beitrat.",
+   "source": "https://de.wikipedia.org/wiki/NATO"
+  },
+  {
+   "id": "hist-geteilt-wirtschaftswunder",
+   "sub": "geteilt",
+   "difficulty": 1,
+   "prompt": "Welcher Wirtschaftsminister gilt als „Vater des Wirtschaftswunders“?",
+   "correct": "Ludwig Erhard",
+   "wrong": [
+    "Konrad Adenauer",
+    "Karl Schiller",
+    "Franz Josef Strauß"
+   ],
+   "explanation": "Erhard setzte auf die Soziale Marktwirtschaft und wurde 1963 Bundeskanzler.",
+   "source": "https://de.wikipedia.org/wiki/Ludwig_Erhard"
+  },
+  {
+   "id": "hist-geteilt-montan",
+   "sub": "geteilt",
+   "difficulty": 3,
+   "prompt": "Welche Gemeinschaft von 1951 gilt als Vorläufer der Europäischen Union?",
+   "correct": "Europäische Gemeinschaft für Kohle und Stahl (Montanunion)",
+   "wrong": [
+    "Europarat",
+    "EFTA",
+    "Warschauer Pakt"
+   ],
+   "explanation": "Gründer waren Deutschland, Frankreich, Italien und die Benelux-Länder. 1957 folgten die Römischen Verträge.",
+   "source": "https://de.wikipedia.org/wiki/Europäische_Gemeinschaft_für_Kohle_und_Stahl"
+  },
+  {
+   "id": "hist-geteilt-raf",
+   "sub": "geteilt",
+   "difficulty": 2,
+   "prompt": "Wie nennt man die Terrorwelle der RAF in Westdeutschland im Herbst 1977?",
+   "correct": "Deutscher Herbst",
+   "wrong": [
+    "Prager Frühling",
+    "Heißer Sommer",
+    "Bleierne Zeit"
+   ],
+   "explanation": "Die RAF entführte und ermordete Arbeitgeberpräsident Hanns Martin Schleyer. Die Lufthansa-Maschine „Landshut“ wurde in Mogadischu befreit.",
+   "source": "https://de.wikipedia.org/wiki/Deutscher_Herbst"
+  },
+  {
+   "id": "hist-geteilt-prager-fruehling",
+   "sub": "geteilt",
+   "difficulty": 2,
+   "prompt": "Welcher Reformversuch in der Tschechoslowakei wurde 1968 von Truppen des Warschauer Pakts beendet?",
+   "correct": "Prager Frühling",
+   "wrong": [
+    "Ungarischer Volksaufstand",
+    "Solidarność",
+    "Samtene Revolution"
+   ],
+   "explanation": "Alexander Dubček wollte einen „Sozialismus mit menschlichem Antlitz“.",
+   "source": "https://de.wikipedia.org/wiki/Prager_Frühling"
+  },
+  {
+   "id": "hist-geteilt-montagsdemo",
+   "sub": "geteilt",
+   "difficulty": 1,
+   "prompt": "In welcher Stadt fanden 1989 die großen Montagsdemonstrationen statt?",
+   "correct": "Leipzig",
+   "wrong": [
+    "Dresden",
+    "Ost-Berlin",
+    "Rostock"
+   ],
+   "explanation": "Am 9. Oktober 1989 demonstrierten in Leipzig rund 70.000 Menschen friedlich („Wir sind das Volk“).",
+   "source": "https://de.wikipedia.org/wiki/Montagsdemonstrationen_in_der_DDR"
+  },
+  {
+   "id": "hist-geteilt-schabowski",
+   "sub": "geteilt",
+   "difficulty": 2,
+   "prompt": "Wer verkündete am 9. November 1989 auf einer Pressekonferenz versehentlich die sofortige Reisefreiheit?",
+   "correct": "Günter Schabowski",
+   "wrong": [
+    "Egon Krenz",
+    "Erich Honecker",
+    "Hans Modrow"
+   ],
+   "explanation": "Auf die Frage, ab wann das gelte, sagte er: „Das tritt nach meiner Kenntnis … ist das sofort, unverzüglich.“",
+   "source": "https://de.wikipedia.org/wiki/Günter_Schabowski"
+  },
+  {
+   "id": "hist-geteilt-gorbatschow",
+   "sub": "geteilt",
+   "difficulty": 1,
+   "prompt": "Welcher sowjetische Staatschef ermöglichte mit „Glasnost“ und „Perestroika“ das Ende des Kalten Kriegs?",
+   "correct": "Michail Gorbatschow",
+   "wrong": [
+    "Leonid Breschnew",
+    "Boris Jelzin",
+    "Nikita Chruschtschow"
+   ],
+   "explanation": "Er erhielt 1990 den Friedensnobelpreis.",
+   "source": "https://de.wikipedia.org/wiki/Michail_Gorbatschow"
+  },
+  {
+   "id": "hist-geteilt-schmidt",
+   "sub": "geteilt",
+   "difficulty": 2,
+   "prompt": "Welcher SPD-Politiker war von 1974 bis 1982 Bundeskanzler?",
+   "correct": "Helmut Schmidt",
+   "wrong": [
+    "Willy Brandt",
+    "Helmut Kohl",
+    "Gerhard Schröder"
+   ],
+   "explanation": "Schmidt wurde 1982 durch ein konstruktives Misstrauensvotum gestürzt, Helmut Kohl folgte.",
+   "source": "https://de.wikipedia.org/wiki/Helmut_Schmidt"
+  },
+  {
+   "id": "hist-geteilt-y-stasi-nato",
+   "sub": "geteilt",
+   "type": "year",
+   "difficulty": 3,
+   "prompt": "In welchem Jahr wurde die Bundeswehr gegründet?",
+   "year": 1955,
+   "min": 1940,
+   "max": 1995,
+   "explanation": "1955, im Jahr des NATO-Beitritts. Die Nationale Volksarmee der DDR folgte 1956.",
+   "source": "https://de.wikipedia.org/wiki/Bundeswehr"
+  },
+  {
+   "id": "hist-seit1990-zwei-plus-vier",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Welcher Vertrag von 1990 regelte die außenpolitischen Fragen der deutschen Einheit?",
+   "correct": "Zwei-plus-Vier-Vertrag",
+   "wrong": [
+    "Einigungsvertrag",
+    "Vertrag von Maastricht",
+    "Grundlagenvertrag"
+   ],
+   "explanation": "Ihn schlossen die beiden deutschen Staaten mit den vier Siegermächten. Der Einigungsvertrag regelte die inneren Fragen.",
+   "source": "https://de.wikipedia.org/wiki/Zwei-plus-Vier-Vertrag"
+  },
+  {
+   "id": "hist-seit1990-maastricht",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Welcher Vertrag von 1992 gründete die Europäische Union?",
+   "correct": "Vertrag von Maastricht",
+   "wrong": [
+    "Römische Verträge",
+    "Vertrag von Lissabon",
+    "Schengener Abkommen"
+   ],
+   "explanation": "Er trat 1993 in Kraft und legte auch den Weg zur gemeinsamen Währung fest.",
+   "source": "https://de.wikipedia.org/wiki/Vertrag_von_Maastricht"
+  },
+  {
+   "id": "hist-seit1990-hauptstadt",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Wann beschloss der Bundestag, Regierung und Parlament von Bonn nach Berlin zu verlegen?",
+   "correct": "1991",
+   "wrong": [
+    "1990",
+    "1995",
+    "1999"
+   ],
+   "explanation": "Die Abstimmung am 20. Juni 1991 ging mit 338 zu 320 Stimmen knapp aus. Der Umzug folgte 1999.",
+   "source": "https://de.wikipedia.org/wiki/Hauptstadtbeschluss"
+  },
+  {
+   "id": "hist-seit1990-jugoslawien",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Welcher Staat zerfiel in den 1990er-Jahren in mehreren Kriegen?",
+   "correct": "Jugoslawien",
+   "wrong": [
+    "Tschechoslowakei",
+    "Sowjetunion",
+    "Belgien"
+   ],
+   "explanation": "Die Tschechoslowakei teilte sich 1993 friedlich. In Bosnien kam es 1995 zum Massaker von Srebrenica.",
+   "source": "https://de.wikipedia.org/wiki/Jugoslawienkriege"
+  },
+  {
+   "id": "hist-seit1990-kosovo",
+   "sub": "seit1990",
+   "difficulty": 3,
+   "prompt": "An welchem Krieg beteiligte sich die Bundeswehr 1999 erstmals mit Kampfeinsätzen?",
+   "correct": "Kosovokrieg",
+   "wrong": [
+    "Golfkrieg",
+    "Afghanistankrieg",
+    "Irakkrieg"
+   ],
+   "explanation": "Die NATO griff ohne UN-Mandat Ziele in Serbien an. Das war unter der rot-grünen Regierung Schröder sehr umstritten.",
+   "source": "https://de.wikipedia.org/wiki/Kosovokrieg"
+  },
+  {
+   "id": "hist-seit1990-schroeder",
+   "sub": "seit1990",
+   "difficulty": 1,
+   "prompt": "Wer war von 1998 bis 2005 Bundeskanzler?",
+   "correct": "Gerhard Schröder",
+   "wrong": [
+    "Helmut Kohl",
+    "Angela Merkel",
+    "Joschka Fischer"
+   ],
+   "explanation": "Schröder führte eine Koalition aus SPD und Grünen. Joschka Fischer war Außenminister.",
+   "source": "https://de.wikipedia.org/wiki/Gerhard_Schröder"
+  },
+  {
+   "id": "hist-seit1990-agenda",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Wie heißt das Reformpaket der Regierung Schröder, zu dem die „Hartz-Reformen“ gehörten?",
+   "correct": "Agenda 2010",
+   "wrong": [
+    "Aufbau Ost",
+    "Solidarpakt",
+    "Energiewende"
+   ],
+   "explanation": "Die Reformen veränderten Arbeitsmarkt und Sozialsystem stark und spalteten die SPD.",
+   "source": "https://de.wikipedia.org/wiki/Agenda_2010"
+  },
+  {
+   "id": "hist-seit1990-afghanistan",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Wie lange war die Bundeswehr in Afghanistan im Einsatz?",
+   "correct": "Von 2001 bis 2021",
+   "wrong": [
+    "Von 1990 bis 1995",
+    "Von 2003 bis 2011",
+    "Von 2011 bis heute"
+   ],
+   "explanation": "Nach den Anschlägen vom 11. September begann der internationale Einsatz. Er endete 2021 mit der Machtübernahme der Taliban.",
+   "source": "https://de.wikipedia.org/wiki/Bundeswehreinsatz_in_Afghanistan"
+  },
+  {
+   "id": "hist-seit1990-finanzkrise",
+   "sub": "seit1990",
+   "difficulty": 1,
+   "prompt": "Welcher Bankzusammenbruch 2008 wurde zum Symbol der weltweiten Finanzkrise?",
+   "correct": "Lehman Brothers",
+   "wrong": [
+    "Deutsche Bank",
+    "Wirecard",
+    "Credit Suisse"
+   ],
+   "explanation": "Die US-Investmentbank ging im September 2008 pleite. Credit Suisse wurde erst 2023 übernommen.",
+   "source": "https://de.wikipedia.org/wiki/Lehman_Brothers"
+  },
+  {
+   "id": "hist-seit1990-fukushima",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Welches Ereignis 2011 führte zum Beschluss, in Deutschland aus der Atomkraft auszusteigen?",
+   "correct": "Die Reaktorkatastrophe von Fukushima",
+   "wrong": [
+    "Tschernobyl",
+    "Ein Unfall in Biblis",
+    "Die Ölkrise"
+   ],
+   "explanation": "Die letzten deutschen Atomkraftwerke gingen im April 2023 vom Netz.",
+   "source": "https://de.wikipedia.org/wiki/Atomausstieg_in_Deutschland"
+  },
+  {
+   "id": "hist-seit1990-fluechtlinge",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Mit welchem Satz kommentierte Angela Merkel 2015 die Aufnahme vieler Geflüchteter?",
+   "correct": "„Wir schaffen das“",
+   "wrong": [
+    "„Ich bin ein Berliner“",
+    "„Mehr Demokratie wagen“",
+    "„Yes we can“"
+   ],
+   "explanation": "2015 kamen rund 890.000 Schutzsuchende nach Deutschland.",
+   "source": "https://de.wikipedia.org/wiki/Wir_schaffen_das"
+  },
+  {
+   "id": "hist-seit1990-brexit",
+   "sub": "seit1990",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr stimmten die Briten für den Austritt aus der EU?",
+   "correct": "2016",
+   "wrong": [
+    "2008",
+    "2012",
+    "2020"
+   ],
+   "explanation": "Das Referendum fand im Juni 2016 statt. Der Austritt wurde Ende Januar 2020 vollzogen.",
+   "source": "https://de.wikipedia.org/wiki/Brexit"
+  },
+  {
+   "id": "hist-seit1990-krim",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Welche Halbinsel annektierte Russland 2014?",
+   "correct": "Die Krim",
+   "wrong": [
+    "Kamtschatka",
+    "Kola",
+    "Jamal"
+   ],
+   "explanation": "Die Annexion verstößt gegen das Völkerrecht. 2022 folgte der umfassende Angriff auf die Ukraine.",
+   "source": "https://de.wikipedia.org/wiki/Annexion_der_Krim_2014"
+  },
+  {
+   "id": "hist-seit1990-ukraine22",
+   "sub": "seit1990",
+   "difficulty": 1,
+   "prompt": "An welchem Tag begann Russland seinen großangelegten Angriff auf die Ukraine?",
+   "correct": "24. Februar 2022",
+   "wrong": [
+    "24. Februar 2014",
+    "9. Mai 2022",
+    "1. September 2021"
+   ],
+   "explanation": "Bundeskanzler Scholz sprach kurz darauf von einer „Zeitenwende“.",
+   "source": "https://de.wikipedia.org/wiki/Russischer_Überfall_auf_die_Ukraine_2022"
+  },
+  {
+   "id": "hist-seit1990-corona",
+   "sub": "seit1990",
+   "difficulty": 1,
+   "prompt": "Wann wurde in Deutschland der erste Corona-Lockdown verhängt?",
+   "correct": "März 2020",
+   "wrong": [
+    "Dezember 2019",
+    "Juni 2020",
+    "Januar 2021"
+   ],
+   "explanation": "Ab Mitte März 2020 schlossen Schulen und Geschäfte. Die WHO hatte am 11. März die Pandemie ausgerufen.",
+   "source": "https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland"
+  },
+  {
+   "id": "hist-seit1990-scholz",
+   "sub": "seit1990",
+   "difficulty": 1,
+   "prompt": "Wer war von 2021 bis 2025 Bundeskanzler?",
+   "correct": "Olaf Scholz",
+   "wrong": [
+    "Friedrich Merz",
+    "Armin Laschet",
+    "Robert Habeck"
+   ],
+   "explanation": "Scholz führte die Ampelkoalition aus SPD, Grünen und FDP, die im November 2024 zerbrach.",
+   "source": "https://de.wikipedia.org/wiki/Olaf_Scholz"
+  },
+  {
+   "id": "hist-seit1990-euro-einfuehrung",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "Wie viele Länder führten 2002 den Euro als Bargeld ein?",
+   "correct": "12",
+   "wrong": [
+    "6",
+    "19",
+    "27"
+   ],
+   "explanation": "Heute haben deutlich mehr Länder den Euro. Kroatien kam 2023 als 20. Land hinzu.",
+   "source": "https://de.wikipedia.org/wiki/Euro"
+  },
+  {
+   "id": "hist-seit1990-osterweiterung",
+   "sub": "seit1990",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr traten zehn Staaten, darunter Polen und Tschechien, der EU bei?",
+   "correct": "2004",
+   "wrong": [
+    "1995",
+    "2007",
+    "2013"
+   ],
+   "explanation": "Es war die größte Erweiterung der EU-Geschichte. 2007 folgten Bulgarien und Rumänien.",
+   "source": "https://de.wikipedia.org/wiki/EU-Erweiterung_2004"
+  },
+  {
+   "id": "hist-seit1990-smartphone",
+   "sub": "seit1990",
+   "difficulty": 1,
+   "prompt": "Welches Gerät stellte Apple 2007 vor und veränderte damit den Mobilfunkmarkt?",
+   "correct": "Das iPhone",
+   "wrong": [
+    "Den iPod",
+    "Das iPad",
+    "Den Macintosh"
+   ],
+   "explanation": "Steve Jobs präsentierte es im Januar 2007. Das iPad kam 2010.",
+   "source": "https://de.wikipedia.org/wiki/IPhone"
+  },
+  {
+   "id": "hist-seit1990-obama",
+   "sub": "seit1990",
+   "difficulty": 1,
+   "prompt": "Wer wurde 2009 der erste afroamerikanische Präsident der USA?",
+   "correct": "Barack Obama",
+   "wrong": [
+    "Joe Biden",
+    "Colin Powell",
+    "Kamala Harris"
+   ],
+   "explanation": "Obama regierte bis 2017 und erhielt 2009 den Friedensnobelpreis.",
+   "source": "https://de.wikipedia.org/wiki/Barack_Obama"
+  },
+  {
+   "id": "hist-seit1990-y-einheit",
+   "sub": "seit1990",
+   "type": "year",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr wurde Deutschland wiedervereinigt?",
+   "year": 1990,
+   "min": 1985,
+   "max": 2026,
+   "explanation": "Am 3. Oktober 1990.",
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Wiedervereinigung"
+  },
+  {
+   "id": "hist-seit1990-y-brexit",
+   "sub": "seit1990",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr verließ Großbritannien die EU endgültig?",
+   "year": 2020,
+   "min": 1985,
+   "max": 2026,
+   "explanation": "Der Austritt wurde am 31. Januar 2020 vollzogen.",
+   "source": "https://de.wikipedia.org/wiki/Brexit"
+  },
+  {
+   "id": "hist-seit1990-y-lehman",
+   "sub": "seit1990",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr brach die Bank Lehman Brothers zusammen?",
+   "year": 2008,
+   "min": 1985,
+   "max": 2026,
+   "explanation": "Im September 2008.",
+   "source": "https://de.wikipedia.org/wiki/Lehman_Brothers"
+  },
+  {
+   "id": "hist-seit1990-o-sei1",
+   "sub": "seit1990",
+   "type": "order",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "items": [
+    {
+     "label": "Deutsche Einheit",
+     "year": 1990
+    },
+    {
+     "label": "Vertrag von Maastricht",
+     "year": 1992
+    },
+    {
+     "label": "Anschläge vom 11. September",
+     "year": 2001
+    },
+    {
+     "label": "Weltfinanzkrise",
+     "year": 2008
+    },
+    {
+     "label": "Brexit-Referendum",
+     "year": 2016
+    },
+    {
+     "label": "Russischer Angriff auf die Ukraine",
+     "year": 2022
+    }
+   ],
+   "explanation": "1990, 1992, 2001, 2008, 2016, 2022.",
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Geschichte_seit_1990"
+  }
+ ]
+}

@@ -65,7 +65,7 @@ export function Quiz({ questions, daily, onExit, onDone }: { questions: Question
 
       {flagSrc && <img className="flag" src={flagSrc} alt="Flagge" />}
       {q.image && (
-        <figure className="q-image">
+        <figure className={"q-image" + (q.topic === "regionen" ? " flag-img" : "")}>
           <img src={asset(q.image.src)} alt="Bild zur Frage" />
           <figcaption>
             {q.image.author} · <a href={q.image.licenseUrl ?? q.image.sourceUrl} target="_blank" rel="noreferrer">{q.image.license}</a> ·{' '}

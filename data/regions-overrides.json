@@ -1,0 +1,65 @@
+{
+ "_hinweis": "Korrekturen für fetch-regions.mjs: name, wikidata (falls Natural Earth falsch), capital (false = keine Hauptstadtfrage), capitalNote, flagFile (Commons-Dateiname).",
+ "regions": {
+  "DE-BY": {
+   "flagFile": "Flag of Bavaria (lozengy).svg"
+  },
+  "DE-HH": {
+   "capital": false
+  },
+  "DE-BE": {
+   "capital": false
+  },
+  "DE-HB": {
+   "capital": "Bremen",
+   "capitalNote": "Das Land Bremen besteht aus den Städten Bremen und Bremerhaven.",
+   "name": "Bremen"
+  },
+  "AT-9": {
+   "capital": false
+  },
+  "CH-AR": {
+   "capital": "Herisau",
+   "capitalNote": "Sitz von Regierung und Parlament; das Kantonsgericht sitzt in Trogen."
+  },
+  "CA-BC": {
+   "wikidata": "Q1973"
+  },
+  "CA-PE": {
+   "wikidata": "Q1978"
+  },
+  "AU-NSW": {
+   "wikidata": "Q3224"
+  },
+  "US-AZ": {
+   "name": "Arizona"
+  },
+  "US-AK": {
+   "capital": "Juneau"
+  },
+  "AU-SA": {
+   "name": "Südaustralien"
+  },
+  "AU-NT": {
+   "name": "Northern Territory"
+  },
+  "CH-VS": {
+   "capital": "Sitten (Sion)"
+  },
+  "CH-JU": {
+   "capital": "Delsberg (Delémont)"
+  },
+  "CH-NE": {
+   "capital": "Neuenburg (Neuchâtel)"
+  },
+  "CH-FR": {
+   "capital": "Freiburg im Üechtland (Fribourg)"
+  },
+  "CA-QC": {
+   "capital": "Québec (Stadt)"
+  },
+  "AU-ACT": {
+   "capital": false
+  }
+ }
+}

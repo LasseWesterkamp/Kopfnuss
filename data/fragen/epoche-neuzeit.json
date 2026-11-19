@@ -1,0 +1,670 @@
+{
+ "topic": "geschichte",
+ "questions": [
+  {
+   "id": "hist-fnz-wittenberg",
+   "sub": "fnz",
+   "difficulty": 1,
+   "prompt": "In welcher Stadt veröffentlichte Martin Luther 1517 seine 95 Thesen?",
+   "correct": "Wittenberg",
+   "wrong": [
+    "Erfurt",
+    "Eisenach",
+    "Worms"
+   ],
+   "explanation": "Die Thesen richteten sich vor allem gegen den Ablasshandel. Die Stadt heißt heute Lutherstadt Wittenberg.",
+   "source": "https://de.wikipedia.org/wiki/95_Thesen"
+  },
+  {
+   "id": "hist-fnz-wartburg",
+   "sub": "fnz",
+   "difficulty": 1,
+   "prompt": "Wo übersetzte Luther das Neue Testament ins Deutsche?",
+   "correct": "Auf der Wartburg",
+   "wrong": [
+    "Im Kloster Erfurt",
+    "In Rom",
+    "Auf der Veste Coburg"
+   ],
+   "explanation": "Nach dem Reichstag zu Worms 1521 versteckte er sich als „Junker Jörg“ auf der Wartburg bei Eisenach.",
+   "source": "https://de.wikipedia.org/wiki/Wartburg"
+  },
+  {
+   "id": "hist-fnz-worms",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Vor welchem Kaiser musste sich Luther 1521 auf dem Reichstag zu Worms verantworten?",
+   "correct": "Karl V.",
+   "wrong": [
+    "Maximilian I.",
+    "Ferdinand I.",
+    "Friedrich der Weise"
+   ],
+   "explanation": "Luther weigerte sich zu widerrufen. Daraufhin verhängte Karl V. die Reichsacht über ihn.",
+   "source": "https://de.wikipedia.org/wiki/Reichstag_zu_Worms_1521"
+  },
+  {
+   "id": "hist-fnz-bauernkrieg",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Wie heißt der große Aufstand der Bauern in Süd- und Mitteldeutschland 1524/25?",
+   "correct": "Deutscher Bauernkrieg",
+   "wrong": [
+    "Hussitenkriege",
+    "Dreißigjähriger Krieg",
+    "Schmalkaldischer Krieg"
+   ],
+   "explanation": "Die Aufständischen forderten unter anderem die Abschaffung der Leibeigenschaft. Der Aufstand wurde blutig niedergeschlagen.",
+   "source": "https://de.wikipedia.org/wiki/Deutscher_Bauernkrieg"
+  },
+  {
+   "id": "hist-fnz-cuius",
+   "sub": "fnz",
+   "difficulty": 3,
+   "prompt": "Welcher Grundsatz des Augsburger Religionsfriedens (1555) bestimmte die Konfession der Untertanen?",
+   "correct": "„Wessen Gebiet, dessen Religion“",
+   "wrong": [
+    "„Teile und herrsche“",
+    "„Jedem das Seine“",
+    "„Ein Reich, ein Glaube“"
+   ],
+   "explanation": "Lateinisch „cuius regio, eius religio“: Der Landesherr bestimmte die Konfession.",
+   "source": "https://de.wikipedia.org/wiki/Augsburger_Reichs-_und_Religionsfrieden"
+  },
+  {
+   "id": "hist-fnz-fenstersturz",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Welches Ereignis in Prag löste 1618 den Dreißigjährigen Krieg aus?",
+   "correct": "Der Prager Fenstersturz",
+   "wrong": [
+    "Die Hussitenkriege",
+    "Die Pest",
+    "Die Krönung Ferdinands"
+   ],
+   "explanation": "Protestantische Adlige warfen zwei königliche Statthalter aus einem Fenster der Prager Burg. Sie überlebten.",
+   "source": "https://de.wikipedia.org/wiki/Prager_Fenstersturz_(1618)"
+  },
+  {
+   "id": "hist-fnz-30j-folgen",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Wie stark ging die Bevölkerung im Heiligen Römischen Reich durch den Dreißigjährigen Krieg zurück?",
+   "correct": "Um etwa ein Drittel",
+   "wrong": [
+    "Um etwa 5 Prozent",
+    "Um etwa die Hälfte der Städte, sonst kaum",
+    "Sie wuchs sogar"
+   ],
+   "explanation": "Krieg, Hunger und Seuchen ließen die Bevölkerung von etwa 16 auf rund 10 Millionen schrumpfen, regional noch stärker.",
+   "source": "https://de.wikipedia.org/wiki/Dreißigjähriger_Krieg"
+  },
+  {
+   "id": "hist-fnz-vasco",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Wer fand 1498 als erster Europäer den Seeweg nach Indien um Afrika herum?",
+   "correct": "Vasco da Gama",
+   "wrong": [
+    "Bartolomeu Dias",
+    "Ferdinand Magellan",
+    "Amerigo Vespucci"
+   ],
+   "explanation": "Bartolomeu Dias hatte 1488 das Kap der Guten Hoffnung umrundet, Vasco da Gama fuhr weiter bis Indien.",
+   "source": "https://de.wikipedia.org/wiki/Vasco_da_Gama"
+  },
+  {
+   "id": "hist-fnz-magellan",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Wessen Expedition umsegelte 1519 bis 1522 als erste die Welt?",
+   "correct": "Ferdinand Magellan",
+   "wrong": [
+    "Christoph Kolumbus",
+    "James Cook",
+    "Francis Drake"
+   ],
+   "explanation": "Magellan selbst starb 1521 auf den Philippinen. Juan Sebastián Elcano führte die Fahrt zu Ende.",
+   "source": "https://de.wikipedia.org/wiki/Ferdinand_Magellan"
+  },
+  {
+   "id": "hist-fnz-amerika-name",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Nach wem wurde Amerika benannt?",
+   "correct": "Amerigo Vespucci",
+   "wrong": [
+    "Christoph Kolumbus",
+    "Amerigo Columbus",
+    "König Amerik I."
+   ],
+   "explanation": "Der deutsche Kartograf Martin Waldseemüller nannte den Kontinent 1507 nach dem Seefahrer Amerigo Vespucci.",
+   "source": "https://de.wikipedia.org/wiki/Amerigo_Vespucci"
+  },
+  {
+   "id": "hist-fnz-cortes",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Wer eroberte 1519 bis 1521 das Aztekenreich?",
+   "correct": "Hernán Cortés",
+   "wrong": [
+    "Francisco Pizarro",
+    "Vasco da Gama",
+    "Christoph Kolumbus"
+   ],
+   "explanation": "Pizarro eroberte später das Inkareich in Südamerika.",
+   "source": "https://de.wikipedia.org/wiki/Hernán_Cortés"
+  },
+  {
+   "id": "hist-fnz-kopernikus",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Wessen Weltbild stellte die Sonne statt der Erde in den Mittelpunkt?",
+   "correct": "Nikolaus Kopernikus",
+   "wrong": [
+    "Ptolemäus",
+    "Galileo Galilei",
+    "Johannes Kepler"
+   ],
+   "explanation": "Kopernikus veröffentlichte es 1543. Galilei und Kepler bauten später darauf auf.",
+   "source": "https://de.wikipedia.org/wiki/Nikolaus_Kopernikus"
+  },
+  {
+   "id": "hist-fnz-galilei",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Welcher Wissenschaftler musste 1633 vor der Inquisition seine Lehre widerrufen?",
+   "correct": "Galileo Galilei",
+   "wrong": [
+    "Johannes Kepler",
+    "Giordano Bruno",
+    "Isaac Newton"
+   ],
+   "explanation": "Galilei hatte das heliozentrische Weltbild vertreten. Er verbrachte seine letzten Jahre unter Hausarrest.",
+   "source": "https://de.wikipedia.org/wiki/Galileo_Galilei"
+  },
+  {
+   "id": "hist-fnz-mona-lisa",
+   "sub": "fnz",
+   "difficulty": 1,
+   "prompt": "Wer malte die „Mona Lisa“?",
+   "correct": "Leonardo da Vinci",
+   "wrong": [
+    "Michelangelo",
+    "Raffael",
+    "Albrecht Dürer"
+   ],
+   "explanation": "Leonardo malte das Bild ab etwa 1503. Es hängt heute im Louvre in Paris.",
+   "source": "https://de.wikipedia.org/wiki/Mona_Lisa"
+  },
+  {
+   "id": "hist-fnz-sixtina",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Wer malte die Decke der Sixtinischen Kapelle im Vatikan?",
+   "correct": "Michelangelo",
+   "wrong": [
+    "Leonardo da Vinci",
+    "Raffael",
+    "Botticelli"
+   ],
+   "explanation": "Michelangelo arbeitete von 1508 bis 1512 daran. Bekannt ist vor allem die „Erschaffung Adams“.",
+   "source": "https://de.wikipedia.org/wiki/Sixtinische_Kapelle"
+  },
+  {
+   "id": "hist-fnz-duerer",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Welcher Nürnberger Künstler ist für seinen „Feldhasen“ und Selbstbildnisse bekannt?",
+   "correct": "Albrecht Dürer",
+   "wrong": [
+    "Lucas Cranach",
+    "Hans Holbein",
+    "Matthias Grünewald"
+   ],
+   "explanation": "Dürer (1471–1528) gilt als bedeutendster deutscher Künstler der Renaissance.",
+   "source": "https://de.wikipedia.org/wiki/Albrecht_Dürer"
+  },
+  {
+   "id": "hist-fnz-sonnenkoenig",
+   "sub": "fnz",
+   "difficulty": 1,
+   "prompt": "Welcher französische König wurde „Sonnenkönig“ genannt?",
+   "correct": "Ludwig XIV.",
+   "wrong": [
+    "Ludwig XVI.",
+    "Heinrich IV.",
+    "Franz I."
+   ],
+   "explanation": "Ludwig XIV. regierte von 1643 bis 1715 und ließ Schloss Versailles ausbauen. Er gilt als Inbegriff des Absolutismus.",
+   "source": "https://de.wikipedia.org/wiki/Ludwig_XIV."
+  },
+  {
+   "id": "hist-fnz-absolutismus",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Wie nennt man eine Herrschaftsform, in der der Fürst allein und ohne Mitwirkung der Stände regiert?",
+   "correct": "Absolutismus",
+   "wrong": [
+    "Feudalismus",
+    "Konstitutionelle Monarchie",
+    "Republik"
+   ],
+   "explanation": "Ludwig XIV. wird der Satz „Der Staat bin ich“ zugeschrieben.",
+   "source": "https://de.wikipedia.org/wiki/Absolutismus"
+  },
+  {
+   "id": "hist-fnz-alter-fritz",
+   "sub": "fnz",
+   "difficulty": 1,
+   "prompt": "Welcher preußische König wurde „der Alte Fritz“ genannt?",
+   "correct": "Friedrich II.",
+   "wrong": [
+    "Friedrich Wilhelm I.",
+    "Wilhelm I.",
+    "Friedrich III."
+   ],
+   "explanation": "Friedrich der Große regierte 1740 bis 1786. Er förderte den Kartoffelanbau und lebte in Schloss Sanssouci.",
+   "source": "https://de.wikipedia.org/wiki/Friedrich_II._(Preußen)"
+  },
+  {
+   "id": "hist-fnz-soldatenkoenig",
+   "sub": "fnz",
+   "difficulty": 3,
+   "prompt": "Welcher preußische König war als „Soldatenkönig“ bekannt?",
+   "correct": "Friedrich Wilhelm I.",
+   "wrong": [
+    "Friedrich II.",
+    "Friedrich I.",
+    "Wilhelm II."
+   ],
+   "explanation": "Er baute das preußische Heer stark aus und war der Vater Friedrichs des Großen.",
+   "source": "https://de.wikipedia.org/wiki/Friedrich_Wilhelm_I._(Preußen)"
+  },
+  {
+   "id": "hist-fnz-maria-theresia",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Welche Herrscherin regierte im 18. Jahrhundert die habsburgischen Länder und hatte 16 Kinder?",
+   "correct": "Maria Theresia",
+   "wrong": [
+    "Katharina die Große",
+    "Elisabeth I.",
+    "Marie Antoinette"
+   ],
+   "explanation": "Maria Theresia regierte 1740 bis 1780. Ihre Tochter Marie Antoinette wurde Königin von Frankreich.",
+   "source": "https://de.wikipedia.org/wiki/Maria_Theresia"
+  },
+  {
+   "id": "hist-fnz-7j-krieg",
+   "sub": "fnz",
+   "difficulty": 3,
+   "prompt": "Welcher Krieg (1756–1763) wird wegen seiner Schauplätze in Europa, Amerika und Indien manchmal als erster „Weltkrieg“ bezeichnet?",
+   "correct": "Siebenjähriger Krieg",
+   "wrong": [
+    "Dreißigjähriger Krieg",
+    "Spanischer Erbfolgekrieg",
+    "Nordischer Krieg"
+   ],
+   "explanation": "In Europa kämpfte vor allem Preußen gegen Österreich und Russland, in Übersee Großbritannien gegen Frankreich.",
+   "source": "https://de.wikipedia.org/wiki/Siebenjähriger_Krieg"
+  },
+  {
+   "id": "hist-fnz-aufklaerung",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "Welcher Philosoph definierte Aufklärung als „Ausgang des Menschen aus seiner selbstverschuldeten Unmündigkeit“?",
+   "correct": "Immanuel Kant",
+   "wrong": [
+    "Voltaire",
+    "John Locke",
+    "Gotthold Ephraim Lessing"
+   ],
+   "explanation": "Kant schrieb das 1784 in seinem Aufsatz „Beantwortung der Frage: Was ist Aufklärung?“.",
+   "source": "https://de.wikipedia.org/wiki/Beantwortung_der_Frage:_Was_ist_Aufklärung%3F"
+  },
+  {
+   "id": "hist-fnz-hexen",
+   "sub": "fnz",
+   "difficulty": 2,
+   "prompt": "In welchem Zeitraum fanden in Europa die meisten Hexenprozesse statt?",
+   "correct": "Etwa 1550 bis 1650",
+   "wrong": [
+    "Etwa 800 bis 900",
+    "Etwa 1100 bis 1200",
+    "Etwa 1850 bis 1900"
+   ],
+   "explanation": "Die Hexenverfolgung war vor allem ein Phänomen der Frühen Neuzeit, nicht des Mittelalters. Im Heiligen Römischen Reich wurden Zehntausende hingerichtet.",
+   "source": "https://de.wikipedia.org/wiki/Hexenverfolgung"
+  },
+  {
+   "id": "hist-fnz-y-augsburg",
+   "sub": "fnz",
+   "type": "year",
+   "difficulty": 3,
+   "prompt": "In welchem Jahr wurde der Augsburger Religionsfrieden geschlossen?",
+   "year": 1555,
+   "min": 1450,
+   "max": 1820,
+   "explanation": "1555 wurde das Nebeneinander von katholischer und lutherischer Konfession im Reich geregelt.",
+   "source": "https://de.wikipedia.org/wiki/Augsburger_Reichs-_und_Religionsfrieden"
+  },
+  {
+   "id": "hist-fnz-y-30j",
+   "sub": "fnz",
+   "type": "year",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr begann der Dreißigjährige Krieg?",
+   "year": 1618,
+   "min": 1450,
+   "max": 1820,
+   "explanation": "1618 bis 1648, beendet durch den Westfälischen Frieden.",
+   "source": "https://de.wikipedia.org/wiki/Dreißigjähriger_Krieg"
+  },
+  {
+   "id": "hist-fnz-y-wartburg",
+   "sub": "fnz",
+   "type": "year",
+   "difficulty": 3,
+   "prompt": "In welchem Jahr stand Luther vor dem Reichstag zu Worms?",
+   "year": 1521,
+   "min": 1450,
+   "max": 1820,
+   "explanation": "Im April 1521 verweigerte er den Widerruf.",
+   "source": "https://de.wikipedia.org/wiki/Reichstag_zu_Worms_1521"
+  },
+  {
+   "id": "hist-fnz-o-fnz2",
+   "sub": "fnz",
+   "type": "order",
+   "difficulty": 2,
+   "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
+   "items": [
+    {
+     "label": "Seeweg nach Indien (Vasco da Gama)",
+     "year": 1498
+    },
+    {
+     "label": "Reichstag zu Worms",
+     "year": 1521
+    },
+    {
+     "label": "Augsburger Religionsfrieden",
+     "year": 1555
+    },
+    {
+     "label": "Westfälischer Frieden",
+     "year": 1648
+    },
+    {
+     "label": "Tod Friedrichs des Großen",
+     "year": 1786
+    }
+   ],
+   "explanation": "1498, 1521, 1555, 1648, 1786.",
+   "source": "https://de.wikipedia.org/wiki/Frühe_Neuzeit"
+  },
+  {
+   "id": "hist-19jh-code-civil",
+   "sub": "19jh",
+   "difficulty": 3,
+   "prompt": "Welches Gesetzbuch Napoleons von 1804 beeinflusste das Recht in vielen Ländern Europas?",
+   "correct": "Code civil",
+   "wrong": [
+    "Code pénal",
+    "Magna Carta",
+    "Bürgerliches Gesetzbuch"
+   ],
+   "explanation": "Der Code civil schrieb Gleichheit vor dem Gesetz und Eigentumsrechte fest. In Teilen des Rheinlands galt er bis 1900.",
+   "source": "https://de.wikipedia.org/wiki/Code_civil"
+  },
+  {
+   "id": "hist-19jh-hrr-ende",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr endete das Heilige Römische Reich?",
+   "correct": "1806",
+   "wrong": [
+    "1648",
+    "1815",
+    "1871"
+   ],
+   "explanation": "Unter dem Druck Napoleons legte Kaiser Franz II. 1806 die Kaiserkrone nieder.",
+   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich"
+  },
+  {
+   "id": "hist-19jh-voelkerschlacht",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Wo besiegten 1813 Preußen, Österreich, Russland und Schweden Napoleon in der „Völkerschlacht“?",
+   "correct": "Bei Leipzig",
+   "wrong": [
+    "Bei Waterloo",
+    "Bei Jena",
+    "Bei Dresden"
+   ],
+   "explanation": "Das Völkerschlachtdenkmal in Leipzig erinnert daran. Endgültig geschlagen wurde Napoleon 1815 bei Waterloo.",
+   "source": "https://de.wikipedia.org/wiki/Völkerschlacht_bei_Leipzig"
+  },
+  {
+   "id": "hist-19jh-hambach",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Bei welchem Fest 1832 forderten rund 30.000 Menschen Freiheit und ein geeintes Deutschland?",
+   "correct": "Hambacher Fest",
+   "wrong": [
+    "Wartburgfest",
+    "Oktoberfest",
+    "Paulskirchenfest"
+   ],
+   "explanation": "Auf dem Hambacher Schloss in der Pfalz wehten die Farben Schwarz-Rot-Gold.",
+   "source": "https://de.wikipedia.org/wiki/Hambacher_Fest"
+  },
+  {
+   "id": "hist-19jh-maerzrevolution",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Wie nennt man die Revolution von 1848 in den deutschen Staaten?",
+   "correct": "Märzrevolution",
+   "wrong": [
+    "Novemberrevolution",
+    "Julirevolution",
+    "Friedliche Revolution"
+   ],
+   "explanation": "Sie führte zur Frankfurter Nationalversammlung. Die Novemberrevolution war 1918, die Friedliche Revolution 1989.",
+   "source": "https://de.wikipedia.org/wiki/Märzrevolution"
+  },
+  {
+   "id": "hist-19jh-manifest",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Wer verfasste 1848 das „Kommunistische Manifest“?",
+   "correct": "Karl Marx und Friedrich Engels",
+   "wrong": [
+    "Lenin und Trotzki",
+    "Ferdinand Lassalle und August Bebel",
+    "Rosa Luxemburg und Karl Liebknecht"
+   ],
+   "explanation": "Es beginnt mit dem Satz „Ein Gespenst geht um in Europa“.",
+   "source": "https://de.wikipedia.org/wiki/Manifest_der_Kommunistischen_Partei"
+  },
+  {
+   "id": "hist-19jh-eisenbahn",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Zwischen welchen Städten fuhr 1835 die erste deutsche Eisenbahn?",
+   "correct": "Nürnberg und Fürth",
+   "wrong": [
+    "Berlin und Potsdam",
+    "Leipzig und Dresden",
+    "Köln und Bonn"
+   ],
+   "explanation": "Die Lokomotive „Adler“ zog die Bahn der Ludwigseisenbahn über rund 6 km.",
+   "source": "https://de.wikipedia.org/wiki/Bayerische_Ludwigsbahn"
+  },
+  {
+   "id": "hist-19jh-sozialversicherung",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Unter welchem Reichskanzler wurde in den 1880er-Jahren die Kranken-, Unfall- und Rentenversicherung eingeführt?",
+   "correct": "Otto von Bismarck",
+   "wrong": [
+    "Leo von Caprivi",
+    "Bernhard von Bülow",
+    "Theobald von Bethmann Hollweg"
+   ],
+   "explanation": "Die Sozialgesetze sollten auch der Sozialdemokratie Anhänger abwerben.",
+   "source": "https://de.wikipedia.org/wiki/Bismarcksche_Sozialgesetzgebung"
+  },
+  {
+   "id": "hist-19jh-kulturkampf",
+   "sub": "19jh",
+   "difficulty": 3,
+   "prompt": "Gegen wen richtete sich Bismarcks „Kulturkampf“ in den 1870er-Jahren?",
+   "correct": "Gegen die katholische Kirche",
+   "wrong": [
+    "Gegen die Sozialdemokraten",
+    "Gegen Frankreich",
+    "Gegen die Juden"
+   ],
+   "explanation": "Unter anderem wurde die Zivilehe eingeführt. Gegen die Sozialdemokraten richteten sich ab 1878 die Sozialistengesetze.",
+   "source": "https://de.wikipedia.org/wiki/Kulturkampf"
+  },
+  {
+   "id": "hist-19jh-sezession",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Worum ging es im Amerikanischen Bürgerkrieg (1861–1865) vor allem?",
+   "correct": "Um die Sklaverei und den Zusammenhalt der Union",
+   "wrong": [
+    "Um die Unabhängigkeit von Großbritannien",
+    "Um den Krieg gegen Mexiko",
+    "Um das Frauenwahlrecht"
+   ],
+   "explanation": "Die Nordstaaten siegten, die Sklaverei wurde 1865 abgeschafft. Präsident Lincoln wurde kurz nach Kriegsende ermordet.",
+   "source": "https://de.wikipedia.org/wiki/Sezessionskrieg"
+  },
+  {
+   "id": "hist-19jh-lincoln",
+   "sub": "19jh",
+   "difficulty": 1,
+   "prompt": "Welcher US-Präsident schaffte die Sklaverei ab und wurde 1865 ermordet?",
+   "correct": "Abraham Lincoln",
+   "wrong": [
+    "George Washington",
+    "Thomas Jefferson",
+    "Ulysses S. Grant"
+   ],
+   "explanation": "Lincoln wurde im Ford’s Theatre in Washington erschossen.",
+   "source": "https://de.wikipedia.org/wiki/Abraham_Lincoln"
+  },
+  {
+   "id": "hist-19jh-dampfmaschine",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Wer verbesserte die Dampfmaschine so, dass sie zum Motor der Industrialisierung wurde?",
+   "correct": "James Watt",
+   "wrong": [
+    "George Stephenson",
+    "Thomas Edison",
+    "Robert Fulton"
+   ],
+   "explanation": "Watts Verbesserungen ab 1769 machten die Dampfmaschine viel effizienter. Die Einheit Watt ist nach ihm benannt.",
+   "source": "https://de.wikipedia.org/wiki/James_Watt"
+  },
+  {
+   "id": "hist-19jh-weberaufstand",
+   "sub": "19jh",
+   "difficulty": 3,
+   "prompt": "Welcher Aufstand 1844 machte das Elend der Industriearbeiter in Deutschland sichtbar?",
+   "correct": "Schlesischer Weberaufstand",
+   "wrong": [
+    "Badischer Aufstand",
+    "Ruhraufstand",
+    "Hamburger Aufstand"
+   ],
+   "explanation": "Gerhart Hauptmann verarbeitete ihn in seinem Drama „Die Weber“.",
+   "source": "https://de.wikipedia.org/wiki/Weberaufstand"
+  },
+  {
+   "id": "hist-19jh-kolonien",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Welche heutige afrikanische Republik war als „Deutsch-Südwestafrika“ eine deutsche Kolonie?",
+   "correct": "Namibia",
+   "wrong": [
+    "Tansania",
+    "Kamerun",
+    "Togo"
+   ],
+   "explanation": "Dort verübten deutsche Truppen 1904 bis 1908 den Völkermord an den Herero und Nama. Tansania gehörte zu Deutsch-Ostafrika.",
+   "source": "https://de.wikipedia.org/wiki/Deutsch-Südwestafrika"
+  },
+  {
+   "id": "hist-19jh-wilhelm2",
+   "sub": "19jh",
+   "difficulty": 2,
+   "prompt": "Welcher deutsche Kaiser entließ 1890 Bismarck?",
+   "correct": "Wilhelm II.",
+   "wrong": [
+    "Wilhelm I.",
+    "Friedrich III.",
+    "Ludwig II."
+   ],
+   "explanation": "Der junge Kaiser wollte selbst regieren. Die Karikatur „Der Lotse geht von Bord“ zeigt Bismarcks Abgang.",
+   "source": "https://de.wikipedia.org/wiki/Wilhelm_II._(Deutsches_Reich)"
+  },
+  {
+   "id": "hist-19jh-dreikaiserjahr",
+   "sub": "19jh",
+   "difficulty": 3,
+   "prompt": "Warum heißt 1888 in Deutschland das „Dreikaiserjahr“?",
+   "correct": "Drei Kaiser regierten nacheinander im selben Jahr",
+   "wrong": [
+    "Drei Kaiser trafen sich in Berlin",
+    "Drei Kaiserreiche schlossen ein Bündnis",
+    "Drei Kaiser wurden geboren"
+   ],
+   "explanation": "Wilhelm I. starb im März, sein Sohn Friedrich III. nach 99 Tagen, dann folgte Wilhelm II.",
+   "source": "https://de.wikipedia.org/wiki/Dreikaiserjahr"
+  },
+  {
+   "id": "hist-19jh-benz",
+   "sub": "19jh",
+   "difficulty": 1,
+   "prompt": "Wer baute 1886 das erste praktisch brauchbare Automobil?",
+   "correct": "Carl Benz",
+   "wrong": [
+    "Gottlieb Daimler",
+    "Rudolf Diesel",
+    "Henry Ford"
+   ],
+   "explanation": "Bertha Benz unternahm 1888 die erste Fernfahrt mit dem Wagen.",
+   "source": "https://de.wikipedia.org/wiki/Benz_Patent-Motorwagen_Nummer_1"
+  },
+  {
+   "id": "hist-19jh-y-hrr",
+   "sub": "19jh",
+   "type": "year",
+   "difficulty": 2,
+   "prompt": "In welchem Jahr endete das Heilige Römische Reich Deutscher Nation?",
+   "year": 1806,
+   "min": 1770,
+   "max": 1920,
+   "explanation": "1806 legte Franz II. die Kaiserkrone nieder.",
+   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich"
+  },
+  {
+   "id": "hist-19jh-y-maerz",
+   "sub": "19jh",
+   "type": "year",
+   "difficulty": 1,
+   "prompt": "In welchem Jahr fand die Märzrevolution statt?",
+   "year": 1848,
+   "min": 1770,
+   "max": 1920,
+   "explanation": "1848/49.",
+   "source": "https://de.wikipedia.org/wiki/Märzrevolution"
+  }
+ ]
+}

@@ -7,6 +7,8 @@ import { computeStreak } from './core/streak';
 import { dayKey } from './core/dates';
 import { levelFromXp } from './core/scoring';
 import * as sync from './sync';
+import { publishStats } from './groups';
+import { myStats } from './core/leaderboard';
 import type { Session } from '@supabase/supabase-js';
 
 export type SyncState = 'aus' | 'abgemeldet' | 'synchronisiert' | 'läuft' | 'fehler';
@@ -73,6 +75,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     try {
       const merged = await sync.syncProgress(progressRef.current);
       setProgress((cur) => (cur === progressRef.current ? merged : cur));
+      await publishStats(myStats(merged, dayKey()));
       setSyncState('synchronisiert');
     } catch (e) {
       console.warn('Sync fehlgeschlagen', e);

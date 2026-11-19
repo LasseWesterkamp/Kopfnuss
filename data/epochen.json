@@ -1,0 +1,13 @@
+{
+ "_hinweis": "Epochen für das Thema Geschichte. id wird als 'sub' an jeder Geschichtsfrage gespeichert und darf sich nicht mehr ändern.",
+ "epochen": [
+  { "id": "antike", "name": "Antike", "zeit": "bis ca. 500", "icon": "🏛️" },
+  { "id": "mittelalter", "name": "Mittelalter", "zeit": "ca. 500–1500", "icon": "🏰" },
+  { "id": "fnz", "name": "Frühe Neuzeit", "zeit": "1500–1789", "icon": "⛵" },
+  { "id": "19jh", "name": "Revolutionen & 19. Jahrhundert", "zeit": "1789–1914", "icon": "⚙️" },
+  { "id": "weimar", "name": "Erster Weltkrieg & Weimarer Republik", "zeit": "1914–1933", "icon": "📯" },
+  { "id": "ns", "name": "NS-Zeit & Zweiter Weltkrieg", "zeit": "1933–1945", "icon": "⚠️" },
+  { "id": "geteilt", "name": "Geteiltes Deutschland & Kalter Krieg", "zeit": "1945–1990", "icon": "🧱" },
+  { "id": "seit1990", "name": "Seit 1990", "zeit": "1990 bis heute", "icon": "🇪🇺" }
+ ]
+}

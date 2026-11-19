@@ -1,0 +1,1959 @@
+{
+ "asOf": "2026-11-19",
+ "source": "Natural Earth (gemeinfrei), Wikidata (CC0), Wikimedia Commons",
+ "regions": [
+  {
+   "cc": "de",
+   "iso": "DE-SN",
+   "wikidata": "Q1202",
+   "name": "Sachsen",
+   "capital": "Dresden",
+   "capitalNote": null,
+   "flagFile": "Flag of Saxony.svg",
+   "flag": {
+    "src": "regions/de-sn.png",
+    "author": "Madden",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Saxony.svg",
+    "print": "/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+////////////////////////////////////////////////////////////////8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfz8vfzI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvI3QvEmogEmogEmogEmogEmogEmogEmogEmogEmogEmogEmogEmogEmogEmogEmogEmogF20kF20kF20kF20kF20kF20kF20kF20kF20kF20kF20kF20kF20kF20kF20kF20kFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwjFmwj"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-BY",
+   "wikidata": "Q980",
+   "name": "Bayern",
+   "capital": "München",
+   "capitalNote": null,
+   "flagFile": "Flag of Bavaria (lozengy).svg",
+   "flag": {
+    "src": "regions/de-by.png",
+    "author": "diese Datei: Jwnabd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Bavaria_(lozengy).svg",
+    "print": "////csXnAJHRAJfUGKLYt+LzfcrpG6PZecno////////8vn9IKPYAJjUAJLSZcDl////xuj1ApfUBZrVAJXSptvw////+Pz+yen1gMzqxej1////dsboAI3PAJfUFaDXic/r0+34NqzdAI/QAI/QULbh/////P7+////PazcAJLRMq3cXL3jP7HfCJvVAJHRAZLSAJXTYL/kjdHrMazcD53W2vD5////////mNTtAJLSAJXTB5bT0u335fT7k9PsCJvVAJTSLqnb+v3+/v//1e74oNjvuePz/f7/6vf8Fp/WAJbTAJTSgMrp/////P7+AZLSAJPTAJTTt+Hy////////ueLzAJTTI6babsTnT7fhDZ3WAI/QKqPY9/z+/P3+dMfoRbTgAJTSXbvj/////v//+f3+MKrcAJPRAIzPWLri7fj8nNfuULjhw+b1////mtbu////1+74n9jvuuLz7/j8////iM7rAJHRBZrVE5/W4vP6////////ndfuSrbgPa/d/////v//////VLniC5zVbMPmic/rFaHXAJTTAIzPkNDs/////f7/3/H5DZfTAJPSxuf1////////qtzwAJLRAZHSApXTq97xt+HzT7jhVbri/P7//v//////V7rilNTtntjv8fr9////8vr9IqXZAZjUAJLSa8Lm////////7fj8csbnjdHr7fj8sN/x////0ez3GqLYUrnitOHyYL7kAJLSAJfUHaLY7Pf7/f7/////eMXnAIzPDZ3WPbDe"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-RP",
+   "wikidata": "Q1200",
+   "name": "Rheinland-Pfalz",
+   "capital": "Mainz",
+   "capitalNote": null,
+   "flagFile": "Flag of Rhineland-Palatinate.svg",
+   "flag": {
+    "src": "regions/de-rp.png",
+    "author": "Madden",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Rhineland-Palatinate.svg",
+    "print": "FRMAHRwAISMAGh0ACgkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcmYmuJlMr28pnVoKHBYDAAAAAgEAAQAAAQAAAQAAAQAAAQAAAQAAAQAAAQAAAQAAiE9T22p2lU1YvVxjEgsMAAAAAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnG1yqUc2Wz8YwDlBJgsKCwAAEQABEAAAEAAAEAAAEAAAEAAAEAAAEAAAEAAAEAAAoFRbXlkZe3EAYQ0MzgYIzQAAzQAAzQAAzQAAzQAAzQAAzQAAzQAAzQAAzQAAzQAArAEDOCEKVE4LcBgO5AAB4AEA4QEA4QEA4QEA4QEA4QEA4QEA4QEA4QEA4QEA4QEA5AABzAMItwML4gED3QAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA3hAA4w8A5w8A3hAA3xAA3xAA3xAA3xAA3xAA3xAA3xAA3xAA3xAA3xAA3xAA3xAA/L0A+70A+r0A/L0A/L0A/L0A/L0A/L0A/L0A/L0A/L0A/L0A/L0A/L0A/L0A/L0A/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/9IA/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/84A/84A/84A/84A/84A/84A/84A/84A/84A/84A/84A/84A/84A/84A/84A/84A"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-SL",
+   "wikidata": "Q1201",
+   "name": "Saarland",
+   "capital": "Saarbrücken",
+   "capitalNote": null,
+   "flagFile": "Flag of Saarland.svg",
+   "flag": {
+    "src": "regions/de-sl.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Saarland.svg",
+    "print": "AAAAAAAAAAAAAAAAAAAAAAEBAAECAQECAwMDAwICAQEBAAAAAAAAAAAAAAAAAAAAAQAAAQAAAQAAAQAAAQAAAQAAAAAAAQAAAAAAAAEBAQAAAQAAAQAAAQAAAQAAAQAAAAAAAAAAAAAAAQECAAAAGSIpOVFmRVdegn+CjnRzOEBAAAAAAgICAAAAAAAAAAAAHgAAHgAAHgAAHwIDGwAAMTNFfZevgZSi1Jmd74yKbVRUEAAAIQMDHgAAHgAAHgAA1wAA1wAA1wAA1QID4gAAlzFBYY+tdIuu2ZKW23+B1EtO1wAA1wMD1wAA1wAA1wAA3wEA3wEA3wEA3QIC5wAAsCc5fYZ/l51enI2ClntxzFJH4gAA3gQC3wEA3wEA3wEA3AAA3AAA3AAA2wIB3gAAzTscunlU3qcQYUgAbmEGmBQP5wAA2gEB3AAA3AAA3AAA3hQA3hQA3hQA3hYB3goA3EwH0J0zp2ZRhW0Cc2MGohsR6BMA3BUB3hQA3hQA3hQA/cYA/cYA/cYA/cYA/sYA98MI7sUSrmo8OiUJjncP98QH/scA/cYA/cYA/cYA/cYA/9EA/9EA/9EA/9EA/9EA/9AA+M8M1Z0Lg2YR58AL/9QA/tAA/9EA/9EA/9EA/9EA/80A/80A/80A/80A/80A/80A/80A/9QE/90D/tAA/8wA/80A/80A/80A/80A/80A/84A/84A/84A/84A/84A/84A/s4A/s0A/MsA/s0A/84A/84A/84A/84A/84A/84A"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-SH",
+   "wikidata": "Q1194",
+   "name": "Schleswig-Holstein",
+   "capital": "Kiel",
+   "capitalNote": null,
+   "flagFile": "Flag of Schleswig-Holstein.svg",
+   "flag": {
+    "src": "regions/de-sh.png",
+    "author": "Jon Harald Søby",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Schleswig-Holstein.svg",
+    "print": "ADmtADmtADmtADmtADmtADmtADmtADmtADmtADmtADmtADmtADmtADmtADmtADmtATqtATqtATqtATqtATqtATqtATqtATqtATqtATqtATqtATqtATqtATqtATqtATqtADasADasADasADasADasADasADasADasADasADasADasADasADasADasADasADasDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSxDkSx8fT78fT78fT78fT78fT78fT78fT78fT78fT78fT78fT78fT78fT78fT78fT78fT7/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy/fPy2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd2CQd1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1RQM1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hkR1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ1hgQ"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-NI",
+   "wikidata": "Q1197",
+   "name": "Niedersachsen",
+   "capital": "Hannover",
+   "capitalNote": null,
+   "flagFile": "Flag of Lower Saxony.svg",
+   "flag": {
+    "src": "regions/de-ni.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Lower_Saxony.svg",
+    "print": "AAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAQAAAQAAAQAAAgAABAAABgAABQAABAAABAAAAwAAAQAAAQAAAQAAAQAAAQAAAAAAAAAAAwAAAAAAVwcKvxEYnS4yrBIYsA4UvRIZVAcKAAAAAwAAAAAAAAAAAAAAFQIDFQIDGQIDBAICeQcL6iAozrq71GNn4AQN8AoUdAkNBQEBGQIDFQIDFQIDFQIDyREYyREYyxEYwREYuA8WyiAn1ru80IyOzwQM111ithQbww8WyhEYyREYyREYyREY3hQa3hQa3xUb2REWuB8kuHt93N/f9v3958HCzK6wuS8z2g0T3xUb3hQa3hQa3hQa2A0a2A0a2g4a0QoYvBQdzEJHyjlA1G1y0q6wtV1frw4W1gwZ2Q0a2A0a2A0a2A0a3igY3igY3igY3yoYvhgU1BAa3A8V2AACyC4yvWZsvxgU4CoY3SgY3igY3igY3igY+c4K+c4K+MwK/9QK2qsKwxAX4Q4e3xQZ2yk3qkZI2q8L/9MJ+M0K+c4K+c4K+c4K/N8J/N8J/N8J/N0J/egIzZILvBwVxgsYuxsTzZAJ/eYI/N4J/N8J/N8J/N8J/N8J/98J/98J/98J/98J/98J/uoI7M8I4rMK7NAJ/uoJ/98J/98J/98J/98J/98J/98J/N4I/N4I/N4I/N4I/N4I+9sJ/+IJ/+cI/+IJ+9sJ/N4I/N4I/N4I/N4I/N4I/N4I"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-NW",
+   "wikidata": "Q1198",
+   "name": "Nordrhein-Westfalen",
+   "capital": "Düsseldorf",
+   "capitalNote": null,
+   "flagFile": "Flag of North Rhine-Westphalia.svg",
+   "flag": {
+    "src": "regions/de-nw.png",
+    "author": "Bundesland Nordrhein-Westfalen",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Rhine-Westphalia.svg",
+    "print": "AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AJE2AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AZE3AI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zAI8zDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdBDpdB8fn08fn08fn08fn08fn08fn08fn08fn08fn08fn08fn08fn08fn08fn08fn08fn0/////////////////////////////////////////////////////////////////v///v///v///v///v///v///v///v///v///v///v///v///v///v///v///v///fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz/fHz5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n5Q4n4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wAX4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wEc4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb4wAb"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-BW",
+   "wikidata": "Q985",
+   "name": "Baden-Württemberg",
+   "capital": "Stuttgart",
+   "capitalNote": null,
+   "flagFile": "Flag of Baden-Württemberg.svg",
+   "flag": {
+    "src": "regions/de-bw.png",
+    "author": "Dbenbenn",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Baden-W%C3%BCrttemberg.svg",
+    "print": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQsADQsADQsADQsADQsADQsADQsADQsADQsADQsADQsADQsADQsADQsADQsADQsA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA7LwA/coA/coA/coA/coA/coA/coA/coA/coA/coA/coA/coA/coA/coA/coA/coA/coA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+MYA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA+ccA"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-BB",
+   "wikidata": "Q1208",
+   "name": "Brandenburg",
+   "capital": "Potsdam",
+   "capitalNote": null,
+   "flagFile": "Flag of Brandenburg.svg",
+   "flag": {
+    "src": "regions/de-bb.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Brandenburg.svg",
+    "print": "5gAA5gAA5gAA5gAA5gAA5gEB5wMD5wMD5gMD5wMD5gEB5gAA5gAA5gAA5gAA5gAA5gAA5gAA5gAA5gAA5gAA5QAA4QAA4gAA5AAA4QAA5QAA5gAA5gAA5gAA5gAA5gAA5gAA5gAA5gAA5gIC6AAA2ykp1mJg1WpkzFhU1FpY3Cor6AAA5gIC5gAA5gAA5gAA5gEB5gEB5gEB5gMD6AAA2UFDyW9l4MrCy4mByXNo3EtM6AAA5gQE5gEB5gEB5gEB5gAA5gAA5gAA5QIC6AAA2T0+rkA7zktGxzw2skZA3UVG6AAA5gIC5gAA5gAA5gAA5w4O5w4O5w4O5xAQ6AIC3lVVwlZWvQgHuwkJxlpa4FdX6AIC5xAQ5w4O5w4O5w4O/vHx/vHx/vHx/fDw//T07N7e2IuLzl9dy1tX14+O7d/f//T0/fDw/vHx/vHx/vHx/////////////v7+////8e/y39zFvW5gvG1f3NvG8vHz/////v7+//////////////7+//7+//7+//7+//7+/P7+3MzH0YmI0YOD2crH+/39//7+//7+//7+//7+//7+////////////////////////9/n66+fn6OTk9ff4/////////////////////////////////////////////////////v7+/v7+/////////////////////////////////////////////////////v7+/////////v7+////////////////////////"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-MV",
+   "wikidata": "Q1196",
+   "name": "Mecklenburg-Vorpommern",
+   "capital": "Schwerin",
+   "capitalNote": null,
+   "flagFile": "Flag of Mecklenburg-Western Pomerania.svg",
+   "flag": {
+    "src": "regions/de-mv.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Mecklenburg-Western_Pomerania.svg",
+    "print": "K1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijK1ijzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjlzdjl////////////////////////////////////////////////////////////////+viH+viH+viH+viH+viH+viH+viH+viH+viH+viH+viH+viH+viH+viH+viH+viH/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG/PeG////////////////////////////////////////////////////////////////98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ98PJ3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gAp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp3gEp"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-HB",
+   "wikidata": "Q1209",
+   "name": "Bremen",
+   "capital": "Bremen",
+   "capitalNote": "Das Land Bremen besteht aus den Städten Bremen und Bremerhaven.",
+   "flagFile": "Flag of Bremen.svg",
+   "flag": {
+    "src": "regions/de-hb.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Bremen.svg",
+    "print": "2QAA9bW19LS02QAA2wIC2wAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA2wAA74iI7Xx87Xx874iI74eH74eH74eH74eH74eH74eH74eH74eH74eH74eH74eH74eH////50xM501N/////vn5/vv7/vv7/vv7/vv7/vv7/vv7/vv7/vv7/vv7/vv7/vv72wAA9bW19bS02wAA3QIC3QAA3QAA3QAA3QAA3QAA3QAA3QAA3QAA3QAA3QAA3QAA7oGB7n9/7n9/7oGB7oGB7oGB7oGB7oGB7oGB7oGB7oGB7oGB7oGB7oGB7oGB7oGB////50pK50tL//////39////////////////////////////////////////////2wAA9LS09LOz2wAA3QMD3QEB3QEB3QEB3QEB3QEB3QEB3QEB3QEB3QEB3QEB3QEB7n197oCA7oGB7n197n197n197n197n197n197n197n197n197n197n197n197n19////5kpK5ktL//////39////////////////////////////////////////////2gAA9bW19LS02gAA3AIC3AAA3AAA3AAA3AAA3AAA3AAA3AAA3AAA3AAA3AAA3AAA7Xl574KC7oKC7Xl57Xp67Xp67Xp67Xp67Xp67Xp67Xp67Xp67Xp67Xp67Xp67Xp6////5UpK5UtL//////39////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-HH",
+   "wikidata": "Q1055",
+   "name": "Hamburg",
+   "capital": false,
+   "capitalNote": null,
+   "flagFile": "Flag of Hamburg.svg",
+   "flag": {
+    "src": "regions/de-hh.png",
+    "author": "Greentubing",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Hamburg.svg",
+    "print": "2hIa2hIa2hIa2hIa2hIa2hIa2xAY2xEZ2xEZ2xAY2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2REZ1Ckw0xsi0xwj1Ckw2REZ2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hMb2w4W1igvx2Vp0YeK0YeKx2Vp1igv2w4W2hMb2hIa2hIa2hIa2hIa2hIa2hIa2hMb2gwU1jI54tXW3MTF3MTF4tXW1jI52gwU2hMb2hIa2hIa2hIa2hIa2hIa2hIa2hMb2g0V2Ssy9N7f7MnK7MnK9N7f2Ssy2g0V2hMb2hIa2hIa2hIa2hIa2hIa2hIa2hQc2gkS10NJ493d4s/Q4s/Q493d10NJ2gkS2hQc2hIa2hIa2hIa2hIa2hIa2hIa2hUd2gYO2Ftg5e7u4ODg4ODg5e7u2Vtg2gYO2hUd2hIa2hIa2hIa2hIa2hIa2hIa2hUd2QQM4mRp/P//4d3e4d7e/P//4mRp2QQM2hUd2hIa2hIa2hIa2hIa2hIa2hIa2xYe1wAJ6IaJ+v//4t7f4t7f+v//6IWJ1wAJ2xYe2hIa2hIa2hIa2hIa2hIa2hIa2xMb1w0V4rGz6fb13t/f3t/f6fb14bGz1w0V2xMb2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hMb2T1E2UVL1kFH1kFH2UVL2T5E2hMb2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2gkR2ggQ2gkR2gkR2ggQ2gkR2hIa2hIa2hIa2hIa2hIa"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-HE",
+   "wikidata": "Q1199",
+   "name": "Hessen",
+   "capital": "Wiesbaden",
+   "capitalNote": null,
+   "flagFile": "Flag of Hesse.svg",
+   "flag": {
+    "src": "regions/de-he.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Hesse.svg",
+    "print": "4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O4w4O/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx/fHx//////////////////////////////////////////////////////////////////7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-TH",
+   "wikidata": "Q1205",
+   "name": "Thüringen",
+   "capital": "Erfurt",
+   "capitalNote": null,
+   "flagFile": "Flag of Thuringia.svg",
+   "flag": {
+    "src": "regions/de-th.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Thuringia.svg",
+    "print": "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////39//39//39//39//39//39//39//39//39//39//39//39//39//39//39//39/////////////////////////////////////////////////////////////////Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn/Ofn4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4xIS4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QEB4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA4QAA"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-ST",
+   "wikidata": "Q1206",
+   "name": "Sachsen-Anhalt",
+   "capital": "Magdeburg",
+   "capitalNote": null,
+   "flagFile": "Flag of Saxony-Anhalt (state).svg",
+   "flag": {
+    "src": "regions/de-st.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Saxony-Anhalt_(state).svg",
+    "print": "/NEW/NEW/NEW/NEW/NEW/NEX+9EX+9AW+9AW+s8V+9EW/NEW/NEW/NEW/NEW/NEW/NEW/NEW/NEW/NEW/NEW/M8U/9ET/9QW/dIW/9kc/dUZ/NAW/NEW/NEW/NEW/NEW/NEW/NEW/NEW+dAW/9YUtLUlc5EjrZALs5UXi4JVxKkw/9gR+s8X/NEW/NEW/NEW+9AW+9AW+9AW984W/9kVnpobIXs9PnYjdGkeUlNntKBE/9kP+M4Y+9AW+9AW+9AW/9UW/9UW/9UW/dMW/94XxKAPamcTOIM1PoY7aXNVxKkz/90S/dMX/9UW/9UW/9UW6MEU6MEU6MEU5r8U8soWq5ALdFoAjXgPToguE2QZmY4K9coW5b8U6MEU6MEU6MEUCQgBCQgBCQgBDAsEAAAAUU9Gr66hRD4xamZbt9vET19OAAAADAsECQgBCQgBCQgBAAAAAAAAAAAAAwMDAAAAWFhZ/P3+P0JFOTw+8vLyW1laAAAAAwMDAAAAAAAAAAAAAQEAAQEAAQEAAgEAAAAACQoJoEBFxURLtjg+kzY5DAwMAAAAAgEAAQEAAQEAAQEAAAAAAAAAAAAAAAAAAQAAAAICEwAAaCIjayIlFQAAAAEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQMDAAEAAAEAAQMCAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAwEBAwEBAQAAAAAAAAAAAAAAAAAAAAAAAAAA"
+   }
+  },
+  {
+   "cc": "de",
+   "iso": "DE-BE",
+   "wikidata": "Q64",
+   "name": "Berlin",
+   "capital": false,
+   "capitalNote": null,
+   "flagFile": "Flag of Berlin.svg",
+   "flag": {
+    "src": "regions/de-be.png",
+    "author": "Flaggenentwurf: unbekannt diese Datei: Jwnabd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Berlin.svg",
+    "print": "4jot4jot4jot4jot4jot4jot4jos3zcp4Tks4jot4jot4jot4jot4jot4jot4jot4C0e4C0e4C0e4C0e4C0e3ywd4y8g7jss5DEi3ywd4C0e4C0e4C0e4C0e4C0e4C0e862n862n862n862n8aul+7Su5Z2XoVlT3piS97Gr8qym862n862n862n862n862n//////////////////7+vMDA1traKCwtxsfI/////f39//////////////////////z8//z8//z8/fr7////tK+uSUdHEhER2dbW/////fr6//z8//z8//z8//z8//z8/////////////////fv7mZOTJicnCwsL7u7u/////v7+/////////////////////////////////v7+////7O3tlJSUBQUF0tLS/////f39//////////////////////z8//z8//z8//z8//z8//7+UE5OCQgItbOz/////Pn5//z8//z8//z8//z8//z8/////////////f39////tbW1dX1+hoyNpqqr/////Pz8////////////////////862n862n862n862n9q+p5Z6Y6aKc1IqD4pyW9rCq862n862n862n862n862n862n4C0e4C0e4C0e4C0e3ywd5DEi4zAh5TIk4zAh3ywd4C0e4C0e4C0e4C0e4C0e4C0e4jot4jot4jot4jot4jot4jos4jos4Tkr4jos4jot4jot4jot4jot4jot4jot4jot"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-3",
+   "wikidata": "Q42497",
+   "name": "Niederösterreich",
+   "capital": "St. Pölten",
+   "capitalNote": null,
+   "flagFile": "Flag of Lower Austria.svg",
+   "flag": {
+    "src": "regions/at-3.png",
+    "author": "Written by Jon Harald Søby and Gryffindor; colours and ratio adjusted by User:Mevsfotw.",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Lower_Austria.svg",
+    "print": "AC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xAS5xACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0ACl0FjtoFjtoFjtoFjtoFjtoFjtoFjtoFjtoFjtoFjtoFjtoFjtoFjtoFjtoFjtoFjto6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K6b8K/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/9AA/swB/swB/swB/swB/swB/swB/swB/swB/swB/swB/swB/swB/swB/swB/swB/swB/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A/80A"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-4",
+   "wikidata": "Q41967",
+   "name": "Oberösterreich",
+   "capital": "Linz",
+   "capitalNote": null,
+   "flagFile": "Flag of Upper Austria (state).svg",
+   "flag": {
+    "src": "regions/at-4.png",
+    "author": "Sgt bilko",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Upper_Austria_(state).svg",
+    "print": "/////////////////////////v7+/v39/v39/v7+/////////////////////////////////////////////////////P37/P36//////////////////////////////////////////////7+////9erm0rOX0rKW9unm//////7+//////////////////7+//7+//7+//7+//38////3KyhyHBZwWxT06OV//////z9//7+//7+//7+//7+////////////////////+/v5oJ6TrKaS2Lu70LO1+fX1/////////////////////Orq/Orq/Orq/Orp/evu++neiXEGlIcU7JaQ1m1z8tHS/vHx/Onp/Orq/Orq/Orq3SUt3SUt3SUt3SYt3iMu2Sss1rQF1c0g76Of2Wpw1Rgg3ykx3SUt3SUt3SUt3SUt2Q4W2Q4W2Q4W2Q4W3A4WzA0WgmQAf30b45id22ht0QIK2xEZ2Q4W2Q4W2Q4W2Q4W2hMb2hMb2hMb2RMb3RQbzg8bcVIAam4a45ef2mxv0gcO3Bcf2hMb2hMb2hMb2hMb2hIa2hIa2hIa2hIa2hMa3A4coysJPkIb0IOM0kFG2AwU2xQc2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2xMa2wwZuA8ayh0k2QsT2xMb2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2RMa4RMa3RAY2hMb2hIa2hIa2hIa2hIa2hIa2hIa"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-1",
+   "wikidata": "Q43210",
+   "name": "Burgenland",
+   "capital": "Eisenstadt",
+   "capitalNote": null,
+   "flagFile": "Flag of Burgenland.svg",
+   "flag": {
+    "src": "regions/at-1.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Burgenland.svg",
+    "print": "2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2hMa2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a2Q4a3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY3SQY+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK+cwK/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/OEJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-8",
+   "wikidata": "Q38981",
+   "name": "Vorarlberg",
+   "capital": "Bregenz",
+   "capitalNote": null,
+   "flagFile": "Flag of Salzburg, Vienna, Vorarlberg.svg",
+   "flag": {
+    "src": "regions/at-8.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Salzburg,_Vienna,_Vorarlberg.svg",
+    "print": "2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq//////////////////////////////////////////////////////////////////7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-7",
+   "wikidata": "Q42880",
+   "name": "Tirol",
+   "capital": "Innsbruck",
+   "capitalNote": null,
+   "flagFile": "Flag of Tirol (state).svg",
+   "flag": {
+    "src": "regions/at-7.png",
+    "author": "Unknown authorUnknown author Flag_of_Tirol.svg: Jon Harald Søby from Image:Flag AT Tyrol civil.png; colours and ratio adjusted by User:Mevsfotw. Flag_of_Tirol.s",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Tirol_(state).svg",
+    "print": "/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Pz89fT0+Pj5+Pf49fT0/Pz8//////////////////////7+//7+//7+//7+////9fT09vn63OPY3uXd9/n59fT0//////7+//7+//7+//7+//////////////7+////9PP03rGvxLSjyLGl3rSx9PPz//////7+/////////////Orq/Orq/Orq++np/uvr7uLmyWRVy0lDyz42yWVV7uHl/uvr++np/Orq/Orq/Orq3SUt3SUt3SUt3Scv3Rsk3Vtg2q6vzVNMykdD2q+x3ltg3Rsk3Scv3SUt3SUt3SUt2Q4W2Q4W2Q4W2Q8X2QgQ2Cgx8vLm3cuv17Ka8e/j2Ccx2QgQ2Q8X2Q4W2Q4W2Q4W2hMb2hMb2hMb2hMb2hUd2AkR3mRp6crM5sHD32Vq2AkR2hUd2hMb2hMb2hMb2hMb2hIa2hIa2hIa2hIa2hIa2xMb2AcP2Roi2hsj2AcP2xMb2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hQc2hAY2hAY2xQc2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hMb2hMb2hIa2hIa2hIa2hIa2hIa2hIa2hIa"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-5",
+   "wikidata": "Q43325",
+   "name": "Salzburg",
+   "capital": "Salzburg",
+   "capitalNote": null,
+   "flagFile": "Flag of Salzburg, Vienna, Vorarlberg.svg",
+   "flag": {
+    "src": "regions/at-5.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Salzburg,_Vienna,_Vorarlberg.svg",
+    "print": "2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq//////////////////////////////////////////////////////////////////7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-2",
+   "wikidata": "Q37985",
+   "name": "Kärnten",
+   "capital": "Klagenfurt am Wörthersee",
+   "capitalNote": null,
+   "flagFile": "Flag of Carinthia.svg",
+   "flag": {
+    "src": "regions/at-2.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Carinthia.svg",
+    "print": "/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/N0J/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/NwJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ/eEJ+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K+M4K3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z3B8Z2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2hAb2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W2g8W3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr3CQr++vs++vs++vs++vs++vs++vs++vs++vs++vs++vs++vs++vs++vs++vs++vs++vs//////////////////////////////////////////////////////////////////7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+////////////////////////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-6",
+   "wikidata": "Q41358",
+   "name": "Steiermark",
+   "capital": "Graz",
+   "capitalNote": null,
+   "flagFile": "Flag of Styria.svg",
+   "flag": {
+    "src": "regions/at-6.png",
+    "author": "Made by Jon Harald Søby from File:Steiermark Landesfarben.PNG, colours and ratio adjusted by Mevsfotw.",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Styria.svg",
+    "print": "/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+/f7+////////////////////////////////////////////////////////////////6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTs6fTsHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBHJJBAocsAocsAocsAocsAocsAocsAocsAocsAocsAocsAocsAocsAocsAocsAocsAocsCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxCIkxB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kwB4kw"
+   }
+  },
+  {
+   "cc": "at",
+   "iso": "AT-9",
+   "wikidata": "Q1741",
+   "name": "Wien",
+   "capital": false,
+   "capitalNote": null,
+   "flagFile": "Flag of Salzburg, Vienna, Vorarlberg.svg",
+   "flag": {
+    "src": "regions/at-9.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Salzburg,_Vienna,_Vorarlberg.svg",
+    "print": "2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hIa2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2hMb2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V2Q0V3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt3SYt++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq++rq//////////////////////////////////////////////////////////////////7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-VS",
+   "wikidata": "Q834",
+   "name": "Wallis",
+   "capital": "Sitten (Sion)",
+   "capitalNote": null,
+   "flagFile": "CHE Valais Flag.svg",
+   "flag": {
+    "src": "regions/ch-vs.png",
+    "author": "Original: Unknown author Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Valais_Flag.svg",
+    "print": "//////////////7+//7+//7+//7+/d3d8iIi8AAA8AEB8AAA7wAA8AAA8AAA8AAA//////7+//v7/M7O/u3t/////eHh9VNT+qys8h4e8AAA8A0N8jMz8AQE8AIC8AAA//39////+7y88AsL93Fx//////v7+qur9FNT8AUF7wAA9nV1//n59VhY7wAA8AEB//7+/////eTk+JaW+8LC/////ePj93l5+IaG8hoa7wAA8zIy9mlp8SQk7wAA8AEB//7+/////MzM8jc3+JGR/////vPz939/939/8Q0N7wAA9Vpa/MzM80JC8AAA8AEB//39/////NDQ9WJi+Z2d/////erq+aGh9V5e8RUV7wAA9VJS+Z6e8z097wAA8AIC/////////dzc9nBw+rS0/////u/v9V5e+aCg8RER8AAA8z09+JKS8iws8AAA8AAA//39/////MXF8iws94CA/////vn5+8LC8zw88AUF7wAA9mlp/NbW9E9P7wAA8AIC/////////vHx+Z+f/NTU/////eDg9EhI+7e38R8f7wAA8iEh9WJi8RQU8AAA8AAA//39////+rS08AEB9mdn//////r6+8DA8z4+8AYG7wAA939/////9WFh7wAA8AIC//7+/////ezs/d7e/eDg/////eHh9Vpa+aWl8h4e7wAA8Rwc8R8f8RcX8AAA8AEB//////////7+//////7+//////n5+aOj9Vtb8AcH8AAA8AEB8AAA7wAA8AAA8AAA"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-TI",
+   "wikidata": "Q12724",
+   "name": "Tessin",
+   "capital": "Bellinzona",
+   "capitalNote": null,
+   "flagFile": "CHE Ticino Flag.svg",
+   "flag": {
+    "src": "regions/ch-ti.png",
+    "author": "Cantone Ticino",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Ticino_Flag.svg",
+    "print": "8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB7wAB8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA8wAA5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUK5AUKKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tKF6tGWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6GWW6HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HWO2HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3HGO3"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-GR",
+   "wikidata": "Q11925",
+   "name": "Graubünden",
+   "capital": "Chur",
+   "capitalNote": null,
+   "flagFile": "CHE Graubünden Flag.svg",
+   "flag": {
+    "src": "regions/ch-gr.png",
+    "author": "Kanton Graubünden, Anton Nigg",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Graub%C3%BCnden_Flag.svg",
+    "print": "AAAAAgICAAAAHx8f9vb2////////09faBF2mAGi/BV2jqqMbJmJv3scF/+cA/eEAAAAAAgICAAAAHx8f9vb2////////1NjZHmqNG3ahImyItrAUIF19tq4d2ssX08UYAAAAAgICAAAAHx8f9vb2////////19jWXnM9ZX5BaYBBeog1Rm1SVnhNVnZIVnZJBAQEBgYGAAAAIyMj9/f3////////2drWh48xmqIxgo83FVmKsKIUTnldRHtwRntsAAAAAQEBAAAAHR0d7u7u+fn4/f7/2dfQ5tIF//MA4cwDH151mJIYB1GbAFm5AFizjIyMjo6OkpKSoKCg6erq6Ofm5uXly8vIl45Qn5VLqqJkfJScvbyQl7XFjK/GjrDG/////Pz84ODg3d3d8fHx/Pz89eTlYVVWICAqJyk0XV5qcW1si4qS4uHh/////v7+/f398vLytbW1m5ublZWVi4yMaGZmBQIDFhYVw8O//f36z9DQaGdmz9DQ////+vv8////7+/vra2tp6entra2dHR0DxAQKCkpFRMTTExMqKio3t7e2tra+Pj4/////////////////f39/////v7+////o6OjJSUleHZ2UVFREBAQmZmZ/////f39/////////////////v7+/v7+9vb2uLi4YmJiaWlp7Ozs////qqqqV1dXt7e3/////f39/////f39/f39+vr6////yMjIn5+f7u7u////+/v7////8/Pztra27+/v/////Pz8/f39"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-SH",
+   "wikidata": "Q12697",
+   "name": "Schaffhausen",
+   "capital": "Schaffhausen",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Schaffhausen.svg",
+   "flag": {
+    "src": "regions/ch-sh.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Schaffhausen.svg",
+    "print": "/9cw/9cw/9cw/dUv/tYw/9cw/9gw5MEr1bQo17cp4sAq/tgw/9cw/tYw/tYw/9cw/9cw/9cw/tgw/uAy/twx/tUw+NEvx6kmtZsjvKEjz68n6sYs/NUv/NYw/9ow/9Yw/tYw/9ox48ErqpAh4MAr/+Qz/Ngw7css07IolYAcvKAk2Lcp6MUs5MEr6sYs/9kx/tYw/9cw9M4us5giZlcVsZgi8cMvtIwkQzsNIR4IU0kRpI0fxKcl0bEn17Yp8Mst/9cw/NQv/tsx//A1/uMyY1MTrY8ii24cKiUJERAFCQkDhXIay60muqAk5cYs9M4u/tgw/+Mz6sgtjngbqY8gh3MaGhgGBgcCAAABAgICq5Mh/Ncw7sotpI0fYlQT5MAr/dUvq5Egd2YX07Mozq4njXgbEhAFBwYDAAABDw4Fknwc78otwaUlAAABKSQJ370q68YsvqAk7Mst/+Ey/t8y/+Iy4b4qbl4VFxQGBwYCAAAAEQ8FdmQXza0m+tgw/9wx/9gw/90x/tow/dUw/NQw/9gwXU8SAAABDw4ESkEPAgIAAAAAEhAElH8d/dsx/tYv/tYw/tYw/tYw/9cw/dcw/+k0jnscAAAATkMP1LUpgm8ZaFkVf2wZZVUUzq4n/98y/9cw/9cw/9cw/9cw9s8upYwflH4cln8c3r8q/9sx/uQz/OEy//I2tJ8kdmQX/98y/9cw/9cw/9cw/9gwxaclrpQh6sYs/+Yz/dox/tYw+tQv+9Qv/NQvzK0n3bwq/9gw"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-TG",
+   "wikidata": "Q12713",
+   "name": "Thurgau",
+   "capital": "Frauenfeld",
+   "capitalNote": null,
+   "flagFile": "CHE Thurgau Flag.svg",
+   "flag": {
+    "src": "regions/ch-tg.png",
+    "author": "Original: Unknown author Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Thurgau_Flag.svg",
+    "print": "X76J8vr2/////f79+vv+////6OjhubF00c2v9fD18fDm9PTw/v///f3++fv/////AJM4Lqtj0+7d+fX8vLNnycSY0My5sZkAz9CyxqO4tJFdzLod1MyW7ezlvbRy9fX1AptJAJNADJxKfrumzbZK07gj3dinv6wp2shG3sUyy6gM278AtKhRzsFgzLgv7e7zHYwzOn4kQoIeb4gIYr2T1dyi7cwg0LUA27sA/94C7tEAvqgY4+XqycGF5OHK////YZ4imp0MfZoWhJMUAm4oUaVhv9vM9N+Vs6ZDuqkmy7QX7tEL6NQ/2djKxL6S+fn0G5c5prAOk58OiZMPWV8XybEAeJYekdrXysGWrZgg3Nu+w646wJsA69U3u7WKysWeAJBDt7gN4bkA9dkB58sB0bMCPH0dH4QmZahbvrxc4sQ24sgVxbNL9dIAu61O2NbEAJhFJJM0iZoP3r4A58EA2bgAcKshW5MeXo8UL6VsxOLF+PDj8fL229GC28Qg6ObZAJlDAJlIBJVDJJEyS50pfaob06cB28EFkJ8RKXEWPIwvsd7A4tzXppUz0boT7OveAJlEAplDA5pEAJRIFo8+yL8Hhp4TcKAc0sUGnKEOVIIVD48wTLJ9wLt78OXH+/7/AZhDAJxHEoEyc3sKZpYb5MMAPpYsD3kydY0RvbgJEZM+AJpJAJU6MbF01fHo////AJlEAJpFBI8+Mo8sRpUnH5U2AJlEG4oyYZUcFpU7AJhGAplDA5pHAJM5CppEn9m5"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-ZH",
+   "wikidata": "Q11943",
+   "name": "Zürich",
+   "capital": "Zürich",
+   "capitalNote": null,
+   "flagFile": "CHE Zürich Flag.svg",
+   "flag": {
+    "src": "regions/ch-zh.png",
+    "author": "Original: Unknown author Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Z%C3%BCrich_Flag.svg",
+    "print": "Ybzp8/r9////+/3+/v//////////////////////////////////////////////AIzbL6bj0Ov4////+/3+/v7/////////////////////////////////////////A5TdAI7bDJXdnNXx/////f7//P7/////////////////////////////////////AJPdApTdApLcAI3bYrzq8/r9////+/7+/v//////////////////////////////AJPdAJPdAZPdA5TdAIzbLaXjz+r4////+/3+/f7/////////////////////////AJPdAJPdAJPdAJPdA5TdAI/bDJXdndXx/////f7//P7+////////////////////AJPdAJPdAJPdAJPdAJPdApTdApHcAI3bYrzq8/n9////+/3+/v//////////////AJPdAJPdAJPdAJPdAJPdAJPdAZPdBJTdAIzbL6bj0Ov4////+/3+/f7/////////AJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdA5XdAI7bC5XenNbx/////f7//P7+////AJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdApTdApHcAI3bYbzq8vn9/////P7/AJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAZPdA5TdAIzaLqbj0Ov4////AJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdA5XdAI7bDJXeodfz"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-AG",
+   "wikidata": "Q11972",
+   "name": "Aargau",
+   "capital": "Aarau",
+   "capitalNote": null,
+   "flagFile": "CHE Aargau Flag.svg",
+   "flag": {
+    "src": "regions/ch-ag.png",
+    "author": "Unknown",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Aargau_Flag.svg",
+    "print": "AAAAAAAAAAAAAAAAAAAAAAEBAAAAAAcLAIHBAJfjAJLbAJPdAJPdAJPdAJPdAJPdAAAAAAAAAAAAAAAAAAAAAAABAAAAAAgLAIHBAJfiAJLbAJPdAJPdAJPcAJPdAJPdAQEBAAAABAQEAQEBAQEBBAQFAQAAAQgMAIDAApjkApTeAZLcAZLcApTgApTeAJLcAQEBAgICAAAAAgICAgICAAAAAgAAAQkMAILFBJDcBYXMAJXhAJXiBobNAozXAJXhmZmZpKSkfn5+n5+fn5+ffX5+p6Wki5SYAHOwcrLSqsTREYnGDYbDqsfVcq3KAIfMxsbGvr6+19fXwsLCwsLC1tfXxcPBr7e7AHy6Y6fJi7nQDYbGCYPEi7zUZKPCAIrRy8vK0tLSuLi4zs7Oz8/Pt7i41tXUtr7BAoLCAZDeAIDLPZrIO5jHAILOAo3YAJTekpKSh4eHrq6ujIyMjIyMra6ujYuKfoWJBoXGAJjmC4fGvM7XucnSDInHAJXhAZPdAAAAAAAABAQEAQEBAAAAAwMEAAAAAAgLAIHBAJjkA47VDo7ODo3NA5DYAJPeAJPdAgICAwMDAAAAAgICAgICAAAAAwEAAgoNAIDBAJfiAJPcAJPfAJPfAJPdAJPdAJPdAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAcLAIHBAJfjAJLbAZPcAZPdAJPdAJPdAJPdAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAcLAIHBAJfjAJLbAJPdAJPdAJPdAJPdAJPd"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-BS",
+   "wikidata": "Q12172",
+   "name": "Basel-Stadt",
+   "capital": "Basel",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Basel.svg",
+   "flag": {
+    "src": "regions/ch-bs.png",
+    "author": "Edi Hauri",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Basel.svg",
+    "print": "/////////v7+////5OXlqaqqsrKy6enp/////f39/////////////////////////////f39////qqqqCwwMBAQEAAAAERISnZ2d/////f39/////////////////////v7+////////KysrKSkpfn9/RUVFAAAABQUFxcbG/////f39/////////////////////f39////aGhoGxwcSEhIpKSkBAQEAAAAenp6/////Pz8////////////////////////////+/v7wMDA1tbWhISEHBwcHBwcSUlJ5OTk/////v7+////////////////////////+/v7////srKyLi4uQ0NDRUVFMjIydHR0/////v7+/////////////////////////v7+////8vLyPDw8FRYWHR4eGBkZwcHB/////Pz8/////////////////////////v7+////6urqFBQUAAAABAQEAAAAq6ur/////Pz8/////////////////////////Pz8////v7+/AgMDBAUFBwcHAAAAdXV1/////Pz8////////////////////////+/v7////kpKSAAAABAQEAwQEAAAAQ0ND/////f39/////////////////////////f39////Z2dnamtrSUlJGhsbgYKCQkND6Ojo/////v7+/////////////////////////f395eXl////7e3t3t7e////6+vr8/Pz/////v7+////////"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-BL",
+   "wikidata": "Q12146",
+   "name": "Basel-Landschaft",
+   "capital": "Liestal",
+   "capitalNote": null,
+   "flagFile": "CHE Basel-Landschaft Flag.svg",
+   "flag": {
+    "src": "regions/ch-bl.png",
+    "author": "Original: Otto Plattner Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Basel-Landschaft_Flag.svg",
+    "print": "//////////////////39/fz88///1oOD2IuL1XJy4LGx+v///fr6/////////////////////////vz8////1KamxiEhyQwMywAAyAAAwAwMwDAw6+Tk/////v39//////////////39////3La21SMj1gAA2gMD1X5+5ODgyV5euwAA1J2d/////vz8/////////////v39////xq6uyQICwgAAxjg4vaysz319tUpKuRER3La2/////v39/////////v39////1bq6swwMuQMDugAAuQAApyEhw3t7zlNT0oaG//////39/////////////v7+////5uDgtDo6wQAAuAMDvgAAwYOD+////P//+f39/vz8//////////////////////z8/f//zGxs4wAAygMD3wAA18LC/////Pr6/v7+//////////////////////////39+f//0D096wAAzwYG6gAA1Zqa/////vv7/////////////////////////v7+////6PDw2yAg5wAAywYG6wAA0XNz+/////z8/////////////////////////v39////5szMxh8fvkVFuQ0NwU9PyEZG/P////7+/////////////////////////vz8////z6qqy5+f28nJlTo69Pf3sXBw8+7u/////v7+////////////////////////////7u/v/P397u3tu7a2////7O3t9fX1////////////////////////"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-SG",
+   "wikidata": "Q12746",
+   "name": "St. Gallen",
+   "capital": "St. Gallen",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Sankt Gallen 2011.svg",
+   "flag": {
+    "src": "regions/ch-sg.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Sankt_Gallen_2011.svg",
+    "print": "AJkzAJkzAJkzAZk0AJovH5NFMZZSG5BCHJJEAJkxAZk0AJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzA5o1AJYoS55n7Onrtb24dpd/AJYpApo0AJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAZkzAJoxE5M+QIhYZI1yXY5uEYs6AZk0AJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJs0AJAuNn5LUpZoTI5iP4NWAI0uAJs0AJgzAJkzAJkzAJkzAJkzAJkzAJkzAJgzAZw1AIkrRXZVrLyxn6+kRnpXAIgqAZ01AJgzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJs0AZAxDXAuk7OejKqWDXEuAY4wAJw0AJgzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJgyBJw3c5B9E3MsDWsme5uGAJYyAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJozBJU0IHc9VpRqUZJnIns/ApEyAJs0AJgzAJkzAJkzAJkzAJkzAJkzAJkzAJgzAZw1AIkqNXhL0NHQwcPCN3pOAIkrAZ01AJgzAJkzAJkzAJkzAJkzAJkzAJkzAJgzAJs0AI0uPHJOTY5jRYZbQHdSAIotAJw0AJgzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAZgzJopHb5d9aZR3KYxKAJcyAJozAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAJkzAZk0AJwqKYtFK5JJAJopApk0AJkzAJkzAJkzAJkzAJkz"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-SO",
+   "wikidata": "Q11929",
+   "name": "Solothurn",
+   "capital": "Solothurn",
+   "capitalNote": null,
+   "flagFile": "CHE Solothurn SO Flag.svg",
+   "flag": {
+    "src": "regions/ch-so.png",
+    "author": "Original: Unknown author Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Solothurn_SO_Flag.svg",
+    "print": "8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AEB8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8AAA8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O8Q4O/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx/vHx//////////////////////////////////////////////////////////////////7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+//7+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-JU",
+   "wikidata": "Q12755",
+   "name": "Jura",
+   "capital": "Delsberg (Delémont)",
+   "capitalNote": null,
+   "flagFile": "CHE Jura Flag.svg",
+   "flag": {
+    "src": "regions/ch-ju.png",
+    "author": "Original: Paul Boesch Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Jura_Flag.svg",
+    "print": "////9Onp6JSU6IyM8uHh/v//////8+fn2QoK8wAA7gEB7wAA7wAA7wAA7wAA7wAA+vr63DMz1DIy3Do64Rsb8ujo////8unp3UxM+EtL80xM9ExM9ExM9ExM9ExM9ExM+Pf33y0t6BYW3JSU4wAA56Wl////8vHx5ufn/////v7+////////////////////////9Ofn8d/f6rCw6gAA5oGB////8unp32lp+25u9m5u925u925u925u925u925u/////vz8////3Y6O3gAA2mRk////8+Xl2QoK8wAA7gEB7wAA7wAA7wAA7wAA7wAA/v39////4MDArUhIsE5OrkVF1aen9fn55MfH/9/f/Nvb/dzc/dzc/dzc/dzc/dzc/v39////7OTkvzY2xxkZvSAg587O9vn55MnJ/+Li/N7e/d/f/d/f/d/f/d/f/d/f/v39////8ufn5hcX9wAA6wAA7tLS9fHx2AgI8wAA7gEB7wAA7wAA7wAA7wAA7wAA/vz8////7MbG5wAA8wYG6wAA6KGh9vz83mRk+mxs9Wxs9mxs9mxs9mxs9mxs9mxs/vz8////5ZWV2SIi6hMT2B4e43R08///5uPj/////v7+/////////////////////v39////1IeH6tDQ11pa7MvL14uL7OLi305O+EtL80xM9ExM9ExM9ExM9ExM9ExM/////Pz87OXl/v396+Pj/v7+7+vr7d/f2gwM8wAA7gEB7wAA7wAA7wAA7wAA7wAA"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-GE",
+   "wikidata": "Q11917",
+   "name": "Genf",
+   "capital": "Genf",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Geneva.svg",
+   "flag": {
+    "src": "regions/ch-ge.png",
+    "author": "Original: Werner Luzi for Louis Mühlemann (1977) Vector: Swiss Army",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Geneva.svg",
+    "print": "z6kA7coA/9cA/dEA+9IAt4gGnGAOz6EE3DY49DBD5js51l4k3DU43yo+4TA85Tw4mH4BTT4B8ssA/9cA3qgFazcUTicTk2MK4z438ytF5E0xz6MHzY4N46MK1ZMN0l0jq40AOjACSz8AtIkGpVoThS0iKBATMyYC3jg49S1F5Egz1bEA16oEyG0Z3q8D02wcs5MBa1kBPjQBNSoC3roAy6ICeFkEDAUE0i44+DBE5EYz2LkA3asFxUUp5KQL3n4Z17EAgWoBTD8BIRwBIhwCFRICEBIBDAMF0y849y9F5Uwx0J4GzpgL4LIF06QFylQk6cAAknkBaFYBQjcBSD0BMikCbFwACAAF1C84+C9F5Esy1qQG0Ewr30A13EMy3Ekv/9YAr5ABUUIBbloBRjsBY1IBTUIBBwAF1C849y9F40wx16oD5jY89C5D8TBC8i9D/9MAzqkB2bIBNSwCrJAAbFoBGRcBPi0Eyig3/DBFykkqpI0A1jk08zFC7TQ+7jNA/s8A/+MA4MEA0bAAlHYEAAADwqQAi3AEvhs4+jJExlEknYwA00Mv8C9C7zNA7zNA/9IA0KIE78AD7K0KsG8PnoMB/+sAhGIGrCcur3wJtoMKyU8ntI8FqWwO4DE88jNB/NAArHwIpkcdu2UXsYEI984AyqgAWEEEyC402kkvwmoYrYUFymQd1UQv6jM+8DNA/9MC6boFy5EL27sAfGcDlXkDw6MBjm4FyiY5/y9I1Ds0q2oS4jE99i5G7jRB7jRB"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-VD",
+   "wikidata": "Q12771",
+   "name": "Waadt",
+   "capital": "Lausanne",
+   "capitalNote": null,
+   "flagFile": "CHE Vaud Flag.svg",
+   "flag": {
+    "src": "regions/ch-vd.png",
+    "author": "Original: Unknown author Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Vaud_Flag.svg",
+    "print": "/v7+////5+PF8fDj5uK/2NOr4dy129az2da+4tuu3tm63dm5yMKR0M65/////v79/v79////1MuP0MujyL5xtapVvLJktqtdtK19wLFH0MiRz8iQv7VmxcGm/////v7+////////+/z69/fz+vn2/v//39ejwLqWzMeZ2NOu/f3//Pz7/Pz7+vr3/v7+/////v/+/v/+/////f39/Pv1////2tKcwLuU1dGr5+TH////+vr5+/v6/////v/+/v/+/////v78////0siLxrp3xryDzcSTx7x/wbNkxrlq0cV+vK5SyMSu/////v79////8Pj07/fz8vr619y51NvDxsus0dWs2d7B1detzM+b0NOpy86bz9bD8vr38Pjz8Pj0DZ5ODZ5ODZ5NEaJXEqNWFKVaEaNZEKJWEaNZEqRcEqRZE6VdEqNVDZ5NDZ5ODZ5OAJhBAJhBAJhBAJY/AJZAAJY/AJY/AJc/AJY/AJY+AJY+AJY+AJY/AJhBAJhBAJhBAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAZlFAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlEAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlDAJlD"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-NE",
+   "wikidata": "Q12738",
+   "name": "Neuenburg",
+   "capital": "Neuenburg (Neuchâtel)",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Neuchâtel.svg",
+   "flag": {
+    "src": "regions/ch-ne.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Neuch%C3%A2tel.svg",
+    "print": "FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98G/5S4r6UhF7nVz5jYz6EA9FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////97696lZU8IaE9ru67nFv6lZTFqdOFqdOFqdOGKhPDaNHruDC/////P79//38////97696lZU8IaE9ru67nFv6lZTFqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98G/5S4r6UdF7nVy5jYz6EA9FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98C/5zk26EVC5zw56EVC6ENAFqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98C/5zc06EVC6ENA6EI/6EI/FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98C/5zc06ERB6EI/6EI/6EI/FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98C/5zc06ERB6EI/6EI/6EI/FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98C/5zc06ERB6EI/6EI/6EI/FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98C/5zc06ERB6EI/6EI/6EI/FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98C/5zc06ERB6EI/6EI/6EI/FqdOFqdOFqdOGKhPDaNHruDC/////P79//38////98C/5zc06ERB6EI/6EI/6EI/"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-BE",
+   "wikidata": "Q11911",
+   "name": "Bern",
+   "capital": "Bern",
+   "capitalNote": null,
+   "flagFile": "CHE Bern BE Flag.svg",
+   "flag": {
+    "src": "regions/ch-be.png",
+    "author": "Original: Hans Jenni Vector: ARK",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Bern_BE_Flag.svg",
+    "print": "wo4AtW8Ai4MAjnoA0bgE55AA5icA8gEA7AAA7gEA8AIA8AAA8AAA8AAA8AAA8AAA4LIAsFsAdFQAMigALCwrNToQNzQA5IcB/0EA8wIA6wAA7gEA8AIA8AAA8AAA8AAA/ecA7dIAt4sAYE8ABQUFAQEEAAAAHSUAb2QA6IsA/0MA9gQA7QAA7gEA8AIA8AAAyqgASBAAZTsA6c0Av6YAgXAAEA4AAAAAAAAAKi4AcGUAznQA/TwA9gMA7gAA8AIA374ADgkALy0AMisAKSMAKSQALykAAAAADgwACgkAAAAADxYAZVwA1n0A+DkA7gAA/+8AgHcAVEQAJiEAEA4AKCEALikAAAAAHRoAKCQAAwAAAwIAAAAAAw0AqJYA/6AA9WMA/MQA//AA07kARxAAn4cAMy0AAAAAX1MAVEsACwAASQQADwUAAAAAW1AA/+8A7wAA7QoA/GoA1pcAQRoACA0AAAAAJyIA2L0ALScAAAAANCQABQMAAAAARDsA/tsA8AMA7wEA7wAA8Q4A61kAuIYAfHoAoYgAhkkARDwAAAAAV08AOzMAAAAAFhMA5ccA8AAA8AEA8AIA7wEA8gAA+hUA/3oA26EAOh8AGB4AIBkAzK0AzbQAEQ8ABQUA1bkA8AAA8AAA8AAA8AEA7wIA7QEA6wAA7QwA7lwAypYAx78AhFUAHgAADxIAWU0A8tMA8AAA8AAA8AAA8AAA8AAA8AEA8AMA8AEA8gAA+BIA/3EAz54AbEMAvKIA/+UA/N0A"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-LU",
+   "wikidata": "Q12121",
+   "name": "Luzern",
+   "capital": "Luzern",
+   "capitalNote": null,
+   "flagFile": "CHE Luzern Flag.svg",
+   "flag": {
+    "src": "regions/ch-lu.png",
+    "author": "Cantone Ticino",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Luzern_Flag.svg",
+    "print": "/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////v///v///v///v///v///v///v///v///v///v///v///v///v///v///v///v//////////////////////////////////////////////////////////////////8fn98fn98fn98fn98fn98fn98fn98fn98fn98fn98fn98fn98fn98fn98fn98fn9DpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfDpnfAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAJHcAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAZPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPdAJPd"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-ZG",
+   "wikidata": "Q11933",
+   "name": "Zug",
+   "capital": "Zug",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Zug.svg",
+   "flag": {
+    "src": "regions/ch-zg.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Zug.svg",
+    "print": "/////////////////////////////////////////////////////////////////v///v///v///v///v///v///v///v///v///v///v///v///v///v///v///v//////////////////////////////////////////////////////////////////8/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n8MpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLI4rLMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHPMpHP8/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n88/n8/////////////////////////////////////////////////////////////////v///v///v///v///v///v///v///v///v///v///v///v///v///v///v///v//////////////////////////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-UR",
+   "wikidata": "Q12404",
+   "name": "Uri",
+   "capital": "Altdorf",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Uri.svg",
+   "flag": {
+    "src": "regions/ch-ur.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Uri.svg",
+    "print": "/9cw/9kwq5Ah1rgp/90y/dYw/90x/94y/94x/90x/dUw/94y2bwqqY4g/9kw/9cw/dUw/+EyuJwjPjQM/d0w/dkx3Lkpza0nza4n3boq/dkx+NgvOjEMtpoj/+Ey/dUw/tYw/tgw/+sySEANZVgdQzkLAgMAAgMBAwMBAgMBRToMWEwbQTkM/+sz/9kw/tYw/9kw8swvm4YqYVQaQ0NDDxIZBAYGCAkKCAkKBAUGDhAYRERDZFcanIcq8swv/9kw/9kv8s4zODEVCQwXNjYyRkdGNzc2GxsbGxsbNzg2RERDMjIuERQgMSwU78w0/9kv/tYw/9ww8M4s17UnfGkYCw0TNjY1BQUFCAgINDQyCgwSe2gX07En7Msq/9ww/tYw/9cw/tUw/dcx/+Uz5MYtEAwAGBkcCwwLDg8OFhcZDgwA5MUt/+Yz/Ngx/tYw/9cw/9cw/9cw/tYw+9Mw/98yg28XExgdCwwKDg4MERQagm8Y/94y+9Mw/tYw/9cw/9cw/9cw/9cw/9cw/NQw/+Eyr5olLSQpBgQDBgYELSUprJck/+Ey/NUw/9cw/9cw/9cw/9cw/9cw/9cw/NQw/+Myvo0jZjIuNBsaNRwbZzIuvI0j/+Iy/dUw/9cw/9cw/9cw/9gw/9gw/9gw/tYw/98w77gwpGIm2Go11mw0pWEm8bsx/94w/tcw/9gw/9gw/9gw/9cw/9cw/9cw/9cw/9Yw/Nkv56wvzYUszoYs560v/Nkv/9Yw/9cw/9cw/9cw/9cw"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-SZ",
+   "wikidata": "Q12433",
+   "name": "Schwyz",
+   "capital": "Schwyz",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Schwyz.svg",
+   "flag": {
+    "src": "regions/ch-sz.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Schwyz.svg",
+    "print": "6EI/6D886UtI7nh26EE+6EE+6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6ERB50A961tY97696EZC6EVC6ENA6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/61xZ9J+e9aqp+tnZ9KGg9J+e6U1K6D886ENA6EI/6EI/6EI/6EI/6EI/6EI/6EI/6UZD6UlG7GNg+MLB6k9L6k1K6ENA6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6Dw56UxJ8IWD6D886D886EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EA95zo36EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6ERB6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/6EI/"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-GL",
+   "wikidata": "Q11922",
+   "name": "Glarus",
+   "capital": "Glarus",
+   "capitalNote": null,
+   "flagFile": "CHE Kanton Glarus Flag.svg",
+   "flag": {
+    "src": "regions/ch-gl.png",
+    "author": "Original: Unknown author Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Kanton_Glarus_Flag.svg",
+    "print": "8QAA7QAA0D4A4hMA8gAA7wEA8AAA2C4ApE8Bu08A5hMA8AAA8AEA8AAA8AAA8AAA7wIA8wAAu04A2yYA8wAA7gAB6hIAi4ABiZeTgpVNx2YA8wAC7wIA8AAA8AAA8AAA7wIA9AAAzjYA2DcA9AAA8gIA/gEAwkQAent2a2Y/wyQA9wAC7gEA8AAA8AAA8AAA7wIA9AAA0SwBuVAG7QAD4AEAtwABSAMBBAcACAkBGgEC0gAA9wAA7gAA8AAA8AAA7wEA9QAA1woDrHpimUJDOQAAGwABLi4M3MYqqZMFAAcBZQAB/QAA7QAA8AAA8AAA7wAA8gAA5QIAwlUJ5AcI6QAAzwAAJRoYbm9nFhcPHwAAeQEB8AAA8AAA7wAA8AAA8AAA7wAA9AAAw0sA4AcA/wAAwgEAFgEBCAAAAAACXwEB/wAA7QAA8AAA8AAA8AAA8AAA7wEA9AAAwT0B3hwA/wAApgIAEAMDJAUFAAMDOAEB9AAA7wAA8AAA8AAA8AAA8AAA7wIA9AAAyjIA1CkA/wAAkQIBAQICKwICAAICHgIC3wAA9AAA7wAA8AAA8AAA8AAA7wIA9AAA3SgAwi0A/wAAggIBAAICKwICBAICAgICyAAA+QAA7gAA8AAA8AAA8AAA7wEA9AAA2xIAvj4A6QAAVwIBFAEBWAEBNwEBAAICpgAA/QAA7QAA8AAA8AAA8AAA8AAA8gAA5wIA0h0ApwAAfgEB0QAA/AAAtQAAgwEB3gAA8wAA7wAA8AAA8AAA"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-NW",
+   "wikidata": "Q12592",
+   "name": "Nidwalden",
+   "capital": "Stans",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Nidwalden.svg",
+   "flag": {
+    "src": "regions/ch-nw.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Nidwalden.svg",
+    "print": "6EZD6EE+2lFP1UpI00A91URC0VhWx5STyJST0lRS1UZE0j481UxK21BN6EE+6ENA6EZD5jg0z4GA39zc2sLC8+jo0q+u0cjI08jI066u9Ovr176+4d7fz3h25zg16ERB6EVC5zo3y3Nx0JaVxG5s7+Xl7fHxz7+/0MDA7/Pz7d7fw2ln0ZqZy21r6Do36ERB6EVD5zk2x3V0z7Cvx4yM9PLy6O/vz8HB0MLC6vLy8u7uxYmI0LOzyG5s6Do36ERB6EVD5zk1yXt61MPD0auq4snJ0JaV0cbG0sbG0JST5MzMzqal1cbGyXNx6Dk26ERB6ERB50E+5klG5DYz3Cwp3yonzHx7zcvKzMrLznV03yon3Swo5Tg150lG50E+6EI/50NA6UNA4zo33HZ13Kak2YmIyp6dwsXFxMbGy5qY2oyK3aWk3HJw5Dk26UNA6EI/50VD6Dc014iH2sfG3m9u2nZ14qWk1oOB2IeF4qOi23Vz3XJw2srK14B+6Dc06ERB6EVD5zQx2J+e27y73D064FhV1YWD20xJ2k9M1YWD4FRS2j8928PC2JaU5zQx6EVC50NA6UE+3URB25ua3Lm40rCv5/Dw1VVT1l9d5/Hx0a6t3bq625eW3kI/6kI/6EI/50NA6EI/6kE94zYy50E+1Do339DQ2H582oaF3crK1DYz5kE+5DUy6kE+6EI/6EI/50JA6EI/50I/6ERB6UNA6T472F5c26uq2qmo2VpX6j476ENA6ERB50I/6EI/6EI/"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-FR",
+   "wikidata": "Q12640",
+   "name": "Freiburg",
+   "capital": "Freiburg im Üechtland (Fribourg)",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Fribourg.svg",
+   "flag": {
+    "src": "regions/ch-fr.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Fribourg.svg",
+    "print": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4O8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx/////////////////////////////////////////////////////////////////v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-OW",
+   "wikidata": "Q12573",
+   "name": "Obwalden",
+   "capital": "Sarnen",
+   "capitalNote": null,
+   "flagFile": "Flag of Canton of Obwalden.svg",
+   "flag": {
+    "src": "regions/ch-ow.png",
+    "author": "Rudolf Münger",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Obwalden.svg",
+    "print": "6EI/6EI/6ENA6D883VJQ2GNh00dFzXVzzX175z066ENA6EI/6EI/6EI/6EI/6EI/6EI/6EI/6ERB6Ds4x2ZlzcPE6uLi5O7v06uq5Ts36URB6EI/6EI/6EI/6EI/6EI/6EI/6EI/6ENA6Ds4y2hmw6GgxIyM3eXl1aqq5Do36URB6EI/6EI/6EI/6EI/6EI/6ENA6ENA6EVC6Dw5ympozLy73MfG5e7u06qp5Ds46UVC6ENA6ENA6ENA6ENA6ENA6kA96kA96kE+6jk2ymRizLCv3rOz3dfX1q2t6Dk260A96j886kA96kA96kA96kA92UdE2UdE2UdE2UZD2ElH11BO0zg2wG9uwJ+e1D073VBO2kdE2UZD2UdE2UdE2UdE9fDw9fDw9e/v9vLy9fX179ra59PSmkdGkCUjx6Kh8Nzc8e3t9/X19e/v9fDw9fDw//////////7+/f//2JmXzHZ1y5eWpDIvpBoXu3d10o+OzHRy8+zs/////v7+/////v7+/fz8////6tbWwk1L9vf34t7dxpWUy5CP0Ly7/f//znZ11ZKR/////fv7/v7+/v///v7+////+fn50ZWUvH9+nUtK28XF9v39qWFfsGxrx4SC7t7d/////f7+/v///v///v///v///v///P7+wH9/sk5M69vb+vj4x4GAr05M6N3c/////f39/v///v///v///v///v///f7+/vz8/v//4bq5ynNyyHNx1ZGQ9vX1/////f39/v///v///v//"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-AR",
+   "wikidata": "Q12079",
+   "name": "Appenzell Ausserrhoden",
+   "capital": "Herisau",
+   "capitalNote": "Sitz von Regierung und Parlament; das Kantonsgericht sitzt in Trogen.",
+   "flagFile": "Flag of Canton of Appenzell Ausserrhoden.svg",
+   "flag": {
+    "src": "regions/ch-ar.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Appenzell_Ausserrhoden.svg",
+    "print": "//////7+////6uHg7+jo/f///v399PX119jYubS0zc7O/////v7+/////////////////Pz8////hnl4d3V1//////T0t6WlPzQ0FAoJTUpK8/Pz/////v7+/////////////f39////3N3dPkBAXmBgoJmZx7KyVk9PAQQESUhI/////v7+/////////////////////v7+////5+fnV1dXHiAgLzQ0BgcHAAAAUlRU/////Pz8/////////////v7+//////n5i3NyvL6+8/PzTExMAgICBwgIBgcHxcXF/////Pz8/////Pz8////+fj4+vv7/vr6kIOCQkREMTExX2BgYWJiCw0NAgICzM3N////+Pj49fX1/v7+////6+vrbW1t5OXl////qqqq1tbWoqSkXllZEwwMAAAAWVlZ5eXloKCg6erqlZWV+vr6////lJSUlJSU7OzszMzMoaGhAAAAQ0JCVFFRAAAAZmZm5uXlY2Njw8PDgICA9/f3////+/r6aGhoq6ys////fn9/DxAQ////iIiIAAAAgYGB6OjoYmFhfX19u7u7/////f39////ysvLxcHBuKamT1FRHR0d+vn5+vv6UlNTPj4+2dranJyc+vr6qaqq3+Dg/////v7+/v////z8oYuLaWpqh4eH/v7+taCgQT09HB4e19fX////+/v7/////v7+/////////f39/f39/////////v39////1sjIlIeG5OXl/////f39/v///Pz8/v7+"
+   }
+  },
+  {
+   "cc": "ch",
+   "iso": "CH-AI",
+   "wikidata": "Q12094",
+   "name": "Appenzell Innerrhoden",
+   "capital": "Appenzell",
+   "capitalNote": null,
+   "flagFile": "CHE Appenzell Innerrhoden Flag.svg",
+   "flag": {
+    "src": "regions/ch-ai.png",
+    "author": "Original: Unknown author Vector: SpinnerLaserzthe2nd",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHE_Appenzell_Innerrhoden_Flag.svg",
+    "print": "/////v7+////8OvrtJub8/Dw/////f396u3t2NPTure36uzs/////v7+/////////////v7+////5t7eKCAg0NLS////59LSXlRUJhcXEwgIioaG/////v39/////////////////f39////nqCgGRoaZmRku5mZm4CAHh0dBQcHiIiI/////Pz8//////////7+//////7+r42N2tLSwcPDIyQkKjAwGR0dBQUFAAAAoKCg/////Pz8/////////v7+//////f3a1RUJykpl5eXTExMAwMDCQgIAAAANzg4+vr6/////v7+/////////////////f39////vL29b3BwgoODhYaGIiUlAAAAPT4+/////v7+/v7+/////////////////////v7+/v7+////z8/PioqKMSMjAAAAAAAAoKCg/////Pz8/////////////////////fz8////xcXFAQICDAwMaGFhGBgYAAAAoaGh/////Pz8/////////////////////Pz8////tbW1AAAAuLi49vX1FRQUAAAAyMnJ/////Pz8/////////////////////vv7t5yceHl5BAQEtra2////vL6+ERISf4CA/////Pz8/////////////////v7+////rouLZ2NjbW1t1djY9OPjd19fJyoqOzs7/v7+/////v7+/////////////////////////////v7+/////fb2n4GBpJ6e9fb2/////v7+////////"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-WA",
+   "wikidata": "Q1223",
+   "name": "Washington",
+   "capital": "Olympia",
+   "capitalNote": null,
+   "flagFile": "Flag of Washington.svg",
+   "flag": {
+    "src": "regions/us-wa.png",
+    "author": "WA Secretary of State",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Washington.svg",
+    "print": "AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AYQ8AYQ8AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AoU9AIVBAIVBAoU9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AYU9AIFAG34rGn0rAIFAAYU9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AYU9AIA+Wn4ViZssgpQpXoMVAIA/AYU9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AoQ8AIVDPH4feqdQeMXVgcnXgqZKOH8gAIVDAoQ8AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9A4Y9AH4/aI0cPbeouZKUkoKHPKuaXIUcAIBAA4U9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9A4U9AH9AYYUZN7uudI2aKTxGNaKOXIceAIBAA4U9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AoQ8AIVCNH4jf5c7d52hOjYyemsKMYYtAIRAAoQ8AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AIQ9AYU9AIE/U30WsZQZloAIUYIaAIA/AYU9AIQ9AIQ9AIQ9AIQ9AIM9AIM9AIM9AIM9AIM9AYQ9AIJBCn4yD4I2AIFAAYQ9AIM9AIM9AIM9AIM9AIM9AIc+AIc+AIc+AIc+AIc+AIc+Aoc+AIdBAIdAAoc9AIc+AIc+AIc+AIc+AIc+AIc+AIQ8AIQ8AIQ8AIQ8AIQ8AIQ8AIQ8AYM8AYM8AIQ8AIQ8AIQ8AIQ8AIQ8AIQ8AIQ8"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-ID",
+   "wikidata": "Q1221",
+   "name": "Idaho",
+   "capital": "Boise",
+   "capitalNote": null,
+   "flagFile": "Flag of Idaho.svg",
+   "flag": {
+    "src": "regions/us-id.png",
+    "author": "Paul B. Evans, based on a work by the Adjutant General of Idaho and Emma Edwards Green",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Idaho.svg",
+    "print": "ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ATh1ATd2ATd2Ajh1ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ATh2ADN8ADR1ADR1ADJ8ATh2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ATh1ADN5L0tOb284bW46M09RADJ6ATh1ADd2ADd2ADd2ADd2ADd2ADd2ADd2Ajh1ADJ8MFFUl5BJhZukgpedl4w9MFFWADJ8Ajh1ADd2ADd2ADd2ADd2ADd2ADd2Ajh1ADN9WGA0jYpwdYiXY36Kf3RQXWU8ADF8Ajh1ADd2ADd2ADd2ADd2ADd2ADd2Ajh0ADN+N05HjHYiW2FHWFQ9hF8QNExKADN+Ajh0ADd2ADd2ADd2ADd2ADd2ADd2ADd2BDl0Bzx2TVk3g3UihnskUlw2BTp1BTl0ADZ2ADd2ADd2ADd2ADd2ADd2ATh1ADN5RmJVY2tLCDlzF0dqF0ZqBzZ1Zm1JQ2BXADJ5ATh1ADd2ADd2ADd2ADd2ATd2ADV3E0RtemFGtmoyoGA8oGA8tm4xe2BGE0NtADV3ATd2ADd2ADd2ADd2ADd2ADd2ADd2ADV4ADN6CjdzHz5rH0BqCjpyADN6ADR4ADd2ADd2ADd2ADd2ADd2ADd2ADd2ADd2ATd2Ajh1ADd3ADV4ADV5ADZ3Ajh1ATd2ADd2ADd2ADd2ADd2"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-MT",
+   "wikidata": "Q1212",
+   "name": "Montana",
+   "capital": "Helena",
+   "capitalNote": null,
+   "flagFile": "Flag of Montana.svg",
+   "flag": {
+    "src": "regions/us-mt.png",
+    "author": "N.a",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Montana.svg",
+    "print": "ACqGACmGACKLACWJACWJACaIACSLACaJACSKASeIACiIACOKACiIASaJACqGACqGACmHBC2EP1RpJ0R0KkdyIEB3NU5tKUZzOFBsIj94Fzh8Nk9tFjd9JUF2ACmHACqGACiIBy+C0L0heH5NgIFLYW5YtaovTlxkVGNffH5NaXNUrKM0WmlbnpY8CTCCACiHACqGASuGHj15DDGBGDt6Ci+EGjp7TltgUV5hGzt4DTOAFjd9ETZ+HD54AyyFACmGACqGACqGACWJAimGACOMFDJ6u50q/9Yz/9Mix6kvGjt+ACKLASiHACWJACqGACqGACqGACqGAiuFAyyGACGFlJJt/+9Y+9RL+cQc/74PgWk3ACeKAiuFAiuFACqGACqGACqGACqGASqGACmICC1/urxo3OSIurt5q6ONlYZ8kH1iCzKCACiHASqGACqGACqGACqGACqGASqGACiHDzGEdKEbTKsAeK8jlrB4k8PqmbrHCi98ACiIASuGACqGACqGACqGACqGACqGAiuFACeNhGk82JgAp6MqqLcwo9ZbcYiTACN/ASuHACqGACqGACqGACqGACqGACqGASuFACiJFzB9p4U/0cZBytIsmqYvGTh3ACaJASuFACqGACqGACqGACqGACqGACqGACqGASuFACeIBzGEOldhPVZlCy2FACaKASuFACqGACqGACqGACqGACqGACqGACqGACqGACqGASuFASmGACGNACGMASmGASuFACqGACqGACqGACqGACqG"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-ND",
+   "wikidata": "Q1207",
+   "name": "North Dakota",
+   "capital": "Bismarck",
+   "capitalNote": null,
+   "flagFile": "Flag of North Dakota.svg",
+   "flag": {
+    "src": "regions/us-nd.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Dakota.svg",
+    "print": "ADpwADpwADpwADpwADpwATpwADlxATlxADlxADlxADpwADpwADpwADpwADpwADpwADpwADpwADpwADpwADpwAjlwGENjLUtXKktYFEFlADlwADpwADpwADpwADpwADpwADpwADpwADpwADpwADpxHkheJUpbFkFjFUNlKExZGUZhADlxADpwADpwADpwADpwADpwADpwADpwADpwAjxwPUJTNUNXE0RqFDxkPkJTPUBUADpwATtwADpwADpwADpwADpwADpwADtwADZvAjJsGTZdIDRUZ2hoYGh3DzBcKTpaBTluADVvADpwADpwADpwADpwATtwADhvFEd0eYaPkH9uS0lMPFdpdIOASktQlINvkZeQL1l7ADZvATtwADpwADpwATtwADZuQmR/gpN+Yn6AYnF7gnB4YWp4aXl/RGmEJ1R5JlJ3ADlvADpwADpwADpwADpwATpxADVyEE1JN2IwMktSoW9eZldNJE1sDTlqADJxATRxADlxADpwADpwADpwADpxD0BnFUNmHUJiJU5aUnFZVnJ0RFFYMVRnADhxG0JjHkZgD0BoADpxADpvATpvADlyGkNiRVdJZEtDgktfKUJpBjxoADdvDjptc0BUeEw4QFZMGEJjADlyATpvADpxADpxAjpxHUVhC0BqNkdre05dgERRhFBbjFJcVkFeDz9pE0JnATpxADpxADpxADlwADlwADlwADdzADhxADZxADduCjlsEDxuBTpuADhxADhyADhyADlwADlwADlw"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-MN",
+   "wikidata": "Q1527",
+   "name": "Minnesota",
+   "capital": "Saint Paul",
+   "capitalNote": null,
+   "flagFile": "Flag of Minnesota.svg",
+   "flag": {
+    "src": "regions/us-mn.png",
+    "author": "Original: Minnesota State Emblems Redesign Commission Vector: Jamie Eilat, Undertiago",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Minnesota.svg",
+    "print": "AC1dAC1dAC1dAC1dAC1dAC1dAS9fACVWGFmFVMzrUsjoUsnoUsnoUsnoUsnoUsnoAC1dAC1dAC1dAC1dAC1dAC1dAC5eAChYOpu/V9LwUcfmUsnoUsnoUsnoUsnoUsnoAC1dAC1dAi5eAi5eAS9eAS5eACZXEk15UsroUsnoUsnoUsnoUsnoUsnoUsnoUsnoAC1dAC1dAihZBSlaACdYATBgACRWNI6zV9PxUcfmUsnoUsnoUsnoUsnoUsnoUsnoAC1dAClaRWOHhJqxJElyACNVDUNwT8PiU8vpUsjoUsnoUsnoUsnoUsnoUsnoUsnoACxcCDRivMfU////hZuyAB1QL4SqV9PxUcfmUsnoUsnoUsnoUsnoUsnoUsnoUsnoACxcCDRivMjU////hZuyAB1QL4SqV9PxUcfmUsnoUsnoUsnoUsnoUsnoUsnoUsnoAC1dAClaRWOHhJqxJElyACNVDUNwT8PiU8vpUsjoUsnoUsnoUsnoUsnoUsnoUsnoAC1dAC1dAihZBSlaACdYATBgACRWNI6zV9PxUcfmUsnoUsnoUsnoUsnoUsnoUsnoAC1dAC1dAi5eAi5eAS9eAS5eACZXEk15UsroUsnoUsnoUsnoUsnoUsnoUsnoUsnoAC1dAC1dAC1dAC1dAC1dAC1dAC5eAChYOpu/V9LwUcfmUsnoUsnoUsnoUsnoUsnoAC1dAC1dAC1dAC1dAC1dAC1dAS9fACVWGFmFVMzrUsjoUsnoUsnoUsnoUsnoUsno"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-MI",
+   "wikidata": "Q1166",
+   "name": "Michigan",
+   "capital": "Lansing",
+   "capitalNote": null,
+   "flagFile": "Flag of Michigan.svg",
+   "flag": {
+    "src": "regions/us-mi.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Michigan.svg",
+    "print": "ACh+ACh+ACh+ACh+ACh+ASh+ACd/BCZ8ByZ6ACd+ASl/ASh9ACh+ACh+ACh+ACh+ACh+ACh+ACh+ASh9ACiBFiJ0YCNaZTxwXzVtYCheGCFyACeDASh9ACh+ACh+ACh+ACh+ACh+ASh+ACeADy1uIyxiPjBIfm9gdmxdNzBMMDJeJDdhACaBASh9ACh+ACh+ACh+ACh+ASh9ACeBEi5vaVY7LjxLWlEsZUwuIDFYbFo8LzxfACSDASl9ACh+ACh+ACh+ACh+ACh+ACh/ACZ9gGI6PUxZDkiGGUKMIDhtimgyFDBxACaBASh9ACh+ACh+ACh+ACh+ACh+ACh+ACWAgmQ2cW5iPZP5SZv0aGtlmG0mByp5ACeAASh+ACh+ACh+ACh+ACh+Ail9ACKDQ0pemm4oRFho2tF58uWkPFV+hGQ0TE9eACKDAil9ACh+ACh+ACh+ACh+Ail9ACWCNEBeNzI/EkGJcq2fl7/iHEKcJy5PLz5kACWCAil9ACh+ACh+ACh+ACh+ASh+ACd+FTFwOk+BF0trGXCtFm2tHE1uN0l3EzBwACeAASh9ACh+ACh+ACh9ACh9ASl9ACZ9EDJ7kZiqcYSQS2V8S2N6aXmLh46hFTV8ACV9ASl9ACh9ACh9ACmAACmAACmAASqAACWADC+CQ1mNXGyXVGWQR12QEjWGACWAASqAACmAACmAACmAACd+ACd+ACd+ACd+ASh+ASV9ACJ8ACd9ACZ9ACB7ASR8ASh+ACd+ACd+ACd+ACd+"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-OH",
+   "wikidata": "Q1397",
+   "name": "Ohio",
+   "capital": "Columbus",
+   "capitalNote": null,
+   "flagFile": "Flag of Ohio.svg",
+   "flag": {
+    "src": "regions/us-oh.png",
+    "author": "John Eisenmann",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Ohio.svg",
+    "print": "MxxTmQs20gotwwkuuQUrxRc90jRa12KJ////AAAAAAAAAAAAAAAAAAAAAAAAAAAAABxaMj1xdBlLyhY+1hxAvQQquAAguwAivAAlvgAnvgUqvwkwwhg4yS5QyDZIxBM6K0N0HTtvCydiKDlssZmv9r/I7qCu3HWL2ldz1jdY0yBFyxM5wQUsugAfvgYswRM4BiRfHTdrVHCXTnCYFzdsWXmd3+/0////////////+/P19Nbc7bvF9q281lx1mQAAEyxjbYOk5Ke17qe0Z3mdAABCIzhsjJi09PT3/////v7+////////////////AAAAHT5yuaW5yRM2wwcsw6G0IkV4HjZrGDBnMEd3mUJl0TpY0jpa0U1p////AAAAfwB/HT1xuKa6yxg6xQsvwqO2H0N1HjZrGTBnPE98nklr0EFe00Fg01Zw////AAAA/39/EipjZHuf4K2766+7X3GXAABCKD1wl6O69/f5/////v7/////////////////AAAACSdgHjhsTGiRRGmSHD5yZYWm5/P3////////+vn69+Lm8czT6rK9856w1VFupgAAKUFzHj1xCihiMDRnuJes97rD6ZGi2md/2Udm1TBTzh5DyAoxwgAnuwAivgYswRM3ABxbNzpvgBlJyxg+0hM4vAAiugAivAAjvAAkvAAnvwQswBE1wiVFxy9P0EVcqlVVMB1TnAkz1AsuwQguuQwwxihHyDZR0HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-PA",
+   "wikidata": "Q1400",
+   "name": "Pennsylvania",
+   "capital": "Harrisburg",
+   "capitalNote": null,
+   "flagFile": "Flag of Pennsylvania.svg",
+   "flag": {
+    "src": "regions/us-pa.png",
+    "author": "Simtropolitan, Jean-Pierre Demailly (old version) permission= Insignia This image shows a flag, a coat of arms, a seal or some other official insignia. The use ",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Pennsylvania.svg",
+    "print": "ACBbACBbACBbACBbACBbACBbACBbACBaACBaACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbASBbASBbACBbACBbAB9eACBdACBbACBbASBbASBbACBbACBbACBbACBbACBbACBbAB9bAB1bASBcAB5XGS1OCCRTACBcASBaAB1bAB9bACBbACBbACBbACBbACBbAB9bCiZbFS5bASBcABtaGRkZFRUXABxZASBcFS1cCSVbAB9bACBbACBbACBbASFbAB5eIzJPRzs4GS5eGy5NZXNeZnFWFSlNGi9gSDs5IjFPAB5dASFbACBbACBbACBbAB5cGjFeTj4/Kyo0fHY+rK95nqh4fHQ8LSozTT0/GTFdAB5cACBbACBbASBbAB5cGC9YREFLMzM6ByFWW1g3jYgXfXcQX1swDSZXNDM5REBMFi5YAB5cASBbACBaASFdFi5ZKDZWPUJSP0g/GTg0SFwXSlsbHzY3P0lCNUFTKDVUGC9ZACFdACBaACBbACBbAB1cMT9KdTwrYzUnRTIxUkIiSTomRTAvWzsnajowNT9JAB5aACBbACBbACBbACBbACBbAR9ZCRtUGBdPDhxWLB5DNh8/ERxTEhdOCxpTAyBZACBbACBbACBbACBbACBbACBbACBbACFcACFeACFcACBfAB9fACFdACJeACFdACBcACBbACBbACBbACBbACBbACBbACBbAB9aAR9aAR9aASBaASBaAR9aAR9aAB9aACBbACBbACBbACBb"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-NY",
+   "wikidata": "Q1384",
+   "name": "New York",
+   "capital": "Albany",
+   "capitalNote": null,
+   "flagFile": "Flag of New York.svg",
+   "flag": {
+    "src": "regions/us-ny.png",
+    "author": "State of New York",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_New_York.svg",
+    "print": "AC1yAC1yAC1yAC1yAC1yAC1yBC9zASdwASdwBC9zAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAS5yAChwH0N7Wm2JVWmHIEN7AClwAS5yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yAy9yCDFxAClzUmR7WWl8ACtzACtxAC1yAC1yAC1yAC1yAC1yAC1yAC1yAC1yACxyBC9yXmV3FzBvIFKAOmF+HjdyRVZ5AChxAi5yAC1yAC1yAC1yAC1yAC1yAC1yACxyBi5xWoekUHWVdIeMfYyNo4lyrZp7BC9zACxyAS1yAC1yAC1yAC1yAC1yAC1yAC1zByttUmiHf4mKnrSwj7G1sJF0k31rDDR1ACxyAS1yAC1yAC1yAC1yAC1yAC1yAC50DSdoXWSHbH6MiJKVcoucqY15nXVgACdyAC5yAC1yAC1yAC1yAC1yAC1yAS1yAC50EipoXV6AYIubfISBYX2GuZlwoHBXACRvAC9zAC1yAC1yAC1yAC1yAC1yAC1yAC50CyZoWFR7ZoeRkItncn1nuZhlpHJUACJuAC9zAC1yAC1yAC1yAC1yAC1yAi5zAClwI0V9qKu4rKekcXVraXRywLOox7arI0V+AClwAi5zAC1yAC1yAC1yAC1yAC1yACtxDjd3IUeAbH+ef42lf42laH+hHESCDjh3ACtxAC1yAC1yAC1yAC1yAC1yAC1yAC1yACtxACduACVuETl2Ejl3ACVtAChuACtxAC1yAC1yAC1yAC1y"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-VT",
+   "wikidata": "Q16551",
+   "name": "Vermont",
+   "capital": "Montpelier",
+   "capitalNote": null,
+   "flagFile": "Flag of Vermont.svg",
+   "flag": {
+    "src": "regions/us-vt.png",
+    "author": "User:SimtropolitanOriginal by User:Denelson83",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Vermont.svg",
+    "print": "ADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmATVnATRnADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmATNmADJoHDxeITxbADNoATNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmAjNmAC5qMTBIODJGAC1rAjNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADNnBDNjbWtNjH5ggXdgZmdPBDRjADNnADNmADNmADNmADNmADNmADNmADNmATRmADFoDDdc08GIm6ODmqF338qDDTdcADFoATRmADNmADNmADNmADNmADNmADNmATRmADFpKUpNjI9zLlJYLFJRh41sKElNADFqATNlADNmADNmADNmADNmADNmADNmATNmADNpHEJSgYZFcJ1kZ4hSfYhAHkVOADNpADNlADNmADNmADNmADNmADNmADNmADNmADJoEkVYSWFCtq1TsaZOQ1w7E0VTADJpADNlADNmADNmADNmADNmADNmADNmATNmADNoDDJaR0FMUTlHUjlGPDpEDDRZADNoATNmADNmADNmADNmADNmADNmADNmADNmADNmATBjDDNjAjBkBDFkDDNkADBkADNmADNmADNmADNmADNmADNmADNmADNmADNmADNmADRnADNmATRnATRnADNmADRnADNmADNmADNmADNmADNm"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-NH",
+   "wikidata": "Q759",
+   "name": "New Hampshire",
+   "capital": "Concord",
+   "capitalNote": null,
+   "flagFile": "Flag of New Hampshire.svg",
+   "flag": {
+    "src": "regions/us-nh.png",
+    "author": "Xrmap flag collection",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Hampshire.svg",
+    "print": "ACqGACqGACqGACqGACqGASuFACiIACeJACeJACiIASuFACqGACqGACqGACqGACqGACqGACqGACqGACqGASuFACeIGDd7Hzx3Hjt4FzZ8ACeIASuFACqGACqGACqGACqGACqGACqGACqGASuFACaIIzx2XlxVU1RXU1RYXVxWIjx3ACaJASuFACqGACqGACqGACqGACqGASuFACaJJT51W1tWTFdofoyPeomQSVVpYF5UJD11ACaJASuFACqGACqGACqGACqGASqGACiIN0drWFtal6Sa4tzN5+fZmqmcVFhcOEhrACiIASqGACqGACqGACqGACqGACqGAyyGSU9eYm1zt8XC0sSnzMS0qbO2ZnBvSk9dAyyGACqGACqGACqGACqGACqGACmHBS2EVFVbVGJobXJdfVw6cVlHXGppXGtrVlVYBS2EACmHACqGACqGACqGACqGASuFACeINEZuVFZYX2xRhY9+dpelT3F1V1hXNUZtACeIASuGACqGACqGACqGACqGASuFACeJGTd6a2RQOVByVG52WHBzOVFya2NRGjh6ACeJASuFACqGACqGACqGACqGACqGACqGACmHITt2XFtXV1VXWFZXXVtXITt2ACmHACqGACqGACqGACqGACqGACqGACqGACqGASqGACeJETR+L0RvL0RwEjR+ACeJASqGACqGACqGACqGACqGACqGACqGACqGACqGACqGASuFACiIACaKACaKACiIASuFACqGACqGACqGACqGACqG"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-ME",
+   "wikidata": "Q724",
+   "name": "Maine",
+   "capital": "Augusta",
+   "capitalNote": null,
+   "flagFile": "Flag of Maine.svg",
+   "flag": {
+    "src": "regions/us-me.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Maine.svg",
+    "print": "ACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACVkACVkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkASZkASZkAyhkAydjACZlACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACdkASRjAB1jQVNdP1BfAB5jASZjACZkACZkACZkACZkACZkACZkACZkACZkASZkACRkFDRnJT1nbU1eYElfHjlsCi1oACVjACZkACZkACZkACZkACZkACZkACZkAihlAB5fUGGFmZeRdIl+cYZ8ZGaNGDFvACNhASZkACZkACZkACZkACZkACZkACZkASZkACZmDSRacWg5RHIqSXYxqqaTHzVmACNjASdkACZkACZkACZkACZkACZkACZkASdkACVjEjNqbHtpmqt5jKFzgZSNKUZ2ACFhASdkACZkACZkACZkACZkACZkACZkASdkACRiEThwTnahgJ2veJasPWaTDTJsACRjASdkACZkACZkACZkACZkACZkACZkACZkACdkACJhASJhEDZxDjRwASJhACNiACdkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkASZkACJgACJhASdlASdkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkACZkASdkASZkACZkACZkACZkACZkACZkACZkACZk"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-AZ",
+   "wikidata": "Q816",
+   "name": "Arizona",
+   "capital": "Phoenix",
+   "capitalNote": null,
+   "flagFile": "Flag of Arizona.svg",
+   "flag": {
+    "src": "regions/us-az.png",
+    "author": "Original: Unknown author Vector: Madden",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Arizona.svg",
+    "print": "vAEyvwkw5YcT/+8A22YbvQMx+McE0kci0kci+ccEvQMx22Yb/+8A5YcTvwkwvAEy1E0gvAUyugE05okT/+IAwxos5IYU2mMb2mMb5IYUwxos/+IA5ooSugE0vAQy1Ewg/+EA7Z4NyjAnuAA15YcT7KMN0Uoi3nAZ3nAZ0Uki7KMN5YgTuAA1yjAn7J4N/+EA+coD/+kA/+cA5YoSwRMu33UX33IY3HIX3HIX33IY33YXwRMu5YoS/+cA/+kA+coDyR0r1UYh5XsV+boG+78E32YZ3msa1mcY1mcY3msa32UZ+78E+bsG5XsV1kchyR0rrgc1qwE3qwE3rQc1uSstx2Ud1F8Yz10Xz10X1F4YyGYduSwtrQc1qwE3qwE3rgc1ER9XEiFXEiFXER5XEBdYBhFcUDdA1V4U1V4UUDdABxFdEBdZER5XEiFXEiFXER9XACBcACBcACFcACFcAyJaAB9gSDRFtlUftlUfSDRFAB9gAyJaACFcACFcACBcACBcASBbASBbASBbASBbAiBbAB5dTDZCHyhSHyhSTDZCAB5dAiBbASBbASBbASBbASBbACBbACBbACBbACBbACBbASFaAx9cAB5dAB5dAx9cASFaACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbASFbASBaASBbASFaACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBb"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-CA",
+   "wikidata": "Q99",
+   "name": "Kalifornien",
+   "capital": "Sacramento",
+   "capitalNote": null,
+   "flagFile": "Flag of California.svg",
+   "flag": {
+    "src": "regions/us-ca.png",
+    "author": "Original: Donald Graeme Kelley Vectorization: Devin Cook",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_California.svg",
+    "print": "////////////////////////////////////////////////////////////////////////9t/j+/P1/////v7+/v39//7+/v39/v39/v79////////////////////////////23+R9dzh//////7+//////////////////////////////////////////////7+/PT2/vz8////9/b2vK2drpJ1wq6aopF+4NnQ/////v7+/////////////////////v3+////7urljGxKbksll2o8l2Y4dVApjW1K7e3r/////v7+/////////////////vz8////1srCp4hvpolxi189lHNXkWhHg1o42M/H/////v39/////////////////////f397PLu0dbOc3lXZH5cholubnRQbntYmJyE+f79//7+/////////v7+/f7+////3OHZlryhgaeIYJ53YquBfKaGhbSWe7SSe6mJxNXG//7//f7+/v7+/v7+////5OHd0MzD1M7HysK5wrWr08fB9fPxx7uyzsK7zcS8zMa95+Xh/////v7++evu/e/y6tvb2MbE2sjG28rI0L+71sbD7N7e1cTB2srH08G+1cLA7d3e/O/y+evuvx8/vx8+wiJDxSVGxCVGxCVGxidIxSZHwSFBxSZGxCVGxiZHxSZHwSFCvx8/vx8/uQgruQgruAcruAcquAcqtwYqtwYquAcquAcquAYquAcquAYquAYquQcruQgruQgr"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-NM",
+   "wikidata": "Q1522",
+   "name": "Neumexiko",
+   "capital": "Santa Fe",
+   "capitalNote": null,
+   "flagFile": "Flag of New Mexico.svg",
+   "flag": {
+    "src": "regions/us-nm.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Mexico.svg",
+    "print": "/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9YA/9YA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9gA/tYB/tYB/9gA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/tQA/90A5okS5okS/90A/tQA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9sA/+UA22ob22ob/+UA/9sA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9YA/90A7JwO1VQg7JwO7JwO1VQg7JwO/90A/9YA/9cA/9cA/9cA/9cA/9cA/9cA/9YA/90A7qMN1lof7Z4O7Z4O1lof7qMN/90A/9YA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9YA/9wA/+oA2mob2mob/+oA/9wA/9YA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/tQA/9wA5ogT5ogT/9wA/tQA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9gA/tcB/tcB/9gA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9cA/9YA/9YA/9cA/9cA/9cA/9cA/9cA/9cA/9cA"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-TX",
+   "wikidata": "Q1439",
+   "name": "Texas",
+   "capital": "Austin",
+   "capitalNote": null,
+   "flagFile": "Flag of Texas.svg",
+   "flag": {
+    "src": "regions/us-tx.png",
+    "author": "Paul B. Joiner",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Texas.svg",
+    "print": "ACBbACBbACBbAiJcABdVpa/F/////Pz9////////////////////////////////ACBbACBbASFbAiJcABdVpa/F/////Pz9////////////////////////////////ACBbACBbASBbAiFcABdVpa/F/////Pz9////////////////////////////////ACBbAB9aByJcBSNdABdUpa7E/////Pr8//3+//3+//3+//3+//3+//3+//3+//3+AyNdABhVYXCWGjNpABVTpbDF/////Pz9////////////////////////////////BCRdeImo6u3yq7XJFTNonJ21//b29ubq+ens+ens+ens+ens+ens+ens+ens+ensABVTRl6I////kp64ABVUgiFM0B5AwR5BxB5BxB5BxB5BxB5BxB5BxB5BxB5BxB5BABlWMUp6OFB+PlSBACNfew48yQQpuwUtvgUsvgUsvgUsvgUsvgUsvgUsvgUsvgUsACFcAR1YABdUAxpXACFdfBJAygouvAsyvwsxvwsxvwsxvwsxvwsxvwsxvwsxvwsxACBbASFcAyJdAyFcACFcfRI/ygktvAoxvwowvwowvwowvwowvwowvwowvwowvwowACBbACBbACBbASBbACFdfRI/ygktvAoxvwowvwowvwowvwowvwowvwowvwowvwowACBbACBbACBbASBbACFdfRI/ygktvAoxvwowvwowvwowvwowvwowvwowvwowvwow"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-AK",
+   "wikidata": "Q797",
+   "name": "Alaska",
+   "capital": "Juneau",
+   "capitalNote": null,
+   "flagFile": "Flag of Alaska.svg",
+   "flag": {
+    "src": "regions/us-ak.png",
+    "author": "Benny Benson",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Alaska.svg",
+    "print": "DyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLECBLDB5MChxMECBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDB5MHypHKTBFCx5MECBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLECFLBhtNPj4/Tkg8BhpNESFLDyBLDyBLDB5LDiBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLECBLDB5MCh1MECBLDyBLDyBLDiBLLjRDFSRKDiBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLECBLECBLDyBLDyBLDyBLDyBLGiZIFSRJMzdCESFLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDR5LDR9MFyVJMjZDDB5MDyBLDyBLECBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDR9LGidILjNDDh9LDiBLCx5MECBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDh9LEyNKIixGCRxMFyVJLjNECh1MECFLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDyBLDR9MGSZILDJEDyBLLTJDGCZJDh9LDyBLDyBLDyBLDyBLDyBLDyFNDyFNDyFNDyFNDyFNDiBNCh5OFSVMJC1ICx5OECJNDyFNDyFNDyFNDyFNDyFNDh9LDh9LDh9LDh9LDh9LDh9LDyBLDR5LCx1LDyBKDh9LDh9LDh9LDh9LDh9LDh9L"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-LA",
+   "wikidata": "Q1588",
+   "name": "Louisiana",
+   "capital": "Baton Rouge",
+   "capitalNote": null,
+   "flagFile": "Flag of Louisiana.svg",
+   "flag": {
+    "src": "regions/us-la.png",
+    "author": "Curtis Vann, Jr.",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Louisiana.svg",
+    "print": "AUR7AUR7AUR7AUR7AUR7AUR7A0Z8AUJ6AD94A0Z8AUR7AUR7AUR7AUR7AUR7AUR7AUR7AUR7AUR7AUR7AUR7AkN6ADx2DEyCHliJADt0AkR7AUR7AUR7AUR7AUR7AUR7AUR7AUR7AUR7AkR7AEF5FVGEMmeUTniasquRS3SSCUmAAEN6AUR7AUR7AUR7AUR7AUR7AUR7AUR7A0Z8ADp0SXadtcjYTXSUnZuT0NjgJl2NAD93AkV8AUR7AUR7AUR7AUR7AUR7AUR7BUd9ADdyfZu38/T1PWeSw8fM//36Z4mpADhzBEd9AUR7AUR7AUR7AUR7AUR7AUR7AUR7AEB5wczV///8ws3X7uno//z2xc/WBUR7AER7AkR7AUR7AUR7AUR7AUR7BEZ8ADp0T3qdrrjDjqS44drW5t3XgpyyjqS2ZoekADl0BEZ8AUR7AUR7AUR7AUR7AUR7BEZ8QW2RFEh0mo595N7a39jTp56TBTtuLmGMDUyBAEN6AUR7AUR7AUR7A0Z8ADt1SHeelq/EAD95WFpQqYBOoHlMQlRbAER9l6/ESHeeADt1A0Z8AUR7AUR7AkV7AEJ6DEyBlLDHscXXd52+cYmZb4uddZy9s8fXlLDHC0uAAEN6AkV7AUR7AUR8AUR8AUV8AUJ6ADt1K2ORa5Gxg6fFiKnHZIytJF6OADt1AUJ6AUV8AUR8AUR8AUR7AUR7AUR7AkR7A0V7AD12ADZyADVvADVvADdyAD53A0V8AkR7AUR7AUR7AUR7"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-MS",
+   "wikidata": "Q1494",
+   "name": "Mississippi",
+   "capital": "Jackson",
+   "capitalNote": null,
+   "flagFile": "Flag of Mississippi.svg",
+   "flag": {
+    "src": "regions/us-ms.png",
+    "author": "Rocky Vaughn, Sue Anna Joe, Dominique Pugh, Clay Moss, Kara Giles, Micah Whitson and the Mississippi Department of Archives and History",
+    "license": "Copyrighted free use",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Mississippi.svg",
+    "print": "ugwvuQ0vvAkvwGEvEi5BABpCBR9CAx1CAx1CBR9CABpCEi5BwGEvvAkvuQ0vugwvugwvuQ0vvAkvwGEvEi5BABlCAxtAByBCByBCAxtAABlCEi5BwGEvvAkvuQ0vugwvugwvuQ0vvAkvwGEvEi5BARpCHzZYLTxPLTxPHzdYARpCEi5BwGEvvAkvuQ0vugwvugwvuQ0vvAkvwGEvDys+GS9UHDRUARc7ABU6GS9QGjBUDys+wGEvvAkvuQ0vugwvugwvuQ0vvAkvvl8tGTRGIDVZABY7YnOLTF95GjBRGjBVGjVGvl8tvAkvuQ0vugwvugwvuQ0vvQkvvV4tJT5OCyNJZHWL3NzZ3d/hcoCVBh5GJj9PvV4tvQkvuQ0vugwvugwvuQ0vvQkvvl8tIjtMFSpQrrfFxMK+xMbJrrfDFStQIjtMvl8tvQkvuQ0vugwvugwvuQ0vvQkvvl8tHTdIHjNYGzJSoay7lqKyJDpYHzRYHTdIvl8tvQkvuQ0vugwvugwvuQ0vvAkvwGEvES1AHTNXCR5BBRs/Axg9CBxAHDNXEi1AwGEvvAkvuQ0vugwvugwvuQ0vvAkvwGEvESxABR5GJz1cIDdXHzVWKD5cBB1FESxAwGEvvAkvuQ0vugwvugwvuQ0vvAkvwGEvEy5BABlBBh9DDylKDyhKBh9DABlBEy5BwGEvvAkvuQ0vugwvugwvuQ0vvAkvwGEvEi5BABpDBR5CARtAAhxABR5BABpCEi5BwGEvvAkvuQ0vugwv"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-AL",
+   "wikidata": "Q173",
+   "name": "Alabama",
+   "capital": "Montgomery",
+   "capitalNote": null,
+   "flagFile": "Flag of Alabama.svg",
+   "flag": {
+    "src": "regions/us-al.png",
+    "author": "Steve Hall",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Alabama.svg",
+    "print": "rAAUtAsp4Z+r/////v39/v39/////////////////v39/v39////4qCstAsqrAAU0Wh8rAAUrAAT0Wh9/PT1/////vz8/////////vz8/////PT10Wl9rAATrAAU0Wh8////46SxtRMrqAAIwTVP8tPZ/////vv8/vv7////8tPZwTZPqAAItRMr46Ow/////vv8////8tXbwjdQqAAIsxIp46Kv////////46OvtBIqqAAIwTZQ8tXa/////vv8/////vv8/////PX20mp/qwARqwAS0myA022BqwASqwAR0mp/+/X2/////vv8/////////////v39/vz8////5664tQ8trQAXrQAXtQ4t5q24/////vz9/v39/////////////////v39/vz9////5a24thEurgAXrgAXthAu5ay3/////vz9/v39///////////+/vv8/////PX20mt/qwARqwAR022B026CqwARqwAR0mp+/PX2/////vv8///+/vv8////8tbbwTdQqAAItBEq46Ku////////46KvtBEqqAAIwTdQ8tXa/////vv8////5KSxtRMsqAAIwTVO8tTZ/////vv8/vv8////8tTZwTZPqAAItBMr5KSw////0Wh8rAATrAAS0Wh9+/T1/////vv8/////////vv8////+/T20Wl9rAASrAAT0Wh8rAAUtQ4s4aCs/////v39/v39/////////////////v39/v39////4qCstQ8trAAU"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-FL",
+   "wikidata": "Q812",
+   "name": "Florida",
+   "capital": "Tallahassee",
+   "capitalNote": null,
+   "flagFile": "Flag of Florida.svg",
+   "flag": {
+    "src": "regions/us-fl.png",
+    "author": "Template:Brendon Tiana",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Florida.svg",
+    "print": "xAELxgAR3Wp0/ff4/////vz8//////7+//7+/////vz8/////ff43mt1xgARxAEL0zxJwgAEwwAG0zhH9tjb//////38//////////38////9tnb0zlHwwAGwgAE0ztJ/fj433J8xQENwgADyRQi7Kiu//////Pu/vPr////7KmvyhQiwgADxQEN33F8/ff4/vz9////7KuxyhUjwgACxQUQ4oBVypBG1ptT44BVxQURwgAByhQj7Kqx/////vz8/v7+/vv7////99zd0TRJzx8H0ZNFhZZztKuAyX0mzB8H0TRJ99vd/////vv7/v7+/////////vz8/////vP635RZm5Zuu62K3sWWwZhb4IxU/vX7/////vz8/////////////////vv8/////fT744xQXIB3i5WJmZtujZBi5Y9c/PL4/////vv8//////////7+/vv8////99zd0DRJ0SUFxIMwmo95I2tThHYi2SgHzjJI99zd/////vv8//7+/vz8////7KuxyhUjwgACxAQQ6oZX15pGwI0+6IRXxgQQwgACyhQj7Kqx/////vz8/fj44HJ9xQENwgADyRQi7Kmv/////vXv//jw////7KmvyRQiwgADxQEN33F8/fj40ztJwgAEwwAE0zlH9tnc//////38/////v///v38////9tnc0zlHwwAEwgAE0zpIxAELxgAT3m54/fb3/////vv8//7+//7+//7+//7+/vv8/////ff33m95xgATxAEL"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-GA",
+   "wikidata": "Q1428",
+   "name": "Georgia",
+   "capital": "Atlanta",
+   "capitalNote": null,
+   "flagFile": "Flag of the State of Georgia.svg",
+   "flag": {
+    "src": "regions/us-ga.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_State_of_Georgia.svg",
+    "print": "AB9aAh9aDiplFjFuCSNeACBcQxhMxgkuvgowvwowvwowvwowvwowvwowvwowvwowASBbFzRtP1RySllbM0l1BC9oQhhLxgwwvgwxvwwxvwwxvwwxvwwxvwwxvwwxvwwxCyliKkN2SVQ5WmEyQk1MFT17QhZIxAMqvAQrvQQrvQQrvQQrvQQrvQQrvQQrvQQrHzpxIDdfXmQ1cnQzVFs2GDxyUy1cyR9CxCJFxSJFxSJFxSJFxSJFxSJFxSJFxSJFEjBsMEVcRlM8a242XGI2FTJnYG6U//Hy+Ort+uvu+uvu+uvu+uvu+uvu+uvu+uvuDitlL0ZxN0dEPks7OUpSFzJrX3KX/////f7+////////////////////////////ABtYHzpvJkR4HTlxKkh6Ax9bVmqS/////f3+////////////////////////////Fx5XERhSJyxgLjJlICVbBQ9LZmOJ/+ns9eHm9+Ln9+Ln9+Ln9+Ln9+Ln9+Ln9+LnswsztAw0rwgwrgcwsgoyswszuRA3xBs9wxo9wxo9wxo9wxo9wxo9wxo9wxo9wxo9wgovwgovwgovwwswwgovwgovwAguvQYsvQYsvQYsvQYsvQYsvQYsvQYsvQYsvQYswQoxwQoxwQoxwQoxwQoxwQoxwgsywgsywgsywgsywgsywgsywgsywgsywgsywgsyvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkvvwkv"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-SC",
+   "wikidata": "Q1456",
+   "name": "South Carolina",
+   "capital": "Columbia",
+   "capitalNote": null,
+   "flagFile": "Flag of South Carolina.svg",
+   "flag": {
+    "src": "regions/us-sc.png",
+    "author": "Design by South Carolina General Assembly, SVG by Steve Hall",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Carolina.svg",
+    "print": "BB5CBB9CFy5PBhtAAx1BBB5CBB5CBiBEBR9CBB5CBR9DBB5CBB5CBB5CBB5CBB5CBBxAABk+RVhzaHeNABg9BR9DBR9DABc8Axo/BR1CAhs/BB9CBB5CBB5CBB5CBB5CGDBRBxc8CxI4wMbPFS1PABc8EypMTF14VmZ/LUFfDCVIAhxABR5CBB5CBB5CBB5CHzZWfYudrLbByM7VAhxAEClLYXGI3+Ln3eHmsLjEMEVjABg9BR9DBB5CBB5CBB5CABY7S113maSyKj5dABM5JjxcsbnE6Oru5+rt4eTpa3qPARtABR9CBB5CBB5CBB5CBB9DARI4AAkwAxk+Ah1BDidJgY6gxMnSztParbXBPVFtABs/BR9DBB5CBB5CBB5CBB5CBiBECCJFBh9DBB5CBB5CIjdXUGF7bXuQMUVjAxo/BB9DBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBR9DABI4LkFfTFx2AAwyByFFBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBiBDABU7N0hlUmJ7ABI4ByFEBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBR9DABU7aHeNf4yeABY8Bh9DBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CAx1BCCJFZ3eNXGyEDSZIAhxBBR5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CBB5CABI5ABE3Ax1BBB5CBB5CBB5CBB5CBB5CBB5C"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-NC",
+   "wikidata": "Q1454",
+   "name": "North Carolina",
+   "capital": "Raleigh",
+   "capitalNote": null,
+   "flagFile": "Flag of North Carolina.svg",
+   "flag": {
+    "src": "regions/us-nc.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_North_Carolina.svg",
+    "print": "ASFaASBbABxdAh5bACJcfBI/ygktvAoxvwowvwowvwowvwowvwowvwowvwowvwowABtdBB5cGDFSDSZXABlhfBI/ygktvAoxvwowvwowvwowvwowvwowvwowvwowvwowL0BKiXwqgXYtmIUlVV88ehBAywktvQowvwowvwowvwowvwowvwowvwowvwowvwowU1g9SFFBAyJcIDVQbm8yiRs7xwgwvQwxvwsxvwsxvwsxvwsxvwsxvwsxvwsxvwsxABdfABRhABZUARVbABhjew88yAMpugUtvQUsvQUsvQUsvQUsvQUsvQUsvQUsvQUsN0VINENFQFmPM0ZmOElAgCBLzx9Awh9BxB9BxB9BxB9BxB9BxB9BxB9BxB9BxB9BR1BBXF06bIKzUWBzRkswo6O5//X19ubq+ens+ens+ens+ens+ens+ens+ens+ensABteARteARhVAx1bABZWpa/F/////Pz9////////////////////////////////RE5CMkJJAB5eDipYUlU0sri/////+/v8/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+N0VHjoApgHYukoMpYF4vprDE/////Pz9////////////////////////////////ABtdByNaIDZQEy1WABFYpa7F/////Pz9////////////////////////////////ASFaAB9bABxdAh9eABhUpa/F/////Pz9////////////////////////////////"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-VA",
+   "wikidata": "Q1370",
+   "name": "Virginia",
+   "capital": "Richmond",
+   "capitalNote": null,
+   "flagFile": "Flag of Virginia.svg",
+   "flag": {
+    "src": "regions/us-va.png",
+    "author": "LadyofHats with additional editing by 痛 and Patrickneil / Charles Keck",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Virginia.svg",
+    "print": "ASFoASFoASFoASFoASFoAiJoAR5mAB5oAB5pAR9mAiJoASFoASFoASFoASFoASFoASFoASFoASFoASFoAiFnAB1nDCxxJDdrJDVpDSxxAB5oAiFnASFoASFoASFoASFoASFoASFoASFoAiJoAB5oLD90gnN3qYB6rYiBd2lrJjxxAB5oAiJoASFoASFoASFoASFoASFoAiJoAB5nGTFtjHl228zDyMLA6eno4NTMkHVzGDNwAB1mAiJoASFoASFoASFoASFoAiFnACJtTkhlz8O4+vb1ko+UysC6////z8O5TU1pACFsAiFnASFoASFoASFoASFoASBnASRsbmVy7ufk////e5q7lKW3////7Ofja2VyAiRsASBnASFoASFoASFoASFoASBnASRscmRw5tvX8ujhk6S1vsrW///25drNb2Z0AiRsASBnASFoASFoASFoASFoAiFnACFsVlBss5aKsZ6WlG5vknWDz8W8xbCbUlBuACBsAiFnASFoASFoASFoASFoAiJpABxmGzdzj3JwvqyltKSkva2utaOciXZ0GjdzABxmAiJpASFoASFoASFoASFoASFoAiJoAB1nLEF0eWttqY+EqJOIfWltK0J2AB1nAiJoASFoASFoASFoASFoASFoASFoASFoAiFoAB1oEC1xJzxvJjxvEC5yAB1nAiJoASFoASFoASFoASFoASFoASFoASFoASFoASFoAiJoAB9mABxnABtnAB9mAiJoASFoASFoASFoASFoASFo"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-MD",
+   "wikidata": "Q1391",
+   "name": "Maryland",
+   "capital": "Annapolis",
+   "capitalNote": null,
+   "flagFile": "Flag of Maryland.svg",
+   "flag": {
+    "src": "regions/us-md.png",
+    "author": "Michael Wheeler",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Maryland.svg",
+    "print": "AwIAZEkAjWcA6akABAMApHcBo3YAAgUN8vHw////////58jMs1VjnSI1nCAznCE0gl4At4cAvIoAeFcACwgAoXYBoXQAAwcP7+rq/PLz/fz8v3B82Kivmx8yoy9Bnyc59rIAh2IAW0MAFhAAdVUAuYYBqHgABw4U0qaryoGM7NTY1qOrw3mEr0lY1aGpv25687EBRjMBOysBeFcB5akAkmoAX0cABQAAtWp22KOrrUhXxX2G1aOq7dfaxX2H27G49bAAQi8ATjgA6KcAa1AAOioAPS8AcE0BkyA3qjFCniE02KizxXaC/v39+vL0/fn597gWU0EVWUYX67UbDwsCXj4EiV4F5p4Ilicuihgvjx8wt1xb07i89/Tp+PXq6Onq/vfp7+7q7+3o5cG4p1JepTAyqjAwmSkuDgUIaEgFlWQE4JkCHB0bq4MWrYQVCw4W/Pj5+PDy/v7+wXaE2aWtmRoxnSdBqC82e1UBuIkAvIsAfFsACgcAoHMApXYAAAAA2620wneD6dDU05ykxoCKsVBe16awxHh57qMAimYAXEMAFhAAdlYBuIYBrH0BAAABwHJ+16ausE5ex4CM1J6n68/Uw3qI2amo97wURTAAOioBdVUA5KgAk2sAZEkAAAAAniU4oi9Bmh0x16euwnaC/v399+/0+PHq+LkPRDAATzoB6qoAcFIAOysAPCwAaEsAnCI0nCEznSM1tFdl58fM//7+/v7/+/jw97cOQy8ASTUB56gADAkAYEUAjmcA8rAA"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-DE",
+   "wikidata": "Q1393",
+   "name": "Delaware",
+   "capital": "Dover",
+   "capitalNote": null,
+   "flagFile": "Flag of Delaware.svg",
+   "flag": {
+    "src": "regions/us-de.png",
+    "author": "xrmap flag collection",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Delaware.svg",
+    "print": "ZpykZpykZpykZpykZpykZpykZ5ykZpykZpykZ5ykZpykZpykZpykZpykZpykZpykZpykZpykZpykZpykZpykZ5yjY5ukZJujZJukY5ukZ5yjZpykZpykZpykZpykZpykZpykZpykZpykZpykZ5yjYZymcJ+hqqeOqqeNb5+hYpynZ5yjZpykZpykZpykZpykZpykZpykZ5yjZZykYpyneJuappZ4vquSv6mPq5d4dZWTY52nZZykZ5yjZpykZpykZpykZ5ykYpulZpujn6mStYZupUNDtpNEsZQ/dW5KrpZtoqeSZZujYpulZ5ykZpykZ5ykY5ylep6duKaEzq2At5Nzn2hToZZtmpZqZGY6oI9r0a2Bt6aEep6dY5ylZ5ykZ5ykZJylep6cuKeEzqp9uqF7m5Zor6aEqZp4gXxIq5Vw0a1/t6aEep6cY5ylZ5ykZpykZ5ykYZulZpujnaWRuppqs5Frpo9EqZFHvZt0uZtsnKOOZpykYZulZ5ykZpykZpykZpykZ5yjZZykYZymgp6Yw6mM1K6P1KyPw6qOgZ6ZYJulZZykZ5yjZpykZpykZpykZpykZpykZ5ykZJqhXZmkaJudpKKGpqOHapueXpqlZZuiZ5ykZpykZpykZpykZpykZpykZpykZpykeKivfqqxeqqzf622dqewa6CpfKmveKiuZZykZpykZpykZpykZpykZpykZpykZpykdaWsdqeueKete6mwdqatcKKpdqatdKWsZpykZpykZpykZpyk"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-NJ",
+   "wikidata": "Q1408",
+   "name": "New Jersey",
+   "capital": "Trenton",
+   "capitalNote": null,
+   "flagFile": "Flag of New Jersey.svg",
+   "flag": {
+    "src": "regions/us-nj.png",
+    "author": "author of xrmap, with modifications by Denelson83 and ChrisRuvolo",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Jersey.svg",
+    "print": "4bWE4bWE4bWE4bWE4bWE4bWE37SE37SD37SD4LWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE6LmD5rmH6LuH5reE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bSDuqKGq4VhpoVmxKeI47WD4LWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4LSE5LiGzZ53iIeBgW9ecWNZl5iF4bWD4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bSD47iH1qR0v4Ndo41hpItlvGhWwZdq4riJ4bSD4bWE4bWE4bWE4bWE4bWE4bWE4bSD4rqJ15pnu14yYY2ba4WWuysw1aFv4rmI4bSD4bWE4bWE4bWE4bWE4bWE4bWE4bSD47mI2aFwn3FcQIW0SXqmpmBl2bKH47aD4bWE4bWE4bWE4bWE4bWE4bWE4bWE4LWE5LeD0a2HfJGjTIatSIKshZKh2LGG47aD4bWE4bWE4bWE4bWE4bWE4bWE4bWE4LWE5beEyqqGk5KPdYmXeoqVlJOQ1q+E47aE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4LSE5baCwqaFx6iF5baC37WF4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4LWE5reE5beE4LWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4bWE4LSE4LSE4bWE4bWE4bWE4bWE4bWE4bWE4bWE"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-CT",
+   "wikidata": "Q779",
+   "name": "Connecticut",
+   "capital": "Hartford",
+   "capitalNote": null,
+   "flagFile": "Flag of Connecticut.svg",
+   "flag": {
+    "src": "regions/us-ct.png",
+    "author": "Jean-Pierre Demailly, xrmap authors, Commons users (SVG)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Connecticut.svg",
+    "print": "DC2DDC2DDC2DDC2DDi6DCSuDDi2FDCmMCymNDi2FCSuDDi+DDC2DDC2DDC2DDC2DDC2DDC2DDC2DDS6DACOBHjeBCS56DURMDkdIBS54GzWDASKADC6DDC2DDC2DDC2DDC2DDC2DDS6DBiiBSV6N3NXCdpForMNvvM55aIle2NPGWm6ZBid/DS6EDC2DDC2DDC2DDC2DDS2DCiyDPlCDzMmmwL6r8/Ly+fj5vbur0tKwSVmMCiyDDC2DDC2DDC2DDC2DDC2DDC2CDS2IAithqKmNvqe1xtLI0uLTuaa1vLaUCTZeCyuGDC2DDC2DDC2DDC2DDC2DDi+ECiqKO2BcyNeitbu1sqarua+1s7ay0eCuRnVPCSqGEDCDDC2DDC2DDC2DDS6DCCh9ABR4Ym6O//7q/v//q6OkxsXE///////ydoCXABF8BSOCDC2DDC2DDS6ECSqAc3+PoKajnZuLaYJWgaFn8evd7vLamLKMVXZbm5mKgouQbXmNCCl/DS6EDC2DDCyBTWGKbHmQ19Gqv8GtYnhsh4+PipCZRl92i5WVvbqjlZuaZXKFDCyADC2EDC2DDC2DAySBAB5/GjZ8ra6l0cy6iZKgk5qc1M6yY3GPDy5/ABp9AyGDDC2EDC2DDC2DDC2DDi+DEDCDBiiCCCl9KEKAP1WEh5CaZ3eZAB1+CyyDEDCEDy+DDC2DDC2DDC2DDC2DDC2DDC2DDS6DDC2EBiiCAiWCAB99BCR9Di+EDS2DDC2DDC2DDC2DDC2D"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-RI",
+   "wikidata": "Q1387",
+   "name": "Rhode Island",
+   "capital": "Providence",
+   "capitalNote": null,
+   "flagFile": "Flag of Rhode Island.svg",
+   "flag": {
+    "src": "regions/us-ri.png",
+    "author": "Xrmap flag collection 2.7",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Rhode_Island.svg",
+    "print": "///////////////////////////////+//79///////////+//////////////////////////////////79//HB//30/+qi/uqh//30//DA///+//////////////////////////////33//33/+F8//bZ//fb//fb//ba/uB6//33//34//////////////////79/////+KB/+up//////rq/+ic/+aV//rp/////uql/+OF//////79///////+//////30//bW//vt///////+//C//+62//////////vr//bX//zz//////////79/////+ql/uSK//////bZ/frs/vfb/vXV/vrs/vbc/////+SM/+qk//////79///+//////vv//nk//////bN/+6g/++q/++p/+2b//bO//////nj//vv///////+//79//////XU/t1q///67/X/3uLk5taY49WZ4OPj7/X////6/t1q//XV//////79//////////76/fnm//W+ucHBcYuxqbCloKqocIuwusLD//W9/fnn//75/////////////////////////uOC//bU++/D/ffc/fje++/D//bS/+OF///////////////////////////////+///+/v///+eS//PM/vPO/+eS/v/////+///+///////////////////////////////9///+///////////////////+//79////////////////"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-MA",
+   "wikidata": "Q771",
+   "name": "Massachusetts",
+   "capital": "Boston",
+   "capitalNote": null,
+   "flagFile": "Flag of Massachusetts.svg",
+   "flag": {
+    "src": "regions/us-ma.png",
+    "author": "State of Massachusetts",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Massachusetts.svg",
+    "print": "//////////////////////////////7+//7+/////////////////////////////////////////////////////v7+/Pv7/f39/v7+/////////////////////////////////////////////v7+////5Nm98eve/////v7+/////////////////////////////////////v7+////3+LpmZaUkpOd2t3l/////v7+/////////////////////////////v///////v78b3eVPkFXIydCX2mN///+/////v7////////////////////////////////////7WGB/VUYpYEwoUl2D//34/////v7+/////////////////////////////////v36foWfU0k4UUc3foak9/bz/////v7+/////////////////////////////////Pz7trrITEpRSUpbu7zD+fj3/////////////////////////////////////v7+////4uDagIOTf4KT49/Z/////v7+///////////////////////////////////////////+4ODl3+Dk/v79/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////f39/f39////////////////////////////"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-OR",
+   "wikidata": "Q824",
+   "name": "Oregon",
+   "capital": "Salem",
+   "capitalNote": null,
+   "flagFile": "Flag of Oregon.svg",
+   "flag": {
+    "src": "regions/us-or.png",
+    "author": "User:Denelson83",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Oregon.svg",
+    "print": "AQF/AQF/AACBAACCAQGDAACEAQGBAQGCAgGAAACEAACEAACCAACCAACBAQF/AQF/AAB/AwN+FRJ1GxdzKSNsS0BaMitmc2JGOzJja1tKST5bHRhxFhN1EhB3AQF/AQF/AACACwl6a1tLeGdEc2NGZVdNLCdrUERZHRhzYlRPaVpMZVZOhnM9k383DAt6AACBAQF/AgJ/FhN1FRF2DAp6AACDOjJjdmVEdWRFLyhpAACEEA14GBR0IBtwAwN+AAB/AQF/AQF/AQCBAgKBAACCGRZzbFtKhnI8f2tAW01TFBF2AACCAQGBAACDAQF/AQF/AQF/AQF/AgJ+AwN+AACBMyxmVUhWT0NZdmNFZlZNLSZqAACAAwJ+AgJ+AQF/AQF/AQF/AQF/AQF/AgF/AACAFxR1T0JYjng5uZ0ji3Y6IR1vAACBAgJ+AQF/AQF/AQF/AQF/AQF/AQF/AQF/AACACQd7PTRhallMa1pKOC9kCQd7AACAAQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/BQV+MSpoPTRiBAOAAACAAQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AgJ+AACBHBhyOzNjMSpoLyloAQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AwJ+AACDLSdpX1JQST9bSj9aAgJ+AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQF/AQGBAACCAACBAACCAQF/AQF/AQF/AQF/AQF/AQF/"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-HI",
+   "wikidata": "Q782",
+   "name": "Hawaii",
+   "capital": "Honolulu",
+   "capitalNote": null,
+   "flagFile": "Flag of Hawaii.svg",
+   "flag": {
+    "src": "regions/us-hi.png",
+    "author": "Dbenbenn",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Hawaii.svg",
+    "print": "2I+gaHOeLTh11U5lLDp5Wj5w3p+t+Pz9////////////////////////////////SVaL3aq4t7bLxk1mrIai3rrHX36r1H2Q7IiW5oaV54aV54aV54aV54aV54aV54aVwU5oykpj4VtuzSZC31Nnz1xzvkFeugwtuAYouAcpuAcpuAcpuAcpuAcpuAcpuAcpxEtm02F24VhrzShD4V9x0lFouk9rDRRZAA9ZARBZABBZABBZABBZABBZABBZABBZTXqs27zJqoikxk1mtLjO1qm4S1yQcY+3gJi7fZa6fZa6fZa6fZa6fZa6fZa6fZa62JGhaz5tMTdz0EhgMDNvdW6X2YiZ9uzs///7//r4//v4//v4//v4//v4//v4//v41RMuuQ8wyBQx1xYxyBMxuAst2CU+1yA61SA71SA71SA71SA71SA71SA71SA71SA7YBRIZhZIZBRIYRNIZBRIZxZJXxBFYBFFYBFFYBFFYBFFYBFFYBFFYBFFYBFFYBFFAy1zAi1zAi1zAy1zAi1zAi1zBC50BC50BC50BC50BC50BC50BC50BC50BC50BC509f//9f//9f//9f//9f//9f//9f//9f//9f//9f//9f//9f//9f//9f//9f//9f//54qY54qY54qY54qY54qY54qY54qY54qY54qY54qY54qY54qY54qY54qY54qY54qYxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEhxAEh"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-UT",
+   "wikidata": "Q829",
+   "name": "Utah",
+   "capital": "Salt Lake City",
+   "capitalNote": null,
+   "flagFile": "Flag of Utah.svg",
+   "flag": {
+    "src": "regions/us-ut.png",
+    "author": "The State of Utah",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Utah.svg",
+    "print": "Bx1JBx1JBx1JBx1JCh9LCR9LBx5JABE/ABE/Bx5JCR9LCh9LBx1JBx1JBx1JBx1JBx1JCB5KCB5KCR9LARRBABNAABNBWGeGWWiGABNBABNAARRBCR9LCB5KCB5KBx1JCR9KAhdFBBlGABFAQ1R0NUhufIecfoOKfoOKfIecNUhuQ1N0ABFABBlGAhdECR9KAhRCLD9kFChShZCm////ycrNUVhkOTgzOTgzUVhkycrM////hpGmEylSLD9lAxRCiZSo9fb44OPo///+////X2ZxHiYxwpQswpQsHiUxX2Vx///////+4OPo9fb4ipSp/////////////f39////VGB2XlExx5Uqx5UqXlExVGB2/////f39/////////////Pz8/v39/fz8//7+//7/W2JzjW8p0Z0l0Z0ljW8pW2Jz//7///7+/fz8/v39/Pz8///////////////+////ZW10MzErQUVKQUVKMzErZW10///////+////////////xlZUxlZUxlZUxVVTylpYvpeYSVxrJDNWJDNVSVxqvpeYylpZxVVTxlZUxlZUxlZUpQAApQAApQAApQEBowAAsxAP0IB+goiJgYiJ0IB+sxAQowAApQEBpQAApQAApQAAqwUDqwUDqwUDqwUDrAUDpwIBqQAAx1RUx1RVqQAApwIBrAUDqwUDqwUDqwUDqwUDqgIAqgIAqgIAqgIAqgIAqgMBqgMCpgAApgAAqgMCqgMBqgIAqgIAqgIAqgIAqgIA"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-WY",
+   "wikidata": "Q1214",
+   "name": "Wyoming",
+   "capital": "Cheyenne",
+   "capitalNote": null,
+   "flagFile": "Flag of Wyoming.svg",
+   "flag": {
+    "src": "regions/us-wy.png",
+    "author": "User:Dbenbenn",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Wyoming.svg",
+    "print": "wRQ4zzlX0TtY0TtY0TtY0TtY0TtY0TtY0TtY0TtY0TtY0TtY0TtY0TtYzzlXwRQ4zkJfd4alR1yHUGOMTmKMT2OMUGSMUGSNUGSNUGSNTmOMTmKLUGOMR1yHd4alzkJfzkJgO0t7AAxMAhdUABRSABBPAA1NAA1NAApLAA1NABVTABZUAhZUAAxMO0t7zkJgzkJgPlWCABlXBSNeBSReGTVqPFOBT2SNXXGWMkt7Ax5ZAhxYBiVfABlXPlWCzkJgzkNgO1SBABpWABZUTWON4OPqn6vBtL3Ps7zO5Ojux83aLEZ3ABtXABlWO1SBzkNgzkNgO1SBABlWABhVQFiE8vT3laK7k6G5oa3C7vD0////SV+JABZUABpWO1SBzkNgzkNgO1SBABhVACBbCyhhhZSwboChjpy2l6S8t8DRzdLeHzluABxYABhVO1SBzkNgzkNgO1SBABdVAiJcASBbABFQFi1lw8rYIDtvABlWgo2rGDVqABxYABhVO1SBzkNgzkJgPlaCABpXBSVeBCNdBSVeCCReP1OABiVfBSReOE59ByZfBCRdABpXPlaCzkJgzkNgO0p6AApLAhVTABNSABNSABRSAA1NABNRABRSAA9OABNSAhVTAApLO0p6zkNgzkNgd4inR16JUGWOTmSNTmSNTmSNT2WOTmSNTmSNT2WOTmSNUGWOR16Jd4inzkNgwRM40DdW0jlX0jlX0jlX0jlX0jlX0jlX0jlX0jlX0jlX0jlX0jlX0jlX0DdWwRM4"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-NV",
+   "wikidata": "Q1227",
+   "name": "Nevada",
+   "capital": "Carson City",
+   "capitalNote": null,
+   "flagFile": "Flag of Nevada.svg",
+   "flag": {
+    "src": "regions/us-nv.png",
+    "author": "Caleb Moore",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Nevada.svg",
+    "print": "ADOqADCwAjGxCzmmAS+zADKtADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrH0CSYFdVaFVBU1NiFDucADKrADOrADOrADOrADOrADOrADOrADOrADOrADOrAC+zYVleaGd0UXnRbmFaTFJzAC60AjSpADOrADOrADOrADOrADOrADOrADOrADOrBDWpKEZwKEukf5XTJEWNIkR9ADGwATOqADOrADOrADOrADOrADOrADOrADOrADOrADGvF0tvHUltDi2WH1FnEkSCADCyATSqADOrADOrADOrADOrADOrADOrADOrADOrADGwAz+SAlNnAEWMA1dsAjejADKtADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADKsADSnATmdADOpADKsADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOsADKtADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOrADOr"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-CO",
+   "wikidata": "Q1261",
+   "name": "Colorado",
+   "capital": "Denver",
+   "capitalNote": null,
+   "flagFile": "Flag of Colorado.svg",
+   "flag": {
+    "src": "regions/us-co.png",
+    "author": "Original: Andrew Carlyle Carson Vector: Fleminra",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Colorado.svg",
+    "print": "ACBbACBbACBbACBbASBaASBaACBcACBbAiBaACBbACBbACBbACBbACBbACBbACBbASFcASFcASFcAiBbACFdASFcEB9XCSBaACFdAiBbASFcASFcASFcASFcASFcASFcABxYABxYARtXAB5aIR1UihI8rQo0pg02WhhHASJeABxZABxYABxYABxYABxYABxYEzBnFC9mEDJpIitgqws0ywMuxBItxAovzQMrYQ4+Cy9nFTBnEzBnEzBnEzBnEzBn7e/z7Ozw7/3/1XaLvAAk1Vsh+80D7KMNwxkt1FRx7e7x7fD07e/z7e/z7e/z7e/z////////////0EdnvQck+coH/+ED/9kA+dp3/f7////7////////////////////////////////z0dmvQck+coH/+ED/9kA+dl2/f3////8////////////////////6+3y6urv7fv+1HWKvAAk1Vsh+soD7KEOwxks1FNx6+zw6+7z6+3y6+3y6+3y6+3yFjNpFzJoEzVrJCxhqws0ywIvxRYtxAwvzQIrYg4/DjJqGDNpFjNpFjNpFjNpFjNpABtYABtYARpXAB1aIR1UihI7sAg0pww2WRhIASJdABtYABtYABtYABtYABtYABtYASFcASFcASFcAiBbASBcACFcDB9YBSBaACFdAiBbASFcASFcASFcASFcASFcASFcACBbACBbACBbACBbASBaASBaACBcACBbAiBaACBbACBbACBbACBbACBbACBbACBb"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-SD",
+   "wikidata": "Q1211",
+   "name": "South Dakota",
+   "capital": "Pierre",
+   "capitalNote": null,
+   "flagFile": "Flag of South Dakota.svg",
+   "flag": {
+    "src": "regions/us-sd.png",
+    "author": "xrmap",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Dakota.svg",
+    "print": "AHSoAHSoAHSoAHSoAHSoAHSnAHOqAHKsAHKsAHOrAXSnAHSoAHSoAHSoAHSoAHSoAHSoAHSoAHSoAHSoAHSoAHKsE3qdIn+VLIKPFHqcAHKqAHSoAHSoAHSoAHSoAHSoAHSoAHSoAHSoAXSnAHKqJ4CQP4d9LoB+O4R3QYh8JH+SAHOpAXSoAHSoAHSoAHSoAHSoAHSoAHSoAHSpBnWmMoOEXpR8prejobOiVI59K4GKCHalAHSpAHSoAHSoAHSoAHSoAHSoAXSoAHSpE3qdO4V/v7+l2N3v4+b2yMeqPYd9FXubAHOqAXSnAHSoAHSoAHSoAHSoAHSoAXSpL4KDeKB8qLC+kaPAws3exMjOdZ56L4KDAXWpAHSoAHSoAHSoAHSoAHSoAHSoAnWoFnqUb5x/nqa1kqXCnK7Jpq68dp98LICGAXSpAHSoAHSoAHSoAHSoAHSoAnWnAHKtL4KKT450uLyll6XHm6jKs7adQol+GHuZAHOqAXSnAHSoAHSoAHSoAHSoAXSoAHOqFXucQYd6XZR9nLKfnbKfX5eARIh4EXmfAHOqAXSoAHSoAHSoAHOnAHOnAHOnAXOmAHGsKICPKH+MO4V2OYN1T4twJn+QAHGqAXOmAHOnAHOnAHOnAHarAHarAHarAHarAXarAHWvBXeqLoWQK4SSEnyhAHSvAHarAHarAHarAHarAHarAHSoAHSoAHSoAHSoAHSoAXSnAXSoAHCtAHCsAHOqAHSnAHSoAHSoAHSoAHSoAHSo"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-NE",
+   "wikidata": "Q1553",
+   "name": "Nebraska",
+   "capital": "Lincoln",
+   "capitalNote": null,
+   "flagFile": "Flag of Nebraska.svg",
+   "flag": {
+    "src": "regions/us-ne.png",
+    "author": "Unknown authorUnknown author",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Nebraska.svg",
+    "print": "ACqGACqGACqGACqGACuGACiHASeICzGACzGAASeJASiIACuFACqGACqGACqGACqGACqGACqGACqGACqGACiHCy+BN01pRlZjRlVjQlRkDzGAACeIASuFACqGACqGACqGACqGACqGACqGACmHBiyESVhhQlNmUVxZYGZRXGRXUF1dCi+CACmHACqGACqGACqGACqGACqGAiuFACWKMkptQFFhRVRcSltvRllwUl1aUFxdOExqACWKAiuFACqGACqGACqGACqGACqGAyyFSFZdbHJljZGMiZSnboGqd31wZ2xQUV1cBC2EACmHACqGACqGACqGACqGACiIDDKARFRiioRGlI1OV2JeZWxVp5c2oZEyWWFYCzGBACiHACqGACqGACqGACqGACiICzGAUFxeTFlcNExzTVtkPU5fV2BVgn1DXGRXCjCBACiHACqGACqGACqGACqGACqGAyuFTVpfUFtZWmd3uKhJjZKJl45JeHZEVF9bBS2DACmHACqGACqGACqGACqGAiuFACWKMkltR1ZcWmdyi4ldhIqFpptUU11UNUtsACaKAiuFACqGACqGACqGACqGACqGACmHCS6DRFRhXWdjUF5rR1htYGheRVVhCi6CACmHACqGACqGACqGACqGACqGACqGASuFACeIEzR+RVVgV2BWTltcR1dfEzV+ACeIASuFACqGACqGACqGACqGACqGACqGACqGACuGACeIAimHDTOADzN/AymIACeIACuGACqGACqGACqGACqG"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-KS",
+   "wikidata": "Q1558",
+   "name": "Kansas",
+   "capital": "Topeka",
+   "capitalNote": null,
+   "flagFile": "Flag of Kansas.svg",
+   "flag": {
+    "src": "regions/us-ks.png",
+    "author": "Xrmap",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Kansas.svg",
+    "print": "ACBbACBbACBbACBbACBbASBbAB1cJDtOKD5NAB5cACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbASBbAB9dpJgeoZYfAB9dASBbACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbASBcAB5XOVQ6LkxBAB1bACBbACBbACBbACBbACBbACBbACBbACBbACBbACBbASFbABtaKjtie4KOfIOOKTtjABtaASFbACBbACBbACBbACBbACBbACBbACBbASBbAB9cDCVVk5d+hrbCg7PBk5h/CyRVAB9cASBbACBbACBbACBbACBbACBbACBbAiFbABtbLT1arINRonhXoXZuto5gLDxdABtbAiFbACBbACBbACBbACBbACBbACBbASFbABtcIj5VN4kqMYsxVZFtdYiZKEBkABpZAiFbACBbACBbACBbACBbACBbACBbASFbAB9bBydZXI45dK9LY7A3YI0/CSdbACBaASBbACBbACBbACBbACBbACBbACBbAB9bARxdABldJjFgbHNhanZhJTNfABlcARxdACBbACBbACBbACBbACBbACBbAB9bBCNaJTpOGjBTHjFQJTlKIzlLGC1SHTJSKDxNASFbACBbACBbACBbACBbASBbAB5cDipWdHMyYGM4gHwue3gwZWc4cW8zaGk2amo1CCZYAB9cACBbACBbACBbACBbACBbAiJaKT1NITdPJTlOJjlOLUBLJTpOITdPLD9LAyJaAB9bACBbACBb"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-OK",
+   "wikidata": "Q1649",
+   "name": "Oklahoma",
+   "capital": "Oklahoma City",
+   "capitalNote": null,
+   "flagFile": "Flag of Oklahoma.svg",
+   "flag": {
+    "src": "regions/us-ok.png",
+    "author": "xrmap",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Oklahoma.svg",
+    "print": "AHPPAHPPAHPPAHPPAHPPAHPPAHTUAHPVAHTUAXPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPA2mzHnOyGXC1BHPOAnXPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPOAHTVIFprgnA9rodTZ4KTBHTPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAXPOAHPRDnLFenpYOlk5p51tnYJlAmW7AHbTAXPOAHPPAHPPAHPPAHPPAHPPAHPPAnTOAHDUPoKzvZxcVG9RQWJGpoZRM3uxAHHUAnPOAHPPAHPPAHPPAHPPAHPPAHPPAnPOAHLTMHy3hXBbqYVRO1UyXGlPSI3AAG/SAnTOAHPPAHPPAHPPAHPPAHPPAHPPAXPOAHTTEWy5UHSVh4RzX3JjNWt+EXTHAHPQAXPOAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPQCnbML3+8WJC4TIq6L3OkAHLNAnXQAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAGzNAGrLAGnGH22xEWi1BGnEAGvOAGzNAHPPAHPPAHPPAHPPAHPPAHPPAHPPAnTPU6DfYKjhPpbcXabhWKPgZavjZqviS5zdAHHOAXPPAHPPAHPPAHPPAHPPAHPPAnTPS5zdVqLfTZ3dW6XgVaLfV6PfXabhR5ncAHPPAHPPAHPPAHPPAHPPAHPPAHPPAHPPAG3NAGzMAG7NAGzMAGzMAGzMAGvMAG3NAHPPAHPPAHPPAHPP"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-IA",
+   "wikidata": "Q1546",
+   "name": "Iowa",
+   "capital": "Des Moines",
+   "capitalNote": null,
+   "flagFile": "Flag of Iowa.svg",
+   "flag": {
+    "src": "regions/us-ia.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Iowa.svg",
+    "print": "Ch9iCyBiBx1gEydn4OLq/////Pz8/v7+/v7+/fz8/v//+uDj2Qks2AAj2AEm2AAlCh9iCyBiBx1gEidn4ePr/////v7+//////////7+////+uDk2Qks2AAj2AEm2AAlCh9iCyBiBxxgFClq1NLY0LurwKqa9PDt2szDuJ2N2dHI9tvd2gou1wAi2AEm2AAlCh9iCyBiBxxgEydo3Nrg4tjTqot2up+Mqot3upuF0cCu6MfG3A0x1wAi2AEm2AAlCh9iCyBiBxxgEiZn4OPrrLfUvL3Lw6+k18a5xMPPssPf8Nfe3Asu1wAj2AEm2AAlCh9iCyBiBhtfGy5ssrjOgouud4OrgYyxv8LTe4WrZneiz7jI4RAx1gAi2AEm2AAlCh9iCyBiBhtfGi5strvQaXWhf4quc32mnKTBanSfj5298dje2wsu1wAi2AEm2AAlCh9iCyBiBx1gEydn3uDq5efv7e/08vb5+/z94OLry9Tj+N/j2got1wAj2AEm2AAlCh9iCyBiBx1gEidn4ePr/////fX3/enr/O/x//r6////+uDk2Qks2AAj2AEm2AAlCh9iCyBiBx1gEidn4ODp////88XN6XqL7pSi9cnR////+d7h2Qks2AAj2AEm2AAlCR5iCh9iBhxgEiZn4ePr/////vn6//r6//r6/vf4////+uDk2gkr2QAi2QEl2QAkECRmESVmDiJlFytq4OLq/////f//////////////////+eDj2Q8x2AUo2Agr2Acq"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-MO",
+   "wikidata": "Q1581",
+   "name": "Missouri",
+   "capital": "Jefferson City",
+   "capitalNote": null,
+   "flagFile": "Flag of Missouri.svg",
+   "flag": {
+    "src": "regions/us-mo.png",
+    "author": "Marie Watkins Oliver",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Missouri.svg",
+    "print": "vwowvwowvwowvwowvwowvwowvgowvQsxvQsxvgowvwowvwowvwowvwowvwowvwowvwsxvwsxvwsxvwsxvwsxvgsxwQowxwYrxwYrwQowvgsxvwsxvwsxvwsxvwsxvwsxvgYsvgYsvgYsvgYsvQYswQUrtwcujR5GjR5FuAgvwQUrvQYsvgYsvgYsvgYsvgYswx1Awx1Awx1Awx1AxR5Buxg9cFF6V4+/U4u8a0x1vBk9xB5Bwx1Awx1Awx1Awx1A+u/x+u/x+u/x9+3v//n4ra7DcYahdp2ZcZiWcouqrK3C//n49+3v+u/x+u/x+u/x/////////////v7+////kaG+k2VVfmgvmns7nHZplKbD/////v7+/////////////////////////v7+////kqC9hFc7i1dHsZh4hV1ElKLA/////v7+////////////6evw6evw6evw5+nu9PX2oa7JeXZ2w5A6xqNLeXl8oa7J9PX25+nu6evw6evw6evwEi9mEi9mEi9mEi9mEzBnDitiNU+AeoiWfIaVNU+ADSpiEzBnEi9mEi9mEi9mEi9mABxYABxYABxYABxYABxYABxYAh5ZCydjCidkAR5ZABxYABxYABxYABxYABxYABxYASJdASJdASJdASJdASJdASJdACFcAR9aAR9aACFcASJdASJdASJdASJdASJdASJdACBaACBaACBaACBaACBaACBaACBaASBbASBbACBaACBaACBaACBaACBaACBaACBa"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-WI",
+   "wikidata": "Q1537",
+   "name": "Wisconsin",
+   "capital": "Madison",
+   "capitalNote": null,
+   "flagFile": "Flag of Wisconsin.svg",
+   "flag": {
+    "src": "regions/us-wi.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Wisconsin.svg",
+    "print": "ACmGASmGACeFDDOMK0qYKUqZH0OVJEeWJUeXJESWKEqZJUaWDDOLACeFACmGACmGACmGAiqHACSDIkSWucPdnavQkqLKfJDBl6bNl6fOq7fWnqzQM1SeACKCAiuHACmGACmGACmGACiGBSyHKkmYI0WWJkmYKEqUJ0mVI0SVK02aI0SVDDKLACiFACmGACmGACmGACmGACmGACiGASKCACGCASWBGz5+Hj54BSmBACCBASODACeFACmGACmGACmGACmGACmGACmGACmGACmJDTB/IjZjSU9PR05HNzNiGyx7ACqJASqGACmGACmGACmGACmGACmGACmGASmFACaIFjV3UlJBnYArlIMyeDEjPCliACmLAimFACmGACmGACmGACmGACmGACmGASqGACSGIz+Bo517nIJRqY1SPTsYBiRqACqLACmFACmGACmGACmGACmGACmGACmGASmFACaHGDZ6gXxqhWwagm8mMjhGCiduACmJACmFACmGACmGACmGACmGACmGACmGACmGACmGAyuHGzBeNjQtKS9CFCxkBCqBACmGACmGACmGACmGACmGACmGACmGACmGACmGACmGACiGG0CXJkiXIkOQGz+VACmIACmGACmGACmGACmGACmGACmGACmGACmGACmGAiqHACKCa4G3sr7anazRjJ7HAyyHACiGACmGACmGACmGACmGACmGACmGACmGACmGASqGACaEFTiOKUuZH0KUJUeXACmGACmGACmGACmGACmGACmG"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-IL",
+   "wikidata": "Q1204",
+   "name": "Illinois",
+   "capital": "Springfield",
+   "capitalNote": null,
+   "flagFile": "Flag of Illinois.svg",
+   "flag": {
+    "src": "regions/us-il.png",
+    "author": "Denelson83",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Illinois.svg",
+    "print": "/////////////////////v39//7+/v7+/f39/v39//////////////////////////////////////////7+////3rK737a///////3+//////////////////////////////////////7+////4rXAwHeFqJaMraSa0MrE/fz7//////////////////////////////7+////+PHzy5Wb2tHJfW1abltIdWVV087L/////f39//////////////////////7+////9/Dx0pmjtaCZeWpaeGdYzMa5///4/v3+//////////////////////////7//////fz8xWd8tXh7jYJshXdv+Ox2//Je/v73///////+////////////////////////9fb2y7Cqh4aMf3hdtK2n8uNb/+Ym/f30///////+////////////////////////+v7/kqyDxn6MjIKElZeSxMKr4eDE+vv8/////////////////////////////v7+////6ejfuZ2BfZZswMnC19/c8/n7////////////////////////////////////////////6fbu1+Xc6vLs8/fz/v79////////////////////////////////////////+/z82tznzdPgytDdytDd/Pz9////////////////////////////////////////////+vv7+vv8/P39/Pz9////////////////////////"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-KY",
+   "wikidata": "Q1603",
+   "name": "Kentucky",
+   "capital": "Frankfort",
+   "capitalNote": null,
+   "flagFile": "Flag of Kentucky.svg",
+   "flag": {
+    "src": "regions/us-ky.png",
+    "author": "Commonwealth of Kentucky",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Kentucky.svg",
+    "print": "AABmAABmAABmAABmAABmAABmAABlAABmAABnAABmAABmAABmAABmAABmAABmAABmAABmAABmAABmAABmAABmAABmAABoBANmBgVlAABoAABmAABmAABmAABmAABmAABmAABmAABmAABmAABmAABmAABoHRdYIxtSHxhTFhFbAABnAABmAABmAABmAABmAABmAABmAABmAABmAQBmAABoDgtePjNVjYmhjYijNSxYCQdgAABnAABmAABmAABmAABmAABmAABmAABmAQFmAABqDwhPk4+q4drI1NLMko6qCANSAABqAQFmAABmAABmAABmAABmAABmAABmAQFmAABoHhZOxcPQ1cuyvr67yMXOHRZPAABpAQFmAABmAABmAABmAABmAABmAABmAgFmAABrVkIyxLuz3NTAysrHu7O2PzI8AABqAQFmAABmAABmAABmAABmAABmAABmAgFlAABqMCZNZFpfr6e2qaG2XFhmMypLAABrAgJlAABmAABmAABmAABmAABmAABmAABmAABnDQhiHjZeHTtvHztvFDVkDwphAABnAABmAABmAABmAABmAABmAABmAABmAABmAAFmAABmBQ9pCitsCShrBQ9pAABmAABmAABmAABmAABmAABmAABnAABnAABnAABnAABnAQBnAABmAQBnAQBnAAFmAQFnAABnAABnAABnAABnAABnAABlAABlAABlAABlAABlAABlAAFlAAFlAAFlAAFlAABlAABlAABlAABlAABlAABl"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-AR",
+   "wikidata": "Q1612",
+   "name": "Arkansas",
+   "capital": "Little Rock",
+   "capitalNote": null,
+   "flagFile": "Flag of Arkansas.svg",
+   "flag": {
+    "src": "regions/us-ar.png",
+    "author": "Unbekannt",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Arkansas.svg",
+    "print": "vwowvwowvwowvwowvwowvQsxxAovxAovxQovwgovvQoxvwowvwowvwowvwowvwowvwowvwowvwowvwowvAoxyQkutggwTCJTTR1PuQkvyAouvAoyvwowvwowvwowvwowvwowvwowvgowvgsxywktlw04Lytfe5WzdpGwMSldmg03zAktvQsxvgowvwowvwowvwowvQoxwQkvyAkucRRCLkV2s8TV0tXf0dTfr8HSL0R1chNByAkuwgkvvQoxvwowvgsxxggttwoxSBxORmaQ193m////6ezx6ezx////1NvlRmeQRxtPtwoxxggtvgsxxAkunBM8KS9jfpe0+Pj5rLTIp7DFsbnMpK3Dpq/EsbnM9fX4gJm1KC9jmxI8xAkuwwkuohI7OTBidZCv9fX4/f39w8vZ4+bt4+btwMjW/v398/P2dY+uOjBhohI6wgkuvgoxxwgtuwcuVBxNRGSO2uHp2NvlydDcydDc2dzl2ODpRWOOVRpMvAcuxggtvgoxvwowvQowwQsxyQgueBJALUBztcbW3N7m3N3msMLULkBxexE/ygkuwQswvQowvwowvwowvwowvgowvgsxywgtnw84MytefZi2epazNipdoQ03ywgtvQsxvgowvwowvwowvwowvwowvwowvwowvAsxxgguuwsyRhxPSxtNvgsxxgkuvAsxvwowvwowvwowvwowvwowvwowvwowvwowvwowvQsxwwovwwkvxAkuwgovvQsxvwowvwowvwowvwowvwow"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-TN",
+   "wikidata": "Q1509",
+   "name": "Tennessee",
+   "capital": "Nashville",
+   "capitalNote": null,
+   "flagFile": "Flag of Tennessee.svg",
+   "flag": {
+    "src": "regions/us-tn.png",
+    "author": "-xfi-",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Tennessee.svg",
+    "print": "zAAAzAAAzAAAzAAAzAAAzAAAzAEBzAICzAEBzAAAzAAAzAAAywICzgAAxy0xDThtzAAAzAAAzAAAzAAAzAAAywEBywAAzgAAygAAzAEBzAAAzAAAywICzgAAxy0xDThtzAAAzAAAzAAAzAAAywAA0QAA0hscyzc71xUUzgAAywAAzAAAywICzgAAxy0xDThtzAAAzAAAzAAAywEB0AAAwDI3Tl+FED91VlN3zSIjzAAAzAEBywICzgAAxy0xDThtzAAAzAAAzAEBywAA0QoJc22LqcPXPleCB0B5h1hw2AMAyQAAywICzgAAxy0xDThtzAAAzAAAzAECzgAAxyYpK058gZayQF+JytbifYKexgYHzQAAywICzgAAxy0xDThtzAAAzAAAzAECzQAAyyksGDtvJEh5RGOMUnKZY2yOzAoLzAAAywICzgAAxy0xDThtzAAAzAAAzAEBygAA2REORkhviKbBoq3BAB9geUtm2gUCyQAAywICzgAAxy0xDThtzAAAzAAAzAAAywEB0AAAwTM5a3aXOmGNWFV40SYmzAAAzAEBywICzgAAxy0xDThtzAAAzAAAzAAAzAAAywAA0AAAzhgZxjQ31xUTzQAAywAAzAAAywICzgAAxy0xDThtzAAAzAAAzAAAzAAAzAAAywEBzAAAzgAAygAAzAEBzAAAzAAAywICzgAAxy0xDThtzAAAzAAAzAAAzAAAzAAAzAAAzAEBzAICzAEBzAAAzAAAzAAAywICzgAAxy0xDTht"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-WV",
+   "wikidata": "Q1371",
+   "name": "West Virginia",
+   "capital": "Charleston",
+   "capitalNote": null,
+   "flagFile": "Flag of West Virginia.svg",
+   "flag": {
+    "src": "regions/us-wv.png",
+    "author": "Militaryace, Denelson83",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_West_Virginia.svg",
+    "print": "AiJcCCZgCCZgCCZgCCZgBiNdByVeCytkCitkByVeBiNdCCZgCCZgCCZgCCZgAyJdOFF/3+Lq3eHp3eDo3eLq4vL24Obt0szb08zb4ebu4vL23eLq3eDp3ODo5OftSmCKQlmF/////////////vj55Z2wwnGGtmFlumRou3GF5J2v/vj5/////f3+////VmqSQViE/////fz9/v//9uTptHaK3MGl9+y18eas1r2gs3eK9uTp/v//+/v8////VWqRQVmF////////////8/n8nMaf2Nqywbat0rzG7OfEmsaf9Pn8/////f3+////VmqSQVmF/////v7+////1t3fqa6TvcCXblYtXFlfycSrqKyO1t7g/////P39////VmqSQVmF/////f79////w9TReZWDwcJvNVMrJEM0oaRxfZd/w9TS////+/z8////VmqSQVmF/////f7+////1NvedIZl18SXeXaEkIyT5NalcoNj1Nze/////Pz9////VmqSQViE/////P3+/fz++f7+b5OHm4xT7LOE7LWHmo1Tb5OH+f7+/fz++/v9////VWqRQlmF/////////f39////vMfEfaSVt5yGt5eDfaOUvMfE/////f39/f//////VmqSOVKA4OTs3uPr3uPr3OHp5enx4eXu0c7c0c3b4eXt5enx3OHp3uPr3eLq5enwS2GMASFbAyJcAyJcAyJcAyJcASFbAyJcBiZfBiZgAyJcASFbAyJcAyJcAyJcAyJcASFc"
+   }
+  },
+  {
+   "cc": "us",
+   "iso": "US-IN",
+   "wikidata": "Q1415",
+   "name": "Indiana",
+   "capital": "Indianapolis",
+   "capitalNote": null,
+   "flagFile": "Flag of Indiana.svg",
+   "flag": {
+    "src": "regions/us-in.png",
+    "author": "The Indiana state flag was designed by Paul Hadley in 1917. This SVG file was made by Zscout370 with some modifications by HoosierMan1816.",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Indiana.svg",
+    "print": "AA9dAA9dAA9dAA9dAA9dAA1eAAtfDhhYDhhYAAtfAA1eAA9dAA9dAA9dAA9dAA9dAA9dAA9dAA9dAQ9dAAlgJilPGR9UJidPJyhPGR9UJilPAAlgAQ9dAA9dAA9dAA9dAA9dAA9dAA9dAhFcCRVZEBlXICNRRDtEQTpGHyNSEBlXCRVZAhFcAA9dAA9dAA9dAA9dAA9dAA5eBhNbQTpGEhpWCBNbQzpGTkNBBhJbERpXQDpGBhNbAA5eAA9dAA9dAA9dAA9dAA9dBRJbAxBcChVaGh9Udl0zkG8oFx1VChVaAxBcBRJbAA9dAA9dAA9dAA9dAQ9dAA1eOTVIJihPMC5MBRJckG8pj28pBRJbMC5MJidQOTVIAA1eAQ9dAA9dAA9dAA9dARBdAAtfCxRaLCtOAABnYlA6YlA6AABnLCtOCxRaAAtfARBdAA9dAA9dAA9dARBdAAtfIydQFBtWCRFcCRVaQztFQztFCRVaCRFcExpXIydQAAtfARBdAA9dAA9dARBdAAxeGR9UDBVaGR5WISVRLy5MLy5MISVRGR5WDBVaGCBUAAxeARBdAA9dAA9dAA9dARBcAAhhGx9UKypOAABmMS9MMS9MAABmKytOGx9UAAhhARBcAA9dAA9dAA9dAA9dAA9dAA5dDRdYCxVZISVRKypOKytOISVRChVZDRdYAA5dAA9dAA9dAA9dAA9dAA9dAA9dAA9dAQ5dAApfGSBUDBZZDBZZGSBUAApfAQ5dAA9dAA9dAA9dAA9d"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-BC",
+   "wikidata": "Q1973",
+   "name": "Britisch-Kolumbien",
+   "capital": "Victoria",
+   "capitalNote": null,
+   "flagFile": "Flag of British Columbia.svg",
+   "flag": {
+    "src": "regions/ca-bc.png",
+    "author": "Kooma (original) Sshu94 (current)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_British_Columbia.svg",
+    "print": "zF1t6pCU9cfIxMzmcp7eJ2PFAFHLpmCFp2KHAFTOI1C0Y1WarF194mtw65SY5M/aYn/GpH6l3HiD8IiJ/83J9+vvudX1yHiMx3KGrJm83nR99JCP/cbD8erws83yZpDW6VdY2VNc2VFa1kVO0kVQ3VVg42dav4Mcvn8Y4FJG2URQ11tk3WNr2lZf10hS6FFSeXOtrJ3B7s/V98XG9ZeV721u1IyVwYFdwodj4c3U/9HN9pya5GZr3HmDpoOpe3y3sMjs17zM35CZ1nWCnGGJU1agDVrLqF2KqWCMD2vcXI3XrL7l5MfR4JafxGd7mVZ/6dff+sC/+MnJsr/ikbnroMLvor3evrPFvrLFobrZnrbjjq7hs8/y/f////r55cDJK2nKXZPdYZfgL2rNRm+wh5qve5OyWHmOWHmOe5SziZywR3KzL2fKX4nTXInULW/Qy9jwk6/jhqPVu8LBv8KzlqCSh5KEzMGJy8GJiJOElaCSv8Kzu8PCh6XWk7Hky9jvM2zJcpbPdZK8WXWHe4VqtK1ptapXl5NMl5NMtapXtK1pe4ZqWXWHdZK8cpbPM2zJxtXvkqS1i5iNx7190b5lt6AqtJoe0KsR0KwRtJsetp8q0b9lx719i5iNkaS1xtXvM2SvjZ2flZt6lZBGup4Z6bwK9scC+8sA+8oA98cC6r0Kup4ZlZBGlZt6kqGfNWavzc6/pqNutqZG0K8j7cAB/9AB/84B/84B/84B/84B/9AB7sEB0bAjualGrKht0dG/"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-AB",
+   "wikidata": "Q1951",
+   "name": "Alberta",
+   "capital": "Edmonton",
+   "capitalNote": null,
+   "flagFile": "Flag of Alberta.svg",
+   "flag": {
+    "src": "regions/ca-ab.png",
+    "author": "Kooma (original)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Alberta.svg",
+    "print": "DTaSDTaSDTaSDTaSDTaSDTaSEDeTEDaSEDaSEDeTDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDDaSATOQADSRADSRATOQDDaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDjaSCzWTFDaKp4mftWl+tWl9p4mfFTaKCzWTDjaSDTaSDTaSDTaSDTaSDTaSDTaSDjaSCjWUGDaH7omM/2Nl/2Vm7ouNGDaHCjWUDjaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaTDTOJVneqbnejW2idS26lDjSJDTaTDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaVCzODZH11Z4x0YoVzbYJ/DTWFDTaUDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaRDDWUDzaFOW9QOG1JNmxGL2ZGEDeGDDWUDTaRDTaSDTaSDTaSDTaSDTaSDTaSDTaRCzWUEzaGiXlFkH9IkH9IfnI6EjaFCzaVDTaRDTaSDTaSDTaSDTaSDTaSDTaSDTaSDjeSCjSSR05DjXgUjXgUSU9ECjSSDjeSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaTBTGXOEhdOEhcBTGWDTaTDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDjeSBzOXBzOXDjeSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDTaSDzeRDzeRDTaSDTaSDTaSDTaSDTaSDTaSDTaS"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-SK",
+   "wikidata": "Q1989",
+   "name": "Saskatchewan",
+   "capital": "Regina",
+   "capitalNote": null,
+   "flagFile": "Flag of Saskatchewan.svg",
+   "flag": {
+    "src": "regions/ca-sk.png",
+    "author": "Kooma",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Saskatchewan.svg",
+    "print": "BWkgEG8nLH0yLoAyEnAoBWkgB2ohB2ohB2ohB2ohB2ohB2ohCGkhB2ohB2ohB2ohAGYeRoQ17Xkm9IQkUoc1AGUeCmsiB2ohB2ohB2ohB2ohB2ohAmwhBmshB2ohB2ohAGcfM34ynokQpYoPOn8xAGYfCWshB2ohB2ohB2ohBmohCGohJlweEmUgBGshCGohAmgeKXw0jKIRoawOLX0zAWgfCWwiCGshCGshCmohAG4iNFkcoiYMU0sXAm0iCWshAGUfI3o4WowmZ5EjJ3w4AGUfA2kjAmgiAmgiBGciAGsjLVYdkDwKR04YAGkjA2giG3IdIXYiO4Y8PYc9I3clG3IdHHMeHHMeHHMeHHMeGnQeJ28cTGUZHGsfGHQeHXMe5soE5ckD48gB5MkC5MkD5soE5soE5soE5soE5coE68wEyr4Gd5oOqq8K6ssD5coE/9YA/9YA/9YB/9YB/9YB/9YA/9YA/9YA/9YA/dUA/9kA2cIDYIcRsK8J/9gA/tYA/NMB/NMB/NMB/NMB/NMB/NMB/NMB/NMB/NMB+9MB/dQB780CwroHxroG/9UA+9MB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/NMB/9gA1cIF8M8C/9YB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/tQB9M8C+tIB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dQB/dUB/dQB/dQB/dQB"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-MB",
+   "wikidata": "Q1948",
+   "name": "Manitoba",
+   "capital": "Winnipeg",
+   "capitalNote": null,
+   "flagFile": "Flag of the Province of Manitoba.svg",
+   "flag": {
+    "src": "regions/ca-mb.png",
+    "author": "Echando una mano",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Province_of_Manitoba.svg",
+    "print": "036Hk3qjABJ1nDpVnD1ZAAhvh0Ns2IyTxwkMzQAAzAEBzAAAzAAAzAAAzAAAzAAAODmI1JGavr/Zs150sFJnsoqj2r3HR1SdvQAE0AAAywECzAICzAIBzAEBzAAAzAAAx0FJxzlA41JN2TQy1iUk5FVRykhPxTM7zQUFzAAAzAAAywEAywEAzAAAzAAAzAAAxUBJzlJa6WJe1iop2Tg36F9by0RMx0ZPzQYFygAA2D024HBn4G9m2Dw0ygAAzAICOlan1rnGpYSkrVFor111sLrazJKgPjaBvgQLzwAA00xDz4mAz4eA1EtCywAAzAMC2YqRljpcCQVinDhRmzVMCg5moHOW1WpwwwAB1wAAjj8cOFo7OnhAkEMd1gAAygIBzgYGswAIvQEHyQcIyQgKvAEFswMG0BQVywIA1gAAjyIDCiQJJEARlSMD1gAAygEAywAA0QEA0AEAzQAAzQAA0AEA0QIAywAAywEAzwAAwAsAc4tjdoVfwwYAzgAAzAEAzAAAywAAywAAzAAAzAAAywAAywAAzAEBzAAAywEBzwAA0zcxzzMszgAAzAEBzAAAywAAywAAywAAywAAywAAywAAywAAywAAywAAywAAygAAyQAAyQAAygAAywAAywAA0QAA0QAA0QAA0QAA0QAA0QAA0QAA0QAA0QAA0QAA0QAA0AIC0AIB0QAA0QAA0QAAywAAywAAywAAywAAywAAywAAywAAywAAywAAywAAywAAywAAywAAywAAywAAywAA"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-ON",
+   "wikidata": "Q1904",
+   "name": "Ontario",
+   "capital": "Toronto",
+   "capitalNote": null,
+   "flagFile": "Flag of Ontario.svg",
+   "flag": {
+    "src": "regions/ca-on.png",
+    "author": "Kooma",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Ontario.svg",
+    "print": "04eak4mqAClzmkdrmktwACRuhVR82JSkxBk3yQ0ryBEvyBEvyBEvyBEvyBAuyBAuOFCJ05ipu8bZsGuHrWB9sJKs2cHOSGqduQ4vzBEuyA0syQsqyQsqyQ0syBAuyBAuw09pw0di4V5w1kJZ0zNN4WFzx1ZvwEFeyRUyyA0swh45vyQ+vyQ+wh44yA4tyBAuxUtlzFpx5GZ30zVO1kJZ42N1yE5nx1BqyhUzwwUk0Wp65ZWh5ZWh0Wl6wwYkyRIwOWuh1sDOrJSurV9+sG2Jt8baypmsPU+GuxU1yAQiynJ/0aCr0aCrynJ/xAUkyRIw1ZSll1BzByJpmUZrmEFmCCdtoYajz3OIvxAu0gksU003QZYwQZYwU0020QksxhIuyxczrA4ztBI0xRc2xRk3sw8xrA4yzSdCyBIuywUviFciZKQaY6Qah1cizAUvxxIuxw8tzRAtzRAtyQ4syQ4szREtzhAtxwsqxhEu0gwukyctF4ctF4cskycs0gwuxhEuyBAuxxAuxxAuyBAuyBAuxxAuxxAuyBEvyBAuxxEuzQouWUgrWUgrzQouxxEuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyhAuyg0tyg0tyhAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuxxAuxxEuxxEuxxAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuyBAuxxAuxxAuyBAuyBAuyBAu"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-QC",
+   "wikidata": "Q176",
+   "name": "Québec",
+   "capital": "Québec (Stadt)",
+   "capitalNote": null,
+   "flagFile": "Flag of Quebec.svg",
+   "flag": {
+    "src": "regions/ca-qc.png",
+    "author": "Original: René Chaloult Vector: Krun",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Quebec.svg",
+    "print": "AD2lADylBD6mEUeqAj2lADKgWYDE////////WYDEADKgAj2lEUeqBD6mADylAD2lAT6lADeiKFuzh6PUBUGnADGgWYHE////////WYHEADGgBUGnh6TUKFuzADeiAT6lBkGnADmjXoTGssPkL2C1ADCeXYTG////////XYTGAC+eL2C1ssPjXYPGADmjBkGnAC6eACudDTmjMV60AC2dACKZWHfA////////WHfAACKZAC2dMl60DTmjACudAC6egJ7SgJ7Sfp3ReJjPgp/TeJjPrMDi////////rMDieJjPgp/TeJjPfp3RgJ7SgJ7S////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////gp/Sgp/Sgp/Se5rQhaHTepnPrsDi////////rsDiepnPhaHTe5rQgp/Sgp/Sgp/SADGfAC6eDzeiQWS3ACycACaaWHjA////////WHjAACaaACycQWS3DzeiAC6eADGfBkGnADmjUnvCscPjJFixADGfXYPG////////XYPGADGfJFixscPjUnvCADmjBkGnAT6lADeiOmm5hKHUFU2sAC+fWoHE////////WoHEAC+fFU2thKHUOmm5ADeiAT6lAD2lADylBDykEUWpAjukADKgWYDE////////WYDEADKgAjukEUWpBDykADylAD2l"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-NB",
+   "wikidata": "Q1965",
+   "name": "New Brunswick",
+   "capital": "Fredericton",
+   "capitalNote": null,
+   "flagFile": "Flag of New Brunswick.svg",
+   "flag": {
+    "src": "regions/ca-nb.png",
+    "author": "Dbenbenn (original) E Pluribus Anthony (current)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_New_Brunswick.svg",
+    "print": "0S8n2EkgwgAz0C4n4mgZ0jQl2Ukg4WMa1T0j0jMm10Uh2Ekg10Qi0zUlzyYpyRMtyxsr6H0T3lwc32Ab7Y8P5XIW5nkU420X4mkY5HEW86QK7IwQ4WQZ3l4b318byxssyxwr2k4f5XQV6YIS42sX4mcY4GQZ3Vsc6YYR5XgU3Voc4moX314b6H8T6YETxw0v1Dgk420Y4mwY3lsc1kAiyxwrzykp6HQa7HoX41IezRosyRMt0S4n5XcV21IezSAq+boF+LMG+LQG97EH9rAH8ZkN84oIu2cArXgCw40M3akC/8YD+bsE+LYF+LcF+r0E/9EA/9IA/9MA/s4B86YJ3JoHrIosopdhtLaqtKNF7rYA+MkD/9EA/9IA/9EA/9AA/8wA/8wA/8sA/9EA55MMwpMD4uLA////9PPvzKgW3YAL2KgE/9cA/soA/8wA/8wA/80A/swA/9EA5rkAhG4Cb1kA08ig/f//3NrU07AWjXUAiW8B37QA/9EA/swA/80A/MsD+8sC/s0C9MUDUEEFU0EAzbNGlolLl4QryawxWkcARTkE06sD/9ED+ssC+8sD/9IA/9IA/9EA/9gAlXUAPi8AbVQAalIAcVgBaVMDTTsAfWIA/9QA/9IA/9IA/9IAk5FktqVGuKVBlpVncXRdNTs7KjA3RUY5P0AzLjEtMjk/YmhclJNosaJKxKw1r6JPSG3IVnfEVXbDR2zGUnXHY4LDXXu/S2ipPVmQUWujZ4THWHvHS2/HV3jGX33CW3vI"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-YT",
+   "wikidata": "Q2009",
+   "name": "Yukon",
+   "capital": "Whitehorse",
+   "capitalNote": null,
+   "flagFile": "Flag of Yukon.svg",
+   "flag": {
+    "src": "regions/ca-yt.png",
+    "author": "Kooma (original)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Yukon.svg",
+    "print": "GHsBGHsBHH0FB3EAfbRw////+/37+/v7////+/z+////c4/QACqmCzutBzisBzisGHsBGHsBHH0FB3EAfbRw/////f/9ysrL09PU////////c47QACqmCzutBzisBzisGHsBGHsBHH0FB3EAfbRw////////ysnEw8C9////////c47QACqmCzutBzisBzisGHsBGHsBHH0FB3EAfLRw////9vPvu6SUupiR9fDw////c47PACqmCzutBzisBzisGHsBGHsBHH0FB3EAfLNv////8NbRt4mct4uc8dXT////c43PACqmCzutBzisBzisGHsBGHsBHH0FB3EAe7Nw////t8DWUmqxUmmxuL/Z////co3QACqmCzutBzisBzisGHsBGHsBHH0FB3EAfbZy////xKKjhmCHhmCHxKGm////dJDRACmmCzutBzisBzisGHsBGHsBHH0FB3AAgLp1/Or3y42KwlRYwVNYy4yM/e7sd5TVACilCzutBzisBzisGHsBGHsBHH0FB3AAf7p1/+75r4aA17Gv17CvroWC//LudpTVACmlCzutBzisBzisGHsBGHsBHH0FB3EAfLVw////vMKsq8Kiq8KivMGu////co/QACmmCzutBzisBzisGHsBGHsBHH0FB3EAfLRw////6+3mvcmwvcix6uzo////c47PACqmCzutBzisBzisGHsBGHsBHH0FB3EAfbRw////+vv5////////+vr8////c4/QACqmCzutBzisBzis"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-NU",
+   "wikidata": "Q2023",
+   "name": "Nunavut",
+   "capital": "Iqaluit",
+   "capitalNote": null,
+   "flagFile": "Flag of Nunavut.svg",
+   "flag": {
+    "src": "regions/ca-nu.png",
+    "author": "Kooma (original)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Nunavut.svg",
+    "print": "/dUA/dUA/dUA/dUA/dUA/dQA/t0Bv2EAyIqS/////v39/////////////////////dUA/dUA/dUA/dUA/NIA/tUA8c0CwBQIyDxC9f37//7+/v7+////7fT63uv2/////dUA/dUA/dUA/dUA/t0A/+IA9tkDyiEG0VRb+P///////f3+////wdjueq3b/////dUA/dUA/dUA/NcA4KwC3KMD160Epx4Atl1k3+bl5Nvb/fz8////+/z+8vf7/////dUA/dUA/dMA/eAAv1kKuQAXxhAVwRUTxBgZyg8PtTo69vr5/////v7+/////////dUA/dUA/NMA/9wA47ECxlIMuS0PtAwSth4evy0uzoeH/v////39/////////////dUA/dUA/dUA/dQA/tcA+OkAxGsKxwARtjAt5u/w+f7+/////////////////////dUA/dUA/dUA/dUA/tMA+NgAuFAMsQAMrj48+Pv7//////7+/////////////////dUA/dUA/dUA/NQA/9kA8McBtR4T0AkNwUJB9/v7//////7+/////////////////NQA/NQA/NQA/NMA/9YA8ssApiUQrwQKqUNC9vv7//////39/////////////////9cA/9cA/9cA/tYA/9sA78UBxxsU4RQYzRIS3cTE/////v39/////////////////NUA/NUA/NUA+9QA/9gA78YArygPqwsPriEg5NTU/////fz8////////////////"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-NL",
+   "wikidata": "Q2003",
+   "name": "Neufundland und Labrador",
+   "capital": "St. John's",
+   "capitalNote": null,
+   "flagFile": "Flag of Newfoundland and Labrador.svg",
+   "flag": {
+    "src": "regions/ca-nl.png",
+    "author": "Original 2005 upload was created by Robert Crosbie and uploaded by Kooma. Entire flag redrawn/recoded from scratch by MapGrid in 2019. Colors changed by Great B",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Newfoundland_and_Labrador.svg",
+    "print": "////w8/abYymgp2zgJqxgZ6039rh5puo4Jel4Zel4ZWk5KGu5KKv2XuN4pmn+/HzrL7NobXGYoKeABtOASlaAzNivK6876u2893i9uDk+Obq6rXB1WyB2XmM9Nje////kaW5ADNhtsfUkqq9AC5dBkBrwLXD+MrR////9+Lm45yq4pqp9uHl//////7+////mK/BACxcBjVjm7HDqbvLDEBsu6++7qex4Zun3oua89PY//////7+/fr5/vz9////k6W5AB5RBStbABtOZ4eiq8HPzMTO55eq89/t//////7+////////////////////ytbfe5evhZ+0hJ60cpCpxtPc////7LSm8a5376l276d18Kp48at17aeC9+Hk////ydXed5Wsgp2zgZyzb46nxNHa////67Ko76l47qR37aN27qV47qV17aeD9uDh////k6a6ACBSBSxcABxPaomkq8HQy8PN5pOm8tzr//////7+////////////////////mK/BACxbBTVjnLLDqLrKC0Bsu6++76iy4pyo3oya89TX///////+/vr5/vz8////kKW5ADJgt8fUkKi8AC5dBj9rwLXD+MrR////9+Pn452r45qp9uHl//////7/////rL7No7fHZIWhAB1QAStbAzVkvK+976u29N7j9+Dl+Ofq6rbA1WyB2XuN9dzh////////w8/ab42nhJ60gZuygp+139rh55yr4Zmo4pmo4pim5aSw5qWx2n6Q4pmn+/Hz"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-NS",
+   "wikidata": "Q1952",
+   "name": "Nova Scotia",
+   "capital": "Halifax",
+   "capitalNote": null,
+   "flagFile": "Flag of Nova Scotia.svg",
+   "flag": {
+    "src": "regions/ca-ns.png",
+    "author": "Original: Unknown author Vector: Kooma, FJDEACKB, Zscout370 and Denelson83",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Nova_Scotia.svg",
+    "print": "AD6yAkm2habc/v///v7+/P3+/////////////////P3+/v7+////h6fcA0m3AD6yTn/MADuxADyxUIHN6O74/////P3+/v7+/v7+/P3+////6O74UIHNADyxADuxTX7M/v7/iareCEe2ADavIl6/vtDt/////v7//v7/////v9HtIl6/ADavB0i2iKrd/v7+/P3+////v9HtI1+/ADWsCEvBi46X06Zc06dci4+XCEzBADWsIl+/v9Ht/////P3+/v7/+/z+////6e74U4HLADS7XVxw2owu14EsXFtwADS7UoHK6O/4////+/z+/v7//////////P3+/v7////9g6npYW16zmQxyVwvX2p5gqrp///9/v7//P3+/////////////////P3+/f7+///9hKvqZW941nc02G80ZXB5g6np///9/f7+/P3+/////////v7/+/z+////6O74UYDLADa2LkyQyYgzvncvLkuQADa2UIDL5+74////+/z+/v7//P3+////v9HsIl+/ADevB0a1iK3k48+s5NGsiK3kCEe1ADevIl6/vtDs/////P3+/v7/iKreB0e2ADevIl6/v9Hs/////v7//v7/////wNHsIl+/ADevB0e1h6rd/v7/T3/MADuxADqxT3/M5+34////+/z+/v79/v79+/z+////6O74UIDMADuxADuxTn/MAD6yBUu3iKnd/v7//v7//P3+/////////////////P3+/v7//v7/iandBUu3AD6y"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-NT",
+   "wikidata": "Q2007",
+   "name": "Nordwest-Territorien",
+   "capital": "Yellowknife",
+   "capitalNote": null,
+   "flagFile": "Flag of the Northwest Territories.svg",
+   "flag": {
+    "src": "regions/ca-nt.png",
+    "author": "The original uploader was Kooma at Wikimedia Commons. Updated image created and uploaded by MapGrid",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Northwest_Territories.svg",
+    "print": "KjF9KzJ9Jy57Nj2E8vP3/////v7+/////////v7+////8vP3Nj2EJy57KzJ9KjF9KjF9KzJ9Jy57Nj2E8vP3////+fj1+vr2+vr2+fj1////8vP3Nj2EJy57KzJ9KjF9KjF9KzJ9Jy57NTyE9vf76+vsurvNvL7QvL7RubvN6+vs9vf7NTyEJy57KzJ9KjF9KjF9KzJ9Jy57NTyE9vb67e3us7jTtbrSuLjRt7nR7e7u9vb6NTyEJy57KzJ9KjF9KjF9KzJ9Jy57NTyD+fb84u7lj4Rg4k9N1VpU0WFd8ePi9fj9NjyDJy57KzJ9KjF9KjF9KzJ9Jy57NTyD+ff95OjgNHs6mCwW3YqOxZCP7dDP9vz/NTuDJy57KzJ9KjF9KjF9KzJ9Jy57NTyD9fb88vDqSodFWW0uqG5oy2lq9ePh9Pn+NjyDJy57KzJ9KjF9KjF9KzJ9Jy57NjyE9fT4+v7/YIpbNIc6f1UkzkJD////8/T4NjyEJy57KzJ9KjF9KjF9KzJ9Jy57Nj2E8PH0////pruiMncuMHUvqbKh////8PH0Nj2EJy57KzJ9KjF9KjF9KzJ9Jy57Nj2E8vL2////+/j4cZZlcZZl/Pn4////8vL2Nj2EJy57KzJ9KjF9KjF9KzJ9Jy57Nj2E8vP3////////7fHx7vHx////////8vP3Nj2EJy57KzJ9KjF9KjF9KzJ9Jy57Nj2E8vP3/////v7+///+///+/v7+////8vP3Nj2EJy57KzJ9KjF9"
+   }
+  },
+  {
+   "cc": "ca",
+   "iso": "CA-PE",
+   "wikidata": "Q1978",
+   "name": "Prinz-Edward-Insel",
+   "capital": "Charlottetown",
+   "capitalNote": null,
+   "flagFile": "Flag of Prince Edward Island.svg",
+   "flag": {
+    "src": "regions/ca-pe.png",
+    "author": "E Pluribus Anthony",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Prince_Edward_Island.svg",
+    "print": "1UBA0js96Z2c99va55SO0jYz2lpZ88jH9NHK2lda0S0x5o+M+OLb66eg0jY15pCQ01RG1YJQ0jM70jc71aNU1XJK0is71VBA36VR2ZZQ13pM2oBM2ohL2odN1VI+8Lu90UdE25ZS4J1T15NR1sFk4Lla6K1X6rpa4a9Y3I5P4LRY5Lda6cde36NV1lA/8Lq9z01C2I5N4ahR36tS3JxP3ZZO4Z9R23lI029K3YBP25RO000+1FRA1INN0mRF3mtx8snJ8svJ8sXH8sTH8cXH8cLH773F9sLM58G/yrKm7sXD9cnK8cLG8MLG88zN3GJi/////////////////////v//////8/f1q7ixhY2Dp7Kq+fr5/////v7+////5ouL/v39/v39//7++fb2s7exkJuSur+5v7+4g4BzmJSHkpGG4eLg/////fz8/v7+/PDw/////v7+////8fHwlJeMoZ2SysrFwcK8kYl7qpyOi5CE5unm/////f79//////////////////7+////5NPO3MG56+bj0drXva6lxaufw9HN9vb0//7+////////9M7O/P39////193acqukZIp+YHdqP4V6LoyCWn9ycnxtPZOKSZqRcKae1eDd////4Hl5/////////v395ezqx9fTs8zFocK7lLevkbSsmLqyqsfAw9bR5Onn/vz8////539//v7+/v//6qKi42hp+be3/////+np53d35nZ2/+fo////+re442lp6p+f////7Kqq"
+   }
+  },
+  {
+   "cc": "au",
+   "iso": "AU-WA",
+   "wikidata": "Q3206",
+   "name": "Westaustralien",
+   "capital": "Perth",
+   "capitalNote": null,
+   "flagFile": "Flag of Western Australia.svg",
+   "flag": {
+    "src": "regions/au-wa.png",
+    "author": "Original: Frederick Weld Vector: Denelson83",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Western_Australia.svg",
+    "print": "3oKZlYipACt0pz9qp0RuACVvklB61pCmBylvAB9nAiFpASFpASFpASFpASFpASFpOFGJ3JSou8bZvGSGu1h8tJCr4b7MOmyhAB5nAiFpAiFpAyNoAyNoAiFpASFpASFp1URn1z1g9FNu7DVW6yVK9Vdx3ExsyDhfDiRqACFpAiBqABZuABZuASBqASFpASFp10Fj3FFw9lx26ihM6zVX9Vlz3kNkzEhsDiNoAB9qCCNnioEyi4EyByNnACBqAiFpOm2h3r7NtZGtvVl7vmaHu8fZ2pSpNk+IASVqABZvdXI68MkA+M4AdXI6ABZvBCNoz5Gojkx3ACRumkFumjxpACpyloaowXCOBR5lAB1rv6gffWYAOi8AsJwfAB9rASFpHCVoAB5pACFqEyZqEyhrAR1nAR1nGjd3BCFoAB5ruqQfWkkANy0Aq5gfACBrASFpACBpAyFpAiFpACBpACBpAiJpAyJpABxmBCRoABZvc3E6/9sA/9wAc3I6ABZvBCNoAiFpASFpASFpAiFpAiFpASFpASFpAiJqAiJpACBqByNoiH4yiH4yByJoACBqAiFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASBqABZvABZvAR9qASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpAiJoBCNoBCNoAiJoASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFp"
+   }
+  },
+  {
+   "cc": "au",
+   "iso": "AU-NT",
+   "wikidata": "Q3235",
+   "name": "Northern Territory",
+   "capital": "Darwin",
+   "capitalNote": null,
+   "flagFile": "Flag of the Northern Territory.svg",
+   "flag": {
+    "src": "regions/au-nt.png",
+    "author": "Robert Ingpen",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Northern_Territory.svg",
+    "print": "AAAAAAAAAgICAgEAAAAAgTsM02ATxFoSx1sSx1sSx1sSx1sSx1sSx1sSx1sSx1sSAAAAAAAAAAAAAQEAAAAAgTsM02ATxFoSx1sSx1wUx1oRx1wTx1sTx1sSx1sSx1sSAQEBAAAAYGBgGhkZAAAAgjwM02ATxFoSx1sSxVYLx14WxVcNxlkPx1sSx1sSx1sSAAAAAAAAX19fGBgXAAAAgjwM02ATxFoSx1sSz3Iz8tS/2pJhx1wUx1sRx1sSx1sSCAgIDw8PAAAAMTAwODw/dzEB1WMWw1cOymQf+Oje59HC+O3l2ZFgxFEEyF0Vx1sSU1NTa2trAAAAS0pJPEBDdzAB1WMWwlYN0Gwp38CrIBgUppSJ5JZhwlIGx10Ux1sSDg4ODQ0NDQ0NMjEwAAAAgz0N02IWwFAE25Bd7uHZHAoAqZ+Z9smrwU8CyF0Vx1sSAAAAAAAAAAAAAwIBAAABgTsL02EUxFoSx1wT68Gl6uLc7tbF0XY4xlcMx1wUx1sSAQEBAAAAaWlpHBwbAAAAgjwN02ATxVwVw08B2ZBf7sar46uFxlcNx1wTx1sSx1sSAAAAAAAAaGhoGxsaAAAAgjwN02ATxFoRx1wUxlcNxFQJxlYMx1sSx1sSx1sSx1sSAAAAAAAAAAAAAQEAAAAAgTsM02ATxFoSx1sSx1wTx1wTx1wTx1sSx1sSx1sSx1sSAAAAAAAAAgICAgEAAAAAgTsM02ATxFoSx1sSx1sSx1sSx1sSx1sSx1sSx1sSx1sS"
+   }
+  },
+  {
+   "cc": "au",
+   "iso": "AU-SA",
+   "wikidata": "Q35715",
+   "name": "Südaustralien",
+   "capital": "Adelaide",
+   "capitalNote": null,
+   "flagFile": "Flag of South Australia.svg",
+   "flag": {
+    "src": "regions/au-sa.png",
+    "author": "Robert Craig (Likely Original Designer)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_South_Australia.svg",
+    "print": "3oKZlYipACt0pz9qp0RuACVvkk961o+nBylvAB9nAiFpASFpASFpASFpASFpASFpOFGJ3JOou8bZvGSGulh8tJCr4b7MOmyhAB5nAiFpAiFpAyNoAyNoAiFpASFpASFp1URn1z1g9FNu7DVW6yZK9Vdx3EtryDlfDiRqACFpAh9pABlsABlsAR9pASFpASFp10Jj3FFw9lx26ihM6zVX9Vlz30RkzElsDiNoAB9qCyZofXVHfnVICiVoACBqAiFpOm2h3r7NtZKsvll7v2aHu8fZ2pSpNk+IACRqAB5tQEVLxaMgyaYfP0RLAB5tAyJozY+oj0x4ACVumUBtmDtpACpylYanwXCNARtlDi5rPTs2eWgzhHE2Ozo2Dy1rAB9pGSNmAB5pASFqESVpEiZrAR5nAR1nGjZ3AiBoBiZsdmgwcGdRcWhSd2kxByZsACBpACBpAyFpAiFpACFpACBpAiJpAyJpAB1mBCNoABZuenRJvJw1vZ0zenRJABVuBCNoAiFpASFpASFpAiFpAiFpASFpASFpAiJqAiFpACBpCiVocWxIcmxICiVoACBpAiFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpAR9qABlsABpsAR9qASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpAiJpAyJoAyJoAiJpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFp"
+   }
+  },
+  {
+   "cc": "au",
+   "iso": "AU-QLD",
+   "wikidata": "Q36074",
+   "name": "Queensland",
+   "capital": "Brisbane",
+   "capitalNote": null,
+   "flagFile": "Flag of Queensland.svg",
+   "flag": {
+    "src": "regions/au-qld.png",
+    "author": "Government of Queensland",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Queensland.svg",
+    "print": "3oKZlYipACt0pz9qp0RuACVvklB61pCmBylvAB9nAiFpASFpASFpASFpASFpASFpOFGJ3JSou8bZvGSGu1h8tJCr4b/MOmyhAB5nAiFpAiJpAyNqAyNqAiJpASFpASFp1URn1zxg9VNu7TVW6yVK9Vdx3ExryDheDiRpACFpAh9oABdiABdiAR9oASJpASFp10Jj3FFw9lx26ihM6zVX9llz3kRkzElsDiNpAB9oCyVraomzaomzCyVrAB9oAiJpOm2h3r7NtZGsvll7v2aHu8fZ2pSpNk+IASZtABJfgIetyPT+yPT+gIesABNgBCRrzY+oj0x4ACVumUBtmDtpACpylYanwXCOAx5mAyBnfa/TxLmsxLqtfK/TBR9mACFpGSNmAB5pASFqESVpESZrAR5nAR1nGjZ3AyFoBB9lfLDYuqeEuqeFfLHYBR9lACFpACBpAyFpAiFpACFpACBpAiJpAyJpAB1mBCRrABNggIesyPT/yPT/gIesABNgBCRrAiFpASFpASFpAiFpAiFpASFpASFpAiJqAiJpAB9oCyVra4qza4qzCyVrAB9oAiJpASFpASFpASFpASFpASFpASFpASFpASFpASFpASJpAR9nABZgABZgAR9nASJpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpAiJpAyNqAyNqAiJpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFp"
+   }
+  },
+  {
+   "cc": "au",
+   "iso": "AU-NSW",
+   "wikidata": "Q3224",
+   "name": "New South Wales",
+   "capital": "Sydney",
+   "capitalNote": null,
+   "flagFile": "Flag of New South Wales.svg",
+   "flag": {
+    "src": "regions/au-nsw.png",
+    "author": "Denelson83 (original)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_New_South_Wales.svg",
+    "print": "25KSlIulACRuolFgo1ZlAB9ojlxy05ygBiZoABxgAR5iAR5iAR5iAB5iAB5iAB5iOE+D2aCiu8XYt3V+tWtzspam4MXJO2WdABtgAR5iAiBjAR9jAR9jAiBjAB5iAB5izl5c0FhV7m9j5FZK4kk97nNn1WViwVJUDSJiAB5jABleBxldBxldABheAR9jAB5i0FxZ1mpm73dt4Uo/41ZL7nRp2F9axmBiDiRjABJZMVCLyYd9yYd9ME+LABRZAiBjO2ad3MTJs5inuWtzu3d/usXX16CjNk2DAB9kABdcss/p+6CS+6GSss/oABdcAR9iypqiillwAB9nlVBklExfACNtlIqjvn6GABtfCSBh13dj4XM+4mg913ZjCyBgAB1iGCNfABpiAB1jECRiECVkABtgARlgGTNxAB5iCh9g1nJf4nM74nE71nNfCyBgAB1iABxiAh9iAR5iAB1iAB1iAR9iAh9iABpfAR9iABdcss/o+6CS+6CSss/oABdcAR9iAR5iAB5iAB5iAR5iAR5iAB5iAB5iAR9jAiBjABRZL0+LyYZ8yYZ8L0+LABRZAiBjAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB9jABleBhleBhpeABleAB9jAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAh9jAR5jAR5jAh9jAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAB5iAR5iAR5iAB5iAB5iAB5i"
+   }
+  },
+  {
+   "cc": "au",
+   "iso": "AU-VIC",
+   "wikidata": "Q36687",
+   "name": "Victoria",
+   "capital": "Melbourne",
+   "capitalNote": null,
+   "flagFile": "Flag of Victoria (Australia).svg",
+   "flag": {
+    "src": "regions/au-vic.png",
+    "author": "Denelson83 (original)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Victoria_(Australia).svg",
+    "print": "34KZlYipACt0pz9qp0RuACVvkk961o+mBylvAB9nAiJpAB9oAB9oASFpASFpASFpOFGJ3JSou8bZvGSGu1h8tZCr4b7MOmyhAB5nAiJpACBpCytsCyxsACBpASFpASFp1URn1z1g9FNu7DVW6yVK9Vdx3ExsyDheDiRpACBoACFsY0ZPY0ZPACFsAiFoASFp10Fj3FFw9lx26ihM6zVX9Vpz30NkzElsDiNpACJpABpqd2JYd2FYABpqAyJpASFpOm2h3r7NtZGsvVl7vmaGu8fa2pSpNk+IACNrAiFpAB9oCixzCix0ACBoASFpASFpz5Gojkx3ACRumkFumjxpACpyloaowW+OBB5mACJqABxlITx7Ijt6ABhjAiNqASFpHCVoAB5pACFqEyZqEyhrAR1nAR1nGjZ3BCFoACFpBCNqAiFpDSluGDV2AB5nAiJpACBpAyFpAiFpACBpACBpAiJpAyJpABxmAyNqABplNU6HES9yEzF0GTZ3AB5nAiJpAiFpASFpASFpAiFpAiFpASFpASFpAiJqASFpASFpBCRrAh9oCyVsAR5nASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpAiJqABtlIz59JD18ABxmAiJqASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpAB5nEjBzEjBzAB5nAiFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASJpAB5nAB5nASJpASFpASFp"
+   }
+  },
+  {
+   "cc": "au",
+   "iso": "AU-TAS",
+   "wikidata": "Q34366",
+   "name": "Tasmanien",
+   "capital": "Hobart",
+   "capitalNote": null,
+   "flagFile": "Flag of Tasmania.svg",
+   "flag": {
+    "src": "regions/au-tas.png",
+    "author": "Unknown author (Proclaimed by Sir Frederick Weld)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_Tasmania.svg",
+    "print": "3oKYlYipACt0pz9qp0RuACVvklB61pCmBylvAB9nAiFpASFpASFpASFpASFpASFpOFGJ3JSou8fZvGSGulh8tJCr4r/MO2yhAB5nAiFpAiJpAyNqAyNqAiJpASFpASFp1URn1zxg9VNu7TVW6yVK9Vdx3ExsyDheDiRpACFpAh9oABNfABRgAR9nASJpASFp10Jj3FFw9lx26ihM6zVX9Vlz3kRkzElsDiNpAB9oCCNqiJy+iJm7CCRsAB9oAiJpOm2h3r7NtZGsvlh7v2aHu8fZ2pSpNk+IASZtABNfc4Wt/+jn//DtcX+oABRhBCRrzY+oj0x4ACVumUBtmDtpACpyloaowXCPBR1lACBqsa/GzzxN4WJ1sa/GACFpASFpGSNmAB5pASFqESVpESZrAR5nAR1nGjZ3BCBoACBprazC3ml84UJdsrDHACFqASFpACBpAyFpAiFpACFpACBpAiJpAyJpAB1mBCRrABRgc4Kq///9//35coCpABRgBCRrAiFpASFpASFpAiFpAiFpASFpASFpAiJqAiJpAB9oByNqhpW4iJi6CCRrAB9oAiJpASFpASFpASFpASFpASFpASFpASFpASFpASFpASJpASBnABNfABNfASBnASJpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpAiJpBCRrBCRrAiJpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFpASFp"
+   }
+  },
+  {
+   "cc": "au",
+   "iso": "AU-ACT",
+   "wikidata": "Q3258",
+   "name": "Australian Capital Territory",
+   "capital": false,
+   "capitalNote": null,
+   "flagFile": "Flag of the Australian Capital Territory.svg",
+   "flag": {
+    "src": "regions/au-act.png",
+    "author": "Ivo Ostyn (Original Designer)",
+    "license": "Gemeinfrei",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Australian_Capital_Territory.svg",
+    "print": "AD2lAD2lADWhAjyjADmqppdW/88l/MUu/8cs/8cs/8cs/8cs/8cs/8cs/8cs/8csAD2lADukU3zCGlCsADWop5dW/88l+8Uu/sYt/scs/scs/sct/8ct/8cs/8cs/8csAj+mADqjWYDDGk+sADCmp5hX/88l+8Ut/skq/8kp/8gt/8gq/8cn/8cs/8cs/8csADaiADqkADWhBj+kC0iwpZZW/9Al+8UuvqVK4rg9/8Ul8sI407tp+8Yv/8cr/8csMmO2HVOvADahGlCteJrXppdX/9Aj8cAzUGd/ZXmIV3WdcIORxsvG9shI/8Ym/8ctXIPFN2a4ADWhCEGmBkSvppdX/9Ij5ro4KVGPKVekW4TObo7D1N3j68lh/8cj/scuATqjADqjCUSoPWq4ADWopJZX/9Ii4LY8OViDVXaqrsHjl6vJlq/X1bxq/8ki/scuAT2lAD2lAz+mCkSnADippJZX/9Ii2LE+i4ppuqZaRnXJsKRtw7Z92Lxi/8gj/scuAD2lAD2lADWhAjuiADipppdW/88m/cYq6MJE8sMyt6BO6Lwz5r5B/cYr/8cs/8csAT2lADqkWoDEGU+sADSop5hW/88l+8Uu/scp/sgr/80m/skq/8gq/8ct/8cs/8csAD2lADukVX3CF06rADWop5dW/88l/MUu/sct/8cs/MYt/sYs/sct/8cs/8cs/8csAD2lAD2lADWhAjyjADmqppdW/88l/MUu/8cs/8cs/8cs/8cs/8cs/8cs/8cs/8cs"
+   }
+  }
+ ]
+}

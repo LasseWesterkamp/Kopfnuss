@@ -57,7 +57,7 @@ main { flex: 1; padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
 .tabbar { position: fixed; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; gap: 4px;
   background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(10px);
   border-top: 1px solid var(--line); padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); z-index: 10; }
-.tabbar button { flex: 1; max-width: 160px; display: flex; flex-direction: column; align-items: center; gap: 2px;
+.tabbar button { flex: 1; max-width: 140px; display: flex; flex-direction: column; align-items: center; gap: 2px;
   background: none; border: 0; color: var(--muted); font: inherit; font-size: .72rem; padding: 6px 0; border-radius: 12px; cursor: pointer; min-height: 52px; }
 .tabbar button span:first-child { font-size: 1.3rem; filter: grayscale(.6); }
 .tabbar button.on { color: var(--accent); font-weight: 600; }
@@ -218,3 +218,46 @@ input[type=email], input[type=password] { width: 100%; font: inherit; padding: 1
 
 .credit-list { padding-left: 1.1rem; overflow-wrap: anywhere; }
 .credit-list li { margin-bottom: 4px; }
+.q-image.flag-img img { width: min(100%, 320px); max-height: 240px; margin: 0 auto; background: transparent; border: 1px solid var(--line); border-radius: 8px; box-shadow: var(--shadow); }
+.q-image.flag-img figcaption { text-align: center; }
+.subtopics { margin-bottom: 1rem; }
+.sub-list { display: grid; gap: 8px; }
+@media (min-width: 600px) { .sub-list { grid-template-columns: 1fr 1fr; } }
+.sub-row { display: flex; align-items: center; gap: 12px; padding: 10px 14px; cursor: pointer; border: 2px solid transparent; }
+.sub-row.on { border-color: var(--accent); }
+.sub-row input { width: 20px; height: 20px; accent-color: var(--accent); flex: none; }
+.sub-icon { font-size: 1.4rem; }
+.sub-name { font-weight: 600; }
+.sub-bar { display: block; height: 6px; background: var(--surface-2); border-radius: 99px; overflow: hidden; margin: 5px 0 2px; }
+.sub-bar > span { display: block; height: 100%; background: var(--accent); }
+
+/* Gruppen */
+input.text { width: 100%; font: inherit; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); margin-top: .4rem; }
+input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.inline { display: flex; gap: 8px; align-items: stretch; }
+.inline input { margin-top: .4rem; min-width: 0; }
+.inline .btn { margin-top: .4rem; flex: none; }
+.join-create .or { text-align: center; color: var(--muted); font-size: .85rem; margin: 14px 0 6px; }
+.group { margin-top: 10px; }
+.group-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
+.group-head h3 { margin: 0; }
+.share-btn { flex: none; }
+.group-tabs { overflow-x: auto; }
+.group-tabs button { white-space: nowrap; }
+.center { text-align: center; }
+.board { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; }
+.board li { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: var(--surface-2); border-radius: 12px; }
+.board li.me { background: var(--accent-soft); outline: 2px solid var(--accent); }
+.board .place { width: 2.2em; text-align: center; font-weight: 700; font-size: 1.05rem; flex: none; }
+.board .who { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.board .who em { color: var(--muted); font-style: normal; }
+.board .owner { color: var(--accent); }
+.board .val { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.board .kick { width: 32px; height: 32px; font-size: .8rem; flex: none; }
+.group-admin { margin-top: 14px; }
+.group-admin summary { cursor: pointer; padding: 6px 0; }
+.group-admin .btn.danger { margin-top: 0; }
+.teaser { display: block; width: 100%; border: 0; font: inherit; color: var(--text); text-align: left; margin-bottom: 12px; cursor: pointer; }
+.msg { background: var(--surface); padding: 8px 12px; border-radius: 10px; }
+.topic-list .subtopics { margin: -2px 0 6px 22px; padding-left: 12px; border-left: 3px solid var(--accent-soft); }
+.sub-hint { margin: 0 0 6px; }
