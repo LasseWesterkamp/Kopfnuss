@@ -4,7 +4,8 @@ import { xpFor, DAILY_BONUS } from '../core/scoring';
 import { DAILY_GOAL } from '../core/streak';
 import { TOPIC_NAMES } from '../core/badges';
 import { useApp } from '../state';
-import { asset, reportUrl, formatDate } from '../data';
+import { asset, formatDate } from '../data';
+import { ReportForm } from './ReportForm';
 import { McView, type Result } from './McView';
 import { MapView, MapNameView } from './MapView';
 import { FlagPickView, MatchView } from './FlagViews';
@@ -90,11 +91,11 @@ export function Quiz({ questions, daily, onExit, onDone }: { questions: Question
           {(q.type === 'mc' || q.type === 'mapname') && !result.ok && <p>Richtig ist: <strong>{q.choices[q.answer]}</strong></p>}
           {q.type === 'flagpick' && !result.ok && <p>Richtig ist die Flagge von <strong>{q.optionLabels[q.answer]}</strong>.</p>}
           <p>{q.explanation}</p>
-          <p className="small muted">
+          <div className="small muted fb-links">
             <a href={q.source} target="_blank" rel="noreferrer">Mehr dazu ↗</a>
-            {q.topic === 'politik' && q.asOf && <> · Stand: {formatDate(q.asOf)}</>}
-            {' · '}<a href={reportUrl(q)} target="_blank" rel="noreferrer">Frage melden</a>
-          </p>
+            {q.topic === 'politik' && q.asOf && <span> · Stand: {formatDate(q.asOf)}</span>}
+            {' · '}<ReportForm key={q.id} q={q} />
+          </div>
           <button className="btn primary wide" onClick={next} autoFocus>{i + 1 < questions.length ? 'Weiter' : 'Auswertung'}</button>
         </section>
       )}

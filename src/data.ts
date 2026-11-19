@@ -15,12 +15,6 @@ export function loadQuestions(): Promise<QuestionBank> {
 
 export const REPO_URL = 'https://github.com/LasseWesterkamp/kopfnuss';
 
-/** Link zum Melden einer fehlerhaften Frage (vorausgefülltes GitHub-Issue) */
-export function reportUrl(q: Question): string {
-  const title = `Frage melden: ${q.id}`;
-  const body = `**Frage:** ${q.prompt}\n**ID:** \`${q.id}\`\n**Quelle:** ${q.source}\n\n**Was ist falsch?**\n\n`;
-  return `${REPO_URL}/issues/new?labels=frage-melden&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
-}
 
 export function formatDate(d: string) {
   const [y, m, dd] = d.split('-');

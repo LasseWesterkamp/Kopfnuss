@@ -155,6 +155,20 @@ Konfiguration:
 
 ---
 
+## Meldungen per E-Mail („Frage melden“)
+
+Nach jeder Antwort gibt es „Frage melden“. Die Meldung wird in der Supabase-Tabelle `meldungen` gespeichert (auch ohne Anmeldung möglich) und ein Datenbank-Trigger schickt sie per [Resend](https://resend.com) als E-Mail weiter.
+
+- **Alle Meldungen ansehen:** Supabase → Table Editor → `meldungen`. Spalte `erledigt` zum Abhaken.
+- **Spamschutz:** max. 30 Mails pro Tag, pro Frage max. eine Mail pro Stunde. Darüber hinaus wird nur gespeichert, nicht gemailt. Die App kann Meldungen nur anlegen, nie lesen.
+- **Einrichtung** (Datenbank-Teil: `supabase/003_meldungen.sql`): API-Key und Empfänger liegen verschlüsselt im Supabase Vault, nie im Code. Im **SQL Editor**:
+  ```sql
+  select vault.create_secret('re_DEIN_RESEND_KEY', 'resend_api_key');
+  select vault.create_secret('du@beispiel.de', 'meldung_empfaenger');
+  ```
+  Ohne eigene Domain verschickt Resend nur an die Adresse, mit der das Resend-Konto angelegt wurde.
+- **Key oder Adresse ändern:** `select vault.update_secret((select id from vault.secrets where name = 'resend_api_key'), 're_NEUER_KEY');`
+
 ## Gruppen & Rangliste
 
 In der App unter **Gruppen**: Anzeigename festlegen, dann Gruppe anlegen oder mit einem 6-stelligen Code beitreten. „Einladen“ teilt einen Link (`…/Kopfnuss/?beitreten=CODE`), der die App öffnet und den Code vorausfüllt.
@@ -182,6 +196,7 @@ Die Datenbank-Struktur liegt in `supabase/`. Bei einem neuen Supabase-Projekt im
 
 1. `supabase/schema.sql` (Lernstand-Sync)
 2. `supabase/002_gruppen.sql` (Profile, Ranglistenwerte, Gruppen, Funktionen, Zugriffsregeln)
+3. `supabase/003_meldungen.sql` (Meldungen mit E-Mail-Benachrichtigung, Einrichtung siehe „Meldungen per E-Mail“)
 
 Beide Dateien können gefahrlos mehrfach ausgeführt werden. Neue Änderungen kommen als weitere nummerierte Datei dazu (`003_….sql`).
 

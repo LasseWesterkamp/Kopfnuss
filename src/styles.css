@@ -313,3 +313,10 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .chip-btn:disabled { opacity: .4; cursor: default; }
 .chip-n { color: var(--muted); font-size: .78rem; margin-left: 2px; }
 .save-mix { margin-top: 10px; }
+/* Frage melden */
+.linklike { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); text-decoration: underline; cursor: pointer; }
+.report-form { margin-top: 8px; }
+.report-form textarea { width: 100%; font: inherit; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--text); margin-top: 4px; resize: vertical; }
+.report-err { color: var(--bad); }
+.report-done { color: var(--ok); font-weight: 600; }
+.fb-links { margin: .4rem 0; }

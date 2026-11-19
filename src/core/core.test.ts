@@ -458,3 +458,18 @@ describe('Kategorienfilter', () => {
     expect(new Set(s.map((x) => x.topic)).size).toBeGreaterThan(1);
   });
 });
+
+import { validateReport, reportPayload } from '../report';
+
+describe('Frage melden', () => {
+  it('zu kurze Meldungen werden abgelehnt', () => {
+    expect(validateReport('  ')).not.toBeNull();
+    expect(validateReport('ab')).not.toBeNull();
+    expect(validateReport('Antwort falsch')).toBeNull();
+  });
+  it('zu lange Meldungen werden abgelehnt', () => expect(validateReport('x'.repeat(1001))).not.toBeNull());
+  it('Daten an die Datenbank: gekürzt und bereinigt, ohne Nutzer-ID aus dem Client', () => {
+    const p = reportPayload({ id: 'geo-cap-de', prompt: 'Was ist die Hauptstadt von Deutschland?' }, '  Bonn war früher Hauptstadt  ');
+    expect(p).toEqual({ question_id: 'geo-cap-de', frage: 'Was ist die Hauptstadt von Deutschland?', nachricht: 'Bonn war früher Hauptstadt' });
+  });
+});

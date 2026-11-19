@@ -103,7 +103,7 @@ export function SettingsView({ onCredits }: { onCredits: () => void }) {
       <h3 className="section-title">Über</h3>
       <div className="card">
         <p className="small">Kopfnuss · {questions?.length ?? '…'} Fragen · <a href={REPO_URL} target="_blank" rel="noreferrer">Quellcode</a></p>
-        <p className="small muted">Fehler in einer Frage? Nach jeder Antwort gibt es den Link „Frage melden“.</p>
+        <p className="small muted">Fehler in einer Frage? Nach jeder Antwort gibt es „Frage melden“. Die Meldung geht direkt an den Betreiber der App.</p>
         <button className="btn ghost wide" onClick={onCredits}>Bildnachweise & Lizenzen</button>
       </div>
     </div>
