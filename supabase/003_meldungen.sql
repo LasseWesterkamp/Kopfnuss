@@ -43,7 +43,7 @@ begin
   if heute >= 30 or doppelt then return new; end if;
 
   select decrypted_secret into api_key from vault.decrypted_secrets where name = 'resend_api_key';
-  select decrypted_secret into empfaenger from vault.decrypted_secrets where name = 'meldung_empfaenger';
+  select lower(btrim(decrypted_secret)) into empfaenger from vault.decrypted_secrets where name = 'meldung_empfaenger';
   if api_key is null or empfaenger is null then return new; end if; -- noch nicht eingerichtet: Meldung bleibt gespeichert
 
   html := '<h2>Neue Meldung in Kopfnuss</h2>'
