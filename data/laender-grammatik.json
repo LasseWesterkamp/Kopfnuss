@@ -1,0 +1,139 @@
+{
+ "_hinweis": "Ländernamen mit Artikel. nom = Nominativ (\"Wo liegt …?\"), gen = Genitiv (\"Hauptstadt …\"). Länder ohne Eintrag: \"von <Name>\" bzw. \"<Name>\". plural: true = Verb in Mehrzahl (\"Wo liegen die USA?\").",
+ "laender": {
+  "bs": {
+   "nom": "die Bahamas",
+   "gen": "der Bahamas",
+   "plural": true
+  },
+  "cd": {
+   "nom": "die Demokratische Republik Kongo",
+   "gen": "der Demokratischen Republik Kongo"
+  },
+  "do": {
+   "nom": "die Dominikanische Republik",
+   "gen": "der Dominikanischen Republik"
+  },
+  "ci": {
+   "nom": "die Elfenbeinküste",
+   "gen": "der Elfenbeinküste"
+  },
+  "iq": {
+   "nom": "der Irak",
+   "gen": "des Irak"
+  },
+  "ir": {
+   "nom": "der Iran",
+   "gen": "des Iran"
+  },
+  "ye": {
+   "nom": "der Jemen",
+   "gen": "des Jemen"
+  },
+  "km": {
+   "nom": "die Komoren",
+   "gen": "der Komoren",
+   "plural": true
+  },
+  "lb": {
+   "nom": "der Libanon",
+   "gen": "des Libanon"
+  },
+  "mv": {
+   "nom": "die Malediven",
+   "gen": "der Malediven",
+   "plural": true
+  },
+  "mh": {
+   "nom": "die Marshallinseln",
+   "gen": "der Marshallinseln",
+   "plural": true
+  },
+  "mn": {
+   "nom": "die Mongolei",
+   "gen": "der Mongolei"
+  },
+  "nl": {
+   "nom": "die Niederlande",
+   "gen": "der Niederlande",
+   "plural": true
+  },
+  "ne": {
+   "nom": "der Niger",
+   "gen": "des Niger"
+  },
+  "ph": {
+   "nom": "die Philippinen",
+   "gen": "der Philippinen",
+   "plural": true
+  },
+  "cg": {
+   "nom": "die Republik Kongo",
+   "gen": "der Republik Kongo"
+  },
+  "sb": {
+   "nom": "die Salomonen",
+   "gen": "der Salomonen",
+   "plural": true
+  },
+  "ch": {
+   "nom": "die Schweiz",
+   "gen": "der Schweiz"
+  },
+  "sn": {
+   "nom": "der Senegal",
+   "gen": "des Senegal"
+  },
+  "sc": {
+   "nom": "die Seychellen",
+   "gen": "der Seychellen",
+   "plural": true
+  },
+  "sk": {
+   "nom": "die Slowakei",
+   "gen": "der Slowakei"
+  },
+  "sd": {
+   "nom": "der Sudan",
+   "gen": "des Sudan"
+  },
+  "ss": {
+   "nom": "der Südsudan",
+   "gen": "des Südsudan"
+  },
+  "td": {
+   "nom": "der Tschad",
+   "gen": "des Tschad"
+  },
+  "tr": {
+   "nom": "die Türkei",
+   "gen": "der Türkei"
+  },
+  "ua": {
+   "nom": "die Ukraine",
+   "gen": "der Ukraine"
+  },
+  "us": {
+   "nom": "die USA",
+   "gen": "der USA",
+   "plural": true
+  },
+  "va": {
+   "nom": "die Vatikanstadt",
+   "gen": "der Vatikanstadt"
+  },
+  "ae": {
+   "nom": "die Vereinigten Arabischen Emirate",
+   "gen": "der Vereinigten Arabischen Emirate",
+   "plural": true
+  },
+  "gb": {
+   "nom": "das Vereinigte Königreich",
+   "gen": "des Vereinigten Königreichs"
+  },
+  "cf": {
+   "nom": "die Zentralafrikanische Republik",
+   "gen": "der Zentralafrikanischen Republik"
+  }
+ }
+}

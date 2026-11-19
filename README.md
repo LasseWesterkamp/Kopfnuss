@@ -117,6 +117,8 @@ Nach einer **neuen Bundesregierung** in `scripts/update-politics.mjs` die Wikida
 
 Danach `node scripts/build-questions.mjs`, committen, pushen. Jede Politikfrage zeigt in der App ihr Stand-Datum.
 
+Ländernamen mit Artikel („des Iran“, „Wo liegen die USA?“) stehen in `data/laender-grammatik.json`.
+
 Auch Länder- und Hauptstadtdaten lassen sich neu holen (`node scripts/fetch-countries.mjs`). Korrekturen dafür stehen in `data/countries-overrides.json` (z.B. umstrittene Hauptstädte).
 
 > **Netzwerk-Hinweis:** In manchen Umgebungen (Firmen-Proxy, Cloud-Container) nutzt Node den Proxy nicht automatisch. Dann `NODE_USE_ENV_PROXY=1` vor den Befehl setzen.

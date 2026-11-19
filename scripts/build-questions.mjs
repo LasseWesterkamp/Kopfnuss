@@ -48,6 +48,15 @@ function diff(c) {
   if ((!isEU(c) && c.population < 2e6)) return 3;
   return 2;
 }
+const GRAM = read('data/laender-grammatik.json').laender;
+/** "Hauptstadt des Iran" / "Hauptstadt von Frankreich" */
+const vonLand = (c) => (GRAM[c.a2] ? GRAM[c.a2].gen : 'von ' + c.name);
+/** "Wo liegt der Iran?" / "Wo liegt Frankreich?" */
+const nomLand = (c) => GRAM[c.a2]?.nom ?? c.name;
+const Gross = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+const liegt = (c) => (GRAM[c.a2]?.plural ? 'liegen' : 'liegt');
+const satz = (t) => t.replace(/\.\.$/, '.'); // "Washington, D.C.." -> "Washington, D.C."
+
 const CONT_CAT = { Europa: 'europa', Afrika: 'afrika', Asien: 'asien', Nordamerika: 'nordamerika', Südamerika: 'suedamerika', Ozeanien: 'ozeanien' };
 const sameCont = (c) => countries.filter((o) => o.a2 !== c.a2 && o.continent === c.continent);
 
@@ -60,8 +69,8 @@ for (const c of countries) {
     const pool = others.length >= 3 ? others : countries.filter((o) => o.capital && o.a2 !== c.a2).map((o) => o.capital);
     questions.push(mc('geo-cap-' + c.a2, {
       topic: 'geografie', cat: 'hauptstaedte', difficulty: d,
-      prompt: `Was ist die Hauptstadt von ${c.name}?`,
-      explanation: `Die Hauptstadt von ${c.name} ist ${c.capital}.` + (c.capitalNote ? ' ' + c.capitalNote : ''),
+      prompt: `Was ist die Hauptstadt ${vonLand(c)}?`,
+      explanation: `Die Hauptstadt ${vonLand(c)} ist ${c.capital}.` + (c.capitalNote ? ' ' + c.capitalNote : ''),
       source: wiki(c.name), asOf: geoAsOf,
     }, c.capital, pick(pool, 3, rng, [c.capital])));
     // Umgekehrt nur für größere Länder
@@ -69,7 +78,7 @@ for (const c of countries) {
       questions.push(mc('geo-capr-' + c.a2, {
         topic: 'geografie', cat: 'hauptstaedte', difficulty: Math.min(3, d + (d === 1 ? 0 : 0)),
         prompt: `${c.capital} ist die Hauptstadt von …`,
-        explanation: `${c.capital} ist die Hauptstadt von ${c.name}.` + (c.capitalNote ? ' ' + c.capitalNote : ''),
+        explanation: `${c.capital} ist die Hauptstadt ${vonLand(c)}.` + (c.capitalNote ? ' ' + c.capitalNote : ''),
         source: wiki(c.name), asOf: geoAsOf,
       }, c.name, pick(sameCont(c).map((o) => o.name), 3, rng)));
     }
@@ -79,8 +88,8 @@ for (const c of countries) {
     const conts = ['Afrika', 'Asien', 'Europa', 'Nordamerika', 'Südamerika', 'Ozeanien'];
     questions.push(mc('geo-cont-' + c.a2, {
       topic: 'geografie', cat: 'kontinente', difficulty: c.population < 2e6 ? 3 : 2,
-      prompt: `Auf welchem Kontinent liegt ${c.name}?`,
-      explanation: `${c.name} liegt in ${c.continent}${c.capital ? ', Hauptstadt ist ' + c.capital : ''}.`,
+      prompt: `Auf welchem Kontinent ${liegt(c)} ${nomLand(c)}?`,
+      explanation: `${Gross(nomLand(c))} ${liegt(c)} in ${c.continent}${c.capital ? ', Hauptstadt ist ' + c.capital : ''}.`,
       source: wiki(c.name), asOf: geoAsOf,
     }, c.continent, pick(conts, 3, rng, [c.continent])));
   }
@@ -88,9 +97,9 @@ for (const c of countries) {
   if (c.num && onMap.has(c.num) && c.continent) {
     questions.push({
       id: 'geo-map-' + c.a2, type: 'map', topic: 'geografie', cat: 'karte', difficulty: d,
-      prompt: `Wo liegt ${c.name}? Tippe das Land auf der Karte an.`,
+      prompt: `Wo ${liegt(c)} ${nomLand(c)}? Tippe das Land auf der Karte an.`,
       country: c.num, continent: c.continent,
-      explanation: `${c.name} liegt in ${c.continent}${c.capital ? '. Hauptstadt: ' + c.capital : ''}.`,
+      explanation: satz(`${Gross(nomLand(c))} ${liegt(c)} in ${c.continent}${c.capital ? '. Hauptstadt: ' + c.capital : ''}.`),
       source: wiki(c.name), asOf: geoAsOf,
     });
   }
@@ -100,7 +109,7 @@ for (const c of countries) {
     topic: 'flaggen', cat: CONT_CAT[c.continent], difficulty: d,
     prompt: 'Zu welchem Land gehört diese Flagge?',
     flag: c.a2,
-    explanation: `Das ist die Flagge von ${c.name}.`,
+    explanation: `Das ist die Flagge ${vonLand(c)}.`,
     source: 'https://de.wikipedia.org/wiki/Liste_der_Nationalflaggen', asOf: geoAsOf,
   }, c.name, pick(nearby.length >= 3 ? nearby : countries.map((o) => o.name), 3, rng, [c.name])));
   fs.copyFileSync(`node_modules/flag-icons/flags/4x3/${c.a2}.svg`, `public/flags/${c.a2}.svg`);
