@@ -38,3 +38,13 @@ export function levelFromXp(xp: number) {
   while (rest >= need) { rest -= need; level++; need = 100 * level; }
   return { level, into: rest, need };
 }
+
+/**
+ * Zuordnung: assignment[i] = Index des Namens, der der Flagge i zugeordnet wurde (-1 = nicht zugeordnet).
+ * Richtig ist Flagge i -> Name i. Punkte = Anteil richtiger Paare.
+ */
+export function matchScore(assignment: number[]): number {
+  if (!assignment.length) return 0;
+  return assignment.filter((a, i) => a === i).length / assignment.length;
+}
+export const matchCorrect = (score: number) => score === 1;

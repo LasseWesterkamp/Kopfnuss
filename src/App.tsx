@@ -8,10 +8,12 @@ import { Quiz, Summary, type SessionSummary } from './ui/Quiz';
 import { Stats } from './ui/Stats';
 import { SettingsView, Credits } from './ui/SettingsView';
 import { Groups, GroupTeaser } from './ui/Groups';
+import { Puzzle } from './ui/Puzzle';
+import type { Selection } from './selectionStore';
 import { codeFromUrl } from './core/invite';
 
 type View =
-  | { name: 'home' } | { name: 'practice'; topic: TopicId | null } | { name: 'stats' } | { name: 'settings' } | { name: 'credits' } | { name: 'groups' }
+  | { name: 'home' } | { name: 'practice'; topic: TopicId | null } | { name: 'stats' } | { name: 'settings' } | { name: 'credits' } | { name: 'groups' } | { name: 'puzzle'; cc: string }
   | { name: 'quiz'; questions: Question[]; daily: boolean; again: () => void; key: number }
   | { name: 'summary'; s: SessionSummary; again: () => void };
 
@@ -25,14 +27,14 @@ function Shell() {
   });
   const [view, setView] = useState<View>(joinCode ? { name: 'groups' } : { name: 'home' });
 
-  const start = (opts: { topics?: TopicId[]; difficulty?: Difficulty; subs?: string[] }, daily: boolean) => {
+  const start = (opts: { topics?: TopicId[]; difficulty?: Difficulty; subs?: string[]; cats?: string[] }, daily: boolean) => {
     if (!questions) return;
     const qs = buildSession(questions, progress, today, daily ? {} : { ...opts, maxReviews: 5 });
     const again = () => start(opts, daily);
     setView({ name: 'quiz', questions: qs, daily, again, key: Date.now() });
   };
   const nav = (name: 'home' | 'practice' | 'stats' | 'settings' | 'groups') => setView(name === 'practice' ? { name, topic: null } : { name } as View);
-  const inQuiz = view.name === 'quiz';
+  const inQuiz = view.name === 'quiz' || view.name === 'puzzle';
 
   return (
     <div className={'app' + (inQuiz ? ' in-quiz' : '')}>
@@ -47,7 +49,9 @@ function Shell() {
         {view.name === 'home' && <GroupTeaser onOpen={() => nav('groups')} />}
         {view.name === 'groups' && <Groups joinCode={joinCode} onGoSettings={() => nav('settings')} />}
         {view.name === 'home' && <Home onDaily={() => start({}, true)} onTopic={(t) => setView({ name: 'practice', topic: t })} onMix={() => start({}, false)} />}
-        {view.name === 'practice' && <Practice initial={view.topic} onStart={(topics, difficulty, subs) => start({ topics, difficulty, subs }, false)} />}
+        {view.name === 'practice' && <Practice initial={view.topic} onStart={(s: Selection) => start({ topics: s.topics, difficulty: s.diff, subs: s.subs, cats: s.cats }, false)}
+          onPuzzle={(cc) => setView({ name: 'puzzle', cc })} />}
+        {view.name === 'puzzle' && <Puzzle key={view.cc} cc={view.cc} onExit={() => setView({ name: 'practice', topic: null })} />}
         {view.name === 'stats' && <Stats />}
         {view.name === 'settings' && <SettingsView onCredits={() => setView({ name: 'credits' })} />}
         {view.name === 'credits' && <Credits onBack={() => setView({ name: 'settings' })} />}

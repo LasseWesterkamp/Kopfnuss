@@ -12,7 +12,8 @@
     "Löwe",
     "Bär",
     "Hirsch"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-kuckuck",
@@ -25,7 +26,8 @@
     "Elster",
     "Star",
     "Eichelhäher"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-winterschlaf",
@@ -38,7 +40,8 @@
     "Eichhörnchen",
     "Dachs",
     "Braunbär"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-frischling",
@@ -51,7 +54,8 @@
     "Kitz",
     "Welpe",
     "Ferkling"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-bache",
@@ -64,7 +68,8 @@
     "Ricke",
     "Fähe",
     "Sau"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-ricke",
@@ -77,7 +82,8 @@
     "Bache",
     "Hindin",
     "Fähe"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-faehe",
@@ -90,7 +96,8 @@
     "Ricke",
     "Bache",
     "Zibbe"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-biberburg",
@@ -103,7 +110,8 @@
     "Bau",
     "Kobel",
     "Horst"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-kobel",
@@ -116,7 +124,8 @@
     "Horst",
     "Bau",
     "Burg"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-horst",
@@ -129,7 +138,8 @@
     "Kobel",
     "Bau",
     "Gelege"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-fledermaus-ortung",
@@ -142,7 +152,8 @@
     "Mit dem Magnetfeld der Erde",
     "Mit Restlicht und sehr guten Augen",
     "Mit dem Geruchssinn"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-giftschlange",
@@ -155,7 +166,8 @@
     "Ringelnatter",
     "Schlingnatter",
     "Äskulapnatter"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-blindschleiche",
@@ -168,7 +180,8 @@
     "Eine junge Schlange",
     "Ein Wurm",
     "Ein Molch"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-storchwinter",
@@ -181,7 +194,8 @@
     "In Skandinavien",
     "In Deutschland",
     "In Asien"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-drohne",
@@ -194,7 +208,8 @@
     "Arbeiterinnen",
     "Königinnen",
     "Hummeln"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-engerling",
@@ -207,7 +222,8 @@
     "Kaulquappe",
     "Made",
     "Raupe"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-kaulquappe",
@@ -220,7 +236,8 @@
     "Engerling",
     "Raupe",
     "Made"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-metamorphose",
@@ -233,7 +250,8 @@
     "Mutation",
     "Mimikry",
     "Photosynthese"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-goldhaehnchen",
@@ -246,7 +264,8 @@
     "Zaunkönig",
     "Blaumeise",
     "Rotkehlchen"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-eichelhaeher",
@@ -259,7 +278,8 @@
     "Buntspecht",
     "Kleiber",
     "Amsel"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-wolf-lausitz",
@@ -272,7 +292,8 @@
     "Bayerischer Wald",
     "Schwarzwald",
     "Eifel"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-wisent",
@@ -285,7 +306,8 @@
     "Elch",
     "Rothirsch",
     "Braunbär"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-geweih",
@@ -298,7 +320,8 @@
     "Ihre Hörner",
     "Ihr Winterfell komplett",
     "Ihre Hufe"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-fuchsbau",
@@ -311,7 +334,8 @@
     "Kobel",
     "Horst",
     "Burg"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-maulwurf-schutz",
@@ -324,7 +348,8 @@
     "Sie sind giftig",
     "Sie übertragen Krankheiten",
     "Sie sind ausgestorben"
-   ]
+   ],
+   "cat": "wissen"
   },
   {
    "id": "fauna-rotkehlchen-revier",
@@ -337,7 +362,8 @@
     "Sie balzen das ganze Jahr",
     "Sie wärmen sich durch Singen",
     "Sie rufen ihre Jungen"
-   ]
+   ],
+   "cat": "wissen"
   }
  ]
 }

@@ -261,3 +261,55 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .msg { background: var(--surface); padding: 8px 12px; border-radius: 10px; }
 .topic-list .subtopics { margin: -2px 0 6px 22px; padding-left: 12px; border-left: 3px solid var(--accent-soft); }
 .sub-hint { margin: 0 0 6px; }
+.land.marked { fill: var(--accent); }
+.land.solved { fill: var(--ok); opacity: .85; }
+.land.flash { fill: var(--bad); }
+.land.reveal { fill: var(--warn); }
+.map-wrap.readonly svg { cursor: grab; }
+.mapname .choices { margin-top: 12px; }
+/* Flaggen-Spielarten */
+.flag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.flag-grid .credits { grid-column: 1 / -1; margin: 0; }
+.flag-tile { position: relative; border: 3px solid var(--line); background: var(--surface); border-radius: 12px; padding: 8px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 6px; font: inherit; color: var(--text); min-height: 96px; justify-content: center; }
+.flag-tile:hover:not(:disabled) { border-color: var(--accent); }
+.flag-tile:disabled { cursor: default; }
+.flag-tile-img { width: 100%; max-height: 110px; object-fit: contain; pointer-events: none; }
+.flag-tile.small .flag-tile-img { max-height: 64px; }
+.flag-tile-label { font-size: .85rem; font-weight: 600; }
+.flag-tile.right { border-color: var(--ok); background: var(--ok-soft); }
+.flag-tile.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.flag-tile.dim { opacity: .55; }
+.flag-tile.selected, .match-name.selected { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.match-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.match-flags, .match-names { display: grid; gap: 8px; align-content: start; }
+.match-name { min-height: 96px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 8px; }
+.flag-tile.small, .match-name { min-height: 84px; }
+/* Paarfarben */
+.c0 { border-color: #2f6fd6 !important; } .c1 { border-color: #c2410c !important; } .c2 { border-color: #7c3aed !important; } .c3 { border-color: #0f9488 !important; }
+.match-name.c0 { background: color-mix(in srgb, #2f6fd6 14%, var(--surface)); } .match-name.c1 { background: color-mix(in srgb, #c2410c 14%, var(--surface)); }
+.match-name.c2 { background: color-mix(in srgb, #7c3aed 14%, var(--surface)); } .match-name.c3 { background: color-mix(in srgb, #0f9488 14%, var(--surface)); }
+.match .right { border-color: var(--ok) !important; background: var(--ok-soft) !important; }
+.match .wrong { border-color: var(--bad) !important; background: var(--bad-soft) !important; }
+/* Puzzle */
+.puzzle { padding-top: 12px; }
+.puzzle-bar { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; font-weight: 600; }
+.puzzle-target { font-size: 1.25rem; background: var(--surface); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; box-shadow: var(--shadow); }
+.puzzle-target.revealed { background: var(--warn-soft); }
+.puzzle .summary .map-wrap { margin: 12px 0; }
+/* Üben: Spiele, Mischungen, Kategorien */
+.games { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+@media (min-width: 600px) { .games { grid-template-columns: repeat(6, 1fr); } }
+.game { border: 0; font: inherit; color: var(--text); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; padding: 12px 6px; cursor: pointer; }
+.game-icon { font-size: 1.7rem; }
+.game-name { font-weight: 600; font-size: .9rem; }
+.mixes { display: grid; gap: 8px; }
+.mix { display: flex; align-items: center; gap: 8px; padding: 6px 6px 6px 14px; }
+.mix-load { flex: 1; border: 0; background: none; font: inherit; color: var(--text); text-align: left; display: flex; flex-direction: column; cursor: pointer; padding: 6px 0; }
+.mix-del { width: 36px; height: 36px; font-size: .85rem; }
+.topic-detail { margin: -2px 0 6px 22px; padding-left: 12px; border-left: 3px solid var(--accent-soft); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.chip-btn { font: inherit; font-size: .88rem; border: 2px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; padding: 7px 12px; cursor: pointer; min-height: 40px; }
+.chip-btn.on { border-color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+.chip-btn:disabled { opacity: .4; cursor: default; }
+.chip-n { color: var(--muted); font-size: .78rem; margin-left: 2px; }
+.save-mix { margin-top: 10px; }

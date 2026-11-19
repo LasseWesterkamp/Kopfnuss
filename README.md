@@ -10,7 +10,9 @@ Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-A
 - Tages-Challenge mit 10 Fragen, Serie (Streak) mit Kalender-Heatmap, 1 Freeze pro Woche
 - Spaced Repetition: Falsche Fragen kommen morgen wieder, richtige nach 1, 3, 7, 21 und 60 Tagen
 - Adaptive Schwierigkeit pro Thema (Stufe 1 bis 3)
-- Fragetypen: Multiple Choice, Bild erkennen, Land auf der Karte antippen, Jahreszahl schätzen, Ereignisse sortieren
+- Fragetypen: Multiple Choice, Bild erkennen, Land auf der Karte antippen, markiertes Gebiet benennen, Flagge zu Name, Flaggen zuordnen, Jahreszahl schätzen, Ereignisse sortieren
+- Karten-Puzzle für Deutschland, Österreich, Schweiz, USA, Kanada, Australien mit Bestzeit
+- Feine Auswahl beim Üben: Thema › Kategorie (+ Land/Epoche), gespeicherte Mischungen
 - Erklärung, Quelle und „Frage melden“ nach jeder Antwort
 - XP, Level, Abzeichen, Statistik pro Thema mit Schwächen
 - Sync zwischen Handy und PC (Supabase, Login mit E-Mail + Passwort)
@@ -198,6 +200,30 @@ Es lädt die Natural-Earth-Regionen (einmalig ~40 MB, wird in `data/.cache/` zwi
 - **Gleich aussehende Flaggen** (z.B. Wien, Salzburg, Vorarlberg) erkennt der Fragengenerator automatisch: Sie bekommen keine Flaggenfrage und werden nicht als falsche Antwort nebeneinander gezeigt.
 
 Danach `node scripts/build-questions.mjs` und **die Ausgabe „PRÜFEN“ abarbeiten**.
+
+## Spielarten
+
+| Spielart | Wo | Wertung |
+|---|---|---|
+| Multiple Choice, Bild erkennen, Jahreszahl, Reihenfolge, „Wo liegt X?“ (Karte antippen) | normale Runden | richtig/falsch, Teilpunkte bei Jahreszahl und Reihenfolge |
+| **Markiertes Gebiet benennen** (`mapname`): Ein Bundesland/Kanton/Staat ist auf der Karte markiert, vier Namen zur Wahl. Sehr kleine Gebiete werden automatisch herangezoomt. | normale Runden, Regionen › Lage | richtig/falsch |
+| **Welche Flagge gehört zu X?** (`flagpick`): vier Flaggen, Namen erscheinen erst nach der Antwort | normale Runden, Regionen › Flaggen | richtig/falsch |
+| **Flaggen zuordnen** (`match`): 4 Flaggen und 4 Namen, Flagge antippen, dann Namen (erneutes Antippen löst die Verbindung) | normale Runden, Regionen › Flaggen | Teilpunkte pro richtigem Paar, „richtig“ nur bei 4/4 |
+| **Karten-Puzzle**: alle Gebiete eines Landes nacheinander antippen, mit Zeit, Fehlern und Bestzeit | Üben › Spiele | Treffer im ersten Versuch = richtige Antwort auf die Kartenfrage dieses Gebiets (zählt für Tagesziel, XP, Wiederholung). Nach 3 Fehlversuchen wird das Gebiet gelb gezeigt und gilt als falsch. |
+
+Gleich aussehende Flaggen (Wien, Salzburg, Vorarlberg) kommen nie gemeinsam in einer Frage vor.
+
+## Kategorien & Auswahl beim Üben
+
+Jede Frage hat **genau eine Kategorie** im Feld `cat`. Die erlaubten Kategorien pro Thema stehen in `data/kategorien.json`. `node scripts/build-questions.mjs` bricht mit Fehlermeldung ab, wenn eine Frage keine oder eine unbekannte Kategorie hat.
+
+Beim Üben: Thema ankreuzen, darunter erscheinen die Kategorien als Schalter (keine Auswahl = alle), bei Regionen zusätzlich das Land, bei Geschichte die Epoche. Kategorien wirken nur auf ihr eigenes Thema (z.B. „Geografie › Hauptstädte“ schränkt angekreuzte Flaggen nicht ein). Die letzte Auswahl wird gemerkt; bis zu 5 Auswahlen lassen sich als „Meine Mischung“ speichern (lokal auf dem Gerät). Die Tages-Challenge bleibt immer gemischt.
+
+**Neue Frage einer Kategorie zuordnen:**
+- Handgeschriebene Fragen (`data/fragen/*.json`): Feld `"cat"` mit einer ID aus `data/kategorien.json` des Themas eintragen, z.B. `"cat": "gewaesser"`.
+- Bildfragen (`data/images-config.json`): Die Kategorie ergibt sich aus `group` (z.B. `vogel` → `voegel`, Zuordnung `IMG_CAT` in `scripts/build-questions.mjs`).
+- Generierte Fragen (Länder, Flaggen, Regionen, Politik): Die Kategorie setzt das Build-Skript dort, wo die Frage erzeugt wird.
+- **Neue Kategorie:** in `data/kategorien.json` beim Thema ergänzen. IDs nie umbenennen, gespeicherte Mischungen verweisen darauf.
 
 ## Geschichtsepochen
 

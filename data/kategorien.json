@@ -1,0 +1,62 @@
+{
+ "_hinweis": "Kategorien pro Thema. Jede Frage hat genau eine Kategorie im Feld 'cat'. IDs nie mehr ändern (gespeicherte Auswahlen verweisen darauf). build-questions.mjs bricht ab, wenn eine Frage keine oder eine unbekannte Kategorie hat.",
+ "themen": {
+  "geografie": [
+   { "id": "hauptstaedte", "name": "Hauptstädte" },
+   { "id": "karte", "name": "Länder auf der Karte" },
+   { "id": "kontinente", "name": "Kontinente & Länderwissen" },
+   { "id": "gewaesser", "name": "Flüsse & Seen" },
+   { "id": "landschaften", "name": "Berge, Meere & Landschaften" },
+   { "id": "deutschland", "name": "Deutschland" }
+  ],
+  "flaggen": [
+   { "id": "europa", "name": "Europa" },
+   { "id": "afrika", "name": "Afrika" },
+   { "id": "asien", "name": "Asien" },
+   { "id": "nordamerika", "name": "Nordamerika" },
+   { "id": "suedamerika", "name": "Südamerika" },
+   { "id": "ozeanien", "name": "Ozeanien" }
+  ],
+  "regionen": [
+   { "id": "hauptstaedte", "name": "Hauptstädte" },
+   { "id": "lage", "name": "Lage auf der Karte" },
+   { "id": "flaggen", "name": "Flaggen" }
+  ],
+  "geschichte": [
+   { "id": "wissen", "name": "Wissensfragen" },
+   { "id": "jahreszahlen", "name": "Jahreszahlen" },
+   { "id": "reihenfolge", "name": "Reihenfolge" }
+  ],
+  "politik": [
+   { "id": "bund", "name": "Bundesregierung" },
+   { "id": "laender", "name": "Bundesländer" },
+   { "id": "welt", "name": "Staats- und Regierungschefs" },
+   { "id": "organisationen", "name": "EU, UN & NATO" }
+  ],
+  "bilder": [
+   { "id": "personen", "name": "Personen" },
+   { "id": "ereignisse", "name": "Ereignisse" }
+  ],
+  "fauna": [
+   { "id": "saeugetiere", "name": "Säugetiere" },
+   { "id": "voegel", "name": "Vögel" },
+   { "id": "reptilien", "name": "Reptilien & Amphibien" },
+   { "id": "insekten", "name": "Insekten" },
+   { "id": "fische", "name": "Fische" },
+   { "id": "wissen", "name": "Tierwissen" }
+  ],
+  "flora": [
+   { "id": "baeume", "name": "Bäume" },
+   { "id": "blumen", "name": "Blumen & Kräuter" },
+   { "id": "pilze", "name": "Pilze" },
+   { "id": "wissen", "name": "Pflanzenwissen" }
+  ],
+  "wissenschaft": [
+   { "id": "chemie", "name": "Chemie" },
+   { "id": "physik", "name": "Physik" },
+   { "id": "astronomie", "name": "Astronomie" },
+   { "id": "biologie", "name": "Biologie & Mensch" },
+   { "id": "erde", "name": "Erde, Mathe & Technik" }
+  ]
+ }
+}

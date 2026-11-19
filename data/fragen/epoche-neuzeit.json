@@ -13,7 +13,8 @@
     "Worms"
    ],
    "explanation": "Die Thesen richteten sich vor allem gegen den Ablasshandel. Die Stadt heißt heute Lutherstadt Wittenberg.",
-   "source": "https://de.wikipedia.org/wiki/95_Thesen"
+   "source": "https://de.wikipedia.org/wiki/95_Thesen",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-wartburg",
@@ -27,7 +28,8 @@
     "Auf der Veste Coburg"
    ],
    "explanation": "Nach dem Reichstag zu Worms 1521 versteckte er sich als „Junker Jörg“ auf der Wartburg bei Eisenach.",
-   "source": "https://de.wikipedia.org/wiki/Wartburg"
+   "source": "https://de.wikipedia.org/wiki/Wartburg",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-worms",
@@ -41,7 +43,8 @@
     "Friedrich der Weise"
    ],
    "explanation": "Luther weigerte sich zu widerrufen. Daraufhin verhängte Karl V. die Reichsacht über ihn.",
-   "source": "https://de.wikipedia.org/wiki/Reichstag_zu_Worms_1521"
+   "source": "https://de.wikipedia.org/wiki/Reichstag_zu_Worms_1521",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-bauernkrieg",
@@ -55,7 +58,8 @@
     "Schmalkaldischer Krieg"
    ],
    "explanation": "Die Aufständischen forderten unter anderem die Abschaffung der Leibeigenschaft. Der Aufstand wurde blutig niedergeschlagen.",
-   "source": "https://de.wikipedia.org/wiki/Deutscher_Bauernkrieg"
+   "source": "https://de.wikipedia.org/wiki/Deutscher_Bauernkrieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-cuius",
@@ -69,7 +73,8 @@
     "„Ein Reich, ein Glaube“"
    ],
    "explanation": "Lateinisch „cuius regio, eius religio“: Der Landesherr bestimmte die Konfession.",
-   "source": "https://de.wikipedia.org/wiki/Augsburger_Reichs-_und_Religionsfrieden"
+   "source": "https://de.wikipedia.org/wiki/Augsburger_Reichs-_und_Religionsfrieden",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-fenstersturz",
@@ -83,7 +88,8 @@
     "Die Krönung Ferdinands"
    ],
    "explanation": "Protestantische Adlige warfen zwei königliche Statthalter aus einem Fenster der Prager Burg. Sie überlebten.",
-   "source": "https://de.wikipedia.org/wiki/Prager_Fenstersturz_(1618)"
+   "source": "https://de.wikipedia.org/wiki/Prager_Fenstersturz_(1618)",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-30j-folgen",
@@ -97,7 +103,8 @@
     "Sie wuchs sogar"
    ],
    "explanation": "Krieg, Hunger und Seuchen ließen die Bevölkerung von etwa 16 auf rund 10 Millionen schrumpfen, regional noch stärker.",
-   "source": "https://de.wikipedia.org/wiki/Dreißigjähriger_Krieg"
+   "source": "https://de.wikipedia.org/wiki/Dreißigjähriger_Krieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-vasco",
@@ -111,7 +118,8 @@
     "Amerigo Vespucci"
    ],
    "explanation": "Bartolomeu Dias hatte 1488 das Kap der Guten Hoffnung umrundet, Vasco da Gama fuhr weiter bis Indien.",
-   "source": "https://de.wikipedia.org/wiki/Vasco_da_Gama"
+   "source": "https://de.wikipedia.org/wiki/Vasco_da_Gama",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-magellan",
@@ -125,7 +133,8 @@
     "Francis Drake"
    ],
    "explanation": "Magellan selbst starb 1521 auf den Philippinen. Juan Sebastián Elcano führte die Fahrt zu Ende.",
-   "source": "https://de.wikipedia.org/wiki/Ferdinand_Magellan"
+   "source": "https://de.wikipedia.org/wiki/Ferdinand_Magellan",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-amerika-name",
@@ -139,7 +148,8 @@
     "König Amerik I."
    ],
    "explanation": "Der deutsche Kartograf Martin Waldseemüller nannte den Kontinent 1507 nach dem Seefahrer Amerigo Vespucci.",
-   "source": "https://de.wikipedia.org/wiki/Amerigo_Vespucci"
+   "source": "https://de.wikipedia.org/wiki/Amerigo_Vespucci",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-cortes",
@@ -153,7 +163,8 @@
     "Christoph Kolumbus"
    ],
    "explanation": "Pizarro eroberte später das Inkareich in Südamerika.",
-   "source": "https://de.wikipedia.org/wiki/Hernán_Cortés"
+   "source": "https://de.wikipedia.org/wiki/Hernán_Cortés",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-kopernikus",
@@ -167,7 +178,8 @@
     "Johannes Kepler"
    ],
    "explanation": "Kopernikus veröffentlichte es 1543. Galilei und Kepler bauten später darauf auf.",
-   "source": "https://de.wikipedia.org/wiki/Nikolaus_Kopernikus"
+   "source": "https://de.wikipedia.org/wiki/Nikolaus_Kopernikus",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-galilei",
@@ -181,7 +193,8 @@
     "Isaac Newton"
    ],
    "explanation": "Galilei hatte das heliozentrische Weltbild vertreten. Er verbrachte seine letzten Jahre unter Hausarrest.",
-   "source": "https://de.wikipedia.org/wiki/Galileo_Galilei"
+   "source": "https://de.wikipedia.org/wiki/Galileo_Galilei",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-mona-lisa",
@@ -195,7 +208,8 @@
     "Albrecht Dürer"
    ],
    "explanation": "Leonardo malte das Bild ab etwa 1503. Es hängt heute im Louvre in Paris.",
-   "source": "https://de.wikipedia.org/wiki/Mona_Lisa"
+   "source": "https://de.wikipedia.org/wiki/Mona_Lisa",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-sixtina",
@@ -209,7 +223,8 @@
     "Botticelli"
    ],
    "explanation": "Michelangelo arbeitete von 1508 bis 1512 daran. Bekannt ist vor allem die „Erschaffung Adams“.",
-   "source": "https://de.wikipedia.org/wiki/Sixtinische_Kapelle"
+   "source": "https://de.wikipedia.org/wiki/Sixtinische_Kapelle",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-duerer",
@@ -223,7 +238,8 @@
     "Matthias Grünewald"
    ],
    "explanation": "Dürer (1471–1528) gilt als bedeutendster deutscher Künstler der Renaissance.",
-   "source": "https://de.wikipedia.org/wiki/Albrecht_Dürer"
+   "source": "https://de.wikipedia.org/wiki/Albrecht_Dürer",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-sonnenkoenig",
@@ -237,7 +253,8 @@
     "Franz I."
    ],
    "explanation": "Ludwig XIV. regierte von 1643 bis 1715 und ließ Schloss Versailles ausbauen. Er gilt als Inbegriff des Absolutismus.",
-   "source": "https://de.wikipedia.org/wiki/Ludwig_XIV."
+   "source": "https://de.wikipedia.org/wiki/Ludwig_XIV.",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-absolutismus",
@@ -251,7 +268,8 @@
     "Republik"
    ],
    "explanation": "Ludwig XIV. wird der Satz „Der Staat bin ich“ zugeschrieben.",
-   "source": "https://de.wikipedia.org/wiki/Absolutismus"
+   "source": "https://de.wikipedia.org/wiki/Absolutismus",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-alter-fritz",
@@ -265,7 +283,8 @@
     "Friedrich III."
    ],
    "explanation": "Friedrich der Große regierte 1740 bis 1786. Er förderte den Kartoffelanbau und lebte in Schloss Sanssouci.",
-   "source": "https://de.wikipedia.org/wiki/Friedrich_II._(Preußen)"
+   "source": "https://de.wikipedia.org/wiki/Friedrich_II._(Preußen)",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-soldatenkoenig",
@@ -279,7 +298,8 @@
     "Wilhelm II."
    ],
    "explanation": "Er baute das preußische Heer stark aus und war der Vater Friedrichs des Großen.",
-   "source": "https://de.wikipedia.org/wiki/Friedrich_Wilhelm_I._(Preußen)"
+   "source": "https://de.wikipedia.org/wiki/Friedrich_Wilhelm_I._(Preußen)",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-maria-theresia",
@@ -293,7 +313,8 @@
     "Marie Antoinette"
    ],
    "explanation": "Maria Theresia regierte 1740 bis 1780. Ihre Tochter Marie Antoinette wurde Königin von Frankreich.",
-   "source": "https://de.wikipedia.org/wiki/Maria_Theresia"
+   "source": "https://de.wikipedia.org/wiki/Maria_Theresia",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-7j-krieg",
@@ -307,7 +328,8 @@
     "Nordischer Krieg"
    ],
    "explanation": "In Europa kämpfte vor allem Preußen gegen Österreich und Russland, in Übersee Großbritannien gegen Frankreich.",
-   "source": "https://de.wikipedia.org/wiki/Siebenjähriger_Krieg"
+   "source": "https://de.wikipedia.org/wiki/Siebenjähriger_Krieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-aufklaerung",
@@ -321,7 +343,8 @@
     "Gotthold Ephraim Lessing"
    ],
    "explanation": "Kant schrieb das 1784 in seinem Aufsatz „Beantwortung der Frage: Was ist Aufklärung?“.",
-   "source": "https://de.wikipedia.org/wiki/Beantwortung_der_Frage:_Was_ist_Aufklärung%3F"
+   "source": "https://de.wikipedia.org/wiki/Beantwortung_der_Frage:_Was_ist_Aufklärung%3F",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-hexen",
@@ -335,7 +358,8 @@
     "Etwa 1850 bis 1900"
    ],
    "explanation": "Die Hexenverfolgung war vor allem ein Phänomen der Frühen Neuzeit, nicht des Mittelalters. Im Heiligen Römischen Reich wurden Zehntausende hingerichtet.",
-   "source": "https://de.wikipedia.org/wiki/Hexenverfolgung"
+   "source": "https://de.wikipedia.org/wiki/Hexenverfolgung",
+   "cat": "wissen"
   },
   {
    "id": "hist-fnz-y-augsburg",
@@ -347,7 +371,8 @@
    "min": 1450,
    "max": 1820,
    "explanation": "1555 wurde das Nebeneinander von katholischer und lutherischer Konfession im Reich geregelt.",
-   "source": "https://de.wikipedia.org/wiki/Augsburger_Reichs-_und_Religionsfrieden"
+   "source": "https://de.wikipedia.org/wiki/Augsburger_Reichs-_und_Religionsfrieden",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-fnz-y-30j",
@@ -359,7 +384,8 @@
    "min": 1450,
    "max": 1820,
    "explanation": "1618 bis 1648, beendet durch den Westfälischen Frieden.",
-   "source": "https://de.wikipedia.org/wiki/Dreißigjähriger_Krieg"
+   "source": "https://de.wikipedia.org/wiki/Dreißigjähriger_Krieg",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-fnz-y-wartburg",
@@ -371,7 +397,8 @@
    "min": 1450,
    "max": 1820,
    "explanation": "Im April 1521 verweigerte er den Widerruf.",
-   "source": "https://de.wikipedia.org/wiki/Reichstag_zu_Worms_1521"
+   "source": "https://de.wikipedia.org/wiki/Reichstag_zu_Worms_1521",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-fnz-o-fnz2",
@@ -402,7 +429,8 @@
     }
    ],
    "explanation": "1498, 1521, 1555, 1648, 1786.",
-   "source": "https://de.wikipedia.org/wiki/Frühe_Neuzeit"
+   "source": "https://de.wikipedia.org/wiki/Frühe_Neuzeit",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-19jh-code-civil",
@@ -416,7 +444,8 @@
     "Bürgerliches Gesetzbuch"
    ],
    "explanation": "Der Code civil schrieb Gleichheit vor dem Gesetz und Eigentumsrechte fest. In Teilen des Rheinlands galt er bis 1900.",
-   "source": "https://de.wikipedia.org/wiki/Code_civil"
+   "source": "https://de.wikipedia.org/wiki/Code_civil",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-hrr-ende",
@@ -430,7 +459,8 @@
     "1871"
    ],
    "explanation": "Unter dem Druck Napoleons legte Kaiser Franz II. 1806 die Kaiserkrone nieder.",
-   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich"
+   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-voelkerschlacht",
@@ -444,7 +474,8 @@
     "Bei Dresden"
    ],
    "explanation": "Das Völkerschlachtdenkmal in Leipzig erinnert daran. Endgültig geschlagen wurde Napoleon 1815 bei Waterloo.",
-   "source": "https://de.wikipedia.org/wiki/Völkerschlacht_bei_Leipzig"
+   "source": "https://de.wikipedia.org/wiki/Völkerschlacht_bei_Leipzig",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-hambach",
@@ -458,7 +489,8 @@
     "Paulskirchenfest"
    ],
    "explanation": "Auf dem Hambacher Schloss in der Pfalz wehten die Farben Schwarz-Rot-Gold.",
-   "source": "https://de.wikipedia.org/wiki/Hambacher_Fest"
+   "source": "https://de.wikipedia.org/wiki/Hambacher_Fest",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-maerzrevolution",
@@ -472,7 +504,8 @@
     "Friedliche Revolution"
    ],
    "explanation": "Sie führte zur Frankfurter Nationalversammlung. Die Novemberrevolution war 1918, die Friedliche Revolution 1989.",
-   "source": "https://de.wikipedia.org/wiki/Märzrevolution"
+   "source": "https://de.wikipedia.org/wiki/Märzrevolution",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-manifest",
@@ -486,7 +519,8 @@
     "Rosa Luxemburg und Karl Liebknecht"
    ],
    "explanation": "Es beginnt mit dem Satz „Ein Gespenst geht um in Europa“.",
-   "source": "https://de.wikipedia.org/wiki/Manifest_der_Kommunistischen_Partei"
+   "source": "https://de.wikipedia.org/wiki/Manifest_der_Kommunistischen_Partei",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-eisenbahn",
@@ -500,7 +534,8 @@
     "Köln und Bonn"
    ],
    "explanation": "Die Lokomotive „Adler“ zog die Bahn der Ludwigseisenbahn über rund 6 km.",
-   "source": "https://de.wikipedia.org/wiki/Bayerische_Ludwigsbahn"
+   "source": "https://de.wikipedia.org/wiki/Bayerische_Ludwigsbahn",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-sozialversicherung",
@@ -514,7 +549,8 @@
     "Theobald von Bethmann Hollweg"
    ],
    "explanation": "Die Sozialgesetze sollten auch der Sozialdemokratie Anhänger abwerben.",
-   "source": "https://de.wikipedia.org/wiki/Bismarcksche_Sozialgesetzgebung"
+   "source": "https://de.wikipedia.org/wiki/Bismarcksche_Sozialgesetzgebung",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-kulturkampf",
@@ -528,7 +564,8 @@
     "Gegen die Juden"
    ],
    "explanation": "Unter anderem wurde die Zivilehe eingeführt. Gegen die Sozialdemokraten richteten sich ab 1878 die Sozialistengesetze.",
-   "source": "https://de.wikipedia.org/wiki/Kulturkampf"
+   "source": "https://de.wikipedia.org/wiki/Kulturkampf",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-sezession",
@@ -542,7 +579,8 @@
     "Um das Frauenwahlrecht"
    ],
    "explanation": "Die Nordstaaten siegten, die Sklaverei wurde 1865 abgeschafft. Präsident Lincoln wurde kurz nach Kriegsende ermordet.",
-   "source": "https://de.wikipedia.org/wiki/Sezessionskrieg"
+   "source": "https://de.wikipedia.org/wiki/Sezessionskrieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-lincoln",
@@ -556,7 +594,8 @@
     "Ulysses S. Grant"
    ],
    "explanation": "Lincoln wurde im Ford’s Theatre in Washington erschossen.",
-   "source": "https://de.wikipedia.org/wiki/Abraham_Lincoln"
+   "source": "https://de.wikipedia.org/wiki/Abraham_Lincoln",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-dampfmaschine",
@@ -570,7 +609,8 @@
     "Robert Fulton"
    ],
    "explanation": "Watts Verbesserungen ab 1769 machten die Dampfmaschine viel effizienter. Die Einheit Watt ist nach ihm benannt.",
-   "source": "https://de.wikipedia.org/wiki/James_Watt"
+   "source": "https://de.wikipedia.org/wiki/James_Watt",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-weberaufstand",
@@ -584,7 +624,8 @@
     "Hamburger Aufstand"
    ],
    "explanation": "Gerhart Hauptmann verarbeitete ihn in seinem Drama „Die Weber“.",
-   "source": "https://de.wikipedia.org/wiki/Weberaufstand"
+   "source": "https://de.wikipedia.org/wiki/Weberaufstand",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-kolonien",
@@ -598,7 +639,8 @@
     "Togo"
    ],
    "explanation": "Dort verübten deutsche Truppen 1904 bis 1908 den Völkermord an den Herero und Nama. Tansania gehörte zu Deutsch-Ostafrika.",
-   "source": "https://de.wikipedia.org/wiki/Deutsch-Südwestafrika"
+   "source": "https://de.wikipedia.org/wiki/Deutsch-Südwestafrika",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-wilhelm2",
@@ -612,7 +654,8 @@
     "Ludwig II."
    ],
    "explanation": "Der junge Kaiser wollte selbst regieren. Die Karikatur „Der Lotse geht von Bord“ zeigt Bismarcks Abgang.",
-   "source": "https://de.wikipedia.org/wiki/Wilhelm_II._(Deutsches_Reich)"
+   "source": "https://de.wikipedia.org/wiki/Wilhelm_II._(Deutsches_Reich)",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-dreikaiserjahr",
@@ -626,7 +669,8 @@
     "Drei Kaiser wurden geboren"
    ],
    "explanation": "Wilhelm I. starb im März, sein Sohn Friedrich III. nach 99 Tagen, dann folgte Wilhelm II.",
-   "source": "https://de.wikipedia.org/wiki/Dreikaiserjahr"
+   "source": "https://de.wikipedia.org/wiki/Dreikaiserjahr",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-benz",
@@ -640,7 +684,8 @@
     "Henry Ford"
    ],
    "explanation": "Bertha Benz unternahm 1888 die erste Fernfahrt mit dem Wagen.",
-   "source": "https://de.wikipedia.org/wiki/Benz_Patent-Motorwagen_Nummer_1"
+   "source": "https://de.wikipedia.org/wiki/Benz_Patent-Motorwagen_Nummer_1",
+   "cat": "wissen"
   },
   {
    "id": "hist-19jh-y-hrr",
@@ -652,7 +697,8 @@
    "min": 1770,
    "max": 1920,
    "explanation": "1806 legte Franz II. die Kaiserkrone nieder.",
-   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich"
+   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-19jh-y-maerz",
@@ -664,7 +710,8 @@
    "min": 1770,
    "max": 1920,
    "explanation": "1848/49.",
-   "source": "https://de.wikipedia.org/wiki/Märzrevolution"
+   "source": "https://de.wikipedia.org/wiki/Märzrevolution",
+   "cat": "jahreszahlen"
   }
  ]
 }

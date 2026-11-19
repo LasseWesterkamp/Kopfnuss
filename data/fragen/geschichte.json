@@ -13,7 +13,8 @@
     "Theodor Heuss",
     "Willy Brandt"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-merkel",
@@ -27,7 +28,8 @@
     "Annegret Kramp-Karrenbauer",
     "Hannelore Kraft"
    ],
-   "sub": "seit1990"
+   "sub": "seit1990",
+   "cat": "wissen"
   },
   {
    "id": "hist-kohl",
@@ -41,7 +43,8 @@
     "Gerhard Schröder",
     "Willy Brandt"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-brandt-nobel",
@@ -55,7 +58,8 @@
     "Konrad Adenauer",
     "Helmut Kohl"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-einheit-datum",
@@ -69,7 +73,8 @@
     "17. Juni",
     "23. Mai"
    ],
-   "sub": "seit1990"
+   "sub": "seit1990",
+   "cat": "wissen"
   },
   {
    "id": "hist-schicksalstag",
@@ -83,7 +88,8 @@
     "30. Januar",
     "20. Juli"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-17juni",
@@ -97,7 +103,8 @@
     "Bau der Berliner Mauer",
     "Beginn der Berlin-Blockade"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-luftbruecke",
@@ -111,7 +118,8 @@
     "Über die Elbe per Schiff",
     "Über einen Korridor durch Polen"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-marshallplan",
@@ -125,7 +133,8 @@
     "Ein Militärbündnis gegen die Sowjetunion",
     "Ein Abkommen über Reparationen an Frankreich"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-nuernberg",
@@ -139,7 +148,8 @@
     "München",
     "Den Haag"
    ],
-   "sub": "ns"
+   "sub": "ns",
+   "cat": "wissen"
   },
   {
    "id": "hist-bismarck",
@@ -153,7 +163,8 @@
     "Bernhard von Bülow",
     "Paul von Hindenburg"
    ],
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "wissen"
   },
   {
    "id": "hist-versailles-1871",
@@ -167,7 +178,8 @@
     "Im Berliner Stadtschloss",
     "In Schloss Sanssouci"
    ],
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "wissen"
   },
   {
    "id": "hist-paulskirche",
@@ -181,7 +193,8 @@
     "Weimarer Nationaltheater",
     "Hambacher Schloss"
    ],
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-name",
@@ -195,7 +208,8 @@
     "Rheinbund",
     "Bonner Republik"
    ],
-   "sub": "weimar"
+   "sub": "weimar",
+   "cat": "wissen"
   },
   {
    "id": "hist-ebert",
@@ -209,7 +223,8 @@
     "Gustav Stresemann",
     "Philipp Scheidemann"
    ],
-   "sub": "weimar"
+   "sub": "weimar",
+   "cat": "wissen"
   },
   {
    "id": "hist-weisse-rose",
@@ -223,7 +238,8 @@
     "Kreisauer Kreis",
     "Edelweißpiraten"
    ],
-   "sub": "ns"
+   "sub": "ns",
+   "cat": "wissen"
   },
   {
    "id": "hist-stauffenberg",
@@ -237,7 +253,8 @@
     "Erwin Rommel",
     "Henning von Tresckow"
    ],
-   "sub": "ns"
+   "sub": "ns",
+   "cat": "wissen"
   },
   {
    "id": "hist-kriegsende",
@@ -251,7 +268,8 @@
     "9. November 1945",
     "20. April 1945"
    ],
-   "sub": "ns"
+   "sub": "ns",
+   "cat": "wissen"
   },
   {
    "id": "hist-franz-ferdinand",
@@ -265,7 +283,8 @@
     "Zar Nikolaus II.",
     "Kaiser Wilhelm II."
    ],
-   "sub": "weimar"
+   "sub": "weimar",
+   "cat": "wissen"
   },
   {
    "id": "hist-arminius",
@@ -279,7 +298,8 @@
     "Alarich",
     "Marbod"
    ],
-   "sub": "antike"
+   "sub": "antike",
+   "cat": "wissen"
   },
   {
    "id": "hist-gutenberg",
@@ -293,7 +313,8 @@
     "Köln",
     "Nürnberg"
    ],
-   "sub": "fnz"
+   "sub": "fnz",
+   "cat": "wissen"
   },
   {
    "id": "hist-westfalen",
@@ -307,7 +328,8 @@
     "Wiener Kongress",
     "Frieden von Utrecht"
    ],
-   "sub": "fnz"
+   "sub": "fnz",
+   "cat": "wissen"
   },
   {
    "id": "hist-wiener-kongress",
@@ -321,7 +343,8 @@
     "Westfälischer Friede",
     "Konferenz von Jalta"
    ],
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "wissen"
   },
   {
    "id": "hist-waterloo",
@@ -335,7 +358,8 @@
     "Völkerschlacht bei Leipzig",
     "Jena und Auerstedt"
    ],
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "wissen"
   },
   {
    "id": "hist-bastille",
@@ -349,7 +373,8 @@
     "Krönung Napoleons",
     "Ballhausschwur"
    ],
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "wissen"
   },
   {
    "id": "hist-magna-carta",
@@ -363,7 +388,8 @@
     "Habeas Corpus Act",
     "Domesday Book"
    ],
-   "sub": "mittelalter"
+   "sub": "mittelalter",
+   "cat": "wissen"
   },
   {
    "id": "hist-industrielle-rev",
@@ -377,7 +403,8 @@
     "Frankreich",
     "USA"
    ],
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "wissen"
   },
   {
    "id": "hist-cheops",
@@ -391,7 +418,8 @@
     "Mykerinos-Pyramide",
     "Djoser-Pyramide"
    ],
-   "sub": "antike"
+   "sub": "antike",
+   "cat": "wissen"
   },
   {
    "id": "hist-kleopatra",
@@ -405,7 +433,8 @@
     "Hatschepsut",
     "Berenike IV."
    ],
-   "sub": "antike"
+   "sub": "antike",
+   "cat": "wissen"
   },
   {
    "id": "hist-olympia-1896",
@@ -419,7 +448,8 @@
     "London",
     "Olympia"
    ],
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "wissen"
   },
   {
    "id": "hist-armstrong",
@@ -433,7 +463,8 @@
     "Juri Gagarin",
     "Michael Collins"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-gagarin",
@@ -447,7 +478,8 @@
     "Walentina Tereschkowa",
     "Alan Shepard"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-mlk",
@@ -461,7 +493,8 @@
     "John F. Kennedy",
     "Barack Obama"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-mandela",
@@ -475,7 +508,8 @@
     "Thabo Mbeki",
     "Jacob Zuma"
    ],
-   "sub": "seit1990"
+   "sub": "seit1990",
+   "cat": "wissen"
   },
   {
    "id": "hist-kubakrise",
@@ -489,7 +523,8 @@
     "Berlin-Blockade",
     "Suezkrise"
    ],
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "wissen"
   },
   {
    "id": "hist-y-mauerfall",
@@ -501,7 +536,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr fiel die Berliner Mauer?",
    "explanation": "Am 9. November 1989 wurden die Grenzübergänge in Berlin geöffnet.",
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-mauerbau",
@@ -513,7 +549,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr wurde die Berliner Mauer gebaut?",
    "explanation": "Am 13. August 1961 begann die DDR mit dem Bau der Mauer.",
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-brd",
@@ -525,7 +562,8 @@
    "difficulty": 2,
    "prompt": "In welchem Jahr wurde die Bundesrepublik Deutschland gegründet?",
    "explanation": "Am 23. Mai 1949 trat das Grundgesetz in Kraft.",
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-wk2",
@@ -537,7 +575,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr begann der Zweite Weltkrieg?",
    "explanation": "Am 1. September 1939 überfiel Deutschland Polen.",
-   "sub": "ns"
+   "sub": "ns",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-mond",
@@ -549,7 +588,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr landeten erstmals Menschen auf dem Mond?",
    "explanation": "Apollo 11 landete im Juli 1969 auf dem Mond.",
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-euro",
@@ -561,7 +601,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr wurde der Euro als Bargeld eingeführt?",
    "explanation": "Seit dem 1. Januar 2002 gibt es Euro-Münzen und -Scheine. Als Buchgeld existierte er schon seit 1999.",
-   "sub": "seit1990"
+   "sub": "seit1990",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-tschernobyl",
@@ -573,7 +614,8 @@
    "difficulty": 2,
    "prompt": "In welchem Jahr ereignete sich die Reaktorkatastrophe von Tschernobyl?",
    "explanation": "Am 26. April 1986 explodierte Reaktorblock 4.",
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-titanic",
@@ -585,7 +627,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr sank die Titanic?",
    "explanation": "Die Titanic sank im April 1912 auf ihrer Jungfernfahrt nach einer Kollision mit einem Eisberg.",
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-udssr",
@@ -597,7 +640,8 @@
    "difficulty": 2,
    "prompt": "In welchem Jahr zerfiel die Sowjetunion?",
    "explanation": "Ende Dezember 1991 löste sich die UdSSR auf.",
-   "sub": "seit1990"
+   "sub": "seit1990",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-911",
@@ -609,7 +653,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr wurden die Terroranschläge auf das World Trade Center verübt?",
    "explanation": "Am 11. September 2001 entführten Terroristen vier Flugzeuge.",
-   "sub": "seit1990"
+   "sub": "seit1990",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-frz-rev",
@@ -621,7 +666,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr begann die Französische Revolution?",
    "explanation": "Mit dem Sturm auf die Bastille am 14. Juli 1789.",
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-usa",
@@ -633,7 +679,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr wurde die Unabhängigkeitserklärung der USA unterzeichnet?",
    "explanation": "Am 4. Juli 1776, heute Nationalfeiertag der USA.",
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-reichsgruendung",
@@ -645,7 +692,8 @@
    "difficulty": 2,
    "prompt": "In welchem Jahr wurde das Deutsche Kaiserreich gegründet?",
    "explanation": "Am 18. Januar 1871 in Versailles.",
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-kolumbus",
@@ -657,7 +705,8 @@
    "difficulty": 1,
    "prompt": "In welchem Jahr erreichte Kolumbus Amerika?",
    "explanation": "Am 12. Oktober 1492 landete Kolumbus auf einer Insel der Bahamas.",
-   "sub": "fnz"
+   "sub": "fnz",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-luther",
@@ -669,7 +718,8 @@
    "difficulty": 2,
    "prompt": "In welchem Jahr veröffentlichte Martin Luther seine 95 Thesen?",
    "explanation": "Am 31. Oktober 1517, heute Reformationstag.",
-   "sub": "fnz"
+   "sub": "fnz",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-konstantinopel",
@@ -681,7 +731,8 @@
    "difficulty": 3,
    "prompt": "In welchem Jahr eroberten die Osmanen Konstantinopel?",
    "explanation": "Die Eroberung beendete das Byzantinische Reich.",
-   "sub": "mittelalter"
+   "sub": "mittelalter",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-karl",
@@ -693,7 +744,8 @@
    "difficulty": 2,
    "prompt": "In welchem Jahr wurde Karl der Große in Rom zum Kaiser gekrönt?",
    "explanation": "An Weihnachten 800 krönte ihn Papst Leo III.",
-   "sub": "mittelalter"
+   "sub": "mittelalter",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-y-caesar",
@@ -705,7 +757,8 @@
    "difficulty": 3,
    "prompt": "In welchem Jahr wurde Julius Caesar ermordet?",
    "explanation": "An den Iden des März 44 v. Chr. wurde Caesar im Senat erstochen.",
-   "sub": "antike"
+   "sub": "antike",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-o-de20",
@@ -736,7 +789,8 @@
    "difficulty": 1,
    "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
    "explanation": "1871, 1918, 1949, 1961, 1989.",
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-o-fnz",
@@ -763,7 +817,8 @@
    "difficulty": 2,
    "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
    "explanation": "1492, 1517, 1618, 1789.",
-   "sub": "fnz"
+   "sub": "fnz",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-o-raumfahrt",
@@ -790,7 +845,8 @@
    "difficulty": 1,
    "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
    "explanation": "1961, 1969, 1989, 2002.",
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-o-mittelalter",
@@ -817,7 +873,8 @@
    "difficulty": 3,
    "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
    "explanation": "9, 800, 1215, 1453.",
-   "sub": "mittelalter"
+   "sub": "mittelalter",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-o-19jh",
@@ -844,7 +901,8 @@
    "difficulty": 2,
    "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
    "explanation": "1776, 1815, 1848, 1871.",
-   "sub": "19jh"
+   "sub": "19jh",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-o-weltkriege",
@@ -871,7 +929,8 @@
    "difficulty": 1,
    "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
    "explanation": "1914, 1933, 1939, 1949.",
-   "sub": "ns"
+   "sub": "ns",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-o-ereignisse",
@@ -902,7 +961,8 @@
    "difficulty": 2,
    "prompt": "Bringe in die richtige Reihenfolge (früheste zuerst):",
    "explanation": "1912, 1962, 1986, 1991, 2001.",
-   "sub": "geteilt"
+   "sub": "geteilt",
+   "cat": "reihenfolge"
   }
  ]
 }

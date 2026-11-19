@@ -21,6 +21,7 @@ interface BaseQuestion {
   explanation: string;
   source: string;       // URL
   asOf?: string;        // Stand-Datum (YYYY-MM-DD), Pflicht bei Politik
+  cat: string;          // Kategorie innerhalb des Themas (data/kategorien.json), genau eine pro Frage
   sub?: string;         // Unterthema: Epoche bei Geschichte (z.B. "antike"), Land bei Regionen (z.B. "de")
 }
 
@@ -47,7 +48,29 @@ export interface OrderQuestion extends BaseQuestion {
   items: { label: string; year: number }[]; // richtige Reihenfolge = nach Jahr aufsteigend
 }
 
-export type Question = McQuestion | MapQuestion | YearQuestion | OrderQuestion;
+/** Markierte Region auf der Karte benennen (Antwort wie Multiple Choice) */
+export interface MapNameQuestion extends BaseQuestion {
+  type: 'mapname';
+  country: string;      // ISO 3166-2 der markierten Region
+  continent: string;    // Ländercode der Regionenkarte
+  regions: true;
+  choices: string[];
+  answer: number;
+}
+/** Welche von 4 Flaggen gehört zu X? */
+export interface FlagPickQuestion extends BaseQuestion {
+  type: 'flagpick';
+  options: ImageInfo[];
+  optionLabels: string[]; // werden erst nach der Antwort gezeigt
+  answer: number;
+}
+/** 4 Flaggen 4 Namen zuordnen. pairs[i].image gehört zu pairs[i].label */
+export interface MatchQuestion extends BaseQuestion {
+  type: 'match';
+  pairs: { label: string; image: ImageInfo }[];
+}
+
+export type Question = McQuestion | MapQuestion | YearQuestion | OrderQuestion | MapNameQuestion | FlagPickQuestion | MatchQuestion;
 
 /** Spaced-Repetition-Zustand pro Frage */
 export interface CardState {

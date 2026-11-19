@@ -12,7 +12,8 @@
     "Ostsee",
     "Schwarzes Meer",
     "Mittelmeer"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-donau-mdg",
@@ -25,7 +26,8 @@
     "Nordsee",
     "Adriatisches Meer",
     "Ostsee"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-oder-mdg",
@@ -38,7 +40,8 @@
     "Nordsee",
     "Schwarzes Meer",
     "Atlantik"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-elbe-mdg",
@@ -51,7 +54,8 @@
     "Ostsee",
     "Schwarzes Meer",
     "Mittelmeer"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-laengster-de",
@@ -64,7 +68,8 @@
     "Donau",
     "Elbe",
     "Main"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-laengster-eu",
@@ -77,7 +82,8 @@
     "Donau",
     "Rhein",
     "Dnepr"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-laengster-welt",
@@ -90,7 +96,8 @@
     "Amazonas",
     "Jangtsekiang",
     "Mississippi"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-amazonas",
@@ -103,7 +110,8 @@
     "Nil",
     "Kongo",
     "Jangtsekiang"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-jangtse",
@@ -116,7 +124,8 @@
     "Mekong",
     "Ganges",
     "Indus"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-donau-hst",
@@ -129,7 +138,8 @@
     "Wien",
     "Budapest",
     "Belgrad"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-prag",
@@ -142,7 +152,8 @@
     "Donau",
     "Elbe",
     "Weichsel"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-paris",
@@ -155,7 +166,8 @@
     "Loire",
     "Rhone",
     "Garonne"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-london",
@@ -168,7 +180,8 @@
     "Severn",
     "Trent",
     "Tyne"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-rom",
@@ -181,7 +194,8 @@
     "Po",
     "Arno",
     "Etsch"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-warschau",
@@ -194,7 +208,8 @@
     "Oder",
     "Warthe",
     "Bug"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-lissabon",
@@ -207,7 +222,8 @@
     "Douro",
     "Guadalquivir",
     "Ebro"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-bagdad",
@@ -220,7 +236,8 @@
     "Euphrat",
     "Jordan",
     "Nil"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-dresden",
@@ -233,7 +250,8 @@
     "Saale",
     "Spree",
     "Oder"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-muenchen",
@@ -246,7 +264,8 @@
     "Inn",
     "Lech",
     "Donau"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-berlin",
@@ -259,7 +278,8 @@
     "Havel",
     "Elbe",
     "Oder"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-stuttgart",
@@ -272,7 +292,8 @@
     "Main",
     "Rhein",
     "Donau"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-hannover",
@@ -285,7 +306,8 @@
     "Weser",
     "Aller",
     "Ems"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-bremen",
@@ -298,7 +320,8 @@
     "Elbe",
     "Ems",
     "Aller"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-koblenz",
@@ -311,7 +334,8 @@
     "Main",
     "Neckar",
     "Lahn"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-weser-quelle",
@@ -324,7 +348,8 @@
     "Brigach und Breg",
     "Eder und Diemel",
     "Saale und Unstrut"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-donau-quelle",
@@ -337,7 +362,8 @@
     "Werra und Fulda",
     "Iller und Lech",
     "Inn und Ilz"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-passau",
@@ -350,7 +376,8 @@
     "Koblenz",
     "Regensburg",
     "Mannheim"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-rhein-quelle",
@@ -363,7 +390,8 @@
     "Österreich",
     "Deutschland",
     "Frankreich"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-oder-grenze",
@@ -376,7 +404,8 @@
     "Elbe",
     "Weichsel",
     "Spree"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-fl-ganges",
@@ -389,7 +418,8 @@
     "Indus",
     "Mekong",
     "Brahmaputra"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-berg-zugspitze",
@@ -402,7 +432,8 @@
     "Watzmann",
     "Feldberg",
     "Brocken"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-berg-brocken",
@@ -415,7 +446,8 @@
     "Wurmberg",
     "Fichtelberg",
     "Feldberg"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-berg-feldberg",
@@ -428,7 +460,8 @@
     "Belchen",
     "Hornisgrinde",
     "Kandel"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-berg-everest",
@@ -441,7 +474,8 @@
     "K2",
     "Kangchendzönga",
     "Mont Blanc"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-berg-montblanc",
@@ -454,7 +488,8 @@
     "Matterhorn",
     "Großglockner",
     "Zugspitze"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-berg-kili",
@@ -467,7 +502,8 @@
     "Mount Kenya",
     "Atlas",
     "Ruwenzori"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-berg-aconcagua",
@@ -480,7 +516,8 @@
     "Chimborazo",
     "Huascarán",
     "Ojos del Salado"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-see-mueritz",
@@ -493,7 +530,8 @@
     "Chiemsee",
     "Bodensee",
     "Starnberger See"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-see-bodensee",
@@ -506,7 +544,8 @@
     "Deutschland, Schweiz, Frankreich",
     "Deutschland, Österreich, Liechtenstein",
     "Österreich, Schweiz, Italien"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-see-baikal",
@@ -519,7 +558,8 @@
     "Tanganjikasee",
     "Kaspisches Meer",
     "Lago Maggiore"
-   ]
+   ],
+   "cat": "gewaesser"
   },
   {
    "id": "geo-insel-ruegen",
@@ -532,7 +572,8 @@
     "Usedom",
     "Sylt",
     "Fehmarn"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-ozean-pazifik",
@@ -545,7 +586,8 @@
     "Atlantik",
     "Indischer Ozean",
     "Südlicher Ozean"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-wueste-sahara",
@@ -558,7 +600,8 @@
     "Gobi",
     "Kalahari",
     "Atacama"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-meerenge-gibraltar",
@@ -571,7 +614,8 @@
     "Bosporus",
     "Ärmelkanal",
     "Straße von Messina"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-meerenge-bosporus",
@@ -584,7 +628,8 @@
     "Dardanellen",
     "Straße von Gibraltar",
     "Suezkanal"
-   ]
+   ],
+   "cat": "landschaften"
   },
   {
    "id": "geo-de-nachbarn",
@@ -597,7 +642,8 @@
     "7",
     "8",
     "10"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-nachbar-nicht",
@@ -610,7 +656,8 @@
     "Luxemburg",
     "Tschechien",
     "Dänemark"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-bl-anzahl",
@@ -623,7 +670,8 @@
     "12",
     "14",
     "18"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-bl-groesste",
@@ -636,7 +684,8 @@
     "Niedersachsen",
     "Baden-Württemberg",
     "Nordrhein-Westfalen"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-bl-einwohner",
@@ -649,7 +698,8 @@
     "Bayern",
     "Baden-Württemberg",
     "Niedersachsen"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-bl-kleinste",
@@ -662,7 +712,8 @@
     "Hamburg",
     "Berlin",
     "Saarland"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-bw",
@@ -675,7 +726,8 @@
     "Karlsruhe",
     "Mannheim",
     "Freiburg im Breisgau"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-by",
@@ -688,7 +740,8 @@
     "Nürnberg",
     "Augsburg",
     "Regensburg"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-bb",
@@ -701,7 +754,8 @@
     "Cottbus",
     "Frankfurt (Oder)",
     "Brandenburg an der Havel"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-he",
@@ -714,7 +768,8 @@
     "Frankfurt am Main",
     "Kassel",
     "Darmstadt"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-mv",
@@ -727,7 +782,8 @@
     "Rostock",
     "Greifswald",
     "Stralsund"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-ni",
@@ -740,7 +796,8 @@
     "Braunschweig",
     "Oldenburg",
     "Osnabrück"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-nw",
@@ -753,7 +810,8 @@
     "Köln",
     "Dortmund",
     "Bonn"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-rp",
@@ -766,7 +824,8 @@
     "Koblenz",
     "Trier",
     "Ludwigshafen am Rhein"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-sl",
@@ -779,7 +838,8 @@
     "Saarlouis",
     "Neunkirchen",
     "Homburg"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-sn",
@@ -792,7 +852,8 @@
     "Leipzig",
     "Chemnitz",
     "Zwickau"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-st",
@@ -805,7 +866,8 @@
     "Halle (Saale)",
     "Dessau-Roßlau",
     "Lutherstadt Wittenberg"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-sh",
@@ -818,7 +880,8 @@
     "Lübeck",
     "Flensburg",
     "Neumünster"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-de-lhs-th",
@@ -831,7 +894,8 @@
     "Jena",
     "Weimar",
     "Gera"
-   ]
+   ],
+   "cat": "deutschland"
   },
   {
    "id": "geo-welt-groesstes-land",
@@ -844,7 +908,8 @@
     "Kanada",
     "China",
     "USA"
-   ]
+   ],
+   "cat": "kontinente"
   },
   {
    "id": "geo-welt-kleinstes-land",
@@ -857,7 +922,8 @@
     "Monaco",
     "San Marino",
     "Liechtenstein"
-   ]
+   ],
+   "cat": "kontinente"
   },
   {
    "id": "geo-welt-bevoelkerung",
@@ -870,7 +936,8 @@
     "China",
     "USA",
     "Indonesien"
-   ]
+   ],
+   "cat": "kontinente"
   }
  ]
 }

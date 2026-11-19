@@ -161,8 +161,8 @@ describe('Punkte', () => {
   });
 });
 
-const q = (id: string, topic: Question['topic'] = 'geografie', difficulty: 1 | 2 | 3 = 1): Question =>
-  ({ id, topic, difficulty, type: 'mc', prompt: id, choices: ['a', 'b'], answer: 0, explanation: '', source: '' });
+const q = (id: string, topic: Question['topic'] = 'geografie', difficulty: 1 | 2 | 3 = 1, cat = 'x'): Question =>
+  ({ id, topic, cat, difficulty, type: 'mc', prompt: id, choices: ['a', 'b'], answer: 0, explanation: '', source: '' });
 
 describe('Fortschritt & Sync', () => {
   const morning = new Date('2026-11-18T08:00:00Z').getTime();
@@ -356,5 +356,105 @@ describe('Gruppenbeitritt: Einladungscode und -link', () => {
     const url = inviteUrl('https://lassewesterkamp.github.io', '/Kopfnuss/', '9HEN2D');
     expect(url).toBe('https://lassewesterkamp.github.io/Kopfnuss/?beitreten=9HEN2D');
     expect(codeFromUrl(new URL(url).search)).toBe('9HEN2D');
+  });
+});
+
+import { matchScore, matchCorrect } from './scoring';
+import { startPuzzle, tap, next, isDone, summary, currentTarget, isBetter, MAX_TRIES } from './puzzle';
+
+describe('Zuordnungsspiel', () => {
+  it('alles richtig', () => { expect(matchScore([0, 1, 2, 3])).toBe(1); expect(matchCorrect(1)).toBe(true); });
+  it('zwei vertauscht = halbe Punkte, nicht richtig', () => { expect(matchScore([1, 0, 2, 3])).toBe(0.5); expect(matchCorrect(0.5)).toBe(false); });
+  it('alles falsch', () => expect(matchScore([1, 2, 3, 0])).toBe(0));
+  it('nicht zugeordnete Paare zählen als falsch', () => expect(matchScore([0, -1, 2, -1])).toBe(0.5));
+});
+
+describe('Karten-Puzzle', () => {
+  const rng = () => 0; // feste Reihenfolge
+  const isos = ['DE-BY', 'DE-BE', 'DE-HH'];
+  it('erster Versuch richtig = richtig gewertet', () => {
+    let s = startPuzzle(isos, rng);
+    const t = currentTarget(s)!;
+    const r = tap(s, t);
+    expect(r.outcome).toBe('richtig');
+    expect(r.finished).toEqual({ iso: t, ok: true });
+  });
+  it('Treffer nach Fehlversuch zählt als falsch, Fehler werden gezählt', () => {
+    let s = startPuzzle(isos, rng);
+    const t = currentTarget(s)!;
+    const wrong = isos.find((i) => i !== t)!;
+    let r = tap(s, wrong); expect(r.outcome).toBe('falsch'); s = r.state;
+    r = tap(s, t); expect(r.outcome).toBe('richtig'); expect(r.finished?.ok).toBe(false);
+    expect(r.state.errors).toBe(1);
+  });
+  it(`nach ${MAX_TRIES} Fehlversuchen wird aufgedeckt und als falsch gewertet`, () => {
+    let s = startPuzzle(isos, rng);
+    const t = currentTarget(s)!;
+    const wrong = isos.find((i) => i !== t)!;
+    let r: ReturnType<typeof tap> = { state: s, outcome: 'ignoriert' };
+    for (let i = 0; i < MAX_TRIES; i++) { r = tap(s, wrong); s = r.state; }
+    expect(r.outcome).toBe('aufgedeckt');
+    expect(s.revealed).toBe(t);
+    expect(tap(s, t).outcome).toBe('ignoriert'); // während aufgedeckt keine Eingabe
+    s = next(s);
+    expect(currentTarget(s)).not.toBe(t);
+  });
+  it('schon gelöste Regionen werden ignoriert', () => {
+    let s = startPuzzle(isos, rng);
+    const first = currentTarget(s)!;
+    s = tap(s, first).state;
+    expect(tap(s, first).outcome).toBe('ignoriert');
+    expect(s.errors).toBe(0);
+  });
+  it('kompletter Durchlauf und Zusammenfassung', () => {
+    let s = startPuzzle(isos, rng);
+    while (!isDone(s)) s = tap(s, currentTarget(s)!).state;
+    expect(summary(s)).toEqual({ total: 3, firstTry: 3, errors: 0, accuracy: 1 });
+  });
+  it('Bestzeit', () => {
+    expect(isBetter(null, { ms: 5000, errors: 2 })).toBe(true);
+    expect(isBetter({ ms: 5000, errors: 2 }, { ms: 4000, errors: 9 })).toBe(true);
+    expect(isBetter({ ms: 5000, errors: 2 }, { ms: 5000, errors: 1 })).toBe(true);
+    expect(isBetter({ ms: 5000, errors: 2 }, { ms: 6000, errors: 0 })).toBe(false);
+  });
+});
+
+describe('Kategorienfilter', () => {
+  const today = '2026-11-19';
+  const pool: Question[] = [
+    ...Array.from({ length: 12 }, (_, i) => q('hs' + i, 'geografie', 1, 'hauptstaedte')),
+    ...Array.from({ length: 12 }, (_, i) => q('fl' + i, 'geografie', 1, 'gewaesser')),
+    ...Array.from({ length: 12 }, (_, i) => q('eu' + i, 'flaggen', 1, 'europa')),
+    ...Array.from({ length: 12 }, (_, i) => q('af' + i, 'flaggen', 1, 'afrika')),
+    ...Array.from({ length: 6 }, (_, i) => ({ ...q('rch' + i, 'regionen', 1, 'flaggen'), sub: 'ch' })),
+    ...Array.from({ length: 6 }, (_, i) => ({ ...q('rcl' + i, 'regionen', 1, 'lage'), sub: 'ch' })),
+    ...Array.from({ length: 6 }, (_, i) => ({ ...q('rdf' + i, 'regionen', 1, 'flaggen'), sub: 'de' })),
+  ];
+  it('nur eine Kategorie eines Themas', () => {
+    const s = buildSession(pool, emptyProgress(), today, { topics: ['geografie'], cats: ['geografie/hauptstaedte'] }, () => 0.2);
+    expect(s).toHaveLength(10);
+    expect(s.every((x) => x.cat === 'hauptstaedte')).toBe(true);
+  });
+  it('mehrere Kategorien', () => {
+    const s = buildSession(pool, emptyProgress(), today, { topics: ['flaggen'], cats: ['flaggen/europa', 'flaggen/afrika'], size: 24 }, () => 0.2);
+    expect(new Set(s.map((x) => x.cat))).toEqual(new Set(['europa', 'afrika']));
+  });
+  it('Kategorie eines Themas schränkt andere Themen nicht ein', () => {
+    expect(matchesFilter(q('a', 'flaggen', 1, 'asien'), { topics: ['geografie', 'flaggen'], cats: ['geografie/hauptstaedte'] })).toBe(true);
+    expect(matchesFilter(q('b', 'geografie', 1, 'gewaesser'), { topics: ['geografie', 'flaggen'], cats: ['geografie/hauptstaedte'] })).toBe(false);
+  });
+  it('gleiche Kategorie-ID in verschiedenen Themen wird nicht verwechselt', () => {
+    // "hauptstaedte" gibt es in Geografie und Regionen
+    expect(matchesFilter(q('c', 'regionen', 1, 'hauptstaedte'), { cats: ['geografie/hauptstaedte'] })).toBe(true);
+    expect(matchesFilter(q('d', 'regionen', 1, 'lage'), { cats: ['regionen/hauptstaedte'] })).toBe(false);
+  });
+  it('Land + Kategorie kombiniert: Regionen, nur Schweiz, nur Flaggen', () => {
+    const s = buildSession(pool, emptyProgress(), today, { topics: ['regionen'], subs: ['ch'], cats: ['regionen/flaggen'], size: 20 }, () => 0.2);
+    expect(s).toHaveLength(6);
+    expect(s.every((x) => x.sub === 'ch' && x.cat === 'flaggen')).toBe(true);
+  });
+  it('Tages-Challenge ignoriert die Auswahl (keine Filter)', () => {
+    const s = buildSession(pool, emptyProgress(), today, {}, () => 0.2);
+    expect(new Set(s.map((x) => x.topic)).size).toBeGreaterThan(1);
   });
 });

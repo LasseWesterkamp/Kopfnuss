@@ -12,7 +12,8 @@
     "Silber",
     "Aluminium",
     "Argon"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-fe",
@@ -25,7 +26,8 @@
     "Fluor",
     "Francium",
     "Phosphor"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-ag",
@@ -38,7 +40,8 @@
     "Gold",
     "Argon",
     "Quecksilber"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-pb",
@@ -51,7 +54,8 @@
     "Platin",
     "Phosphor",
     "Palladium"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-na",
@@ -64,7 +68,8 @@
     "Stickstoff",
     "Neon",
     "Nickel"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-luft",
@@ -77,7 +82,8 @@
     "Sauerstoff",
     "Kohlendioxid",
     "Argon"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-co2",
@@ -90,7 +96,8 @@
     "Kohlenmonoxid",
     "Wasserstoffperoxid",
     "Ozon"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-diamant",
@@ -103,7 +110,8 @@
     "Quarz",
     "Granit",
     "Stahl"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-ph",
@@ -116,7 +124,8 @@
     "0",
     "1",
     "14"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-mendelejew",
@@ -129,7 +138,8 @@
     "Antoine Lavoisier",
     "Niels Bohr",
     "Robert Bunsen"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-elektron",
@@ -142,7 +152,8 @@
     "Positiv",
     "Neutral",
     "Wechselnd"
-   ]
+   ],
+   "cat": "chemie"
   },
   {
    "id": "wiss-kochen",
@@ -155,7 +166,8 @@
     "90 °C",
     "110 °C",
     "120 °C"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-nullpunkt",
@@ -168,7 +180,8 @@
     "−100 °C",
     "−459,67 °C",
     "−373,15 °C"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-licht-sonne",
@@ -181,7 +194,8 @@
     "Etwa 8 Sekunden",
     "Etwa 1 Stunde",
     "Etwa 1 Tag"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-lichtgeschw",
@@ -194,7 +208,8 @@
     "30.000 km/s",
     "3.000 km/s",
     "3.000.000 km/s"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-schall",
@@ -207,7 +222,8 @@
     "34 m/s",
     "3.430 m/s",
     "34.300 m/s"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-volt",
@@ -220,7 +236,8 @@
     "Ampere",
     "Watt",
     "Ohm"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-ampere",
@@ -233,7 +250,8 @@
     "Volt",
     "Joule",
     "Tesla"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-newton",
@@ -246,7 +264,8 @@
     "Joule",
     "Pascal",
     "Watt"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-joule",
@@ -259,7 +278,8 @@
     "Watt",
     "Newton",
     "Kelvin"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-einstein",
@@ -272,7 +292,8 @@
     "Isaac Newton",
     "Max Planck",
     "Niels Bohr"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-newton-grav",
@@ -285,7 +306,8 @@
     "Galileo Galilei",
     "Johannes Kepler",
     "Albert Einstein"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-roentgen",
@@ -298,7 +320,8 @@
     "Max Planck",
     "Albert Einstein",
     "Marie Curie"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-curie",
@@ -311,7 +334,8 @@
     "Albert Einstein",
     "Linus Pauling",
     "Lise Meitner"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-curie-elemente",
@@ -324,7 +348,8 @@
     "Uran und Plutonium",
     "Helium und Neon",
     "Radon und Thorium"
-   ]
+   ],
+   "cat": "physik"
   },
   {
    "id": "wiss-richter",
@@ -337,7 +362,8 @@
     "Die Windstärke",
     "Die Lautstärke",
     "Die Wellenhöhe"
-   ]
+   ],
+   "cat": "erde"
   },
   {
    "id": "wiss-merkur",
@@ -350,7 +376,8 @@
     "Venus",
     "Mars",
     "Erde"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-jupiter",
@@ -363,7 +390,8 @@
     "Saturn",
     "Neptun",
     "Uranus"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-mars",
@@ -376,7 +404,8 @@
     "Venus",
     "Jupiter",
     "Merkur"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-planeten",
@@ -389,7 +418,8 @@
     "7",
     "9",
     "10"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-venus",
@@ -402,7 +432,8 @@
     "Merkur",
     "Mars",
     "Jupiter"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-milchstrasse",
@@ -415,7 +446,8 @@
     "Andromeda",
     "Große Magellansche Wolke",
     "Sombrero-Galaxie"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-proxima",
@@ -428,7 +460,8 @@
     "Sirius",
     "Polarstern",
     "Beteigeuze"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-mond-entf",
@@ -441,7 +474,8 @@
     "Rund 38.000 km",
     "Rund 3,8 Mio. km",
     "Rund 150 Mio. km"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-erdalter",
@@ -454,7 +488,8 @@
     "450 Millionen Jahre",
     "45 Millionen Jahre",
     "13,8 Milliarden Jahre"
-   ]
+   ],
+   "cat": "erde"
   },
   {
    "id": "wiss-kopernikus",
@@ -467,7 +502,8 @@
     "Ptolemäus",
     "Aristoteles",
     "Tycho Brahe"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-galilei",
@@ -480,7 +516,8 @@
     "Johannes Kepler",
     "Isaac Newton",
     "Nikolaus Kopernikus"
-   ]
+   ],
+   "cat": "astronomie"
   },
   {
    "id": "wiss-haut",
@@ -493,7 +530,8 @@
     "Die Leber",
     "Die Lunge",
     "Das Gehirn"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-knochen",
@@ -506,7 +544,8 @@
     "106",
     "306",
     "412"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-oberschenkel",
@@ -519,7 +558,8 @@
     "Schienbein",
     "Oberarmknochen",
     "Wirbelsäule"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-chromosomen",
@@ -532,7 +572,8 @@
     "23",
     "44",
     "48"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-herz",
@@ -545,7 +586,8 @@
     "2",
     "3",
     "6"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-insulin",
@@ -558,7 +600,8 @@
     "Leber",
     "Niere",
     "Schilddrüse"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-mitochondrien",
@@ -571,7 +614,8 @@
     "Ribosomen",
     "Zellkern",
     "Chloroplasten"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-dna",
@@ -584,7 +628,8 @@
     "Gregor Mendel und Charles Darwin",
     "Robert Koch und Louis Pasteur",
     "Marie und Pierre Curie"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-fleming",
@@ -597,7 +642,8 @@
     "Robert Koch",
     "Louis Pasteur",
     "Paul Ehrlich"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-darwin",
@@ -610,7 +656,8 @@
     "Gregor Mendel",
     "Alexander von Humboldt",
     "Jean-Baptiste de Lamarck"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-photosynthese",
@@ -623,7 +670,8 @@
     "Kohlendioxid",
     "Stickstoff",
     "Methan"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-chlorophyll",
@@ -636,7 +684,8 @@
     "Carotin",
     "Hämoglobin",
     "Melanin"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-blauwal",
@@ -649,7 +698,8 @@
     "Argentinosaurus",
     "Pottwal",
     "Afrikanischer Elefant"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-gepard",
@@ -662,7 +712,8 @@
     "Löwe",
     "Gabelbock",
     "Windhund"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-fledermaus",
@@ -675,7 +726,8 @@
     "Flughörnchen",
     "Gleithörnchen",
     "Pinguine"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-spinne",
@@ -688,7 +740,8 @@
     "6",
     "10",
     "12"
-   ]
+   ],
+   "cat": "biologie"
   },
   {
    "id": "wiss-wegener",
@@ -701,7 +754,8 @@
     "Alexander von Humboldt",
     "Charles Lyell",
     "Carl Friedrich Gauß"
-   ]
+   ],
+   "cat": "erde"
   },
   {
    "id": "wiss-erdkern",
@@ -714,7 +768,8 @@
     "Gold und Silber",
     "Granit und Basalt",
     "Kohlenstoff und Silizium"
-   ]
+   ],
+   "cat": "erde"
   },
   {
    "id": "wiss-ozon",
@@ -727,7 +782,8 @@
     "Troposphäre",
     "Mesosphäre",
     "Thermosphäre"
-   ]
+   ],
+   "cat": "erde"
   },
   {
    "id": "wiss-dreieck",
@@ -740,7 +796,8 @@
     "90°",
     "270°",
     "360°"
-   ]
+   ],
+   "cat": "erde"
   },
   {
    "id": "wiss-primzahl",
@@ -753,7 +810,8 @@
     "0",
     "1",
     "3"
-   ]
+   ],
+   "cat": "erde"
   },
   {
    "id": "wiss-pythagoras",
@@ -766,7 +824,8 @@
     "a + b = c",
     "a² − b² = c",
     "2a + 2b = c²"
-   ]
+   ],
+   "cat": "erde"
   },
   {
    "id": "wiss-benz",
@@ -779,7 +838,8 @@
     "Gottlieb Daimler",
     "Henry Ford",
     "Rudolf Diesel"
-   ]
+   ],
+   "cat": "erde"
   }
  ]
 }

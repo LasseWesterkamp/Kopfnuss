@@ -6,7 +6,8 @@ import { TOPIC_NAMES } from '../core/badges';
 import { useApp } from '../state';
 import { asset, reportUrl, formatDate } from '../data';
 import { McView, type Result } from './McView';
-import { MapView } from './MapView';
+import { MapView, MapNameView } from './MapView';
+import { FlagPickView, MatchView } from './FlagViews';
 import { YearView } from './YearView';
 import { OrderView } from './OrderView';
 
@@ -74,16 +75,20 @@ export function Quiz({ questions, daily, onExit, onDone }: { questions: Question
         </figure>
       )}
 
-      {q.type === 'mc' && <McView q={q} result={result} onAnswer={submit} />}
-      {q.type === 'map' && <MapView q={q} result={result} onAnswer={submit} />}
-      {q.type === 'year' && <YearView q={q} result={result} onAnswer={submit} />}
-      {q.type === 'order' && <OrderView q={q} result={result} onAnswer={submit} />}
+      {q.type === 'mc' && <McView key={q.id} q={q} result={result} onAnswer={submit} />}
+      {q.type === 'map' && <MapView key={q.id} q={q} result={result} onAnswer={submit} />}
+      {q.type === 'mapname' && <MapNameView key={q.id} q={q} result={result} onAnswer={submit} />}
+      {q.type === 'flagpick' && <FlagPickView key={q.id} q={q} result={result} onAnswer={submit} />}
+      {q.type === 'match' && <MatchView key={q.id} q={q} result={result} onAnswer={submit} />}
+      {q.type === 'year' && <YearView key={q.id} q={q} result={result} onAnswer={submit} />}
+      {q.type === 'order' && <OrderView key={q.id} q={q} result={result} onAnswer={submit} />}
 
       {result && (
         <section className={'feedback ' + (result.ok ? 'ok' : result.score > 0 ? 'partial' : 'bad')}>
           <h3>{result.given === '__timeout' ? '⏱ Zeit abgelaufen' : result.ok ? '✓ Richtig!' : result.score > 0 ? '≈ Fast' : '✗ Leider falsch'}
             <span className="xp">+{log[log.length - 1]?.xp ?? 0} XP</span></h3>
-          {q.type === 'mc' && !result.ok && <p>Richtig ist: <strong>{q.choices[q.answer]}</strong></p>}
+          {(q.type === 'mc' || q.type === 'mapname') && !result.ok && <p>Richtig ist: <strong>{q.choices[q.answer]}</strong></p>}
+          {q.type === 'flagpick' && !result.ok && <p>Richtig ist die Flagge von <strong>{q.optionLabels[q.answer]}</strong>.</p>}
           <p>{q.explanation}</p>
           <p className="small muted">
             <a href={q.source} target="_blank" rel="noreferrer">Mehr dazu ↗</a>
@@ -112,7 +117,7 @@ export function Summary({ s, onHome, onAgain }: { s: SessionSummary; onHome: () 
         {s.answers.map(({ q, r }) => (
           <li key={q.id} className={r.ok ? 'right' : 'wrong'}>
             <span>{r.ok ? '✓' : '✗'}</span> {q.prompt}
-            {q.type === 'mc' && !r.ok && <em> → {q.choices[q.answer]}</em>}
+            {(q.type === 'mc' || q.type === 'mapname') && !r.ok && <em> → {q.choices[q.answer]}</em>}
           </li>
         ))}
       </ul>

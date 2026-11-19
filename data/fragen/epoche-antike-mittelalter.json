@@ -13,7 +13,8 @@
     "Sudan"
    ],
    "explanation": "Die Pyramiden von Gizeh entstanden um 2600 bis 2500 v. Chr. am Westufer des Nils bei Kairo.",
-   "source": "https://de.wikipedia.org/wiki/Pyramiden_von_Gizeh"
+   "source": "https://de.wikipedia.org/wiki/Pyramiden_von_Gizeh",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-hieroglyphen",
@@ -27,7 +28,8 @@
     "Schriftrollen vom Toten Meer"
    ],
    "explanation": "Der Stein von Rosette trägt denselben Text in Hieroglyphen, demotischer Schrift und Griechisch. Jean-François Champollion entzifferte damit 1822 die Hieroglyphen.",
-   "source": "https://de.wikipedia.org/wiki/Stein_von_Rosette"
+   "source": "https://de.wikipedia.org/wiki/Stein_von_Rosette",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-hammurapi",
@@ -41,7 +43,8 @@
     "Kyros II."
    ],
    "explanation": "Der Codex Hammurapi gehört zu den ältesten erhaltenen Rechtssammlungen. Die Stele steht heute im Louvre.",
-   "source": "https://de.wikipedia.org/wiki/Codex_Hammurapi"
+   "source": "https://de.wikipedia.org/wiki/Codex_Hammurapi",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-demokratie",
@@ -55,7 +58,8 @@
     "Karthago"
    ],
    "explanation": "Im 5. Jahrhundert v. Chr. entschieden in Athen die freien männlichen Bürger in der Volksversammlung. Frauen, Sklaven und Fremde waren ausgeschlossen.",
-   "source": "https://de.wikipedia.org/wiki/Attische_Demokratie"
+   "source": "https://de.wikipedia.org/wiki/Attische_Demokratie",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-sokrates",
@@ -69,7 +73,8 @@
     "Diogenes"
    ],
    "explanation": "Sokrates wurde wegen „Verderbens der Jugend“ und Gottlosigkeit verurteilt. Sein Schüler Platon schrieb seine Lehren auf.",
-   "source": "https://de.wikipedia.org/wiki/Sokrates"
+   "source": "https://de.wikipedia.org/wiki/Sokrates",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-alexander",
@@ -83,7 +88,8 @@
     "Hannibal"
    ],
    "explanation": "Alexander eroberte das Perserreich und zog bis an den Indus. Er starb 323 v. Chr. mit nur 32 Jahren in Babylon.",
-   "source": "https://de.wikipedia.org/wiki/Alexander_der_Große"
+   "source": "https://de.wikipedia.org/wiki/Alexander_der_Große",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-aristoteles",
@@ -97,7 +103,8 @@
     "Pythagoras"
    ],
    "explanation": "Aristoteles unterrichtete den jungen Alexander am makedonischen Hof.",
-   "source": "https://de.wikipedia.org/wiki/Aristoteles"
+   "source": "https://de.wikipedia.org/wiki/Aristoteles",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-marathon",
@@ -111,7 +118,8 @@
     "Schlacht bei Issos"
    ],
    "explanation": "Der Legende nach lief ein Bote die rund 40 km von Marathon nach Athen, um den Sieg über die Perser zu verkünden.",
-   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Marathon"
+   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Marathon",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-olympia",
@@ -125,7 +133,8 @@
     "44 v. Chr."
    ],
    "explanation": "776 v. Chr. gilt als Jahr der ersten überlieferten Spiele in Olympia. Sie fanden alle vier Jahre zu Ehren des Zeus statt.",
-   "source": "https://de.wikipedia.org/wiki/Olympische_Spiele_der_Antike"
+   "source": "https://de.wikipedia.org/wiki/Olympische_Spiele_der_Antike",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-romgruendung",
@@ -139,7 +148,8 @@
     "Kain und Abel"
    ],
    "explanation": "Laut der Sage wurden sie von einer Wölfin gesäugt. Als Gründungsdatum gilt traditionell 753 v. Chr.",
-   "source": "https://de.wikipedia.org/wiki/Romulus_und_Remus"
+   "source": "https://de.wikipedia.org/wiki/Romulus_und_Remus",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-hannibal",
@@ -153,7 +163,8 @@
     "Spartacus"
    ],
    "explanation": "Im Zweiten Punischen Krieg zog Hannibal von Spanien über die Alpen nach Italien. Rom gewann den Krieg trotzdem.",
-   "source": "https://de.wikipedia.org/wiki/Hannibal"
+   "source": "https://de.wikipedia.org/wiki/Hannibal",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-spartacus",
@@ -167,7 +178,8 @@
     "Brutus"
    ],
    "explanation": "Der Gladiator Spartacus führte zeitweise über 60.000 Menschen an, bevor der Aufstand 71 v. Chr. niedergeschlagen wurde.",
-   "source": "https://de.wikipedia.org/wiki/Spartacus"
+   "source": "https://de.wikipedia.org/wiki/Spartacus",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-rubikon",
@@ -181,7 +193,8 @@
     "Po"
    ],
    "explanation": "„Den Rubikon überschreiten“ steht seitdem für eine Entscheidung ohne Rückkehr.",
-   "source": "https://de.wikipedia.org/wiki/Rubikon"
+   "source": "https://de.wikipedia.org/wiki/Rubikon",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-augustus",
@@ -195,7 +208,8 @@
     "Konstantin"
    ],
    "explanation": "Octavian erhielt 27 v. Chr. den Ehrennamen Augustus. Caesar selbst war nie Kaiser, sondern Diktator.",
-   "source": "https://de.wikipedia.org/wiki/Augustus"
+   "source": "https://de.wikipedia.org/wiki/Augustus",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-pompeji",
@@ -209,7 +223,8 @@
     "Vulcano"
    ],
    "explanation": "Der Ausbruch begrub Pompeji und Herculaneum unter Asche. Dadurch blieben die Städte außergewöhnlich gut erhalten.",
-   "source": "https://de.wikipedia.org/wiki/Pompeji"
+   "source": "https://de.wikipedia.org/wiki/Pompeji",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-kolosseum",
@@ -223,7 +238,8 @@
     "Senatssitzungen"
    ],
    "explanation": "Das Amphitheater wurde 80 n. Chr. eingeweiht und fasste rund 50.000 Zuschauer. Wagenrennen fanden im Circus Maximus statt.",
-   "source": "https://de.wikipedia.org/wiki/Kolosseum"
+   "source": "https://de.wikipedia.org/wiki/Kolosseum",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-limes",
@@ -237,7 +253,8 @@
     "Großer Wall"
    ],
    "explanation": "Der Obergermanisch-Raetische Limes war über 500 km lang und ist heute UNESCO-Welterbe. Der Hadrianswall liegt in England.",
-   "source": "https://de.wikipedia.org/wiki/Obergermanisch-Raetischer_Limes"
+   "source": "https://de.wikipedia.org/wiki/Obergermanisch-Raetischer_Limes",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-trier",
@@ -251,7 +268,8 @@
     "Leipzig"
    ],
    "explanation": "Augusta Treverorum war um 300 n. Chr. eine der Hauptstädte des Römischen Reiches. Die Porta Nigra erinnert daran.",
-   "source": "https://de.wikipedia.org/wiki/Trier"
+   "source": "https://de.wikipedia.org/wiki/Trier",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-koeln",
@@ -265,7 +283,8 @@
     "Regensburg"
    ],
    "explanation": "Der Name „Colonia“ lebt im heutigen Namen Köln weiter.",
-   "source": "https://de.wikipedia.org/wiki/Köln"
+   "source": "https://de.wikipedia.org/wiki/Köln",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-konstantin",
@@ -279,7 +298,8 @@
     "Diokletian"
    ],
    "explanation": "Konstantin erlaubte 313 n. Chr. mit der Mailänder Vereinbarung die freie Religionsausübung für Christen.",
-   "source": "https://de.wikipedia.org/wiki/Konstantin_der_Große"
+   "source": "https://de.wikipedia.org/wiki/Konstantin_der_Große",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-teilung",
@@ -293,7 +313,8 @@
     "476"
    ],
    "explanation": "Nach dem Tod von Kaiser Theodosius I. 395 wurde das Reich unter seinen Söhnen aufgeteilt.",
-   "source": "https://de.wikipedia.org/wiki/Reichsteilung_von_395"
+   "source": "https://de.wikipedia.org/wiki/Reichsteilung_von_395",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-ende-westrom",
@@ -307,7 +328,8 @@
     "Theoderich"
    ],
    "explanation": "Odoaker setzte Romulus Augustulus ab. Das Jahr 476 gilt oft als Ende der Antike im Westen.",
-   "source": "https://de.wikipedia.org/wiki/Odoaker"
+   "source": "https://de.wikipedia.org/wiki/Odoaker",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-hunnen",
@@ -321,7 +343,8 @@
     "Geiserich"
    ],
    "explanation": "Attila griff im 5. Jahrhundert das Römische Reich an. Dschingis Khan lebte erst 800 Jahre später.",
-   "source": "https://de.wikipedia.org/wiki/Attila"
+   "source": "https://de.wikipedia.org/wiki/Attila",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-china-mauer",
@@ -335,7 +358,8 @@
     "Mao Zedong"
    ],
    "explanation": "Der erste Kaiser Chinas ließ ältere Grenzwälle verbinden. Er ist auch für seine Terrakotta-Armee bekannt.",
-   "source": "https://de.wikipedia.org/wiki/Qin_Shihuangdi"
+   "source": "https://de.wikipedia.org/wiki/Qin_Shihuangdi",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-nebra",
@@ -349,7 +373,8 @@
     "Thüringen"
    ],
    "explanation": "Die rund 3.600 Jahre alte Bronzescheibe gilt als älteste bekannte konkrete Himmelsdarstellung.",
-   "source": "https://de.wikipedia.org/wiki/Himmelsscheibe_von_Nebra"
+   "source": "https://de.wikipedia.org/wiki/Himmelsscheibe_von_Nebra",
+   "cat": "wissen"
   },
   {
    "id": "hist-antike-y-rom",
@@ -361,7 +386,8 @@
    "min": -3000,
    "max": 600,
    "explanation": "Traditionell gilt 753 v. Chr. als Gründungsjahr („sieben, fünf, drei, Rom schlüpft aus dem Ei“).",
-   "source": "https://de.wikipedia.org/wiki/Gründung_Roms"
+   "source": "https://de.wikipedia.org/wiki/Gründung_Roms",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-antike-y-vesuv",
@@ -373,7 +399,8 @@
    "min": -3000,
    "max": 600,
    "explanation": "Der Ausbruch fand im Jahr 79 n. Chr. statt.",
-   "source": "https://de.wikipedia.org/wiki/Pompeji"
+   "source": "https://de.wikipedia.org/wiki/Pompeji",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-antike-y-westrom",
@@ -385,7 +412,8 @@
    "min": -3000,
    "max": 600,
    "explanation": "476 setzte Odoaker den letzten weströmischen Kaiser ab.",
-   "source": "https://de.wikipedia.org/wiki/Untergang_des_Römischen_Reiches"
+   "source": "https://de.wikipedia.org/wiki/Untergang_des_Römischen_Reiches",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-antike-o-ant1",
@@ -416,7 +444,8 @@
     }
    ],
    "explanation": "Um 2600 v. Chr., 776 v. Chr., 323 v. Chr., 44 v. Chr., 79 n. Chr.",
-   "source": "https://de.wikipedia.org/wiki/Antike"
+   "source": "https://de.wikipedia.org/wiki/Antike",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-mittelalter-chlodwig",
@@ -430,7 +459,8 @@
     "Karl der Große"
    ],
    "explanation": "Mit Chlodwigs Taufe wurde das Frankenreich christlich. Er gilt als Begründer der Merowinger-Herrschaft.",
-   "source": "https://de.wikipedia.org/wiki/Chlodwig_I."
+   "source": "https://de.wikipedia.org/wiki/Chlodwig_I.",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-aachen",
@@ -444,7 +474,8 @@
     "Köln"
    ],
    "explanation": "Die Pfalzkapelle ist heute Teil des Aachener Doms, in dem über 30 deutsche Könige gekrönt wurden.",
-   "source": "https://de.wikipedia.org/wiki/Aachener_Dom"
+   "source": "https://de.wikipedia.org/wiki/Aachener_Dom",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-tours",
@@ -458,7 +489,8 @@
     "Chlodwig I."
    ],
    "explanation": "Der Sieg stoppte das Vordringen arabischer Heere ins Frankenreich. Karl Martell war der Großvater Karls des Großen.",
-   "source": "https://de.wikipedia.org/wiki/Schlacht_von_Tours_und_Poitiers"
+   "source": "https://de.wikipedia.org/wiki/Schlacht_von_Tours_und_Poitiers",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-lechfeld",
@@ -472,7 +504,8 @@
     "Die Slawen"
    ],
    "explanation": "Der Sieg bei Augsburg beendete die Ungarneinfälle und stärkte Ottos Stellung. 962 wurde er zum Kaiser gekrönt.",
-   "source": "https://de.wikipedia.org/wiki/Schlacht_auf_dem_Lechfeld"
+   "source": "https://de.wikipedia.org/wiki/Schlacht_auf_dem_Lechfeld",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-hrr",
@@ -486,7 +519,8 @@
     "Habsburgerreich"
    ],
    "explanation": "Den Zusatz „Deutscher Nation“ erhielt es erst im 15. Jahrhundert. Es bestand bis 1806.",
-   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich"
+   "source": "https://de.wikipedia.org/wiki/Heiliges_Römisches_Reich",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-canossa",
@@ -500,7 +534,8 @@
     "Karl IV."
    ],
    "explanation": "Im Investiturstreit hatte Papst Gregor VII. Heinrich IV. gebannt. „Nach Canossa gehen“ steht heute für eine demütigende Bitte.",
-   "source": "https://de.wikipedia.org/wiki/Gang_nach_Canossa"
+   "source": "https://de.wikipedia.org/wiki/Gang_nach_Canossa",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-barbarossa",
@@ -514,7 +549,8 @@
     "Friedrich II."
    ],
    "explanation": "Friedrich I. ertrank 1190 auf dem Dritten Kreuzzug. Der Sage nach schläft er im Kyffhäuser.",
-   "source": "https://de.wikipedia.org/wiki/Friedrich_I._(HRR)"
+   "source": "https://de.wikipedia.org/wiki/Friedrich_I._(HRR)",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-kreuzzug",
@@ -528,7 +564,8 @@
     "Kairo"
    ],
    "explanation": "Der Erste Kreuzzug eroberte Jerusalem 1099 nach einem Aufruf von Papst Urban II. aus dem Jahr 1095.",
-   "source": "https://de.wikipedia.org/wiki/Erster_Kreuzzug"
+   "source": "https://de.wikipedia.org/wiki/Erster_Kreuzzug",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-wikinger",
@@ -542,7 +579,8 @@
     "Island"
    ],
    "explanation": "Ab etwa 800 unternahmen sie Raub- und Handelsfahrten bis nach Nordamerika, Russland und ans Mittelmeer.",
-   "source": "https://de.wikipedia.org/wiki/Wikinger"
+   "source": "https://de.wikipedia.org/wiki/Wikinger",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-hanse",
@@ -556,7 +594,8 @@
     "Rheinbund"
    ],
    "explanation": "Die Hanse beherrschte vom 13. bis 15. Jahrhundert den Handel in Nord- und Ostsee. Lübeck war ihre „Königin“.",
-   "source": "https://de.wikipedia.org/wiki/Hanse"
+   "source": "https://de.wikipedia.org/wiki/Hanse",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-pest",
@@ -570,7 +609,8 @@
     "Lepra"
    ],
    "explanation": "Der „Schwarze Tod“ wütete vor allem 1347 bis 1351.",
-   "source": "https://de.wikipedia.org/wiki/Schwarzer_Tod"
+   "source": "https://de.wikipedia.org/wiki/Schwarzer_Tod",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-goldene-bulle",
@@ -584,7 +624,8 @@
     "Magna Carta"
    ],
    "explanation": "Kaiser Karl IV. erließ die Goldene Bulle. Sie galt bis zum Ende des Reiches 1806.",
-   "source": "https://de.wikipedia.org/wiki/Goldene_Bulle"
+   "source": "https://de.wikipedia.org/wiki/Goldene_Bulle",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-hildegard",
@@ -598,7 +639,8 @@
     "Theophanu"
    ],
    "explanation": "Hildegard gründete das Kloster Rupertsberg bei Bingen. 2012 wurde sie zur Kirchenlehrerin erhoben.",
-   "source": "https://de.wikipedia.org/wiki/Hildegard_von_Bingen"
+   "source": "https://de.wikipedia.org/wiki/Hildegard_von_Bingen",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-jeanne",
@@ -612,7 +654,8 @@
     "Marie Antoinette"
    ],
    "explanation": "Jeanne d’Arc befreite Orléans im Hundertjährigen Krieg. 1431 wurde sie in Rouen hingerichtet, 1920 heiliggesprochen.",
-   "source": "https://de.wikipedia.org/wiki/Jeanne_d’Arc"
+   "source": "https://de.wikipedia.org/wiki/Jeanne_d’Arc",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-hundertjaehrig",
@@ -626,7 +669,8 @@
     "England und Schottland"
    ],
    "explanation": "Es ging um den französischen Thron. Trotz des Namens dauerte der Konflikt 116 Jahre mit Unterbrechungen.",
-   "source": "https://de.wikipedia.org/wiki/Hundertjähriger_Krieg"
+   "source": "https://de.wikipedia.org/wiki/Hundertjähriger_Krieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-marco-polo",
@@ -640,7 +684,8 @@
     "Ibn Battuta"
    ],
    "explanation": "Sein Reisebericht machte China in Europa bekannt.",
-   "source": "https://de.wikipedia.org/wiki/Marco_Polo"
+   "source": "https://de.wikipedia.org/wiki/Marco_Polo",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-dschingis",
@@ -654,7 +699,8 @@
     "Timur"
    ],
    "explanation": "Das Mongolische Reich wurde zum größten zusammenhängenden Landreich der Geschichte.",
-   "source": "https://de.wikipedia.org/wiki/Dschingis_Khan"
+   "source": "https://de.wikipedia.org/wiki/Dschingis_Khan",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-islam",
@@ -668,7 +714,8 @@
     "11. Jahrhundert"
    ],
    "explanation": "Mohammed begann um 610 in Mekka zu predigen. Mit der Auswanderung nach Medina 622 beginnt die islamische Zeitrechnung.",
-   "source": "https://de.wikipedia.org/wiki/Islam"
+   "source": "https://de.wikipedia.org/wiki/Islam",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-kloster",
@@ -682,7 +729,8 @@
     "Ignatius von Loyola"
    ],
    "explanation": "Benedikt gründete um 529 das Kloster Montecassino. Seine Regel „ora et labora“ (bete und arbeite) prägt Klöster bis heute.",
-   "source": "https://de.wikipedia.org/wiki/Benedikt_von_Nursia"
+   "source": "https://de.wikipedia.org/wiki/Benedikt_von_Nursia",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-koelner-dom",
@@ -696,7 +744,8 @@
     "1648"
    ],
    "explanation": "Der Bau begann 1248, ruhte aber jahrhundertelang. Erst im 19. Jahrhundert wurde er vollendet.",
-   "source": "https://de.wikipedia.org/wiki/Kölner_Dom"
+   "source": "https://de.wikipedia.org/wiki/Kölner_Dom",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-ritter",
@@ -710,7 +759,8 @@
     "Durch ein Turnier"
    ],
    "explanation": "Zuvor dienten die Anwärter als Page und Knappe.",
-   "source": "https://de.wikipedia.org/wiki/Ritterschlag"
+   "source": "https://de.wikipedia.org/wiki/Ritterschlag",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-sachsenspiegel",
@@ -724,7 +774,8 @@
     "Codex Iustinianus"
    ],
    "explanation": "Eike von Repgow schrieb das Gewohnheitsrecht der Sachsen auf, als eines der ersten Prosawerke auf Deutsch.",
-   "source": "https://de.wikipedia.org/wiki/Sachsenspiegel"
+   "source": "https://de.wikipedia.org/wiki/Sachsenspiegel",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-reconquista",
@@ -738,7 +789,8 @@
     "Toledo"
    ],
    "explanation": "Mit der Eroberung Granadas endete die Reconquista. Im selben Jahr erreichte Kolumbus Amerika.",
-   "source": "https://de.wikipedia.org/wiki/Emirat_von_Granada"
+   "source": "https://de.wikipedia.org/wiki/Emirat_von_Granada",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-bayeux",
@@ -752,7 +804,8 @@
     "Schlacht bei Tours"
    ],
    "explanation": "Wilhelm der Eroberer aus der Normandie besiegte den englischen König Harald II. und eroberte England.",
-   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Hastings"
+   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Hastings",
+   "cat": "wissen"
   },
   {
    "id": "hist-mittelalter-y-hastings",
@@ -764,7 +817,8 @@
    "min": 400,
    "max": 1550,
    "explanation": "Wilhelm der Eroberer siegte 1066 bei Hastings.",
-   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Hastings"
+   "source": "https://de.wikipedia.org/wiki/Schlacht_bei_Hastings",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-mittelalter-y-canossa",
@@ -776,7 +830,8 @@
    "min": 400,
    "max": 1550,
    "explanation": "Im Januar 1077 erschien der König vor der Burg Canossa.",
-   "source": "https://de.wikipedia.org/wiki/Gang_nach_Canossa"
+   "source": "https://de.wikipedia.org/wiki/Gang_nach_Canossa",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-mittelalter-y-pest",
@@ -788,7 +843,8 @@
    "min": 400,
    "max": 1550,
    "explanation": "1347 brachten Schiffe die Pest über die Krim nach Sizilien.",
-   "source": "https://de.wikipedia.org/wiki/Schwarzer_Tod"
+   "source": "https://de.wikipedia.org/wiki/Schwarzer_Tod",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-mittelalter-y-lechfeld",
@@ -800,7 +856,8 @@
    "min": 400,
    "max": 1550,
    "explanation": "955 siegte Otto I. bei Augsburg über die Ungarn.",
-   "source": "https://de.wikipedia.org/wiki/Schlacht_auf_dem_Lechfeld"
+   "source": "https://de.wikipedia.org/wiki/Schlacht_auf_dem_Lechfeld",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-mittelalter-o-mit1",
@@ -831,7 +888,8 @@
     }
    ],
    "explanation": "Um 498, 962, 1077, 1099, 1347.",
-   "source": "https://de.wikipedia.org/wiki/Mittelalter"
+   "source": "https://de.wikipedia.org/wiki/Mittelalter",
+   "cat": "reihenfolge"
   }
  ]
 }

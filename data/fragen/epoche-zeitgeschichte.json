@@ -13,7 +13,8 @@
     "Russland (an Österreich)"
    ],
    "explanation": "Am 28. Juli 1914 erklärte Österreich-Ungarn Serbien den Krieg. Durch die Bündnisse weitete sich der Krieg binnen Tagen aus.",
-   "source": "https://de.wikipedia.org/wiki/Julikrise"
+   "source": "https://de.wikipedia.org/wiki/Julikrise",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-verdun",
@@ -27,7 +28,8 @@
     "Skagerrakschlacht"
    ],
    "explanation": "Bei Verdun starben in zehn Monaten über 300.000 Soldaten, ohne dass sich die Front wesentlich verschob.",
-   "source": "https://de.wikipedia.org/wiki/Schlacht_um_Verdun"
+   "source": "https://de.wikipedia.org/wiki/Schlacht_um_Verdun",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-stellungskrieg",
@@ -41,7 +43,8 @@
     "Bewegungskrieg"
    ],
    "explanation": "An der Westfront erstarrte die Front ab Ende 1914 in Schützengräben von der Nordsee bis zur Schweiz.",
-   "source": "https://de.wikipedia.org/wiki/Stellungskrieg"
+   "source": "https://de.wikipedia.org/wiki/Stellungskrieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-gas",
@@ -55,7 +58,8 @@
     "Flammenwerfer"
    ],
    "explanation": "Panzer setzten erstmals die Briten 1916 an der Somme ein.",
-   "source": "https://de.wikipedia.org/wiki/Gaskrieg_im_Ersten_Weltkrieg"
+   "source": "https://de.wikipedia.org/wiki/Gaskrieg_im_Ersten_Weltkrieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-usa-kriegseintritt",
@@ -69,7 +73,8 @@
     "1918"
    ],
    "explanation": "Auslöser war vor allem der uneingeschränkte U-Boot-Krieg Deutschlands.",
-   "source": "https://de.wikipedia.org/wiki/Kriegseintritt_der_Vereinigten_Staaten_in_den_Ersten_Weltkrieg"
+   "source": "https://de.wikipedia.org/wiki/Kriegseintritt_der_Vereinigten_Staaten_in_den_Ersten_Weltkrieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-oktoberrevolution",
@@ -83,7 +88,8 @@
     "Kerenski"
    ],
    "explanation": "Die Bolschewiki stürzten die Provisorische Regierung. Nach dem damals in Russland gültigen Kalender war es Oktober, nach unserem November.",
-   "source": "https://de.wikipedia.org/wiki/Oktoberrevolution"
+   "source": "https://de.wikipedia.org/wiki/Oktoberrevolution",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-waffenstillstand",
@@ -97,7 +103,8 @@
     "1. September 1918"
    ],
    "explanation": "Der Waffenstillstand trat um 11 Uhr in Kraft. In Frankreich und Großbritannien ist der 11. November bis heute Gedenktag.",
-   "source": "https://de.wikipedia.org/wiki/Waffenstillstand_von_Compiègne_(1918)"
+   "source": "https://de.wikipedia.org/wiki/Waffenstillstand_von_Compiègne_(1918)",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-scheidemann",
@@ -111,7 +118,8 @@
     "Gustav Stresemann"
    ],
    "explanation": "Nur zwei Stunden später rief Karl Liebknecht vom Berliner Schloss eine „freie sozialistische Republik“ aus.",
-   "source": "https://de.wikipedia.org/wiki/Philipp_Scheidemann"
+   "source": "https://de.wikipedia.org/wiki/Philipp_Scheidemann",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-kaiser-exil",
@@ -125,7 +133,8 @@
     "Nach Schweden"
    ],
    "explanation": "Er lebte bis zu seinem Tod 1941 in Doorn.",
-   "source": "https://de.wikipedia.org/wiki/Wilhelm_II._(Deutsches_Reich)"
+   "source": "https://de.wikipedia.org/wiki/Wilhelm_II._(Deutsches_Reich)",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-frauenwahl",
@@ -139,7 +148,8 @@
     "1968"
    ],
    "explanation": "Das Frauenwahlrecht wurde im November 1918 eingeführt. Bei der Wahl zur Nationalversammlung im Januar 1919 wählten Frauen erstmals.",
-   "source": "https://de.wikipedia.org/wiki/Frauenwahlrecht"
+   "source": "https://de.wikipedia.org/wiki/Frauenwahlrecht",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-versailles",
@@ -153,7 +163,8 @@
     "Westfälischer Frieden"
    ],
    "explanation": "Deutschland verlor Gebiete und Kolonien, musste hohe Reparationen zahlen und die Alleinschuld am Krieg anerkennen.",
-   "source": "https://de.wikipedia.org/wiki/Friedensvertrag_von_Versailles"
+   "source": "https://de.wikipedia.org/wiki/Friedensvertrag_von_Versailles",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-luxemburg",
@@ -167,7 +178,8 @@
     "Marie Juchacz"
    ],
    "explanation": "Freikorps-Soldaten ermordeten beide in Berlin.",
-   "source": "https://de.wikipedia.org/wiki/Rosa_Luxemburg"
+   "source": "https://de.wikipedia.org/wiki/Rosa_Luxemburg",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-kapp",
@@ -181,7 +193,8 @@
     "Röhm-Putsch"
    ],
    "explanation": "Der Hitlerputsch folgte 1923 in München.",
-   "source": "https://de.wikipedia.org/wiki/Kapp-Putsch"
+   "source": "https://de.wikipedia.org/wiki/Kapp-Putsch",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-inflation",
@@ -195,7 +208,8 @@
     "Etwa 1 Million Mark"
    ],
    "explanation": "Auf dem Höhepunkt der Hyperinflation kostete ein Brot in Berlin rund 200 Milliarden Mark. Ende 1923 kam die Rentenmark.",
-   "source": "https://de.wikipedia.org/wiki/Deutsche_Inflation_1914_bis_1923"
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Inflation_1914_bis_1923",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-ruhr",
@@ -209,7 +223,8 @@
     "Die Niederlande und Luxemburg"
    ],
    "explanation": "Die Regierung rief zum „passiven Widerstand“ auf und finanzierte ihn mit der Notenpresse. Das trieb die Inflation weiter.",
-   "source": "https://de.wikipedia.org/wiki/Ruhrbesetzung"
+   "source": "https://de.wikipedia.org/wiki/Ruhrbesetzung",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-hitlerputsch",
@@ -223,7 +238,8 @@
     "In Weimar"
    ],
    "explanation": "Der Putsch an der Feldherrnhalle scheiterte. In der Haft schrieb Hitler „Mein Kampf“.",
-   "source": "https://de.wikipedia.org/wiki/Hitlerputsch"
+   "source": "https://de.wikipedia.org/wiki/Hitlerputsch",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-stresemann",
@@ -237,7 +253,8 @@
     "Heinrich Brüning"
    ],
    "explanation": "Er teilte ihn mit dem Franzosen Aristide Briand. Grundlage waren die Verträge von Locarno 1925.",
-   "source": "https://de.wikipedia.org/wiki/Gustav_Stresemann"
+   "source": "https://de.wikipedia.org/wiki/Gustav_Stresemann",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-rathenau",
@@ -251,7 +268,8 @@
     "Hugo Preuß"
    ],
    "explanation": "Rathenau war Jude und wurde von Mitgliedern der „Organisation Consul“ erschossen. Erzberger war schon 1921 ermordet worden.",
-   "source": "https://de.wikipedia.org/wiki/Walther_Rathenau"
+   "source": "https://de.wikipedia.org/wiki/Walther_Rathenau",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-zwanziger",
@@ -265,7 +283,8 @@
     "Belle Époque"
    ],
    "explanation": "Berlin war ein Zentrum von Film, Theater, Kabarett und Architektur, etwa des Bauhauses.",
-   "source": "https://de.wikipedia.org/wiki/Goldene_Zwanziger"
+   "source": "https://de.wikipedia.org/wiki/Goldene_Zwanziger",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-bauhaus",
@@ -279,7 +298,8 @@
     "Stuttgart"
    ],
    "explanation": "Das Bauhaus zog 1925 nach Dessau und 1932 nach Berlin, wo es sich 1933 unter Druck der Nazis auflöste.",
-   "source": "https://de.wikipedia.org/wiki/Bauhaus"
+   "source": "https://de.wikipedia.org/wiki/Bauhaus",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-boersencrash",
@@ -293,7 +313,8 @@
     "Die Ölkrise"
    ],
    "explanation": "Der „Schwarze Donnerstag“ und die folgenden Tage an der Wall Street lösten eine weltweite Krise aus. In Deutschland gab es 1932 rund 6 Millionen Arbeitslose.",
-   "source": "https://de.wikipedia.org/wiki/Weltwirtschaftskrise"
+   "source": "https://de.wikipedia.org/wiki/Weltwirtschaftskrise",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-art48",
@@ -307,7 +328,8 @@
     "Artikel 146"
    ],
    "explanation": "Ab 1930 regierten die Kanzler mit Notverordnungen nach Art. 48. Das höhlte die Demokratie aus.",
-   "source": "https://de.wikipedia.org/wiki/Artikel_48_der_Weimarer_Verfassung"
+   "source": "https://de.wikipedia.org/wiki/Artikel_48_der_Weimarer_Verfassung",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-hindenburg",
@@ -321,7 +343,8 @@
     "Heinrich Brüning"
    ],
    "explanation": "Der ehemalige Generalfeldmarschall ernannte Hitler am 30. Januar 1933 zum Reichskanzler.",
-   "source": "https://de.wikipedia.org/wiki/Paul_von_Hindenburg"
+   "source": "https://de.wikipedia.org/wiki/Paul_von_Hindenburg",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-voelkerbund",
@@ -335,7 +358,8 @@
     "Europarat"
    ],
    "explanation": "Deutschland trat 1926 bei und 1933 wieder aus. Nach dem Zweiten Weltkrieg folgten die Vereinten Nationen.",
-   "source": "https://de.wikipedia.org/wiki/Völkerbund"
+   "source": "https://de.wikipedia.org/wiki/Völkerbund",
+   "cat": "wissen"
   },
   {
    "id": "hist-weimar-y-wk1",
@@ -347,7 +371,8 @@
    "min": 1905,
    "max": 1940,
    "explanation": "Im Juli/August 1914.",
-   "source": "https://de.wikipedia.org/wiki/Erster_Weltkrieg"
+   "source": "https://de.wikipedia.org/wiki/Erster_Weltkrieg",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-weimar-y-weimarer-verf",
@@ -359,7 +384,8 @@
    "min": 1905,
    "max": 1940,
    "explanation": "Am 14. August 1919.",
-   "source": "https://de.wikipedia.org/wiki/Weimarer_Verfassung"
+   "source": "https://de.wikipedia.org/wiki/Weimarer_Verfassung",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-weimar-y-inflation",
@@ -371,7 +397,8 @@
    "min": 1905,
    "max": 1940,
    "explanation": "Im Herbst 1923.",
-   "source": "https://de.wikipedia.org/wiki/Deutsche_Inflation_1914_bis_1923"
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Inflation_1914_bis_1923",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-weimar-o-wei1",
@@ -402,7 +429,8 @@
     }
    ],
    "explanation": "1914, 1917, 1919, 1923, 1929.",
-   "source": "https://de.wikipedia.org/wiki/Weimarer_Republik"
+   "source": "https://de.wikipedia.org/wiki/Weimarer_Republik",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-ns-machtergreifung",
@@ -416,7 +444,8 @@
     "27. Februar 1933"
    ],
    "explanation": "Reichspräsident Hindenburg ernannte ihn. Der 27. Februar 1933 war der Tag des Reichstagsbrands.",
-   "source": "https://de.wikipedia.org/wiki/Machtergreifung"
+   "source": "https://de.wikipedia.org/wiki/Machtergreifung",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-ermaechtigung",
@@ -430,7 +459,8 @@
     "Gleichschaltungsgesetz"
    ],
    "explanation": "Nur die SPD stimmte dagegen. Die KPD-Abgeordneten waren bereits verhaftet oder geflohen.",
-   "source": "https://de.wikipedia.org/wiki/Ermächtigungsgesetz_1933"
+   "source": "https://de.wikipedia.org/wiki/Ermächtigungsgesetz_1933",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-wels",
@@ -444,7 +474,8 @@
     "Paul Löbe"
    ],
    "explanation": "Sein Satz „Freiheit und Leben kann man uns nehmen, die Ehre nicht“ wurde berühmt.",
-   "source": "https://de.wikipedia.org/wiki/Otto_Wels"
+   "source": "https://de.wikipedia.org/wiki/Otto_Wels",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-buecher",
@@ -458,7 +489,8 @@
     "Der Boykott jüdischer Geschäfte"
    ],
    "explanation": "Studenten verbrannten Werke von Autoren wie Heinrich Heine, Erich Kästner und Kurt Tucholsky.",
-   "source": "https://de.wikipedia.org/wiki/Bücherverbrennung_1933_in_Deutschland"
+   "source": "https://de.wikipedia.org/wiki/Bücherverbrennung_1933_in_Deutschland",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-nuernberger-gesetze",
@@ -472,7 +504,8 @@
     "Notverordnungen"
    ],
    "explanation": "Juden verloren damit die vollen Bürgerrechte.",
-   "source": "https://de.wikipedia.org/wiki/Nürnberger_Gesetze"
+   "source": "https://de.wikipedia.org/wiki/Nürnberger_Gesetze",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-olympia36",
@@ -486,7 +519,8 @@
     "Rom"
    ],
    "explanation": "Das NS-Regime nutzte die Spiele für Propaganda. Der Afroamerikaner Jesse Owens gewann vier Goldmedaillen. In Garmisch fanden die Winterspiele statt.",
-   "source": "https://de.wikipedia.org/wiki/Olympische_Sommerspiele_1936"
+   "source": "https://de.wikipedia.org/wiki/Olympische_Sommerspiele_1936",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-pogrom",
@@ -500,7 +534,8 @@
     "Der Einmarsch in Polen"
    ],
    "explanation": "Synagogen wurden angezündet, jüdische Geschäfte zerstört, Tausende Juden in Konzentrationslager verschleppt.",
-   "source": "https://de.wikipedia.org/wiki/Novemberpogrome_1938"
+   "source": "https://de.wikipedia.org/wiki/Novemberpogrome_1938",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-anschluss",
@@ -514,7 +549,8 @@
     "Schweiz"
    ],
    "explanation": "Deutsche Truppen marschierten ein, eine anschließende Volksabstimmung stand unter Druck und Propaganda.",
-   "source": "https://de.wikipedia.org/wiki/Anschluss_Österreichs"
+   "source": "https://de.wikipedia.org/wiki/Anschluss_Österreichs",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-muenchner-abkommen",
@@ -528,7 +564,8 @@
     "Das Memelland"
    ],
    "explanation": "Großbritannien und Frankreich stimmten zu, um einen Krieg zu verhindern („Appeasement“). Die Tschechoslowakei war nicht beteiligt.",
-   "source": "https://de.wikipedia.org/wiki/Münchner_Abkommen"
+   "source": "https://de.wikipedia.org/wiki/Münchner_Abkommen",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-hitler-stalin",
@@ -542,7 +579,8 @@
     "Vertrag von Rapallo"
    ],
    "explanation": "Offiziell ein Nichtangriffspakt, in einem geheimen Zusatzprotokoll wurden Interessensphären festgelegt.",
-   "source": "https://de.wikipedia.org/wiki/Deutsch-sowjetischer_Nichtangriffspakt"
+   "source": "https://de.wikipedia.org/wiki/Deutsch-sowjetischer_Nichtangriffspakt",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-barbarossa",
@@ -556,7 +594,8 @@
     "Operation Overlord"
    ],
    "explanation": "Der Angriff begann am 22. Juni 1941. „Fall Weiß“ war der Überfall auf Polen.",
-   "source": "https://de.wikipedia.org/wiki/Deutsch-Sowjetischer_Krieg"
+   "source": "https://de.wikipedia.org/wiki/Deutsch-Sowjetischer_Krieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-stalingrad",
@@ -570,7 +609,8 @@
     "Belagerung Leningrads"
    ],
    "explanation": "Die eingeschlossene 6. Armee kapitulierte Anfang Februar 1943. Rund 110.000 deutsche Soldaten gingen in Gefangenschaft.",
-   "source": "https://de.wikipedia.org/wiki/Schlacht_von_Stalingrad"
+   "source": "https://de.wikipedia.org/wiki/Schlacht_von_Stalingrad",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-pearl",
@@ -584,7 +624,8 @@
     "Der Angriff auf London"
    ],
    "explanation": "Japan griff am 7. Dezember 1941 die US-Flotte auf Hawaii an. Kurz darauf erklärte auch Deutschland den USA den Krieg.",
-   "source": "https://de.wikipedia.org/wiki/Angriff_auf_Pearl_Harbor"
+   "source": "https://de.wikipedia.org/wiki/Angriff_auf_Pearl_Harbor",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-dday",
@@ -598,7 +639,8 @@
     "In Belgien"
    ],
    "explanation": "Die Landung war die größte amphibische Operation der Geschichte und eröffnete die Westfront.",
-   "source": "https://de.wikipedia.org/wiki/Operation_Overlord"
+   "source": "https://de.wikipedia.org/wiki/Operation_Overlord",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-wannsee",
@@ -612,7 +654,8 @@
     "Münchner Konferenz"
    ],
    "explanation": "Die Besprechung in einer Villa am Berliner Wannsee koordinierte den bereits begonnenen Völkermord.",
-   "source": "https://de.wikipedia.org/wiki/Wannseekonferenz"
+   "source": "https://de.wikipedia.org/wiki/Wannseekonferenz",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-auschwitz",
@@ -626,7 +669,8 @@
     "Bergen-Belsen"
    ],
    "explanation": "Dort wurden rund 1,1 Millionen Menschen ermordet, die meisten Juden. Die Befreiung am 27. Januar 1945 ist heute Holocaust-Gedenktag.",
-   "source": "https://de.wikipedia.org/wiki/KZ_Auschwitz-Birkenau"
+   "source": "https://de.wikipedia.org/wiki/KZ_Auschwitz-Birkenau",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-holocaust-zahl",
@@ -640,7 +684,8 @@
     "Etwa 20 Millionen"
    ],
    "explanation": "Dazu kamen Hunderttausende Sinti und Roma, Menschen mit Behinderungen, Homosexuelle und politische Gegner.",
-   "source": "https://de.wikipedia.org/wiki/Holocaust"
+   "source": "https://de.wikipedia.org/wiki/Holocaust",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-anne-frank",
@@ -654,7 +699,8 @@
     "Hannah Arendt"
    ],
    "explanation": "Anne Frank starb 1945 im KZ Bergen-Belsen. Ihr Vater veröffentlichte das Tagebuch nach dem Krieg.",
-   "source": "https://de.wikipedia.org/wiki/Anne_Frank"
+   "source": "https://de.wikipedia.org/wiki/Anne_Frank",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-elser",
@@ -668,7 +714,8 @@
     "Henning von Tresckow"
    ],
    "explanation": "Der Schreiner handelte allein. Hitler verließ den Saal 13 Minuten vor der Explosion.",
-   "source": "https://de.wikipedia.org/wiki/Georg_Elser"
+   "source": "https://de.wikipedia.org/wiki/Georg_Elser",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-schindler",
@@ -682,7 +729,8 @@
     "Berthold Beitz"
    ],
    "explanation": "Seine Geschichte wurde mit „Schindlers Liste“ verfilmt.",
-   "source": "https://de.wikipedia.org/wiki/Oskar_Schindler"
+   "source": "https://de.wikipedia.org/wiki/Oskar_Schindler",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-hitler-tod",
@@ -696,7 +744,8 @@
     "Er fiel in der Schlacht um Berlin"
    ],
    "explanation": "Er nahm sich im Führerbunker das Leben. Eine Woche später kapitulierte die Wehrmacht.",
-   "source": "https://de.wikipedia.org/wiki/Adolf_Hitler"
+   "source": "https://de.wikipedia.org/wiki/Adolf_Hitler",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-dresden",
@@ -710,7 +759,8 @@
     "Hamburg"
    ],
    "explanation": "Bei den Angriffen starben bis zu 25.000 Menschen. Hamburg war bereits 1943 schwer getroffen worden.",
-   "source": "https://de.wikipedia.org/wiki/Luftangriffe_auf_Dresden"
+   "source": "https://de.wikipedia.org/wiki/Luftangriffe_auf_Dresden",
+   "cat": "wissen"
   },
   {
    "id": "hist-ns-y-pogrom",
@@ -722,7 +772,8 @@
    "min": 1925,
    "max": 1950,
    "explanation": "In der Nacht vom 9. auf den 10. November 1938.",
-   "source": "https://de.wikipedia.org/wiki/Novemberpogrome_1938"
+   "source": "https://de.wikipedia.org/wiki/Novemberpogrome_1938",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-ns-y-dday",
@@ -734,7 +785,8 @@
    "min": 1925,
    "max": 1950,
    "explanation": "Am 6. Juni 1944.",
-   "source": "https://de.wikipedia.org/wiki/Operation_Overlord"
+   "source": "https://de.wikipedia.org/wiki/Operation_Overlord",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-ns-o-ns1",
@@ -765,7 +817,8 @@
     }
    ],
    "explanation": "1933, 1935, 1938, 1939, 1943 (Kapitulation Februar 1943).",
-   "source": "https://de.wikipedia.org/wiki/Zeit_des_Nationalsozialismus"
+   "source": "https://de.wikipedia.org/wiki/Zeit_des_Nationalsozialismus",
+   "cat": "reihenfolge"
   },
   {
    "id": "hist-geteilt-besatzung",
@@ -779,7 +832,8 @@
     "5"
    ],
    "explanation": "Amerikanische, britische, französische und sowjetische Zone. Berlin wurde ebenfalls in vier Sektoren geteilt.",
-   "source": "https://de.wikipedia.org/wiki/Besatzungszone"
+   "source": "https://de.wikipedia.org/wiki/Besatzungszone",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-ddr-gruendung",
@@ -793,7 +847,8 @@
     "13. August 1961"
    ],
    "explanation": "Wenige Monate nach der Bundesrepublik. Der 7. Oktober war in der DDR Nationalfeiertag.",
-   "source": "https://de.wikipedia.org/wiki/Deutsche_Demokratische_Republik"
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Demokratische_Republik",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-honecker",
@@ -807,7 +862,8 @@
     "Wilhelm Pieck"
    ],
    "explanation": "Honecker löste Ulbricht ab und wurde im Oktober 1989 von Egon Krenz verdrängt.",
-   "source": "https://de.wikipedia.org/wiki/Erich_Honecker"
+   "source": "https://de.wikipedia.org/wiki/Erich_Honecker",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-stasi",
@@ -821,7 +877,8 @@
     "Bundesnachrichtendienst"
    ],
    "explanation": "Die Stasi überwachte die eigene Bevölkerung mit rund 90.000 hauptamtlichen und vielen inoffiziellen Mitarbeitern.",
-   "source": "https://de.wikipedia.org/wiki/Ministerium_für_Staatssicherheit"
+   "source": "https://de.wikipedia.org/wiki/Ministerium_für_Staatssicherheit",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-nato",
@@ -835,7 +892,8 @@
     "1990"
    ],
    "explanation": "Im selben Jahr gründete der Ostblock den Warschauer Pakt, dem die DDR 1956 beitrat.",
-   "source": "https://de.wikipedia.org/wiki/NATO"
+   "source": "https://de.wikipedia.org/wiki/NATO",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-wirtschaftswunder",
@@ -849,7 +907,8 @@
     "Franz Josef Strauß"
    ],
    "explanation": "Erhard setzte auf die Soziale Marktwirtschaft und wurde 1963 Bundeskanzler.",
-   "source": "https://de.wikipedia.org/wiki/Ludwig_Erhard"
+   "source": "https://de.wikipedia.org/wiki/Ludwig_Erhard",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-montan",
@@ -863,7 +922,8 @@
     "Warschauer Pakt"
    ],
    "explanation": "Gründer waren Deutschland, Frankreich, Italien und die Benelux-Länder. 1957 folgten die Römischen Verträge.",
-   "source": "https://de.wikipedia.org/wiki/Europäische_Gemeinschaft_für_Kohle_und_Stahl"
+   "source": "https://de.wikipedia.org/wiki/Europäische_Gemeinschaft_für_Kohle_und_Stahl",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-raf",
@@ -877,7 +937,8 @@
     "Bleierne Zeit"
    ],
    "explanation": "Die RAF entführte und ermordete Arbeitgeberpräsident Hanns Martin Schleyer. Die Lufthansa-Maschine „Landshut“ wurde in Mogadischu befreit.",
-   "source": "https://de.wikipedia.org/wiki/Deutscher_Herbst"
+   "source": "https://de.wikipedia.org/wiki/Deutscher_Herbst",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-prager-fruehling",
@@ -891,7 +952,8 @@
     "Samtene Revolution"
    ],
    "explanation": "Alexander Dubček wollte einen „Sozialismus mit menschlichem Antlitz“.",
-   "source": "https://de.wikipedia.org/wiki/Prager_Frühling"
+   "source": "https://de.wikipedia.org/wiki/Prager_Frühling",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-montagsdemo",
@@ -905,7 +967,8 @@
     "Rostock"
    ],
    "explanation": "Am 9. Oktober 1989 demonstrierten in Leipzig rund 70.000 Menschen friedlich („Wir sind das Volk“).",
-   "source": "https://de.wikipedia.org/wiki/Montagsdemonstrationen_in_der_DDR"
+   "source": "https://de.wikipedia.org/wiki/Montagsdemonstrationen_in_der_DDR",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-schabowski",
@@ -919,7 +982,8 @@
     "Hans Modrow"
    ],
    "explanation": "Auf die Frage, ab wann das gelte, sagte er: „Das tritt nach meiner Kenntnis … ist das sofort, unverzüglich.“",
-   "source": "https://de.wikipedia.org/wiki/Günter_Schabowski"
+   "source": "https://de.wikipedia.org/wiki/Günter_Schabowski",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-gorbatschow",
@@ -933,7 +997,8 @@
     "Nikita Chruschtschow"
    ],
    "explanation": "Er erhielt 1990 den Friedensnobelpreis.",
-   "source": "https://de.wikipedia.org/wiki/Michail_Gorbatschow"
+   "source": "https://de.wikipedia.org/wiki/Michail_Gorbatschow",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-schmidt",
@@ -947,7 +1012,8 @@
     "Gerhard Schröder"
    ],
    "explanation": "Schmidt wurde 1982 durch ein konstruktives Misstrauensvotum gestürzt, Helmut Kohl folgte.",
-   "source": "https://de.wikipedia.org/wiki/Helmut_Schmidt"
+   "source": "https://de.wikipedia.org/wiki/Helmut_Schmidt",
+   "cat": "wissen"
   },
   {
    "id": "hist-geteilt-y-stasi-nato",
@@ -959,7 +1025,8 @@
    "min": 1940,
    "max": 1995,
    "explanation": "1955, im Jahr des NATO-Beitritts. Die Nationale Volksarmee der DDR folgte 1956.",
-   "source": "https://de.wikipedia.org/wiki/Bundeswehr"
+   "source": "https://de.wikipedia.org/wiki/Bundeswehr",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-seit1990-zwei-plus-vier",
@@ -973,7 +1040,8 @@
     "Grundlagenvertrag"
    ],
    "explanation": "Ihn schlossen die beiden deutschen Staaten mit den vier Siegermächten. Der Einigungsvertrag regelte die inneren Fragen.",
-   "source": "https://de.wikipedia.org/wiki/Zwei-plus-Vier-Vertrag"
+   "source": "https://de.wikipedia.org/wiki/Zwei-plus-Vier-Vertrag",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-maastricht",
@@ -987,7 +1055,8 @@
     "Schengener Abkommen"
    ],
    "explanation": "Er trat 1993 in Kraft und legte auch den Weg zur gemeinsamen Währung fest.",
-   "source": "https://de.wikipedia.org/wiki/Vertrag_von_Maastricht"
+   "source": "https://de.wikipedia.org/wiki/Vertrag_von_Maastricht",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-hauptstadt",
@@ -1001,7 +1070,8 @@
     "1999"
    ],
    "explanation": "Die Abstimmung am 20. Juni 1991 ging mit 338 zu 320 Stimmen knapp aus. Der Umzug folgte 1999.",
-   "source": "https://de.wikipedia.org/wiki/Hauptstadtbeschluss"
+   "source": "https://de.wikipedia.org/wiki/Hauptstadtbeschluss",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-jugoslawien",
@@ -1015,7 +1085,8 @@
     "Belgien"
    ],
    "explanation": "Die Tschechoslowakei teilte sich 1993 friedlich. In Bosnien kam es 1995 zum Massaker von Srebrenica.",
-   "source": "https://de.wikipedia.org/wiki/Jugoslawienkriege"
+   "source": "https://de.wikipedia.org/wiki/Jugoslawienkriege",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-kosovo",
@@ -1029,7 +1100,8 @@
     "Irakkrieg"
    ],
    "explanation": "Die NATO griff ohne UN-Mandat Ziele in Serbien an. Das war unter der rot-grünen Regierung Schröder sehr umstritten.",
-   "source": "https://de.wikipedia.org/wiki/Kosovokrieg"
+   "source": "https://de.wikipedia.org/wiki/Kosovokrieg",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-schroeder",
@@ -1043,7 +1115,8 @@
     "Joschka Fischer"
    ],
    "explanation": "Schröder führte eine Koalition aus SPD und Grünen. Joschka Fischer war Außenminister.",
-   "source": "https://de.wikipedia.org/wiki/Gerhard_Schröder"
+   "source": "https://de.wikipedia.org/wiki/Gerhard_Schröder",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-agenda",
@@ -1057,7 +1130,8 @@
     "Energiewende"
    ],
    "explanation": "Die Reformen veränderten Arbeitsmarkt und Sozialsystem stark und spalteten die SPD.",
-   "source": "https://de.wikipedia.org/wiki/Agenda_2010"
+   "source": "https://de.wikipedia.org/wiki/Agenda_2010",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-afghanistan",
@@ -1071,7 +1145,8 @@
     "Von 2011 bis heute"
    ],
    "explanation": "Nach den Anschlägen vom 11. September begann der internationale Einsatz. Er endete 2021 mit der Machtübernahme der Taliban.",
-   "source": "https://de.wikipedia.org/wiki/Bundeswehreinsatz_in_Afghanistan"
+   "source": "https://de.wikipedia.org/wiki/Bundeswehreinsatz_in_Afghanistan",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-finanzkrise",
@@ -1085,7 +1160,8 @@
     "Credit Suisse"
    ],
    "explanation": "Die US-Investmentbank ging im September 2008 pleite. Credit Suisse wurde erst 2023 übernommen.",
-   "source": "https://de.wikipedia.org/wiki/Lehman_Brothers"
+   "source": "https://de.wikipedia.org/wiki/Lehman_Brothers",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-fukushima",
@@ -1099,7 +1175,8 @@
     "Die Ölkrise"
    ],
    "explanation": "Die letzten deutschen Atomkraftwerke gingen im April 2023 vom Netz.",
-   "source": "https://de.wikipedia.org/wiki/Atomausstieg_in_Deutschland"
+   "source": "https://de.wikipedia.org/wiki/Atomausstieg_in_Deutschland",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-fluechtlinge",
@@ -1113,7 +1190,8 @@
     "„Yes we can“"
    ],
    "explanation": "2015 kamen rund 890.000 Schutzsuchende nach Deutschland.",
-   "source": "https://de.wikipedia.org/wiki/Wir_schaffen_das"
+   "source": "https://de.wikipedia.org/wiki/Wir_schaffen_das",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-brexit",
@@ -1127,7 +1205,8 @@
     "2020"
    ],
    "explanation": "Das Referendum fand im Juni 2016 statt. Der Austritt wurde Ende Januar 2020 vollzogen.",
-   "source": "https://de.wikipedia.org/wiki/Brexit"
+   "source": "https://de.wikipedia.org/wiki/Brexit",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-krim",
@@ -1141,7 +1220,8 @@
     "Jamal"
    ],
    "explanation": "Die Annexion verstößt gegen das Völkerrecht. 2022 folgte der umfassende Angriff auf die Ukraine.",
-   "source": "https://de.wikipedia.org/wiki/Annexion_der_Krim_2014"
+   "source": "https://de.wikipedia.org/wiki/Annexion_der_Krim_2014",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-ukraine22",
@@ -1155,7 +1235,8 @@
     "1. September 2021"
    ],
    "explanation": "Bundeskanzler Scholz sprach kurz darauf von einer „Zeitenwende“.",
-   "source": "https://de.wikipedia.org/wiki/Russischer_Überfall_auf_die_Ukraine_2022"
+   "source": "https://de.wikipedia.org/wiki/Russischer_Überfall_auf_die_Ukraine_2022",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-corona",
@@ -1169,7 +1250,8 @@
     "Januar 2021"
    ],
    "explanation": "Ab Mitte März 2020 schlossen Schulen und Geschäfte. Die WHO hatte am 11. März die Pandemie ausgerufen.",
-   "source": "https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland"
+   "source": "https://de.wikipedia.org/wiki/COVID-19-Pandemie_in_Deutschland",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-scholz",
@@ -1183,7 +1265,8 @@
     "Robert Habeck"
    ],
    "explanation": "Scholz führte die Ampelkoalition aus SPD, Grünen und FDP, die im November 2024 zerbrach.",
-   "source": "https://de.wikipedia.org/wiki/Olaf_Scholz"
+   "source": "https://de.wikipedia.org/wiki/Olaf_Scholz",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-euro-einfuehrung",
@@ -1197,7 +1280,8 @@
     "27"
    ],
    "explanation": "Heute haben deutlich mehr Länder den Euro. Kroatien kam 2023 als 20. Land hinzu.",
-   "source": "https://de.wikipedia.org/wiki/Euro"
+   "source": "https://de.wikipedia.org/wiki/Euro",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-osterweiterung",
@@ -1211,7 +1295,8 @@
     "2013"
    ],
    "explanation": "Es war die größte Erweiterung der EU-Geschichte. 2007 folgten Bulgarien und Rumänien.",
-   "source": "https://de.wikipedia.org/wiki/EU-Erweiterung_2004"
+   "source": "https://de.wikipedia.org/wiki/EU-Erweiterung_2004",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-smartphone",
@@ -1225,7 +1310,8 @@
     "Den Macintosh"
    ],
    "explanation": "Steve Jobs präsentierte es im Januar 2007. Das iPad kam 2010.",
-   "source": "https://de.wikipedia.org/wiki/IPhone"
+   "source": "https://de.wikipedia.org/wiki/IPhone",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-obama",
@@ -1239,7 +1325,8 @@
     "Kamala Harris"
    ],
    "explanation": "Obama regierte bis 2017 und erhielt 2009 den Friedensnobelpreis.",
-   "source": "https://de.wikipedia.org/wiki/Barack_Obama"
+   "source": "https://de.wikipedia.org/wiki/Barack_Obama",
+   "cat": "wissen"
   },
   {
    "id": "hist-seit1990-y-einheit",
@@ -1251,7 +1338,8 @@
    "min": 1985,
    "max": 2026,
    "explanation": "Am 3. Oktober 1990.",
-   "source": "https://de.wikipedia.org/wiki/Deutsche_Wiedervereinigung"
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Wiedervereinigung",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-seit1990-y-brexit",
@@ -1263,7 +1351,8 @@
    "min": 1985,
    "max": 2026,
    "explanation": "Der Austritt wurde am 31. Januar 2020 vollzogen.",
-   "source": "https://de.wikipedia.org/wiki/Brexit"
+   "source": "https://de.wikipedia.org/wiki/Brexit",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-seit1990-y-lehman",
@@ -1275,7 +1364,8 @@
    "min": 1985,
    "max": 2026,
    "explanation": "Im September 2008.",
-   "source": "https://de.wikipedia.org/wiki/Lehman_Brothers"
+   "source": "https://de.wikipedia.org/wiki/Lehman_Brothers",
+   "cat": "jahreszahlen"
   },
   {
    "id": "hist-seit1990-o-sei1",
@@ -1310,7 +1400,8 @@
     }
    ],
    "explanation": "1990, 1992, 2001, 2008, 2016, 2022.",
-   "source": "https://de.wikipedia.org/wiki/Deutsche_Geschichte_seit_1990"
+   "source": "https://de.wikipedia.org/wiki/Deutsche_Geschichte_seit_1990",
+   "cat": "reihenfolge"
   }
  ]
 }
