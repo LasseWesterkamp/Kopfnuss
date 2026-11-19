@@ -11,6 +11,7 @@ import { Groups, GroupTeaser } from './ui/Groups';
 import { Puzzle } from './ui/Puzzle';
 import { TopicPage, type StartOpts } from './ui/TopicPage';
 import { Mistakes } from './ui/Mistakes';
+import { LearnPage } from './ui/LearnPage';
 import { puzzleByKey } from './core/puzzles';
 import { codeFromUrl } from './core/invite';
 import { useRouter, hashToRoute, type Route } from './router';
@@ -41,7 +42,7 @@ function Shell() {
   const nav = (r: Route) => go(r);
   const tab = (name: 'home' | 'practice' | 'groups' | 'stats' | 'settings') => nav({ name } as Route);
   const inQuiz = route.name === 'quiz' || route.name === 'puzzle';
-  const activeTab = route.name === 'credits' ? 'settings' : route.name === 'topic' || route.name === 'summary' || route.name === 'mistakes' ? 'home' : route.name;
+  const activeTab = route.name === 'credits' ? 'settings' : route.name === 'topic' || route.name === 'summary' || route.name === 'mistakes' || route.name === 'learn' ? 'home' : route.name;
 
   let page: JSX.Element | null = null;
   switch (route.name) {
@@ -53,7 +54,11 @@ function Shell() {
       </>);
       break;
     case 'topic':
-      page = <TopicPage topic={route.id as TopicId} onStart={start} onPuzzle={(key) => nav({ name: 'puzzle', key })} onMistakes={() => nav({ name: 'mistakes' })} />;
+      page = <TopicPage topic={route.id as TopicId} onStart={start} onPuzzle={(key) => nav({ name: 'puzzle', key })} onMistakes={() => nav({ name: 'mistakes' })}
+        onLearn={(kind, id) => nav({ name: 'learn', topic: route.id, kind, id })} />;
+      break;
+    case 'learn':
+      page = <LearnPage key={route.topic + route.kind + route.id} topic={route.topic as TopicId} kind={route.kind} id={route.id} onStart={start} />;
       break;
     case 'mistakes':
       page = <Mistakes onStart={start} />;
@@ -89,7 +94,7 @@ function Shell() {
     <div className={'app' + (inQuiz ? ' in-quiz' : '')}>
       {!inQuiz && (
         <header className="topbar">
-          {route.name !== 'home' && ['topic', 'mistakes', 'credits', 'summary'].includes(route.name)
+          {route.name !== 'home' && ['topic', 'mistakes', 'credits', 'summary', 'learn'].includes(route.name)
             ? <button className="icon-btn back-btn" aria-label="Zurück" onClick={back}>←</button> : null}
           <h1 onClick={() => tab('home')}><span className="logo">🌰</span> Kopfnuss</h1>
           <span className="topbar-streak" title="Serie">{streak.current > 0 ? '🔥' : '🌑'} {streak.current}</span>

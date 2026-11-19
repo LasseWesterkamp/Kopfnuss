@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 export type Route =
   | { name: 'home' } | { name: 'practice' } | { name: 'groups' } | { name: 'stats' } | { name: 'settings' } | { name: 'credits' }
   | { name: 'topic'; id: string } | { name: 'mistakes' } | { name: 'puzzle'; key: string }
+  | { name: 'learn'; topic: string; kind: 'cat' | 'sub'; id: string }
   | { name: 'quiz' } | { name: 'summary' };
 
 const PATHS: Record<string, string> = { home: '', practice: 'ueben', groups: 'gruppen', stats: 'statistik', settings: 'mehr', credits: 'mehr/bildnachweise', mistakes: 'fehler', quiz: 'runde', summary: 'ergebnis' };
@@ -12,6 +13,7 @@ const PATHS: Record<string, string> = { home: '', practice: 'ueben', groups: 'gr
 export function routeToHash(r: Route): string {
   if (r.name === 'topic') return '#/thema/' + r.id;
   if (r.name === 'puzzle') return '#/puzzle/' + r.key;
+  if (r.name === 'learn') return `#/lernen/${r.topic}/${r.kind === 'cat' ? 'kategorie' : 'gruppe'}/${encodeURIComponent(r.id)}`;
   return '#/' + PATHS[r.name];
 }
 
@@ -19,6 +21,7 @@ export function hashToRoute(hash: string): Route {
   const p = hash.replace(/^#\/?/, '').split('/').filter(Boolean);
   if (p[0] === 'thema' && p[1]) return { name: 'topic', id: decodeURIComponent(p[1]) };
   if (p[0] === 'puzzle' && p[1]) return { name: 'puzzle', key: decodeURIComponent(p[1]) };
+  if (p[0] === 'lernen' && p[1] && p[3]) return { name: 'learn', topic: p[1], kind: p[2] === 'gruppe' ? 'sub' : 'cat', id: decodeURIComponent(p[3]) };
   const joined = p.join('/');
   const found = Object.entries(PATHS).find(([, v]) => v === joined && v !== '');
   // Runde/Ergebnis lassen sich nach Neuladen nicht wiederherstellen -> Startseite

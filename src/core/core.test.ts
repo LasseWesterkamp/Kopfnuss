@@ -567,3 +567,42 @@ describe('Nochmal spielen mit Schwierigkeitswahl', () => {
     expect(buildSession(pool, emptyProgress(), today, o, () => 0.4).map((x) => x.id)).toEqual(['d3-1']);
   });
 });
+
+import { learnEntries, searchEntries, answerOf } from './learn';
+
+describe('Lernseiten', () => {
+  const mcq = (id: string, prompt: string, answer: string, explanation: string): Question =>
+    ({ id, topic: 'geografie', cat: 'hauptstaedte', difficulty: 1, type: 'mc', prompt, choices: ['X', answer, 'Y'], answer: 1, explanation, source: 's' });
+  it('Hin- und Rückfrage zum selben Fakt werden eine Lernkarte (Hauptfrage vorn)', () => {
+    const e = learnEntries([
+      mcq('geo-capr-fr', 'Paris ist die Hauptstadt von …', 'Frankreich', 'Paris ist die Hauptstadt von Frankreich.'),
+      mcq('geo-cap-fr', 'Was ist die Hauptstadt von Frankreich?', 'Paris', 'Die Hauptstadt von Frankreich ist Paris.'),
+      mcq('geo-cap-it', 'Was ist die Hauptstadt von Italien?', 'Rom', 'Die Hauptstadt von Italien ist Rom.'),
+    ]);
+    expect(e).toHaveLength(2);
+    expect(e[0]).toMatchObject({ ids: ['geo-capr-fr', 'geo-cap-fr'], answer: 'Paris', title: 'Was ist die Hauptstadt von Frankreich?' });
+    expect(e[0].more).toEqual([]); // Rückfrage bringt keinen neuen Fakt
+  });
+  it('Bundesland: Hauptstadt, Flagge und Lage auf einer Karte mit Namen', () => {
+    const base = { topic: 'regionen' as const, cat: 'x', difficulty: 1 as const, source: 's', sub: 'de' };
+    const e = learnEntries([
+      { ...base, id: 'reg-cap-de-sn', type: 'mc', prompt: 'Hauptstadt von Sachsen?', choices: ['Dresden', 'Kiel'], answer: 0, explanation: 'Sachsen … Dresden' },
+      { ...base, id: 'reg-map-de-sn', type: 'map', prompt: 'Wo liegt Sachsen?', country: 'DE-SN', continent: 'de', regions: true, explanation: 'Sachsen ist ein Bundesland im Osten.' },
+      { ...base, id: 'reg-mapname-de-sn', type: 'mapname', prompt: 'Welches ist markiert?', country: 'DE-SN', continent: 'de', regions: true, choices: ['Bayern', 'Sachsen'], answer: 1, explanation: 'x' },
+      { ...base, id: 'reg-cap-de-by', type: 'mc', prompt: 'Hauptstadt von Bayern?', choices: ['München'], answer: 0, explanation: 'Bayern … München' },
+    ] as Question[]);
+    expect(e).toHaveLength(2);
+    expect(e[0]).toMatchObject({ heading: 'Sachsen', answer: 'Dresden', ids: ['reg-cap-de-sn', 'reg-map-de-sn', 'reg-mapname-de-sn'] });
+    expect(e[0].more).toEqual([{ title: 'Lage', answer: 'Sachsen ist ein Bundesland im Osten.' }]);
+  });
+  it('Antworten aller Fragetypen', () => {
+    expect(answerOf({ ...q('y', 'geschichte'), type: 'year', year: -44, min: -500, max: 500 } as Question)).toBe('44 v. Chr.');
+    expect(answerOf({ ...q('o', 'geschichte'), type: 'order', items: [{ label: 'B', year: 1989 }, { label: 'A', year: 1961 }] } as Question)).toBe('A (1961) → B (1989)');
+  });
+  it('Suche ohne Groß-/Kleinschreibung und Akzente, mehrere Wörter', () => {
+    const e = learnEntries([mcq('a', 'Hauptstadt von Island?', 'Reykjavík', 'Reykjavík liegt in Island.'), mcq('b', 'Hauptstadt von Peru?', 'Lima', 'Lima liegt in Peru.')]);
+    expect(searchEntries(e, 'reykjavik').map((x) => x.answer)).toEqual(['Reykjavík']);
+    expect(searchEntries(e, 'lima peru')).toHaveLength(1);
+    expect(searchEntries(e, '')).toHaveLength(2);
+  });
+});

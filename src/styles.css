@@ -354,3 +354,16 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .mg-a { color: var(--ok); font-weight: 600; }
 .again { margin-top: 16px; text-align: left; }
 .again .seg { margin: 8px 0; }
+/* Lernseiten */
+.learn h2 { margin-top: 0; }
+.learn-tools { margin: 12px 0; display: grid; gap: 6px; }
+.learn-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+@media (min-width: 700px) { .learn-list { grid-template-columns: 1fr 1fr; } }
+.learn-item { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; }
+.learn-item.err { border-left: 4px solid var(--bad); }
+.learn-img { width: 84px; height: 84px; object-fit: cover; border-radius: 8px; flex: none; background: var(--surface-2); }
+.learn-img.flagish { object-fit: contain; height: 60px; border: 1px solid var(--line); background: transparent; }
+.learn-q { margin: 0; font-size: .9rem; color: var(--muted); }
+.learn-a { margin: 2px 0 4px; font-weight: 700; font-size: 1.05rem; }
+.cat-row .start-btn + .start-btn { margin-left: -4px; }
+.learn-h { margin: 0 0 2px; font-weight: 800; font-size: 1.1rem; } .learn-more { margin: 2px 0; }

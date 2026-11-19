@@ -33,9 +33,10 @@ export function PuzzleTiles({ list, onPuzzle }: { list: PuzzleDef[]; onPuzzle: (
 }
 
 /** Eigene Seite pro Thema: Fortschritt, Kategorien, Länder/Epochen, Puzzles, Fehler */
-export function TopicPage({ topic, onStart, onPuzzle, onMistakes }: {
+export function TopicPage({ topic, onStart, onPuzzle, onMistakes, onLearn }: {
   topic: TopicId;
   onStart: (o: StartOpts) => void;
+  onLearn: (kind: 'cat' | 'sub', id: string) => void;
   onPuzzle: (key: string) => void;
   onMistakes: () => void;
 }) {
@@ -50,7 +51,7 @@ export function TopicPage({ topic, onStart, onPuzzle, onMistakes }: {
   const sub = SUBTOPICS[topic];
   const puzzles = topic === 'geografie' ? WORLD_PUZZLES : topic === 'regionen' ? REGION_PUZZLES : [];
 
-  const Row = ({ label, hint, icon, list, opts }: { label: string; hint?: string; icon?: string; list: typeof qs; opts: StartOpts }) => {
+  const Row = ({ label, hint, icon, list, opts, learn }: { label: string; hint?: string; icon?: string; list: typeof qs; opts: StartOpts; learn: () => void }) => {
     const mm = mastered(list);
     return (
       <div className="cat-row card">
@@ -60,6 +61,7 @@ export function TopicPage({ topic, onStart, onPuzzle, onMistakes }: {
           <span className="sub-bar" title={`${mm} von ${list.length} sitzen sicher`}><span style={{ width: `${list.length ? (mm / list.length) * 100 : 0}%` }} /></span>
           <span className="muted small">{mm} von {list.length} sitzen</span>
         </div>
+        <button className="btn ghost start-btn" disabled={!list.length} onClick={learn} aria-label={`${label}: Lösungen ansehen`} title="Lösungen ansehen">📖</button>
         <button className="btn primary start-btn" disabled={!list.length} onClick={() => onStart({ topics: [topic], ...opts, label })} aria-label={`${label} üben`}>▶</button>
       </div>
     );
@@ -91,10 +93,10 @@ export function TopicPage({ topic, onStart, onPuzzle, onMistakes }: {
 
       {puzzles.length > 0 && (<><h3 className="section-title">Karten-Puzzle</h3><PuzzleTiles list={puzzles} onPuzzle={onPuzzle} /></>)}
 
-      <h3 className="section-title">Kategorien</h3>
+      <h3 className="section-title">Kategorien <span className="muted">· 📖 Lösungen lernen · ▶ abfragen</span></h3>
       <div className="cat-list">
         {(CATEGORIES[topic] ?? []).map((c) => (
-          <Row key={c.id} label={c.name} list={qs.filter((q) => q.cat === c.id)} opts={{ cats: [catKey(topic, c.id)] }} />
+          <Row key={c.id} label={c.name} list={qs.filter((q) => q.cat === c.id)} opts={{ cats: [catKey(topic, c.id)] }} learn={() => onLearn('cat', c.id)} />
         ))}
       </div>
 
@@ -103,7 +105,7 @@ export function TopicPage({ topic, onStart, onPuzzle, onMistakes }: {
           <h3 className="section-title">{sub.label}</h3>
           <div className="cat-list">
             {sub.items.map((it) => (
-              <Row key={it.id} label={it.name} hint={it.hint} icon={it.icon} list={qs.filter((q) => q.sub === it.id)} opts={{ subs: [it.id] }} />
+              <Row key={it.id} label={it.name} hint={it.hint} icon={it.icon} list={qs.filter((q) => q.sub === it.id)} opts={{ subs: [it.id] }} learn={() => onLearn('sub', it.id)} />
             ))}
           </div>
         </>

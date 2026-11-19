@@ -238,6 +238,11 @@ Gleich aussehende Flaggen (Wien, Salzburg, Vorarlberg) kommen nie gemeinsam in e
 - **Fehlerkasten** (`#/fehler`, Karte auf der Startseite und in der Statistik): Eine Frage ist ein Fehler, sobald sie einmal falsch beantwortet wurde, und gilt nach **2 richtigen Antworten hintereinander** als behoben (`src/core/mistakes.ts`, berechnet aus dem vorhandenen Lernstand). Gruppiert nach Thema › Kategorie mit Anzahl; „Fehler üben“ für alle, pro Thema und pro Kategorie; jede Gruppe aufklappbar mit Frage und richtiger Antwort.
 - **Nochmal spielen:** Nach jeder Runde Schwierigkeit wählen (Adaptiv, Leicht, Mittel, Schwer). Auswahl (Thema, Kategorie, Fehlerliste) bleibt erhalten. Nach jedem Puzzle: Leicht (5 Versuche, Hinweis nach 2 Fehlern), Mittel (3 Versuche), Schwer (1 Versuch); Bestzeiten getrennt pro Stufe (alte Bestzeiten zählen als Mittel).
 
+## Lernseiten (Lösungen nachlesen)
+
+Auf jeder Themenseite hat jede Kategorie (und jedes Land bzw. jede Epoche) neben ▶ einen **📖-Knopf**. Er öffnet eine Lernseite (`#/lernen/<thema>/kategorie/<id>`) mit allen Fakten samt richtiger Antwort, Erklärung, Bild/Flagge und Quelle, mit Suche, Filter „Nur meine Fehler“ und „Jetzt abfragen“.
+Fragen zum selben Fakt werden zu einer Lernkarte zusammengefasst (über die Frage-ID, `factKey` in `src/core/learn.ts`): z.B. Hauptstadt hin und zurück, oder bei Bundesländern Hauptstadt, Flagge und Lage auf einer Karte pro Bundesland.
+
 ## Welt-Puzzles
 
 Europa, Afrika, Asien, Nordamerika (mit Mittelamerika & Karibik), Südamerika, Ozeanien und „Ganze Welt“ (Profi). Karte: Natural Earth 50m (`public/data/countries-50m.json`), Länderliste `public/data/world-puzzle.json` (vom Build-Skript aus `data/countries.json` erzeugt, Kontinent wie dort). Länder, die auf der Karte kleiner als 6 Pixel sind (Vatikan, Monaco, Karibikinseln …), bekommen einen antippbaren Kreis. Nicht dabei: Tuvalu (fehlt in der Karte). Treffer im ersten Versuch zählen als richtige Antwort auf die Kartenfrage „Wo liegt …?“ des Landes, sofern es eine gibt.
