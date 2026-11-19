@@ -331,3 +331,30 @@ describe('Rangliste', () => {
     expect(daysUntilReset('2026-11-29')).toBe(1); // Sonntag
   });
 });
+
+import { normalizeCode, isValidCode, codeFromUrl, inviteUrl, CODE_ALPHABET } from './invite';
+
+describe('Gruppenbeitritt: Einladungscode und -link', () => {
+  it('Eingabe wird normalisiert (klein, Leerzeichen, Bindestrich)', () => {
+    expect(normalizeCode(' qtk-sa5 ')).toBe('QTKSA5');
+    expect(normalizeCode('abc 234')).toBe('ABC234');
+  });
+  it('verwechselbare Zeichen gibt es im Code nicht', () => {
+    for (const c of 'IOL01') expect(CODE_ALPHABET.includes(c)).toBe(false);
+    expect(isValidCode('QTKSA5')).toBe(true);
+    expect(isValidCode('QTKSO5')).toBe(false); // O wird zu 0 normalisiert und ist ungültig
+    expect(isValidCode(normalizeCode('qtkso5'))).toBe(false);
+    expect(isValidCode('ABC12')).toBe(false); // zu kurz
+  });
+  it('Code aus dem Einladungslink', () => {
+    expect(codeFromUrl('?beitreten=4q47rg')).toBe('4Q47RG');
+    expect(codeFromUrl('?beitreten=xyz')).toBeNull();
+    expect(codeFromUrl('?foo=bar')).toBeNull();
+    expect(codeFromUrl('')).toBeNull();
+  });
+  it('Link und Code passen zusammen (Hin- und Rückweg)', () => {
+    const url = inviteUrl('https://lassewesterkamp.github.io', '/Kopfnuss/', '9HEN2D');
+    expect(url).toBe('https://lassewesterkamp.github.io/Kopfnuss/?beitreten=9HEN2D');
+    expect(codeFromUrl(new URL(url).search)).toBe('9HEN2D');
+  });
+});

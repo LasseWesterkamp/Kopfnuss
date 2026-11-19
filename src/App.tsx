@@ -8,6 +8,7 @@ import { Quiz, Summary, type SessionSummary } from './ui/Quiz';
 import { Stats } from './ui/Stats';
 import { SettingsView, Credits } from './ui/SettingsView';
 import { Groups, GroupTeaser } from './ui/Groups';
+import { codeFromUrl } from './core/invite';
 
 type View =
   | { name: 'home' } | { name: 'practice'; topic: TopicId | null } | { name: 'stats' } | { name: 'settings' } | { name: 'credits' } | { name: 'groups' }
@@ -18,9 +19,9 @@ function Shell() {
   const { questions, progress, today, loadError, streak } = useApp();
   // Einladungslink ?beitreten=CODE öffnet direkt den Gruppen-Tab mit vorausgefülltem Code
   const [joinCode] = useState<string | null>(() => {
-    const c = new URLSearchParams(location.search).get('beitreten');
-    if (c) history.replaceState(null, '', location.pathname);
-    return c && /^[A-Z0-9]{6}$/i.test(c) ? c.toUpperCase() : null;
+    const c = codeFromUrl(location.search);
+    if (location.search.includes('beitreten')) history.replaceState(null, '', location.pathname);
+    return c;
   });
   const [view, setView] = useState<View>(joinCode ? { name: 'groups' } : { name: 'home' });
 

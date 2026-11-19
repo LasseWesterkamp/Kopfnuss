@@ -3,6 +3,7 @@ import { useApp } from '../state';
 import * as g from '../groups';
 import { rank, daysUntilReset, type Board, type Entry } from '../core/leaderboard';
 import { syncConfigured } from '../sync';
+import { normalizeCode, isValidCode } from '../core/invite';
 
 const BOARDS: { id: Board; label: string; unit: string }[] = [
   { id: 'woche', label: 'Diese Woche', unit: 'XP' },
@@ -167,8 +168,8 @@ function JoinForm({ initial, busy, onJoin }: { initial: string; busy: boolean; o
       <label className="small muted">Mit Einladungscode beitreten</label>
       <div className="inline">
         <input className="text code" required minLength={6} maxLength={6} placeholder="ABC123" autoCapitalize="characters" autoComplete="off"
-          value={v} onChange={(e) => setV(e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, ''))} />
-        <button className="btn primary" disabled={busy || v.length !== 6}>Beitreten</button>
+          value={v} onChange={(e) => setV(normalizeCode(e.target.value))} />
+        <button className="btn primary" disabled={busy || !isValidCode(v)}>Beitreten</button>
       </div>
     </form>
   );

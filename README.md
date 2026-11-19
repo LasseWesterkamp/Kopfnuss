@@ -163,6 +163,15 @@ In der App unter **Gruppen**: Anzeigename festlegen, dann Gruppe anlegen oder mi
 
 Die App lädt die eigenen Ranglistenwerte nach jedem Sync hoch (Tabelle `stats`).
 
+### Gruppen testen
+
+- `npm test` prüft Rangliste (Wochengrenze in deutscher Zeit, Platzierung) und Einladungscodes/-links.
+- `npm run test:gruppen` prüft die Zugriffsregeln gegen das **echte** Supabase-Projekt mit drei Testkonten (25 Prüfungen: Außenstehende sehen nichts, Mitglieder nie den Lernstand, nur der Admin hat Admin-Rechte, unplausible Punkte werden abgelehnt). Danach im Supabase **SQL Editor** aufräumen:
+
+  ```sql
+  delete from auth.users where email like 'kopfnuss-test-%@example.com';
+  ```
+
 ### Datenbank-Migration
 
 Die Datenbank-Struktur liegt in `supabase/`. Bei einem neuen Supabase-Projekt im **SQL Editor** nacheinander ausführen:

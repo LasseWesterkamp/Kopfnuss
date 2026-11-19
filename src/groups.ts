@@ -1,6 +1,7 @@
 // Gruppen & Ranglisten (Supabase). Alle Änderungen laufen über Server-Funktionen mit Regelprüfung (supabase/002_gruppen.sql).
 import { sb } from './sync';
 import type { Entry, MyStats } from './core/leaderboard';
+import { normalizeCode, inviteUrl } from './core/invite';
 
 export interface Group { id: string; name: string; invite_code: string; owner_id: string }
 
@@ -59,7 +60,7 @@ const rpc = async <T>(fn: string, args: Record<string, unknown>): Promise<T> => 
 };
 
 export const createGroup = (name: string) => rpc<Group>('create_group', { p_name: name.trim() });
-export const joinGroup = (code: string) => rpc<Group>('join_group', { p_code: code.trim().toUpperCase() });
+export const joinGroup = (code: string) => rpc<Group>('join_group', { p_code: normalizeCode(code) });
 export const leaveGroup = (id: string) => rpc<void>('leave_group', { p_group: id });
 export const removeMember = (group: string, user: string) => rpc<void>('remove_member', { p_group: group, p_user: user });
 export const renewCode = (id: string) => rpc<string>('renew_invite_code', { p_group: id });
@@ -72,4 +73,4 @@ export async function renameGroup(id: string, name: string) {
 }
 
 /** Einladungslink, der die App öffnet und den Code vorausfüllt */
-export const inviteLink = (code: string) => `${location.origin}${import.meta.env.BASE_URL}?beitreten=${code}`;
+export const inviteLink = (code: string) => inviteUrl(location.origin, import.meta.env.BASE_URL, code);
