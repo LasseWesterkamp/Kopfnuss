@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import type { Question } from '../core/types';
+import type { Difficulty, Question } from '../core/types';
 import { xpFor, DAILY_BONUS } from '../core/scoring';
 import { DAILY_GOAL } from '../core/streak';
 import { TOPIC_NAMES } from '../core/badges';
@@ -103,8 +103,13 @@ export function Quiz({ questions, daily, onExit, onDone }: { questions: Question
   );
 }
 
-export function Summary({ s, onHome, onAgain }: { s: SessionSummary; onHome: () => void; onAgain: () => void }) {
+const DIFFS: { d: Difficulty | undefined; label: string }[] = [{ d: undefined, label: 'Adaptiv' }, { d: 1, label: 'Leicht' }, { d: 2, label: 'Mittel' }, { d: 3, label: 'Schwer' }];
+
+export function Summary({ s, label, currentDifficulty, onHome, onAgain }: {
+  s: SessionSummary; label?: string; currentDifficulty?: Difficulty; onHome: () => void; onAgain: (d: Difficulty | undefined) => void;
+}) {
   const { streak, level } = useApp();
+  const [diff, setDiff] = useState<Difficulty | undefined>(currentDifficulty);
   const right = s.answers.filter((a) => a.r.ok).length;
   const xp = s.answers.reduce((t, a) => t + a.xp, 0) + s.bonus;
   return (
@@ -123,9 +128,17 @@ export function Summary({ s, onHome, onAgain }: { s: SessionSummary; onHome: () 
         ))}
       </ul>
       <p className="small muted">Falsch beantwortete Fragen kommen morgen wieder. Richtige erst nach 1, 3, 7, 21 und 60 Tagen.</p>
-      <div className="row">
-        <button className="btn ghost" onClick={onHome}>Zur Startseite</button>
-        <button className="btn primary" onClick={onAgain}>Noch eine Runde</button>
+      <div className="again card">
+        <p className="small"><strong>Nochmal spielen</strong>{label ? ` (${label})` : ''}: Schwierigkeit wählen</p>
+        <div className="seg" role="radiogroup" aria-label="Schwierigkeit">
+          {DIFFS.map((x) => (
+            <button key={x.label} role="radio" aria-checked={diff === x.d} className={diff === x.d ? 'on' : ''} onClick={() => setDiff(x.d)}>{x.label}</button>
+          ))}
+        </div>
+        <div className="row">
+          <button className="btn ghost" onClick={onHome}>Zur Startseite</button>
+          <button className="btn primary" onClick={() => onAgain(diff)}>Noch eine Runde</button>
+        </div>
       </div>
     </div>
   );

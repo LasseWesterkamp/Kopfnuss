@@ -116,6 +116,16 @@ for (const c of countries) {
 }
 // Kartendaten in public kopieren
 fs.copyFileSync('node_modules/world-atlas/countries-110m.json', 'public/data/countries-110m.json');
+// Welt-Puzzles: detailliertere Karte (50m, enthält auch Kleinstaaten) + Länderliste mit Kontinent
+fs.copyFileSync('node_modules/world-atlas/countries-50m.json', 'public/data/countries-50m.json');
+{
+  const atlas50 = read('node_modules/world-atlas/countries-50m.json');
+  const on50 = new Set(atlas50.objects.countries.geometries.map((g) => g.id));
+  const world = countries.filter((c) => c.num && on50.has(c.num) && c.continent)
+    .map((c) => ({ num: c.num, a2: c.a2, name: c.name, continent: c.continent, mapQuestion: onMap.has(c.num) ? 'geo-map-' + c.a2 : null }));
+  fs.writeFileSync('public/data/world-puzzle.json', JSON.stringify({ asOf: geoAsOf, countries: world }));
+  console.log('Welt-Puzzle:', world.length, 'Länder');
+}
 
 // ---------- Politik ----------
 const MONATE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];

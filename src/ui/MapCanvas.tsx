@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { geoAlbersUsa, geoConicConformal, geoMercator, geoPath, type GeoProjection } from 'd3-geo';
+import { geoAlbersUsa, geoConicConformal, geoEqualEarth, geoMercator, geoPath, type GeoProjection } from 'd3-geo';
 import { feature } from 'topojson-client';
 import type { Topology } from 'topojson-specification';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
@@ -7,14 +7,15 @@ import { asset } from '../data';
 
 type Countries = Feature<Geometry, { name: string }>[];
 const cache = new Map<string, Promise<Countries>>();
-/** Weltkarte (key "world") oder Regionenkarte eines Landes (key "de", "us", …) */
+/** Weltkarte ("world" = grob, "world50" = detailliert mit Kleinstaaten) oder Regionenkarte eines Landes ("de", "us", …) */
 function loadMap(key: string): Promise<Countries> {
   if (!cache.has(key)) {
-    const file = key === 'world' ? 'data/countries-110m.json' : `data/regions-${key}.json`;
+    const isWorld = key === 'world' || key === 'world50';
+    const file = key === 'world' ? 'data/countries-110m.json' : key === 'world50' ? 'data/countries-50m.json' : `data/regions-${key}.json`;
     cache.set(key, fetch(asset(file)).then((r) => r.json()).then((t: Topology) => {
-      const obj = key === 'world' ? t.objects.countries : t.objects.r;
+      const obj = isWorld ? t.objects.countries : t.objects.r;
       const fs = (feature(t, obj) as unknown as FeatureCollection<Geometry, { name: string }>).features;
-      return key === 'world' ? fs.filter((f) => f.id !== '010') : fs;
+      return isWorld ? fs.filter((f) => f.id !== '010') : fs; // Antarktis weglassen
     }));
   }
   return cache.get(key)!;
@@ -38,8 +39,21 @@ const BOX: Record<string, [number, number, number, number]> = {
 };
 const W = 800, H = 600;
 
+/** Projektion für ein Welt-Puzzle: passend auf die Länder des Kontinents zugeschnitten */
+function worldProjection(area: string, targets: Countries): GeoProjection {
+  const fc = { type: 'FeatureCollection', features: targets } as any;
+  const ext: [[number, number], [number, number]] = [[10, 10], [W - 10, H - 10]];
+  if (area === 'Welt') return geoEqualEarth().fitExtent(ext, { type: 'Sphere' } as any);
+  if (area === 'Europa') { const [w, s, e, n] = BOX.Europa; return geoMercator().fitExtent(ext, { type: 'MultiPoint', coordinates: [[w, s], [e, n], [w, n], [e, s]] } as any); }
+  // Nordamerika (Aleuten) und Ozeanien (Pazifik) liegen über der Datumsgrenze: Karte drehen
+  const rotate: [number, number] = area === 'Nordamerika' ? [100, 0] : area === 'Ozeanien' ? [-165, 0] : [0, 0];
+  return geoMercator().rotate(rotate).fitExtent(ext, fc);
+}
+
 export interface MapCanvasProps {
   regions: boolean;                         // Regionenkarte eines Landes statt Weltkarte
+  world50?: boolean;                        // detaillierte Weltkarte für Welt-Puzzles (area = Kontinent oder "Welt")
+  targets?: Set<string>;                    // antippbare Gebiete; zu kleine bekommen einen Kreis
   area: string;                             // Ländercode (Regionen) bzw. Kontinent (Weltkarte)
   classFor: (id: string) => string;         // zusätzliche CSS-Klassen pro Gebiet
   onPick?: (id: string) => void;            // Antippen (ohne = nur anzeigen)
@@ -48,17 +62,22 @@ export interface MapCanvasProps {
 }
 
 /** Gemeinsame Kartenanzeige mit Zoom (Buttons, Mausrad) und Verschieben (Ziehen). Tippen ohne Ziehen = Auswahl. */
-export function MapCanvas({ regions, area, classFor, onPick, resetKey, focus }: MapCanvasProps) {
+export function MapCanvas({ regions, world50, targets, area, classFor, onPick, resetKey, focus }: MapCanvasProps) {
   const [countries, setCountries] = useState<Countries | null>(null);
   const [vb, setVb] = useState({ x: 0, y: 0, w: W, h: H });
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number; vb: typeof vb; moved: boolean } | null>(null);
 
-  const mapKey = regions ? area : 'world';
+  const mapKey = world50 ? 'world50' : regions ? area : 'world';
   useEffect(() => { setCountries(null); loadMap(mapKey).then(setCountries); }, [mapKey]);
   useEffect(() => { setVb({ x: 0, y: 0, w: W, h: H }); }, [resetKey]);
 
   const path = useMemo(() => {
+    if (world50) {
+      if (!countries) return null;
+      const t = countries.filter((f) => targets?.has(String(f.id)));
+      return geoPath(worldProjection(area, t.length ? t : countries));
+    }
     if (regions) {
       if (!countries) return null;
       return geoPath(regionProjection(area).fitExtent([[10, 10], [W - 10, H - 10]], { type: 'FeatureCollection', features: countries } as any));
@@ -66,7 +85,18 @@ export function MapCanvas({ regions, area, classFor, onPick, resetKey, focus }: 
     const [w, s, e, n] = BOX[area] ?? [-180, -60, 180, 80];
     const proj = geoMercator().fitExtent([[8, 8], [W - 8, H - 8]], { type: 'MultiPoint', coordinates: [[w, s], [e, n], [w, n], [e, s]] } as any);
     return geoPath(proj);
-  }, [area, regions, countries]);
+  }, [area, regions, world50, countries, targets]);
+
+  // Kleine Zielgebiete (auf der ganzen Karte < 6 px) bekommen einen antippbaren Kreis
+  const markers = useMemo(() => {
+    if (!countries || !path || !targets) return [];
+    return countries.filter((f) => targets.has(String(f.id))).flatMap((f) => {
+      const [[x0, y0], [x1, y1]] = path.bounds(f);
+      if (!isFinite(x0) || Math.max(x1 - x0, y1 - y0) >= 6) return [];
+      const [cx, cy] = path.centroid(f);
+      return isFinite(cx) ? [{ id: String(f.id), cx, cy }] : [];
+    });
+  }, [countries, path, targets]);
 
   // Sehr kleine markierte Gebiete (z.B. Basel-Stadt, Bremen) automatisch heranzoomen
   useEffect(() => {
@@ -122,8 +152,12 @@ export function MapCanvas({ regions, area, classFor, onPick, resetKey, focus }: 
           const sw = { strokeWidth: 0.6 * (vb.w / W) };
           if (f.id === undefined) return <path key={'x' + idx} d={path(f) ?? ''} className="land" style={sw} />;
           const id = String(f.id);
-          return <path key={id} data-id={id} d={path(f) ?? ''} className={('land ' + classFor(id)).trim()} style={sw} />;
+          const pickable = !targets || targets.has(id);
+          return <path key={id} data-id={pickable ? id : undefined} d={path(f) ?? ''} className={('land ' + (pickable ? classFor(id) : 'inactive')).trim()} style={sw} />;
         })}
+        {markers.map((m) => (
+          <circle key={'m' + m.id} data-id={m.id} cx={m.cx} cy={m.cy} r={7 * (vb.w / W)} className={('marker ' + classFor(m.id)).trim()} style={{ strokeWidth: 1.2 * (vb.w / W) }} />
+        ))}
       </svg>
       <div className="map-zoom">
         <button className="icon-btn" aria-label="Vergrößern" onClick={() => zoom(0.6)}>+</button>

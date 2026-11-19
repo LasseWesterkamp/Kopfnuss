@@ -1,6 +1,7 @@
 import type { TopicId } from '../core/types';
 import { DAILY_GOAL } from '../core/streak';
 import { isDue } from '../core/srs';
+import { isMistake } from '../core/mistakes';
 import { TOPIC_NAMES } from '../core/badges';
 import { useApp } from '../state';
 
@@ -9,8 +10,9 @@ export const TOPIC_ICONS: Record<TopicId, string> = {
 };
 export const TOPIC_ORDER: TopicId[] = ['geografie', 'flaggen', 'regionen', 'geschichte', 'bilder', 'politik', 'fauna', 'flora', 'wissenschaft'];
 
-export function Home({ onDaily, onTopic, onMix }: { onDaily: () => void; onTopic: (t: TopicId) => void; onMix: () => void }) {
+export function Home({ onDaily, onTopic, onMix, onMistakes }: { onDaily: () => void; onTopic: (t: TopicId) => void; onMix: () => void; onMistakes: () => void }) {
   const { streak, level, questions, progress, today } = useApp();
+  const mistakes = questions ? questions.filter((q) => isMistake(progress.cards[q.id])).length : 0;
   const due = questions?.filter((q) => isDue(progress.cards[q.id], today)).length ?? 0;
   const pct = Math.min(1, streak.todayCount / DAILY_GOAL);
   const R = 52, C = 2 * Math.PI * R;
@@ -46,7 +48,11 @@ export function Home({ onDaily, onTopic, onMix }: { onDaily: () => void; onTopic
         <span className="btn-sub">10 Fragen{due ? ` · ${Math.min(due, 6)} Wiederholungen fällig` : ''}</span>
       </button>
 
-      <h3 className="section-title">Üben nach Thema</h3>
+      {mistakes > 0 && (
+        <button className="teaser card mistake-card" onClick={onMistakes}>❗ <strong>{mistakes}</strong> offene Fehler im Fehlerkasten <span className="muted">›</span></button>
+      )}
+
+      <h3 className="section-title">Themen</h3>
       <div className="topics">
         {TOPIC_ORDER.map((t) => {
           const n = questions?.filter((q) => q.topic === t).length ?? 0;

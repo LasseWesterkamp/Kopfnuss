@@ -4,7 +4,7 @@ import { computeStreak, bestStreak, DAILY_GOAL } from './streak';
 import { review, INTERVALS } from './srs';
 import { xpFor, yearScore, orderScore, levelFromXp } from './scoring';
 import { emptyProgress, recordAnswer, mergeProgress, dayCounts, totalXp, totals } from './progress';
-import { buildSession, targetDifficulty, matchesFilter } from './selection';
+import { buildSession, targetDifficulty, matchesFilter, againOptions } from './selection';
 import type { Question, Progress } from './types';
 
 const G = DAILY_GOAL;
@@ -360,7 +360,7 @@ describe('Gruppenbeitritt: Einladungscode und -link', () => {
 });
 
 import { matchScore, matchCorrect } from './scoring';
-import { startPuzzle, tap, next, isDone, summary, currentTarget, isBetter, MAX_TRIES } from './puzzle';
+import { startPuzzle, tap, next, isDone, summary, currentTarget, isBetter, MAX_TRIES, showHint, bestKey, bestOf } from './puzzle';
 
 describe('Zuordnungsspiel', () => {
   it('alles richtig', () => { expect(matchScore([0, 1, 2, 3])).toBe(1); expect(matchCorrect(1)).toBe(true); });
@@ -471,5 +471,99 @@ describe('Frage melden', () => {
   it('Daten an die Datenbank: gekürzt und bereinigt, ohne Nutzer-ID aus dem Client', () => {
     const p = reportPayload({ id: 'geo-cap-de', prompt: 'Was ist die Hauptstadt von Deutschland?' }, '  Bonn war früher Hauptstadt  ');
     expect(p).toEqual({ question_id: 'geo-cap-de', frage: 'Was ist die Hauptstadt von Deutschland?', nachricht: 'Bonn war früher Hauptstadt' });
+  });
+});
+
+import { isMistake, groupMistakes, mistakeIds } from './mistakes';
+import { review as rev } from './srs';
+
+describe('Fehlerkasten', () => {
+  const t = '2026-11-20';
+  const card = (...answers: boolean[]) => answers.reduce<ReturnType<typeof rev> | undefined>((c, ok) => rev(c, ok, t), undefined);
+  it('nie beantwortet oder immer richtig = kein Fehler', () => {
+    expect(isMistake(undefined)).toBe(false);
+    expect(isMistake(card(true))).toBe(false);
+    expect(isMistake(card(true, true, true))).toBe(false);
+  });
+  it('einmal falsch = Fehler', () => {
+    expect(isMistake(card(false))).toBe(true);
+    expect(isMistake(card(true, true, false))).toBe(true);
+  });
+  it('falsch, dann einmal richtig = noch Fehler; zweimal richtig = behoben', () => {
+    expect(isMistake(card(false, true))).toBe(true);
+    expect(isMistake(card(false, true, true))).toBe(false);
+  });
+  it('behoben und wieder falsch = wieder Fehler', () => expect(isMistake(card(false, true, true, false))).toBe(true));
+  it('Gruppierung nach Thema und Kategorie, größte zuerst', () => {
+    const qs: Question[] = [q('g1', 'geografie', 1, 'hauptstaedte'), q('g2', 'geografie', 1, 'hauptstaedte'), q('g3', 'geografie', 1, 'gewaesser'),
+      q('f1', 'flaggen', 1, 'europa'), q('ok', 'flaggen', 1, 'europa')];
+    const p = emptyProgress();
+    for (const id of ['g1', 'g2', 'g3', 'f1']) p.cards[id] = card(false)!;
+    p.cards.ok = card(true)!;
+    const g = groupMistakes(qs, p);
+    expect(g.map((x) => [x.topic, x.count])).toEqual([['geografie', 3], ['flaggen', 1]]);
+    expect(g[0].cats.map((c) => [c.cat, c.ids.length])).toEqual([['hauptstaedte', 2], ['gewaesser', 1]]);
+    expect(mistakeIds(qs, p, { topic: 'geografie', cat: 'hauptstaedte' }).sort()).toEqual(['g1', 'g2']);
+    expect(mistakeIds(qs, p)).not.toContain('ok');
+  });
+  it('"Fehler üben" enthält nur Fehler', () => {
+    const qs: Question[] = Array.from({ length: 30 }, (_, i) => q('x' + i, 'geografie', 1, 'hauptstaedte'));
+    const p = emptyProgress();
+    for (let i = 0; i < 4; i++) p.cards['x' + i] = card(false)!;
+    const ids = new Set(mistakeIds(qs, p));
+    const s = buildSession(qs.filter((x) => ids.has(x.id)), p, t, { size: 10, maxReviews: 10 }, () => 0.3);
+    expect(s.length).toBe(4);
+    expect(s.every((x) => ids.has(x.id))).toBe(true);
+  });
+});
+
+describe('Puzzle-Schwierigkeit', () => {
+  const isos = ['A', 'B', 'C'];
+  const rng = () => 0;
+  it('Schwer: ein Fehlversuch deckt auf', () => {
+    const s = startPuzzle(isos, rng, 'schwer');
+    const t = currentTarget(s)!;
+    expect(tap(s, isos.find((i) => i !== t)!).outcome).toBe('aufgedeckt');
+  });
+  it('Leicht: 5 Versuche, Hinweis ab dem 2. Fehler', () => {
+    let s = startPuzzle(isos, rng, 'leicht');
+    const t = currentTarget(s)!, w = isos.find((i) => i !== t)!;
+    s = tap(s, w).state; expect(showHint(s)).toBe(false);
+    s = tap(s, w).state; expect(showHint(s)).toBe(true);
+    s = tap(s, w).state; s = tap(s, w).state;
+    const r = tap(s, w); expect(r.outcome).toBe('aufgedeckt'); expect(r.state.errors).toBe(5);
+  });
+  it('Mittel bleibt bei 3 Versuchen ohne Hinweis', () => {
+    let s = startPuzzle(isos, rng, 'mittel');
+    const t = currentTarget(s)!, w = isos.find((i) => i !== t)!;
+    s = tap(s, w).state; s = tap(s, w).state; expect(showHint(s)).toBe(false);
+    expect(tap(s, w).outcome).toBe('aufgedeckt');
+  });
+  it('Bestzeiten getrennt pro Stufe, alte Einträge zählen als Mittel', () => {
+    const b = { de: { ms: 9000, errors: 1 }, 'de:schwer': { ms: 20000, errors: 0 } };
+    expect(bestOf(b, 'de', 'mittel')?.ms).toBe(9000);
+    expect(bestOf(b, 'de', 'schwer')?.ms).toBe(20000);
+    expect(bestOf(b, 'de', 'leicht')).toBeNull();
+    expect(bestKey('welt-europa', 'leicht')).toBe('welt-europa:leicht');
+  });
+});
+
+describe('Nochmal spielen mit Schwierigkeitswahl', () => {
+  const today = '2026-11-20';
+  const pool: Question[] = [1, 2, 3].flatMap((d) => Array.from({ length: 15 }, (_, i) => q(`d${d}-${i}`, 'geografie', d as 1 | 2 | 3, d === 3 ? 'hauptstaedte' : 'karte')));
+  const prev = { topics: ['geografie' as const], difficulty: 1 as const, cats: ['geografie/hauptstaedte'] };
+  it('Schwer gewählt: nur Stufe 3, Auswahl bleibt', () => {
+    const o = againOptions(prev, 3);
+    expect(o).toEqual({ topics: ['geografie'], difficulty: 3, cats: ['geografie/hauptstaedte'] });
+    expect(buildSession(pool, emptyProgress(), today, o, () => 0.4).every((x) => x.difficulty === 3)).toBe(true);
+  });
+  it('Adaptiv gewählt: keine feste Stufe mehr', () => {
+    const o = againOptions({ topics: ['geografie'], difficulty: 2 }, undefined);
+    expect('difficulty' in o).toBe(false);
+    expect(new Set(buildSession(pool, emptyProgress(), today, o, () => 0.4).map((x) => x.difficulty)).size).toBeGreaterThan(0);
+  });
+  it('Fehlerliste bleibt beim Wechsel der Stufe erhalten', () => {
+    const o = againOptions({ ids: ['d1-0', 'd3-1'] }, 3);
+    expect(buildSession(pool, emptyProgress(), today, o, () => 0.4).map((x) => x.id)).toEqual(['d3-1']);
   });
 });

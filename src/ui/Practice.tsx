@@ -3,11 +3,12 @@ import type { Difficulty, TopicId } from '../core/types';
 import { TOPIC_NAMES } from '../core/badges';
 import { MASTERED_BOX } from '../core/srs';
 import { targetDifficulty, matchesFilter } from '../core/selection';
-import { SUBTOPICS, REGION_LAENDER } from '../core/subtopics';
+import { SUBTOPICS } from '../core/subtopics';
 import { CATEGORIES, catKey } from '../core/categories';
 import { useApp } from '../state';
 import { loadLast, saveLast, loadMixes, saveMix, deleteMix, MAX_MIXES, type Mix, type Selection } from '../selectionStore';
-import { loadBest, fmtTime } from './Puzzle';
+import { PuzzleTiles } from './TopicPage';
+import { WORLD_PUZZLES, REGION_PUZZLES } from '../core/puzzles';
 import { TOPIC_ICONS, TOPIC_ORDER } from './Home';
 
 export function Practice({ initial, onStart, onPuzzle }: {
@@ -20,7 +21,6 @@ export function Practice({ initial, onStart, onPuzzle }: {
   const [mixes, setMixes] = useState<Mix[]>(loadMixes);
   const [mixName, setMixName] = useState('');
   const [naming, setNaming] = useState(false);
-  const best = loadBest();
   useEffect(() => saveLast(sel), [sel]);
 
   const { topics, cats, subs, diff } = sel;
@@ -94,15 +94,10 @@ export function Practice({ initial, onStart, onPuzzle }: {
       <h2>Üben</h2>
 
       <h3 className="section-title">Spiele: Karten-Puzzle</h3>
-      <div className="games">
-        {REGION_LAENDER.map((l) => (
-          <button key={l.id} className="game card" onClick={() => onPuzzle(l.id)} disabled={!questions}>
-            <span className="game-icon">{l.icon}</span>
-            <span className="game-name">{l.name}</span>
-            <span className="muted small">{best[l.id] ? `Bestzeit ${fmtTime(best[l.id].ms)}` : l.hint}</span>
-          </button>
-        ))}
-      </div>
+      <p className="small muted sub-hint">Länder der Welt</p>
+      <PuzzleTiles list={WORLD_PUZZLES} onPuzzle={onPuzzle} />
+      <p className="small muted sub-hint">Bundesländer, Kantone & Bundesstaaten</p>
+      <PuzzleTiles list={REGION_PUZZLES} onPuzzle={onPuzzle} />
 
       {mixes.length > 0 && (
         <>

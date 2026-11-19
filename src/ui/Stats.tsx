@@ -4,6 +4,7 @@ import { addDays, diffDays, isoWeek } from '../core/dates';
 import { dayCounts, totals } from '../core/progress';
 import { DAILY_GOAL } from '../core/streak';
 import { MASTERED_BOX } from '../core/srs';
+import { isMistake } from '../core/mistakes';
 import { TOPIC_NAMES, evaluateBadges } from '../core/badges';
 import { useApp } from '../state';
 import { TOPIC_ICONS, TOPIC_ORDER } from './Home';
@@ -48,9 +49,10 @@ function Heatmap() {
   );
 }
 
-export function Stats() {
+export function Stats({ onMistakes }: { onMistakes: () => void }) {
   const { progress, questions, streak, level, xp } = useApp();
   const t = useMemo(() => totals(progress), [progress]);
+  const mistakeCount = useMemo(() => (questions ?? []).filter((q) => isMistake(progress.cards[q.id])).length, [questions, progress]);
   const rows = TOPIC_ORDER.map((topic) => {
     const s = t.topics[topic] ?? { answered: 0, correct: 0 };
     const qs = questions?.filter((q) => q.topic === topic) ?? [];
@@ -80,6 +82,8 @@ export function Stats() {
           </div>
         </>
       )}
+
+      <button className="teaser card mistake-card" onClick={onMistakes}>📕 Fehlerkasten: <strong>{mistakeCount}</strong> offene Fehler, nach Thema und Kategorie <span className="muted">›</span></button>
 
       <h3 className="section-title">Themen</h3>
       <div className="card topic-stats">

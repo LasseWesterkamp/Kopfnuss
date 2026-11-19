@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import type { Difficulty, Question, TopicId } from './core/types';
-import { buildSession } from './core/selection';
+import type { Question, TopicId } from './core/types';
+import { buildSession, againOptions, type SessionOptions } from './core/selection';
 import { AppProvider, useApp } from './state';
 import { Home } from './ui/Home';
 import { Practice } from './ui/Practice';
@@ -9,63 +9,100 @@ import { Stats } from './ui/Stats';
 import { SettingsView, Credits } from './ui/SettingsView';
 import { Groups, GroupTeaser } from './ui/Groups';
 import { Puzzle } from './ui/Puzzle';
-import type { Selection } from './selectionStore';
+import { TopicPage, type StartOpts } from './ui/TopicPage';
+import { Mistakes } from './ui/Mistakes';
+import { puzzleByKey } from './core/puzzles';
 import { codeFromUrl } from './core/invite';
+import { useRouter, hashToRoute, type Route } from './router';
 
-type View =
-  | { name: 'home' } | { name: 'practice'; topic: TopicId | null } | { name: 'stats' } | { name: 'settings' } | { name: 'credits' } | { name: 'groups' } | { name: 'puzzle'; cc: string }
-  | { name: 'quiz'; questions: Question[]; daily: boolean; again: () => void; key: number }
-  | { name: 'summary'; s: SessionSummary; again: () => void };
+/** Laufende Runde bzw. Ergebnis (nur im Speicher, nicht in der Adresse) */
+interface RoundData { opts: SessionOptions; daily: boolean; label?: string; questions?: Question[]; summary?: SessionSummary; key: number }
 
 function Shell() {
   const { questions, progress, today, loadError, streak } = useApp();
-  // Einladungslink ?beitreten=CODE öffnet direkt den Gruppen-Tab mit vorausgefülltem Code
+  // Einladungslink ?beitreten=CODE öffnet direkt die Gruppen mit vorausgefülltem Code
   const [joinCode] = useState<string | null>(() => {
     const c = codeFromUrl(location.search);
-    if (location.search.includes('beitreten')) history.replaceState(null, '', location.pathname);
+    if (location.search.includes('beitreten')) history.replaceState(null, '', location.pathname + location.hash);
     return c;
   });
-  const [view, setView] = useState<View>(joinCode ? { name: 'groups' } : { name: 'home' });
+  const { route, data, go, back } = useRouter<RoundData>(joinCode ? { name: 'groups' } : hashToRoute(location.hash));
 
-  const start = (opts: { topics?: TopicId[]; difficulty?: Difficulty; subs?: string[]; cats?: string[] }, daily: boolean) => {
+  const startRound = (opts: SessionOptions, daily: boolean, label?: string, replace = false) => {
     if (!questions) return;
-    const qs = buildSession(questions, progress, today, daily ? {} : { ...opts, maxReviews: 5 });
-    const again = () => start(opts, daily);
-    setView({ name: 'quiz', questions: qs, daily, again, key: Date.now() });
+    const qs = buildSession(questions, progress, today, daily ? {} : { maxReviews: 5, ...opts });
+    go({ name: 'quiz' }, { opts, daily, label, questions: qs, key: Date.now() }, { replace });
   };
-  const nav = (name: 'home' | 'practice' | 'stats' | 'settings' | 'groups') => setView(name === 'practice' ? { name, topic: null } : { name } as View);
-  const inQuiz = view.name === 'quiz' || view.name === 'puzzle';
+  const start = (o: StartOpts) => {
+    const { label, ...opts } = o;
+    // Fehler üben: alle offenen Fehler dürfen in die Runde (nicht auf 5 Wiederholungen begrenzt)
+    startRound(o.ids ? { ...opts, maxReviews: 10 } : opts, false, label);
+  };
+  const nav = (r: Route) => go(r);
+  const tab = (name: 'home' | 'practice' | 'groups' | 'stats' | 'settings') => nav({ name } as Route);
+  const inQuiz = route.name === 'quiz' || route.name === 'puzzle';
+  const activeTab = route.name === 'credits' ? 'settings' : route.name === 'topic' || route.name === 'summary' || route.name === 'mistakes' ? 'home' : route.name;
+
+  let page: JSX.Element | null = null;
+  switch (route.name) {
+    case 'home':
+      page = (<>
+        <GroupTeaser onOpen={() => tab('groups')} />
+        <Home onDaily={() => startRound({}, true, 'Tages-Challenge')} onTopic={(t) => nav({ name: 'topic', id: t })}
+          onMix={() => startRound({}, false, 'Zufallsmix')} onMistakes={() => nav({ name: 'mistakes' })} />
+      </>);
+      break;
+    case 'topic':
+      page = <TopicPage topic={route.id as TopicId} onStart={start} onPuzzle={(key) => nav({ name: 'puzzle', key })} onMistakes={() => nav({ name: 'mistakes' })} />;
+      break;
+    case 'mistakes':
+      page = <Mistakes onStart={start} />;
+      break;
+    case 'practice':
+      page = <Practice initial={null} onStart={(s) => startRound({ topics: s.topics, difficulty: s.diff, subs: s.subs, cats: s.cats }, false, 'Üben')}
+        onPuzzle={(key) => nav({ name: 'puzzle', key })} />;
+      break;
+    case 'puzzle': {
+      const def = puzzleByKey(route.key);
+      page = def ? <Puzzle key={def.key} def={def} onExit={back} /> : <div className="card">Dieses Puzzle gibt es nicht.</div>;
+      break;
+    }
+    case 'groups': page = <Groups joinCode={joinCode} onGoSettings={() => tab('settings')} />; break;
+    case 'stats': page = <Stats onMistakes={() => nav({ name: 'mistakes' })} />; break;
+    case 'settings': page = <SettingsView onCredits={() => nav({ name: 'credits' })} />; break;
+    case 'credits': page = <Credits onBack={back} />; break;
+    case 'quiz':
+      page = data?.questions ? (
+        <Quiz key={data.key} questions={data.questions} daily={data.daily} onExit={back}
+          onDone={(s) => go({ name: 'summary' }, { ...data, summary: s }, { replace: true })} />
+      ) : <p className="muted">Diese Runde ist beendet.</p>;
+      break;
+    case 'summary':
+      page = data?.summary ? (
+        <Summary s={data.summary} label={data.label} currentDifficulty={data.opts.difficulty} onHome={() => tab('home')}
+          onAgain={(d) => startRound(againOptions(data.opts, d), data.daily && d === undefined, data.label, true)} />
+      ) : <p className="muted">Kein Ergebnis vorhanden.</p>;
+      break;
+  }
 
   return (
     <div className={'app' + (inQuiz ? ' in-quiz' : '')}>
       {!inQuiz && (
         <header className="topbar">
-          <h1 onClick={() => nav('home')}><span className="logo">🌰</span> Kopfnuss</h1>
+          {route.name !== 'home' && ['topic', 'mistakes', 'credits', 'summary'].includes(route.name)
+            ? <button className="icon-btn back-btn" aria-label="Zurück" onClick={back}>←</button> : null}
+          <h1 onClick={() => tab('home')}><span className="logo">🌰</span> Kopfnuss</h1>
           <span className="topbar-streak" title="Serie">{streak.current > 0 ? '🔥' : '🌑'} {streak.current}</span>
         </header>
       )}
       <main>
         {loadError && <div className="card error">Fragen konnten nicht geladen werden: {loadError}</div>}
-        {view.name === 'home' && <GroupTeaser onOpen={() => nav('groups')} />}
-        {view.name === 'groups' && <Groups joinCode={joinCode} onGoSettings={() => nav('settings')} />}
-        {view.name === 'home' && <Home onDaily={() => start({}, true)} onTopic={(t) => setView({ name: 'practice', topic: t })} onMix={() => start({}, false)} />}
-        {view.name === 'practice' && <Practice initial={view.topic} onStart={(s: Selection) => start({ topics: s.topics, difficulty: s.diff, subs: s.subs, cats: s.cats }, false)}
-          onPuzzle={(cc) => setView({ name: 'puzzle', cc })} />}
-        {view.name === 'puzzle' && <Puzzle key={view.cc} cc={view.cc} onExit={() => setView({ name: 'practice', topic: null })} />}
-        {view.name === 'stats' && <Stats />}
-        {view.name === 'settings' && <SettingsView onCredits={() => setView({ name: 'credits' })} />}
-        {view.name === 'credits' && <Credits onBack={() => setView({ name: 'settings' })} />}
-        {view.name === 'quiz' && (
-          <Quiz key={view.key} questions={view.questions} daily={view.daily}
-            onExit={() => setView({ name: 'home' })}
-            onDone={(s) => setView({ name: 'summary', s, again: view.again })} />
-        )}
-        {view.name === 'summary' && <Summary s={view.s} onHome={() => setView({ name: 'home' })} onAgain={view.again} />}
+        {page}
       </main>
       {!inQuiz && (
         <nav className="tabbar">
           {([['home', '🏠', 'Start'], ['practice', '🎯', 'Üben'], ['groups', '🏆', 'Gruppen'], ['stats', '📊', 'Statistik'], ['settings', '⚙️', 'Mehr']] as const).map(([n, icon, label]) => (
-            <button key={n} className={view.name === n || (n === 'settings' && view.name === 'credits') || (n === 'home' && view.name === 'summary') ? 'on' : ''} onClick={() => nav(n)}>
+            <button key={n} className={activeTab === n ? 'on' : ''} onClick={() => tab(n)}>
               <span aria-hidden>{icon}</span><span>{label}</span>
             </button>
           ))}

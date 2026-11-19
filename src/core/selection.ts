@@ -70,6 +70,7 @@ function roundRobin(groups: Question[][], n: number): Question[] {
 export interface SessionOptions {
   topics?: TopicId[];          // leer/undefined = alle
   subs?: string[];             // Unterthemen (Epoche/Land); leer = alle. Gilt nur für Fragen, die ein Unterthema haben.
+  ids?: string[];              // nur diese Fragen (z.B. Fehlerkasten)
   cats?: string[];             // Kategorien als "thema/kategorie". Gilt nur für Themen, bei denen mind. eine Kategorie gewählt ist.
   difficulty?: Difficulty;     // fest statt adaptiv
   size?: number;
@@ -82,7 +83,8 @@ export interface SessionOptions {
  */
 export function buildSession(all: Question[], p: Progress, today: string, opts: SessionOptions = {}, rng: Rng = Math.random): Question[] {
   const size = opts.size ?? SESSION_SIZE;
-  const pool = all.filter((q) => matchesFilter(q, opts));
+  const only = opts.ids ? new Set(opts.ids) : null;
+  const pool = all.filter((q) => (!only || only.has(q.id)) && matchesFilter(q, opts));
   const picked: Question[] = dueQuestions(pool, p, today).slice(0, opts.maxReviews ?? MAX_REVIEWS_IN_DAILY);
   const used = new Set(picked.map((q) => q.id));
 
@@ -98,4 +100,13 @@ export function buildSession(all: Question[], p: Progress, today: string, opts: 
     picked.push(...rest.slice(0, size - picked.length));
   }
   return shuffle(picked, rng);
+}
+
+/**
+ * Optionen für „Nochmal spielen“ mit gewählter Schwierigkeit.
+ * difficulty undefined = adaptiv. Auswahl (Themen, Kategorien, Fehlerliste …) bleibt erhalten.
+ */
+export function againOptions(prev: SessionOptions, difficulty: Difficulty | undefined): SessionOptions {
+  const { difficulty: _old, ...rest } = prev;
+  return difficulty ? { ...rest, difficulty } : rest;
 }

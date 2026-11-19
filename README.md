@@ -11,7 +11,8 @@ Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-A
 - Spaced Repetition: Falsche Fragen kommen morgen wieder, richtige nach 1, 3, 7, 21 und 60 Tagen
 - Adaptive Schwierigkeit pro Thema (Stufe 1 bis 3)
 - Fragetypen: Multiple Choice, Bild erkennen, Land auf der Karte antippen, markiertes Gebiet benennen, Flagge zu Name, Flaggen zuordnen, Jahreszahl schätzen, Ereignisse sortieren
-- Karten-Puzzle für Deutschland, Österreich, Schweiz, USA, Kanada, Australien mit Bestzeit
+- Karten-Puzzle für Deutschland, Österreich, Schweiz, USA, Kanada, Australien und für alle Kontinente bzw. die ganze Welt, mit Bestzeit pro Schwierigkeitsstufe
+- Eigene Seite pro Thema, Fehlerkasten mit gezieltem Fehler-Üben, Schwierigkeitswahl bei „Nochmal“
 - Feine Auswahl beim Üben: Thema › Kategorie (+ Land/Epoche), gespeicherte Mischungen
 - Erklärung, Quelle und „Frage melden“ nach jeder Antwort
 - XP, Level, Abzeichen, Statistik pro Thema mit Schwächen
@@ -229,6 +230,17 @@ Danach `node scripts/build-questions.mjs` und **die Ausgabe „PRÜFEN“ abarbe
 | **Karten-Puzzle**: alle Gebiete eines Landes nacheinander antippen, mit Zeit, Fehlern und Bestzeit | Üben › Spiele | Treffer im ersten Versuch = richtige Antwort auf die Kartenfrage dieses Gebiets (zählt für Tagesziel, XP, Wiederholung). Nach 3 Fehlversuchen wird das Gebiet gelb gezeigt und gilt als falsch. |
 
 Gleich aussehende Flaggen (Wien, Salzburg, Vorarlberg) kommen nie gemeinsam in einer Frage vor.
+
+## Navigation, Themenseiten & Fehlerkasten
+
+- **Themenseiten:** Tippen auf ein Thema der Startseite öffnet dessen eigene Seite (`#/thema/geografie` usw.): Fortschritt, „Ganzes Thema üben“, jede Kategorie mit Balken und eigenem Start-Knopf, bei Regionen/Geschichte zusätzlich Länder bzw. Epochen, passende Puzzles und die offenen Fehler des Themas.
+- **Zurück:** Alle Seiten haben eine eigene Adresse (`router.ts`). Wischen bzw. Zurück-Taste gehen eine Seite zurück; aus dem Ergebnis einer Runde geht es zurück auf die Seite davor, nicht in die beendete Runde.
+- **Fehlerkasten** (`#/fehler`, Karte auf der Startseite und in der Statistik): Eine Frage ist ein Fehler, sobald sie einmal falsch beantwortet wurde, und gilt nach **2 richtigen Antworten hintereinander** als behoben (`src/core/mistakes.ts`, berechnet aus dem vorhandenen Lernstand). Gruppiert nach Thema › Kategorie mit Anzahl; „Fehler üben“ für alle, pro Thema und pro Kategorie; jede Gruppe aufklappbar mit Frage und richtiger Antwort.
+- **Nochmal spielen:** Nach jeder Runde Schwierigkeit wählen (Adaptiv, Leicht, Mittel, Schwer). Auswahl (Thema, Kategorie, Fehlerliste) bleibt erhalten. Nach jedem Puzzle: Leicht (5 Versuche, Hinweis nach 2 Fehlern), Mittel (3 Versuche), Schwer (1 Versuch); Bestzeiten getrennt pro Stufe (alte Bestzeiten zählen als Mittel).
+
+## Welt-Puzzles
+
+Europa, Afrika, Asien, Nordamerika (mit Mittelamerika & Karibik), Südamerika, Ozeanien und „Ganze Welt“ (Profi). Karte: Natural Earth 50m (`public/data/countries-50m.json`), Länderliste `public/data/world-puzzle.json` (vom Build-Skript aus `data/countries.json` erzeugt, Kontinent wie dort). Länder, die auf der Karte kleiner als 6 Pixel sind (Vatikan, Monaco, Karibikinseln …), bekommen einen antippbaren Kreis. Nicht dabei: Tuvalu (fehlt in der Karte). Treffer im ersten Versuch zählen als richtige Antwort auf die Kartenfrage „Wo liegt …?“ des Landes, sofern es eine gibt.
 
 ## Kategorien & Auswahl beim Üben
 

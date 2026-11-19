@@ -1,8 +1,15 @@
 // Karten-Puzzle: Alle Regionen eines Landes nacheinander antippen.
 // Wertung: Wer eine Region im ERSTEN Versuch trifft, hat die Kartenfrage dieser Region richtig beantwortet.
-// Jeder Fehlversuch zählt als Fehler; nach MAX_TRIES Fehlversuchen wird die Region gezeigt und gilt als falsch.
+// Jeder Fehlversuch zählt als Fehler; nach maxTries Fehlversuchen wird die Region gezeigt und gilt als falsch.
 
-export const MAX_TRIES = 3;
+export type PuzzleLevel = 'leicht' | 'mittel' | 'schwer';
+/** Versuche pro Gebiet und ab welchem Fehlversuch ein Hinweis kommt (Infinity = nie) */
+export const LEVELS: Record<PuzzleLevel, { tries: number; hintAfter: number; label: string; info: string }> = {
+  leicht: { tries: 5, hintAfter: 2, label: 'Leicht', info: '5 Versuche, Hinweis nach 2 Fehlern' },
+  mittel: { tries: 3, hintAfter: Infinity, label: 'Mittel', info: '3 Versuche' },
+  schwer: { tries: 1, hintAfter: Infinity, label: 'Schwer', info: '1 Versuch' },
+};
+export const MAX_TRIES = LEVELS.mittel.tries;
 
 export interface PuzzleState {
   order: string[];                  // Reihenfolge der gesuchten Regionen (ISO-Codes)
@@ -10,13 +17,15 @@ export interface PuzzleState {
   tries: number;                    // Fehlversuche bei der aktuellen Region
   results: Record<string, boolean>; // ISO -> im ersten Versuch richtig?
   errors: number;                   // Fehlversuche gesamt
-  revealed: string | null;          // nach MAX_TRIES Fehlversuchen aufgedeckte Region
+  revealed: string | null;          // nach maxTries Fehlversuchen aufgedeckte Region
+  maxTries: number;
+  hintAfter: number;
 }
 
-export function startPuzzle(isos: string[], rng: () => number = Math.random): PuzzleState {
+export function startPuzzle(isos: string[], rng: () => number = Math.random, level: PuzzleLevel = 'mittel'): PuzzleState {
   const order = [...isos];
   for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
-  return { order, index: 0, tries: 0, results: {}, errors: 0, revealed: null };
+  return { order, index: 0, tries: 0, results: {}, errors: 0, revealed: null, maxTries: LEVELS[level].tries, hintAfter: LEVELS[level].hintAfter };
 }
 
 export const currentTarget = (s: PuzzleState): string | null => s.order[s.index] ?? null;
@@ -34,11 +43,14 @@ export function tap(s: PuzzleState, iso: string): { state: PuzzleState; outcome:
     return { state: { ...s, index: s.index + 1, tries: 0, results: { ...s.results, [target]: ok } }, outcome: 'richtig', finished: { iso: target, ok } };
   }
   const tries = s.tries + 1;
-  if (tries >= MAX_TRIES) {
+  if (tries >= s.maxTries) {
     return { state: { ...s, tries, errors: s.errors + 1, revealed: target, results: { ...s.results, [target]: false } }, outcome: 'aufgedeckt', finished: { iso: target, ok: false } };
   }
   return { state: { ...s, tries, errors: s.errors + 1 }, outcome: 'falsch' };
 }
+
+/** Soll die gesuchte Region als Hinweis hervorgehoben werden? (Stufe Leicht) */
+export const showHint = (s: PuzzleState) => !s.revealed && s.tries >= s.hintAfter;
 
 /** Nach dem Aufdecken weiter zur nächsten Region */
 export function next(s: PuzzleState): PuzzleState {
@@ -56,3 +68,8 @@ export function isBetter(prev: { ms: number; errors: number } | null, cur: { ms:
   if (!prev) return true;
   return cur.ms < prev.ms || (cur.ms === prev.ms && cur.errors < prev.errors);
 }
+
+/** Bestzeiten pro Puzzle und Stufe. Alte Einträge (ohne Stufe) gelten als „mittel“. */
+export type BestTimes = Record<string, { ms: number; errors: number }>;
+export const bestKey = (puzzle: string, level: PuzzleLevel) => (level === 'mittel' ? puzzle : `${puzzle}:${level}`);
+export const bestOf = (b: BestTimes, puzzle: string, level: PuzzleLevel) => b[bestKey(puzzle, level)] ?? null;
