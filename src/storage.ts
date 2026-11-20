@@ -1,6 +1,7 @@
 // Lokale Speicherung (localStorage). Wird beim Start gelesen und nach jeder Änderung geschrieben.
 import type { Progress, Settings } from './core/types';
 import { emptyProgress } from './core/progress';
+import { initialPrefs, type RoundPrefs } from './core/round';
 
 const K_PROGRESS = 'kopfnuss.progress.v1';
 const K_SETTINGS = 'kopfnuss.settings.v1';
@@ -19,9 +20,14 @@ export const loadProgress = (): Progress => {
 };
 export const saveProgress = (p: Progress) => write(K_PROGRESS, p);
 
-export const defaultSettings: Settings = { theme: 'system', timer: false };
+export const defaultSettings: Settings = { theme: 'system' };
 export const loadSettings = (): Settings => ({ ...defaultSettings, ...(read<Settings>(K_SETTINGS) ?? {}) });
 export const saveSettings = (s: Settings) => write(K_SETTINGS, s);
+
+/** Zuletzt im Startmenü gewählte Stufe und Zeit (global, nur auf diesem Gerät) */
+const K_ROUND = 'kopfnuss.round.v1';
+export const loadRoundPrefs = (): RoundPrefs => initialPrefs(read<Partial<RoundPrefs>>(K_ROUND), !!read<Settings>(K_SETTINGS)?.timer);
+export const saveRoundPrefs = (p: RoundPrefs) => write(K_ROUND, p);
 
 /** Zufällige Geräte-ID (für korrektes Zusammenzählen beim Sync) */
 export function deviceId(): string {

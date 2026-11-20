@@ -101,5 +101,6 @@ export interface Progress {
 
 export interface Settings {
   theme: 'system' | 'light' | 'dark';
-  timer: boolean;
+  /** veraltet: früher globaler Zeitdruck. Wird nur noch als Vorgabe fürs Startmenü gelesen. */
+  timer?: boolean;
 }

@@ -42,10 +42,7 @@ export function SettingsView({ onCredits }: { onCredits: () => void }) {
               onClick={() => setSettings({ ...settings, theme: t })}>{t === 'system' ? 'Automatisch' : t === 'light' ? 'Hell' : 'Dunkel'}</button>
           ))}
         </div>
-        <label className="switch-row">
-          <span>Zeitdruck (25 Sekunden pro Frage)</span>
-          <input type="checkbox" checked={settings.timer} onChange={(e) => setSettings({ ...settings, timer: e.target.checked })} />
-        </label>
+        <p className="small muted">Schwierigkeit und Zeitdruck wählst du jetzt direkt vor jeder Runde im Startmenü.</p>
       </div>
 
       <h3 className="section-title">Konto & Sync</h3>

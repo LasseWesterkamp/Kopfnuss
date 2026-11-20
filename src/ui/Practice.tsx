@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { Difficulty, TopicId } from '../core/types';
+import type { TopicId } from '../core/types';
 import { TOPIC_NAMES } from '../core/badges';
 import { MASTERED_BOX } from '../core/srs';
 import { targetDifficulty, matchesFilter } from '../core/selection';
@@ -23,7 +23,7 @@ export function Practice({ initial, onStart, onPuzzle }: {
   const [naming, setNaming] = useState(false);
   useEffect(() => saveLast(sel), [sel]);
 
-  const { topics, cats, subs, diff } = sel;
+  const { topics, cats, subs } = sel;
   const toggle = (list: string[], v: string) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
   const toggleTopic = (t: TopicId) => setSel((s) => {
     const on = s.topics.includes(t);
@@ -35,7 +35,7 @@ export function Practice({ initial, onStart, onPuzzle }: {
   // Unterthemen nur gültig, wenn ihr Thema gewählt ist
   const validSubs = subs.filter((id) => topics.some((t) => SUBTOPICS[t]?.items.some((i) => i.id === id)));
   const validCats = cats.filter((c) => topics.includes(c.split('/')[0] as TopicId));
-  const filter = { topics, difficulty: diff, subs: validSubs, cats: validCats };
+  const filter = { topics, subs: validSubs, cats: validCats };
   const pool = (questions ?? []).filter((q) => matchesFilter(q, filter));
   const mastered = (qs: typeof pool) => qs.filter((q) => (progress.cards[q.id]?.box ?? 0) >= MASTERED_BOX).length;
 
@@ -105,7 +105,7 @@ export function Practice({ initial, onStart, onPuzzle }: {
           <div className="mixes">
             {mixes.map((m) => (
               <div key={m.name} className="mix card">
-                <button className="mix-load" onClick={() => setSel({ topics: m.topics, cats: m.cats, subs: m.subs, diff: m.diff })}>
+                <button className="mix-load" onClick={() => setSel({ topics: m.topics, cats: m.cats, subs: m.subs })}>
                   <strong>{m.name}</strong><span className="muted small">{describe(m)}</span>
                 </button>
                 <button className="icon-btn mix-del" aria-label={`Mischung ${m.name} löschen`} onClick={() => setMixes(deleteMix(m.name))}>✕</button>
@@ -130,22 +130,15 @@ export function Practice({ initial, onStart, onPuzzle }: {
         })}
       </div>
 
-      <div className="seg" role="radiogroup" aria-label="Schwierigkeit">
-        {([undefined, 1, 2, 3] as (Difficulty | undefined)[]).map((d) => (
-          <button key={String(d)} role="radio" aria-checked={diff === d} className={diff === d ? 'on' : ''} onClick={() => setSel((s) => ({ ...s, diff: d }))}>
-            {d === undefined ? 'Adaptiv' : d === 1 ? 'Leicht' : d === 2 ? 'Mittel' : 'Schwer'}
-          </button>
-        ))}
-      </div>
-      <button className="btn primary big wide" disabled={pool.length === 0} onClick={() => onStart({ topics, cats: validCats, subs: validSubs, diff })}>
-        Los geht’s <span className="btn-sub">{pool.length} Fragen im Pool</span>
+      <button className="btn primary big wide" disabled={pool.length === 0} onClick={() => onStart({ topics, cats: validCats, subs: validSubs })}>
+        Los geht’s <span className="btn-sub">{pool.length} Fragen · Stufe & Zeit im nächsten Schritt</span>
       </button>
 
       <div className="save-mix">
         {!naming ? (
           <button className="btn ghost wide" onClick={() => setNaming(true)} disabled={!topics.length}>☆ Auswahl als Mischung speichern</button>
         ) : (
-          <form className="inline" onSubmit={(e) => { e.preventDefault(); if (mixName.trim()) { setMixes(saveMix({ name: mixName.trim(), topics, cats: validCats, subs: validSubs, diff })); setMixName(''); setNaming(false); } }}>
+          <form className="inline" onSubmit={(e) => { e.preventDefault(); if (mixName.trim()) { setMixes(saveMix({ name: mixName.trim(), topics, cats: validCats, subs: validSubs })); setMixName(''); setNaming(false); } }}>
             <input className="text" autoFocus maxLength={30} placeholder="Name, z.B. Ost-Flaggen" value={mixName} onChange={(e) => setMixName(e.target.value)} />
             <button className="btn primary" disabled={!mixName.trim()}>Speichern</button>
           </form>

@@ -73,6 +73,7 @@ export interface SessionOptions {
   ids?: string[];              // nur diese Fragen (z.B. Fehlerkasten)
   cats?: string[];             // Kategorien als "thema/kategorie". Gilt nur für Themen, bei denen mind. eine Kategorie gewählt ist.
   difficulty?: Difficulty;     // fest statt adaptiv
+  timeLimit?: number;          // Sekunden pro Frage, 0/undefined = ohne Zeitdruck (für die Auswahl ohne Bedeutung)
   size?: number;
   maxReviews?: number;
 }

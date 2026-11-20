@@ -378,3 +378,22 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .fold-head::before { content: '▸'; color: var(--muted); transition: transform .15s; }
 .fold[open] > .fold-head::before { transform: rotate(90deg); }
 .fold > .card { margin-top: 6px; }
+/* Startmenü vor einer Runde: Handy von unten, PC als Dialog */
+.sheet-backdrop { position: fixed; inset: 0; z-index: 50; background: rgb(0 0 0 / .4); display: flex; align-items: flex-end; justify-content: center; animation: fade .15s; }
+.sheet { width: 100%; max-width: 560px; background: var(--surface); border-radius: 20px 20px 0 0; padding: 8px 16px calc(16px + env(safe-area-inset-bottom)); box-shadow: 0 -8px 30px rgb(0 0 0 / .2); transition: transform .2s; animation: up .2s; }
+.sheet-grip { width: 40px; height: 5px; border-radius: 3px; background: var(--line); margin: 4px auto 10px; }
+.sheet-title { margin: 0; font-size: 1.3rem; }
+.sheet-h { margin: 16px 0 8px; font-size: .95rem; }
+.sheet-note { margin: 6px 2px 0; min-height: 1.2em; }
+.sheet-start { margin-top: 18px; }
+.seg-counts button { display: flex; flex-direction: column; align-items: center; gap: 2px; line-height: 1.15; }
+.seg-counts button:disabled { opacity: .4; cursor: not-allowed; }
+.seg-n { font-size: .72rem; color: var(--muted); font-weight: 400; }
+.time-chip { margin-left: 8px; }
+@media (min-width: 700px) {
+  .sheet-backdrop { align-items: center; }
+  .sheet { border-radius: 20px; padding: 16px 24px 24px; }
+  .sheet-grip { display: none; }
+}
+@keyframes up { from { transform: translateY(40px); opacity: .5; } }
+@keyframes fade { from { opacity: 0; } }

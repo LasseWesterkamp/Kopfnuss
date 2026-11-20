@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Difficulty, Question } from '../core/types';
 import { xpFor, DAILY_BONUS } from '../core/scoring';
+import { withTimeBonus } from '../core/round';
 import { DAILY_GOAL } from '../core/streak';
 import { TOPIC_NAMES } from '../core/badges';
 import { useApp } from '../state';
@@ -12,30 +13,29 @@ import { FlagPickView, MatchView } from './FlagViews';
 import { YearView } from './YearView';
 import { OrderView } from './OrderView';
 
-const TIME_LIMIT = 25;
 
 export interface SessionSummary { answers: { q: Question; r: Result; xp: number }[]; daily: boolean; bonus: number; streakCompletedNow: boolean }
 
-export function Quiz({ questions, daily, onExit, onDone }: { questions: Question[]; daily: boolean; onExit: () => void; onDone: (s: SessionSummary) => void }) {
-  const { answer, bonus, settings, streak } = useApp();
+export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone }: { questions: Question[]; daily: boolean; timeLimit?: number; onExit: () => void; onDone: (s: SessionSummary) => void }) {
+  const { answer, bonus, streak } = useApp();
   const [i, setI] = useState(0);
   const [result, setResult] = useState<Result | null>(null);
   const [log, setLog] = useState<SessionSummary['answers']>([]);
-  const [left, setLeft] = useState(TIME_LIMIT);
+  const [left, setLeft] = useState(timeLimit);
   const wasDone = useRef(streak.todayDone);
   const q = questions[i];
 
   // Timer (optional): Zeit abgelaufen = falsch
   useEffect(() => {
-    if (!settings.timer || result) return;
-    setLeft(TIME_LIMIT);
+    if (!timeLimit || result) return;
+    setLeft(timeLimit);
     const t = setInterval(() => setLeft((l) => l - 1), 1000);
     return () => clearInterval(t);
-  }, [i, settings.timer, result]);
-  useEffect(() => { if (settings.timer && left <= 0 && !result) submit({ ok: false, score: 0, given: '__timeout' }); }, [left]);
+  }, [i, timeLimit, result]);
+  useEffect(() => { if (timeLimit && left <= 0 && !result) submit({ ok: false, score: 0, given: '__timeout' }); }, [left]);
 
   function submit(r: Result) {
-    const xp = xpFor(r.score, q.difficulty);
+    const xp = withTimeBonus(xpFor(r.score, q.difficulty), timeLimit);
     setResult(r);
     answer(q, r.ok, xp);
     setLog((l) => [...l, { q, r, xp }]);
@@ -57,7 +57,7 @@ export function Quiz({ questions, daily, onExit, onDone }: { questions: Question
         </div>
         <span className="muted small">{i + 1}/{questions.length}</span>
       </header>
-      {settings.timer && !result && <div className={'timer' + (left <= 5 ? ' urgent' : '')}>⏱ {Math.max(0, left)} s</div>}
+      {timeLimit > 0 && !result && <div className={'timer' + (left <= 5 ? ' urgent' : '')}>⏱ {Math.max(0, left)} s</div>}
 
       <div className="q-meta">
         <span className={'chip topic-' + q.topic}>{TOPIC_NAMES[q.topic]}</span>
@@ -105,8 +105,8 @@ export function Quiz({ questions, daily, onExit, onDone }: { questions: Question
 
 const DIFFS: { d: Difficulty | undefined; label: string }[] = [{ d: undefined, label: 'Adaptiv' }, { d: 1, label: 'Leicht' }, { d: 2, label: 'Mittel' }, { d: 3, label: 'Schwer' }];
 
-export function Summary({ s, label, currentDifficulty, onHome, onAgain }: {
-  s: SessionSummary; label?: string; currentDifficulty?: Difficulty; onHome: () => void; onAgain: (d: Difficulty | undefined) => void;
+export function Summary({ s, label, currentDifficulty, timeLimit, onHome, onAgain }: {
+  s: SessionSummary; label?: string; currentDifficulty?: Difficulty; timeLimit?: number; onHome: () => void; onAgain: (d: Difficulty | undefined) => void;
 }) {
   const { streak, level } = useApp();
   const [diff, setDiff] = useState<Difficulty | undefined>(currentDifficulty);
@@ -129,7 +129,7 @@ export function Summary({ s, label, currentDifficulty, onHome, onAgain }: {
       </ul>
       <p className="small muted">Falsch beantwortete Fragen kommen morgen wieder. Richtige erst nach 1, 3, 7, 21 und 60 Tagen.</p>
       <div className="again card">
-        <p className="small"><strong>Nochmal spielen</strong>{label ? ` (${label})` : ''}: Schwierigkeit wählen</p>
+        <p className="small"><strong>Nochmal spielen</strong>{label ? ` (${label})` : ''}: Schwierigkeit wählen{timeLimit ? <span className="chip time-chip">⏱ {timeLimit} s pro Frage</span> : null}</p>
         <div className="seg" role="radiogroup" aria-label="Schwierigkeit">
           {DIFFS.map((x) => (
             <button key={x.label} role="radio" aria-checked={diff === x.d} className={diff === x.d ? 'on' : ''} onClick={() => setDiff(x.d)}>{x.label}</button>

@@ -637,3 +637,31 @@ describe('Zwei-Finger-Zoom', () => {
     expect(r.x).toBe(150); // 50 px Bildschirm nach rechts = 50 Karteneinheiten nach links (Maßstab 400/400)
   });
 });
+
+import { withTimeBonus, initialPrefs, countByDifficulty, usableDifficulty } from './round';
+describe('Startmenü: Stufe und Zeitdruck', () => {
+  it('Zeitdruck-Bonus: 10 s +20 %, 20 s +10 %, 30 s und aus nichts', () => {
+    expect(withTimeBonus(30, 10)).toBe(36);
+    expect(withTimeBonus(30, 20)).toBe(33);
+    expect(withTimeBonus(30, 30)).toBe(30);
+    expect(withTimeBonus(30, 0)).toBe(30);
+    expect(withTimeBonus(30, undefined)).toBe(30);
+    expect(withTimeBonus(0, 10)).toBe(0);
+  });
+  it('alter globaler Zeitdruck-Schalter wird als 30 s übernommen, gemerkte Wahl hat Vorrang', () => {
+    expect(initialPrefs(null, true)).toEqual({ difficulty: undefined, time: 30 });
+    expect(initialPrefs(null, false)).toEqual({ difficulty: undefined, time: 0 });
+    expect(initialPrefs({ difficulty: 3, time: 10 }, true)).toEqual({ difficulty: 3, time: 10 });
+    expect(initialPrefs({ difficulty: 7 as any, time: 15 as any }, false)).toEqual({ difficulty: undefined, time: 0 });
+  });
+  it('zählt Fragen pro Stufe in der Auswahl; leere Stufe fällt auf Adaptiv zurück', () => {
+    const all = [q('a', 'flaggen', 1, 'europa'), q('b', 'flaggen', 3, 'europa'), q('c', 'flaggen', 3, 'asien'), q('d', 'geografie', 2)];
+    const c = countByDifficulty(all, { topics: ['flaggen'], cats: ['flaggen/europa'] });
+    expect(c).toEqual({ all: 2, 1: 1, 2: 0, 3: 1 });
+    expect(usableDifficulty(2, c)).toBeUndefined();
+    expect(usableDifficulty(3, c)).toBe(3);
+  });
+  it('Nochmal behält Zeitdruck und Auswahl, ändert nur die Stufe', () => {
+    expect(againOptions({ topics: ['flaggen'], difficulty: 3, timeLimit: 10 }, 1)).toEqual({ topics: ['flaggen'], difficulty: 1, timeLimit: 10 });
+  });
+});

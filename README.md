@@ -18,7 +18,8 @@ Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-A
 - XP, Level, Abzeichen, Statistik pro Thema mit Schwächen
 - Sync zwischen Handy und PC (Supabase, Login mit E-Mail + Passwort)
 - Gruppen mit Rangliste (Woche, Serie, Gesamt), Beitritt per Einladungscode oder -link
-- Dark Mode (automatisch oder manuell), optionaler Zeitdruck
+- Startmenü vor jeder Runde: Schwierigkeit und Zeitdruck (aus/10/20/30 s) wählen
+- Dark Mode (automatisch oder manuell)
 
 ---
 
@@ -251,6 +252,17 @@ Fragen zum selben Fakt werden zu einer Lernkarte zusammengefasst (über die Frag
 
 Europa, Afrika, Asien, Nordamerika (mit Mittelamerika & Karibik), Südamerika, Ozeanien und „Ganze Welt“ (Profi). Karte: Natural Earth 50m (`public/data/countries-50m.json`), Länderliste `public/data/world-puzzle.json` (vom Build-Skript aus `data/countries.json` erzeugt, Kontinent wie dort). **Zoomen:** mit zwei Fingern (auseinander/zusammen, dabei auch verschieben), Mausrad oder + / −; verschieben durch Ziehen. Die Rechnung steckt in `src/core/pinch.ts`. **Performance:** Die Kartenpfade werden einmal berechnet (`useMemo`). Beim Ziehen und Zoomen setzt `MapCanvas` nur das `viewBox`-Attribut direkt am SVG (einmal pro Bildschirmbild über `requestAnimationFrame`), React rendert erst am Ende der Geste neu. Linienbreiten bleiben dank `vector-effect: non-scaling-stroke` konstant, ohne neu zu rechnen. Ergebnis mit 4x gedrosselter CPU: vorher ca. 4 fps mit Hängern bis 780 ms, jetzt 60 fps ohne Bild über 50 ms. Länder, die auf der Karte kleiner als 6 Pixel sind (Vatikan, Monaco, Karibikinseln …), bekommen einen antippbaren Kreis. Nicht dabei: Tuvalu (fehlt in der Karte). Dänemark fehlt in der Wikidata-Abfrage (dort als „Königreich Dänemark“ ohne ISO-Code) und wird über `extra` in `data/countries-overrides.json` ergänzt. Treffer im ersten Versuch zählen als richtige Antwort auf die Kartenfrage „Wo liegt …?“ des Landes, sofern es eine gibt.
 
+## Startmenü: Schwierigkeit & Zeitdruck
+
+Wer im Tab **Üben** auf „Los geht’s“, auf einer Themenseite auf ▶ bzw. „Ganzes Thema üben“ oder auf einer Lernseite auf „Abfragen“ tippt, bekommt erst ein kleines Menü (Handy: fährt von unten hoch, PC: Dialog in der Mitte, Code: `src/ui/StartSheet.tsx`, Logik: `src/core/round.ts`).
+
+- **Schwierigkeit:** Adaptiv (passt sich deinem Stand an), Leicht, Mittel, Schwer, jeweils mit Anzahl der Fragen in dieser Auswahl. Stufen ohne Fragen sind ausgegraut, unter 10 Fragen gibt es einen Hinweis (die Runde wird kürzer).
+- **Zeitdruck pro Frage:** Aus, 10 s (+20 % XP), 20 s (+10 % XP), 30 s. Zeit abgelaufen = falsch, Lösung wird gezeigt, Frage landet im Fehlerkasten. Gilt nur für Fragerunden, nicht für Puzzles.
+- **Gemerkt:** Die letzte Wahl gilt global und ist beim nächsten Mal vorausgefüllt (`localStorage` `kopfnuss.round.v1`, nur auf diesem Gerät). Wer früher in den Einstellungen „Zeitdruck“ an hatte, startet mit 30 s. Der Schalter in den Einstellungen ist weg.
+- **Ohne Menü:** Tages-Challenge (für alle gleich, ohne Uhr), Zufallsmix und „Fehler üben“ starten direkt.
+- **Schließen:** Zurück bzw. Wischgeste, nach unten wischen, Escape oder daneben tippen. Das Menü ist ein eigener Verlaufseintrag, Zurück schließt also nur das Menü.
+- **Nochmal** auf der Ergebnisseite behält Auswahl und Zeitdruck, die Stufe lässt sich dort ändern.
+
 ## Kategorien & Auswahl beim Üben
 
 Jede Frage hat **genau eine Kategorie** im Feld `cat`. Die erlaubten Kategorien pro Thema stehen in `data/kategorien.json`. `node scripts/build-questions.mjs` bricht mit Fehlermeldung ab, wenn eine Frage keine oder eine unbekannte Kategorie hat.
@@ -280,7 +292,7 @@ Beim Üben kann man nach Epochen filtern und sieht pro Epoche, wie viele Fragen 
 - **Tagesziel:** 10 beantwortete Fragen pro Tag (Europe/Berlin, Tageswechsel um Mitternacht).
 - **Serie:** Zählt erledigte Tage hintereinander. Heute noch nicht erledigt bricht die Serie nicht.
 - **Freeze:** Pro Kalenderwoche wird ein verpasster Tag automatisch eingefroren. Er rettet die Serie, zählt aber nicht als Tag. Zwei verpasste Tage in derselben Woche beenden die Serie.
-- **Punkte:** 10 XP × Schwierigkeit pro richtiger Antwort, Teilpunkte bei Jahreszahl und Reihenfolge, 25 Bonus-XP für die Tages-Challenge.
+- **Punkte:** 10 XP × Schwierigkeit pro richtiger Antwort, Teilpunkte bei Jahreszahl und Reihenfolge, 25 Bonus-XP für die Tages-Challenge, +20 % bzw. +10 % bei Zeitdruck 10 s bzw. 20 s.
 
 ## Projektstruktur
 
