@@ -182,6 +182,10 @@ In der App unter **Gruppen**: Anzeigename festlegen, dann Gruppe anlegen oder mi
 
 Die App lädt die eigenen Ranglistenwerte nach jedem Sync hoch (Tabelle `stats`).
 
+**Anzeigename ändern:** unter **Mehr → Einstellungen → Anzeigename** oder auf der Gruppen-Seite unter „Dein Anzeigename“. Beide Felder schreiben in dieselbe Tabelle `profiles`, die Rangliste zeigt den neuen Namen sofort. Ohne Konto steht dort nur der Hinweis, sich erst anzumelden.
+
+**Gruppenmenü:** „Weitere Gruppe beitreten oder anlegen“ und „Dein Anzeigename“ sind einklappbar. Bist du in mindestens einer Gruppe, sind beide zu, damit die Rangliste oben steht. Ohne Gruppe (oder beim Öffnen eines Einladungslinks) ist Beitreten/Anlegen offen. Der Zustand wird nicht gespeichert.
+
 ### Gruppen testen
 
 - `npm test` prüft Rangliste (Wochengrenze in deutscher Zeit, Platzierung) und Einladungscodes/-links.
@@ -245,7 +249,7 @@ Fragen zum selben Fakt werden zu einer Lernkarte zusammengefasst (über die Frag
 
 ## Welt-Puzzles
 
-Europa, Afrika, Asien, Nordamerika (mit Mittelamerika & Karibik), Südamerika, Ozeanien und „Ganze Welt“ (Profi). Karte: Natural Earth 50m (`public/data/countries-50m.json`), Länderliste `public/data/world-puzzle.json` (vom Build-Skript aus `data/countries.json` erzeugt, Kontinent wie dort). **Zoomen:** mit zwei Fingern (auseinander/zusammen, dabei auch verschieben), Mausrad oder + / −; verschieben durch Ziehen. Die Rechnung steckt in `src/core/pinch.ts`. Länder, die auf der Karte kleiner als 6 Pixel sind (Vatikan, Monaco, Karibikinseln …), bekommen einen antippbaren Kreis. Nicht dabei: Tuvalu (fehlt in der Karte). Dänemark fehlt in der Wikidata-Abfrage (dort als „Königreich Dänemark“ ohne ISO-Code) und wird über `extra` in `data/countries-overrides.json` ergänzt. Treffer im ersten Versuch zählen als richtige Antwort auf die Kartenfrage „Wo liegt …?“ des Landes, sofern es eine gibt.
+Europa, Afrika, Asien, Nordamerika (mit Mittelamerika & Karibik), Südamerika, Ozeanien und „Ganze Welt“ (Profi). Karte: Natural Earth 50m (`public/data/countries-50m.json`), Länderliste `public/data/world-puzzle.json` (vom Build-Skript aus `data/countries.json` erzeugt, Kontinent wie dort). **Zoomen:** mit zwei Fingern (auseinander/zusammen, dabei auch verschieben), Mausrad oder + / −; verschieben durch Ziehen. Die Rechnung steckt in `src/core/pinch.ts`. **Performance:** Die Kartenpfade werden einmal berechnet (`useMemo`). Beim Ziehen und Zoomen setzt `MapCanvas` nur das `viewBox`-Attribut direkt am SVG (einmal pro Bildschirmbild über `requestAnimationFrame`), React rendert erst am Ende der Geste neu. Linienbreiten bleiben dank `vector-effect: non-scaling-stroke` konstant, ohne neu zu rechnen. Ergebnis mit 4x gedrosselter CPU: vorher ca. 4 fps mit Hängern bis 780 ms, jetzt 60 fps ohne Bild über 50 ms. Länder, die auf der Karte kleiner als 6 Pixel sind (Vatikan, Monaco, Karibikinseln …), bekommen einen antippbaren Kreis. Nicht dabei: Tuvalu (fehlt in der Karte). Dänemark fehlt in der Wikidata-Abfrage (dort als „Königreich Dänemark“ ohne ISO-Code) und wird über `extra` in `data/countries-overrides.json` ergänzt. Treffer im ersten Versuch zählen als richtige Antwort auf die Kartenfrage „Wo liegt …?“ des Landes, sofern es eine gibt.
 
 ## Kategorien & Auswahl beim Üben
 

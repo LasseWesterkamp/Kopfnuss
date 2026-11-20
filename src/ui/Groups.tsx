@@ -73,16 +73,21 @@ export function Groups({ joinCode, onGoSettings }: { joinCode: string | null; on
       )}
       {current && <GroupView key={current.id} group={current} today={today} onChanged={load} setMsg={setMsg} />}
 
-      <h3 className="section-title">{groups.length ? 'Weitere Gruppe' : 'Los geht’s'}</h3>
+      {/* Einklappbar: zu, sobald man in einer Gruppe ist; offen ohne Gruppe oder mit Einladungscode */}
+      <details key={'join' + (groups.length > 0)} className="fold" open={!groups.length || (!!joinCode && !groups.some((x) => x.invite_code === joinCode))}>
+        <summary className="fold-head">{groups.length ? 'Weitere Gruppe beitreten oder anlegen' : 'Gruppe beitreten oder anlegen'}</summary>
       <div className="card join-create">
         <JoinForm key={groups.length} initial={joinCode && !groups.some((x) => x.invite_code === joinCode) ? joinCode : ''} busy={busy} onJoin={(code) => run(async () => { const gr = await g.joinGroup(code); setActive(gr.id); await syncNow(); }, 'Beigetreten!')} />
         <div className="or">oder</div>
         <CreateForm busy={busy} onCreate={(n) => run(async () => { const gr = await g.createGroup(n); setActive(gr.id); await syncNow(); }, 'Gruppe angelegt. Teile jetzt den Code!')} />
       </div>
+      </details>
       {msg && <p className="small msg">{msg}</p>}
 
-      <h3 className="section-title">Dein Anzeigename</h3>
-      <div className="card"><NameForm initial={name} busy={busy} onSave={(n) => run(() => g.setDisplayName(n), 'Name geändert.')} /></div>
+      <details className="fold">
+        <summary className="fold-head">Dein Anzeigename: <strong>{name}</strong></summary>
+        <div className="card"><NameForm key={name} initial={name} busy={busy} onSave={(n) => run(() => g.setDisplayName(n), 'Name geändert.')} /></div>
+      </details>
     </div>
   );
 }
@@ -206,4 +211,29 @@ export function GroupTeaser({ onOpen }: { onOpen: () => void }) {
   }, [session]);
   if (!line) return null;
   return <button className="teaser card" onClick={onOpen}>🏆 {line} <span className="muted">›</span></button>;
+}
+
+/** Anzeigename in den Einstellungen (dieselbe Tabelle profiles wie die Gruppen-Seite) */
+export function DisplayNameSetting() {
+  const { session } = useApp();
+  const [name, setName] = useState<string | null | undefined>(undefined);
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<string | null>(null);
+  useEffect(() => {
+    if (!session || !syncConfigured) return;
+    g.getDisplayName().then(setName).catch((e) => { setMsg(e.message); setName(null); });
+  }, [session]);
+  if (!syncConfigured) return null;
+  if (!session) return <p className="muted small">Zum Festlegen eines Anzeigenamens erst oben anmelden. Der Name erscheint in den Ranglisten deiner Gruppen.</p>;
+  if (name === undefined) return <p className="muted small">Anzeigename lädt …</p>;
+  return (
+    <div className="display-name">
+      <NameForm key={name ?? ''} initial={name ?? ''} busy={busy} onSave={async (n) => {
+        setBusy(true); setMsg(null);
+        try { await g.setDisplayName(n); setName(n.trim()); setMsg('Gespeichert. Der neue Name steht sofort in allen Ranglisten.'); }
+        catch (e: any) { setMsg(e.message); } finally { setBusy(false); }
+      }} />
+      {msg && <p className="small msg">{msg}</p>}
+    </div>
+  );
 }

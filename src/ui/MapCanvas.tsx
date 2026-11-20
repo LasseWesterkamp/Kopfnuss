@@ -68,10 +68,30 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
   const [vb, setVb] = useState({ x: 0, y: 0, w: W, h: H });
   const svgRef = useRef<SVGSVGElement>(null);
   const drag = useRef<{ x: number; y: number; vb: typeof vb; moved: boolean } | null>(null);
+  // Aktueller Ausschnitt. Während einer Geste wird nur das viewBox-Attribut direkt gesetzt (kein Neuaufbau der Karte),
+  // erst am Ende der Geste wird der Zustand einmal übernommen.
+  const liveVb = useRef(vb);
+  const frame = useRef<number | null>(null);
+  /** Ausschnitt von außen setzen (Zurücksetzen, Fokus): Live-Wert und Zustand gemeinsam */
+  const setView = (v: typeof vb) => { liveVb.current = v; setVb(v); };
+  const applyVb = (v: typeof vb) => {
+    liveVb.current = v;
+    if (frame.current !== null) return;
+    frame.current = requestAnimationFrame(() => {
+      frame.current = null;
+      const c = liveVb.current;
+      svgRef.current?.setAttribute('viewBox', `${c.x} ${c.y} ${c.w} ${c.h}`);
+    });
+  };
+  const commitVb = () => {
+    if (frame.current !== null) { cancelAnimationFrame(frame.current); frame.current = null; }
+    setVb({ ...liveVb.current });
+  };
+  useEffect(() => () => { if (frame.current !== null) cancelAnimationFrame(frame.current); }, []);
 
   const mapKey = world50 ? 'world50' : regions ? area : 'world';
   useEffect(() => { setCountries(null); loadMap(mapKey).then(setCountries); }, [mapKey]);
-  useEffect(() => { setVb({ x: 0, y: 0, w: W, h: H }); }, [resetKey]);
+  useEffect(() => { setView({ x: 0, y: 0, w: W, h: H }); }, [resetKey]);
 
   const path = useMemo(() => {
     if (world50) {
@@ -87,6 +107,11 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
     const proj = geoMercator().fitExtent([[8, 8], [W - 8, H - 8]], { type: 'MultiPoint', coordinates: [[w, s], [e, n], [w, n], [e, s]] } as any);
     return geoPath(proj);
   }, [area, regions, world50, countries, targets]);
+
+  // Umrisse nur einmal pro Karte/Projektion berechnen (vorher bei jeder Bewegung für alle Länder neu)
+  const shapes = useMemo(() => (countries && path
+    ? countries.map((f, idx) => ({ key: f.id === undefined ? 'x' + idx : String(f.id), id: f.id === undefined ? null : String(f.id), d: path(f) ?? '' }))
+    : []), [countries, path]);
 
   // Kleine Zielgebiete (auf der ganzen Karte < 6 px) bekommen einen antippbaren Kreis
   const markers = useMemo(() => {
@@ -106,20 +131,25 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
     if (!f) return;
     const [[x0, y0], [x1, y1]] = path.bounds(f);
     const size = Math.max(x1 - x0, y1 - y0);
-    if (size > 60) { setVb({ x: 0, y: 0, w: W, h: H }); return; }
+    if (size > 60) { setView({ x: 0, y: 0, w: W, h: H }); return; }
     const w = Math.min(W, Math.max(W / 6, size * 8)), h = (w / W) * H;
     const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
-    setVb({ x: Math.max(0, Math.min(W - w, cx - w / 2)), y: Math.max(0, Math.min(H - h, cy - h / 2)), w, h });
+    setView({ x: Math.max(0, Math.min(W - w, cx - w / 2)), y: Math.max(0, Math.min(H - h, cy - h / 2)), w, h });
   }, [focus, countries, path]);
 
   const MIN_W = W / 16; // stärkster Zoom (für Kleinstaaten und Schweizer Kantone)
-  const zoom = (f: number, cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2) => {
-    const w = Math.max(MIN_W, Math.min(W, vb.w * f));
+  const zoomTo = (f: number, cx?: number, cy?: number) => {
+    const v = liveVb.current;
+    cx ??= v.x + v.w / 2; cy ??= v.y + v.h / 2;
+    const w = Math.max(MIN_W, Math.min(W, v.w * f));
     const h = (w / W) * H;
-    const x = Math.max(0, Math.min(W - w, cx - ((cx - vb.x) * w) / vb.w));
-    const y = Math.max(0, Math.min(H - h, cy - ((cy - vb.y) * h) / vb.h));
-    setVb({ x, y, w, h });
+    const x = Math.max(0, Math.min(W - w, cx - ((cx - v.x) * w) / v.w));
+    const y = Math.max(0, Math.min(H - h, cy - ((cy - v.y) * h) / v.h));
+    return { x, y, w, h };
   };
+  const zoom = (f: number, cx?: number, cy?: number) => { liveVb.current = zoomTo(f, cx, cy); commitVb(); };
+  // Mausrad: flüssig per viewBox, Zustand erst nach kurzer Pause übernehmen
+  const wheelCommit = useRef<number>();
 
   // Finger/Maus: ein Finger = antippen oder ziehen, zwei Finger = zoomen und verschieben
   const pointers = useRef(new Map<number, { x: number; y: number }>());
@@ -138,7 +168,7 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
 
   const startPinch = () => {
     const [[a, p1], [b, p2]] = [...pointers.current.entries()];
-    pinch.current = { vb, a, b, s1: { ...p1 }, s2: { ...p2 } };
+    pinch.current = { vb: liveVb.current, a, b, s1: { ...p1 }, s2: { ...p2 } };
     gestureHadPinch.current = true;
     drag.current = null;
   };
@@ -147,7 +177,7 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
     if (pointers.current.size === 1) {
       gestureHadPinch.current = false;
-      drag.current = { x: e.clientX, y: e.clientY, vb, moved: false };
+      drag.current = { x: e.clientX, y: e.clientY, vb: liveVb.current, moved: false };
     } else if (pointers.current.size === 2) startPinch();
   };
   const onMove = (e: React.PointerEvent) => {
@@ -157,7 +187,7 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
     if (pc) {
       const c1 = pointers.current.get(pc.a), c2 = pointers.current.get(pc.b);
       if (!c1 || !c2) return;
-      setVb(pinchViewBox(pc.vb, pc.s1, pc.s2, c1, c2, svgRef.current!.getBoundingClientRect(), { w: W, h: H }, MIN_W));
+      applyVb(pinchViewBox(pc.vb, pc.s1, pc.s2, c1, c2, svgRef.current!.getBoundingClientRect(), { w: W, h: H }, MIN_W));
       return;
     }
     const d = drag.current;
@@ -167,7 +197,7 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
     d.moved = true;
     const r = svgRef.current!.getBoundingClientRect();
     const sx = d.vb.w / r.width, sy = d.vb.h / r.height;
-    setVb({ ...d.vb, x: Math.max(0, Math.min(W - d.vb.w, d.vb.x - dx * sx)), y: Math.max(0, Math.min(H - d.vb.h, d.vb.y - dy * sy)) });
+    applyVb({ ...d.vb, x: Math.max(0, Math.min(W - d.vb.w, d.vb.x - dx * sx)), y: Math.max(0, Math.min(H - d.vb.h, d.vb.y - dy * sy)) });
   };
   const endPointer = (e: React.PointerEvent, cancelled: boolean) => {
     pointers.current.delete(e.pointerId);
@@ -175,11 +205,13 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
       pinch.current = null;
       // Ein Finger bleibt liegen: nahtlos weiter verschieben, aber kein Antippen auslösen
       const rest = [...pointers.current.values()][0];
-      if (rest) drag.current = { x: rest.x, y: rest.y, vb, moved: true };
+      if (rest) drag.current = { x: rest.x, y: rest.y, vb: liveVb.current, moved: true };
+      else commitVb();
       return;
     }
     const d = drag.current;
     drag.current = null;
+    if (d?.moved && pointers.current.size === 0) commitVb();
     if (cancelled || !d || d.moved || gestureHadPinch.current || !onPick) return;
     const el = document.elementFromPoint(e.clientX, e.clientY) as SVGElement | null;
     const id = el?.getAttribute?.('data-id');
@@ -189,24 +221,25 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
   const onCancel = (e: React.PointerEvent) => endPointer(e, true);
   const onWheel = (e: React.WheelEvent) => {
     const r = svgRef.current!.getBoundingClientRect();
-    zoom(e.deltaY > 0 ? 1.25 : 0.8, vb.x + ((e.clientX - r.left) / r.width) * vb.w, vb.y + ((e.clientY - r.top) / r.height) * vb.h);
+    const v = liveVb.current;
+    applyVb(zoomTo(e.deltaY > 0 ? 1.25 : 0.8, v.x + ((e.clientX - r.left) / r.width) * v.w, v.y + ((e.clientY - r.top) / r.height) * v.h));
+    clearTimeout(wheelCommit.current);
+    wheelCommit.current = window.setTimeout(commitVb, 200);
   };
 
   if (!countries || !path) return <div className="map-wrap loading">Karte lädt …</div>;
   return (
     <div ref={wrapRef} className={'map-wrap' + (onPick ? '' : ' readonly')}>
-      <svg ref={svgRef} viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`} role="img" aria-label="Karte"
+      <svg ref={svgRef} viewBox={`${liveVb.current.x} ${liveVb.current.y} ${liveVb.current.w} ${liveVb.current.h}`} role="img" aria-label="Karte"
         onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onCancel} onWheel={onWheel}>
         <rect x={-W} y={-H} width={W * 3} height={H * 3} className="sea" />
-        {countries.map((f, idx) => {
-          const sw = { strokeWidth: 0.6 * (vb.w / W) };
-          if (f.id === undefined) return <path key={'x' + idx} d={path(f) ?? ''} className="land" style={sw} />;
-          const id = String(f.id);
+        {shapes.map(({ key, id, d }) => {
+          if (id === null) return <path key={key} d={d} className="land" />;
           const pickable = !targets || targets.has(id);
-          return <path key={id} data-id={pickable ? id : undefined} d={path(f) ?? ''} className={('land ' + (pickable ? classFor(id) : 'inactive')).trim()} style={sw} />;
+          return <path key={key} data-id={pickable ? id : undefined} d={d} className={('land ' + (pickable ? classFor(id) : 'inactive')).trim()} />;
         })}
         {markers.map((m) => (
-          <circle key={'m' + m.id} data-id={m.id} cx={m.cx} cy={m.cy} r={7 * (vb.w / W)} className={('marker ' + classFor(m.id)).trim()} style={{ strokeWidth: 1.2 * (vb.w / W) }} />
+          <circle key={'m' + m.id} data-id={m.id} cx={m.cx} cy={m.cy} r={7 * (vb.w / W)} className={('marker ' + classFor(m.id)).trim()} />
         ))}
       </svg>
       <div className="map-zoom">

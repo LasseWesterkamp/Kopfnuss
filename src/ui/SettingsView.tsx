@@ -4,6 +4,7 @@ import { emptyProgress, mergeProgress } from '../core/progress';
 import { useApp } from '../state';
 import * as sync from '../sync';
 import { REPO_URL } from '../data';
+import { DisplayNameSetting } from './Groups';
 
 export function SettingsView({ onCredits }: { onCredits: () => void }) {
   const { settings, setSettings, progress, replaceProgress, session, syncState, syncNow, questions } = useApp();
@@ -86,6 +87,13 @@ export function SettingsView({ onCredits }: { onCredits: () => void }) {
         )}
         {msg && <p className="small">{msg}</p>}
       </div>
+
+      {sync.syncConfigured && (
+        <>
+          <h3 className="section-title">Anzeigename</h3>
+          <div className="card"><DisplayNameSetting /></div>
+        </>
+      )}
 
       <h3 className="section-title">Daten</h3>
       <div className="card">

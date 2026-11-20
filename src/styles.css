@@ -368,3 +368,13 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .cat-row .start-btn + .start-btn { margin-left: -4px; }
 .learn-h { margin: 0 0 2px; font-weight: 800; font-size: 1.1rem; } .learn-more { margin: 2px 0; }
 .map-wrap svg { touch-action: none; }
+/* Linien bleiben beim Zoomen gleich dick, ohne dass jeder Pfad angefasst werden muss */
+.map-wrap svg .land { vector-effect: non-scaling-stroke; stroke-width: 0.6px; }
+.map-wrap svg .marker { vector-effect: non-scaling-stroke; stroke-width: 1.2px; }
+/* Einklappbare Abschnitte (Gruppen) */
+.fold { margin-top: 16px; }
+.fold-head { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 4px; font-weight: 600; color: var(--text); }
+.fold-head::-webkit-details-marker { display: none; }
+.fold-head::before { content: '▸'; color: var(--muted); transition: transform .15s; }
+.fold[open] > .fold-head::before { transform: rotate(90deg); }
+.fold > .card { margin-top: 6px; }
