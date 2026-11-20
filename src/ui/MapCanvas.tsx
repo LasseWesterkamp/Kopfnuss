@@ -4,6 +4,7 @@ import { feature } from 'topojson-client';
 import type { Topology } from 'topojson-specification';
 import type { Feature, FeatureCollection, Geometry } from 'geojson';
 import { asset } from '../data';
+import { pinchViewBox } from '../core/pinch';
 
 type Countries = Feature<Geometry, { name: string }>[];
 const cache = new Map<string, Promise<Countries>>();
@@ -111,15 +112,54 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
     setVb({ x: Math.max(0, Math.min(W - w, cx - w / 2)), y: Math.max(0, Math.min(H - h, cy - h / 2)), w, h });
   }, [focus, countries, path]);
 
+  const MIN_W = W / 16; // stärkster Zoom (für Kleinstaaten und Schweizer Kantone)
   const zoom = (f: number, cx = vb.x + vb.w / 2, cy = vb.y + vb.h / 2) => {
-    const w = Math.max(W / 8, Math.min(W, vb.w * f));
+    const w = Math.max(MIN_W, Math.min(W, vb.w * f));
     const h = (w / W) * H;
     const x = Math.max(0, Math.min(W - w, cx - ((cx - vb.x) * w) / vb.w));
     const y = Math.max(0, Math.min(H - h, cy - ((cy - vb.y) * h) / vb.h));
     setVb({ x, y, w, h });
   };
-  const onDown = (e: React.PointerEvent) => { drag.current = { x: e.clientX, y: e.clientY, vb, moved: false }; };
+
+  // Finger/Maus: ein Finger = antippen oder ziehen, zwei Finger = zoomen und verschieben
+  const pointers = useRef(new Map<number, { x: number; y: number }>());
+  const wrapRef = useRef<HTMLDivElement>(null);
+  // iOS Safari: eigene Zoom-Geste der Seite auf der Karte unterdrücken (sonst wird die ganze Seite vergrößert)
+  useEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return;
+    const stop = (ev: Event) => ev.preventDefault();
+    el.addEventListener('gesturestart', stop);
+    el.addEventListener('gesturechange', stop);
+    return () => { el.removeEventListener('gesturestart', stop); el.removeEventListener('gesturechange', stop); };
+  }, [countries]);
+  const pinch = useRef<{ vb: typeof vb; a: number; b: number; s1: { x: number; y: number }; s2: { x: number; y: number } } | null>(null);
+  const gestureHadPinch = useRef(false);
+
+  const startPinch = () => {
+    const [[a, p1], [b, p2]] = [...pointers.current.entries()];
+    pinch.current = { vb, a, b, s1: { ...p1 }, s2: { ...p2 } };
+    gestureHadPinch.current = true;
+    drag.current = null;
+  };
+  const onDown = (e: React.PointerEvent) => {
+    try { (e.currentTarget as Element).setPointerCapture(e.pointerId); } catch { /* ältere Browser */ }
+    pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pointers.current.size === 1) {
+      gestureHadPinch.current = false;
+      drag.current = { x: e.clientX, y: e.clientY, vb, moved: false };
+    } else if (pointers.current.size === 2) startPinch();
+  };
   const onMove = (e: React.PointerEvent) => {
+    if (!pointers.current.has(e.pointerId)) return;
+    pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    const pc = pinch.current;
+    if (pc) {
+      const c1 = pointers.current.get(pc.a), c2 = pointers.current.get(pc.b);
+      if (!c1 || !c2) return;
+      setVb(pinchViewBox(pc.vb, pc.s1, pc.s2, c1, c2, svgRef.current!.getBoundingClientRect(), { w: W, h: H }, MIN_W));
+      return;
+    }
     const d = drag.current;
     if (!d) return;
     const dx = e.clientX - d.x, dy = e.clientY - d.y;
@@ -129,14 +169,24 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
     const sx = d.vb.w / r.width, sy = d.vb.h / r.height;
     setVb({ ...d.vb, x: Math.max(0, Math.min(W - d.vb.w, d.vb.x - dx * sx)), y: Math.max(0, Math.min(H - d.vb.h, d.vb.y - dy * sy)) });
   };
-  const onUp = (e: React.PointerEvent) => {
+  const endPointer = (e: React.PointerEvent, cancelled: boolean) => {
+    pointers.current.delete(e.pointerId);
+    if (pinch.current) {
+      pinch.current = null;
+      // Ein Finger bleibt liegen: nahtlos weiter verschieben, aber kein Antippen auslösen
+      const rest = [...pointers.current.values()][0];
+      if (rest) drag.current = { x: rest.x, y: rest.y, vb, moved: true };
+      return;
+    }
     const d = drag.current;
     drag.current = null;
-    if (!d || d.moved || !onPick) return;
+    if (cancelled || !d || d.moved || gestureHadPinch.current || !onPick) return;
     const el = document.elementFromPoint(e.clientX, e.clientY) as SVGElement | null;
     const id = el?.getAttribute?.('data-id');
     if (id) onPick(id);
   };
+  const onUp = (e: React.PointerEvent) => endPointer(e, false);
+  const onCancel = (e: React.PointerEvent) => endPointer(e, true);
   const onWheel = (e: React.WheelEvent) => {
     const r = svgRef.current!.getBoundingClientRect();
     zoom(e.deltaY > 0 ? 1.25 : 0.8, vb.x + ((e.clientX - r.left) / r.width) * vb.w, vb.y + ((e.clientY - r.top) / r.height) * vb.h);
@@ -144,9 +194,9 @@ export function MapCanvas({ regions, world50, targets, area, classFor, onPick, r
 
   if (!countries || !path) return <div className="map-wrap loading">Karte lädt …</div>;
   return (
-    <div className={'map-wrap' + (onPick ? '' : ' readonly')}>
+    <div ref={wrapRef} className={'map-wrap' + (onPick ? '' : ' readonly')}>
       <svg ref={svgRef} viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`} role="img" aria-label="Karte"
-        onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerLeave={() => (drag.current = null)} onWheel={onWheel}>
+        onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onCancel} onWheel={onWheel}>
         <rect x={-W} y={-H} width={W * 3} height={H * 3} className="sea" />
         {countries.map((f, idx) => {
           const sw = { strokeWidth: 0.6 * (vb.w / W) };

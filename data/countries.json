@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-18",
+ "asOf": "2026-11-20",
  "source": "https://www.wikidata.org",
  "countries": [
   {
@@ -562,6 +562,23 @@
    ],
    "population": 5265575,
    "wikidata": "Q800"
+  },
+  {
+   "a2": "dk",
+   "num": "208",
+   "name": "Dänemark",
+   "capital": "Kopenhagen",
+   "capitalNote": null,
+   "continentAmbiguous": false,
+   "capitalsAll": [
+    "Kopenhagen"
+   ],
+   "continent": "Europa",
+   "continentsAll": [
+    "Europa"
+   ],
+   "population": 5960000,
+   "wikidata": "Q35"
   },
   {
    "a2": "cd",
@@ -2754,8 +2771,8 @@
    "continentAmbiguous": false,
    "capitalsAll": [
     "Bloemfontein",
-    "Pretoria",
-    "Kapstadt"
+    "Kapstadt",
+    "Pretoria"
    ],
    "continent": "Afrika",
    "continentsAll": [

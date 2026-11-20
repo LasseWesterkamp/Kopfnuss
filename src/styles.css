@@ -367,3 +367,4 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .learn-a { margin: 2px 0 4px; font-weight: 700; font-size: 1.05rem; }
 .cat-row .start-btn + .start-btn { margin-left: -4px; }
 .learn-h { margin: 0 0 2px; font-weight: 800; font-size: 1.1rem; } .learn-more { margin: 2px 0; }
+.map-wrap svg { touch-action: none; }

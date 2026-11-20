@@ -45,6 +45,12 @@ for (const e of map.values()) {
     wikidata: e.wikidata,
   });
 }
+// Staaten, die die Abfrage nicht findet (siehe "extra" in den Overrides)
+for (const [a2, e] of Object.entries(overrides.extra ?? {})) {
+  if (out.some((c) => c.a2 === a2)) continue;
+  out.push({ a2, num: e.num, name: e.name, capital: e.capital, capitalNote: null, continentAmbiguous: false,
+    capitalsAll: [e.capital], continent: e.continent, continentsAll: [e.continent], population: e.population, wikidata: e.wikidata });
+}
 out.sort((a, b) => a.name.localeCompare(b.name, 'de'));
 fs.writeFileSync('data/countries.json', JSON.stringify({ asOf: today(), source: 'https://www.wikidata.org', countries: out }, null, 1));
 console.log(out.length, 'Staaten gespeichert');

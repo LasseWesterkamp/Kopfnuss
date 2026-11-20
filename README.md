@@ -245,7 +245,7 @@ Fragen zum selben Fakt werden zu einer Lernkarte zusammengefasst (über die Frag
 
 ## Welt-Puzzles
 
-Europa, Afrika, Asien, Nordamerika (mit Mittelamerika & Karibik), Südamerika, Ozeanien und „Ganze Welt“ (Profi). Karte: Natural Earth 50m (`public/data/countries-50m.json`), Länderliste `public/data/world-puzzle.json` (vom Build-Skript aus `data/countries.json` erzeugt, Kontinent wie dort). Länder, die auf der Karte kleiner als 6 Pixel sind (Vatikan, Monaco, Karibikinseln …), bekommen einen antippbaren Kreis. Nicht dabei: Tuvalu (fehlt in der Karte). Treffer im ersten Versuch zählen als richtige Antwort auf die Kartenfrage „Wo liegt …?“ des Landes, sofern es eine gibt.
+Europa, Afrika, Asien, Nordamerika (mit Mittelamerika & Karibik), Südamerika, Ozeanien und „Ganze Welt“ (Profi). Karte: Natural Earth 50m (`public/data/countries-50m.json`), Länderliste `public/data/world-puzzle.json` (vom Build-Skript aus `data/countries.json` erzeugt, Kontinent wie dort). **Zoomen:** mit zwei Fingern (auseinander/zusammen, dabei auch verschieben), Mausrad oder + / −; verschieben durch Ziehen. Die Rechnung steckt in `src/core/pinch.ts`. Länder, die auf der Karte kleiner als 6 Pixel sind (Vatikan, Monaco, Karibikinseln …), bekommen einen antippbaren Kreis. Nicht dabei: Tuvalu (fehlt in der Karte). Dänemark fehlt in der Wikidata-Abfrage (dort als „Königreich Dänemark“ ohne ISO-Code) und wird über `extra` in `data/countries-overrides.json` ergänzt. Treffer im ersten Versuch zählen als richtige Antwort auf die Kartenfrage „Wo liegt …?“ des Landes, sofern es eine gibt.
 
 ## Kategorien & Auswahl beim Üben
 

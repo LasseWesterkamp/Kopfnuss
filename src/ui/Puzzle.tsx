@@ -152,7 +152,7 @@ function PuzzleRun({ def, items, level, questions, answer, onExit, onAgain }: {
       </div>
       <MapCanvas {...mapProps} onPick={s.revealed ? undefined : onPick} resetKey={def.key} />
       {s.revealed && <button className="btn primary wide" onClick={onNext} autoFocus>Weiter</button>}
-      <p className="small muted">Grün: im ersten Versuch richtig · Gelb: aufgedeckt · Kleine Länder als Kreis · Zoomen mit + und −, verschieben durch Ziehen.</p>
+      <p className="small muted">Grün: im ersten Versuch richtig · Gelb: aufgedeckt · Kleine Länder als Kreis · Zoomen mit zwei Fingern, Mausrad oder + / −, verschieben durch Ziehen.</p>
     </div>
   );
 }

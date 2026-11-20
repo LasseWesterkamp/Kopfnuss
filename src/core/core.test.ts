@@ -606,3 +606,34 @@ describe('Lernseiten', () => {
     expect(searchEntries(e, '')).toHaveLength(2);
   });
 });
+
+import { pinchViewBox } from './pinch';
+
+describe('Zwei-Finger-Zoom', () => {
+  const full = { w: 800, h: 600 };
+  const rect = { left: 0, top: 0, width: 400, height: 300 }; // Karte wird halb so groß angezeigt
+  const vb = { x: 0, y: 0, w: 800, h: 600 };
+  it('Finger auseinander (doppelter Abstand) = doppelt so nah', () => {
+    const r = pinchViewBox(vb, { x: 150, y: 150 }, { x: 250, y: 150 }, { x: 100, y: 150 }, { x: 300, y: 150 }, rect, full, 50);
+    expect(r.w).toBe(400);
+    expect(r.h).toBe(300);
+    // Kartenpunkt unter der Fingermitte (200,150 -> Karte 400,300) bleibt dort
+    expect(r.x + (200 / 400) * r.w).toBe(400);
+    expect(r.y + (150 / 300) * r.h).toBe(300);
+  });
+  it('Finger zusammen = weiter weg, aber nie über die ganze Karte hinaus', () => {
+    const start = { x: 200, y: 150, w: 400, h: 300 };
+    const r = pinchViewBox(start, { x: 100, y: 150 }, { x: 300, y: 150 }, { x: 190, y: 150 }, { x: 210, y: 150 }, rect, full, 50);
+    expect(r).toEqual({ x: 0, y: 0, w: 800, h: 600 });
+  });
+  it('stärkster Zoom wird begrenzt', () => {
+    const r = pinchViewBox(vb, { x: 199, y: 150 }, { x: 201, y: 150 }, { x: 0, y: 150 }, { x: 400, y: 150 }, rect, full, 50);
+    expect(r.w).toBe(50);
+  });
+  it('beide Finger gemeinsam verschieben = Karte verschieben', () => {
+    const start = { x: 200, y: 150, w: 400, h: 300 };
+    const r = pinchViewBox(start, { x: 100, y: 100 }, { x: 200, y: 100 }, { x: 150, y: 100 }, { x: 250, y: 100 }, rect, full, 50);
+    expect(r.w).toBe(400);
+    expect(r.x).toBe(150); // 50 px Bildschirm nach rechts = 50 Karteneinheiten nach links (Maßstab 400/400)
+  });
+});
