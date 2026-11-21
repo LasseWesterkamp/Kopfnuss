@@ -85,7 +85,7 @@ export function Quiz({ questions, daily, timeLimit = 0, blitz = 0, onExit, onDon
       <h2 className="q-prompt">{q.prompt}</h2>
 
       {flagSrc && (blitzHere
-        ? <BlitzFlag key={'blitz-' + q.id} src={flagSrc} className="flag" seconds={blitz} revealed={!!result} onReady={onBlitzReady} />
+        ? <BlitzFlag key={'blitz-' + q.id} src={flagSrc} seconds={blitz} revealed={!!result} onReady={onBlitzReady} />
         : <img className="flag" src={flagSrc} alt="Flagge" />)}
       {q.image && (
         <figure className={"q-image" + (q.topic === "regionen" ? " flag-img" : "")}>
