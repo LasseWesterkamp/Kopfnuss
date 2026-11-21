@@ -46,6 +46,7 @@ export async function enable() {
 
 /** Dieses Gerät abmelden (beim Ausschalten und beim Abmelden vom Konto) */
 export async function disable() {
+  await resyncing?.catch(() => {}); // eine laufende Neu-Zuordnung zuerst abwarten, sonst trägt sie das Gerät danach wieder ein
   const sub = await subscription();
   if (!sub) return;
   await sb()?.rpc('remove_push_subscription', { p_endpoint: sub.endpoint });
@@ -53,10 +54,11 @@ export async function disable() {
 }
 
 /** Nach Anmeldung: vorhandenes Abo dem aktuellen Konto zuordnen (falls jemand anders vorher angemeldet war) */
-export async function resync() {
-  if (Notification?.permission !== 'granted') return;
-  const sub = await subscription();
-  if (sub) await save(sub).catch(() => {});
+let resyncing: Promise<void> | null = null;
+export function resync() {
+  if (typeof Notification === 'undefined' || Notification.permission !== 'granted') return Promise.resolve();
+  resyncing = (async () => { const sub = await subscription(); if (sub) await save(sub).catch(() => {}); })();
+  return resyncing;
 }
 
 export async function loadPrefs(): Promise<PushPrefs> {
