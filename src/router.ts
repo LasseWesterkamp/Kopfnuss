@@ -6,13 +6,15 @@ export type Route =
   | { name: 'home' } | { name: 'practice' } | { name: 'groups' } | { name: 'stats' } | { name: 'settings' } | { name: 'credits' }
   | { name: 'topic'; id: string } | { name: 'mistakes' } | { name: 'puzzle'; key: string }
   | { name: 'learn'; topic: string; kind: 'cat' | 'sub'; id: string }
-  | { name: 'quiz' } | { name: 'summary' };
+  | { name: 'quiz' } | { name: 'summary' }
+  | { name: 'duel'; id: string } | { name: 'duelplay' };
 
-const PATHS: Record<string, string> = { home: '', practice: 'ueben', groups: 'gruppen', stats: 'statistik', settings: 'mehr', credits: 'mehr/bildnachweise', mistakes: 'fehler', quiz: 'runde', summary: 'ergebnis' };
+const PATHS: Record<string, string> = { home: '', practice: 'ueben', groups: 'gruppen', stats: 'statistik', settings: 'mehr', credits: 'mehr/bildnachweise', mistakes: 'fehler', quiz: 'runde', summary: 'ergebnis', duelplay: 'duell-runde' };
 
 export function routeToHash(r: Route): string {
   if (r.name === 'topic') return '#/thema/' + r.id;
   if (r.name === 'puzzle') return '#/puzzle/' + r.key;
+  if (r.name === 'duel') return '#/duell/' + r.id;
   if (r.name === 'learn') return `#/lernen/${r.topic}/${r.kind === 'cat' ? 'kategorie' : 'gruppe'}/${encodeURIComponent(r.id)}`;
   return '#/' + PATHS[r.name];
 }
@@ -20,12 +22,13 @@ export function routeToHash(r: Route): string {
 export function hashToRoute(hash: string): Route {
   const p = hash.replace(/^#\/?/, '').split('/').filter(Boolean);
   if (p[0] === 'thema' && p[1]) return { name: 'topic', id: decodeURIComponent(p[1]) };
+  if (p[0] === 'duell' && p[1]) return { name: 'duel', id: decodeURIComponent(p[1]) };
   if (p[0] === 'puzzle' && p[1]) return { name: 'puzzle', key: decodeURIComponent(p[1]) };
   if (p[0] === 'lernen' && p[1] && p[3]) return { name: 'learn', topic: p[1], kind: p[2] === 'gruppe' ? 'sub' : 'cat', id: decodeURIComponent(p[3]) };
   const joined = p.join('/');
   const found = Object.entries(PATHS).find(([, v]) => v === joined && v !== '');
   // Runde/Ergebnis lassen sich nach Neuladen nicht wiederherstellen -> Startseite
-  if (!found || found[0] === 'quiz' || found[0] === 'summary') return { name: 'home' };
+  if (!found || found[0] === 'quiz' || found[0] === 'summary' || found[0] === 'duelplay') return { name: 'home' };
   return { name: found[0] } as Route;
 }
 

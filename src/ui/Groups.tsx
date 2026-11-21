@@ -4,6 +4,7 @@ import * as g from '../groups';
 import { rank, daysUntilReset, type Board, type Entry } from '../core/leaderboard';
 import { syncConfigured } from '../sync';
 import { normalizeCode, isValidCode } from '../core/invite';
+import { DuelSection, type useDuels } from './Duels';
 
 const BOARDS: { id: Board; label: string; unit: string }[] = [
   { id: 'woche', label: 'Diese Woche', unit: 'XP' },
@@ -11,7 +12,10 @@ const BOARDS: { id: Board; label: string; unit: string }[] = [
   { id: 'gesamt', label: 'Gesamt', unit: 'XP' },
 ];
 
-export function Groups({ joinCode, onGoSettings }: { joinCode: string | null; onGoSettings: () => void }) {
+export function Groups({ joinCode, onGoSettings, duels, duelCode, onOpenDuel }: {
+  joinCode: string | null; onGoSettings: () => void;
+  duels: ReturnType<typeof useDuels>; duelCode: string | null; onOpenDuel: (id: string) => void;
+}) {
   const { session, syncNow, today } = useApp();
   const [name, setName] = useState<string | null | undefined>(undefined); // undefined = lädt
   const [groups, setGroups] = useState<g.Group[]>([]);
@@ -43,6 +47,7 @@ export function Groups({ joinCode, onGoSettings }: { joinCode: string | null; on
           <p>Mit Gruppen lernst du zusammen mit Freunden oder der Familie und vergleichst euch in einer Rangliste.</p>
           <p className="muted small">Dafür brauchst du ein Konto, damit deine Punkte geräteübergreifend zählen.</p>
           {joinCode && <p className="small">Einladungscode <strong>{joinCode}</strong> wird nach der Anmeldung übernommen.</p>}
+          {duelCode && <p className="small">⚔️ Du wurdest zu einem Duell herausgefordert (Code <strong>{duelCode}</strong>). Melde dich an, dann gib den Code unter Gruppen → Duelle ein.</p>}
           <button className="btn primary wide" onClick={onGoSettings}>Anmelden oder Konto anlegen</button>
         </div>
       </div>
@@ -72,6 +77,7 @@ export function Groups({ joinCode, onGoSettings }: { joinCode: string | null; on
         </div>
       )}
       {current && <GroupView key={current.id} group={current} today={today} onChanged={load} setMsg={setMsg} />}
+      <DuelSection duels={duels.duels} err={duels.err} reload={duels.reload} initialCode={duelCode} onOpen={onOpenDuel} />
 
       {/* Einklappbar: zu, sobald man in einer Gruppe ist; offen ohne Gruppe oder mit Einladungscode */}
       <details key={'join' + (groups.length > 0)} className="fold" open={!groups.length || (!!joinCode && !groups.some((x) => x.invite_code === joinCode))}>

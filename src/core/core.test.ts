@@ -665,3 +665,68 @@ describe('Startmenü: Stufe und Zeitdruck', () => {
     expect(againOptions({ topics: ['flaggen'], difficulty: 3, timeLimit: 10 }, 1)).toEqual({ topics: ['flaggen'], difficulty: 1, timeLimit: 10 });
   });
 });
+
+import { pickDuelQuestions, duelPool, rankDuel, duelStatus, myOutcome, headToHead, duelTime, duelCodeFromUrl, DUEL_SIZE, type DuelPlayer, type Duel } from './duel';
+describe('Duell', () => {
+  const pl = (name: string, correct: number | null, ms: number | null, extra: Partial<DuelPlayer> = {}): DuelPlayer => ({
+    user_id: name, name, is_me: false, is_creator: false, state: ms === null ? 'offen' : 'fertig', correct, ms, answers: null, aborted: false, ...extra,
+  });
+  const duel = (players: DuelPlayer[], expires = '2999-01-01T00:00:00Z'): Duel => ({
+    id: 'd', code: 'ABCDEF', label: 'Test', settings: {}, time_limit: 20, n: 10, created_at: '', expires_at: expires, is_creator: true, question_ids: null, players,
+  });
+  it('Fragenauswahl: nur faire Typen, passende Auswahl, 10 verschiedene, mit gleichem Zufall gleich', () => {
+    const all: Question[] = [
+      ...Array.from({ length: 15 }, (_, i) => q('mc' + i, 'flaggen', 3, 'europa')),
+      { ...q('map1', 'flaggen', 3, 'europa'), type: 'map' } as any,
+      ...Array.from({ length: 5 }, (_, i) => q('x' + i, 'geografie', 3)),
+    ];
+    expect(duelPool(all, { topics: ['flaggen'] }).length).toBe(15);
+    let s = 1; const rng = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+    const ids = pickDuelQuestions(all, { topics: ['flaggen'], difficulty: 3 }, rng);
+    expect(ids.length).toBe(DUEL_SIZE);
+    expect(new Set(ids).size).toBe(10);
+    expect(ids.every((id) => id.startsWith('mc'))).toBe(true);
+    s = 1; const again = pickDuelQuestions(all, { topics: ['flaggen'], difficulty: 3 }, rng);
+    expect(again).toEqual(ids);
+    expect(pickDuelQuestions(all, { topics: ['flaggen'], difficulty: 1 })).toEqual([]);
+  });
+  it('Wertung: erst Anzahl richtig, dann Zeit', () => {
+    const r = rankDuel([pl('A', 9, 120000), pl('B', 8, 40000)]);
+    expect(r.map((x) => [x.player.name, x.place])).toEqual([['A', 1], ['B', 2]]);
+    const r2 = rankDuel([pl('A', 8, 74200), pl('B', 8, 61000)]);
+    expect(r2[0].player.name).toBe('B');
+  });
+  it('Gleichstand: gleiche Richtige und unter 0,5 s Unterschied = gleicher Platz', () => {
+    const r = rankDuel([pl('A', 7, 50300), pl('B', 7, 50600), pl('C', 7, 52000)]);
+    expect(r.map((x) => x.place)).toEqual([1, 1, 3]);
+    expect(r[0].tie && r[1].tie && !r[2].tie).toBe(true);
+    const d = duel([pl('A', 7, 50300, { is_me: true }), pl('B', 7, 50600)]);
+    expect(myOutcome(d)).toBe('unentschieden');
+  });
+  it('Nicht fertige Spieler werden nicht platziert, Status aus meiner Sicht', () => {
+    const me = pl('Ich', 5, 30000, { is_me: true });
+    expect(rankDuel([me, pl('B', null, null)]).length).toBe(1);
+    expect(duelStatus(duel([me, pl('B', null, null)]))).toBe('warten');
+    expect(duelStatus(duel([pl('Ich', null, null, { is_me: true }), pl('B', 5, 1000)]))).toBe('dran');
+    expect(duelStatus(duel([me, pl('B', 6, 1000)]))).toBe('fertig');
+    expect(myOutcome(duel([me, pl('B', 6, 1000)]))).toBe('niederlage');
+    expect(duelStatus(duel([me, pl('B', null, null)], '2000-01-01T00:00:00Z'))).toBe('fertig');
+    expect(duelStatus(duel([me], '2000-01-01T00:00:00Z'))).toBe('abgelaufen');
+    expect(duelStatus(duel([pl('Ich', null, null, { is_me: true })], '2000-01-01T00:00:00Z'))).toBe('abgelaufen');
+  });
+  it('gelöschte Frage zählt für niemanden', () => {
+    const a = pl('A', 2, 1000, { answers: [{ i: 0, ok: true, ms: 1 }, { i: 1, ok: true, ms: 1 }] });
+    const b = pl('B', 1, 2000, { answers: [{ i: 0, ok: true, ms: 1 }, { i: 1, ok: false, ms: 1 }] });
+    const r = rankDuel([a, b], [true, false]);
+    expect(r.map((x) => x.correct)).toEqual([1, 1]);
+    expect(r[0].player.name).toBe('A'); // gleich viele, A schneller
+  });
+  it('Bilanz pro Gegner, Zeitlimit-Vorgabe, Code aus Link', () => {
+    const me = (c: number) => pl('Ich', c, 10000, { is_me: true });
+    const h = headToHead([duel([me(8), pl('Max', 5, 9000)]), duel([me(3), pl('Max', 5, 9000)]), duel([me(5), pl('Max', 5, 10100)])]);
+    expect(h).toEqual([{ name: 'Max', user_id: 'Max', win: 1, loss: 1, draw: 1 }]);
+    expect([duelTime(0), duelTime(10), duelTime(30), duelTime(25)]).toEqual([20, 10, 30, 20]);
+    expect(duelCodeFromUrl('?duell=abc')).toBe(null);
+    expect(duelCodeFromUrl('?duell=abc-dez')).toBe('ABCDEZ');
+  });
+});

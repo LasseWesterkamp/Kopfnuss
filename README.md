@@ -19,6 +19,7 @@ Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-A
 - Sync zwischen Handy und PC (Supabase, Login mit E-Mail + Passwort)
 - Gruppen mit Rangliste (Woche, Serie, Gesamt), Beitritt per Einladungscode oder -link
 - Startmenü vor jeder Runde: Schwierigkeit und Zeitdruck (aus/10/20/30 s) wählen
+- Duelle: Freunde per Link herausfordern, alle bekommen dieselben 10 Fragen, wer mehr richtig hat (bei Gleichstand: schneller) gewinnt
 - Dark Mode (automatisch oder manuell)
 
 ---
@@ -262,6 +263,22 @@ Wer im Tab **Üben** auf „Los geht’s“, auf einer Themenseite auf ▶ bzw. 
 - **Ohne Menü:** Tages-Challenge (für alle gleich, ohne Uhr), Zufallsmix und „Fehler üben“ starten direkt.
 - **Schließen:** Zurück bzw. Wischgeste, nach unten wischen, Escape oder daneben tippen. Das Menü ist ein eigener Verlaufseintrag, Zurück schließt also nur das Menü.
 - **Nochmal** auf der Ergebnisseite behält Auswahl und Zeitdruck, die Stufe lässt sich dort ändern.
+
+## Duelle
+
+Zeitversetzt: Du spielst jetzt, die anderen irgendwann in den nächsten 7 Tagen, alle mit exakt denselben 10 Fragen in derselben Reihenfolge. 2 bis 10 Spieler, Konto mit Anzeigename nötig.
+
+- **Herausfordern:** Auswahl wie gewohnt (Themenseite ▶, Tab „Üben“ oder Lernseite), dann im Startmenü **⚔️ Als Duell**. Stufe aus dem Menü, Zeitlimit 10/20/30 s ist Pflicht (bei „Aus“ gelten 20 s). Dann „Einladen“: Link `…/Kopfnuss/?duell=CODE` (öffnet die App und nimmt an) oder 6-stelliger Code unter Gruppen → Duelle.
+- **Fragen:** nur Multiple Choice (auch Flaggen und Bilder), „Welche Flagge?“ und „Welches Land ist markiert?“. Kein Kartentippen, keine Jahreszahl/Reihenfolge/Zuordnen, damit Handy und PC gleiche Chancen haben. Zufällig aus der Auswahl, unabhängig vom eigenen Lernstand (`src/core/duel.ts`).
+- **Wertung:** erst Anzahl richtig, bei Gleichstand die kürzere Gesamtzeit. Unter 0,5 s Unterschied = unentschieden. Die Gesamtzeit misst der Server (von „Jetzt spielen“ bis zur Abgabe, höchstens Fragen × Zeitlimit + 30 s). Die Zeiten pro Frage misst das Gerät, sie sind nur zur Anzeige. Wird eine Frage zwischen den Runden gelöscht, zählt sie für niemanden.
+- **Abbruch:** Starten geht nur einmal, ohne Pause. ✕ oder Zurück gibt ab, der Rest zählt falsch. Wird die App mitten im Duell geschlossen, wird beim nächsten Öffnen mit dem bisherigen Stand abgegeben (lokal in `kopfnuss.duel.pending`). Kommt nie eine Abgabe an, wertet der Server nach Ablauf der Maximalzeit 0 richtig.
+- **Sichtbarkeit:** Fremde sehen nichts. Die Fragenliste gibt es erst beim eigenen Start, die Ergebnisse der anderen erst nach der eigenen Runde.
+- **Anzeige:** Gruppen → Duelle (Du bist dran / Wartet auf andere / Fertig / Abgelaufen), Bilanz pro Gegner, Ergebnisseite mit Vergleich Frage für Frage. Die rote Zahl am Tab „Gruppen“ zählt Duelle, in denen du dran bist, plus neu entschiedene.
+- **Punkte:** Duell-Antworten zählen normal für Lernstand, Fehlerkasten, Tagesziel und XP. Für einen Sieg gibt es keine Extra-XP, damit man die Gruppen-Rangliste nicht mit einem Zweitkonto aufpumpen kann.
+- **Ehrlich:** Die Fragen samt Lösungen liegen öffentlich in `questions.json`, und richtig/falsch meldet das Gerät. Wer den Code manipuliert, kann schummeln. Für Freunde reicht das.
+
+### Datenbank (Duelle)
+`supabase/004_duelle.sql` im SQL Editor ausführen (nach `002_gruppen.sql`). Tabellen `duels` und `duel_players` haben RLS ohne Policies, alles läuft über die Funktionen `create_duel`, `join_duel`, `start_duel`, `finish_duel` und `my_duels`, die selbst prüfen, wer was sehen darf.
 
 ## Kategorien & Auswahl beim Üben
 

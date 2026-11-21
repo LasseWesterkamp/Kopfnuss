@@ -18,19 +18,33 @@ import { useRouter, hashToRoute, type Route } from './router';
 import { StartSheet } from './ui/StartSheet';
 import { loadRoundPrefs, saveRoundPrefs } from './storage';
 import type { RoundPrefs } from './core/round';
+import { DuelPage, DuelPlay, useDuels, duelBadge } from './ui/Duels';
+import { pickDuelQuestions, duelTime, duelCodeFromUrl, type Duel } from './core/duel';
+import * as du from './duel';
+import { TOPIC_NAMES } from './core/badges';
 
 /** Laufende Runde bzw. Ergebnis (nur im Speicher, nicht in der Adresse) */
-interface RoundData { opts: SessionOptions; daily: boolean; label?: string; questions?: Question[]; summary?: SessionSummary; key: number }
+interface RoundData { opts: SessionOptions; daily: boolean; label?: string; questions?: Question[]; summary?: SessionSummary; key: number; duel?: Duel; duelIds?: string[] }
 
 function Shell() {
-  const { questions, progress, today, loadError, streak } = useApp();
+  const { questions, progress, today, loadError, streak, session } = useApp();
   // Einladungslink ?beitreten=CODE öffnet direkt die Gruppen mit vorausgefülltem Code
   const [joinCode] = useState<string | null>(() => {
     const c = codeFromUrl(location.search);
     if (location.search.includes('beitreten')) history.replaceState(null, '', location.pathname + location.hash);
     return c;
   });
-  const { route, data, go, back } = useRouter<RoundData>(joinCode ? { name: 'groups' } : hashToRoute(location.hash));
+  // Duell-Link ?duell=CODE öffnet die Gruppen-Seite und nimmt das Duell an
+  const [duelCode] = useState<string | null>(() => {
+    const c = duelCodeFromUrl(location.search);
+    if (location.search.includes('duell')) history.replaceState(null, '', location.pathname + location.hash);
+    return c;
+  });
+  const { route, data, go, back } = useRouter<RoundData>(joinCode || duelCode ? { name: 'groups' } : hashToRoute(location.hash));
+  const duels = useDuels(!!session);
+  const { reload: reloadDuels } = duels;
+  useEffect(() => { if (session && (route.name === 'groups' || route.name === 'home')) reloadDuels(); }, [route.name, session, reloadDuels]);
+  const badge = duelBadge(duels.duels);
 
   const startRound = (opts: SessionOptions, daily: boolean, label?: string, replace = false) => {
     if (!questions) return;
@@ -54,6 +68,19 @@ function Shell() {
     history.pushState({ ...history.state, sheet: true }, '');
     setSheet(o);
   };
+  const duelWith = (o: StartOpts, p: RoundPrefs) => {
+    saveRoundPrefs(p);
+    const { label, topics, cats, subs } = o;
+    closeSheet(async () => {
+      try {
+        const ids = pickDuelQuestions(questions ?? [], { topics, cats, subs, difficulty: p.difficulty });
+        const name = label && label !== 'Üben' ? label : topics?.length ? topics.map((t) => TOPIC_NAMES[t]).join(', ') : 'Alle Themen';
+        const r = await du.createDuel(name, { topics, cats, subs, difficulty: p.difficulty ?? null }, ids, duelTime(p.time));
+        reloadDuels();
+        go({ name: 'duel', id: r.id });
+      } catch (e: any) { alert('Duell konnte nicht angelegt werden: ' + e.message); }
+    });
+  };
   const startWith = (o: StartOpts, p: RoundPrefs) => {
     saveRoundPrefs(p);
     const { label, ...opts } = o;
@@ -61,8 +88,8 @@ function Shell() {
   };
   const nav = (r: Route) => go(r);
   const tab = (name: 'home' | 'practice' | 'groups' | 'stats' | 'settings') => nav({ name } as Route);
-  const inQuiz = route.name === 'quiz' || route.name === 'puzzle';
-  const activeTab = route.name === 'credits' ? 'settings' : route.name === 'topic' || route.name === 'summary' || route.name === 'mistakes' || route.name === 'learn' ? 'home' : route.name;
+  const inQuiz = route.name === 'quiz' || route.name === 'puzzle' || route.name === 'duelplay';
+  const activeTab = route.name === 'credits' ? 'settings' : route.name === 'duel' ? 'groups' : route.name === 'topic' || route.name === 'summary' || route.name === 'mistakes' || route.name === 'learn' ? 'home' : route.name;
 
   let page: JSX.Element | null = null;
   switch (route.name) {
@@ -92,7 +119,18 @@ function Shell() {
       page = def ? <Puzzle key={def.key} def={def} onExit={back} /> : <div className="card">Dieses Puzzle gibt es nicht.</div>;
       break;
     }
-    case 'groups': page = <Groups joinCode={joinCode} onGoSettings={() => tab('settings')} />; break;
+    case 'groups': page = <Groups joinCode={joinCode} onGoSettings={() => tab('settings')} duels={duels} duelCode={duelCode} onOpenDuel={(id) => nav({ name: 'duel', id })} />; break;
+    case 'duel':
+      page = <DuelPage key={route.id} id={route.id} onBack={back}
+        onPlay={(d, ids) => go({ name: 'duelplay' }, { opts: {}, daily: false, key: Date.now(), duel: d, duelIds: ids })} />;
+      break;
+    case 'duelplay':
+      page = data?.duel && data.duelIds ? (
+        <DuelPlay key={data.key} duel={data.duel} ids={data.duelIds}
+          onDone={() => { reloadDuels(); go({ name: 'duel', id: data.duel!.id }, undefined, { replace: true }); }}
+          onExit={() => { reloadDuels(); go({ name: 'duel', id: data.duel!.id }, undefined, { replace: true }); }} />
+      ) : <p className="muted">Dieses Duell ist beendet. Das Ergebnis findest du unter Gruppen → Duelle.</p>;
+      break;
     case 'stats': page = <Stats onMistakes={() => nav({ name: 'mistakes' })} />; break;
     case 'settings': page = <SettingsView onCredits={() => nav({ name: 'credits' })} />; break;
     case 'credits': page = <Credits onBack={back} />; break;
@@ -114,7 +152,7 @@ function Shell() {
     <div className={'app' + (inQuiz ? ' in-quiz' : '')}>
       {!inQuiz && (
         <header className="topbar">
-          {route.name !== 'home' && ['topic', 'mistakes', 'credits', 'summary', 'learn'].includes(route.name)
+          {route.name !== 'home' && ['topic', 'mistakes', 'credits', 'summary', 'learn', 'duel'].includes(route.name)
             ? <button className="icon-btn back-btn" aria-label="Zurück" onClick={back}>←</button> : null}
           <h1 onClick={() => tab('home')}><span className="logo">🌰</span> Kopfnuss</h1>
           <span className="topbar-streak" title="Serie">{streak.current > 0 ? '🔥' : '🌑'} {streak.current}</span>
@@ -124,12 +162,13 @@ function Shell() {
         {loadError && <div className="card error">Fragen konnten nicht geladen werden: {loadError}</div>}
         {page}
       </main>
-      {sheet && <StartSheet opts={sheet} prefs={loadRoundPrefs()} onStart={(p) => startWith(sheet, p)} onClose={() => closeSheet()} />}
+      {sheet && <StartSheet opts={sheet} prefs={loadRoundPrefs()} onStart={(p) => startWith(sheet, p)} onDuel={(p) => duelWith(sheet, p)} onClose={() => closeSheet()} />}
       {!inQuiz && (
         <nav className="tabbar">
           {([['home', '🏠', 'Start'], ['practice', '🎯', 'Üben'], ['groups', '🏆', 'Gruppen'], ['stats', '📊', 'Statistik'], ['settings', '⚙️', 'Mehr']] as const).map(([n, icon, label]) => (
             <button key={n} className={activeTab === n ? 'on' : ''} onClick={() => tab(n)}>
               <span aria-hidden>{icon}</span><span>{label}</span>
+              {n === 'groups' && badge > 0 && <span className="tab-badge" aria-label={`${badge} Duelle`}>{badge}</span>}
             </button>
           ))}
         </nav>

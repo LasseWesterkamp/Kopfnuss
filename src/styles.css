@@ -397,3 +397,32 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 }
 @keyframes up { from { transform: translateY(40px); opacity: .5; } }
 @keyframes fade { from { opacity: 0; } }
+/* Duelle */
+.sheet-duel { margin-top: 8px; }
+.tabbar button { position: relative; }
+.tab-badge { position: absolute; top: 2px; left: calc(50% + 8px); min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: #d64545; color: #fff; font-size: .7rem; font-weight: 700; line-height: 18px; text-align: center; }
+.duels { margin-top: 8px; }
+.duel-group { display: grid; gap: 8px; margin-bottom: 8px; }
+.duel-row { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; font: inherit; color: var(--text); border: 0; cursor: pointer; min-height: 56px; }
+.duel-row.dran { outline: 2px solid var(--accent, #b5541c); }
+.duel-icon { font-size: 1.4rem; }
+.new-chip { margin-left: 6px; background: #d64545; color: #fff; }
+.h2h { margin: 8px 0; }
+.h2h-row { display: flex; justify-content: space-between; padding: 4px 0; border-top: 1px solid var(--line); }
+.duel-join { margin-top: 8px; }
+.duel-head h2 { margin: 0 0 4px; }
+.duel-head .btn { margin-top: 10px; }
+.duel-outcome { font-size: 1.2rem; font-weight: 700; margin: 10px 0 0; }
+.duel-players { display: grid; gap: 0; padding: 4px 16px; }
+.duel-player { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
+.duel-player:first-child { border-top: 0; }
+.duel-player.me { font-weight: 600; }
+.duel-player .place { width: 28px; text-align: center; font-size: 1.2rem; }
+.duel-score { text-align: right; }
+.duel-compare { overflow-x: auto; padding: 8px; }
+.duel-compare table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.duel-compare th, .duel-compare td { padding: 8px 6px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+.duel-compare td.right { color: #2e7d32; font-weight: 700; white-space: nowrap; }
+.duel-compare td.wrong { color: #c62828; font-weight: 700; white-space: nowrap; }
+.duel-compare tr.removed td { opacity: .5; }
+.quiz-title { margin: -4px 0 8px; font-weight: 600; color: var(--muted); }

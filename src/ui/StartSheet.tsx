@@ -3,16 +3,18 @@ import type { Difficulty } from '../core/types';
 import { countByDifficulty, usableDifficulty, TIME_OPTIONS, TIME_BONUS, type RoundPrefs, type TimeLimit } from '../core/round';
 import { useApp } from '../state';
 import type { StartOpts } from './TopicPage';
+import { duelPool, duelTime } from '../core/duel';
+import { syncConfigured } from '../sync';
 
 const DIFFS: { d: Difficulty | undefined; label: string }[] = [
   { d: undefined, label: 'Adaptiv' }, { d: 1, label: 'Leicht' }, { d: 2, label: 'Mittel' }, { d: 3, label: 'Schwer' },
 ];
 
 /** Menü vor dem Start: von unten (Handy) bzw. Dialog (PC). Schließen: Zurück, nach unten wischen, Escape, daneben tippen. */
-export function StartSheet({ opts, prefs, onStart, onClose }: {
-  opts: StartOpts; prefs: RoundPrefs; onStart: (p: RoundPrefs) => void; onClose: () => void;
+export function StartSheet({ opts, prefs, onStart, onDuel, onClose }: {
+  opts: StartOpts; prefs: RoundPrefs; onStart: (p: RoundPrefs) => void; onDuel: (p: RoundPrefs) => void; onClose: () => void;
 }) {
-  const { questions } = useApp();
+  const { questions, session } = useApp();
   const counts = countByDifficulty(questions ?? [], opts);
   const [diff, setDiff] = useState<Difficulty | undefined>(usableDifficulty(prefs.difficulty, counts));
   const [time, setTime] = useState<TimeLimit>(prefs.time);
@@ -67,6 +69,14 @@ export function StartSheet({ opts, prefs, onStart, onClose }: {
         <button ref={startBtn} className="btn primary big wide sheet-start" onClick={() => onStart({ difficulty: diff, time })}>
           Start <span className="btn-sub">{Math.min(10, n)} Fragen{time ? ` · ${time} s pro Frage` : ''}</span>
         </button>
+        {syncConfigured && (() => {
+          const dn = Math.min(10, duelPool(questions ?? [], { ...opts, difficulty: diff }).length);
+          return session
+            ? <button className="btn ghost wide sheet-duel" disabled={!dn} onClick={() => onDuel({ difficulty: diff, time })}>
+                ⚔️ Als Duell <span className="btn-sub">{dn ? `${dn} gleiche Fragen für alle · ${duelTime(time)} s pro Frage` : 'keine passenden Fragen (nur Auswahl-Fragen zählen)'}</span>
+              </button>
+            : <p className="small muted sheet-note">⚔️ Duelle gegen Freunde: erst unter Mehr anmelden.</p>;
+        })()}
       </div>
     </div>
   );

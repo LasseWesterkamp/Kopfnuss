@@ -16,13 +16,18 @@ import { OrderView } from './OrderView';
 
 export interface SessionSummary { answers: { q: Question; r: Result; xp: number }[]; daily: boolean; bonus: number; streakCompletedNow: boolean }
 
-export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone }: { questions: Question[]; daily: boolean; timeLimit?: number; onExit: () => void; onDone: (s: SessionSummary) => void }) {
+export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone, onAnswer, title }: {
+  questions: Question[]; daily: boolean; timeLimit?: number; onExit: () => void; onDone: (s: SessionSummary) => void;
+  /** Duell: jede Antwort mit Zeit seit Erscheinen der Frage */ onAnswer?: (i: number, r: Result, ms: number) => void; title?: string;
+}) {
   const { answer, bonus, streak } = useApp();
   const [i, setI] = useState(0);
   const [result, setResult] = useState<Result | null>(null);
   const [log, setLog] = useState<SessionSummary['answers']>([]);
   const [left, setLeft] = useState(timeLimit);
   const wasDone = useRef(streak.todayDone);
+  const shownAt = useRef(performance.now());
+  useEffect(() => { shownAt.current = performance.now(); }, [i]);
   const q = questions[i];
 
   // Timer (optional): Zeit abgelaufen = falsch
@@ -39,6 +44,7 @@ export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone }: { ques
     setResult(r);
     answer(q, r.ok, xp);
     setLog((l) => [...l, { q, r, xp }]);
+    onAnswer?.(i, r, Math.round(performance.now() - shownAt.current));
   }
   function next() {
     if (i + 1 < questions.length) { setI(i + 1); setResult(null); return; }
@@ -57,6 +63,7 @@ export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone }: { ques
         </div>
         <span className="muted small">{i + 1}/{questions.length}</span>
       </header>
+      {title && <p className="quiz-title small">{title}</p>}
       {timeLimit > 0 && !result && <div className={'timer' + (left <= 5 ? ' urgent' : '')}>⏱ {Math.max(0, left)} s</div>}
 
       <div className="q-meta">
