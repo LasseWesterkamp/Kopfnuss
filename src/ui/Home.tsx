@@ -10,7 +10,7 @@ export const TOPIC_ICONS: Record<TopicId, string> = {
 };
 export const TOPIC_ORDER: TopicId[] = ['geografie', 'flaggen', 'regionen', 'geschichte', 'bilder', 'politik', 'fauna', 'flora', 'wissenschaft'];
 
-export function Home({ onDaily, onTopic, onMix, onMistakes }: { onDaily: () => void; onTopic: (t: TopicId) => void; onMix: () => void; onMistakes: () => void }) {
+export function Home({ onDaily, onTopic, onMix, onMixDuel, onMistakes }: { onDaily: () => void; onTopic: (t: TopicId) => void; onMix: () => void; onMixDuel?: () => void; onMistakes: () => void }) {
   const { streak, level, questions, progress, today } = useApp();
   const mistakes = questions ? questions.filter((q) => isMistake(progress.cards[q.id])).length : 0;
   const due = questions?.filter((q) => isDue(progress.cards[q.id], today)).length ?? 0;
@@ -66,6 +66,7 @@ export function Home({ onDaily, onTopic, onMix, onMistakes }: { onDaily: () => v
         })}
       </div>
       <button className="btn ghost wide" onClick={onMix} disabled={!questions}>🎲 Zufallsmix aus allen Themen</button>
+      {onMixDuel && <button className="btn ghost wide mix-duel" onClick={onMixDuel} disabled={!questions}>⚔️ Zufallsmix als Duell</button>}
     </div>
   );
 }

@@ -3,16 +3,16 @@ import type { Question } from './types';
 import { matchesFilter, shuffle, type Rng, type SessionOptions } from './selection';
 
 export const DUEL_SIZE = 10;
-export const DUEL_TIMES = [10, 20, 30] as const;
 export const DUEL_DEFAULT_TIME = 20;
 /** Nur Fragen mit klarem richtig/falsch und gleichen Chancen auf Handy und PC */
 export const DUEL_TYPES: Question['type'][] = ['mc', 'flagpick', 'mapname'];
 /** Zeitunterschied, unter dem bei gleich vielen Richtigen unentschieden gilt */
 export const TIE_MS = 500;
 
-export const duelTime = (t: number | undefined) => ((DUEL_TIMES as readonly number[]).includes(t ?? 0) ? (t as number) : DUEL_DEFAULT_TIME);
+/** Zeitlimit im Duell ist Pflicht: 5 bis 60 s, ohne Angabe ("Aus") 20 s */
+export const duelTime = (t: number | undefined) => (t && Number.isInteger(t) && t >= 5 && t <= 60 ? t : DUEL_DEFAULT_TIME);
 
-export function duelPool(all: Question[], opts: Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty'>): Question[] {
+export function duelPool(all: Question[], opts: Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty' | 'flagOnly'>): Question[] {
   return all.filter((q) => DUEL_TYPES.includes(q.type) && matchesFilter(q, opts));
 }
 
@@ -20,17 +20,28 @@ export function duelPool(all: Question[], opts: Pick<SessionOptions, 'topics' | 
  * 10 zufällige Fragen aus der Auswahl (unabhängig vom eigenen Lernstand, damit es für alle fair ist).
  * avoid: z.B. Fragen des Ursprungsduells bei einer Revanche. Werden nur genommen, wenn sonst zu wenige da sind.
  */
-export function pickDuelQuestions(all: Question[], opts: Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty'>, rng: Rng = Math.random, avoid: string[] = []): string[] {
+export function pickDuelQuestions(all: Question[], opts: Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty' | 'flagOnly'>, rng: Rng = Math.random, avoid: string[] = []): string[] {
   const skip = new Set(avoid);
   const pool = shuffle(duelPool(all, opts), rng);
-  return [...pool.filter((q) => !skip.has(q.id)), ...pool.filter((q) => skip.has(q.id))].slice(0, DUEL_SIZE).map((q) => q.id);
+  const ordered = [...pool.filter((q) => !skip.has(q.id)), ...pool.filter((q) => skip.has(q.id))];
+  // Zufallsmix (kein Thema gewählt): gleichmäßig über die Themen verteilen, sonst wäre es meist Geografie
+  if (!opts.topics?.length) {
+    const byTopic = new Map<string, Question[]>();
+    for (const q of ordered) byTopic.set(q.topic, [...(byTopic.get(q.topic) ?? []), q]);
+    const lists = shuffle([...byTopic.values()], rng);
+    const out: string[] = [];
+    for (let i = 0; out.length < DUEL_SIZE && lists.some((l) => l.length > i); i++)
+      for (const l of lists) if (l[i] && out.length < DUEL_SIZE) out.push(l[i].id);
+    return shuffle(out, rng);
+  }
+  return ordered.slice(0, DUEL_SIZE).map((q) => q.id);
 }
 
 /** Einstellungen eines Duells (für die Revanche) zurück in eine Auswahl */
-export function duelSelection(settings: Record<string, unknown>): Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty'> {
+export function duelSelection(settings: Record<string, unknown>): Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty' | 'flagOnly'> {
   const arr = (v: unknown) => (Array.isArray(v) ? (v as string[]) : undefined);
   const d = settings.difficulty;
-  return { topics: arr(settings.topics) as SessionOptions['topics'], cats: arr(settings.cats), subs: arr(settings.subs), difficulty: d === 1 || d === 2 || d === 3 ? d : undefined };
+  return { topics: arr(settings.topics) as SessionOptions['topics'], cats: arr(settings.cats), subs: arr(settings.subs), difficulty: d === 1 || d === 2 || d === 3 ? d : undefined, ...(settings.flagOnly ? { flagOnly: true } : {}) };
 }
 
 export interface DuelAnswer { i: number; ok: boolean; ms: number }

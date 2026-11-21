@@ -1,6 +1,6 @@
 // Push-Benachrichtigungen: Gerät an-/abmelden, Einstellungen. Verschickt wird nur vom Server (supabase/006_push.sql).
 import { sb } from './sync';
-import { iosVersionFromUa, pushAdvice, urlB64ToUint8Array, DEFAULT_PUSH_PREFS, type Platform, type PushPrefs } from './core/pushinfo';
+import { iosVersionFromUa, pushAdvice, urlB64ToUint8Array, normTime, DEFAULT_PUSH_PREFS, type Platform, type PushPrefs } from './core/pushinfo';
 
 const KEY = import.meta.env.VITE_VAPID_PUBLIC as string | undefined;
 export const pushConfigured = !!KEY;
@@ -61,13 +61,20 @@ export async function resync() {
 
 export async function loadPrefs(): Promise<PushPrefs> {
   const c = sb(); if (!c) return DEFAULT_PUSH_PREFS;
-  const { data } = await c.from('push_settings').select('challenge,decided,expiring,streak,quiet_start,quiet_end').maybeSingle();
-  return data ?? DEFAULT_PUSH_PREFS;
+  const { data } = await c.from('push_settings').select('challenge,decided,expiring,streak,quiet_enabled,quiet_start,quiet_end,daily_max,streak_time').maybeSingle();
+  return data ? { ...DEFAULT_PUSH_PREFS, ...data, streak_time: normTime(data.streak_time) } : DEFAULT_PUSH_PREFS;
 }
 export async function savePrefs(p: PushPrefs) {
   const c = sb(); if (!c) return;
   const { data: s } = await c.auth.getSession();
   const { error } = await c.from('push_settings').upsert({ user_id: s.session?.user.id, ...p, updated_at: new Date().toISOString() });
+  if (error) throw new Error(error.message);
+}
+
+/** Testnachricht an alle eigenen Geräte (höchstens 1 pro Minute) */
+export async function sendTest() {
+  const c = sb(); if (!c) throw new Error('Sync ist nicht eingerichtet.');
+  const { error } = await c.rpc('push_test');
   if (error) throw new Error(error.message);
 }
 

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Difficulty, Question } from '../core/types';
 import { xpFor, DAILY_BONUS } from '../core/scoring';
-import { withTimeBonus } from '../core/round';
+import { withTimeBonus, isFlagQuestion } from '../core/round';
 import { DAILY_GOAL } from '../core/streak';
 import { TOPIC_NAMES } from '../core/badges';
 import { useApp } from '../state';
@@ -16,8 +16,9 @@ import { OrderView } from './OrderView';
 
 export interface SessionSummary { answers: { q: Question; r: Result; xp: number }[]; daily: boolean; bonus: number; streakCompletedNow: boolean }
 
-export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone, onAnswer, title }: {
+export function Quiz({ questions, daily, timeLimit = 0, blitz = 0, onExit, onDone, onAnswer, title }: {
   questions: Question[]; daily: boolean; timeLimit?: number; onExit: () => void; onDone: (s: SessionSummary) => void;
+  /** Flaggen-Blitz: Sekunden, die eine Flagge sichtbar ist (0 = aus) */ blitz?: number;
   /** Duell: jede Antwort mit Zeit seit Erscheinen der Frage */ onAnswer?: (i: number, r: Result, ms: number) => void; title?: string;
 }) {
   const { answer, bonus, streak } = useApp();
@@ -27,16 +28,26 @@ export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone, onAnswer
   const [left, setLeft] = useState(timeLimit);
   const wasDone = useRef(streak.todayDone);
   const shownAt = useRef(performance.now());
-  useEffect(() => { shownAt.current = performance.now(); }, [i]);
   const q = questions[i];
+  // Blitz-Fragen sind erst "bereit", wenn die Flagge geladen ist: vorher läuft keine Uhr
+  const blitzHere = blitz > 0 && isFlagQuestion(q);
+  const [readyIdx, setReadyIdx] = useState(-1);
+  const ready = !blitzHere || readyIdx === i;
+  useEffect(() => { if (ready) shownAt.current = performance.now(); }, [i, ready]);
+  // Nächste Flagge schon laden
+  useEffect(() => { const nq = questions[i + 1]; const src = nq && flagSource(nq); if (src) new Image().src = src; }, [i, questions]);
 
-  // Timer (optional): Zeit abgelaufen = falsch
+  // Timer (optional): feste Endzeit, damit auch krumme Werte (z.B. 13 s) genau ablaufen. Abgelaufen = falsch
   useEffect(() => {
-    if (!timeLimit || result) return;
+    if (!timeLimit || result || !ready) return;
+    const deadline = performance.now() + timeLimit * 1000;
     setLeft(timeLimit);
-    const t = setInterval(() => setLeft((l) => l - 1), 1000);
+    const t = setInterval(() => {
+      const ms = deadline - performance.now();
+      if (ms <= 0) { clearInterval(t); setLeft(0); } else setLeft(Math.ceil(ms / 1000));
+    }, 100);
     return () => clearInterval(t);
-  }, [i, timeLimit, result]);
+  }, [i, timeLimit, result, ready]);
   useEffect(() => { if (timeLimit && left <= 0 && !result) submit({ ok: false, score: 0, given: '__timeout' }); }, [left]);
 
   function submit(r: Result) {
@@ -54,6 +65,7 @@ export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone, onAnswer
   }
 
   const flagSrc = q.type === 'mc' && q.flag ? asset(`flags/${q.flag}.svg`) : null;
+  const onBlitzReady = () => setReadyIdx(i);
   return (
     <div className="quiz">
       <header className="quiz-head">
@@ -72,10 +84,14 @@ export function Quiz({ questions, daily, timeLimit = 0, onExit, onDone, onAnswer
       </div>
       <h2 className="q-prompt">{q.prompt}</h2>
 
-      {flagSrc && <img className="flag" src={flagSrc} alt="Flagge" />}
+      {flagSrc && (blitzHere
+        ? <BlitzFlag key={'blitz-' + q.id} src={flagSrc} className="flag" seconds={blitz} revealed={!!result} onReady={onBlitzReady} />
+        : <img className="flag" src={flagSrc} alt="Flagge" />)}
       {q.image && (
         <figure className={"q-image" + (q.topic === "regionen" ? " flag-img" : "")}>
-          <img src={asset(q.image.src)} alt="Bild zur Frage" />
+          {blitzHere
+            ? <BlitzFlag key={'blitz-' + q.id} src={asset(q.image.src)} seconds={blitz} revealed={!!result} onReady={onBlitzReady} />
+            : <img src={asset(q.image.src)} alt="Bild zur Frage" />}
           <figcaption>
             {q.image.author} · <a href={q.image.licenseUrl ?? q.image.sourceUrl} target="_blank" rel="noreferrer">{q.image.license}</a> ·{' '}
             <a href={q.image.sourceUrl} target="_blank" rel="noreferrer">Quelle</a>
@@ -147,6 +163,47 @@ export function Summary({ s, label, currentDifficulty, timeLimit, onHome, onAgai
           <button className="btn primary" onClick={() => onAgain(diff)}>Noch eine Runde</button>
         </div>
       </div>
+    </div>
+  );
+}
+
+/** Bildquelle der Flagge einer Frage (für das Vorladen) */
+function flagSource(q: Question): string | null {
+  if (q.type === 'mc' && q.flag) return asset(`flags/${q.flag}.svg`);
+  if (q.type === 'mc' && q.topic === 'regionen' && q.cat === 'flaggen' && q.image) return asset(q.image.src);
+  return null;
+}
+
+/**
+ * Flaggen-Blitz: Flagge erst vollständig laden und dekodieren, dann genau `seconds` zeigen, dann verdecken.
+ * Nach der Antwort wird sie wieder aufgedeckt (zum Lernen). Zeitstempel in data-Attributen für den Test.
+ */
+function BlitzFlag({ src, seconds, revealed, onReady, className }: { src: string; seconds: number; revealed: boolean; onReady: () => void; className?: string }) {
+  const [state, setState] = useState<'laedt' | 'sichtbar' | 'verdeckt'>('laedt');
+  const times = useRef<{ shown?: number; hidden?: number }>({});
+  useEffect(() => {
+    let cancelled = false; let t: ReturnType<typeof setTimeout> | undefined;
+    const img = new Image();
+    img.src = src;
+    img.decode().catch(() => {}).then(() => {
+      if (cancelled) return;
+      requestAnimationFrame(() => {
+        if (cancelled) return;
+        setState('sichtbar');
+        requestAnimationFrame(() => { times.current.shown = performance.now(); onReady(); });
+        t = setTimeout(() => { times.current.hidden = performance.now(); setState('verdeckt'); }, seconds * 1000);
+      });
+    });
+    return () => { cancelled = true; if (t) clearTimeout(t); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [src, seconds]);
+  const show = revealed ? state !== 'laedt' : state === 'sichtbar';
+  return (
+    <div className={'blitz ' + (className ?? '')} data-state={revealed ? 'aufgedeckt' : state}
+      data-shown-at={times.current.shown} data-hidden-at={times.current.hidden}>
+      {state === 'laedt' && <span className="blitz-load muted small">Flagge lädt …</span>}
+      {show && <img src={src} alt="Flagge" />}
+      {!show && state === 'verdeckt' && <span className="blitz-cover" aria-label="Flagge verdeckt">?</span>}
     </div>
   );
 }

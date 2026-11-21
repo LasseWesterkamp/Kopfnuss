@@ -1,28 +1,42 @@
-// Startmenü vor einer Runde: Schwierigkeit und Zeitdruck
+// Startmenü vor einer Runde: Schwierigkeit, Zeitdruck, Flaggen-Blitz
 import type { Difficulty, Question } from './types';
 import { matchesFilter, type SessionOptions } from './selection';
 
-export type TimeLimit = 0 | 10 | 20 | 30;
+/** Sekunden pro Frage; 0 = ohne Zeitdruck. Frei wählbar von 5 bis 60. */
+export type TimeLimit = number;
 export const TIME_OPTIONS: TimeLimit[] = [0, 10, 20, 30];
-/** XP-Aufschlag für Zeitdruck: 10 s +20 %, 20 s +10 %, 30 s und aus: nichts */
-export const TIME_BONUS: Record<TimeLimit, number> = { 0: 0, 10: 0.2, 20: 0.1, 30: 0 };
+export const TIME_MIN = 5;
+export const TIME_MAX = 60;
+/** Flaggen-Blitz: Sekunden, die die Flagge sichtbar ist; 0 = aus */
+export const BLITZ_OPTIONS = [0, 0.5, 1, 2, 3];
 
-export interface RoundPrefs { difficulty?: Difficulty; time: TimeLimit }
+export interface RoundPrefs { difficulty?: Difficulty; time: TimeLimit; blitz?: number }
+
+export const validTime = (t: unknown): t is number => typeof t === 'number' && (t === 0 || (Number.isInteger(t) && t >= TIME_MIN && t <= TIME_MAX));
+
+/**
+ * XP-Aufschlag für Zeitdruck: +1 % pro Sekunde unter 30 s, höchstens +20 % (ab 10 s).
+ * Kürzer als 10 s bringt nichts extra, damit schnelles Raten nicht belohnt wird.
+ */
+export function timeBonus(time: number | undefined): number {
+  if (!time || time <= 0) return 0;
+  return Math.min(0.2, Math.max(0, (30 - time) / 100));
+}
 
 export function withTimeBonus(xp: number, time: number | undefined): number {
-  const b = TIME_BONUS[(time ?? 0) as TimeLimit] ?? 0;
-  return Math.round(xp * (1 + b));
+  return Math.round(xp * (1 + timeBonus(time)));
 }
 
 /** Gemerkte Wahl laden. Wer früher den globalen Zeitdruck-Schalter an hatte, startet mit 30 s. */
 export function initialPrefs(saved: Partial<RoundPrefs> | null, legacyTimer: boolean): RoundPrefs {
-  const time = saved && TIME_OPTIONS.includes(saved.time as TimeLimit) ? (saved.time as TimeLimit) : legacyTimer ? 30 : 0;
+  const time = saved && validTime(saved.time) ? saved.time : legacyTimer ? 30 : 0;
   const d = saved?.difficulty;
-  return { difficulty: d === 1 || d === 2 || d === 3 ? d : undefined, time };
+  const blitz = saved && BLITZ_OPTIONS.includes(saved.blitz as number) ? (saved.blitz as number) : 0;
+  return { difficulty: d === 1 || d === 2 || d === 3 ? d : undefined, time, blitz };
 }
 
 /** Fragen pro Stufe für die gewählte Auswahl (Themen/Kategorien/Unterthemen) */
-export function countByDifficulty(all: Question[], opts: Pick<SessionOptions, 'topics' | 'cats' | 'subs'>) {
+export function countByDifficulty(all: Question[], opts: Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'flagOnly'>) {
   const n = { all: 0, 1: 0, 2: 0, 3: 0 } as Record<'all' | Difficulty, number>;
   for (const q of all) if (matchesFilter(q, { ...opts, difficulty: undefined })) { n.all++; n[q.difficulty]++; }
   return n;
@@ -32,3 +46,5 @@ export function countByDifficulty(all: Question[], opts: Pick<SessionOptions, 't
 export function usableDifficulty(d: Difficulty | undefined, counts: Record<'all' | Difficulty, number>): Difficulty | undefined {
   return d && counts[d] > 0 ? d : undefined;
 }
+
+export { isFlagQuestion } from './selection';

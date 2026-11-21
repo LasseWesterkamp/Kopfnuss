@@ -4,13 +4,17 @@ self.addEventListener('push', (event) => {
   let d = {};
   try { d = event.data ? event.data.json() : {}; } catch { d = { body: event.data ? event.data.text() : '' }; }
   const scope = self.registration.scope;
-  event.waitUntil(self.registration.showNotification(d.title || 'Kopfnuss', {
-    body: d.body || '',
-    icon: scope + 'icons/icon-192.png',
-    badge: scope + 'icons/icon-192.png',
-    tag: d.tag || undefined,
-    data: { url: d.url || '#/' },
-  }));
+  event.waitUntil(Promise.all([
+    self.registration.showNotification(d.title || 'Kopfnuss', {
+      body: d.body || '',
+      icon: scope + 'icons/icon-192.png',
+      badge: scope + 'icons/icon-192.png',
+      tag: d.tag || undefined,
+      data: { url: d.url || '#/' },
+    }),
+    // Offene Kopfnuss-Fenster sofort aktualisieren lassen (z.B. neue Herausforderung in der Liste)
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((ws) => ws.forEach((w) => w.postMessage({ type: 'kopfnuss-push', url: d.url }))),
+  ]));
 });
 
 // Antippen: offenes Kopfnuss-Fenster nach vorne holen und dorthin wechseln, sonst neu öffnen

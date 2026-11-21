@@ -7,6 +7,8 @@ import { normalizeCode, isValidCode } from '../core/invite';
 import { Quiz } from './Quiz';
 import { PushHint } from './PushSettings';
 
+export const DUEL_POLL_MS = 10_000;
+
 /** Eigene Duelle laden (mit Neuladen-Funktion) */
 export function useDuels(enabled: boolean) {
   const [duels, setDuels] = useState<Duel[] | null>(null);
@@ -44,18 +46,22 @@ export function DuelSection({ duels, err, reload, initialCode, onCodeUsed, onOpe
   const [code, setCode] = useState(initialCode ?? '');
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
+  const [shown, setShown] = useState(20);
   const tried = useRef(false);
   const join = useCallback(async (c: string) => {
     setBusy(true); setMsg(null);
     try { const id = await du.joinDuel(c); reload(); onOpen(id); } catch (e: any) { setMsg(e.message); } finally { setBusy(false); }
   }, [reload, onOpen]);
-  // Einladungslink: automatisch beitreten
   // Einladungslink: einmal automatisch annehmen, dann ist der Code verbraucht (sonst würde jeder Besuch der Gruppen-Seite erneut umleiten)
   useEffect(() => { if (initialCode && !tried.current) { tried.current = true; onCodeUsed(); join(initialCode); } }, [initialCode, join, onCodeUsed]);
 
   const groups: Record<DuelStatus, Duel[]> = { dran: [], warten: [], fertig: [], abgelaufen: [] };
   for (const d of duels ?? []) groups[duelStatus(d)].push(d);
   const h2h = headToHead(duels ?? []);
+  // Verlauf: fertige und abgelaufene, neueste zuerst; standardmäßig eingeklappt
+  const history = [...groups.fertig, ...groups.abgelaufen].sort((x, y) => Date.parse(y.created_at) - Date.parse(x.created_at));
+  const seen = du.loadSeen();
+  const freshCount = groups.fertig.filter((d) => !seen.has(d.id)).length;
   return (
     <section className="duels">
       <h3 className="section-title">⚔️ Duelle</h3>
@@ -64,17 +70,28 @@ export function DuelSection({ duels, err, reload, initialCode, onCodeUsed, onOpe
       {duels && duels.length === 0 && (
         <p className="muted small card">Noch keine Duelle. Wähle auf einer Themenseite ▶ oder im Tab „Üben“ eine Auswahl und tippe im Startmenü auf <strong>⚔️ Als Duell</strong>. Den Link schickst du dann z.B. per WhatsApp.</p>
       )}
-      {(['dran', 'warten', 'fertig', 'abgelaufen'] as DuelStatus[]).map((s) => groups[s].length > 0 && (
+      {(['dran', 'warten'] as DuelStatus[]).map((s) => groups[s].length > 0 && (
         <div key={s} className="duel-group">
           <p className="small muted sub-hint">{STATUS_LABEL[s]}</p>
-          {groups[s].slice(0, s === 'fertig' || s === 'abgelaufen' ? 8 : 50).map((d) => <DuelRow key={d.id} d={d} status={s} onOpen={() => onOpen(d.id)} />)}
+          {groups[s].map((d) => <DuelRow key={d.id} d={d} status={s} onOpen={() => onOpen(d.id)} />)}
         </div>
       ))}
+      {history.length > 0 && (
+        <details className="fold duel-history">
+          <summary className="fold-head">Verlauf <span className="muted small">({history.length}{freshCount ? `, ${freshCount} neu` : ''})</span></summary>
+          <div className="duel-group">
+            {history.slice(0, shown).map((d) => <DuelRow key={d.id} d={d} status={duelStatus(d)} onOpen={() => onOpen(d.id)} />)}
+            {history.length > shown && <button className="btn ghost wide" onClick={() => setShown((n) => n + 20)}>Mehr anzeigen <span className="btn-sub">noch {history.length - shown}</span></button>}
+          </div>
+        </details>
+      )}
       {h2h.length > 0 && (
-        <div className="card h2h">
-          <p className="small"><strong>Bilanz</strong> (Siege : Niederlagen, Unentschieden)</p>
-          {h2h.map((x) => <div key={x.user_id} className="h2h-row"><span>gegen {x.name}</span><strong>{x.win} : {x.loss}{x.draw ? `, ${x.draw}×` : ''}</strong></div>)}
-        </div>
+        <details className="fold duel-h2h">
+          <summary className="fold-head">Bilanz <span className="muted small">(Siege : Niederlagen, Unentschieden)</span></summary>
+          <div className="card h2h">
+            {h2h.map((x) => <div key={x.user_id} className="h2h-row"><span>gegen {x.name}</span><strong>{x.win} : {x.loss}{x.draw ? `, ${x.draw}×` : ''}</strong></div>)}
+          </div>
+        </details>
       )}
       <form className="inline duel-join" onSubmit={(e) => { e.preventDefault(); const c = normalizeCode(code); if (isValidCode(c)) join(c); }}>
         <input className="text code" placeholder="Duell-Code" maxLength={6} autoCapitalize="characters" autoComplete="off" value={code} onChange={(e) => setCode(normalizeCode(e.target.value))} />
@@ -110,10 +127,13 @@ export function DuelPage({ id, onPlay, onBack, onRematch, onSettings }: { id: st
   const d = duels?.find((x) => x.id === id) ?? null;
   const status = d ? duelStatus(d) : null;
   useEffect(() => { if (d && status === 'fertig') du.markSeen(d.id); }, [d, status]);
+  // Aktuell halten: beim Zurückkehren, alle 10 s solange sichtbar, sofort bei eingehender Push-Nachricht
   useEffect(() => {
     const onVis = () => { if (document.visibilityState === 'visible') reload(); };
     document.addEventListener('visibilitychange', onVis);
-    return () => document.removeEventListener('visibilitychange', onVis);
+    window.addEventListener('kopfnuss-refresh', reload);
+    const t = setInterval(() => { if (document.visibilityState === 'visible') reload(); }, DUEL_POLL_MS);
+    return () => { document.removeEventListener('visibilitychange', onVis); window.removeEventListener('kopfnuss-refresh', reload); clearInterval(t); };
   }, [reload]);
   const [mates, setMates] = useState<du.Mate[]>([]);
   useEffect(() => { if (session) du.myGroupmates().then(setMates).catch(() => {}); }, [session]);
@@ -139,7 +159,7 @@ export function DuelPage({ id, onPlay, onBack, onRematch, onSettings }: { id: st
     <div className="duel-page">
       <div className="card duel-head">
         <h2>⚔️ {d.label}</h2>
-        <p className="muted small">{d.n} Fragen · {d.time_limit} s pro Frage · Code <strong>{d.code}</strong> · läuft bis {new Date(d.expires_at).toLocaleDateString('de-DE')}</p>
+        <p className="muted small">{d.n} Fragen · {d.time_limit} s pro Frage{Number(d.settings?.blitz) ? ` · ⚡ Blitz ${String(d.settings.blitz).replace('.', ',')} s` : ''} · Code <strong>{d.code}</strong> · läuft bis {new Date(d.expires_at).toLocaleDateString('de-DE')}</p>
         {status === 'fertig' && (
           <p className={'duel-outcome ' + (out ?? '')}>{out === 'sieg' ? '🏆 Du hast gewonnen!' : out === 'niederlage' ? `😤 ${ranked.find((r) => r.place === 1)?.player.name} hat gewonnen.` : out === 'unentschieden' ? '🤝 Unentschieden!' : 'Keiner hat angenommen.'}</p>
         )}
@@ -257,7 +277,7 @@ export function DuelPlay({ duel, ids, onDone, onExit }: { duel: Duel; ids: strin
   }, [duel.id, submit]);
 
   return (
-    <Quiz questions={list.map((x) => x.q)} daily={false} timeLimit={duel.time_limit} title={`⚔️ Duell: ${duel.label}`}
+    <Quiz questions={list.map((x) => x.q)} daily={false} timeLimit={duel.time_limit} blitz={Number(duel.settings?.blitz) || 0} title={`⚔️ Duell: ${duel.label}`}
       onAnswer={(k, r, ms) => { answers.current = [...answers.current, { i: list[k].i, ok: r.ok, ms }]; du.savePending({ id: duel.id, answers: answers.current }); }}
       onExit={() => { if (confirm('Duell abbrechen? Die restlichen Fragen zählen als falsch.')) { submit(true).then(onExit); } }}
       onDone={() => { submit(false).then(onDone); }} />

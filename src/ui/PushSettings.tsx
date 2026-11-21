@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useApp } from '../state';
 import * as push from '../push';
-import { DEFAULT_PUSH_PREFS, type PushPrefs } from '../core/pushinfo';
+import { DEFAULT_PUSH_PREFS, DAILY_MAX_OPTIONS, STREAK_TIMES, type PushPrefs } from '../core/pushinfo';
 
 const KINDS: { k: keyof PushPrefs; label: string; hint: string }[] = [
   { k: 'challenge', label: 'Herausforderungen', hint: 'jemand fordert dich heraus oder will Revanche' },
   { k: 'decided', label: 'Duell entschieden', hint: 'alle haben gespielt, ohne Ergebnis im Text' },
   { k: 'expiring', label: 'Duell läuft ab', hint: '24 Stunden vorher, wenn du noch nicht gespielt hast' },
-  { k: 'streak', label: 'Serie in Gefahr', hint: 'um 19:30, wenn du heute noch nichts gemacht hast' },
+  { k: 'streak', label: 'Serie in Gefahr', hint: 'zur gewählten Uhrzeit, wenn du heute noch nichts gemacht hast' },
 ];
 const HOURS = Array.from({ length: 24 }, (_, h) => h);
 
@@ -66,17 +66,41 @@ export function PushSettings() {
           <input type="checkbox" checked={!!prefs[k]} onChange={(e) => change({ ...prefs, [k]: e.target.checked })} />
         </label>
       ))}
-      <div className="quiet-row">
-        <span>Ruhezeit</span>
-        <select aria-label="Ruhezeit von" value={prefs.quiet_start} onChange={(e) => change({ ...prefs, quiet_start: +e.target.value })}>
-          {HOURS.map((h) => <option key={h} value={h}>{h}:00</option>)}
-        </select>
-        <span>bis</span>
-        <select aria-label="Ruhezeit bis" value={prefs.quiet_end} onChange={(e) => change({ ...prefs, quiet_end: +e.target.value })}>
-          {HOURS.map((h) => <option key={h} value={h}>{h}:00</option>)}
-        </select>
+      {prefs.streak && (
+        <div className="quiet-row">
+          <span>Serie-Erinnerung um</span>
+          <select aria-label="Uhrzeit Serie-Erinnerung" value={prefs.streak_time} onChange={(e) => change({ ...prefs, streak_time: e.target.value })}>
+            {STREAK_TIMES.map((t) => <option key={t} value={t}>{t} Uhr</option>)}
+          </select>
+        </div>
+      )}
+
+      <h4 className="push-h">Höchstens pro Tag</h4>
+      <div className="seg" role="radiogroup" aria-label="Höchstens pro Tag">
+        {DAILY_MAX_OPTIONS.map((n) => (
+          <button key={n} role="radio" aria-checked={prefs.daily_max === n} className={prefs.daily_max === n ? 'on' : ''} onClick={() => change({ ...prefs, daily_max: n })}>{n || '∞'}</button>
+        ))}
       </div>
-      <p className="muted small">In der Ruhezeit kommt nichts. Herausforderungen und Ergebnisse kommen danach, die Serie-Erinnerung entfällt dann.</p>
+      <p className="muted small">{prefs.daily_max ? `Danach kommt an dem Tag nichts mehr.` : 'Keine Obergrenze.'}</p>
+
+      <label className="switch-row">
+        <span>Ruhezeit<br /><span className="muted small">{prefs.quiet_enabled ? 'nachts nichts, Herausforderungen und Ergebnisse kommen danach' : 'aus: Nachrichten kommen auch nachts'}</span></span>
+        <input type="checkbox" aria-label="Ruhezeit an" checked={prefs.quiet_enabled} onChange={(e) => change({ ...prefs, quiet_enabled: e.target.checked })} />
+      </label>
+      {prefs.quiet_enabled && (
+        <div className="quiet-row">
+          <span>von</span>
+          <select aria-label="Ruhezeit von" value={prefs.quiet_start} onChange={(e) => change({ ...prefs, quiet_start: +e.target.value })}>
+            {HOURS.map((h) => <option key={h} value={h}>{h}:00</option>)}
+          </select>
+          <span>bis</span>
+          <select aria-label="Ruhezeit bis" value={prefs.quiet_end} onChange={(e) => change({ ...prefs, quiet_end: +e.target.value })}>
+            {HOURS.map((h) => <option key={h} value={h}>{h}:00</option>)}
+          </select>
+        </div>
+      )}
+
+      <button className="btn ghost wide push-test" disabled={busy} onClick={() => run(() => push.sendTest(), 'Testnachricht ist unterwegs. Sie sollte in wenigen Sekunden auf allen eingeschalteten Geräten erscheinen.')}>🔔 Testnachricht senden</button>
       <button className="btn ghost wide" disabled={busy} onClick={() => run(async () => { await push.disable(); setOn(false); }, 'Auf diesem Gerät ausgeschaltet.')}>Auf diesem Gerät ausschalten</button>
       {msg && <p className="small msg">{msg}</p>}
     </div>

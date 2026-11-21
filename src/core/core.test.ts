@@ -649,10 +649,12 @@ describe('Startmenü: Stufe und Zeitdruck', () => {
     expect(withTimeBonus(0, 10)).toBe(0);
   });
   it('alter globaler Zeitdruck-Schalter wird als 30 s übernommen, gemerkte Wahl hat Vorrang', () => {
-    expect(initialPrefs(null, true)).toEqual({ difficulty: undefined, time: 30 });
-    expect(initialPrefs(null, false)).toEqual({ difficulty: undefined, time: 0 });
-    expect(initialPrefs({ difficulty: 3, time: 10 }, true)).toEqual({ difficulty: 3, time: 10 });
-    expect(initialPrefs({ difficulty: 7 as any, time: 15 as any }, false)).toEqual({ difficulty: undefined, time: 0 });
+    expect(initialPrefs(null, true)).toEqual({ difficulty: undefined, time: 30, blitz: 0 });
+    expect(initialPrefs(null, false)).toEqual({ difficulty: undefined, time: 0, blitz: 0 });
+    expect(initialPrefs({ difficulty: 3, time: 10, blitz: 1 }, true)).toEqual({ difficulty: 3, time: 10, blitz: 1 });
+    expect(initialPrefs({ difficulty: 7 as any, time: 15, blitz: 7 }, false)).toEqual({ difficulty: undefined, time: 15, blitz: 0 });
+    expect(initialPrefs({ time: 4 }, false).time).toBe(0);
+    expect(initialPrefs({ time: 61 }, false).time).toBe(0);
   });
   it('zählt Fragen pro Stufe in der Auswahl; leere Stufe fällt auf Adaptiv zurück', () => {
     const all = [q('a', 'flaggen', 1, 'europa'), q('b', 'flaggen', 3, 'europa'), q('c', 'flaggen', 3, 'asien'), q('d', 'geografie', 2)];
@@ -725,7 +727,7 @@ describe('Duell', () => {
     const me = (c: number) => pl('Ich', c, 10000, { is_me: true });
     const h = headToHead([duel([me(8), pl('Max', 5, 9000)]), duel([me(3), pl('Max', 5, 9000)]), duel([me(5), pl('Max', 5, 10100)])]);
     expect(h).toEqual([{ name: 'Max', user_id: 'Max', win: 1, loss: 1, draw: 1 }]);
-    expect([duelTime(0), duelTime(10), duelTime(30), duelTime(25)]).toEqual([20, 10, 30, 20]);
+    expect([duelTime(0), duelTime(10), duelTime(30), duelTime(25), duelTime(13), duelTime(4), duelTime(61), duelTime(12.5)]).toEqual([20, 10, 30, 25, 13, 20, 20, 20]);
     expect(duelCodeFromUrl('?duell=abc')).toBe(null);
     expect(duelCodeFromUrl('?duell=abc-dez')).toBe('ABCDEZ');
   });
@@ -773,5 +775,33 @@ describe('Push', () => {
     expect([20, 21, 23, 0, 7, 8].map((h) => inQuiet(h, 21, 8))).toEqual([false, true, true, true, true, false]);
     expect([12, 13, 14].map((h) => inQuiet(h, 13, 14))).toEqual([false, true, false]);
     expect(inQuiet(5, 8, 8)).toBe(false);
+  });
+});
+
+import { timeBonus, isFlagQuestion } from './round';
+describe('Zeitlimit frei, Flaggen-Blitz, Zufallsmix-Duell', () => {
+  it('Bonus: +1 % pro Sekunde unter 30 s, höchstens +20 %, unter 10 s nichts extra', () => {
+    expect([0, 5, 9, 10, 13, 20, 29, 30, 45, 60].map((t) => Math.round(timeBonus(t) * 100))).toEqual([0, 20, 20, 20, 17, 10, 1, 0, 0, 0]);
+    expect(withTimeBonus(30, 13)).toBe(35); // 30 * 1,17 = 35,1
+    expect(withTimeBonus(30, 5)).toBe(withTimeBonus(30, 10));
+  });
+  it('Blitz gilt nur für Fragen mit genau einer Flagge', () => {
+    expect(isFlagQuestion({ ...q('a', 'flaggen'), flag: 'de' } as any)).toBe(true);
+    expect(isFlagQuestion({ ...q('b', 'regionen', 1, 'flaggen'), image: { src: 'regions/de-sn.png' } } as any)).toBe(true);
+    expect(isFlagQuestion({ ...q('c', 'regionen', 1, 'lage'), image: { src: 'x.png' } } as any)).toBe(false);
+    expect(isFlagQuestion({ ...q('d', 'flaggen'), type: 'flagpick' } as any)).toBe(false);
+    expect(isFlagQuestion(q('e', 'geografie'))).toBe(false);
+  });
+  it('Zufallsmix-Duell verteilt gleichmäßig über die Themen', () => {
+    const topics = ['geografie', 'flaggen', 'politik', 'geschichte', 'fauna', 'flora', 'wissenschaft'] as const;
+    const all = topics.flatMap((t) => Array.from({ length: t === 'geografie' ? 300 : 12 }, (_, i) => q(t + i, t)));
+    for (let k = 0; k < 20; k++) {
+      const ids = pickDuelQuestions(all, {});
+      const per = new Map<string, number>();
+      for (const id of ids) { const t = all.find((x) => x.id === id)!.topic; per.set(t, (per.get(t) ?? 0) + 1); }
+      expect(ids.length).toBe(10);
+      expect(per.size).toBeGreaterThanOrEqual(5);
+      expect(Math.max(...per.values())).toBeLessThanOrEqual(2);
+    }
   });
 });

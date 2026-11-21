@@ -7,7 +7,14 @@ export const MAX_REVIEWS_IN_DAILY = 6;
 export type Rng = () => number;
 
 /** Passt eine Frage zu Themen-, Unterthemen- und Schwierigkeitsfilter? */
-export function matchesFilter(q: Question, opts: Pick<SessionOptions, 'topics' | 'subs' | 'difficulty' | 'cats'>): boolean {
+/** Zeigt die Frage genau eine Flagge (Länder- oder Regionsflagge)? Nur dann gilt der Flaggen-Blitz. */
+export function isFlagQuestion(q: Question): boolean {
+  if (q.type !== 'mc') return false;
+  return !!q.flag || (q.topic === 'regionen' && q.cat === 'flaggen' && !!q.image);
+}
+
+export function matchesFilter(q: Question, opts: Pick<SessionOptions, 'topics' | 'subs' | 'difficulty' | 'cats' | 'flagOnly'>): boolean {
+  if (opts.flagOnly && !isFlagQuestion(q)) return false;
   if (opts.topics?.length && !opts.topics.includes(q.topic)) return false;
   if (opts.difficulty && q.difficulty !== opts.difficulty) return false;
   // Unterthemen-Filter greift nur bei Themen, die Unterthemen haben (Geschichte, Regionen).
@@ -74,6 +81,8 @@ export interface SessionOptions {
   cats?: string[];             // Kategorien als "thema/kategorie". Gilt nur für Themen, bei denen mind. eine Kategorie gewählt ist.
   difficulty?: Difficulty;     // fest statt adaptiv
   timeLimit?: number;          // Sekunden pro Frage, 0/undefined = ohne Zeitdruck (für die Auswahl ohne Bedeutung)
+  blitz?: number;              // Flaggen-Blitz: Sekunden sichtbar, 0/undefined = aus (für die Auswahl ohne Bedeutung)
+  flagOnly?: boolean;          // nur Fragen mit genau einer Flagge (Blitz-Kachel)
   size?: number;
   maxReviews?: number;
 }

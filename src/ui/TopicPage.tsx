@@ -11,7 +11,7 @@ import { useApp } from '../state';
 import { TOPIC_ICONS } from './Home';
 import { loadBest, loadLevel, fmtTime } from './Puzzle';
 
-export interface StartOpts { topics?: TopicId[]; cats?: string[]; subs?: string[]; ids?: string[]; difficulty?: Difficulty; label?: string }
+export interface StartOpts { topics?: TopicId[]; cats?: string[]; subs?: string[]; ids?: string[]; difficulty?: Difficulty; label?: string; blitz?: number; flagOnly?: boolean }
 
 export function PuzzleTiles({ list, onPuzzle }: { list: PuzzleDef[]; onPuzzle: (key: string) => void }) {
   const best = loadBest();
@@ -80,6 +80,11 @@ export function TopicPage({ topic, onStart, onPuzzle, onMistakes, onLearn }: {
       <button className="btn primary big wide" disabled={!qs.length} onClick={() => onStart({ topics: [topic], label: TOPIC_NAMES[topic] })}>
         Ganzes Thema üben <span className="btn-sub">10 Fragen, passend zu deinem Stand</span>
       </button>
+      {(topic === 'flaggen' || topic === 'regionen') && (
+        <button className="btn ghost wide blitz-tile" onClick={() => onStart({ topics: [topic], ...(topic === 'regionen' ? { cats: [catKey('regionen', 'flaggen')] } : {}), label: topic === 'flaggen' ? 'Flaggen-Blitz' : 'Regionsflaggen-Blitz', blitz: 1, flagOnly: true })}>
+          ⚡ Flaggen-Blitz <span className="btn-sub">Flagge nur 1 Sekunde sichtbar, dann raten</span>
+        </button>
+      )}
 
       {errs.length > 0 && (
         <div className="mistake-teaser card">

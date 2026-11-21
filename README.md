@@ -18,7 +18,8 @@ Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-A
 - XP, Level, Abzeichen, Statistik pro Thema mit Schwächen
 - Sync zwischen Handy und PC (Supabase, Login mit E-Mail + Passwort)
 - Gruppen mit Rangliste (Woche, Serie, Gesamt), Beitritt per Einladungscode oder -link
-- Startmenü vor jeder Runde: Schwierigkeit und Zeitdruck (aus/10/20/30 s) wählen
+- Startmenü vor jeder Runde: Schwierigkeit, Zeitdruck (5 bis 60 s) und Flaggen-Blitz wählen
+- Flaggen-Blitz: Flagge nur 0,5 bis 3 Sekunden sichtbar, dann raten
 - Duelle: Freunde per Link herausfordern, alle bekommen dieselben 10 Fragen, wer mehr richtig hat (bei Gleichstand: schneller) gewinnt
 - Push-Benachrichtigungen: Herausforderung, Duell entschieden, Duell läuft ab, Serie in Gefahr
 - Dark Mode (automatisch oder manuell)
@@ -259,7 +260,9 @@ Europa, Afrika, Asien, Nordamerika (mit Mittelamerika & Karibik), Südamerika, O
 Wer im Tab **Üben** auf „Los geht’s“, auf einer Themenseite auf ▶ bzw. „Ganzes Thema üben“ oder auf einer Lernseite auf „Abfragen“ tippt, bekommt erst ein kleines Menü (Handy: fährt von unten hoch, PC: Dialog in der Mitte, Code: `src/ui/StartSheet.tsx`, Logik: `src/core/round.ts`).
 
 - **Schwierigkeit:** Adaptiv (passt sich deinem Stand an), Leicht, Mittel, Schwer, jeweils mit Anzahl der Fragen in dieser Auswahl. Stufen ohne Fragen sind ausgegraut, unter 10 Fragen gibt es einen Hinweis (die Runde wird kürzer).
-- **Zeitdruck pro Frage:** Aus, 10 s (+20 % XP), 20 s (+10 % XP), 30 s. Zeit abgelaufen = falsch, Lösung wird gezeigt, Frage landet im Fehlerkasten. Gilt nur für Fragerunden, nicht für Puzzles.
+- **Zeitdruck pro Frage:** Aus, 10/20/30 s per Knopf oder frei per Schieberegler von 5 bis 60 s. Bonus: +1 % XP pro Sekunde unter 30 s, höchstens +20 % (ab 10 s und kürzer gibt es nicht mehr, damit schnelles Raten nicht belohnt wird). Der Countdown läuft gegen eine feste Endzeit, auch krumme Werte wie 13 s laufen genau ab. Zeit abgelaufen = falsch, Lösung wird gezeigt, Frage landet im Fehlerkasten. Gilt nur für Fragerunden, nicht für Puzzles.
+- **⚡ Flaggen-Blitz:** Erscheint im Menü, wenn die Auswahl Fragen mit genau einer Flagge enthält (Länderflaggen, Regionsflaggen). Die Flagge ist 0,5/1/2/3 s sichtbar und wird dann verdeckt. Die Antworten sind die ganze Zeit wählbar, nach der Antwort wird die Flagge wieder aufgedeckt. Die Uhr startet erst, wenn die Flagge fertig geladen ist, die nächste wird vorgeladen. Auf den Themenseiten Flaggen und Regionen gibt es eine Kachel „⚡ Flaggen-Blitz“ (1 s, nur Fragen mit einer Flagge). Zählt normal für Lernstand und XP, geht auch im Duell.
+- **Schließen per Wischen** nur am Griff oben (Strich und Titel). Das restliche Menü scrollt normal, damit Scrollen nie aus Versehen schließt.
 - **Gemerkt:** Die letzte Wahl gilt global und ist beim nächsten Mal vorausgefüllt (`localStorage` `kopfnuss.round.v1`, nur auf diesem Gerät). Wer früher in den Einstellungen „Zeitdruck“ an hatte, startet mit 30 s. Der Schalter in den Einstellungen ist weg.
 - **Ohne Menü:** Tages-Challenge (für alle gleich, ohne Uhr), Zufallsmix und „Fehler üben“ starten direkt.
 - **Schließen:** Zurück bzw. Wischgeste, nach unten wischen, Escape oder daneben tippen. Das Menü ist ein eigener Verlaufseintrag, Zurück schließt also nur das Menü.
@@ -269,14 +272,16 @@ Wer im Tab **Üben** auf „Los geht’s“, auf einer Themenseite auf ▶ bzw. 
 
 Zeitversetzt: Du spielst jetzt, die anderen irgendwann in den nächsten 7 Tagen, alle mit exakt denselben 10 Fragen in derselben Reihenfolge. 2 bis 10 Spieler, Konto mit Anzeigename nötig.
 
-- **Herausfordern:** Auswahl wie gewohnt (Themenseite ▶, Tab „Üben“ oder Lernseite), dann im Startmenü **⚔️ Als Duell**. Stufe aus dem Menü, Zeitlimit 10/20/30 s ist Pflicht (bei „Aus“ gelten 20 s). Dann „Einladen“: Link `…/Kopfnuss/?duell=CODE` (öffnet die App und nimmt an) oder 6-stelliger Code unter Gruppen → Duelle.
+- **Herausfordern:** Auswahl wie gewohnt (Themenseite ▶, Tab „Üben“ oder Lernseite), dann im Startmenü **⚔️ Als Duell**. Stufe und Flaggen-Blitz aus dem Menü, Zeitlimit 5 bis 60 s ist Pflicht (bei „Aus“ gelten 20 s).
+- **Zufallsmix-Duell:** Im ⚔️-Menü ist „🎲 Zufallsmix“ vorausgewählt, auf der Startseite gibt es „⚔️ Zufallsmix als Duell“. Die 10 Fragen werden gleichmäßig über alle Themen verteilt (höchstens 2 pro Thema), sonst wäre es wegen der Menge meist Geografie. Dann „Einladen“: Link `…/Kopfnuss/?duell=CODE` (öffnet die App und nimmt an) oder 6-stelliger Code unter Gruppen → Duelle.
 - **Direkt herausfordern:** In der Gruppen-Rangliste hat jedes andere Mitglied einen ⚔️-Knopf. Darüber wählst du Themen, Stufe und Zeit, und das Duell steht sofort bei der Person unter „Du bist dran“, mit roter Zahl am Tab. Einen Push gibt es nicht, sie sieht es beim nächsten Öffnen der App. Auf jeder Duell-Seite kannst du außerdem weitere Gruppenmitglieder mit einem Tipp dazuholen. Leute außerhalb deiner Gruppen gehen nur per Link oder Code.
 - **Revanche:** Ist ein Duell entschieden, legt „🔁 Revanche“ ein neues an: gleiche Einstellungen, alle bisherigen Mitspieler (auch die ohne gemeinsame Gruppe), möglichst nur neue Fragen. Pro Duell gibt es genau eine Revanche. Hat jemand anders sie schon gestartet, führt der Knopf dorthin.
 - **Fragen:** nur Multiple Choice (auch Flaggen und Bilder), „Welche Flagge?“ und „Welches Land ist markiert?“. Kein Kartentippen, keine Jahreszahl/Reihenfolge/Zuordnen, damit Handy und PC gleiche Chancen haben. Zufällig aus der Auswahl, unabhängig vom eigenen Lernstand (`src/core/duel.ts`).
 - **Wertung:** erst Anzahl richtig, bei Gleichstand die kürzere Gesamtzeit. Unter 0,5 s Unterschied = unentschieden. Die Gesamtzeit misst der Server (von „Jetzt spielen“ bis zur Abgabe, höchstens Fragen × Zeitlimit + 30 s). Die Zeiten pro Frage misst das Gerät, sie sind nur zur Anzeige. Wird eine Frage zwischen den Runden gelöscht, zählt sie für niemanden.
 - **Abbruch:** Starten geht nur einmal, ohne Pause. ✕ oder Zurück gibt ab, der Rest zählt falsch. Wird die App mitten im Duell geschlossen, wird beim nächsten Öffnen mit dem bisherigen Stand abgegeben (lokal in `kopfnuss.duel.pending`). Kommt nie eine Abgabe an, wertet der Server nach Ablauf der Maximalzeit 0 richtig.
 - **Sichtbarkeit:** Fremde sehen nichts. Die Fragenliste gibt es erst beim eigenen Start, die Ergebnisse der anderen erst nach der eigenen Runde.
-- **Anzeige:** Gruppen → Duelle (Du bist dran / Wartet auf andere / Fertig / Abgelaufen), Bilanz pro Gegner, Ergebnisseite mit Vergleich Frage für Frage. Die rote Zahl am Tab „Gruppen“ zählt Duelle, in denen du dran bist, plus neu entschiedene.
+- **Anzeige:** Gruppen → Duelle: „Du bist dran“ und „Wartet auf andere“ immer offen, „Verlauf“ (fertig und abgelaufen, 20 und dann „Mehr anzeigen“) und „Bilanz“ einklappbar und standardmäßig zu. Ergebnisseite mit Vergleich Frage für Frage. Die rote Zahl am Tab „Gruppen“ zählt Duelle, in denen du dran bist, plus neu entschiedene.
+- **Aktualisierung:** Gruppen- und Duell-Seite fragen alle 10 s nach, solange sie sichtbar sind, und beim Zurückkehren in die App. Kommt eine Push-Nachricht, während die App offen ist, wird sofort neu geladen. Supabase Realtime wäre schneller, bräuchte aber einen zweiten, abgesicherten Kanal neben den Duell-Funktionen. Für 10 s Unterschied lohnt sich das nicht.
 - **Punkte:** Duell-Antworten zählen normal für Lernstand, Fehlerkasten, Tagesziel und XP. Für einen Sieg gibt es keine Extra-XP, damit man die Gruppen-Rangliste nicht mit einem Zweitkonto aufpumpen kann.
 - **Ehrlich:** Die Fragen samt Lösungen liegen öffentlich in `questions.json`, und richtig/falsch meldet das Gerät. Wer den Code manipuliert, kann schummeln. Für Freunde reicht das.
 
@@ -292,18 +297,23 @@ Einschalten unter **Mehr → Benachrichtigungen** oder über den einmaligen Hinw
   - 🏁 Duell entschieden: ohne Ergebnis im Text, damit die Spannung bleibt
   - ⏳ Duell läuft in 24 h ab und du hast noch nicht gespielt
   - 🔥 Serie in Gefahr: ab 19:30, Serie mindestens 2 Tage, heute noch keine Ranglistenwerte hochgeladen
-- **Ruhezeit** (Standard 21 bis 8 Uhr deutscher Zeit, einstellbar): Herausforderungen und Ergebnisse kommen danach, die Serie-Erinnerung entfällt. Höchstens 5 Nachrichten pro Tag und Person, der Rest wird verworfen.
+- **Einstellungen pro Person** (Mehr → Benachrichtigungen):
+  - jeder Anlass einzeln
+  - Uhrzeit der Serie-Erinnerung (17:00 bis 22:00, halbe Stunden, Standard 19:30)
+  - **Höchstens pro Tag** 1/3/5/10/unbegrenzt (Standard 5, der Rest wird verworfen)
+  - **Ruhezeit** an/aus mit Von/Bis (Standard 21 bis 8 Uhr deutscher Zeit). Herausforderungen und Ergebnisse kommen danach, die Serie-Erinnerung entfällt.
+- **Testnachricht:** Knopf „🔔 Testnachricht senden“ schickt sofort eine Nachricht an alle eigenen Geräte. Höchstens 1 pro Minute, ohne Ruhezeit, zählt nicht zum Tageslimit.
 - **Antippen** öffnet das Duell bzw. die Startseite. Ist Kopfnuss schon offen, wird dieses Fenster genutzt.
 - **iPhone:** nur als Home-Bildschirm-App ab iOS 16.4 (Apple-Regel). In Safari zeigt die App statt des Schalters eine Anleitung.
 - **Mehrere Geräte:** Nachrichten gehen an alle eingeschalteten Geräte. Geräte, die der Push-Dienst nicht mehr kennt (404/410), werden automatisch entfernt. Abmelden vom Konto meldet das Gerät ab.
 
-**Technik:** Trigger auf `duel_players` und der Minuten-Takt `push_tick()` (pg_cron) legen Nachrichten in `push_queue`. `push_tick()` ruft per `pg_net` die Edge Function `supabase/functions/push-send` auf, die mit VAPID signiert, nach Web-Push-Standard (aes128gcm) verschlüsselt und verschickt. Die App selbst kann niemandem Nachrichten schicken. Der Push-Teil des Service Workers liegt in `public/push-sw.js` und wird per `importScripts` in den von vite-plugin-pwa erzeugten `sw.js` geladen, Offline-Cache und Updates bleiben unverändert.
+**Technik:** Trigger auf `duel_players` und der Minuten-Takt `push_tick()` (pg_cron) legen Nachrichten in `push_queue`. Was sofort raus darf, übergibt `push_flush()` direkt (meist nach 2 bis 7 s beim Gerät), der Rest geht mit dem Minuten-Takt. Die Edge Function reserviert jeden Eintrag vor dem Versand, so wird nichts doppelt verschickt. `push_tick()` ruft per `pg_net` die Edge Function `supabase/functions/push-send` auf, die mit VAPID signiert, nach Web-Push-Standard (aes128gcm) verschlüsselt und verschickt. Die App selbst kann niemandem Nachrichten schicken. Der Push-Teil des Service Workers liegt in `public/push-sw.js` und wird per `importScripts` in den von vite-plugin-pwa erzeugten `sw.js` geladen, Offline-Cache und Updates bleiben unverändert.
 
 **Einrichtung (einmalig):**
 1. VAPID-Schlüsselpaar erzeugen (`npx web-push generate-vapid-keys`). Den öffentlichen Schlüssel als `VITE_VAPID_PUBLIC` in `.env.production` eintragen.
 2. Supabase → Edge Functions → Secrets: `VAPID_PUBLIC`, `VAPID_PRIVATE`, `VAPID_SUBJECT` (z.B. die App-URL) und `PUSH_SECRET` (zufälliger Wert).
 3. Edge Function deployen: `supabase functions deploy push-send --no-verify-jwt`.
-4. `supabase/006_push.sql` ausführen, dann im SQL Editor die zwei Vault-Einträge aus dem Kopf der Datei anlegen (Function-URL und derselbe `PUSH_SECRET`). Nicht ins Repo.
+4. `supabase/006_push.sql` und danach `supabase/007_einstellungen.sql` ausführen, dann im SQL Editor die zwei Vault-Einträge aus dem Kopf der Datei anlegen (Function-URL und derselbe `PUSH_SECRET`). Nicht ins Repo.
 
 Unter Mehr → Über steht die Version (Build-Zeit), so sieht man, ob ein Update angekommen ist.
 
