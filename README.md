@@ -269,6 +269,8 @@ Wer im Tab **Üben** auf „Los geht’s“, auf einer Themenseite auf ▶ bzw. 
 Zeitversetzt: Du spielst jetzt, die anderen irgendwann in den nächsten 7 Tagen, alle mit exakt denselben 10 Fragen in derselben Reihenfolge. 2 bis 10 Spieler, Konto mit Anzeigename nötig.
 
 - **Herausfordern:** Auswahl wie gewohnt (Themenseite ▶, Tab „Üben“ oder Lernseite), dann im Startmenü **⚔️ Als Duell**. Stufe aus dem Menü, Zeitlimit 10/20/30 s ist Pflicht (bei „Aus“ gelten 20 s). Dann „Einladen“: Link `…/Kopfnuss/?duell=CODE` (öffnet die App und nimmt an) oder 6-stelliger Code unter Gruppen → Duelle.
+- **Direkt herausfordern:** In der Gruppen-Rangliste hat jedes andere Mitglied einen ⚔️-Knopf. Darüber wählst du Themen, Stufe und Zeit, und das Duell steht sofort bei der Person unter „Du bist dran“, mit roter Zahl am Tab. Einen Push gibt es nicht, sie sieht es beim nächsten Öffnen der App. Auf jeder Duell-Seite kannst du außerdem weitere Gruppenmitglieder mit einem Tipp dazuholen. Leute außerhalb deiner Gruppen gehen nur per Link oder Code.
+- **Revanche:** Ist ein Duell entschieden, legt „🔁 Revanche“ ein neues an: gleiche Einstellungen, alle bisherigen Mitspieler (auch die ohne gemeinsame Gruppe), möglichst nur neue Fragen. Pro Duell gibt es genau eine Revanche. Hat jemand anders sie schon gestartet, führt der Knopf dorthin.
 - **Fragen:** nur Multiple Choice (auch Flaggen und Bilder), „Welche Flagge?“ und „Welches Land ist markiert?“. Kein Kartentippen, keine Jahreszahl/Reihenfolge/Zuordnen, damit Handy und PC gleiche Chancen haben. Zufällig aus der Auswahl, unabhängig vom eigenen Lernstand (`src/core/duel.ts`).
 - **Wertung:** erst Anzahl richtig, bei Gleichstand die kürzere Gesamtzeit. Unter 0,5 s Unterschied = unentschieden. Die Gesamtzeit misst der Server (von „Jetzt spielen“ bis zur Abgabe, höchstens Fragen × Zeitlimit + 30 s). Die Zeiten pro Frage misst das Gerät, sie sind nur zur Anzeige. Wird eine Frage zwischen den Runden gelöscht, zählt sie für niemanden.
 - **Abbruch:** Starten geht nur einmal, ohne Pause. ✕ oder Zurück gibt ab, der Rest zählt falsch. Wird die App mitten im Duell geschlossen, wird beim nächsten Öffnen mit dem bisherigen Stand abgegeben (lokal in `kopfnuss.duel.pending`). Kommt nie eine Abgabe an, wertet der Server nach Ablauf der Maximalzeit 0 richtig.
@@ -278,7 +280,7 @@ Zeitversetzt: Du spielst jetzt, die anderen irgendwann in den nächsten 7 Tagen,
 - **Ehrlich:** Die Fragen samt Lösungen liegen öffentlich in `questions.json`, und richtig/falsch meldet das Gerät. Wer den Code manipuliert, kann schummeln. Für Freunde reicht das.
 
 ### Datenbank (Duelle)
-`supabase/004_duelle.sql` im SQL Editor ausführen (nach `002_gruppen.sql`). Tabellen `duels` und `duel_players` haben RLS ohne Policies, alles läuft über die Funktionen `create_duel`, `join_duel`, `start_duel`, `finish_duel` und `my_duels`, die selbst prüfen, wer was sehen darf.
+`supabase/004_duelle.sql` und danach `supabase/005_duelle_gruppen.sql` im SQL Editor ausführen (nach `002_gruppen.sql`). 005 ergänzt `create_duel` um Eingeladene und Revanche (`rematch_of`) und fügt `invite_to_duel` und `my_groupmates` hinzu. Tabellen `duels` und `duel_players` haben RLS ohne Policies, alles läuft über die Funktionen `create_duel`, `join_duel`, `invite_to_duel`, `start_duel`, `finish_duel`, `my_duels` und `my_groupmates`, die selbst prüfen, wer was sehen darf.
 
 ## Kategorien & Auswahl beim Üben
 

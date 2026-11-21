@@ -19,7 +19,7 @@ import { StartSheet } from './ui/StartSheet';
 import { loadRoundPrefs, saveRoundPrefs } from './storage';
 import type { RoundPrefs } from './core/round';
 import { DuelPage, DuelPlay, useDuels, duelBadge } from './ui/Duels';
-import { pickDuelQuestions, duelTime, duelCodeFromUrl, type Duel } from './core/duel';
+import { pickDuelQuestions, duelTime, duelCodeFromUrl, duelSelection, type Duel } from './core/duel';
 import * as du from './duel';
 import { TOPIC_NAMES } from './core/badges';
 
@@ -44,6 +44,14 @@ function Shell() {
   const duels = useDuels(!!session);
   const { reload: reloadDuels } = duels;
   useEffect(() => { if (session && (route.name === 'groups' || route.name === 'home')) reloadDuels(); }, [route.name, session, reloadDuels]);
+  // Neue Herausforderungen auch ohne Seitenwechsel: beim Zurückkehren in die App und auf dem Gruppen-Tab jede Minute
+  useEffect(() => {
+    if (!session) return;
+    const onVis = () => { if (document.visibilityState === 'visible') reloadDuels(); };
+    document.addEventListener('visibilitychange', onVis);
+    const t = route.name === 'groups' ? setInterval(reloadDuels, 60_000) : null;
+    return () => { document.removeEventListener('visibilitychange', onVis); if (t) clearInterval(t); };
+  }, [session, route.name, reloadDuels]);
   const badge = duelBadge(duels.duels);
 
   const startRound = (opts: SessionOptions, daily: boolean, label?: string, replace = false) => {
@@ -53,6 +61,7 @@ function Shell() {
   };
   // Startmenü (Stufe + Zeitdruck). Liegt als eigener History-Eintrag oben drauf, damit Zurück/Wischen es schließt.
   const [sheet, setSheet] = useState<StartOpts | null>(null);
+  const [target, setTarget] = useState<{ user_id: string; name: string } | null>(null);
   const afterClose = useRef<(() => void) | null>(null);
   useEffect(() => {
     if (!sheet) return;
@@ -66,16 +75,36 @@ function Shell() {
     // Fehler üben: direkt los, alle offenen Fehler dürfen in die Runde (nicht auf 5 Wiederholungen begrenzt)
     if (o.ids) return startRound({ ...opts, maxReviews: 10 }, false, label);
     history.pushState({ ...history.state, sheet: true }, '');
+    setTarget(null);
     setSheet(o);
+  };
+  /** Gruppenmitglied direkt herausfordern: Startmenü mit Themenwahl */
+  const challenge = (m: { user_id: string; name: string }) => {
+    history.pushState({ ...history.state, sheet: true }, '');
+    setTarget(m);
+    setSheet({ label: 'Alle Themen' });
+  };
+  /** Revanche: gleiche Einstellungen und Spieler, möglichst neue Fragen. Gibt es schon eine, dorthin. */
+  const rematch = async (d: Duel) => {
+    try {
+      if (d.rematch_id) return go({ name: 'duel', id: d.rematch_id });
+      const sel = duelSelection(d.settings);
+      const ids = pickDuelQuestions(questions ?? [], sel, Math.random, d.question_ids ?? []);
+      const others = d.players.filter((p) => !p.is_me).map((p) => p.user_id);
+      const r = await du.createDuel(d.label, d.settings, ids, d.time_limit, others, d.id);
+      reloadDuels();
+      go({ name: 'duel', id: r.id });
+    } catch (e: any) { alert('Revanche konnte nicht angelegt werden: ' + e.message); }
   };
   const duelWith = (o: StartOpts, p: RoundPrefs) => {
     saveRoundPrefs(p);
+    const invite = target ? [target.user_id] : [];
     const { label, topics, cats, subs } = o;
     closeSheet(async () => {
       try {
         const ids = pickDuelQuestions(questions ?? [], { topics, cats, subs, difficulty: p.difficulty });
         const name = label && label !== 'Üben' ? label : topics?.length ? topics.map((t) => TOPIC_NAMES[t]).join(', ') : 'Alle Themen';
-        const r = await du.createDuel(name, { topics, cats, subs, difficulty: p.difficulty ?? null }, ids, duelTime(p.time));
+        const r = await du.createDuel(name, { topics, cats, subs, difficulty: p.difficulty ?? null }, ids, duelTime(p.time), invite);
         reloadDuels();
         go({ name: 'duel', id: r.id });
       } catch (e: any) { alert('Duell konnte nicht angelegt werden: ' + e.message); }
@@ -119,9 +148,9 @@ function Shell() {
       page = def ? <Puzzle key={def.key} def={def} onExit={back} /> : <div className="card">Dieses Puzzle gibt es nicht.</div>;
       break;
     }
-    case 'groups': page = <Groups joinCode={joinCode} onGoSettings={() => tab('settings')} duels={duels} duelCode={duelCode} onOpenDuel={(id) => nav({ name: 'duel', id })} />; break;
+    case 'groups': page = <Groups joinCode={joinCode} onGoSettings={() => tab('settings')} duels={duels} duelCode={duelCode} onOpenDuel={(id) => nav({ name: 'duel', id })} onChallenge={challenge} />; break;
     case 'duel':
-      page = <DuelPage key={route.id} id={route.id} onBack={back}
+      page = <DuelPage key={route.id} id={route.id} onBack={back} onRematch={rematch}
         onPlay={(d, ids) => go({ name: 'duelplay' }, { opts: {}, daily: false, key: Date.now(), duel: d, duelIds: ids })} />;
       break;
     case 'duelplay':
@@ -162,7 +191,7 @@ function Shell() {
         {loadError && <div className="card error">Fragen konnten nicht geladen werden: {loadError}</div>}
         {page}
       </main>
-      {sheet && <StartSheet opts={sheet} prefs={loadRoundPrefs()} onStart={(p) => startWith(sheet, p)} onDuel={(p) => duelWith(sheet, p)} onClose={() => closeSheet()} />}
+      {sheet && <StartSheet opts={sheet} prefs={loadRoundPrefs()} onStart={(p) => startWith(sheet, p)} target={target} onDuel={(p, o) => duelWith(o, p)} onClose={() => closeSheet()} />}
       {!inQuiz && (
         <nav className="tabbar">
           {([['home', '🏠', 'Start'], ['practice', '🎯', 'Üben'], ['groups', '🏆', 'Gruppen'], ['stats', '📊', 'Statistik'], ['settings', '⚙️', 'Mehr']] as const).map(([n, icon, label]) => (

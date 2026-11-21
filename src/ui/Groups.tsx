@@ -12,9 +12,10 @@ const BOARDS: { id: Board; label: string; unit: string }[] = [
   { id: 'gesamt', label: 'Gesamt', unit: 'XP' },
 ];
 
-export function Groups({ joinCode, onGoSettings, duels, duelCode, onOpenDuel }: {
+export function Groups({ joinCode, onGoSettings, duels, duelCode, onOpenDuel, onChallenge }: {
   joinCode: string | null; onGoSettings: () => void;
   duels: ReturnType<typeof useDuels>; duelCode: string | null; onOpenDuel: (id: string) => void;
+  onChallenge: (m: { user_id: string; name: string }) => void;
 }) {
   const { session, syncNow, today } = useApp();
   const [name, setName] = useState<string | null | undefined>(undefined); // undefined = lädt
@@ -76,7 +77,7 @@ export function Groups({ joinCode, onGoSettings, duels, duelCode, onOpenDuel }: 
           ))}
         </div>
       )}
-      {current && <GroupView key={current.id} group={current} today={today} onChanged={load} setMsg={setMsg} />}
+      {current && <GroupView key={current.id} group={current} today={today} onChanged={load} setMsg={setMsg} onChallenge={onChallenge} />}
       <DuelSection duels={duels.duels} err={duels.err} reload={duels.reload} initialCode={duelCode} onOpen={onOpenDuel} />
 
       {/* Einklappbar: zu, sobald man in einer Gruppe ist; offen ohne Gruppe oder mit Einladungscode */}
@@ -98,7 +99,9 @@ export function Groups({ joinCode, onGoSettings, duels, duelCode, onOpenDuel }: 
   );
 }
 
-function GroupView({ group, today, onChanged, setMsg }: { group: g.Group; today: string; onChanged: () => void; setMsg: (m: string | null) => void }) {
+function GroupView({ group, today, onChanged, setMsg, onChallenge }: {
+  group: g.Group; today: string; onChanged: () => void; setMsg: (m: string | null) => void; onChallenge: (m: { user_id: string; name: string }) => void;
+}) {
   const { session } = useApp();
   const [board, setBoard] = useState<Board>('woche');
   const [entries, setEntries] = useState<Entry[] | null>(null);
@@ -140,6 +143,10 @@ function GroupView({ group, today, onChanged, setMsg }: { group: g.Group; today:
             <span className="who">{e.display_name}{e.is_me && <em> (du)</em>}{e.is_owner && <span className="owner" title="Admin"> ★</span>}
               {board === 'woche' && <span className="muted small"> · {e.week_answers} Fragen</span>}</span>
             <span className="val">{e.value} <span className="muted small">{unit === 'Tage' && e.value === 1 ? 'Tag' : unit}</span></span>
+            {!e.is_me && (
+              <button className="icon-btn duel-btn" aria-label={`${e.display_name} zum Duell herausfordern`} title="Zum Duell herausfordern"
+                onClick={() => onChallenge({ user_id: e.user_id, name: e.display_name })}>⚔️</button>
+            )}
             {isOwner && !e.is_me && (
               <button className="icon-btn kick" aria-label={`${e.display_name} entfernen`}
                 onClick={() => confirm(`${e.display_name} aus der Gruppe entfernen?`) && act(() => g.removeMember(group.id, e.user_id), 'Mitglied entfernt.')}>✕</button>

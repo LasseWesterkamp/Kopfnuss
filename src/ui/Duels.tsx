@@ -100,7 +100,7 @@ function DuelRow({ d, status, onOpen }: { d: Duel; status: DuelStatus; onOpen: (
 }
 
 /** Detailseite eines Duells: Spieler, Start, Ergebnis mit Vergleich Frage für Frage */
-export function DuelPage({ id, onPlay, onBack }: { id: string; onPlay: (d: Duel, ids: string[]) => void; onBack: () => void }) {
+export function DuelPage({ id, onPlay, onBack, onRematch }: { id: string; onPlay: (d: Duel, ids: string[]) => void; onBack: () => void; onRematch: (d: Duel) => Promise<void> }) {
   const { questions, session } = useApp();
   const { duels, err, reload } = useDuels(!!session);
   const [busy, setBusy] = useState(false);
@@ -108,6 +108,13 @@ export function DuelPage({ id, onPlay, onBack }: { id: string; onPlay: (d: Duel,
   const d = duels?.find((x) => x.id === id) ?? null;
   const status = d ? duelStatus(d) : null;
   useEffect(() => { if (d && status === 'fertig') du.markSeen(d.id); }, [d, status]);
+  useEffect(() => {
+    const onVis = () => { if (document.visibilityState === 'visible') reload(); };
+    document.addEventListener('visibilitychange', onVis);
+    return () => document.removeEventListener('visibilitychange', onVis);
+  }, [reload]);
+  const [mates, setMates] = useState<du.Mate[]>([]);
+  useEffect(() => { if (session) du.myGroupmates().then(setMates).catch(() => {}); }, [session]);
 
   if (!session) return <div className="card">Für Duelle bitte erst anmelden (Mehr → Konto).</div>;
   if (err) return <div className="card">{err}</div>;
@@ -138,11 +145,35 @@ export function DuelPage({ id, onPlay, onBack }: { id: string; onPlay: (d: Duel,
         {me.state === 'offen' && status === 'dran' && (
           <button className="btn primary big wide" disabled={busy || !questions} onClick={start}>Jetzt spielen <span className="btn-sub">Uhr läuft ab dem Start</span></button>
         )}
+        {status === 'fertig' && d.players.length > 1 && (
+          <button className="btn primary big wide rematch-btn" disabled={busy || !questions}
+            onClick={async () => { setBusy(true); try { await onRematch(d); } finally { setBusy(false); } }}>
+            🔁 {d.rematch_id ? 'Zur Revanche' : 'Revanche'}
+            <span className="btn-sub">{d.rematch_id ? 'gibt es schon' : `gleiche Einstellungen, neue Fragen, gegen ${d.players.filter((p) => !p.is_me).map((p) => p.name).join(', ')}`}</span>
+          </button>
+        )}
         {status !== 'fertig' && status !== 'abgelaufen' && d.players.length < 10 && (
-          <button className="btn ghost wide" onClick={async () => setMsg(await share(d.code, d.label))}>Einladen <span className="btn-sub">Link oder Code {d.code}</span></button>
+          <button className="btn ghost wide" onClick={async () => setMsg(await share(d.code, d.label))}>Per Link einladen <span className="btn-sub">Link oder Code {d.code}</span></button>
         )}
         {msg && <p className="small msg">{msg}</p>}
       </div>
+
+      {status !== 'fertig' && status !== 'abgelaufen' && d.players.length < 10 && (() => {
+        const free = mates.filter((m) => !d.players.some((p) => p.user_id === m.user_id));
+        return free.length > 0 && (
+          <>
+            <h3 className="section-title">Aus deinen Gruppen dazuholen</h3>
+            <div className="chips mates">
+              {free.map((m) => (
+                <button key={m.user_id} className="chip-btn" disabled={busy}
+                  onClick={async () => { setBusy(true); setMsg(null); try { await du.inviteToDuel(d.id, [m.user_id]); await reload(); setMsg(`${m.name} ist dabei.`); } catch (e: any) { setMsg(e.message); } finally { setBusy(false); } }}>
+                  ⚔️ {m.name}
+                </button>
+              ))}
+            </div>
+          </>
+        );
+      })()}
 
       <h3 className="section-title">Spieler</h3>
       <div className="card duel-players">

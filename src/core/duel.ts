@@ -16,9 +16,21 @@ export function duelPool(all: Question[], opts: Pick<SessionOptions, 'topics' | 
   return all.filter((q) => DUEL_TYPES.includes(q.type) && matchesFilter(q, opts));
 }
 
-/** 10 zufällige Fragen aus der Auswahl (unabhängig vom eigenen Lernstand, damit es für alle fair ist) */
-export function pickDuelQuestions(all: Question[], opts: Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty'>, rng: Rng = Math.random): string[] {
-  return shuffle(duelPool(all, opts), rng).slice(0, DUEL_SIZE).map((q) => q.id);
+/**
+ * 10 zufällige Fragen aus der Auswahl (unabhängig vom eigenen Lernstand, damit es für alle fair ist).
+ * avoid: z.B. Fragen des Ursprungsduells bei einer Revanche. Werden nur genommen, wenn sonst zu wenige da sind.
+ */
+export function pickDuelQuestions(all: Question[], opts: Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty'>, rng: Rng = Math.random, avoid: string[] = []): string[] {
+  const skip = new Set(avoid);
+  const pool = shuffle(duelPool(all, opts), rng);
+  return [...pool.filter((q) => !skip.has(q.id)), ...pool.filter((q) => skip.has(q.id))].slice(0, DUEL_SIZE).map((q) => q.id);
+}
+
+/** Einstellungen eines Duells (für die Revanche) zurück in eine Auswahl */
+export function duelSelection(settings: Record<string, unknown>): Pick<SessionOptions, 'topics' | 'cats' | 'subs' | 'difficulty'> {
+  const arr = (v: unknown) => (Array.isArray(v) ? (v as string[]) : undefined);
+  const d = settings.difficulty;
+  return { topics: arr(settings.topics) as SessionOptions['topics'], cats: arr(settings.cats), subs: arr(settings.subs), difficulty: d === 1 || d === 2 || d === 3 ? d : undefined };
 }
 
 export interface DuelAnswer { i: number; ok: boolean; ms: number }
@@ -30,6 +42,7 @@ export interface DuelPlayer {
 export interface Duel {
   id: string; code: string; label: string; settings: Record<string, unknown>; time_limit: number; n: number;
   created_at: string; expires_at: string; is_creator: boolean; question_ids: string[] | null; players: DuelPlayer[];
+  rematch_of?: string | null; rematch_id?: string | null;
 }
 
 /**

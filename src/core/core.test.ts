@@ -730,3 +730,21 @@ describe('Duell', () => {
     expect(duelCodeFromUrl('?duell=abc-dez')).toBe('ABCDEZ');
   });
 });
+
+import { duelSelection } from './duel';
+describe('Revanche', () => {
+  it('nimmt möglichst andere Fragen als das Ursprungsduell, füllt nur notfalls auf', () => {
+    const all = Array.from({ length: 25 }, (_, i) => q('f' + i, 'flaggen', 3, 'europa'));
+    const first = pickDuelQuestions(all, { topics: ['flaggen'] });
+    const second = pickDuelQuestions(all, { topics: ['flaggen'] }, Math.random, first);
+    expect(second.filter((id) => first.includes(id))).toEqual([]);
+    const small = all.slice(0, 14);
+    const a = pickDuelQuestions(small, {}, Math.random, small.slice(0, 10).map((x) => x.id));
+    expect(a.length).toBe(10);
+    expect(a.filter((id) => !small.slice(0, 10).some((x) => x.id === id)).length).toBe(4); // alle 4 neuen zuerst
+  });
+  it('Einstellungen des Duells werden wieder zur Auswahl', () => {
+    expect(duelSelection({ topics: ['flaggen'], cats: [], subs: [], difficulty: 3 })).toEqual({ topics: ['flaggen'], cats: [], subs: [], difficulty: 3 });
+    expect(duelSelection({ difficulty: null })).toEqual({ topics: undefined, cats: undefined, subs: undefined, difficulty: undefined });
+  });
+});

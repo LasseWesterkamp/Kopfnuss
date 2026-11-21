@@ -16,8 +16,11 @@ async function rpc<T>(fn: string, args?: Record<string, unknown>): Promise<T> {
   return data as T;
 }
 
-export const createDuel = (label: string, settings: Record<string, unknown>, ids: string[], time: number) =>
-  rpc<{ id: string; code: string }>('create_duel', { p_label: label, p_settings: settings, p_question_ids: ids, p_time_limit: time });
+export const createDuel = (label: string, settings: Record<string, unknown>, ids: string[], time: number, invite: string[] = [], rematchOf: string | null = null) =>
+  rpc<{ id: string; code: string; existing: boolean }>('create_duel', { p_label: label, p_settings: settings, p_question_ids: ids, p_time_limit: time, p_invite: invite, p_rematch_of: rematchOf });
+export const inviteToDuel = (id: string, users: string[]) => rpc<number>('invite_to_duel', { p_duel: id, p_users: users });
+export interface Mate { user_id: string; name: string }
+export const myGroupmates = () => rpc<Mate[]>('my_groupmates');
 export const joinDuel = (code: string) => rpc<string>('join_duel', { p_code: code });
 export const startDuel = (id: string) => rpc<{ question_ids: string[]; time_limit: number; started_at: string }>('start_duel', { p_duel: id });
 export const finishDuel = (id: string, answers: DuelAnswer[], aborted = false) => rpc<void>('finish_duel', { p_duel: id, p_answers: answers, p_aborted: aborted });

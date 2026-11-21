@@ -5,16 +5,25 @@ import { useApp } from '../state';
 import type { StartOpts } from './TopicPage';
 import { duelPool, duelTime } from '../core/duel';
 import { syncConfigured } from '../sync';
+import { TOPIC_NAMES } from '../core/badges';
+import { TOPIC_ICONS, TOPIC_ORDER } from './Home';
+import type { TopicId } from '../core/types';
 
 const DIFFS: { d: Difficulty | undefined; label: string }[] = [
   { d: undefined, label: 'Adaptiv' }, { d: 1, label: 'Leicht' }, { d: 2, label: 'Mittel' }, { d: 3, label: 'Schwer' },
 ];
 
 /** Menü vor dem Start: von unten (Handy) bzw. Dialog (PC). Schließen: Zurück, nach unten wischen, Escape, daneben tippen. */
-export function StartSheet({ opts, prefs, onStart, onDuel, onClose }: {
-  opts: StartOpts; prefs: RoundPrefs; onStart: (p: RoundPrefs) => void; onDuel: (p: RoundPrefs) => void; onClose: () => void;
+export function StartSheet({ opts: base, prefs, target, onStart, onDuel, onClose }: {
+  opts: StartOpts; prefs: RoundPrefs; onStart: (p: RoundPrefs) => void; onDuel: (p: RoundPrefs, o: StartOpts) => void; onClose: () => void;
+  /** Gruppenmitglied direkt herausfordern: dann Themen wählbar, nur Duell-Knopf */
+  target?: { user_id: string; name: string } | null;
 }) {
   const { questions, session } = useApp();
+  const [picked, setPicked] = useState<TopicId[]>(base.topics ?? []);
+  const opts: StartOpts = target
+    ? { ...base, topics: picked, label: picked.length ? picked.map((t) => TOPIC_NAMES[t]).join(', ') : 'Alle Themen' }
+    : base;
   const counts = countByDifficulty(questions ?? [], opts);
   const [diff, setDiff] = useState<Difficulty | undefined>(usableDifficulty(prefs.difficulty, counts));
   const [time, setTime] = useState<TimeLimit>(prefs.time);
@@ -39,8 +48,16 @@ export function StartSheet({ opts, prefs, onStart, onDuel, onClose }: {
         onTouchMove={(e) => { if (startY.current !== null) setDrag(Math.max(0, e.touches[0].clientY - startY.current)); }}
         onTouchEnd={() => { if (drag > 80) onClose(); setDrag(0); startY.current = null; }}>
         <div className="sheet-grip" aria-hidden />
-        <h2 className="sheet-title">{opts.label ?? 'Runde'}</h2>
-        <p className="muted small">{counts.all} Fragen in dieser Auswahl</p>
+        <h2 className="sheet-title">{target ? `⚔️ ${target.name} herausfordern` : opts.label ?? 'Runde'}</h2>
+        {target && (
+          <div className="chips sheet-topics" role="group" aria-label="Themen">
+            {TOPIC_ORDER.map((t) => (
+              <button key={t} className={'chip-btn' + (picked.includes(t) ? ' on' : '')} aria-pressed={picked.includes(t)}
+                onClick={() => setPicked((p) => (p.includes(t) ? p.filter((x) => x !== t) : [...p, t]))}>{TOPIC_ICONS[t]} {TOPIC_NAMES[t]}</button>
+            ))}
+          </div>
+        )}
+        <p className="muted small">{target ? (picked.length ? opts.label : 'Keine Auswahl = alle Themen') + ' · ' : ''}{counts.all} Fragen in dieser Auswahl</p>
 
         <h3 className="sheet-h">Schwierigkeit</h3>
         <div className="seg seg-counts" role="radiogroup" aria-label="Schwierigkeit">
@@ -66,14 +83,16 @@ export function StartSheet({ opts, prefs, onStart, onDuel, onClose }: {
           ))}
         </div>
 
-        <button ref={startBtn} className="btn primary big wide sheet-start" onClick={() => onStart({ difficulty: diff, time })}>
-          Start <span className="btn-sub">{Math.min(10, n)} Fragen{time ? ` · ${time} s pro Frage` : ''}</span>
-        </button>
+        {!target && (
+          <button ref={startBtn} className="btn primary big wide sheet-start" onClick={() => onStart({ difficulty: diff, time })}>
+            Start <span className="btn-sub">{Math.min(10, n)} Fragen{time ? ` · ${time} s pro Frage` : ''}</span>
+          </button>
+        )}
         {syncConfigured && (() => {
           const dn = Math.min(10, duelPool(questions ?? [], { ...opts, difficulty: diff }).length);
           return session
-            ? <button className="btn ghost wide sheet-duel" disabled={!dn} onClick={() => onDuel({ difficulty: diff, time })}>
-                ⚔️ Als Duell <span className="btn-sub">{dn ? `${dn} gleiche Fragen für alle · ${duelTime(time)} s pro Frage` : 'keine passenden Fragen (nur Auswahl-Fragen zählen)'}</span>
+            ? <button className={'btn wide sheet-duel ' + (target ? 'primary big sheet-start' : 'ghost')} disabled={!dn} onClick={() => onDuel({ difficulty: diff, time }, opts)}>
+                {target ? `⚔️ ${target.name} herausfordern` : '⚔️ Als Duell'} <span className="btn-sub">{dn ? `${dn} gleiche Fragen für alle · ${duelTime(time)} s pro Frage` : 'keine passenden Fragen (nur Auswahl-Fragen zählen)'}</span>
               </button>
             : <p className="small muted sheet-note">⚔️ Duelle gegen Freunde: erst unter Mehr anmelden.</p>;
         })()}

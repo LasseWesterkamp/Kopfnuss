@@ -426,3 +426,7 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .duel-compare td.wrong { color: #c62828; font-weight: 700; white-space: nowrap; }
 .duel-compare tr.removed td { opacity: .5; }
 .quiz-title { margin: -4px 0 8px; font-weight: 600; color: var(--muted); }
+.duel-btn { width: 40px; height: 40px; font-size: 1rem; margin-left: 4px; }
+.sheet-topics { margin: 10px 0 4px; max-height: 120px; overflow-y: auto; }
+.mates { margin-bottom: 8px; }
+.rematch-btn { margin-top: 12px; }
