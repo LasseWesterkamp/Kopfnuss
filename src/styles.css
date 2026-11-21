@@ -453,3 +453,5 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .blitz-tile { margin-top: 8px; }
 .push-h { margin: 16px 0 6px; font-size: .95rem; }
 .push-test { margin-top: 12px; }
+/* iOS zoomt bei Eingabefeldern unter 16 px automatisch hinein (und verschiebt dabei fest angeheftete Leisten) */
+input, select, textarea { font-size: max(16px, 1rem) !important; }
