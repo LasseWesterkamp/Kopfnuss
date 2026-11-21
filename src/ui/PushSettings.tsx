@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useApp } from '../state';
 import * as push from '../push';
 import { DEFAULT_PUSH_PREFS, DAILY_MAX_OPTIONS, STREAK_TIMES, type PushPrefs } from '../core/pushinfo';
@@ -26,7 +26,12 @@ export function IosInstallSteps() {
 export function PushSettings() {
   const { session } = useApp();
   const [on, setOn] = useState<boolean | null>(null);
-  const [prefs, setPrefs] = useState<PushPrefs>(DEFAULT_PUSH_PREFS);
+  const [prefs, setPrefsState] = useState<PushPrefs>(DEFAULT_PUSH_PREFS);
+  // Immer den neuesten Gesamtstand speichern, gebündelt: schnelle Änderungen hintereinander dürfen sich nicht gegenseitig überschreiben
+  const latest = useRef<PushPrefs>(DEFAULT_PUSH_PREFS);
+  const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const setPrefs = (p: PushPrefs) => { latest.current = p; setPrefsState(p); };
+  useEffect(() => () => { if (saveTimer.current) { clearTimeout(saveTimer.current); push.savePrefs(latest.current).catch(() => {}); } }, []);
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
   const adv = push.advice();
@@ -48,7 +53,11 @@ export function PushSettings() {
     setBusy(true); setMsg(null);
     try { await f(); setMsg(ok); } catch (e: any) { setMsg(e.message); } finally { setBusy(false); }
   };
-  const change = (p: PushPrefs) => { setPrefs(p); push.savePrefs(p).catch((e) => setMsg(e.message)); };
+  const change = (patch: Partial<PushPrefs>) => {
+    setPrefs({ ...latest.current, ...patch });
+    if (saveTimer.current) clearTimeout(saveTimer.current);
+    saveTimer.current = setTimeout(() => { saveTimer.current = null; push.savePrefs(latest.current).catch((e) => setMsg(e.message)); }, 300);
+  };
 
   if (!on) return (
     <div className="push-off">
@@ -63,13 +72,13 @@ export function PushSettings() {
       {KINDS.map(({ k, label, hint }) => (
         <label key={k} className="switch-row">
           <span>{label}<br /><span className="muted small">{hint}</span></span>
-          <input type="checkbox" checked={!!prefs[k]} onChange={(e) => change({ ...prefs, [k]: e.target.checked })} />
+          <input type="checkbox" checked={!!prefs[k]} onChange={(e) => change({ [k]: e.target.checked })} />
         </label>
       ))}
       {prefs.streak && (
         <div className="quiet-row">
           <span>Serie-Erinnerung um</span>
-          <select aria-label="Uhrzeit Serie-Erinnerung" value={prefs.streak_time} onChange={(e) => change({ ...prefs, streak_time: e.target.value })}>
+          <select aria-label="Uhrzeit Serie-Erinnerung" value={prefs.streak_time} onChange={(e) => change({ streak_time: e.target.value })}>
             {STREAK_TIMES.map((t) => <option key={t} value={t}>{t} Uhr</option>)}
           </select>
         </div>
@@ -78,23 +87,23 @@ export function PushSettings() {
       <h4 className="push-h">Höchstens pro Tag</h4>
       <div className="seg" role="radiogroup" aria-label="Höchstens pro Tag">
         {DAILY_MAX_OPTIONS.map((n) => (
-          <button key={n} role="radio" aria-checked={prefs.daily_max === n} className={prefs.daily_max === n ? 'on' : ''} onClick={() => change({ ...prefs, daily_max: n })}>{n || '∞'}</button>
+          <button key={n} role="radio" aria-checked={prefs.daily_max === n} className={prefs.daily_max === n ? 'on' : ''} onClick={() => change({ daily_max: n })}>{n || '∞'}</button>
         ))}
       </div>
       <p className="muted small">{prefs.daily_max ? `Danach kommt an dem Tag nichts mehr.` : 'Keine Obergrenze.'}</p>
 
       <label className="switch-row">
         <span>Ruhezeit<br /><span className="muted small">{prefs.quiet_enabled ? 'nachts nichts, Herausforderungen und Ergebnisse kommen danach' : 'aus: Nachrichten kommen auch nachts'}</span></span>
-        <input type="checkbox" aria-label="Ruhezeit an" checked={prefs.quiet_enabled} onChange={(e) => change({ ...prefs, quiet_enabled: e.target.checked })} />
+        <input type="checkbox" aria-label="Ruhezeit an" checked={prefs.quiet_enabled} onChange={(e) => change({ quiet_enabled: e.target.checked })} />
       </label>
       {prefs.quiet_enabled && (
         <div className="quiet-row">
           <span>von</span>
-          <select aria-label="Ruhezeit von" value={prefs.quiet_start} onChange={(e) => change({ ...prefs, quiet_start: +e.target.value })}>
+          <select aria-label="Ruhezeit von" value={prefs.quiet_start} onChange={(e) => change({ quiet_start: +e.target.value })}>
             {HOURS.map((h) => <option key={h} value={h}>{h}:00</option>)}
           </select>
           <span>bis</span>
-          <select aria-label="Ruhezeit bis" value={prefs.quiet_end} onChange={(e) => change({ ...prefs, quiet_end: +e.target.value })}>
+          <select aria-label="Ruhezeit bis" value={prefs.quiet_end} onChange={(e) => change({ quiet_end: +e.target.value })}>
             {HOURS.map((h) => <option key={h} value={h}>{h}:00</option>)}
           </select>
         </div>
