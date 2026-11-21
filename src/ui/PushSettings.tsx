@@ -30,6 +30,8 @@ export function PushSettings() {
   // Immer den neuesten Gesamtstand speichern, gebündelt: schnelle Änderungen hintereinander dürfen sich nicht gegenseitig überschreiben
   const latest = useRef<PushPrefs>(DEFAULT_PUSH_PREFS);
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [loaded, setLoaded] = useState(false);
+  const dirty = useRef(false); // schon selbst geändert: dann den (älteren) Stand vom Server nicht mehr darüberlegen
   const setPrefs = (p: PushPrefs) => { latest.current = p; setPrefsState(p); };
   useEffect(() => () => { if (saveTimer.current) { clearTimeout(saveTimer.current); push.savePrefs(latest.current).catch(() => {}); } }, []);
   const [busy, setBusy] = useState(false);
@@ -38,7 +40,7 @@ export function PushSettings() {
   useEffect(() => {
     if (!session) return;
     push.isOn().then(setOn).catch(() => setOn(false));
-    push.loadPrefs().then(setPrefs).catch(() => {});
+    push.loadPrefs().then((p) => { if (!dirty.current) setPrefs(p); }).catch(() => {}).finally(() => setLoaded(true));
   }, [session]);
 
   if (!push.pushConfigured) return null;
@@ -47,13 +49,14 @@ export function PushSettings() {
   if (adv === 'ios-old') return <p className="small">Dein iPhone braucht mindestens iOS 16.4 für Benachrichtigungen aus Web-Apps. Ein Update unter Einstellungen → Allgemein → Softwareupdate hilft.</p>;
   if (adv === 'unsupported') return <p className="small muted">Dieser Browser kann keine Benachrichtigungen von Web-Apps empfangen.</p>;
   if (adv === 'denied') return <p className="small">Benachrichtigungen sind für Kopfnuss blockiert. Du kannst sie in den Einstellungen deines Browsers bzw. unter iPhone-Einstellungen → Mitteilungen → Kopfnuss wieder erlauben.</p>;
-  if (on === null) return <p className="muted small">Lädt …</p>;
+  if (on === null || (on && !loaded)) return <p className="muted small">Lädt …</p>;
 
   const run = async (f: () => Promise<void>, ok: string) => {
     setBusy(true); setMsg(null);
     try { await f(); setMsg(ok); } catch (e: any) { setMsg(e.message); } finally { setBusy(false); }
   };
   const change = (patch: Partial<PushPrefs>) => {
+    dirty.current = true;
     setPrefs({ ...latest.current, ...patch });
     if (saveTimer.current) clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(() => { saveTimer.current = null; push.savePrefs(latest.current).catch((e) => setMsg(e.message)); }, 300);
