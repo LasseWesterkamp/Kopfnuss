@@ -32,8 +32,10 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,png,svg,webp,json}'],
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         navigateFallback: base + 'index.html',
+        importScripts: ['push-sw.js'], // Push-Benachrichtigungen (public/push-sw.js)
       },
     }),
   ],
+  define: { __BUILD_TIME__: JSON.stringify(process.env.BUILD_TIME ?? new Date().toISOString()) },
   test: { include: ['src/**/*.test.ts'] },
 } as any);

@@ -1,0 +1,111 @@
+import { useEffect, useState } from 'react';
+import { useApp } from '../state';
+import * as push from '../push';
+import { DEFAULT_PUSH_PREFS, type PushPrefs } from '../core/pushinfo';
+
+const KINDS: { k: keyof PushPrefs; label: string; hint: string }[] = [
+  { k: 'challenge', label: 'Herausforderungen', hint: 'jemand fordert dich heraus oder will Revanche' },
+  { k: 'decided', label: 'Duell entschieden', hint: 'alle haben gespielt, ohne Ergebnis im Text' },
+  { k: 'expiring', label: 'Duell läuft ab', hint: '24 Stunden vorher, wenn du noch nicht gespielt hast' },
+  { k: 'streak', label: 'Serie in Gefahr', hint: 'um 19:30, wenn du heute noch nichts gemacht hast' },
+];
+const HOURS = Array.from({ length: 24 }, (_, h) => h);
+
+/** Anleitung fürs iPhone: Push geht nur als Home-Bildschirm-App */
+export function IosInstallSteps() {
+  return (
+    <ol className="ios-steps small">
+      <li>Kopfnuss in <strong>Safari</strong> öffnen und unten auf <strong>Teilen</strong> (□↑) tippen.</li>
+      <li><strong>„Zum Home-Bildschirm“</strong> wählen und „Hinzufügen“.</li>
+      <li>Kopfnuss <strong>über das neue Symbol</strong> öffnen und hier Benachrichtigungen einschalten.</li>
+    </ol>
+  );
+}
+
+/** Bereich "Benachrichtigungen" in den Einstellungen */
+export function PushSettings() {
+  const { session } = useApp();
+  const [on, setOn] = useState<boolean | null>(null);
+  const [prefs, setPrefs] = useState<PushPrefs>(DEFAULT_PUSH_PREFS);
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<string | null>(null);
+  const adv = push.advice();
+  useEffect(() => {
+    if (!session) return;
+    push.isOn().then(setOn).catch(() => setOn(false));
+    push.loadPrefs().then(setPrefs).catch(() => {});
+  }, [session]);
+
+  if (!push.pushConfigured) return null;
+  if (!session) return <p className="muted small">Für Benachrichtigungen erst oben anmelden.</p>;
+  if (adv === 'ios-install') return (<><p className="small">Auf dem iPhone gehen Benachrichtigungen nur, wenn Kopfnuss auf dem Home-Bildschirm liegt (Apple-Regel):</p><IosInstallSteps /></>);
+  if (adv === 'ios-old') return <p className="small">Dein iPhone braucht mindestens iOS 16.4 für Benachrichtigungen aus Web-Apps. Ein Update unter Einstellungen → Allgemein → Softwareupdate hilft.</p>;
+  if (adv === 'unsupported') return <p className="small muted">Dieser Browser kann keine Benachrichtigungen von Web-Apps empfangen.</p>;
+  if (adv === 'denied') return <p className="small">Benachrichtigungen sind für Kopfnuss blockiert. Du kannst sie in den Einstellungen deines Browsers bzw. unter iPhone-Einstellungen → Mitteilungen → Kopfnuss wieder erlauben.</p>;
+  if (on === null) return <p className="muted small">Lädt …</p>;
+
+  const run = async (f: () => Promise<void>, ok: string) => {
+    setBusy(true); setMsg(null);
+    try { await f(); setMsg(ok); } catch (e: any) { setMsg(e.message); } finally { setBusy(false); }
+  };
+  const change = (p: PushPrefs) => { setPrefs(p); push.savePrefs(p).catch((e) => setMsg(e.message)); };
+
+  if (!on) return (
+    <div className="push-off">
+      <p className="small">Ich sage dir Bescheid, wenn dich jemand herausfordert, ein Duell entschieden ist oder deine Serie in Gefahr ist. Höchstens 5 Nachrichten am Tag, nachts Ruhe.</p>
+      <button className="btn primary wide" disabled={busy} onClick={() => run(async () => { await push.enable(); setOn(true); setPrefs(await push.loadPrefs()); }, 'Eingeschaltet.')}>🔔 Benachrichtigungen einschalten</button>
+      {msg && <p className="small msg">{msg}</p>}
+    </div>
+  );
+  return (
+    <div className="push-on">
+      <p className="small">🔔 Auf diesem Gerät eingeschaltet. Gilt für alle deine Geräte, auf denen du es eingeschaltet hast:</p>
+      {KINDS.map(({ k, label, hint }) => (
+        <label key={k} className="switch-row">
+          <span>{label}<br /><span className="muted small">{hint}</span></span>
+          <input type="checkbox" checked={!!prefs[k]} onChange={(e) => change({ ...prefs, [k]: e.target.checked })} />
+        </label>
+      ))}
+      <div className="quiet-row">
+        <span>Ruhezeit</span>
+        <select aria-label="Ruhezeit von" value={prefs.quiet_start} onChange={(e) => change({ ...prefs, quiet_start: +e.target.value })}>
+          {HOURS.map((h) => <option key={h} value={h}>{h}:00</option>)}
+        </select>
+        <span>bis</span>
+        <select aria-label="Ruhezeit bis" value={prefs.quiet_end} onChange={(e) => change({ ...prefs, quiet_end: +e.target.value })}>
+          {HOURS.map((h) => <option key={h} value={h}>{h}:00</option>)}
+        </select>
+      </div>
+      <p className="muted small">In der Ruhezeit kommt nichts. Herausforderungen und Ergebnisse kommen danach, die Serie-Erinnerung entfällt dann.</p>
+      <button className="btn ghost wide" disabled={busy} onClick={() => run(async () => { await push.disable(); setOn(false); }, 'Auf diesem Gerät ausgeschaltet.')}>Auf diesem Gerät ausschalten</button>
+      {msg && <p className="small msg">{msg}</p>}
+    </div>
+  );
+}
+
+/** Einmaliger Hinweis nach dem ersten Duell */
+export function PushHint({ onSettings }: { onSettings: () => void }) {
+  const { session } = useApp();
+  const [show, setShow] = useState(false);
+  const [msg, setMsg] = useState<string | null>(null);
+  const adv = push.advice();
+  useEffect(() => {
+    if (!session || !push.pushConfigured || push.hintDone() || (adv !== 'ok' && adv !== 'ios-install')) return;
+    push.isOn().then((on) => setShow(!on)).catch(() => {});
+  }, [session, adv]);
+  if (!show) return null;
+  const close = () => { push.setHintDone(); setShow(false); };
+  return (
+    <div className="card push-hint">
+      <p><strong>🔔 Soll ich dir Bescheid sagen?</strong><br /><span className="small">Wenn dein Gegner fertig ist oder dich jemand herausfordert.</span></p>
+      {adv === 'ios-install' ? <IosInstallSteps /> : null}
+      <div className="row">
+        <button className="btn ghost" onClick={close}>Nein danke</button>
+        {adv === 'ok'
+          ? <button className="btn primary" onClick={async () => { try { await push.enable(); setMsg('Eingeschaltet. Einstellen kannst du es unter Mehr.'); push.setHintDone(); setTimeout(() => setShow(false), 2500); } catch (e: any) { setMsg(e.message); } }}>Einschalten</button>
+          : <button className="btn primary" onClick={() => { close(); onSettings(); }}>Mehr dazu</button>}
+      </div>
+      {msg && <p className="small msg">{msg}</p>}
+    </div>
+  );
+}

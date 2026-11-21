@@ -21,6 +21,7 @@ import type { RoundPrefs } from './core/round';
 import { DuelPage, DuelPlay, useDuels, duelBadge } from './ui/Duels';
 import { pickDuelQuestions, duelTime, duelCodeFromUrl, duelSelection, type Duel } from './core/duel';
 import * as du from './duel';
+import * as push from './push';
 import { TOPIC_NAMES } from './core/badges';
 
 /** Laufende Runde bzw. Ergebnis (nur im Speicher, nicht in der Adresse) */
@@ -35,7 +36,7 @@ function Shell() {
     return c;
   });
   // Duell-Link ?duell=CODE öffnet die Gruppen-Seite und nimmt das Duell an
-  const [duelCode] = useState<string | null>(() => {
+  const [duelCode, setDuelCode] = useState<string | null>(() => {
     const c = duelCodeFromUrl(location.search);
     if (location.search.includes('duell')) history.replaceState(null, '', location.pathname + location.hash);
     return c;
@@ -53,6 +54,14 @@ function Shell() {
     return () => { document.removeEventListener('visibilitychange', onVis); if (t) clearInterval(t); };
   }, [session, route.name, reloadDuels]);
   const badge = duelBadge(duels.duels);
+  // Push: Gerät dem angemeldeten Konto zuordnen; Antippen einer Nachricht bei offener App -> dorthin wechseln
+  useEffect(() => { if (session && push.pushConfigured) push.resync(); }, [session]);
+  useEffect(() => {
+    if (!('serviceWorker' in navigator)) return;
+    const onMsg = (e: MessageEvent) => { if (e.data?.type === 'kopfnuss-open') { go(hashToRoute(e.data.hash)); reloadDuels(); } };
+    navigator.serviceWorker.addEventListener('message', onMsg);
+    return () => navigator.serviceWorker.removeEventListener('message', onMsg);
+  }, [go, reloadDuels]);
 
   const startRound = (opts: SessionOptions, daily: boolean, label?: string, replace = false) => {
     if (!questions) return;
@@ -148,9 +157,9 @@ function Shell() {
       page = def ? <Puzzle key={def.key} def={def} onExit={back} /> : <div className="card">Dieses Puzzle gibt es nicht.</div>;
       break;
     }
-    case 'groups': page = <Groups joinCode={joinCode} onGoSettings={() => tab('settings')} duels={duels} duelCode={duelCode} onOpenDuel={(id) => nav({ name: 'duel', id })} onChallenge={challenge} />; break;
+    case 'groups': page = <Groups joinCode={joinCode} onGoSettings={() => tab('settings')} duels={duels} duelCode={duelCode} onDuelCodeUsed={() => setDuelCode(null)} onOpenDuel={(id) => nav({ name: 'duel', id })} onChallenge={challenge} />; break;
     case 'duel':
-      page = <DuelPage key={route.id} id={route.id} onBack={back} onRematch={rematch}
+      page = <DuelPage key={route.id} id={route.id} onBack={back} onRematch={rematch} onSettings={() => tab('settings')}
         onPlay={(d, ids) => go({ name: 'duelplay' }, { opts: {}, daily: false, key: Date.now(), duel: d, duelIds: ids })} />;
       break;
     case 'duelplay':

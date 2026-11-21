@@ -12,9 +12,9 @@ const BOARDS: { id: Board; label: string; unit: string }[] = [
   { id: 'gesamt', label: 'Gesamt', unit: 'XP' },
 ];
 
-export function Groups({ joinCode, onGoSettings, duels, duelCode, onOpenDuel, onChallenge }: {
+export function Groups({ joinCode, onGoSettings, duels, duelCode, onDuelCodeUsed, onOpenDuel, onChallenge }: {
   joinCode: string | null; onGoSettings: () => void;
-  duels: ReturnType<typeof useDuels>; duelCode: string | null; onOpenDuel: (id: string) => void;
+  duels: ReturnType<typeof useDuels>; duelCode: string | null; onDuelCodeUsed: () => void; onOpenDuel: (id: string) => void;
   onChallenge: (m: { user_id: string; name: string }) => void;
 }) {
   const { session, syncNow, today } = useApp();
@@ -78,7 +78,7 @@ export function Groups({ joinCode, onGoSettings, duels, duelCode, onOpenDuel, on
         </div>
       )}
       {current && <GroupView key={current.id} group={current} today={today} onChanged={load} setMsg={setMsg} onChallenge={onChallenge} />}
-      <DuelSection duels={duels.duels} err={duels.err} reload={duels.reload} initialCode={duelCode} onOpen={onOpenDuel} />
+      <DuelSection duels={duels.duels} err={duels.err} reload={duels.reload} initialCode={duelCode} onCodeUsed={onDuelCodeUsed} onOpen={onOpenDuel} />
 
       {/* Einklappbar: zu, sobald man in einer Gruppe ist; offen ohne Gruppe oder mit Einladungscode */}
       <details key={'join' + (groups.length > 0)} className="fold" open={!groups.length || (!!joinCode && !groups.some((x) => x.invite_code === joinCode))}>

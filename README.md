@@ -20,6 +20,7 @@ Allgemeinwissen trainieren, jeden Tag 10 Fragen. Läuft als installierbare Web-A
 - Gruppen mit Rangliste (Woche, Serie, Gesamt), Beitritt per Einladungscode oder -link
 - Startmenü vor jeder Runde: Schwierigkeit und Zeitdruck (aus/10/20/30 s) wählen
 - Duelle: Freunde per Link herausfordern, alle bekommen dieselben 10 Fragen, wer mehr richtig hat (bei Gleichstand: schneller) gewinnt
+- Push-Benachrichtigungen: Herausforderung, Duell entschieden, Duell läuft ab, Serie in Gefahr
 - Dark Mode (automatisch oder manuell)
 
 ---
@@ -281,6 +282,30 @@ Zeitversetzt: Du spielst jetzt, die anderen irgendwann in den nächsten 7 Tagen,
 
 ### Datenbank (Duelle)
 `supabase/004_duelle.sql` und danach `supabase/005_duelle_gruppen.sql` im SQL Editor ausführen (nach `002_gruppen.sql`). 005 ergänzt `create_duel` um Eingeladene und Revanche (`rematch_of`) und fügt `invite_to_duel` und `my_groupmates` hinzu. Tabellen `duels` und `duel_players` haben RLS ohne Policies, alles läuft über die Funktionen `create_duel`, `join_duel`, `invite_to_duel`, `start_duel`, `finish_duel`, `my_duels` und `my_groupmates`, die selbst prüfen, wer was sehen darf.
+
+## Push-Benachrichtigungen
+
+Einschalten unter **Mehr → Benachrichtigungen** oder über den einmaligen Hinweis auf der Duell-Seite. Nie ungefragt beim Start.
+
+- **Anlässe** (einzeln abschaltbar, alle standardmäßig an):
+  - ⚔️ Herausforderung: auch Revanche und Dazuholen, nicht wenn man selbst per Link annimmt
+  - 🏁 Duell entschieden: ohne Ergebnis im Text, damit die Spannung bleibt
+  - ⏳ Duell läuft in 24 h ab und du hast noch nicht gespielt
+  - 🔥 Serie in Gefahr: ab 19:30, Serie mindestens 2 Tage, heute noch keine Ranglistenwerte hochgeladen
+- **Ruhezeit** (Standard 21 bis 8 Uhr deutscher Zeit, einstellbar): Herausforderungen und Ergebnisse kommen danach, die Serie-Erinnerung entfällt. Höchstens 5 Nachrichten pro Tag und Person, der Rest wird verworfen.
+- **Antippen** öffnet das Duell bzw. die Startseite. Ist Kopfnuss schon offen, wird dieses Fenster genutzt.
+- **iPhone:** nur als Home-Bildschirm-App ab iOS 16.4 (Apple-Regel). In Safari zeigt die App statt des Schalters eine Anleitung.
+- **Mehrere Geräte:** Nachrichten gehen an alle eingeschalteten Geräte. Geräte, die der Push-Dienst nicht mehr kennt (404/410), werden automatisch entfernt. Abmelden vom Konto meldet das Gerät ab.
+
+**Technik:** Trigger auf `duel_players` und der Minuten-Takt `push_tick()` (pg_cron) legen Nachrichten in `push_queue`. `push_tick()` ruft per `pg_net` die Edge Function `supabase/functions/push-send` auf, die mit VAPID signiert, nach Web-Push-Standard (aes128gcm) verschlüsselt und verschickt. Die App selbst kann niemandem Nachrichten schicken. Der Push-Teil des Service Workers liegt in `public/push-sw.js` und wird per `importScripts` in den von vite-plugin-pwa erzeugten `sw.js` geladen, Offline-Cache und Updates bleiben unverändert.
+
+**Einrichtung (einmalig):**
+1. VAPID-Schlüsselpaar erzeugen (`npx web-push generate-vapid-keys`). Den öffentlichen Schlüssel als `VITE_VAPID_PUBLIC` in `.env.production` eintragen.
+2. Supabase → Edge Functions → Secrets: `VAPID_PUBLIC`, `VAPID_PRIVATE`, `VAPID_SUBJECT` (z.B. die App-URL) und `PUSH_SECRET` (zufälliger Wert).
+3. Edge Function deployen: `supabase functions deploy push-send --no-verify-jwt`.
+4. `supabase/006_push.sql` ausführen, dann im SQL Editor die zwei Vault-Einträge aus dem Kopf der Datei anlegen (Function-URL und derselbe `PUSH_SECRET`). Nicht ins Repo.
+
+Unter Mehr → Über steht die Version (Build-Zeit), so sieht man, ob ein Update angekommen ist.
 
 ## Kategorien & Auswahl beim Üben
 

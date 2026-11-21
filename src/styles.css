@@ -430,3 +430,10 @@ input.text.code { letter-spacing: .25em; font-weight: 700; text-transform: upper
 .sheet-topics { margin: 10px 0 4px; max-height: 120px; overflow-y: auto; }
 .mates { margin-bottom: 8px; }
 .rematch-btn { margin-top: 12px; }
+/* Push */
+.ios-steps { margin: 8px 0; padding-left: 20px; line-height: 1.5; }
+.quiet-row { display: flex; align-items: center; gap: 8px; margin: 12px 0 4px; flex-wrap: wrap; }
+.quiet-row select { font: inherit; padding: 8px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); color: var(--text); min-height: 44px; }
+.push-on .switch-row { padding: 8px 0; border-top: 1px solid var(--line); }
+.push-hint { margin: 12px 0; }
+.push-hint .row { margin-top: 8px; }

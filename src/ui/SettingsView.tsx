@@ -5,6 +5,8 @@ import { useApp } from '../state';
 import * as sync from '../sync';
 import { REPO_URL } from '../data';
 import { DisplayNameSetting } from './Groups';
+import { PushSettings } from './PushSettings';
+import * as push from '../push';
 
 export function SettingsView({ onCredits }: { onCredits: () => void }) {
   const { settings, setSettings, progress, replaceProgress, session, syncState, syncNow, questions } = useApp();
@@ -56,7 +58,7 @@ export function SettingsView({ onCredits }: { onCredits: () => void }) {
             <p className="muted small">Status: {syncState}</p>
             <div className="row">
               <button className="btn ghost" onClick={syncNow}>Jetzt synchronisieren</button>
-              <button className="btn ghost" onClick={() => sync.signOut()}>Abmelden</button>
+              <button className="btn ghost" onClick={async () => { await push.disable().catch(() => {}); await sync.signOut(); }}>Abmelden</button>
             </div>
           </>
         )}
@@ -89,6 +91,10 @@ export function SettingsView({ onCredits }: { onCredits: () => void }) {
         <>
           <h3 className="section-title">Anzeigename</h3>
           <div className="card"><DisplayNameSetting /></div>
+          {push.pushConfigured && (<>
+            <h3 className="section-title">Benachrichtigungen</h3>
+            <div className="card"><PushSettings /></div>
+          </>)}
         </>
       )}
 
@@ -108,6 +114,7 @@ export function SettingsView({ onCredits }: { onCredits: () => void }) {
       <h3 className="section-title">Über</h3>
       <div className="card">
         <p className="small">Kopfnuss · {questions?.length ?? '…'} Fragen · <a href={REPO_URL} target="_blank" rel="noreferrer">Quellcode</a></p>
+        <p className="small muted app-version">Version vom {new Date(__BUILD_TIME__).toLocaleString('de-DE', { dateStyle: 'short', timeStyle: 'short' })}</p>
         <p className="small muted">Fehler in einer Frage? Nach jeder Antwort gibt es „Frage melden“. Die Meldung geht direkt an den Betreiber der App.</p>
         <button className="btn ghost wide" onClick={onCredits}>Bildnachweise & Lizenzen</button>
       </div>

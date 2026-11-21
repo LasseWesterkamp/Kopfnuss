@@ -5,6 +5,7 @@ import * as du from '../duel';
 import { rankDuel, duelStatus, myOutcome, headToHead, fmtSec, type Duel, type DuelAnswer, type DuelStatus } from '../core/duel';
 import { normalizeCode, isValidCode } from '../core/invite';
 import { Quiz } from './Quiz';
+import { PushHint } from './PushSettings';
 
 /** Eigene Duelle laden (mit Neuladen-Funktion) */
 export function useDuels(enabled: boolean) {
@@ -37,8 +38,8 @@ async function share(code: string, label: string) {
 const STATUS_LABEL: Record<DuelStatus, string> = { dran: 'Du bist dran', warten: 'Wartet auf andere', fertig: 'Fertig', abgelaufen: 'Abgelaufen' };
 
 /** Bereich "Duelle" auf der Gruppen-Seite */
-export function DuelSection({ duels, err, reload, initialCode, onOpen }: {
-  duels: Duel[] | null; err: string | null; reload: () => void; initialCode: string | null; onOpen: (id: string) => void;
+export function DuelSection({ duels, err, reload, initialCode, onCodeUsed, onOpen }: {
+  duels: Duel[] | null; err: string | null; reload: () => void; initialCode: string | null; onCodeUsed: () => void; onOpen: (id: string) => void;
 }) {
   const [code, setCode] = useState(initialCode ?? '');
   const [busy, setBusy] = useState(false);
@@ -49,7 +50,8 @@ export function DuelSection({ duels, err, reload, initialCode, onOpen }: {
     try { const id = await du.joinDuel(c); reload(); onOpen(id); } catch (e: any) { setMsg(e.message); } finally { setBusy(false); }
   }, [reload, onOpen]);
   // Einladungslink: automatisch beitreten
-  useEffect(() => { if (initialCode && !tried.current) { tried.current = true; join(initialCode); } }, [initialCode, join]);
+  // Einladungslink: einmal automatisch annehmen, dann ist der Code verbraucht (sonst würde jeder Besuch der Gruppen-Seite erneut umleiten)
+  useEffect(() => { if (initialCode && !tried.current) { tried.current = true; onCodeUsed(); join(initialCode); } }, [initialCode, join, onCodeUsed]);
 
   const groups: Record<DuelStatus, Duel[]> = { dran: [], warten: [], fertig: [], abgelaufen: [] };
   for (const d of duels ?? []) groups[duelStatus(d)].push(d);
@@ -100,7 +102,7 @@ function DuelRow({ d, status, onOpen }: { d: Duel; status: DuelStatus; onOpen: (
 }
 
 /** Detailseite eines Duells: Spieler, Start, Ergebnis mit Vergleich Frage für Frage */
-export function DuelPage({ id, onPlay, onBack, onRematch }: { id: string; onPlay: (d: Duel, ids: string[]) => void; onBack: () => void; onRematch: (d: Duel) => Promise<void> }) {
+export function DuelPage({ id, onPlay, onBack, onRematch, onSettings }: { id: string; onPlay: (d: Duel, ids: string[]) => void; onBack: () => void; onRematch: (d: Duel) => Promise<void>; onSettings: () => void }) {
   const { questions, session } = useApp();
   const { duels, err, reload } = useDuels(!!session);
   const [busy, setBusy] = useState(false);
@@ -174,6 +176,8 @@ export function DuelPage({ id, onPlay, onBack, onRematch }: { id: string; onPlay
           </>
         );
       })()}
+
+      <PushHint onSettings={onSettings} />
 
       <h3 className="section-title">Spieler</h3>
       <div className="card duel-players">

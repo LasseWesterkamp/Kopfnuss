@@ -748,3 +748,30 @@ describe('Revanche', () => {
     expect(duelSelection({ difficulty: null })).toEqual({ topics: undefined, cats: undefined, subs: undefined, difficulty: undefined });
   });
 });
+
+import { pushAdvice, iosVersionFromUa, urlB64ToUint8Array, inQuiet } from './pushinfo';
+describe('Push', () => {
+  const base = { ios: false, iosVersion: null, standalone: false, supported: true, permission: 'default' as const };
+  it('iPhone nur als Home-Bildschirm-App ab iOS 16.4', () => {
+    expect(pushAdvice({ ...base, ios: true, iosVersion: 17.2, supported: false })).toBe('ios-install');
+    expect(pushAdvice({ ...base, ios: true, iosVersion: 17.2, standalone: true })).toBe('ok');
+    expect(pushAdvice({ ...base, ios: true, iosVersion: 16.3, standalone: true })).toBe('ios-old');
+    expect(pushAdvice({ ...base })).toBe('ok');
+    expect(pushAdvice({ ...base, supported: false })).toBe('unsupported');
+    expect(pushAdvice({ ...base, permission: 'denied' })).toBe('denied');
+  });
+  it('iOS-Version aus dem User-Agent', () => {
+    expect(iosVersionFromUa('Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X)')).toBe(17.2);
+    expect(iosVersionFromUa('Mozilla/5.0 (iPhone; CPU iPhone OS 16_4_1 like Mac OS X)')).toBe(16.4);
+    expect(iosVersionFromUa('Mozilla/5.0 (Windows NT 10.0; Win64; x64)')).toBe(null);
+  });
+  it('VAPID-Schlüssel wird korrekt dekodiert', () => {
+    const b = urlB64ToUint8Array('BAEC_-8');
+    expect([...b]).toEqual([4, 1, 2, 255, 239]);
+  });
+  it('Ruhezeit über Mitternacht und am Tag', () => {
+    expect([20, 21, 23, 0, 7, 8].map((h) => inQuiet(h, 21, 8))).toEqual([false, true, true, true, true, false]);
+    expect([12, 13, 14].map((h) => inQuiet(h, 13, 14))).toEqual([false, true, false]);
+    expect(inQuiet(5, 8, 8)).toBe(false);
+  });
+});
